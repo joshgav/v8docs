@@ -1,0 +1,42 @@
+\hypertarget{classv8_1_1_shared_array_buffer_1_1_contents}{}\section{v8\+:\+:Shared\+Array\+Buffer\+:\+:Contents Class Reference}
+\label{classv8_1_1_shared_array_buffer_1_1_contents}\index{v8\+::\+Shared\+Array\+Buffer\+::\+Contents@{v8\+::\+Shared\+Array\+Buffer\+::\+Contents}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries Data} () const \hypertarget{classv8_1_1_shared_array_buffer_1_1_contents_a7e25a8f041d968fb7af4c4ae72dd2dc7}{}\label{classv8_1_1_shared_array_buffer_1_1_contents_a7e25a8f041d968fb7af4c4ae72dd2dc7}
+
+\item 
+size\+\_\+t {\bfseries Byte\+Length} () const \hypertarget{classv8_1_1_shared_array_buffer_1_1_contents_a68fb3080f3304278ec47c2cfddfec0ae}{}\label{classv8_1_1_shared_array_buffer_1_1_contents_a68fb3080f3304278ec47c2cfddfec0ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries data\+\_\+}\hypertarget{classv8_1_1_shared_array_buffer_1_1_contents_a28e46bb2a558606f7b6bde08cf98c5b3}{}\label{classv8_1_1_shared_array_buffer_1_1_contents_a28e46bb2a558606f7b6bde08cf98c5b3}
+
+\item 
+size\+\_\+t {\bfseries byte\+\_\+length\+\_\+}\hypertarget{classv8_1_1_shared_array_buffer_1_1_contents_a270e00df31c57697fe250a8535e67f43}{}\label{classv8_1_1_shared_array_buffer_1_1_contents_a270e00df31c57697fe250a8535e67f43}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Shared\+Array\+Buffer}\hypertarget{classv8_1_1_shared_array_buffer_1_1_contents_a35ac2a80dda42f728b7b1dfc4c3cc040}{}\label{classv8_1_1_shared_array_buffer_1_1_contents_a35ac2a80dda42f728b7b1dfc4c3cc040}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The contents of an $\vert$\+Shared\+Array\+Buffer$\vert$. Externalization of $\vert$\+Shared\+Array\+Buffer$\vert$ returns an instance of this class, populated, with a pointer to data and byte length.
+
+The \hyperlink{classv8_1_1_data}{Data} pointer of \hyperlink{classv8_1_1_shared_array_buffer_1_1_contents}{Shared\+Array\+Buffer\+::\+Contents} is always allocated with $\vert$\+Array\+Buffer\+::\+Allocator\+::\+Allocate$\vert$ by the allocator specified in \hyperlink{structv8_1_1_isolate_1_1_create_params_a7c663f70b64290392eeaf164f57585f9}{v8\+::\+Isolate\+::\+Create\+Params\+::array\+\_\+buffer\+\_\+allocator}.
+
+This A\+PI is experimental and may change significantly. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/v8.\+h\end{DoxyCompactItemize}
