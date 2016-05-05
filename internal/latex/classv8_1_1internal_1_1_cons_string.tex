@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1_cons_string}{}\section{v8\+:\+:internal\+:\+:Cons\+String Class Reference}
+\label{classv8_1_1internal_1_1_cons_string}\index{v8\+::internal\+::\+Cons\+String@{v8\+::internal\+::\+Cons\+String}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Cons\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_cons_string}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_fixed_body_descriptor}{Fixed\+Body\+Descriptor}$<$ k\+First\+Offset, k\+Second\+Offset+k\+Pointer\+Size, k\+Size $>$ {\bfseries Body\+Descriptor}\hypertarget{classv8_1_1internal_1_1_cons_string_a9605778fa02003dffc396b8a7842d380}{}\label{classv8_1_1internal_1_1_cons_string_a9605778fa02003dffc396b8a7842d380}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$ {\bfseries first} ()\hypertarget{classv8_1_1internal_1_1_cons_string_ab6540b105bc383ade7c48f8cc12d2339}{}\label{classv8_1_1internal_1_1_cons_string_ab6540b105bc383ade7c48f8cc12d2339}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries unchecked\+\_\+first} ()\hypertarget{classv8_1_1internal_1_1_cons_string_ac2ec1588574736752932d69bedf1d050}{}\label{classv8_1_1internal_1_1_cons_string_ac2ec1588574736752932d69bedf1d050}
+
+\item 
+void {\bfseries set\+\_\+first} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$first, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)\hypertarget{classv8_1_1internal_1_1_cons_string_a457af0dfca59a313e41d7d630612337b}{}\label{classv8_1_1internal_1_1_cons_string_a457af0dfca59a313e41d7d630612337b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$ {\bfseries second} ()\hypertarget{classv8_1_1internal_1_1_cons_string_a9d0134684950323df6720beab31f6ad4}{}\label{classv8_1_1internal_1_1_cons_string_a9d0134684950323df6720beab31f6ad4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries unchecked\+\_\+second} ()\hypertarget{classv8_1_1internal_1_1_cons_string_a68c3b0092484be42ba7681d62a5ede12}{}\label{classv8_1_1internal_1_1_cons_string_a68c3b0092484be42ba7681d62a5ede12}
+
+\item 
+void {\bfseries set\+\_\+second} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$second, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)\hypertarget{classv8_1_1internal_1_1_cons_string_ade98aa98d6128c06586734a67c164d41}{}\label{classv8_1_1internal_1_1_cons_string_ade98aa98d6128c06586734a67c164d41}
+
+\item 
+uint16\+\_\+t {\bfseries Cons\+String\+Get} (int index)\hypertarget{classv8_1_1internal_1_1_cons_string_a4599e754c6c77c4f814f5d53246e78b0}{}\label{classv8_1_1internal_1_1_cons_string_a4599e754c6c77c4f814f5d53246e78b0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+First\+Offset} = P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+L\+I\+GN(String\+::k\+Size)\hypertarget{classv8_1_1internal_1_1_cons_string_a95a124eb7efeaba961e787defc3646ee}{}\label{classv8_1_1internal_1_1_cons_string_a95a124eb7efeaba961e787defc3646ee}
+
+\item 
+static const int {\bfseries k\+Second\+Offset} = k\+First\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_cons_string_ad54aec7d731f2c13af79a6a57774370f}{}\label{classv8_1_1internal_1_1_cons_string_ad54aec7d731f2c13af79a6a57774370f}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Second\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_cons_string_a998544a7ba1a51c4803544dc17cb7882}{}\label{classv8_1_1internal_1_1_cons_string_a998544a7ba1a51c4803544dc17cb7882}
+
+\item 
+static const int {\bfseries k\+Min\+Length} = 13\hypertarget{classv8_1_1internal_1_1_cons_string_aa2d9a5efa6f974193d3b56fdc2d33044}{}\label{classv8_1_1internal_1_1_cons_string_aa2d9a5efa6f974193d3b56fdc2d33044}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_cons_string}{Cons\+String})\hypertarget{classv8_1_1internal_1_1_cons_string_a357e7c0b722fd6b9375b8f2e2e0b09ec}{}\label{classv8_1_1internal_1_1_cons_string_a357e7c0b722fd6b9375b8f2e2e0b09ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

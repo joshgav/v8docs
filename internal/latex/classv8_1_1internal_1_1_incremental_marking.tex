@@ -1,0 +1,407 @@
+\hypertarget{classv8_1_1internal_1_1_incremental_marking}{}\section{v8\+:\+:internal\+:\+:Incremental\+Marking Class Reference}
+\label{classv8_1_1internal_1_1_incremental_marking}\index{v8\+::internal\+::\+Incremental\+Marking@{v8\+::internal\+::\+Incremental\+Marking}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_incremental_marking_1_1_observer}{Observer}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_incremental_marking_1_1_step_actions}{Step\+Actions}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \{ \\*
+{\bfseries S\+T\+O\+P\+P\+ED}, 
+\\*
+{\bfseries S\+W\+E\+E\+P\+I\+NG}, 
+\\*
+{\bfseries M\+A\+R\+K\+I\+NG}, 
+\\*
+{\bfseries C\+O\+M\+P\+L\+E\+TE}
+ \}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a0cf5484619bc97cfba5060b3c29102c4}{}\label{classv8_1_1internal_1_1_incremental_marking_a0cf5484619bc97cfba5060b3c29102c4}
+
+\item 
+enum {\bfseries Completion\+Action} \{ \\*
+{\bfseries G\+C\+\_\+\+V\+I\+A\+\_\+\+S\+T\+A\+C\+K\+\_\+\+G\+U\+A\+RD}, 
+\\*
+{\bfseries N\+O\+\_\+\+G\+C\+\_\+\+V\+I\+A\+\_\+\+S\+T\+A\+C\+K\+\_\+\+G\+U\+A\+RD}
+ \}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9b543810ec8c13b61aa9dfebb33743a5}{}\label{classv8_1_1internal_1_1_incremental_marking_a9b543810ec8c13b61aa9dfebb33743a5}
+
+\item 
+enum {\bfseries Force\+Marking\+Action} \{ \\*
+{\bfseries F\+O\+R\+C\+E\+\_\+\+M\+A\+R\+K\+I\+NG}, 
+\\*
+{\bfseries D\+O\+\_\+\+N\+O\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+M\+A\+R\+K\+I\+NG}
+ \}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3b63b2770be1d09ea547fc533ff5efe7}{}\label{classv8_1_1internal_1_1_incremental_marking_a3b63b2770be1d09ea547fc533ff5efe7}
+
+\item 
+enum {\bfseries Force\+Completion\+Action} \{ \\*
+{\bfseries F\+O\+R\+C\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+ON}, 
+\\*
+{\bfseries D\+O\+\_\+\+N\+O\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_incremental_marking_aee6b9724805db0c072debe78a5c1d729}{}\label{classv8_1_1internal_1_1_incremental_marking_aee6b9724805db0c072debe78a5c1d729}
+
+\item 
+enum {\bfseries G\+C\+Request\+Type} \{ \\*
+{\bfseries N\+O\+NE}, 
+\\*
+{\bfseries C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+I\+NG}, 
+\\*
+{\bfseries F\+I\+N\+A\+L\+I\+Z\+A\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a819a2e85f38bbdd8e1265c4b16dbf448}{}\label{classv8_1_1internal_1_1_incremental_marking_a819a2e85f38bbdd8e1265c4b16dbf448}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Incremental\+Marking} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_incremental_marking_acc8e76ccd2bba2a64a51e1a7868da631}{}\label{classv8_1_1internal_1_1_incremental_marking_acc8e76ccd2bba2a64a51e1a7868da631}
+
+\item 
+State {\bfseries state} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ac925255a70637ba1198681021e534736}{}\label{classv8_1_1internal_1_1_incremental_marking_ac925255a70637ba1198681021e534736}
+
+\item 
+bool {\bfseries should\+\_\+hurry} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a124934f9bf0fb39cf56ea099611de7c3}{}\label{classv8_1_1internal_1_1_incremental_marking_a124934f9bf0fb39cf56ea099611de7c3}
+
+\item 
+void {\bfseries set\+\_\+should\+\_\+hurry} (bool val)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9eafdc076169d642d57722f6ace91299}{}\label{classv8_1_1internal_1_1_incremental_marking_a9eafdc076169d642d57722f6ace91299}
+
+\item 
+bool {\bfseries finalize\+\_\+marking\+\_\+completed} () const \hypertarget{classv8_1_1internal_1_1_incremental_marking_a5710e84ecc251107d860a6d6b3a302c2}{}\label{classv8_1_1internal_1_1_incremental_marking_a5710e84ecc251107d860a6d6b3a302c2}
+
+\item 
+void {\bfseries Set\+Weak\+Closure\+Was\+Over\+Approximated\+For\+Testing} (bool val)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae266e583cd45869e2670df0f186bc3fd}{}\label{classv8_1_1internal_1_1_incremental_marking_ae266e583cd45869e2670df0f186bc3fd}
+
+\item 
+bool {\bfseries Is\+Stopped} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_aadf8cd9439174d9f41e900ad9d6cfbe9}{}\label{classv8_1_1internal_1_1_incremental_marking_aadf8cd9439174d9f41e900ad9d6cfbe9}
+
+\item 
+bool {\bfseries Is\+Sweeping} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a066fa5758b3e18ccfd04876c4bc97e2c}{}\label{classv8_1_1internal_1_1_incremental_marking_a066fa5758b3e18ccfd04876c4bc97e2c}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool Is\+Marking())\hypertarget{classv8_1_1internal_1_1_incremental_marking_a766aa5c1c3be4547547bc0f343b18601}{}\label{classv8_1_1internal_1_1_incremental_marking_a766aa5c1c3be4547547bc0f343b18601}
+
+\item 
+bool {\bfseries Is\+Marking\+Incomplete} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a709731f452c9666a1a85040f9800d981}{}\label{classv8_1_1internal_1_1_incremental_marking_a709731f452c9666a1a85040f9800d981}
+
+\item 
+bool {\bfseries Is\+Complete} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae0f9fcf099dbebe313fd15cce9fef50d}{}\label{classv8_1_1internal_1_1_incremental_marking_ae0f9fcf099dbebe313fd15cce9fef50d}
+
+\item 
+bool {\bfseries Is\+Ready\+To\+Over\+Approximate\+Weak\+Closure} () const \hypertarget{classv8_1_1internal_1_1_incremental_marking_a035ec8bd64bc96d2e0d146c71411d0af}{}\label{classv8_1_1internal_1_1_incremental_marking_a035ec8bd64bc96d2e0d146c71411d0af}
+
+\item 
+G\+C\+Request\+Type {\bfseries request\+\_\+type} () const \hypertarget{classv8_1_1internal_1_1_incremental_marking_af9d668ccf4cbc0a17948cd6f32673b76}{}\label{classv8_1_1internal_1_1_incremental_marking_af9d668ccf4cbc0a17948cd6f32673b76}
+
+\item 
+void {\bfseries reset\+\_\+request\+\_\+type} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a6ecf54e021cf89a81447e077e66e6a66}{}\label{classv8_1_1internal_1_1_incremental_marking_a6ecf54e021cf89a81447e077e66e6a66}
+
+\item 
+bool {\bfseries Can\+Be\+Activated} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a76c0db66709367a8f89548a137b5174d}{}\label{classv8_1_1internal_1_1_incremental_marking_a76c0db66709367a8f89548a137b5174d}
+
+\item 
+bool {\bfseries Should\+Activate\+Even\+Without\+Idle\+Notification} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4fe588e5e03eef029511675e3e69ce7d}{}\label{classv8_1_1internal_1_1_incremental_marking_a4fe588e5e03eef029511675e3e69ce7d}
+
+\item 
+bool {\bfseries Was\+Activated} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_aefa314a1555627c9212bc09ba56fb4c0}{}\label{classv8_1_1internal_1_1_incremental_marking_aefa314a1555627c9212bc09ba56fb4c0}
+
+\item 
+void {\bfseries Start} (const char $\ast$reason=nullptr)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a55ff4e3ccc9785ba21923119a1dcbb07}{}\label{classv8_1_1internal_1_1_incremental_marking_a55ff4e3ccc9785ba21923119a1dcbb07}
+
+\item 
+void {\bfseries Finalize\+Incrementally} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae719e288cf9057027469f9fe66f27631}{}\label{classv8_1_1internal_1_1_incremental_marking_ae719e288cf9057027469f9fe66f27631}
+
+\item 
+void {\bfseries Update\+Marking\+Deque\+After\+Scavenge} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ac6ab0be42442db2010691d47875b4c0d}{}\label{classv8_1_1internal_1_1_incremental_marking_ac6ab0be42442db2010691d47875b4c0d}
+
+\item 
+void {\bfseries Hurry} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a5f19bb1f9e9be0aed81f81429c3bd27f}{}\label{classv8_1_1internal_1_1_incremental_marking_a5f19bb1f9e9be0aed81f81429c3bd27f}
+
+\item 
+void {\bfseries Finalize} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a5b27a0985064f3ced493229bdeb0b688}{}\label{classv8_1_1internal_1_1_incremental_marking_a5b27a0985064f3ced493229bdeb0b688}
+
+\item 
+void {\bfseries Stop} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a2bc86ff237f59993b79b53abf5cd6ea6}{}\label{classv8_1_1internal_1_1_incremental_marking_a2bc86ff237f59993b79b53abf5cd6ea6}
+
+\item 
+void {\bfseries Finalize\+Marking} (Completion\+Action action)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a2ec4b09648d70622cfc0654ee5c3ba65}{}\label{classv8_1_1internal_1_1_incremental_marking_a2ec4b09648d70622cfc0654ee5c3ba65}
+
+\item 
+void {\bfseries Marking\+Complete} (Completion\+Action action)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae54d6d522c8efb23793f41e3b1c41630}{}\label{classv8_1_1internal_1_1_incremental_marking_ae54d6d522c8efb23793f41e3b1c41630}
+
+\item 
+void {\bfseries Epilogue} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3e08d2a488e382eb05b072daf089d0ed}{}\label{classv8_1_1internal_1_1_incremental_marking_a3e08d2a488e382eb05b072daf089d0ed}
+
+\item 
+double {\bfseries Advance\+Incremental\+Marking} (double deadline\+\_\+in\+\_\+ms, \hyperlink{structv8_1_1internal_1_1_incremental_marking_1_1_step_actions}{Step\+Actions} step\+\_\+actions)\hypertarget{classv8_1_1internal_1_1_incremental_marking_aa0b783e8af4287953f3888a4e15fb0a7}{}\label{classv8_1_1internal_1_1_incremental_marking_aa0b783e8af4287953f3888a4e15fb0a7}
+
+\item 
+void {\bfseries Finalize\+Sweeping} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a046c867da14b0d0c24adf418275e9b10}{}\label{classv8_1_1internal_1_1_incremental_marking_a046c867da14b0d0c24adf418275e9b10}
+
+\item 
+void {\bfseries Old\+Space\+Step} (intptr\+\_\+t allocated)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a26eb27235983b7859e8a20c3bc4cb533}{}\label{classv8_1_1internal_1_1_incremental_marking_a26eb27235983b7859e8a20c3bc4cb533}
+
+\item 
+intptr\+\_\+t {\bfseries Step} (intptr\+\_\+t allocated, Completion\+Action action, Force\+Marking\+Action marking=D\+O\+\_\+\+N\+O\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+M\+A\+R\+K\+I\+NG, Force\+Completion\+Action completion=F\+O\+R\+C\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+ON)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a42cf591a56ceef0eba50481b56fa835b}{}\label{classv8_1_1internal_1_1_incremental_marking_a42cf591a56ceef0eba50481b56fa835b}
+
+\item 
+void {\bfseries Restart\+If\+Not\+Marking} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a704af5ad518fd3c4e751a1f286b8e89d}{}\label{classv8_1_1internal_1_1_incremental_marking_a704af5ad518fd3c4e751a1f286b8e89d}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool Base\+Record\+Write(\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value))\hypertarget{classv8_1_1internal_1_1_incremental_marking_ab4398c0f9d1e2dbd94e4479e79389bfe}{}\label{classv8_1_1internal_1_1_incremental_marking_ab4398c0f9d1e2dbd94e4479e79389bfe}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Record\+Write(\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value))\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae4eed763dd9f702ab4c9663979baa06c}{}\label{classv8_1_1internal_1_1_incremental_marking_ae4eed763dd9f702ab4c9663979baa06c}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Record\+Write\+Into\+Code(\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$host, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value))\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9c1a025eba84470430cec394131733ba}{}\label{classv8_1_1internal_1_1_incremental_marking_a9c1a025eba84470430cec394131733ba}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Record\+Write\+Of\+Code\+Entry(\hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $\ast$host, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot,                                                                                                                                           \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$value))\hypertarget{classv8_1_1internal_1_1_incremental_marking_af30e6fe1b56639592d79f3694dd680a3}{}\label{classv8_1_1internal_1_1_incremental_marking_af30e6fe1b56639592d79f3694dd680a3}
+
+\item 
+void {\bfseries Record\+Write\+Slow} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a00e0a474715342e0edb32567f95b8648}{}\label{classv8_1_1internal_1_1_incremental_marking_a00e0a474715342e0edb32567f95b8648}
+
+\item 
+void {\bfseries Record\+Write\+Into\+Code\+Slow} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$host, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ab5f9756ba2134ae183eedc412b40d71a}{}\label{classv8_1_1internal_1_1_incremental_marking_ab5f9756ba2134ae183eedc412b40d71a}
+
+\item 
+void {\bfseries Record\+Write\+Of\+Code\+Entry\+Slow} (\hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $\ast$host, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$value)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a37adba0ba7f17252dc7e9e0356a31b39}{}\label{classv8_1_1internal_1_1_incremental_marking_a37adba0ba7f17252dc7e9e0356a31b39}
+
+\item 
+void {\bfseries Record\+Code\+Target\+Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$host, Address pc, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a5b13c86c7e3c9efec46f89cba0beb8b2}{}\label{classv8_1_1internal_1_1_incremental_marking_a5b13c86c7e3c9efec46f89cba0beb8b2}
+
+\item 
+void {\bfseries Record\+Code\+Target\+Patch} (Address pc, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4ae4a04f63689971d748468493dfcc10}{}\label{classv8_1_1internal_1_1_incremental_marking_a4ae4a04f63689971d748468493dfcc10}
+
+\item 
+void {\bfseries White\+To\+Grey\+And\+Push} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, \hyperlink{classv8_1_1internal_1_1_mark_bit}{Mark\+Bit} mark\+\_\+bit)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a1ce05ca6a669f73722b1a158caa4e512}{}\label{classv8_1_1internal_1_1_incremental_marking_a1ce05ca6a669f73722b1a158caa4e512}
+
+\item 
+void {\bfseries Set\+Old\+Space\+Page\+Flags} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4851b978876697b1d5973777860ebb34}{}\label{classv8_1_1internal_1_1_incremental_marking_a4851b978876697b1d5973777860ebb34}
+
+\item 
+void {\bfseries Set\+New\+Space\+Page\+Flags} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a66793955f8c2587afe1bc166aeab98a0}{}\label{classv8_1_1internal_1_1_incremental_marking_a66793955f8c2587afe1bc166aeab98a0}
+
+\item 
+bool {\bfseries Is\+Compacting} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a32ca339c9ec48cb21a0b885c9a0c2721}{}\label{classv8_1_1internal_1_1_incremental_marking_a32ca339c9ec48cb21a0b885c9a0c2721}
+
+\item 
+void {\bfseries Activate\+Generated\+Stub} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae93f56841f4c0035cc6f37811c76f6e0}{}\label{classv8_1_1internal_1_1_incremental_marking_ae93f56841f4c0035cc6f37811c76f6e0}
+
+\item 
+void {\bfseries Notify\+Of\+High\+Promotion\+Rate} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a85cb81cb70d2a5421cb9c117af3e0d0a}{}\label{classv8_1_1internal_1_1_incremental_marking_a85cb81cb70d2a5421cb9c117af3e0d0a}
+
+\item 
+void {\bfseries Notify\+Incomplete\+Scan\+Of\+Object} (int unscanned\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a7d073e1570fd05b16397bc7a7c372cd6}{}\label{classv8_1_1internal_1_1_incremental_marking_a7d073e1570fd05b16397bc7a7c372cd6}
+
+\item 
+void {\bfseries Clear\+Idle\+Marking\+Delay\+Counter} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9699732aa65d5e0c21058a2aa09b24ae}{}\label{classv8_1_1internal_1_1_incremental_marking_a9699732aa65d5e0c21058a2aa09b24ae}
+
+\item 
+bool {\bfseries Is\+Idle\+Marking\+Delay\+Counter\+Limit\+Reached} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a6120f564b01e006bfa270c0730e08ee9}{}\label{classv8_1_1internal_1_1_incremental_marking_a6120f564b01e006bfa270c0730e08ee9}
+
+\item 
+void {\bfseries Iterate\+Black\+Object} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a696f3bdd2f7204c8a46f0d4286b3ed27}{}\label{classv8_1_1internal_1_1_incremental_marking_a696f3bdd2f7204c8a46f0d4286b3ed27}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} () const \hypertarget{classv8_1_1internal_1_1_incremental_marking_af627d0b0611939429b36cd2002420f3f}{}\label{classv8_1_1internal_1_1_incremental_marking_af627d0b0611939429b36cd2002420f3f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_incremental_marking_job}{Incremental\+Marking\+Job} $\ast$ {\bfseries incremental\+\_\+marking\+\_\+job} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_acab75abdd18334789c11d2192c06901e}{}\label{classv8_1_1internal_1_1_incremental_marking_acab75abdd18334789c11d2192c06901e}
+
+\item 
+bool {\bfseries black\+\_\+allocation} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_abec093bf1ab753cfc6ed3c6537b48ee5}{}\label{classv8_1_1internal_1_1_incremental_marking_abec093bf1ab753cfc6ed3c6537b48ee5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structv8_1_1internal_1_1_incremental_marking_1_1_step_actions}{Step\+Actions} {\bfseries Idle\+Step\+Actions} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ac3aa0d2a4a7e8f32a8c78ef65aef4b09}{}\label{classv8_1_1internal_1_1_incremental_marking_ac3aa0d2a4a7e8f32a8c78ef65aef4b09}
+
+\item 
+static void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9760127cadb1b9e119de30e4a9878add}{}\label{classv8_1_1internal_1_1_incremental_marking_a9760127cadb1b9e119de30e4a9878add}
+
+\item 
+static void {\bfseries Record\+Write\+From\+Code} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a39fbdf358a467898cbed23ee84d113e8}{}\label{classv8_1_1internal_1_1_incremental_marking_a39fbdf358a467898cbed23ee84d113e8}
+
+\item 
+static void {\bfseries Record\+Write\+Of\+Code\+Entry\+From\+Code} (\hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $\ast$host, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a24b4bc119c822663eff3c19333740f80}{}\label{classv8_1_1internal_1_1_incremental_marking_a24b4bc119c822663eff3c19333740f80}
+
+\item 
+static void {\bfseries Mark\+Object} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae5a71b052e8d568b16bedc72e41e73ac}{}\label{classv8_1_1internal_1_1_incremental_marking_ae5a71b052e8d568b16bedc72e41e73ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const intptr\+\_\+t {\bfseries k\+Allocated\+Threshold} = 65536\hypertarget{classv8_1_1internal_1_1_incremental_marking_a0b9aa6fc7e0d7d764710676195bd0ee4}{}\label{classv8_1_1internal_1_1_incremental_marking_a0b9aa6fc7e0d7d764710676195bd0ee4}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Write\+Barriers\+Invoked\+Threshold} = 32768\hypertarget{classv8_1_1internal_1_1_incremental_marking_ac3610ac5228196232aa614912951da0e}{}\label{classv8_1_1internal_1_1_incremental_marking_ac3610ac5228196232aa614912951da0e}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Initial\+Marking\+Speed} = 1\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae510a9cfb5e6e34d466919602ca77f0c}{}\label{classv8_1_1internal_1_1_incremental_marking_ae510a9cfb5e6e34d466919602ca77f0c}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Fast\+Marking} = 3\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae884387d0494cd706985806a542c2f1c}{}\label{classv8_1_1internal_1_1_incremental_marking_ae884387d0494cd706985806a542c2f1c}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Marking\+Speed\+Accelleration\+Interval} = 1024\hypertarget{classv8_1_1internal_1_1_incremental_marking_a8d816c8b5386ebdb21a2955a3bc9c5bb}{}\label{classv8_1_1internal_1_1_incremental_marking_a8d816c8b5386ebdb21a2955a3bc9c5bb}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Marking\+Speed\+Accelleration} = 2\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9fcfb82398bbce57562733a5db68da14}{}\label{classv8_1_1internal_1_1_incremental_marking_a9fcfb82398bbce57562733a5db68da14}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Max\+Marking\+Speed} = 1000\hypertarget{classv8_1_1internal_1_1_incremental_marking_a314e6737e94addc5ebe5c45583691bfe}{}\label{classv8_1_1internal_1_1_incremental_marking_a314e6737e94addc5ebe5c45583691bfe}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Idle\+Marking\+Delay\+Counter} = 3\hypertarget{classv8_1_1internal_1_1_incremental_marking_ad2c3253f9a5eef8208d4cdd23d253837}{}\label{classv8_1_1internal_1_1_incremental_marking_ad2c3253f9a5eef8208d4cdd23d253837}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t {\bfseries Space\+Left\+In\+Old\+Space} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ab39ffd5310f618fe95e16742d9a68e53}{}\label{classv8_1_1internal_1_1_incremental_marking_ab39ffd5310f618fe95e16742d9a68e53}
+
+\item 
+void {\bfseries Speed\+Up} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_af20f6f9960f3190b0a3562af894c0402}{}\label{classv8_1_1internal_1_1_incremental_marking_af20f6f9960f3190b0a3562af894c0402}
+
+\item 
+void {\bfseries Reset\+Step\+Counters} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a1a458a77fdee9321a794cb5a947a73a3}{}\label{classv8_1_1internal_1_1_incremental_marking_a1a458a77fdee9321a794cb5a947a73a3}
+
+\item 
+void {\bfseries Start\+Marking} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a257eca349472f1465a4746894d8a9df7}{}\label{classv8_1_1internal_1_1_incremental_marking_a257eca349472f1465a4746894d8a9df7}
+
+\item 
+void {\bfseries Start\+Black\+Allocation} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_ac9c56093722e03188485e64f247ae81f}{}\label{classv8_1_1internal_1_1_incremental_marking_ac9c56093722e03188485e64f247ae81f}
+
+\item 
+void {\bfseries Finish\+Black\+Allocation} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a76c79640b4dd25e5b320b533bec3013c}{}\label{classv8_1_1internal_1_1_incremental_marking_a76c79640b4dd25e5b320b533bec3013c}
+
+\item 
+void {\bfseries Mark\+Roots} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a616234f6bea7e067a3ab1d96daa38a02}{}\label{classv8_1_1internal_1_1_incremental_marking_a616234f6bea7e067a3ab1d96daa38a02}
+
+\item 
+void {\bfseries Mark\+Object\+Groups} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a8cb5daeb15dcb920afb9b08295ddbca8}{}\label{classv8_1_1internal_1_1_incremental_marking_a8cb5daeb15dcb920afb9b08295ddbca8}
+
+\item 
+void {\bfseries Process\+Weak\+Cells} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a53993155bb852fb2787aa48e5be9626f}{}\label{classv8_1_1internal_1_1_incremental_marking_a53993155bb852fb2787aa48e5be9626f}
+
+\item 
+void {\bfseries Retain\+Maps} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3de860fe01450a06ef75b5babb67f6f9}{}\label{classv8_1_1internal_1_1_incremental_marking_a3de860fe01450a06ef75b5babb67f6f9}
+
+\item 
+void {\bfseries Activate\+Incremental\+Write\+Barrier} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a03ba35f881058dd344da108636093dce}{}\label{classv8_1_1internal_1_1_incremental_marking_a03ba35f881058dd344da108636093dce}
+
+\item 
+void {\bfseries Activate\+Incremental\+Write\+Barrier} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3646127f89344bdb13170518a63ee714}{}\label{classv8_1_1internal_1_1_incremental_marking_a3646127f89344bdb13170518a63ee714}
+
+\item 
+void {\bfseries Deactivate\+Incremental\+Write\+Barrier} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_aafb28534ff7c7c06a440a1d66ed03dae}{}\label{classv8_1_1internal_1_1_incremental_marking_aafb28534ff7c7c06a440a1d66ed03dae}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Process\+Marking\+Deque())\hypertarget{classv8_1_1internal_1_1_incremental_marking_a8dd265b431b986696c07c0000e33d028}{}\label{classv8_1_1internal_1_1_incremental_marking_a8dd265b431b986696c07c0000e33d028}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (intptr\+\_\+t Process\+Marking\+Deque(intptr\+\_\+t bytes\+\_\+to\+\_\+process))\hypertarget{classv8_1_1internal_1_1_incremental_marking_a1023877618da3bcbdae22ded2015b2b4}{}\label{classv8_1_1internal_1_1_incremental_marking_a1023877618da3bcbdae22ded2015b2b4}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Visit\+Object(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, int size))\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4441a3e6a1528b3b6de8f0b8a1c71de2}{}\label{classv8_1_1internal_1_1_incremental_marking_a4441a3e6a1528b3b6de8f0b8a1c71de2}
+
+\item 
+void {\bfseries Increment\+Idle\+Marking\+Delay\+Counter} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_a5acce9e63d5075f5157b10f3201647ce}{}\label{classv8_1_1internal_1_1_incremental_marking_a5acce9e63d5075f5157b10f3201647ce}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_incremental_marking}{Incremental\+Marking})\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3591a25caf86401226e4dff4d5dcd8b4}{}\label{classv8_1_1internal_1_1_incremental_marking_a3591a25caf86401226e4dff4d5dcd8b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Activate\+Incremental\+Write\+Barrier} (\hyperlink{classv8_1_1internal_1_1_new_space}{New\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4ad5d6d015ed342e907dc7ff1d1b43bf}{}\label{classv8_1_1internal_1_1_incremental_marking_a4ad5d6d015ed342e907dc7ff1d1b43bf}
+
+\item 
+static void {\bfseries Deactivate\+Incremental\+Write\+Barrier\+For\+Space} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3c43163c8c194ad2e0a231366302d156}{}\label{classv8_1_1internal_1_1_incremental_marking_a3c43163c8c194ad2e0a231366302d156}
+
+\item 
+static void {\bfseries Deactivate\+Incremental\+Write\+Barrier\+For\+Space} (\hyperlink{classv8_1_1internal_1_1_new_space}{New\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_incremental_marking_aa71bed09a08d4c2b837407065cc93586}{}\label{classv8_1_1internal_1_1_incremental_marking_aa71bed09a08d4c2b837407065cc93586}
+
+\item 
+static void {\bfseries Set\+Old\+Space\+Page\+Flags} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, bool is\+\_\+marking, bool is\+\_\+compacting)\hypertarget{classv8_1_1internal_1_1_incremental_marking_adb99a384b676cc6f69a3a4018d7b42b2}{}\label{classv8_1_1internal_1_1_incremental_marking_adb99a384b676cc6f69a3a4018d7b42b2}
+
+\item 
+static void {\bfseries Set\+New\+Space\+Page\+Flags} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, bool is\+\_\+marking)\hypertarget{classv8_1_1internal_1_1_incremental_marking_ae48c56ef00c8e7e801ce30054d8c864e}{}\label{classv8_1_1internal_1_1_incremental_marking_ae48c56ef00c8e7e801ce30054d8c864e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a9d4d60014ca0be58adc934b3605dad5d}{}\label{classv8_1_1internal_1_1_incremental_marking_a9d4d60014ca0be58adc934b3605dad5d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_incremental_marking_1_1_observer}{Observer} {\bfseries observer\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_aff2d099c45b935fa16d1ccbdb4f3786a}{}\label{classv8_1_1internal_1_1_incremental_marking_aff2d099c45b935fa16d1ccbdb4f3786a}
+
+\item 
+State {\bfseries state\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_ad28527ada89f72a6a32cb90a9b5286d6}{}\label{classv8_1_1internal_1_1_incremental_marking_ad28527ada89f72a6a32cb90a9b5286d6}
+
+\item 
+bool {\bfseries is\+\_\+compacting\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3e7a8b28bcd1ce952f46132187093aa0}{}\label{classv8_1_1internal_1_1_incremental_marking_a3e7a8b28bcd1ce952f46132187093aa0}
+
+\item 
+int {\bfseries steps\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_adbe36a396323cc6db46b2efa7e01cb2b}{}\label{classv8_1_1internal_1_1_incremental_marking_adbe36a396323cc6db46b2efa7e01cb2b}
+
+\item 
+int64\+\_\+t {\bfseries old\+\_\+generation\+\_\+space\+\_\+available\+\_\+at\+\_\+start\+\_\+of\+\_\+incremental\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3ee4c2952f81cf6099a5a2e28da6b641}{}\label{classv8_1_1internal_1_1_incremental_marking_a3ee4c2952f81cf6099a5a2e28da6b641}
+
+\item 
+int64\+\_\+t {\bfseries old\+\_\+generation\+\_\+space\+\_\+used\+\_\+at\+\_\+start\+\_\+of\+\_\+incremental\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a499a9395741e22f1373ab2abba348d73}{}\label{classv8_1_1internal_1_1_incremental_marking_a499a9395741e22f1373ab2abba348d73}
+
+\item 
+int64\+\_\+t {\bfseries bytes\+\_\+rescanned\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a68d6607720aae90ac586c547fe9f6cfc}{}\label{classv8_1_1internal_1_1_incremental_marking_a68d6607720aae90ac586c547fe9f6cfc}
+
+\item 
+bool {\bfseries should\+\_\+hurry\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a4b2f810951b66de2fd23529e137ba65e}{}\label{classv8_1_1internal_1_1_incremental_marking_a4b2f810951b66de2fd23529e137ba65e}
+
+\item 
+int {\bfseries marking\+\_\+speed\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a7f80555b1c3d5d64931f6b34b78cee1c}{}\label{classv8_1_1internal_1_1_incremental_marking_a7f80555b1c3d5d64931f6b34b78cee1c}
+
+\item 
+intptr\+\_\+t {\bfseries bytes\+\_\+scanned\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_abda10c4e09264f27b6f1a8bebf622dda}{}\label{classv8_1_1internal_1_1_incremental_marking_abda10c4e09264f27b6f1a8bebf622dda}
+
+\item 
+intptr\+\_\+t {\bfseries allocated\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_aa465895f747d0b32849a8b9df7ef401a}{}\label{classv8_1_1internal_1_1_incremental_marking_aa465895f747d0b32849a8b9df7ef401a}
+
+\item 
+intptr\+\_\+t {\bfseries write\+\_\+barriers\+\_\+invoked\+\_\+since\+\_\+last\+\_\+step\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a72a11649dbdb8b6aaec3923f8a483e33}{}\label{classv8_1_1internal_1_1_incremental_marking_a72a11649dbdb8b6aaec3923f8a483e33}
+
+\item 
+size\+\_\+t {\bfseries idle\+\_\+marking\+\_\+delay\+\_\+counter\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a3e7d29039db803ee81041963211f2ba7}{}\label{classv8_1_1internal_1_1_incremental_marking_a3e7d29039db803ee81041963211f2ba7}
+
+\item 
+int {\bfseries unscanned\+\_\+bytes\+\_\+of\+\_\+large\+\_\+object\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a0cc07487ed284e957ecf7992e826550a}{}\label{classv8_1_1internal_1_1_incremental_marking_a0cc07487ed284e957ecf7992e826550a}
+
+\item 
+bool {\bfseries was\+\_\+activated\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a93f3d11950a46d825fe1134664f7c494}{}\label{classv8_1_1internal_1_1_incremental_marking_a93f3d11950a46d825fe1134664f7c494}
+
+\item 
+bool {\bfseries black\+\_\+allocation\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a70dec2f95a88585dde4982751e01d620}{}\label{classv8_1_1internal_1_1_incremental_marking_a70dec2f95a88585dde4982751e01d620}
+
+\item 
+bool {\bfseries finalize\+\_\+marking\+\_\+completed\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_aca3d5e5f819b0fc609e2457a72a4eb4f}{}\label{classv8_1_1internal_1_1_incremental_marking_aca3d5e5f819b0fc609e2457a72a4eb4f}
+
+\item 
+int {\bfseries incremental\+\_\+marking\+\_\+finalization\+\_\+rounds\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a77254ee5de84dcc44b96f37309ebe741}{}\label{classv8_1_1internal_1_1_incremental_marking_a77254ee5de84dcc44b96f37309ebe741}
+
+\item 
+G\+C\+Request\+Type {\bfseries request\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_a6b841697fd2e825b9240be7729c4bdee}{}\label{classv8_1_1internal_1_1_incremental_marking_a6b841697fd2e825b9240be7729c4bdee}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_incremental_marking_job}{Incremental\+Marking\+Job} {\bfseries incremental\+\_\+marking\+\_\+job\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_af081770b247280b279139af6e857e98f}{}\label{classv8_1_1internal_1_1_incremental_marking_af081770b247280b279139af6e857e98f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/incremental-\/marking.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/incremental-\/marking.\+cc\end{DoxyCompactItemize}

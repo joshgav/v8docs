@@ -1,0 +1,127 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:C\+F\+G\+Builder Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder}\index{v8\+::internal\+::compiler\+::\+C\+F\+G\+Builder@{v8\+::internal\+::compiler\+::\+C\+F\+G\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:C\+F\+G\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+F\+G\+Builder} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_scheduler}{Scheduler} $\ast$scheduler)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a55aaa61346c562b0bc9e16d2181e7bb4}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a55aaa61346c562b0bc9e16d2181e7bb4}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a059f288038f20f74a4fea7a359584e72}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a059f288038f20f74a4fea7a359584e72}
+
+\item 
+void {\bfseries Run} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$exit)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a5886ce6f548528e88b24901f46ac63b3}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a5886ce6f548528e88b24901f46ac63b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Fix\+Node} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ac54fa2c286d56a35536857956d7fa6d1}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ac54fa2c286d56a35536857956d7fa6d1}
+
+\item 
+void {\bfseries Queue} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af7909ad1bfea7d00b68a9723a2049033}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af7909ad1bfea7d00b68a9723a2049033}
+
+\item 
+void {\bfseries Build\+Blocks} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a21ec99e113eace189742c17454bcbafd}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a21ec99e113eace189742c17454bcbafd}
+
+\item 
+void {\bfseries Connect\+Blocks} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_acd06da25a652789d45fcf9ac801cf6ce}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_acd06da25a652789d45fcf9ac801cf6ce}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$ {\bfseries Build\+Block\+For\+Node} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af6cd390938515164204c103d519fd2e6}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af6cd390938515164204c103d519fd2e6}
+
+\item 
+void {\bfseries Build\+Blocks\+For\+Successors} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af922e46d612cbfba13ff999c217ea7a3}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af922e46d612cbfba13ff999c217ea7a3}
+
+\item 
+void {\bfseries Collect\+Successor\+Blocks} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$$\ast$successor\+\_\+blocks, size\+\_\+t successor\+\_\+cnt)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aa06a0e088cfd9392eb99094e58a02d60}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aa06a0e088cfd9392eb99094e58a02d60}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$ {\bfseries Find\+Predecessor\+Block} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a8b1e2d034d5a9f9f21f7e1aa496eaed6}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a8b1e2d034d5a9f9f21f7e1aa496eaed6}
+
+\item 
+void {\bfseries Connect\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$call)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aad29b1ffbafd2401950ec3f5affc0876}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aad29b1ffbafd2401950ec3f5affc0876}
+
+\item 
+void {\bfseries Connect\+Branch} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$branch)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aef2220bbd479ff2d84aaddbd1e981187}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aef2220bbd479ff2d84aaddbd1e981187}
+
+\item 
+void {\bfseries Connect\+Switch} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$sw)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af7d0ad13e55c1334fa66dec97fc38c6e}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_af7d0ad13e55c1334fa66dec97fc38c6e}
+
+\item 
+void {\bfseries Connect\+Merge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$merge)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_acadcbbf948a0fca93b1814442250b552}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_acadcbbf948a0fca93b1814442250b552}
+
+\item 
+void {\bfseries Connect\+Tail\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$call)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ae7d627a529e854256ca823a92fab318f}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ae7d627a529e854256ca823a92fab318f}
+
+\item 
+void {\bfseries Connect\+Return} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ret)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a6e685bb1fe3d601d1c7a094d0b025131}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a6e685bb1fe3d601d1c7a094d0b025131}
+
+\item 
+void {\bfseries Connect\+Deoptimize} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$deopt)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ac886a09a44e2f1b57fa9ba83c0f52c3e}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ac886a09a44e2f1b57fa9ba83c0f52c3e}
+
+\item 
+void {\bfseries Connect\+Throw} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$thr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a887c106ad24dc55d9be556c2d72730bb}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a887c106ad24dc55d9be556c2d72730bb}
+
+\item 
+void {\bfseries Trace\+Connect} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$succ)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a2efb10eb389f850654ac35ae79f7ea87}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a2efb10eb389f850654ac35ae79f7ea87}
+
+\item 
+bool {\bfseries Is\+Final\+Merge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a3d77ccf11a93ef29d1fc54f82573e077}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a3d77ccf11a93ef29d1fc54f82573e077}
+
+\item 
+bool {\bfseries Is\+Single\+Entry\+Single\+Exit\+Region} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$entry, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$exit) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_abc771ad54877331a176f7b4bb99f33bc}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_abc771ad54877331a176f7b4bb99f33bc}
+
+\item 
+void {\bfseries Reset\+Data\+Structures} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a26139ea8c5adb741219475a91d3709a4}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a26139ea8c5adb741219475a91d3709a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a2b167ce0e137915ff6c1810f3cbfe875}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a2b167ce0e137915ff6c1810f3cbfe875}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_scheduler}{Scheduler} $\ast$ {\bfseries scheduler\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a69ef026b1a1ef3de1e8c620f62317419}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a69ef026b1a1ef3de1e8c620f62317419}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$ {\bfseries schedule\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a77cae4c29d3c3cbb369d08792af17597}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a77cae4c29d3c3cbb369d08792af17597}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node_marker}{Node\+Marker}$<$ bool $>$ {\bfseries queued\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a1dd7f70d0eec1ae874f01b72cd7d5044}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a1dd7f70d0eec1ae874f01b72cd7d5044}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_queue}{Zone\+Queue}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries queue\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a97e4f6be72fc3a8dc841c3c43a9f3ad4}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a97e4f6be72fc3a8dc841c3c43a9f3ad4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector} {\bfseries control\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a9317473802690259f5e2a990fdc5defe}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a9317473802690259f5e2a990fdc5defe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries component\+\_\+entry\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a16d99cbcceb8239c6e122bcd0de39ef1}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a16d99cbcceb8239c6e122bcd0de39ef1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$ {\bfseries component\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ace7d646ad548bb7d4077256eaaf39e0a}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_ace7d646ad548bb7d4077256eaaf39e0a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$ {\bfseries component\+\_\+end\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aaf56db3790753776d29ada129c46001e}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_aaf56db3790753776d29ada129c46001e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Schedule\+Late\+Node\+Visitor}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a1323738e293e91819df22cb24f986016}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_a1323738e293e91819df22cb24f986016}
+
+\item 
+class {\bfseries Scheduler}\hypertarget{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}{}\label{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder_afb88c77ea5daaefa6c8fa6bc5b9aa5c1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/scheduler.\+cc\end{DoxyCompactItemize}

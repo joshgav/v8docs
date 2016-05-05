@@ -1,0 +1,109 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Typer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_typer}\index{v8\+::internal\+::compiler\+::\+Typer@{v8\+::internal\+::compiler\+::\+Typer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_typer_1_1_decorator}{Decorator}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_typer_1_1_visitor}{Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Flag} \{ \\*
+{\bfseries k\+No\+Flags} = 0u, 
+\\*
+{\bfseries k\+Deoptimization\+Enabled} = 1u $<$$<$ 0
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_aff1857a765552203f6a0f15862f5f8ae}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_aff1857a765552203f6a0f15862f5f8ae}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Flag $>$ {\bfseries Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a336f508fa4ab10c188bf3e7e00e21292}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a336f508fa4ab10c188bf3e7e00e21292}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Typer} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags=k\+No\+Flags, \hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$dependencies=nullptr, \hyperlink{classv8_1_1internal_1_1_function_type}{Function\+Type} $\ast$function\+\_\+type=nullptr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ac496be5e25da0213df597e90ad43107d}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ac496be5e25da0213df597e90ad43107d}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a237e27a719f52772f0c03bb181dd67b1}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a237e27a719f52772f0c03bb181dd67b1}
+
+\item 
+void {\bfseries Run} (const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ \&roots)\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_aa590f92fff0e87a20771428878cc723e}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_aa590f92fff0e87a20771428878cc723e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a2f6815f33ae1f66cfb7fc1c8654c8cbe}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a2f6815f33ae1f66cfb7fc1c8654c8cbe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a7e085b7d3b2fcf3a4f6a0a45fb2addc8}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a7e085b7d3b2fcf3a4f6a0a45fb2addc8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a9144f8251da016d88f408579b3cf404e}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a9144f8251da016d88f408579b3cf404e}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a9e73e4cdc00b8ad67fa48d1402f00fa8}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a9e73e4cdc00b8ad67fa48d1402f00fa8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$ {\bfseries dependencies} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a159305a8c6a4753b2c63c3b8f7603c0e}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a159305a8c6a4753b2c63c3b8f7603c0e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_type}{Function\+Type} $\ast$ {\bfseries function\+\_\+type} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a42a193dde5f6a5c2d12004fe8669782e}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a42a193dde5f6a5c2d12004fe8669782e}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_typer}{Typer})\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_aab1466c9549dfd7374a7fca1d4f47963}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_aab1466c9549dfd7374a7fca1d4f47963}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$const {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ab4b46c85eb2668d15e21ed37767f252f}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ab4b46c85eb2668d15e21ed37767f252f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$const {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_aa5b6f4607ef6003615118d58a9c8f170}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_aa5b6f4607ef6003615118d58a9c8f170}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} const {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a36cb65c8fbedfbed5f4eb19471f6f807}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a36cb65c8fbedfbed5f4eb19471f6f807}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$const {\bfseries dependencies\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ac85bf515e98bbfe599fd45bba8922b05}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ac85bf515e98bbfe599fd45bba8922b05}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_type}{Function\+Type} $\ast$ {\bfseries function\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ad9553dd4a7384bb492192a893a17827e}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ad9553dd4a7384bb492192a893a17827e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_typer_1_1_decorator}{Decorator} $\ast$ {\bfseries decorator\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a5a2c27b82e89582d859e394a0d25dc2f}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a5a2c27b82e89582d859e394a0d25dc2f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_cache}{Type\+Cache} const \& {\bfseries cache\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a102b035ecc0ae9f1a8b9227d2d8608d6}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a102b035ecc0ae9f1a8b9227d2d8608d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries singleton\+\_\+false\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a9e6b62bbcd79b013a6f0c198ce2f0ae0}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a9e6b62bbcd79b013a6f0c198ce2f0ae0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries singleton\+\_\+true\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a4dec4c1f998bcb8c9dd11809fd5c1584}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a4dec4c1f998bcb8c9dd11809fd5c1584}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries singleton\+\_\+the\+\_\+hole\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ad3f84cda1de0f3736be0c0e678325037}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ad3f84cda1de0f3736be0c0e678325037}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries signed32ish\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a168dd4db5dfcf0268b641579723ea5bc}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a168dd4db5dfcf0268b641579723ea5bc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries unsigned32ish\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_a050bfeaea1ae3e0871c9c4f48a69091b}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_a050bfeaea1ae3e0871c9c4f48a69091b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries falsish\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ad9af258e1ccd33944662e7e0f3beb696}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ad9af258e1ccd33944662e7e0f3beb696}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries truish\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_typer_ad2e61c4e1cab77df677a3d479a769fa8}{}\label{classv8_1_1internal_1_1compiler_1_1_typer_ad2e61c4e1cab77df677a3d479a769fa8}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/typer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/typer.\+cc\end{DoxyCompactItemize}

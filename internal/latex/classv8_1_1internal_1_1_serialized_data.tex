@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1_serialized_data}{}\section{v8\+:\+:internal\+:\+:Serialized\+Data Class Reference}
+\label{classv8_1_1internal_1_1_serialized_data}\index{v8\+::internal\+::\+Serialized\+Data@{v8\+::internal\+::\+Serialized\+Data}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serialized\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_serialized_data}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_serialized_data_1_1_chunk_size_bits}{Chunk\+Size\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_serialized_data_1_1_is_last_chunk_bits}{Is\+Last\+Chunk\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_serialized_data_1_1_reservation}{Reservation}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Serialized\+Data} (byte $\ast$data, int size)\hypertarget{classv8_1_1internal_1_1_serialized_data_a742e9fe1c13ef44ebe723558a9b33326}{}\label{classv8_1_1internal_1_1_serialized_data_a742e9fe1c13ef44ebe723558a9b33326}
+
+\item 
+uint32\+\_\+t {\bfseries Get\+Magic\+Number} () const \hypertarget{classv8_1_1internal_1_1_serialized_data_a6bac5981722592d6ba02e496370a79f3}{}\label{classv8_1_1internal_1_1_serialized_data_a6bac5981722592d6ba02e496370a79f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries Compute\+Magic\+Number} (\hyperlink{classv8_1_1internal_1_1_external_reference_table}{External\+Reference\+Table} $\ast$table)\hypertarget{classv8_1_1internal_1_1_serialized_data_a86390ee13da8e398dc0bbcccd86b9a47}{}\label{classv8_1_1internal_1_1_serialized_data_a86390ee13da8e398dc0bbcccd86b9a47}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Header\+Value} (int offset, uint32\+\_\+t value)\hypertarget{classv8_1_1internal_1_1_serialized_data_ad1a6324c2b49b03630007e2037e37105}{}\label{classv8_1_1internal_1_1_serialized_data_ad1a6324c2b49b03630007e2037e37105}
+
+\item 
+uint32\+\_\+t {\bfseries Get\+Header\+Value} (int offset) const \hypertarget{classv8_1_1internal_1_1_serialized_data_a7eba2d739000cf73e89225159ec215d1}{}\label{classv8_1_1internal_1_1_serialized_data_a7eba2d739000cf73e89225159ec215d1}
+
+\item 
+void {\bfseries Allocate\+Data} (int size)\hypertarget{classv8_1_1internal_1_1_serialized_data_aa9b234507446a6251c5043d7f4e19b12}{}\label{classv8_1_1internal_1_1_serialized_data_aa9b234507446a6251c5043d7f4e19b12}
+
+\item 
+void {\bfseries Set\+Magic\+Number} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_serialized_data_a308da3a8f7ace2ead9fc60a0a12f1716}{}\label{classv8_1_1internal_1_1_serialized_data_a308da3a8f7ace2ead9fc60a0a12f1716}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries Compute\+Magic\+Number} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_serialized_data_ae6d01b429a6eff04dc1b7c3f7dcfa7dd}{}\label{classv8_1_1internal_1_1_serialized_data_ae6d01b429a6eff04dc1b7c3f7dcfa7dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte $\ast$ {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1_serialized_data_a64749942df326ecb95dde8af526157ee}{}\label{classv8_1_1internal_1_1_serialized_data_a64749942df326ecb95dde8af526157ee}
+
+\item 
+int {\bfseries size\+\_\+}\hypertarget{classv8_1_1internal_1_1_serialized_data_ae71136bca7d33ec77726470ee8543485}{}\label{classv8_1_1internal_1_1_serialized_data_ae71136bca7d33ec77726470ee8543485}
+
+\item 
+bool {\bfseries owns\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_serialized_data_a755ae910320bb00afc3721c8e270560f}{}\label{classv8_1_1internal_1_1_serialized_data_a755ae910320bb00afc3721c8e270560f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Magic\+Number\+Offset} = 0\hypertarget{classv8_1_1internal_1_1_serialized_data_af2bb5ac5d5543b2d537b43c74b3dec8f}{}\label{classv8_1_1internal_1_1_serialized_data_af2bb5ac5d5543b2d537b43c74b3dec8f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/serializer-\/common.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/serializer-\/common.\+cc\end{DoxyCompactItemize}

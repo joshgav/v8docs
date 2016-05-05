@@ -1,0 +1,141 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator\+Verifier Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier}\index{v8\+::internal\+::compiler\+::\+Register\+Allocator\+Verifier@{v8\+::internal\+::compiler\+::\+Register\+Allocator\+Verifier}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator\+Verifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_delayed_assessments}{Delayed\+Assessments}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_instruction_constraint}{Instruction\+Constraint}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Register\+Allocator\+Verifier} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{classv8_1_1internal_1_1_register_configuration}{Register\+Configuration} $\ast$config, const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_sequence}{Instruction\+Sequence} $\ast$sequence)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_aef6d8bede5616df7292f7552f785798a}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_aef6d8bede5616df7292f7552f785798a}
+
+\item 
+void {\bfseries Verify\+Assignment} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3500fd8b38b9129d47993897d4e8a9bc}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3500fd8b38b9129d47993897d4e8a9bc}
+
+\item 
+void {\bfseries Verify\+Gap\+Moves} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3243175f280f32d532c39c297cfb23f9}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3243175f280f32d532c39c297cfb23f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Constraint\+Type} \{ \\*
+{\bfseries k\+Constant}, 
+\\*
+{\bfseries k\+Immediate}, 
+\\*
+{\bfseries k\+Register}, 
+\\*
+{\bfseries k\+Fixed\+Register}, 
+\\*
+{\bfseries k\+Double\+Register}, 
+\\*
+{\bfseries k\+Fixed\+Double\+Register}, 
+\\*
+{\bfseries k\+Slot}, 
+\\*
+{\bfseries k\+Double\+Slot}, 
+\\*
+{\bfseries k\+Fixed\+Slot}, 
+\\*
+{\bfseries k\+None}, 
+\\*
+{\bfseries k\+None\+Double}, 
+\\*
+{\bfseries k\+Explicit}, 
+\\*
+{\bfseries k\+Same\+As\+First}, 
+\\*
+{\bfseries k\+Register\+And\+Slot}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a714c5a060774496ca54ea2f5ea242cf9}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a714c5a060774496ca54ea2f5ea242cf9}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_instruction_constraint}{Instruction\+Constraint} $>$ {\bfseries Constraints}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3ea6e74f3b2a72913ea923a80c2469ce}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3ea6e74f3b2a72913ea923a80c2469ce}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a4906ddee483016d5bf8f46fd077032f7}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a4906ddee483016d5bf8f46fd077032f7}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_register_configuration}{Register\+Configuration} $\ast$ {\bfseries config} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ae467b5a1da6be846a0c76ad7051b150e}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ae467b5a1da6be846a0c76ad7051b150e}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_sequence}{Instruction\+Sequence} $\ast$ {\bfseries sequence} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3f184dbb2f398b72cb6ab80ada2e0baf}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3f184dbb2f398b72cb6ab80ada2e0baf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Constraints} $\ast$ {\bfseries constraints} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a51dda432132992020f0405a173bc87fd}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a51dda432132992020f0405a173bc87fd}
+
+\item 
+void {\bfseries Build\+Constraint} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} $\ast$op, \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint} $\ast$constraint)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_abf7773216181a4e5da1f4392144012e7}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_abf7773216181a4e5da1f4392144012e7}
+
+\item 
+void {\bfseries Check\+Constraint} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} $\ast$op, const \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint} $\ast$constraint)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_af3a878e7c82e41d60be16c1ddf784cc3}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_af3a878e7c82e41d60be16c1ddf784cc3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$ {\bfseries Create\+For\+Block} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_block}{Instruction\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a5edd20478c96912640e9b5eb44c5dd31}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a5edd20478c96912640e9b5eb44c5dd31}
+
+\item 
+void {\bfseries Validate\+Pending\+Assessment} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} block\+\_\+id, \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} op, \hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$current\+\_\+assessments, const \hyperlink{classv8_1_1internal_1_1compiler_1_1_pending_assessment}{Pending\+Assessment} $\ast$assessment, int virtual\+\_\+register)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a5545bcf259e7e200860dd1de61e8f0be}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a5545bcf259e7e200860dd1de61e8f0be}
+
+\item 
+void {\bfseries Validate\+Final\+Assessment} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} block\+\_\+id, \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} op, \hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$current\+\_\+assessments, const \hyperlink{classv8_1_1internal_1_1compiler_1_1_final_assessment}{Final\+Assessment} $\ast$assessment, int virtual\+\_\+register)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a1ea98fe1d7874f21924ef5311fce7bfd}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a1ea98fe1d7874f21924ef5311fce7bfd}
+
+\item 
+void {\bfseries Validate\+Use} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} block\+\_\+id, \hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$current\+\_\+assessments, \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} op, int virtual\+\_\+register)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ab3d1de7fe1344cb29f63392cd3176c08}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ab3d1de7fe1344cb29f63392cd3176c08}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier}{Register\+Allocator\+Verifier})\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a9f8a03eee4d580b5392f9cb9dcf0109e}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a9f8a03eee4d580b5392f9cb9dcf0109e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Verify\+Input} (const \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint} \&constraint)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a75476982059c67a254a512c9298d910d}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a75476982059c67a254a512c9298d910d}
+
+\item 
+static void {\bfseries Verify\+Temp} (const \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint} \&constraint)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a8a7c537d5bfdb3589196741eaa99d482}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a8a7c537d5bfdb3589196741eaa99d482}
+
+\item 
+static void {\bfseries Verify\+Output} (const \hyperlink{structv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_operand_constraint}{Operand\+Constraint} \&constraint)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a477aa74a6f1f6df0c506d40060767094}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a477aa74a6f1f6df0c506d40060767094}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$const {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_afb7f021b8320f88c7578d12f313b5696}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_afb7f021b8320f88c7578d12f313b5696}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_register_configuration}{Register\+Configuration} $\ast$ {\bfseries config\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_afd4d55a80bffe9e7d99fcfb900e1e67c}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_afd4d55a80bffe9e7d99fcfb900e1e67c}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_sequence}{Instruction\+Sequence} $\ast$const {\bfseries sequence\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a87a568e5f4af4eeba760cfc2bb614b3e}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a87a568e5f4af4eeba760cfc2bb614b3e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Constraints} {\bfseries constraints\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3dfdf2dca33511bccc17194da1766ffb}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a3dfdf2dca33511bccc17194da1766ffb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_map}{Zone\+Map}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number}, \hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$ $>$ {\bfseries assessments\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a753a889288c66932a1125bc2b7b3682b}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_a753a889288c66932a1125bc2b7b3682b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_map}{Zone\+Map}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number}, \hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_1_1_delayed_assessments}{Delayed\+Assessments} $\ast$ $>$ {\bfseries outstanding\+\_\+assessments\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ae514b45465a15515c0b207dd7f5c02d9}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_verifier_ae514b45465a15515c0b207dd7f5c02d9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator-\/verifier.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator-\/verifier.\+cc\end{DoxyCompactItemize}

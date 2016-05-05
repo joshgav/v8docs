@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache}{}\section{v8\+:\+:internal\+:\+:Compilation\+Sub\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_compilation_sub_cache}\index{v8\+::internal\+::\+Compilation\+Sub\+Cache@{v8\+::internal\+::\+Compilation\+Sub\+Cache}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compilation\+Sub\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.602289cm]{classv8_1_1internal_1_1_compilation_sub_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Compilation\+Sub\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int generations)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a33089004169c56ebb3bcb3d52c17da1f}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a33089004169c56ebb3bcb3d52c17da1f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ {\bfseries Get\+Table} (int generation)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a022b165acb35e9396529db1b8890c12b}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a022b165acb35e9396529db1b8890c12b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ {\bfseries Get\+First\+Table} ()\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_ae3ea21dea1eae5c6a87757a3b22bd580}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_ae3ea21dea1eae5c6a87757a3b22bd580}
+
+\item 
+void {\bfseries Set\+First\+Table} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ value)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_ae7a8d0f24eed9faee92379512444c68b}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_ae7a8d0f24eed9faee92379512444c68b}
+
+\item 
+void {\bfseries Age} ()\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a5cce5a7f798869e8f075334d11a04fa5}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a5cce5a7f798869e8f075334d11a04fa5}
+
+\item 
+void {\bfseries Iterate} (Object\+Visitor $\ast$v)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a7dd2c58e4cb9d6404b0d176ce526ad37}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a7dd2c58e4cb9d6404b0d176ce526ad37}
+
+\item 
+void {\bfseries Iterate\+Functions} (Object\+Visitor $\ast$v)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_abe652de54c8b1abb6210ddfc513b28cb}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_abe652de54c8b1abb6210ddfc513b28cb}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a9d3e099a1911e1e7a836b7df82d2e03b}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a9d3e099a1911e1e7a836b7df82d2e03b}
+
+\item 
+void {\bfseries Remove} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ function\+\_\+info)\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a3fd0a729c12e76a804fc2fe3145ffd56}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a3fd0a729c12e76a804fc2fe3145ffd56}
+
+\item 
+int {\bfseries generations} ()\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_aa52ea32923a9315f2737467f210b8704}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_aa52ea32923a9315f2737467f210b8704}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+First\+Generation} = 0\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_ac9d60da247fabc94383eabd9825fc203}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_ac9d60da247fabc94383eabd9825fc203}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_ade6feffbd1eb87a71e3bcfabe1d675d6}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_ade6feffbd1eb87a71e3bcfabe1d675d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_compilation_sub_cache}{Compilation\+Sub\+Cache})\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a6e2fcc573cc1e86bf23005fb9b88fddf}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a6e2fcc573cc1e86bf23005fb9b88fddf}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_acdd8abd04c2c7b7c742ba07178661c15}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_acdd8abd04c2c7b7c742ba07178661c15}
+
+\item 
+int {\bfseries generations\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_af3d6be1fcdb85d2aee266e6add9d84e1}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_af3d6be1fcdb85d2aee266e6add9d84e1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries tables\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_sub_cache_a5280f3542ba516a962cbcc44616304eb}{}\label{classv8_1_1internal_1_1_compilation_sub_cache_a5280f3542ba516a962cbcc44616304eb}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compilation-\/cache.\+h\item 
+/\+Users/joshgav/node/v8/src/compilation-\/cache.\+cc\end{DoxyCompactItemize}

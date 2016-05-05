@@ -1,0 +1,142 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Effect\+Control\+Linearizer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer}\index{v8\+::internal\+::compiler\+::\+Effect\+Control\+Linearizer@{v8\+::internal\+::compiler\+::\+Effect\+Control\+Linearizer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Effect\+Control\+Linearizer} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$schedule, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$temp\+\_\+zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a887f7195e739a039bd3150698754ffbf}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a887f7195e739a039bd3150698754ffbf}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a0b8094e555107a310d24e6160255acc3}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a0b8094e555107a310d24e6160255acc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Process\+Node} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$current\+\_\+effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a932ad56912911e2bb011ddc0cde31a0d}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a932ad56912911e2bb011ddc0cde31a0d}
+
+\item 
+bool {\bfseries Try\+Wire\+In\+State\+Effect} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_adf58726813a88b9dd60549eb98bd22bc}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_adf58726813a88b9dd60549eb98bd22bc}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Bit\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_aa824aa902f59214e7be83103fe69e704}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_aa824aa902f59214e7be83103fe69e704}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Int31\+To\+Tagged\+Signed} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a9471d0ba5d3157384df2801bc056febc}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a9471d0ba5d3157384df2801bc056febc}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Int32\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab92778dc4cf29f92ccfc10441132329a}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab92778dc4cf29f92ccfc10441132329a}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Uint32\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a910eda16feb40134ab9952553d7c03e7}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a910eda16feb40134ab9952553d7c03e7}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Float64\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a02b7f3b595157a1027fc38c7adb79278}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a02b7f3b595157a1027fc38c7adb79278}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Tagged\+Signed\+To\+Int32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a1d8f42a306bdab82eb227380b0a548e7}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a1d8f42a306bdab82eb227380b0a548e7}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Tagged\+To\+Bit} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a14a552104c6799124f9badbda902cb5a}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a14a552104c6799124f9badbda902cb5a}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Tagged\+To\+Int32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a5edfc3f855c4f0f80ee717e228937f68}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a5edfc3f855c4f0f80ee717e228937f68}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Tagged\+To\+Uint32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a71dcfef55dbbecfbb8379bf0c7a98cec}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a71dcfef55dbbecfbb8379bf0c7a98cec}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Change\+Tagged\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_acc0e289b90bb45a1e9a7bcfc03df3402}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_acc0e289b90bb45a1e9a7bcfc03df3402}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Truncate\+Tagged\+To\+Word32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a18b3859f5004bf33485a439c09e594a1}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a18b3859f5004bf33485a439c09e594a1}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+Callable} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a0b40a22a58723068882548966d1764a5}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a0b40a22a58723068882548966d1764a5}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+Number} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a5b4da64c6d97921fe4097193d1776dc9}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a5b4da64c6d97921fe4097193d1776dc9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+Receiver} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a69d7278130e222943976f0c71aacb36b}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a69d7278130e222943976f0c71aacb36b}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_aa3e075f0e784b7f7fc22600942f03a88}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_aa3e075f0e784b7f7fc22600942f03a88}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+String} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a86b73ecc05c6eeede772a07da9f420ef}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a86b73ecc05c6eeede772a07da9f420ef}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Lower\+Object\+Is\+Undetectable} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6d44ab5b30594093f30675d0b85e3d83}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6d44ab5b30594093f30675d0b85e3d83}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_1_1_value_effect_control}{Value\+Effect\+Control} {\bfseries Allocate\+Heap\+Number\+With\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a7b0310dc65a0f00210d5a0d168a9bc5f}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a7b0310dc65a0f00210d5a0d168a9bc5f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Change\+Int32\+To\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ae4190cbf2d27c48f2a23d09144550686}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ae4190cbf2d27c48f2a23d09144550686}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Change\+Uint32\+To\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a07b0b132c237a6afeff35ae76715a2f4}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a07b0b132c237a6afeff35ae76715a2f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Change\+Int32\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a7a935afbeca29c95b7b3c433c03066fc}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a7a935afbeca29c95b7b3c433c03066fc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Change\+Uint32\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a40d6b926781a368cbff40bf6fdbd432d}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a40d6b926781a368cbff40bf6fdbd432d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Change\+Smi\+To\+Int32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6fd6c07be7ac549f4a98351c366cbee3}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6fd6c07be7ac549f4a98351c366cbee3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Object\+Is\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a23967bf369e9615bffca951bed178aa7}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a23967bf369e9615bffca951bed178aa7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Smi\+Max\+Value\+Constant} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab1e779aa54124c4655ed83f9a0bddd11}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab1e779aa54124c4655ed83f9a0bddd11}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Smi\+Shift\+Bits\+Constant} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a1c679687580bb647eec23c799bf15a8b}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a1c679687580bb647eec23c799bf15a8b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a3896db50a66acb2f2f7ce0d9c38ebc54}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a3896db50a66acb2f2f7ce0d9c38ebc54}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a122858868150c767ba43ee68075b41a2}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a122858868150c767ba43ee68075b41a2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$ {\bfseries schedule} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a969b1a2ac1463613853ccf1c1d458ad3}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a969b1a2ac1463613853ccf1c1d458ad3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries temp\+\_\+zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6602d62befbff08857b00c04001fdcd3}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a6602d62befbff08857b00c04001fdcd3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a607f4e13f9c1f95f5bdf2c8655965bd7}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a607f4e13f9c1f95f5bdf2c8655965bd7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_simplified_operator_builder}{Simplified\+Operator\+Builder} $\ast$ {\bfseries simplified} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a25d35003ab4db9f7880162f49872b36e}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a25d35003ab4db9f7880162f49872b36e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_machine_operator_builder}{Machine\+Operator\+Builder} $\ast$ {\bfseries machine} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab0f653a4964a35173b154fe4e5bc950f}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ab0f653a4964a35173b154fe4e5bc950f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries js\+\_\+graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ae54c9b1c575397acf72a6833afdb4063}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_ae54c9b1c575397acf72a6833afdb4063}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$ {\bfseries schedule\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a67510b7e49b6d1e1ade18bc4af7220d1}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a67510b7e49b6d1e1ade18bc4af7220d1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries temp\+\_\+zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a9d50acdf180e890379d6248df5fa89dd}{}\label{classv8_1_1internal_1_1compiler_1_1_effect_control_linearizer_a9d50acdf180e890379d6248df5fa89dd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/effect-\/control-\/linearizer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/effect-\/control-\/linearizer.\+cc\end{DoxyCompactItemize}

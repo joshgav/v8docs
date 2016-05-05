@@ -1,0 +1,114 @@
+\hypertarget{classv8_1_1internal_1_1_register_configuration}{}\section{v8\+:\+:internal\+:\+:Register\+Configuration Class Reference}
+\label{classv8_1_1internal_1_1_register_configuration}\index{v8\+::internal\+::\+Register\+Configuration@{v8\+::internal\+::\+Register\+Configuration}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Compiler\+Selector} \{ \\*
+{\bfseries C\+R\+A\+N\+K\+S\+H\+A\+FT}, 
+\\*
+{\bfseries T\+U\+R\+B\+O\+F\+AN}
+ \}\hypertarget{classv8_1_1internal_1_1_register_configuration_aba21e38f08763ea313b7f039521f349c}{}\label{classv8_1_1internal_1_1_register_configuration_aba21e38f08763ea313b7f039521f349c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Register\+Configuration} (int num\+\_\+general\+\_\+registers, int num\+\_\+double\+\_\+registers, int num\+\_\+allocatable\+\_\+general\+\_\+registers, int num\+\_\+allocatable\+\_\+double\+\_\+registers, int num\+\_\+allocatable\+\_\+aliased\+\_\+double\+\_\+registers, const int $\ast$allocatable\+\_\+general\+\_\+codes, const int $\ast$allocatable\+\_\+double\+\_\+codes, char const $\ast$const $\ast$general\+\_\+names, char const $\ast$const $\ast$double\+\_\+names)\hypertarget{classv8_1_1internal_1_1_register_configuration_a58ed87727f2fd0fba64deeb516e312b0}{}\label{classv8_1_1internal_1_1_register_configuration_a58ed87727f2fd0fba64deeb516e312b0}
+
+\item 
+int {\bfseries num\+\_\+general\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_ac2b6084ce237de79e536a6685a1d7a6d}{}\label{classv8_1_1internal_1_1_register_configuration_ac2b6084ce237de79e536a6685a1d7a6d}
+
+\item 
+int {\bfseries num\+\_\+double\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_a4031463fc98d768afbd8398f66cd9b79}{}\label{classv8_1_1internal_1_1_register_configuration_a4031463fc98d768afbd8398f66cd9b79}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+general\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_a24d15e318257d2e96f33a02bb66519ba}{}\label{classv8_1_1internal_1_1_register_configuration_a24d15e318257d2e96f33a02bb66519ba}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+double\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_afe91ba60efd7b64486ea3a9c60c068ca}{}\label{classv8_1_1internal_1_1_register_configuration_afe91ba60efd7b64486ea3a9c60c068ca}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+aliased\+\_\+double\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_af3d456812b38ba0fe326f738e5249e89}{}\label{classv8_1_1internal_1_1_register_configuration_af3d456812b38ba0fe326f738e5249e89}
+
+\item 
+int32\+\_\+t {\bfseries allocatable\+\_\+general\+\_\+codes\+\_\+mask} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_ad1806f638c8fa19aebdd1584da66b73f}{}\label{classv8_1_1internal_1_1_register_configuration_ad1806f638c8fa19aebdd1584da66b73f}
+
+\item 
+int32\+\_\+t {\bfseries allocatable\+\_\+double\+\_\+codes\+\_\+mask} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_a3872b45897945da97ac63b6f02e04cfc}{}\label{classv8_1_1internal_1_1_register_configuration_a3872b45897945da97ac63b6f02e04cfc}
+
+\item 
+int {\bfseries Get\+Allocatable\+General\+Code} (int index) const \hypertarget{classv8_1_1internal_1_1_register_configuration_a269d310a1bd9cdd73a67366c6f0c0726}{}\label{classv8_1_1internal_1_1_register_configuration_a269d310a1bd9cdd73a67366c6f0c0726}
+
+\item 
+int {\bfseries Get\+Allocatable\+Double\+Code} (int index) const \hypertarget{classv8_1_1internal_1_1_register_configuration_aff8be8da85daf800e8979f05e6a34d1e}{}\label{classv8_1_1internal_1_1_register_configuration_aff8be8da85daf800e8979f05e6a34d1e}
+
+\item 
+const char $\ast$ {\bfseries Get\+General\+Register\+Name} (int code) const \hypertarget{classv8_1_1internal_1_1_register_configuration_a6843dd6dbd7eb8f48a309d63c0a0319f}{}\label{classv8_1_1internal_1_1_register_configuration_a6843dd6dbd7eb8f48a309d63c0a0319f}
+
+\item 
+const char $\ast$ {\bfseries Get\+Double\+Register\+Name} (int code) const \hypertarget{classv8_1_1internal_1_1_register_configuration_ae9e000cbb3eb0edce12c5b16b962443f}{}\label{classv8_1_1internal_1_1_register_configuration_ae9e000cbb3eb0edce12c5b16b962443f}
+
+\item 
+const int $\ast$ {\bfseries allocatable\+\_\+general\+\_\+codes} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_a35d28da25db40a77d0bc0c7d4766da05}{}\label{classv8_1_1internal_1_1_register_configuration_a35d28da25db40a77d0bc0c7d4766da05}
+
+\item 
+const int $\ast$ {\bfseries allocatable\+\_\+double\+\_\+codes} () const \hypertarget{classv8_1_1internal_1_1_register_configuration_a3cec75de9c39b857168b5898ce85e3f2}{}\label{classv8_1_1internal_1_1_register_configuration_a3cec75de9c39b857168b5898ce85e3f2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_register_configuration}{Register\+Configuration} $\ast$ {\bfseries Arch\+Default} (Compiler\+Selector compiler)\hypertarget{classv8_1_1internal_1_1_register_configuration_a58845087c742900bb8043e11b43664a2}{}\label{classv8_1_1internal_1_1_register_configuration_a58845087c742900bb8043e11b43664a2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+General\+Registers} = 32\hypertarget{classv8_1_1internal_1_1_register_configuration_a3b10debb30305d9a271e6f8fd3799358}{}\label{classv8_1_1internal_1_1_register_configuration_a3b10debb30305d9a271e6f8fd3799358}
+
+\item 
+static const int {\bfseries k\+Max\+F\+P\+Registers} = 32\hypertarget{classv8_1_1internal_1_1_register_configuration_ab9d7bc028391a2aac45f1cbebbba8118}{}\label{classv8_1_1internal_1_1_register_configuration_ab9d7bc028391a2aac45f1cbebbba8118}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries num\+\_\+general\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a95136b77878772fda354d7ef36cd7da6}{}\label{classv8_1_1internal_1_1_register_configuration_a95136b77878772fda354d7ef36cd7da6}
+
+\item 
+const int {\bfseries num\+\_\+double\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a8207f160c9142b8d4cb3ab8908743a10}{}\label{classv8_1_1internal_1_1_register_configuration_a8207f160c9142b8d4cb3ab8908743a10}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+general\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a8d4658c4ccc498b90ad8e6519f1c29bc}{}\label{classv8_1_1internal_1_1_register_configuration_a8d4658c4ccc498b90ad8e6519f1c29bc}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+double\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a9617f1dd508c3bf1dbd75384ab06ce03}{}\label{classv8_1_1internal_1_1_register_configuration_a9617f1dd508c3bf1dbd75384ab06ce03}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+aliased\+\_\+double\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a282119f76c21af48fe2e9c9da6e1baee}{}\label{classv8_1_1internal_1_1_register_configuration_a282119f76c21af48fe2e9c9da6e1baee}
+
+\item 
+int32\+\_\+t {\bfseries allocatable\+\_\+general\+\_\+codes\+\_\+mask\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_af2f80833a99ec265903340a2ce1d579e}{}\label{classv8_1_1internal_1_1_register_configuration_af2f80833a99ec265903340a2ce1d579e}
+
+\item 
+int32\+\_\+t {\bfseries allocatable\+\_\+double\+\_\+codes\+\_\+mask\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a61e42b82e24f02a2bd33f4e1cb9ba57e}{}\label{classv8_1_1internal_1_1_register_configuration_a61e42b82e24f02a2bd33f4e1cb9ba57e}
+
+\item 
+const int $\ast$ {\bfseries allocatable\+\_\+general\+\_\+codes\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a820017b51bfd1f69077466c073d541f4}{}\label{classv8_1_1internal_1_1_register_configuration_a820017b51bfd1f69077466c073d541f4}
+
+\item 
+const int $\ast$ {\bfseries allocatable\+\_\+double\+\_\+codes\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a959b37334b7d9600e59f8f85221a2ee1}{}\label{classv8_1_1internal_1_1_register_configuration_a959b37334b7d9600e59f8f85221a2ee1}
+
+\item 
+char const $\ast$const $\ast$ {\bfseries general\+\_\+register\+\_\+names\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a1c8bfffb52352fdf4d2d67d058c9b723}{}\label{classv8_1_1internal_1_1_register_configuration_a1c8bfffb52352fdf4d2d67d058c9b723}
+
+\item 
+char const $\ast$const $\ast$ {\bfseries double\+\_\+register\+\_\+names\+\_\+}\hypertarget{classv8_1_1internal_1_1_register_configuration_a3f35febfdae0b8b9afc1bb9ff1620fd9}{}\label{classv8_1_1internal_1_1_register_configuration_a3f35febfdae0b8b9afc1bb9ff1620fd9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/register-\/configuration.\+h\item 
+/\+Users/joshgav/node/v8/src/register-\/configuration.\+cc\end{DoxyCompactItemize}

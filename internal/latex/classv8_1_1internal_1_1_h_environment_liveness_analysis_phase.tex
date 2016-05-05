@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase}{}\section{v8\+:\+:internal\+:\+:H\+Environment\+Liveness\+Analysis\+Phase Class Reference}
+\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase}\index{v8\+::internal\+::\+H\+Environment\+Liveness\+Analysis\+Phase@{v8\+::internal\+::\+H\+Environment\+Liveness\+Analysis\+Phase}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Environment\+Liveness\+Analysis\+Phase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Environment\+Liveness\+Analysis\+Phase} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a70879649cd192269c10bc499852a4778}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a70879649cd192269c10bc499852a4778}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a6891181f8f2f51ca31f5936578939c49}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a6891181f8f2f51ca31f5936578939c49}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Zap\+Environment\+Slot} (int index, \hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$simulate)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aea5f4b798c85b063efca702d70e3742a}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aea5f4b798c85b063efca702d70e3742a}
+
+\item 
+void {\bfseries Zap\+Environment\+Slots\+In\+Successors} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$live)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a98a5629b8ae9d9a700f157691a7228eb}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a98a5629b8ae9d9a700f157691a7228eb}
+
+\item 
+void {\bfseries Zap\+Environment\+Slots\+For\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_environment_marker}{H\+Environment\+Marker} $\ast$marker)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aab5650801b33471f6bac944410494921}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aab5650801b33471f6bac944410494921}
+
+\item 
+void {\bfseries Update\+Liveness\+At\+Block\+End} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$live)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a58bc2999ef6786f86eb39c216627f305}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a58bc2999ef6786f86eb39c216627f305}
+
+\item 
+void {\bfseries Update\+Liveness\+At\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$live)\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a22ba8cee5d18ba3b580e5cf8ed78ed61}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a22ba8cee5d18ba3b580e5cf8ed78ed61}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase}{H\+Environment\+Liveness\+Analysis\+Phase})\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a7b559c2f72d6cae09f662ca8d8f99f3b}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a7b559c2f72d6cae09f662ca8d8f99f3b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries block\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a04c03a1a9599c4b6f71441147458d76f}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a04c03a1a9599c4b6f71441147458d76f}
+
+\item 
+int {\bfseries maximum\+\_\+environment\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a81ab5eac1ae8d600ae9820beddbd1fcc}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a81ab5eac1ae8d600ae9820beddbd1fcc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$ $>$ {\bfseries live\+\_\+at\+\_\+block\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a546ff2a19d7ba963fad62328b521a7ee}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a546ff2a19d7ba963fad62328b521a7ee}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$ $>$ {\bfseries first\+\_\+simulate\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aa8e7fc2170eecacf8e6a6e39a8b91762}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_aa8e7fc2170eecacf8e6a6e39a8b91762}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$ $>$ {\bfseries first\+\_\+simulate\+\_\+invalid\+\_\+for\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a2878ec053ad8964412e45dc45412a26e}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a2878ec053ad8964412e45dc45412a26e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_environment_marker}{H\+Environment\+Marker} $\ast$ $>$ {\bfseries markers\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a751dc78b6aaeb4f8f497178c23d3320f}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a751dc78b6aaeb4f8f497178c23d3320f}
+
+\item 
+bool {\bfseries collect\+\_\+markers\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a8a6f4c375cbe475d22e06b1e2fe76b1c}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a8a6f4c375cbe475d22e06b1e2fe76b1c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$ {\bfseries last\+\_\+simulate\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a9cc80dd043e570f7efd175dd210e7ff0}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a9cc80dd043e570f7efd175dd210e7ff0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} {\bfseries went\+\_\+live\+\_\+since\+\_\+last\+\_\+simulate\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a0aa9b3c1bf2335b89d27d29c23d08706}{}\label{classv8_1_1internal_1_1_h_environment_liveness_analysis_phase_a0aa9b3c1bf2335b89d27d29c23d08706}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/environment-\/liveness.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/environment-\/liveness.\+cc\end{DoxyCompactItemize}

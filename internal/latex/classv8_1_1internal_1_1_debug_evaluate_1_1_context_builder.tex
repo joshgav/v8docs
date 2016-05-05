@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder}{}\section{v8\+:\+:internal\+:\+:Debug\+Evaluate\+:\+:Context\+Builder Class Reference}
+\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder}\index{v8\+::internal\+::\+Debug\+Evaluate\+::\+Context\+Builder@{v8\+::internal\+::\+Debug\+Evaluate\+::\+Context\+Builder}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_1_1_context_chain_element}{Context\+Chain\+Element}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Context\+Builder} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$frame, int inlined\+\_\+jsframe\+\_\+index)\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_abce883e1f454694e96a9e547513b46f3}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_abce883e1f454694e96a9e547513b46f3}
+
+\item 
+void {\bfseries Update\+Values} ()\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a99cadfa7552c119b38c4b9c4a5c5a511}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a99cadfa7552c119b38c4b9c4a5c5a511}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries evaluation\+\_\+context} () const \hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a07cf3156b6152c6b71fd5f1aa32ac305}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a07cf3156b6152c6b71fd5f1aa32ac305}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries outer\+\_\+info} () const \hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a7e6d18a45b6d8f33d92a3e3917285d71}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a7e6d18a45b6d8f33d92a3e3917285d71}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Materialize\+Arguments\+Object} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ target, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a043f8959d4b371e2dd3be8b3c91ea0c5}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a043f8959d4b371e2dd3be8b3c91ea0c5}
+
+\item 
+void {\bfseries Materialize\+Receiver} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ target, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ local\+\_\+context, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ local\+\_\+function, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string_set}{String\+Set} $>$ non\+\_\+locals)\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a72d435fbc6ae26f191c1e43e51e7562f}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a72d435fbc6ae26f191c1e43e51e7562f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries outer\+\_\+info\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a0d3c048c7279e0ae8d867b485b65a7ab}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a0d3c048c7279e0ae8d867b485b65a7ab}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries evaluation\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a08602424bda1a4939652e59382ab1f17}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a08602424bda1a4939652e59382ab1f17}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{structv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_1_1_context_chain_element}{Context\+Chain\+Element} $>$ {\bfseries context\+\_\+chain\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a0e2da38e9a913206712b6b5dace5882b}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a0e2da38e9a913206712b6b5dace5882b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a3700642b7fd041a5e8bd1186053b04cd}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a3700642b7fd041a5e8bd1186053b04cd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$ {\bfseries frame\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a2c8f85a34a4242f842b8c89f991fdd1d}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a2c8f85a34a4242f842b8c89f991fdd1d}
+
+\item 
+int {\bfseries inlined\+\_\+jsframe\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a59c32d4679d8d679d95ccfda03fdde91}{}\label{classv8_1_1internal_1_1_debug_evaluate_1_1_context_builder_a59c32d4679d8d679d95ccfda03fdde91}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/evaluate.\+h\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/evaluate.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1_jit_logger}{}\section{v8\+:\+:internal\+:\+:Jit\+Logger Class Reference}
+\label{classv8_1_1internal_1_1_jit_logger}\index{v8\+::internal\+::\+Jit\+Logger@{v8\+::internal\+::\+Jit\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Jit\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_jit_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Jit\+Logger} (\hyperlink{namespacev8_a39243bc91e63d64d111452fdb98c4733}{Jit\+Code\+Event\+Handler} code\+\_\+event\+\_\+handler)\hypertarget{classv8_1_1internal_1_1_jit_logger_ae534faff27b42623919bbe97d4625781}{}\label{classv8_1_1internal_1_1_jit_logger_ae534faff27b42623919bbe97d4625781}
+
+\item 
+void {\bfseries Code\+Move\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$from, Address to) override\hypertarget{classv8_1_1internal_1_1_jit_logger_ab765db18b1676b8ef189ba8608dbc482}{}\label{classv8_1_1internal_1_1_jit_logger_ab765db18b1676b8ef189ba8608dbc482}
+
+\item 
+void {\bfseries Code\+Disable\+Opt\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared) override\hypertarget{classv8_1_1internal_1_1_jit_logger_a70e58681e173fd9e4805db130eff432e}{}\label{classv8_1_1internal_1_1_jit_logger_a70e58681e173fd9e4805db130eff432e}
+
+\item 
+void {\bfseries Add\+Code\+Line\+Pos\+Info\+Event} (void $\ast$jit\+\_\+handler\+\_\+data, int pc\+\_\+offset, int position, Jit\+Code\+Event\+::\+Position\+Type position\+\_\+type)\hypertarget{classv8_1_1internal_1_1_jit_logger_af2076ae625c31e5165653dde71a30e49}{}\label{classv8_1_1internal_1_1_jit_logger_af2076ae625c31e5165653dde71a30e49}
+
+\item 
+void $\ast$ {\bfseries Start\+Code\+Pos\+Info\+Event} ()\hypertarget{classv8_1_1internal_1_1_jit_logger_ae521e7d5d7de523dd5fd5a57b1f39907}{}\label{classv8_1_1internal_1_1_jit_logger_ae521e7d5d7de523dd5fd5a57b1f39907}
+
+\item 
+void {\bfseries End\+Code\+Pos\+Info\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, void $\ast$jit\+\_\+handler\+\_\+data)\hypertarget{classv8_1_1internal_1_1_jit_logger_ab2606142b141c5d3a72609f789d5ccc1}{}\label{classv8_1_1internal_1_1_jit_logger_ab2606142b141c5d3a72609f789d5ccc1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Log\+Recorded\+Buffer} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, const char $\ast$name, int length) override\hypertarget{classv8_1_1internal_1_1_jit_logger_aa77a25ba8f66743339e93a18d75623e9}{}\label{classv8_1_1internal_1_1_jit_logger_aa77a25ba8f66743339e93a18d75623e9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacev8_a39243bc91e63d64d111452fdb98c4733}{Jit\+Code\+Event\+Handler} {\bfseries code\+\_\+event\+\_\+handler\+\_\+}\hypertarget{classv8_1_1internal_1_1_jit_logger_a21feeb69c3f4c2ae489c875575c2a31a}{}\label{classv8_1_1internal_1_1_jit_logger_a21feeb69c3f4c2ae489c875575c2a31a}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries logger\+\_\+mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_jit_logger_a55e1a27ecfb86de182f68e861445aa01}{}\label{classv8_1_1internal_1_1_jit_logger_a55e1a27ecfb86de182f68e861445aa01}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+cc\end{DoxyCompactItemize}

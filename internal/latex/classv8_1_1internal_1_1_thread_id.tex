@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_thread_id}{}\section{v8\+:\+:internal\+:\+:Thread\+Id Class Reference}
+\label{classv8_1_1internal_1_1_thread_id}\index{v8\+::internal\+::\+Thread\+Id@{v8\+::internal\+::\+Thread\+Id}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} \& {\bfseries operator=} (const \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} \&other)\hypertarget{classv8_1_1internal_1_1_thread_id_ac20b0254b1e4dba24c11381a3a370475}{}\label{classv8_1_1internal_1_1_thread_id_ac20b0254b1e4dba24c11381a3a370475}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool Equals(const \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} \&other) const)\hypertarget{classv8_1_1internal_1_1_thread_id_afd9cfcfc351b61c95cfd251b476c0682}{}\label{classv8_1_1internal_1_1_thread_id_afd9cfcfc351b61c95cfd251b476c0682}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool Is\+Valid() const)\hypertarget{classv8_1_1internal_1_1_thread_id_a4bcdc5b6f92d522a2754527f96ea7dcd}{}\label{classv8_1_1internal_1_1_thread_id_a4bcdc5b6f92d522a2754527f96ea7dcd}
+
+\item 
+int {\bfseries To\+Integer} () const \hypertarget{classv8_1_1internal_1_1_thread_id_a4778892ff0453efb9af33bf2f74c6447}{}\label{classv8_1_1internal_1_1_thread_id_a4778892ff0453efb9af33bf2f74c6447}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries Current} ()\hypertarget{classv8_1_1internal_1_1_thread_id_a81c60d3524b03db2f154b7f682e7796f}{}\label{classv8_1_1internal_1_1_thread_id_a81c60d3524b03db2f154b7f682e7796f}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries Invalid} ()\hypertarget{classv8_1_1internal_1_1_thread_id_a211793684e9dbeefb1165b8e547a448b}{}\label{classv8_1_1internal_1_1_thread_id_a211793684e9dbeefb1165b8e547a448b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries From\+Integer} (int id)\hypertarget{classv8_1_1internal_1_1_thread_id_ad4f2604e569a31908f37ebe26657ad60}{}\label{classv8_1_1internal_1_1_thread_id_ad4f2604e569a31908f37ebe26657ad60}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Thread\+Id} (int id)\hypertarget{classv8_1_1internal_1_1_thread_id_a955f52c2fccf7e24cd40d98c47c247d6}{}\label{classv8_1_1internal_1_1_thread_id_a955f52c2fccf7e24cd40d98c47c247d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Allocate\+Thread\+Id} ()\hypertarget{classv8_1_1internal_1_1_thread_id_a584d350a3a521fed2fc6b98eef777ccb}{}\label{classv8_1_1internal_1_1_thread_id_a584d350a3a521fed2fc6b98eef777ccb}
+
+\item 
+static int {\bfseries Get\+Current\+Thread\+Id} ()\hypertarget{classv8_1_1internal_1_1_thread_id_ab709a312c20734717256008500edb0ed}{}\label{classv8_1_1internal_1_1_thread_id_ab709a312c20734717256008500edb0ed}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+base\+::\+Atomic32 {\bfseries id\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_id_a475e9bf6ded0944d4af0c3ed083d2eaa}{}\label{classv8_1_1internal_1_1_thread_id_a475e9bf6ded0944d4af0c3ed083d2eaa}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Invalid\+Id} = -\/1\hypertarget{classv8_1_1internal_1_1_thread_id_a5a29a6012fa809eaa76a51d8ee7b4228}{}\label{classv8_1_1internal_1_1_thread_id_a5a29a6012fa809eaa76a51d8ee7b4228}
+
+\item 
+static base\+::\+Atomic32 {\bfseries highest\+\_\+thread\+\_\+id\+\_\+} = 0\hypertarget{classv8_1_1internal_1_1_thread_id_afcd32a579682d32003a1a009c0c65917}{}\label{classv8_1_1internal_1_1_thread_id_afcd32a579682d32003a1a009c0c65917}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Isolate}\hypertarget{classv8_1_1internal_1_1_thread_id_aba4f0964bdacf2bbf62cf876e5d28d0a}{}\label{classv8_1_1internal_1_1_thread_id_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/isolate.\+h\item 
+/\+Users/joshgav/node/v8/src/isolate.\+cc\end{DoxyCompactItemize}

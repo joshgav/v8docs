@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\+:Expression\+Result\+Scope Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator\+::\+Expression\+Result\+Scope@{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator\+::\+Expression\+Result\+Scope}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\+:Expression\+Result\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.910569cm]{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expression\+Result\+Scope} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}{Bytecode\+Generator} $\ast$generator, Expression\+::\+Context kind)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a51adfb3450cd39cefcaf26bcd4ffcf43}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a51adfb3450cd39cefcaf26bcd4ffcf43}
+
+\item 
+bool {\bfseries Is\+Effect} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_abbe25012e72d9c10bedd06449b5f65c9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_abbe25012e72d9c10bedd06449b5f65c9}
+
+\item 
+bool {\bfseries Is\+Value} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a31e3db88c75ac0ba5ff8db6fa7068706}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a31e3db88c75ac0ba5ff8db6fa7068706}
+
+\item 
+virtual void {\bfseries Set\+Result\+In\+Accumulator} ()=0\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_ab8ba50608f47cbe33f657899e31933ae}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_ab8ba50608f47cbe33f657899e31933ae}
+
+\item 
+virtual void {\bfseries Set\+Result\+In\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)=0\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a66d3635d313e551f6e1dcaca99724053}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a66d3635d313e551f6e1dcaca99724053}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope} $\ast$ {\bfseries outer} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2b6c67ca62b1a72aea146c3318fcf529}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2b6c67ca62b1a72aea146c3318fcf529}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} $\ast$ {\bfseries builder} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_aa32885d1c61915e05432a188f41dfcbe}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_aa32885d1c61915e05432a188f41dfcbe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}{Bytecode\+Generator} $\ast$ {\bfseries generator} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_ab34682d1caf49a1a08594c16c329e9ac}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_ab34682d1caf49a1a08594c16c329e9ac}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope} $\ast$ {\bfseries allocator} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2a947ebab1484e71224a6ad11c594ed6}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2a947ebab1484e71224a6ad11c594ed6}
+
+\item 
+void {\bfseries set\+\_\+result\+\_\+identified} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_aac5cd5c67e4ca7420d6662e40ebf1b6f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_aac5cd5c67e4ca7420d6662e40ebf1b6f}
+
+\item 
+bool {\bfseries result\+\_\+identified} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_af3c9df3958b78d5ee7cef7d8f0df99e1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_af3c9df3958b78d5ee7cef7d8f0df99e1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope})\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a64f282a14d0c0c2cdf771716646c09d6}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a64f282a14d0c0c2cdf771716646c09d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}{Bytecode\+Generator} $\ast$ {\bfseries generator\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a549fad40cae5a6563510680f4b54215e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a549fad40cae5a6563510680f4b54215e}
+
+\item 
+Expression\+::\+Context {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2a0d0265ab0bacb969ddcd5ff2b3fad9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a2a0d0265ab0bacb969ddcd5ff2b3fad9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope} $\ast$ {\bfseries outer\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_af1f39c15b7ed6f4d450b511e613d06f9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_af1f39c15b7ed6f4d450b511e613d06f9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope} {\bfseries allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a08e097c203fdb7ce5875a72a70b4e757}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a08e097c203fdb7ce5875a72a70b4e757}
+
+\item 
+bool {\bfseries result\+\_\+identified\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a1c7289e0782d27eba7dbd103dccb90b2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope_a1c7289e0782d27eba7dbd103dccb90b2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/generator.\+cc\end{DoxyCompactItemize}

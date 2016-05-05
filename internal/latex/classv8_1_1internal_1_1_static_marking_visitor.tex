@@ -1,0 +1,151 @@
+\hypertarget{classv8_1_1internal_1_1_static_marking_visitor}{}\section{v8\+:\+:internal\+:\+:Static\+Marking\+Visitor$<$ Static\+Visitor $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_static_marking_visitor}\index{v8\+::internal\+::\+Static\+Marking\+Visitor$<$ Static\+Visitor $>$@{v8\+::internal\+::\+Static\+Marking\+Visitor$<$ Static\+Visitor $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Static\+Marking\+Visitor$<$ Static\+Visitor $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_static_marking_visitor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_static_marking_visitor_1_1_data_object_visitor}{Data\+Object\+Visitor}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_static_marking_visitor_1_1_j_s_api_object_visitor}{J\+S\+Api\+Object\+Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Iterate\+Body(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a6e69ffa5633ca79464aa40c296740cb6}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a6e69ffa5633ca79464aa40c296740cb6}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Property\+Cell(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a81f58c4cbae570d3e8d1fc871413bf57}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a81f58c4cbae570d3e8d1fc871413bf57}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Weak\+Cell(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_aa58c1ab0e77de750f6177cb472962e52}{}\label{classv8_1_1internal_1_1_static_marking_visitor_aa58c1ab0e77de750f6177cb472962e52}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Transition\+Array(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a7a0792bb34aeab9be33529f1660aae99}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a7a0792bb34aeab9be33529f1660aae99}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Code\+Entry(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object,                                                                                                                                       Address entry\+\_\+address))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a836c14259289d79a7853fd87a782abad}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a836c14259289d79a7853fd87a782abad}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Embedded\+Pointer(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a76aaadb8b61d0dac90204eb3578eb11e}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a76aaadb8b61d0dac90204eb3578eb11e}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Cell(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a88f80c35e3dcc885c0a667beb09dabcf}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a88f80c35e3dcc885c0a667beb09dabcf}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Debug\+Target(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_ae886c09f1d2bd57facbfa6fcaaf76a0a}{}\label{classv8_1_1internal_1_1_static_marking_visitor_ae886c09f1d2bd57facbfa6fcaaf76a0a}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Code\+Target(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_ab297b4eaec4d11bbfbf07064f6660121}{}\label{classv8_1_1internal_1_1_static_marking_visitor_ab297b4eaec4d11bbfbf07064f6660121}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Code\+Age\+Sequence(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a2b2da5b8373897067f107c5d214da44f}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a2b2da5b8373897067f107c5d214da44f}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+External\+Reference(\hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a6d4d19c0740fe32e700bf0f814200c1c}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a6d4d19c0740fe32e700bf0f814200c1c}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Internal\+Reference(\hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_aa604c8a1644c1270692061265836be26}{}\label{classv8_1_1internal_1_1_static_marking_visitor_aa604c8a1644c1270692061265836be26}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Runtime\+Entry(\hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a42875545176a665262d77863bc460696}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a42875545176a665262d77863bc460696}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Next\+Code\+Link(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a6be9adb4dea3b0d5b29fa445d7f10a4c}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a6be9adb4dea3b0d5b29fa445d7f10a4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a5803b42728ccc54460480efb911242c3}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a5803b42728ccc54460480efb911242c3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_flexible_body_visitor}{Flexible\+Body\+Visitor}$<$ Static\+Visitor, \hyperlink{classv8_1_1internal_1_1_flexible_body_descriptor}{Fixed\+Array\+::\+Body\+Descriptor}, void $>$ {\bfseries Fixed\+Array\+Visitor}\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_afe4e88973413eac9dcf0ba1605ac914d}{}\label{classv8_1_1internal_1_1_static_marking_visitor_afe4e88973413eac9dcf0ba1605ac914d}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_flexible_body_visitor}{Flexible\+Body\+Visitor}$<$ Static\+Visitor, \hyperlink{classv8_1_1internal_1_1_flexible_body_descriptor}{J\+S\+Object\+::\+Body\+Descriptor}, void $>$ {\bfseries J\+S\+Object\+Visitor}\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_aa868a7b11c9ddc2db4cbb2f5b8c28ed5}{}\label{classv8_1_1internal_1_1_static_marking_visitor_aa868a7b11c9ddc2db4cbb2f5b8c28ed5}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_flexible_body_visitor}{Flexible\+Body\+Visitor}$<$ Static\+Visitor, \hyperlink{classv8_1_1internal_1_1_flexible_body_descriptor}{Struct\+Body\+Descriptor}, void $>$ {\bfseries Struct\+Object\+Visitor}\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_af0f4a595f29ac74ef1c94c3383b06cd9}{}\label{classv8_1_1internal_1_1_static_marking_visitor_af0f4a595f29ac74ef1c94c3383b06cd9}
+
+\item 
+typedef void($\ast$ {\bfseries Callback}) (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a0f07d6fde9beb53349a2467a9aec8a88}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a0f07d6fde9beb53349a2467a9aec8a88}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Map(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_aa41e4e985626e828b69bd75936047ce8}{}\label{classv8_1_1internal_1_1_static_marking_visitor_aa41e4e985626e828b69bd75936047ce8}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Code(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a6d12ae51982ce913727d3898bb22cc67}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a6d12ae51982ce913727d3898bb22cc67}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Shared\+Function\+Info(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a90efc1d5dc60654ca699cf7f148090b6}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a90efc1d5dc60654ca699cf7f148090b6}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Allocation\+Site(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_ac79600db4849950478fe8e523d13c2be}{}\label{classv8_1_1internal_1_1_static_marking_visitor_ac79600db4849950478fe8e523d13c2be}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Weak\+Collection(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_af0421ceb24652a0275276eedc865fd7e}{}\label{classv8_1_1internal_1_1_static_marking_visitor_af0421ceb24652a0275276eedc865fd7e}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+J\+S\+Function(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a39761c4684c04a36fbe27d31912efe48}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a39761c4684c04a36fbe27d31912efe48}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+J\+S\+Reg\+Exp(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a620c4915ce210158f236b537cb727cc8}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a620c4915ce210158f236b537cb727cc8}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+J\+S\+Array\+Buffer(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a998d5a07e398ca18372e50c056daaa5d}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a998d5a07e398ca18372e50c056daaa5d}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Native\+Context(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a9ed5dc30492cdfd625893d294a63de96}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a9ed5dc30492cdfd625893d294a63de96}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Bytecode\+Array(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a83270d7ea02eb8dc952c24e64a702fb3}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a83270d7ea02eb8dc952c24e64a702fb3}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static bool Is\+Flushable(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $\ast$function))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a867023436dad8095e47a6db9c989dc15}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a867023436dad8095e47a6db9c989dc15}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static bool Is\+Flushable(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info))\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a1035adc168b166efb57fb29bbaba964d}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a1035adc168b166efb57fb29bbaba964d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Mark\+Map\+Contents} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a969e460ed450d63ae48bbd5c98fef110}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a969e460ed450d63ae48bbd5c98fef110}
+
+\item 
+static void {\bfseries Visit\+Shared\+Function\+Info\+Strong\+Code} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a55a54e83dc7ddd5d5c852065d0feaa3c}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a55a54e83dc7ddd5d5c852065d0feaa3c}
+
+\item 
+static void {\bfseries Visit\+Shared\+Function\+Info\+Weak\+Code} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_ae100f2c20c25f335211b7a7ed6aae333}{}\label{classv8_1_1internal_1_1_static_marking_visitor_ae100f2c20c25f335211b7a7ed6aae333}
+
+\item 
+static void {\bfseries Visit\+J\+S\+Function\+Strong\+Code} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a24d0c2c61c66a7b098a10e8c7b69871c}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a24d0c2c61c66a7b098a10e8c7b69871c}
+
+\item 
+static void {\bfseries Visit\+J\+S\+Function\+Weak\+Code} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a4cecb783fbac7ca1b321a7189852563f}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a4cecb783fbac7ca1b321a7189852563f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_visitor_dispatch_table}{Visitor\+Dispatch\+Table}$<$ Callback $>$ {\bfseries table\+\_\+}\hypertarget{classv8_1_1internal_1_1_static_marking_visitor_a27cfe7719c12c56bfcf61b0610476eb2}{}\label{classv8_1_1internal_1_1_static_marking_visitor_a27cfe7719c12c56bfcf61b0610476eb2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/objects-\/visiting.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/objects-\/visiting-\/inl.\+h\end{DoxyCompactItemize}

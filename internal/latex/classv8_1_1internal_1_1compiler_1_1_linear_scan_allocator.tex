@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Linear\+Scan\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator}\index{v8\+::internal\+::compiler\+::\+Linear\+Scan\+Allocator@{v8\+::internal\+::compiler\+::\+Linear\+Scan\+Allocator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Linear\+Scan\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Linear\+Scan\+Allocator} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocation_data}{Register\+Allocation\+Data} $\ast$data, Register\+Kind kind, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$local\+\_\+zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ac36a7cdac3c23f89dbf157037b45945b}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ac36a7cdac3c23f89dbf157037b45945b}
+
+\item 
+void {\bfseries Allocate\+Registers} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_af090759a2b6c76166a297fe5343fbbe9}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_af090759a2b6c76166a297fe5343fbbe9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ \& {\bfseries unhandled\+\_\+live\+\_\+ranges} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a97d0a82816f1023ed9acd2c17bd488f4}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a97d0a82816f1023ed9acd2c17bd488f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ \& {\bfseries active\+\_\+live\+\_\+ranges} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a4fcba3a7dc3daa168ab4b7a2df0cbba8}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a4fcba3a7dc3daa168ab4b7a2df0cbba8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ \& {\bfseries inactive\+\_\+live\+\_\+ranges} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ad4673e97e61577e221cd77f8cecdcd56}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ad4673e97e61577e221cd77f8cecdcd56}
+
+\item 
+void {\bfseries Set\+Live\+Range\+Assigned\+Register} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, int reg)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aeaff77afec9ea5d1ada995a1b1607b02}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aeaff77afec9ea5d1ada995a1b1607b02}
+
+\item 
+void {\bfseries Add\+To\+Active} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a091457779a092248ed78af4860b5c95e}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a091457779a092248ed78af4860b5c95e}
+
+\item 
+void {\bfseries Add\+To\+Inactive} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a87f14ad961bcab28bd8fdac812017ef1}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a87f14ad961bcab28bd8fdac812017ef1}
+
+\item 
+void {\bfseries Add\+To\+Unhandled\+Sorted} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_abdd47c9d09c6ab09e7cdbbcd7a42db35}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_abdd47c9d09c6ab09e7cdbbcd7a42db35}
+
+\item 
+void {\bfseries Add\+To\+Unhandled\+Unsorted} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a705ba26c31e610a54353a5d5b1b505b5}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a705ba26c31e610a54353a5d5b1b505b5}
+
+\item 
+void {\bfseries Sort\+Unhandled} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ac1b2fd33c60032d08231f2fa674fbfea}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_ac1b2fd33c60032d08231f2fa674fbfea}
+
+\item 
+bool {\bfseries Unhandled\+Is\+Sorted} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a5bba2144a575fa6b287c56221bfa1efd}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a5bba2144a575fa6b287c56221bfa1efd}
+
+\item 
+void {\bfseries Active\+To\+Handled} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a8c6c4258b1f772515e6e163b6cfccf73}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a8c6c4258b1f772515e6e163b6cfccf73}
+
+\item 
+void {\bfseries Active\+To\+Inactive} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa8e6bc7550521ad0290b164f4138d8f7}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa8e6bc7550521ad0290b164f4138d8f7}
+
+\item 
+void {\bfseries Inactive\+To\+Handled} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa3b7c039f618bffc6e090e590d768ce4}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa3b7c039f618bffc6e090e590d768ce4}
+
+\item 
+void {\bfseries Inactive\+To\+Active} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_afa6c2b39af3a0ce43e84a6da70b02746}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_afa6c2b39af3a0ce43e84a6da70b02746}
+
+\item 
+bool {\bfseries Try\+Reuse\+Spill\+For\+Phi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a372910b8b17f6c568de8b07f2a0f5566}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a372910b8b17f6c568de8b07f2a0f5566}
+
+\item 
+bool {\bfseries Try\+Allocate\+Free\+Reg} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a03daca698f03127e43b6d6bde82ad3ba}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a03daca698f03127e43b6d6bde82ad3ba}
+
+\item 
+void {\bfseries Allocate\+Blocked\+Reg} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a7dea80a9d49fdd689febfcbe5363025c}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a7dea80a9d49fdd689febfcbe5363025c}
+
+\item 
+void {\bfseries Spill\+After} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} pos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_adcc562cc310df0150a6b53ecdb9d1463}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_adcc562cc310df0150a6b53ecdb9d1463}
+
+\item 
+void {\bfseries Spill\+Between} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a970a868adf9edda7cbcca47c75c4a2ad}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a970a868adf9edda7cbcca47c75c4a2ad}
+
+\item 
+void {\bfseries Spill\+Between\+Until} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} until, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa5276b68b7f7dc1ff512ce90876c1998}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_aa5276b68b7f7dc1ff512ce90876c1998}
+
+\item 
+void {\bfseries Split\+And\+Spill\+Intersecting} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_abc2b6d337f39cde78735a37b57313d70}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_abc2b6d337f39cde78735a37b57313d70}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator}{Linear\+Scan\+Allocator})\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a5a87263e98db3d2846464273de09f10a}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a5a87263e98db3d2846464273de09f10a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ {\bfseries unhandled\+\_\+live\+\_\+ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a30a79f690a1d44f567f5d3144113f0f7}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a30a79f690a1d44f567f5d3144113f0f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ {\bfseries active\+\_\+live\+\_\+ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a4716296408d20bbb14ec7432e85cff13}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a4716296408d20bbb14ec7432e85cff13}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ $>$ {\bfseries inactive\+\_\+live\+\_\+ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a6b4b42a7aaf9df27ea8e71ed63110d9a}{}\label{classv8_1_1internal_1_1compiler_1_1_linear_scan_allocator_a6b4b42a7aaf9df27ea8e71ed63110d9a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+cc\end{DoxyCompactItemize}

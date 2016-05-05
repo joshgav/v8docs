@@ -1,0 +1,62 @@
+\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data}{}\section{v8\+:\+:internal\+:\+:Isolate\+:\+:Per\+Isolate\+Thread\+Data Class Reference}
+\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data}\index{v8\+::internal\+::\+Isolate\+::\+Per\+Isolate\+Thread\+Data@{v8\+::internal\+::\+Isolate\+::\+Per\+Isolate\+Thread\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Per\+Isolate\+Thread\+Data} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} thread\+\_\+id)\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ac7375d147bcf918363e02932ab036b98}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ac7375d147bcf918363e02932ab036b98}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aa6864a4f2821eefca8e3aad845d2beb2}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aa6864a4f2821eefca8e3aad845d2beb2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries thread\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a0a6a459da5f4810865cfa71d85ee18ef}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a0a6a459da5f4810865cfa71d85ee18ef}
+
+\item 
+bool {\bfseries Matches} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} thread\+\_\+id) const \hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aa6d416451308983f1955bb40eed14867}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aa6d416451308983f1955bb40eed14867}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data}{Per\+Isolate\+Thread\+Data})\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a34ab7ba884573f582b9201b6beded2f0}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a34ab7ba884573f582b9201b6beded2f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ab718bbbaac7a6bce85a0af758603e9ab}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ab718bbbaac7a6bce85a0af758603e9ab}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries thread\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a206c4388f77c8b600382960e9522e003}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a206c4388f77c8b600382960e9522e003}
+
+\item 
+uintptr\+\_\+t {\bfseries stack\+\_\+limit\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a07e7fbc8b48f68fcceb60e379bab9365}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a07e7fbc8b48f68fcceb60e379bab9365}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_state}{Thread\+State} $\ast$ {\bfseries thread\+\_\+state\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_addece2a38f52416cbf19915a361f69ca}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_addece2a38f52416cbf19915a361f69ca}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data}{Per\+Isolate\+Thread\+Data} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a835d515d535dc3f101864eaa127aa77d}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a835d515d535dc3f101864eaa127aa77d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data}{Per\+Isolate\+Thread\+Data} $\ast$ {\bfseries prev\+\_\+}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ad7f25ac48c47c5fa90baeea62da7aeca}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_ad7f25ac48c47c5fa90baeea62da7aeca}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Isolate}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aba4f0964bdacf2bbf62cf876e5d28d0a}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\item 
+class {\bfseries Thread\+Data\+Table}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a27444e20ddf88624d116fc0ebd8c40a9}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a27444e20ddf88624d116fc0ebd8c40a9}
+
+\item 
+class {\bfseries Entry\+Stack\+Item}\hypertarget{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a8d448be8b7e8af37a0da5811aef0eebd}{}\label{classv8_1_1internal_1_1_isolate_1_1_per_isolate_thread_data_a8d448be8b7e8af37a0da5811aef0eebd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/isolate.\+h\item 
+/\+Users/joshgav/node/v8/src/isolate.\+cc\end{DoxyCompactItemize}

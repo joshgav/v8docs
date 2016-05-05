@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1_materialized_literal}{}\section{v8\+:\+:internal\+:\+:Materialized\+Literal Class Reference}
+\label{classv8_1_1internal_1_1_materialized_literal}\index{v8\+::internal\+::\+Materialized\+Literal@{v8\+::internal\+::\+Materialized\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Materialized\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.861111cm]{classv8_1_1internal_1_1_materialized_literal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_materialized_literal}{Materialized\+Literal} $\ast$ {\bfseries As\+Materialized\+Literal} () final\hypertarget{classv8_1_1internal_1_1_materialized_literal_af4330214180953d8a641cd0d6c7a0612}{}\label{classv8_1_1internal_1_1_materialized_literal_af4330214180953d8a641cd0d6c7a0612}
+
+\item 
+int {\bfseries literal\+\_\+index} ()\hypertarget{classv8_1_1internal_1_1_materialized_literal_a4d00be1f53f49592300d1d6218c21fa3}{}\label{classv8_1_1internal_1_1_materialized_literal_a4d00be1f53f49592300d1d6218c21fa3}
+
+\item 
+int {\bfseries depth} () const \hypertarget{classv8_1_1internal_1_1_materialized_literal_a12d60c7878e436d4279987394a6ffa2c}{}\label{classv8_1_1internal_1_1_materialized_literal_a12d60c7878e436d4279987394a6ffa2c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Materialized\+Literal} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int literal\+\_\+index, int pos)\hypertarget{classv8_1_1internal_1_1_materialized_literal_a34f60085fdc4b897de5228308a3cc05b}{}\label{classv8_1_1internal_1_1_materialized_literal_a34f60085fdc4b897de5228308a3cc05b}
+
+\item 
+bool {\bfseries is\+\_\+simple} () const \hypertarget{classv8_1_1internal_1_1_materialized_literal_a643c47090fae04dc32ec66973734f38d}{}\label{classv8_1_1internal_1_1_materialized_literal_a643c47090fae04dc32ec66973734f38d}
+
+\item 
+void {\bfseries set\+\_\+is\+\_\+simple} (bool is\+\_\+simple)\hypertarget{classv8_1_1internal_1_1_materialized_literal_a55d53455fa0e5d33bc1c73edb99a23d3}{}\label{classv8_1_1internal_1_1_materialized_literal_a55d53455fa0e5d33bc1c73edb99a23d3}
+
+\item 
+void {\bfseries set\+\_\+depth} (int depth)\hypertarget{classv8_1_1internal_1_1_materialized_literal_a1a52f1c2c35cfdf122ad0bcea7e6e2a6}{}\label{classv8_1_1internal_1_1_materialized_literal_a1a52f1c2c35cfdf122ad0bcea7e6e2a6}
+
+\item 
+void {\bfseries Build\+Constants} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_materialized_literal_a8aa06fd94266a295ae6628925fea436d}{}\label{classv8_1_1internal_1_1_materialized_literal_a8aa06fd94266a295ae6628925fea436d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Boilerplate\+Value} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_materialized_literal_a3f2e9681f5506407af5bf2c23e142bbd}{}\label{classv8_1_1internal_1_1_materialized_literal_a3f2e9681f5506407af5bf2c23e142bbd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries literal\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a08993046f89e5c976e7aa06d6c012701}{}\label{classv8_1_1internal_1_1_materialized_literal_a08993046f89e5c976e7aa06d6c012701}
+
+\item 
+bool {\bfseries is\+\_\+simple\+\_\+}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a7bf57f754de460afb6572f1a33cce15c}{}\label{classv8_1_1internal_1_1_materialized_literal_a7bf57f754de460afb6572f1a33cce15c}
+
+\item 
+int {\bfseries depth\+\_\+}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a3f5aeae90c1aa8733074c08e5c885cbe}{}\label{classv8_1_1internal_1_1_materialized_literal_a3f5aeae90c1aa8733074c08e5c885cbe}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Compile\+Time\+Value}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a8b5ce5782a366f51fd3ac3a2a7bbc54f}{}\label{classv8_1_1internal_1_1_materialized_literal_a8b5ce5782a366f51fd3ac3a2a7bbc54f}
+
+\item 
+class {\bfseries Array\+Literal}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a13d34cc74ec8e17e3891f53066cbcd4e}{}\label{classv8_1_1internal_1_1_materialized_literal_a13d34cc74ec8e17e3891f53066cbcd4e}
+
+\item 
+class {\bfseries Object\+Literal}\hypertarget{classv8_1_1internal_1_1_materialized_literal_af53f5f0c57f02b72b3211be078d03c7d}{}\label{classv8_1_1internal_1_1_materialized_literal_af53f5f0c57f02b72b3211be078d03c7d}
+
+\item 
+class {\bfseries Ast\+Literal\+Reindexer}\hypertarget{classv8_1_1internal_1_1_materialized_literal_a2fd23c7396ed0a56a0e20e438c6a0338}{}\label{classv8_1_1internal_1_1_materialized_literal_a2fd23c7396ed0a56a0e20e438c6a0338}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

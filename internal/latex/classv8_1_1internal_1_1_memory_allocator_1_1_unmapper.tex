@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper}{}\section{v8\+:\+:internal\+:\+:Memory\+Allocator\+:\+:Unmapper Class Reference}
+\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper}\index{v8\+::internal\+::\+Memory\+Allocator\+::\+Unmapper@{v8\+::internal\+::\+Memory\+Allocator\+::\+Unmapper}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_1_1_unmap_free_memory_task}{Unmap\+Free\+Memory\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unmapper} (\hyperlink{classv8_1_1internal_1_1_memory_allocator}{Memory\+Allocator} $\ast$allocator)\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_ad0174f91b708b5922dd06a391b4f0019}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_ad0174f91b708b5922dd06a391b4f0019}
+
+\item 
+void {\bfseries Add\+Memory\+Chunk\+Safe} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a34816240311f3bb73442f93fa7c5a9e8}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a34816240311f3bb73442f93fa7c5a9e8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries Try\+Get\+Pooled\+Memory\+Chunk\+Safe} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_ace6bf46ce96af9e77a659dfc847d3586}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_ace6bf46ce96af9e77a659dfc847d3586}
+
+\item 
+void {\bfseries Free\+Queued\+Chunks} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a9e6f9f9744299110bb5db0eef459f76a}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a9e6f9f9744299110bb5db0eef459f76a}
+
+\item 
+bool {\bfseries Wait\+Until\+Completed} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a592895ad78a3db81c53ac534bb9842b3}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a592895ad78a3db81c53ac534bb9842b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Chunk\+Queue\+Type} \{ \\*
+{\bfseries k\+Regular}, 
+\\*
+{\bfseries k\+Non\+Regular}, 
+\\*
+{\bfseries k\+Pooled}, 
+\\*
+{\bfseries k\+Number\+Of\+Chunk\+Queues}
+ \}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_afd64e4ca0976675e5215ae8e5da88cdf}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_afd64e4ca0976675e5215ae8e5da88cdf}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Chunk\+Queue\+Type type$>$ }\\void {\bfseries Add\+Memory\+Chunk\+Safe} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a2d42b92c85978530a383a3950cba3514}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a2d42b92c85978530a383a3950cba3514}
+
+\item 
+{\footnotesize template$<$Chunk\+Queue\+Type type$>$ }\\\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries Get\+Memory\+Chunk\+Safe} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a23294b625723d124e55973b5c47492c5}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a23294b625723d124e55973b5c47492c5}
+
+\item 
+void {\bfseries Perform\+Free\+Memory\+On\+Queued\+Chunks} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a21c48075a2b4ef639932e09590caf509}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a21c48075a2b4ef639932e09590caf509}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aea26cb7c64b00d5d2fc8a144d15f3403}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aea26cb7c64b00d5d2fc8a144d15f3403}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_allocator}{Memory\+Allocator} $\ast$ {\bfseries allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aedeb274b5244c3f8bd71b3e665fee296}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aedeb274b5244c3f8bd71b3e665fee296}
+
+\item 
+std\+::list$<$ \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ $>$ {\bfseries chunks\+\_\+} \mbox{[}k\+Number\+Of\+Chunk\+Queues\mbox{]}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a05e01a1a13eb68cb4d5594e674f70f47}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a05e01a1a13eb68cb4d5594e674f70f47}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries pending\+\_\+unmapping\+\_\+tasks\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a637bec50fda0619bb8527956164ea970}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a637bec50fda0619bb8527956164ea970}
+
+\item 
+intptr\+\_\+t {\bfseries concurrent\+\_\+unmapping\+\_\+tasks\+\_\+active\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a00d00c234082c80b33d1a886333a82c1}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_a00d00c234082c80b33d1a886333a82c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Memory\+Allocator}\hypertarget{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aea1126d5a764b0d074d2d6edb5a09f23}{}\label{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper_aea1126d5a764b0d074d2d6edb5a09f23}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

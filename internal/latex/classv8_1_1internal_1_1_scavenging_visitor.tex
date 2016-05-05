@@ -1,0 +1,95 @@
+\hypertarget{classv8_1_1internal_1_1_scavenging_visitor}{}\section{v8\+:\+:internal\+:\+:Scavenging\+Visitor$<$ marks\+\_\+handling, logging\+\_\+and\+\_\+profiling\+\_\+mode $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_scavenging_visitor}\index{v8\+::internal\+::\+Scavenging\+Visitor$<$ marks\+\_\+handling, logging\+\_\+and\+\_\+profiling\+\_\+mode $>$@{v8\+::internal\+::\+Scavenging\+Visitor$<$ marks\+\_\+handling, logging\+\_\+and\+\_\+profiling\+\_\+mode $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Scavenging\+Visitor$<$ marks\+\_\+handling, logging\+\_\+and\+\_\+profiling\+\_\+mode $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_scavenging_visitor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_scavenging_visitor_1_1_object_evacuation_strategy}{Object\+Evacuation\+Strategy}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a67f602b06b4b306ac2e0efb967aa99d6}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a67f602b06b4b306ac2e0efb967aa99d6}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_visitor_dispatch_table}{Visitor\+Dispatch\+Table}$<$ Scavenging\+Callback $>$ $\ast$ {\bfseries Get\+Table} ()\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a026e676f9789ecd3cef9210a15d483ec}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a026e676f9789ecd3cef9210a15d483ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Object\+Contents} \{ \\*
+{\bfseries D\+A\+T\+A\+\_\+\+O\+B\+J\+E\+CT}, 
+\\*
+{\bfseries P\+O\+I\+N\+T\+E\+R\+\_\+\+O\+B\+J\+E\+CT}
+ \}\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_ace5a710b6c22df4f9bb6f7c4957bd7cb}{}\label{classv8_1_1internal_1_1_scavenging_visitor_ace5a710b6c22df4f9bb6f7c4957bd7cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Migrate\+Object(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$source,                                                                                                                                   \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$target, int size))\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a3fc28f2aed06545f7f265757a00697d3}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a3fc28f2aed06545f7f265757a00697d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Record\+Copied\+Object} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a4ac129fe86bb6249a0ede8f2fd865d5d}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a4ac129fe86bb6249a0ede8f2fd865d5d}
+
+\item 
+{\footnotesize template$<$Allocation\+Alignment alignment$>$ }\\static bool {\bfseries Semi\+Space\+Copy\+Object} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, int object\+\_\+size)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a9a75ef77df58f742e0109acdfb5375d4}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a9a75ef77df58f742e0109acdfb5375d4}
+
+\item 
+{\footnotesize template$<$Object\+Contents object\+\_\+contents, Allocation\+Alignment alignment$>$ }\\static bool {\bfseries Promote\+Object} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, int object\+\_\+size)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a7fa64c8d63b4b74f9e6674f109c76eab}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a7fa64c8d63b4b74f9e6674f109c76eab}
+
+\item 
+{\footnotesize template$<$Object\+Contents object\+\_\+contents, Allocation\+Alignment alignment$>$ }\\static void {\bfseries Evacuate\+Object} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, int object\+\_\+size)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a0aff70f247bfc5d908d9f4ef4ec904e4}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a0aff70f247bfc5d908d9f4ef4ec904e4}
+
+\item 
+static void {\bfseries Evacuate\+J\+S\+Function} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_ada703fc6e47357101f76c95bcae815ad}{}\label{classv8_1_1internal_1_1_scavenging_visitor_ada703fc6e47357101f76c95bcae815ad}
+
+\item 
+static void {\bfseries Evacuate\+Fixed\+Array} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_aab939eeca2af916997187df2caeb73b7}{}\label{classv8_1_1internal_1_1_scavenging_visitor_aab939eeca2af916997187df2caeb73b7}
+
+\item 
+static void {\bfseries Evacuate\+Fixed\+Double\+Array} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a9cba9e793eee8fda527e8162cf75698b}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a9cba9e793eee8fda527e8162cf75698b}
+
+\item 
+static void {\bfseries Evacuate\+Fixed\+Typed\+Array} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_aef5f6b260f3f9110d6dc39771b0a1248}{}\label{classv8_1_1internal_1_1_scavenging_visitor_aef5f6b260f3f9110d6dc39771b0a1248}
+
+\item 
+static void {\bfseries Evacuate\+Fixed\+Float64\+Array} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a2258c0af0e55f159f5acf31fd17dcd07}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a2258c0af0e55f159f5acf31fd17dcd07}
+
+\item 
+static void {\bfseries Evacuate\+J\+S\+Array\+Buffer} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_aef44c23e10fb557b5ae06b59d2ce3895}{}\label{classv8_1_1internal_1_1_scavenging_visitor_aef44c23e10fb557b5ae06b59d2ce3895}
+
+\item 
+static void {\bfseries Evacuate\+Byte\+Array} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a9155dea06de750e91218de4870024221}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a9155dea06de750e91218de4870024221}
+
+\item 
+static void {\bfseries Evacuate\+Seq\+One\+Byte\+String} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a4488690eb9fae4ff167a91bd774c76ad}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a4488690eb9fae4ff167a91bd774c76ad}
+
+\item 
+static void {\bfseries Evacuate\+Seq\+Two\+Byte\+String} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a8ec181e48e2c111eaba0e27b14670f41}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a8ec181e48e2c111eaba0e27b14670f41}
+
+\item 
+static void {\bfseries Evacuate\+Shortcut\+Candidate} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$$\ast$slot, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a94de1c34c7fd7d518d8313c3c2eba131}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a94de1c34c7fd7d518d8313c3c2eba131}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_visitor_dispatch_table}{Visitor\+Dispatch\+Table}$<$ Scavenging\+Callback $>$ {\bfseries table\+\_\+}\hypertarget{classv8_1_1internal_1_1_scavenging_visitor_a69c4bced8f1c6effc4abf4234594372b}{}\label{classv8_1_1internal_1_1_scavenging_visitor_a69c4bced8f1c6effc4abf4234594372b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/scavenger.\+cc\end{DoxyCompactItemize}

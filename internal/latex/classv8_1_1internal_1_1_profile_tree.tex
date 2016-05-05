@@ -1,0 +1,62 @@
+\hypertarget{classv8_1_1internal_1_1_profile_tree}{}\section{v8\+:\+:internal\+:\+:Profile\+Tree Class Reference}
+\label{classv8_1_1internal_1_1_profile_tree}\index{v8\+::internal\+::\+Profile\+Tree@{v8\+::internal\+::\+Profile\+Tree}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Profile\+Tree} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_profile_tree_ad0a684dc116b33cae0283694e33af15f}{}\label{classv8_1_1internal_1_1_profile_tree_ad0a684dc116b33cae0283694e33af15f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ {\bfseries Add\+Path\+From\+End} (const std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ $>$ \&path, int src\+\_\+line=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, bool update\+\_\+stats=true)\hypertarget{classv8_1_1internal_1_1_profile_tree_a249bc90bbae882f9d949ebcf25638c69}{}\label{classv8_1_1internal_1_1_profile_tree_a249bc90bbae882f9d949ebcf25638c69}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ {\bfseries root} () const \hypertarget{classv8_1_1internal_1_1_profile_tree_abd2b62dab12fa95dd77c7aa50922fe25}{}\label{classv8_1_1internal_1_1_profile_tree_abd2b62dab12fa95dd77c7aa50922fe25}
+
+\item 
+unsigned {\bfseries next\+\_\+node\+\_\+id} ()\hypertarget{classv8_1_1internal_1_1_profile_tree_a8f6da4826c203b27853dd938cc629afe}{}\label{classv8_1_1internal_1_1_profile_tree_a8f6da4826c203b27853dd938cc629afe}
+
+\item 
+unsigned {\bfseries Get\+Function\+Id} (const \hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1_profile_tree_a801fa3c6cdc6c8ade55b1e33284301a7}{}\label{classv8_1_1internal_1_1_profile_tree_a801fa3c6cdc6c8ade55b1e33284301a7}
+
+\item 
+void {\bfseries Print} ()\hypertarget{classv8_1_1internal_1_1_profile_tree_a8c898f6817801f67220153bfdba1c868}{}\label{classv8_1_1internal_1_1_profile_tree_a8c898f6817801f67220153bfdba1c868}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_profile_tree_aad2b3eeb3acb4ec73b0c4f535fb3fc3d}{}\label{classv8_1_1internal_1_1_profile_tree_aad2b3eeb3acb4ec73b0c4f535fb3fc3d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Traverse\+Depth\+First} (Callback $\ast$callback)\hypertarget{classv8_1_1internal_1_1_profile_tree_aa402b7a7fbb047cd1600e90e2a5fbec3}{}\label{classv8_1_1internal_1_1_profile_tree_aa402b7a7fbb047cd1600e90e2a5fbec3}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_profile_tree}{Profile\+Tree})\hypertarget{classv8_1_1internal_1_1_profile_tree_aacf2030037a5ac22ba6914348a3e5918}{}\label{classv8_1_1internal_1_1_profile_tree_aacf2030037a5ac22ba6914348a3e5918}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} {\bfseries root\+\_\+entry\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_a4bf71b54e45df43c6cb91cae95be5239}{}\label{classv8_1_1internal_1_1_profile_tree_a4bf71b54e45df43c6cb91cae95be5239}
+
+\item 
+unsigned {\bfseries next\+\_\+node\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_a0a40c70ba051d096ae2daa7c4a475169}{}\label{classv8_1_1internal_1_1_profile_tree_a0a40c70ba051d096ae2daa7c4a475169}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ {\bfseries root\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_a8a692d98ebae1f3b6313f9653fbf7b74}{}\label{classv8_1_1internal_1_1_profile_tree_a8a692d98ebae1f3b6313f9653fbf7b74}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_aa8b30e7723afe6d700e0e195c0ac83c9}{}\label{classv8_1_1internal_1_1_profile_tree_aa8b30e7723afe6d700e0e195c0ac83c9}
+
+\item 
+unsigned {\bfseries next\+\_\+function\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_afb46482f9ea2ee745c11606a70a4cf1a}{}\label{classv8_1_1internal_1_1_profile_tree_afb46482f9ea2ee745c11606a70a4cf1a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Hash\+Map} {\bfseries function\+\_\+ids\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_tree_a1dbbec8e7ddb19dfadf28f9155c44dda}{}\label{classv8_1_1internal_1_1_profile_tree_a1dbbec8e7ddb19dfadf28f9155c44dda}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

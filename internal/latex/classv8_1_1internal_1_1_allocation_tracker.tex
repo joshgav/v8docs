@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1_allocation_tracker}{}\section{v8\+:\+:internal\+:\+:Allocation\+Tracker Class Reference}
+\label{classv8_1_1internal_1_1_allocation_tracker}\index{v8\+::internal\+::\+Allocation\+Tracker@{v8\+::internal\+::\+Allocation\+Tracker}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_allocation_tracker_1_1_function_info}{Function\+Info}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_allocation_tracker_1_1_unresolved_location}{Unresolved\+Location}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Allocation\+Tracker} (\hyperlink{classv8_1_1internal_1_1_heap_objects_map}{Heap\+Objects\+Map} $\ast$ids, \hyperlink{classv8_1_1internal_1_1_strings_storage}{Strings\+Storage} $\ast$names)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_ae705bae00ff323c41efc0b1d50afc62c}{}\label{classv8_1_1internal_1_1_allocation_tracker_ae705bae00ff323c41efc0b1d50afc62c}
+
+\item 
+void {\bfseries Prepare\+For\+Serialization} ()\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a06984664822efec67f15cfc200f9c1c8}{}\label{classv8_1_1internal_1_1_allocation_tracker_a06984664822efec67f15cfc200f9c1c8}
+
+\item 
+void {\bfseries Allocation\+Event} (Address addr, int size)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_af59e0f4c414b6fe00ff0729e616ae219}{}\label{classv8_1_1internal_1_1_allocation_tracker_af59e0f4c414b6fe00ff0729e616ae219}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_allocation_trace_tree}{Allocation\+Trace\+Tree} $\ast$ {\bfseries trace\+\_\+tree} ()\hypertarget{classv8_1_1internal_1_1_allocation_tracker_aa0471186f074acec90232839b6e22431}{}\label{classv8_1_1internal_1_1_allocation_tracker_aa0471186f074acec90232839b6e22431}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{structv8_1_1internal_1_1_allocation_tracker_1_1_function_info}{Function\+Info} $\ast$ $>$ \& {\bfseries function\+\_\+info\+\_\+list} () const \hypertarget{classv8_1_1internal_1_1_allocation_tracker_a25d10af2d1bde8601599623c34754b2e}{}\label{classv8_1_1internal_1_1_allocation_tracker_a25d10af2d1bde8601599623c34754b2e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_address_to_trace_map}{Address\+To\+Trace\+Map} $\ast$ {\bfseries address\+\_\+to\+\_\+trace} ()\hypertarget{classv8_1_1internal_1_1_allocation_tracker_adacf25ec6310501fb4d9ae02c1737621}{}\label{classv8_1_1internal_1_1_allocation_tracker_adacf25ec6310501fb4d9ae02c1737621}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned {\bfseries Add\+Function\+Info} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$info, Snapshot\+Object\+Id id)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a230cbe58c384c06817de9b1a15c7cb09}{}\label{classv8_1_1internal_1_1_allocation_tracker_a230cbe58c384c06817de9b1a15c7cb09}
+
+\item 
+unsigned {\bfseries function\+Info\+Index\+For\+V\+M\+State} (State\+Tag state)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a45e9bdead8b15ff607262ae84127b038}{}\label{classv8_1_1internal_1_1_allocation_tracker_a45e9bdead8b15ff607262ae84127b038}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_allocation_tracker}{Allocation\+Tracker})\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a0164c24c32589a2e09f645f410fea381}{}\label{classv8_1_1internal_1_1_allocation_tracker_a0164c24c32589a2e09f645f410fea381}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Delete\+Function\+Info} (\hyperlink{structv8_1_1internal_1_1_allocation_tracker_1_1_function_info}{Function\+Info} $\ast$$\ast$info)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_aa8c6d9f918ab4f4fac36215599c71faa}{}\label{classv8_1_1internal_1_1_allocation_tracker_aa8c6d9f918ab4f4fac36215599c71faa}
+
+\item 
+static void {\bfseries Delete\+Unresolved\+Location} (\hyperlink{classv8_1_1internal_1_1_allocation_tracker_1_1_unresolved_location}{Unresolved\+Location} $\ast$$\ast$location)\hypertarget{classv8_1_1internal_1_1_allocation_tracker_af0643d03e87ccb06ea0d2d2eee79b8a3}{}\label{classv8_1_1internal_1_1_allocation_tracker_af0643d03e87ccb06ea0d2d2eee79b8a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_objects_map}{Heap\+Objects\+Map} $\ast$ {\bfseries ids\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a09898522d9f5a3ddb83ac341da54c775}{}\label{classv8_1_1internal_1_1_allocation_tracker_a09898522d9f5a3ddb83ac341da54c775}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_strings_storage}{Strings\+Storage} $\ast$ {\bfseries names\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a4ff70d57e19c616436e54ffc1856ced7}{}\label{classv8_1_1internal_1_1_allocation_tracker_a4ff70d57e19c616436e54ffc1856ced7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_allocation_trace_tree}{Allocation\+Trace\+Tree} {\bfseries trace\+\_\+tree\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a870259fdd00406cd018dd6f122b30962}{}\label{classv8_1_1internal_1_1_allocation_tracker_a870259fdd00406cd018dd6f122b30962}
+
+\item 
+unsigned {\bfseries allocation\+\_\+trace\+\_\+buffer\+\_\+} \mbox{[}k\+Max\+Allocation\+Trace\+Length\mbox{]}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a4f124d5e95ed5b432c35c208db680577}{}\label{classv8_1_1internal_1_1_allocation_tracker_a4f124d5e95ed5b432c35c208db680577}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{structv8_1_1internal_1_1_allocation_tracker_1_1_function_info}{Function\+Info} $\ast$ $>$ {\bfseries function\+\_\+info\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_ae5b86f333eccf1561c5f650bf50b23a9}{}\label{classv8_1_1internal_1_1_allocation_tracker_ae5b86f333eccf1561c5f650bf50b23a9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Hash\+Map} {\bfseries id\+\_\+to\+\_\+function\+\_\+info\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a462cfcfd917d60b928758f0bafd83792}{}\label{classv8_1_1internal_1_1_allocation_tracker_a462cfcfd917d60b928758f0bafd83792}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_allocation_tracker_1_1_unresolved_location}{Unresolved\+Location} $\ast$ $>$ {\bfseries unresolved\+\_\+locations\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_aa3e21b01c4eb5ac83edb180ef9e269bb}{}\label{classv8_1_1internal_1_1_allocation_tracker_aa3e21b01c4eb5ac83edb180ef9e269bb}
+
+\item 
+unsigned {\bfseries info\+\_\+index\+\_\+for\+\_\+other\+\_\+state\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a11021be4a0873ee3ea9ead9e081e48b7}{}\label{classv8_1_1internal_1_1_allocation_tracker_a11021be4a0873ee3ea9ead9e081e48b7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_address_to_trace_map}{Address\+To\+Trace\+Map} {\bfseries address\+\_\+to\+\_\+trace\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_tracker_a3e196ef67967218217b9d2c5131fa7c1}{}\label{classv8_1_1internal_1_1_allocation_tracker_a3e196ef67967218217b9d2c5131fa7c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Allocation\+Trace\+Length} = 64\hypertarget{classv8_1_1internal_1_1_allocation_tracker_ac8b14ca549f6776ca3a67585a56ba805}{}\label{classv8_1_1internal_1_1_allocation_tracker_ac8b14ca549f6776ca3a67585a56ba805}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/allocation-\/tracker.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/allocation-\/tracker.\+cc\end{DoxyCompactItemize}

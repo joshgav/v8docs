@@ -1,0 +1,46 @@
+\hypertarget{classv8_1_1internal_1_1_perf_basic_logger}{}\section{v8\+:\+:internal\+:\+:Perf\+Basic\+Logger Class Reference}
+\label{classv8_1_1internal_1_1_perf_basic_logger}\index{v8\+::internal\+::\+Perf\+Basic\+Logger@{v8\+::internal\+::\+Perf\+Basic\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Perf\+Basic\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_perf_basic_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Code\+Move\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$from, Address to) override\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_aefb922c3631929e7242cf43f6f5d1c65}{}\label{classv8_1_1internal_1_1_perf_basic_logger_aefb922c3631929e7242cf43f6f5d1c65}
+
+\item 
+void {\bfseries Code\+Disable\+Opt\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared) override\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_a9cbacc546ea95cd42894d5c6f1fa2ce2}{}\label{classv8_1_1internal_1_1_perf_basic_logger_a9cbacc546ea95cd42894d5c6f1fa2ce2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Log\+Recorded\+Buffer} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, const char $\ast$name, int length) override\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_a0f0d13a7617fc187995224625110a52f}{}\label{classv8_1_1internal_1_1_perf_basic_logger_a0f0d13a7617fc187995224625110a52f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ {\bfseries perf\+\_\+output\+\_\+handle\+\_\+}\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_a3a7ee6e27ddaa9cb6159fcd344a97a4f}{}\label{classv8_1_1internal_1_1_perf_basic_logger_a3a7ee6e27ddaa9cb6159fcd344a97a4f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char {\bfseries k\+Filename\+Format\+String} \mbox{[}$\,$\mbox{]} = \char`\"{}/tmp/perf-\/\%d.\+map\char`\"{}\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_a3fbd65660a30f231f6b30c8f023708e1}{}\label{classv8_1_1internal_1_1_perf_basic_logger_a3fbd65660a30f231f6b30c8f023708e1}
+
+\item 
+static const int {\bfseries k\+Filename\+Buffer\+Padding} = 16\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_afb95cfac67cef397a892b9faa9914358}{}\label{classv8_1_1internal_1_1_perf_basic_logger_afb95cfac67cef397a892b9faa9914358}
+
+\item 
+static const int {\bfseries k\+Log\+Buffer\+Size} = 2 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_perf_basic_logger_a11885ae6e6a67b9fed4666b04b0738b5}{}\label{classv8_1_1internal_1_1_perf_basic_logger_a11885ae6e6a67b9fed4666b04b0738b5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+cc\end{DoxyCompactItemize}

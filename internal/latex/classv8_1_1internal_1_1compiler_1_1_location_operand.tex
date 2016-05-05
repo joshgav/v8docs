@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Location\+Operand Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_location_operand}\index{v8\+::internal\+::compiler\+::\+Location\+Operand@{v8\+::internal\+::compiler\+::\+Location\+Operand}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Location\+Operand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_location_operand}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand_1_1_index_field}{Index\+Field}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand_1_1_location_kind_field}{Location\+Kind\+Field}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand_1_1_representation_field}{Representation\+Field}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Location\+Kind} \{ \\*
+{\bfseries R\+E\+G\+I\+S\+T\+ER}, 
+\\*
+{\bfseries S\+T\+A\+C\+K\+\_\+\+S\+L\+OT}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_af9e0a334eaf58a05f9ea5b7139221140}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_af9e0a334eaf58a05f9ea5b7139221140}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Location\+Operand} (Instruction\+Operand\+::\+Kind operand\+\_\+kind, Location\+Operand\+::\+Location\+Kind location\+\_\+kind, Machine\+Representation rep, int index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a0122a8300b2c16ca73ee2f0929aec02b}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a0122a8300b2c16ca73ee2f0929aec02b}
+
+\item 
+int {\bfseries index} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_aef9aeceea11f537ddd9d8bc11c3914d4}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_aef9aeceea11f537ddd9d8bc11c3914d4}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries Get\+Register} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_aa9842c714e43e0bb024beeafa4443102}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_aa9842c714e43e0bb024beeafa4443102}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_double_register}{Double\+Register} {\bfseries Get\+Double\+Register} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_af25a992764bc4e731f774b94f12765b7}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_af25a992764bc4e731f774b94f12765b7}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_qw_neon_register}{Simd128\+Register} {\bfseries Get\+Simd128\+Register} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a307dc8f139a8003af4ce2f994e53a4d2}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a307dc8f139a8003af4ce2f994e53a4d2}
+
+\item 
+Location\+Kind {\bfseries location\+\_\+kind} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_ac3356d910405eabaedb90051ebb66f6d}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_ac3356d910405eabaedb90051ebb66f6d}
+
+\item 
+Machine\+Representation {\bfseries representation} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a9d3ac063f43e913a7971d9faa3523853}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a9d3ac063f43e913a7971d9faa3523853}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Kind\+Field\+::k\+Size==3)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a99e00c5db0d6fa6f488f82237cbcd199}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a99e00c5db0d6fa6f488f82237cbcd199}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Is\+Supported\+Representation} (Machine\+Representation rep)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_ab6141638987e754e03824fc8694f4c0e}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_ab6141638987e754e03824fc8694f4c0e}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand}{Location\+Operand} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} $\ast$op)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a14a0a8abb4b6ac796e0fae75948a270e}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a14a0a8abb4b6ac796e0fae75948a270e}
+
+\item 
+static const \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand}{Location\+Operand} $\ast$ {\bfseries cast} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} $\ast$op)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_ad029652faf84f4ee000715b9c9d28c3d}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_ad029652faf84f4ee000715b9c9d28c3d}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_location_operand}{Location\+Operand} {\bfseries cast} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} \&op)\hypertarget{classv8_1_1internal_1_1compiler_1_1_location_operand_a0beb118c4233c0d32eaca5afe2bf0990}{}\label{classv8_1_1internal_1_1compiler_1_1_location_operand_a0beb118c4233c0d32eaca5afe2bf0990}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/instruction.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1internal_1_1_compile_time_value}{}\section{v8\+:\+:internal\+:\+:Compile\+Time\+Value Class Reference}
+\label{classv8_1_1internal_1_1_compile_time_value}\index{v8\+::internal\+::\+Compile\+Time\+Value@{v8\+::internal\+::\+Compile\+Time\+Value}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compile\+Time\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_compile_time_value}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Literal\+Type} \{ \\*
+{\bfseries O\+B\+J\+E\+C\+T\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+F\+A\+S\+T\+\_\+\+E\+L\+E\+M\+E\+N\+TS}, 
+\\*
+{\bfseries O\+B\+J\+E\+C\+T\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+S\+L\+O\+W\+\_\+\+E\+L\+E\+M\+E\+N\+TS}, 
+\\*
+{\bfseries A\+R\+R\+A\+Y\+\_\+\+L\+I\+T\+E\+R\+AL}
+ \}\hypertarget{classv8_1_1internal_1_1_compile_time_value_a7a47587d35656f957544909d0b5e4fb5}{}\label{classv8_1_1internal_1_1_compile_time_value_a7a47587d35656f957544909d0b5e4fb5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Is\+Compile\+Time\+Value} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_compile_time_value_a42f388c360e1cdce36059fd5001ace81}{}\label{classv8_1_1internal_1_1_compile_time_value_a42f388c360e1cdce36059fd5001ace81}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Get\+Value} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_compile_time_value_af62ef6f13fc7d3eff0f30e127357a283}{}\label{classv8_1_1internal_1_1_compile_time_value_af62ef6f13fc7d3eff0f30e127357a283}
+
+\item 
+static Literal\+Type {\bfseries Get\+Literal\+Type} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ value)\hypertarget{classv8_1_1internal_1_1_compile_time_value_a3316cc02e00bf91885f42a91e66b7dd8}{}\label{classv8_1_1internal_1_1_compile_time_value_a3316cc02e00bf91885f42a91e66b7dd8}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Get\+Elements} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ value)\hypertarget{classv8_1_1internal_1_1_compile_time_value_a0593049ea35745c8f75de40ebd995888}{}\label{classv8_1_1internal_1_1_compile_time_value_a0593049ea35745c8f75de40ebd995888}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_compile_time_value}{Compile\+Time\+Value})\hypertarget{classv8_1_1internal_1_1_compile_time_value_ad53bfc7d9f72ac21c5688808daa4e3c5}{}\label{classv8_1_1internal_1_1_compile_time_value_ad53bfc7d9f72ac21c5688808daa4e3c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Literal\+Type\+Slot} = 0\hypertarget{classv8_1_1internal_1_1_compile_time_value_a74b3188f95a68d9897c16ca72a9ea3bf}{}\label{classv8_1_1internal_1_1_compile_time_value_a74b3188f95a68d9897c16ca72a9ea3bf}
+
+\item 
+static const int {\bfseries k\+Elements\+Slot} = 1\hypertarget{classv8_1_1internal_1_1_compile_time_value_a88cc697a8edebd987cf9164fbc0b09ae}{}\label{classv8_1_1internal_1_1_compile_time_value_a88cc697a8edebd987cf9164fbc0b09ae}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+cc\end{DoxyCompactItemize}

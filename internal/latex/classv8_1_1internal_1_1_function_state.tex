@@ -1,0 +1,116 @@
+\hypertarget{classv8_1_1internal_1_1_function_state}{}\section{v8\+:\+:internal\+:\+:Function\+State Class Reference}
+\label{classv8_1_1internal_1_1_function_state}\index{v8\+::internal\+::\+Function\+State@{v8\+::internal\+::\+Function\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Function\+State} (\hyperlink{classv8_1_1internal_1_1_h_optimized_graph_builder}{H\+Optimized\+Graph\+Builder} $\ast$owner, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, Inlining\+Kind inlining\+\_\+kind, int inlining\+\_\+id, Tail\+Call\+Mode tail\+\_\+call\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_function_state_a9b3865d259c37ce3fe90f617df9ff7d1}{}\label{classv8_1_1internal_1_1_function_state_a9b3865d259c37ce3fe90f617df9ff7d1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries compilation\+\_\+info} ()\hypertarget{classv8_1_1internal_1_1_function_state_aea98f2e386d7be25b66506623448fd8a}{}\label{classv8_1_1internal_1_1_function_state_aea98f2e386d7be25b66506623448fd8a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_ast_context}{Ast\+Context} $\ast$ {\bfseries call\+\_\+context} ()\hypertarget{classv8_1_1internal_1_1_function_state_a0b32cd6f1647d12e09dc611f0a96a20b}{}\label{classv8_1_1internal_1_1_function_state_a0b32cd6f1647d12e09dc611f0a96a20b}
+
+\item 
+Inlining\+Kind {\bfseries inlining\+\_\+kind} () const \hypertarget{classv8_1_1internal_1_1_function_state_a5ec4c820255410ac19e00a19f85a567a}{}\label{classv8_1_1internal_1_1_function_state_a5ec4c820255410ac19e00a19f85a567a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries function\+\_\+return} ()\hypertarget{classv8_1_1internal_1_1_function_state_a3137ed9f5adbd2c3438a88daa96c3b3e}{}\label{classv8_1_1internal_1_1_function_state_a3137ed9f5adbd2c3438a88daa96c3b3e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_test_context}{Test\+Context} $\ast$ {\bfseries test\+\_\+context} ()\hypertarget{classv8_1_1internal_1_1_function_state_a79edfb798a56400d12975c2638cb8d7b}{}\label{classv8_1_1internal_1_1_function_state_a79edfb798a56400d12975c2638cb8d7b}
+
+\item 
+void {\bfseries Clear\+Inlined\+Test\+Context} ()\hypertarget{classv8_1_1internal_1_1_function_state_a029a29f74b3560654d12987106cf910f}{}\label{classv8_1_1internal_1_1_function_state_a029a29f74b3560654d12987106cf910f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_state}{Function\+State} $\ast$ {\bfseries outer} ()\hypertarget{classv8_1_1internal_1_1_function_state_aec4dcb077e31b6f6b98a1d28fb24c6e2}{}\label{classv8_1_1internal_1_1_function_state_aec4dcb077e31b6f6b98a1d28fb24c6e2}
+
+\item 
+Tail\+Call\+Mode {\bfseries Compute\+Tail\+Call\+Mode} (Tail\+Call\+Mode tail\+\_\+call\+\_\+mode) const \hypertarget{classv8_1_1internal_1_1_function_state_ab777f8842eeea64bb1d6b0bbfc7ce4fb}{}\label{classv8_1_1internal_1_1_function_state_ab777f8842eeea64bb1d6b0bbfc7ce4fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_enter_inlined}{H\+Enter\+Inlined} $\ast$ {\bfseries entry} ()\hypertarget{classv8_1_1internal_1_1_function_state_a2525b32c9e63db5b5d12a6cf73597f14}{}\label{classv8_1_1internal_1_1_function_state_a2525b32c9e63db5b5d12a6cf73597f14}
+
+\item 
+void {\bfseries set\+\_\+entry} (\hyperlink{classv8_1_1internal_1_1_h_enter_inlined}{H\+Enter\+Inlined} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_function_state_a5cbcb7065c34c64640048c399c7762e9}{}\label{classv8_1_1internal_1_1_function_state_a5cbcb7065c34c64640048c399c7762e9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_arguments_object}{H\+Arguments\+Object} $\ast$ {\bfseries arguments\+\_\+object} ()\hypertarget{classv8_1_1internal_1_1_function_state_a32e6bf80d61827ac838ce5fc507c67e6}{}\label{classv8_1_1internal_1_1_function_state_a32e6bf80d61827ac838ce5fc507c67e6}
+
+\item 
+void {\bfseries set\+\_\+arguments\+\_\+object} (\hyperlink{classv8_1_1internal_1_1_h_arguments_object}{H\+Arguments\+Object} $\ast$arguments\+\_\+object)\hypertarget{classv8_1_1internal_1_1_function_state_aba1e8b55376eabb6cd1ef8479caf874b}{}\label{classv8_1_1internal_1_1_function_state_aba1e8b55376eabb6cd1ef8479caf874b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_arguments_elements}{H\+Arguments\+Elements} $\ast$ {\bfseries arguments\+\_\+elements} ()\hypertarget{classv8_1_1internal_1_1_function_state_a562ae7567bc9ed7cada73813db1175ea}{}\label{classv8_1_1internal_1_1_function_state_a562ae7567bc9ed7cada73813db1175ea}
+
+\item 
+void {\bfseries set\+\_\+arguments\+\_\+elements} (\hyperlink{classv8_1_1internal_1_1_h_arguments_elements}{H\+Arguments\+Elements} $\ast$arguments\+\_\+elements)\hypertarget{classv8_1_1internal_1_1_function_state_a86237102273799337bcc294d2bf9068c}{}\label{classv8_1_1internal_1_1_function_state_a86237102273799337bcc294d2bf9068c}
+
+\item 
+bool {\bfseries arguments\+\_\+pushed} ()\hypertarget{classv8_1_1internal_1_1_function_state_a4b66a84217d9a867b45d14b8bbe22a7e}{}\label{classv8_1_1internal_1_1_function_state_a4b66a84217d9a867b45d14b8bbe22a7e}
+
+\item 
+int {\bfseries inlining\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_function_state_ae846daafd1f10ca0b599fb96bfb96456}{}\label{classv8_1_1internal_1_1_function_state_ae846daafd1f10ca0b599fb96bfb96456}
+
+\item 
+void {\bfseries Increment\+In\+Do\+Expression\+Scope} ()\hypertarget{classv8_1_1internal_1_1_function_state_aeb106c1fac0217284e4a53569ba8ef51}{}\label{classv8_1_1internal_1_1_function_state_aeb106c1fac0217284e4a53569ba8ef51}
+
+\item 
+void {\bfseries Decrement\+In\+Do\+Expression\+Scope} ()\hypertarget{classv8_1_1internal_1_1_function_state_abf3a831c6416054d9af6f4a211077861}{}\label{classv8_1_1internal_1_1_function_state_abf3a831c6416054d9af6f4a211077861}
+
+\item 
+bool {\bfseries Is\+Inside\+Do\+Expression\+Scope} ()\hypertarget{classv8_1_1internal_1_1_function_state_a51bdbe4052a283625e85c18c7b6f3556}{}\label{classv8_1_1internal_1_1_function_state_a51bdbe4052a283625e85c18c7b6f3556}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_optimized_graph_builder}{H\+Optimized\+Graph\+Builder} $\ast$ {\bfseries owner\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a92942f6686164fd0301731a2c0646da1}{}\label{classv8_1_1internal_1_1_function_state_a92942f6686164fd0301731a2c0646da1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries compilation\+\_\+info\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a29350dbc8f6d4fa0580a28798b21688f}{}\label{classv8_1_1internal_1_1_function_state_a29350dbc8f6d4fa0580a28798b21688f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_ast_context}{Ast\+Context} $\ast$ {\bfseries call\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_ad18764c0e5580d2a8628cd3cc1deaabb}{}\label{classv8_1_1internal_1_1_function_state_ad18764c0e5580d2a8628cd3cc1deaabb}
+
+\item 
+Inlining\+Kind {\bfseries inlining\+\_\+kind\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_aa6fa9126842b7f8beec8f5546ca279c7}{}\label{classv8_1_1internal_1_1_function_state_aa6fa9126842b7f8beec8f5546ca279c7}
+
+\item 
+Tail\+Call\+Mode {\bfseries tail\+\_\+call\+\_\+mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a5b22893ab296e17dbdcd9ea67dab237c}{}\label{classv8_1_1internal_1_1_function_state_a5b22893ab296e17dbdcd9ea67dab237c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries function\+\_\+return\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a027f42c33c0da54a106accceea1a3a2e}{}\label{classv8_1_1internal_1_1_function_state_a027f42c33c0da54a106accceea1a3a2e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_test_context}{Test\+Context} $\ast$ {\bfseries test\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a7f1cd08de0699d5df86b00b611393d44}{}\label{classv8_1_1internal_1_1_function_state_a7f1cd08de0699d5df86b00b611393d44}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_enter_inlined}{H\+Enter\+Inlined} $\ast$ {\bfseries entry\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a0461ad5dbaaa437d7cf39e635102511e}{}\label{classv8_1_1internal_1_1_function_state_a0461ad5dbaaa437d7cf39e635102511e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_arguments_object}{H\+Arguments\+Object} $\ast$ {\bfseries arguments\+\_\+object\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_aa9f70db3fcb213ad93c86ecad05c49f9}{}\label{classv8_1_1internal_1_1_function_state_aa9f70db3fcb213ad93c86ecad05c49f9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_arguments_elements}{H\+Arguments\+Elements} $\ast$ {\bfseries arguments\+\_\+elements\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_ae0c2018e2a72db45b6315a84e3e4b499}{}\label{classv8_1_1internal_1_1_function_state_ae0c2018e2a72db45b6315a84e3e4b499}
+
+\item 
+int {\bfseries inlining\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a2c541ce77dedb434b4bd9016660b805b}{}\label{classv8_1_1internal_1_1_function_state_a2c541ce77dedb434b4bd9016660b805b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} {\bfseries outer\+\_\+source\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a7d92689f4e089afd81052c8796d43ae9}{}\label{classv8_1_1internal_1_1_function_state_a7d92689f4e089afd81052c8796d43ae9}
+
+\item 
+int {\bfseries do\+\_\+expression\+\_\+scope\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_a9253f5cdac9271552d122598bab4accf}{}\label{classv8_1_1internal_1_1_function_state_a9253f5cdac9271552d122598bab4accf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_state}{Function\+State} $\ast$ {\bfseries outer\+\_\+}\hypertarget{classv8_1_1internal_1_1_function_state_ada2830daa246b267f7d35f116bb95873}{}\label{classv8_1_1internal_1_1_function_state_ada2830daa246b267f7d35f116bb95873}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

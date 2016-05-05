@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Results\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_results_cache}\index{v8\+::internal\+::\+Reg\+Exp\+Results\+Cache@{v8\+::internal\+::\+Reg\+Exp\+Results\+Cache}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Results\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_reg_exp_results_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Results\+Cache\+Type} \{ \\*
+{\bfseries R\+E\+G\+E\+X\+P\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+I\+N\+D\+I\+C\+ES}, 
+\\*
+{\bfseries S\+T\+R\+I\+N\+G\+\_\+\+S\+P\+L\+I\+T\+\_\+\+S\+U\+B\+S\+T\+R\+I\+N\+GS}
+ \}\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_a3899f4b7c08be12c8deb57d5fa9dcd01}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_a3899f4b7c08be12c8deb57d5fa9dcd01}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$key\+\_\+string, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$key\+\_\+pattern, \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$$\ast$last\+\_\+match\+\_\+out, Results\+Cache\+Type type)\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_ad5c57672fb5d710a37f2f8a299560cff}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_ad5c57672fb5d710a37f2f8a299560cff}
+
+\item 
+static void {\bfseries Enter} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ key\+\_\+string, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key\+\_\+pattern, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ value\+\_\+array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ last\+\_\+match\+\_\+cache, Results\+Cache\+Type type)\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_aeafd2342977a43afc254772a8bf8680a}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_aeafd2342977a43afc254772a8bf8680a}
+
+\item 
+static void {\bfseries Clear} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$cache)\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_ae866a4db3966af7978b3a0c1210d877f}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_ae866a4db3966af7978b3a0c1210d877f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Reg\+Exp\+Results\+Cache\+Size} = 0x100\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_ad37862e92f47683bd89088d629b569c8}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_ad37862e92f47683bd89088d629b569c8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Array\+Entries\+Per\+Cache\+Entry} = 4\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_a1d49f258d80b25dfac470778a75086fb}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_a1d49f258d80b25dfac470778a75086fb}
+
+\item 
+static const int {\bfseries k\+String\+Offset} = 0\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_a05651f61bc940246862e6b685c060ccf}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_a05651f61bc940246862e6b685c060ccf}
+
+\item 
+static const int {\bfseries k\+Pattern\+Offset} = 1\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_a0d4fc12553fec564bec43f9b17fc4689}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_a0d4fc12553fec564bec43f9b17fc4689}
+
+\item 
+static const int {\bfseries k\+Array\+Offset} = 2\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_ae0ccd05a62fe7076d644210a6cd75079}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_ae0ccd05a62fe7076d644210a6cd75079}
+
+\item 
+static const int {\bfseries k\+Last\+Match\+Offset} = 3\hypertarget{classv8_1_1internal_1_1_reg_exp_results_cache_ad5b3b87521f851fc55090601ffa752dc}{}\label{classv8_1_1internal_1_1_reg_exp_results_cache_ad5b3b87521f851fc55090601ffa752dc}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

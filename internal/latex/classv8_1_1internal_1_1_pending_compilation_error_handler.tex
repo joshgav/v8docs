@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler}{}\section{v8\+:\+:internal\+:\+:Pending\+Compilation\+Error\+Handler Class Reference}
+\label{classv8_1_1internal_1_1_pending_compilation_error_handler}\index{v8\+::internal\+::\+Pending\+Compilation\+Error\+Handler@{v8\+::internal\+::\+Pending\+Compilation\+Error\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Report\+Message\+At} (int start\+\_\+position, int end\+\_\+position, Message\+Template\+::\+Template message, const char $\ast$arg=nullptr, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a1b2c6f9bc901190e1fc569a3ea013fce}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a1b2c6f9bc901190e1fc569a3ea013fce}
+
+\item 
+void {\bfseries Report\+Message\+At} (int start\+\_\+position, int end\+\_\+position, Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_ab6e2534ec3e0f5fbea8a15f9016686a4}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_ab6e2534ec3e0f5fbea8a15f9016686a4}
+
+\item 
+void {\bfseries Report\+Message\+At} (int start\+\_\+position, int end\+\_\+position, Message\+Template\+::\+Template message, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ arg, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_ab480eb54641003eae6bca9d240d534d7}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_ab480eb54641003eae6bca9d240d534d7}
+
+\item 
+bool {\bfseries has\+\_\+pending\+\_\+error} () const \hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_aa626b6d9c69ffddd191d4e2c67ca28a9}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_aa626b6d9c69ffddd191d4e2c67ca28a9}
+
+\item 
+void {\bfseries Throw\+Pending\+Error} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script)\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a28f115daab92d67289304b3c48c9fcda}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a28f115daab92d67289304b3c48c9fcda}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_pending_compilation_error_handler}{Pending\+Compilation\+Error\+Handler})\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_afd5a7aa4ff79f6c9867375fbbf2ebf5f}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_afd5a7aa4ff79f6c9867375fbbf2ebf5f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries has\+\_\+pending\+\_\+error\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a0e9f7eb45e5d41dce5ba535710a44b79}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a0e9f7eb45e5d41dce5ba535710a44b79}
+
+\item 
+int {\bfseries start\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a04dbb2f4334bc3acb9d0bec29c314f19}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a04dbb2f4334bc3acb9d0bec29c314f19}
+
+\item 
+int {\bfseries end\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a8b8da67978ff4b62242ee2c6a51ef41e}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a8b8da67978ff4b62242ee2c6a51ef41e}
+
+\item 
+Message\+Template\+::\+Template {\bfseries message\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_ae34e4dd7c08608c4c57a4884386d8852}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_ae34e4dd7c08608c4c57a4884386d8852}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries arg\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a02c3f983e7f21b2e8e6f6402912219bf}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a02c3f983e7f21b2e8e6f6402912219bf}
+
+\item 
+const char $\ast$ {\bfseries char\+\_\+arg\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a285bdde138de08c1c401e2655de93cbd}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a285bdde138de08c1c401e2655de93cbd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries handle\+\_\+arg\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a13bcac3ff39f8e4a0dee8bffc6c54db8}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a13bcac3ff39f8e4a0dee8bffc6c54db8}
+
+\item 
+Parse\+Error\+Type {\bfseries error\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1_pending_compilation_error_handler_a9c94bf420e70d6bb1d320f74e73522cd}{}\label{classv8_1_1internal_1_1_pending_compilation_error_handler_a9c94bf420e70d6bb1d320f74e73522cd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/pending-\/compilation-\/error-\/handler.\+h\item 
+/\+Users/joshgav/node/v8/src/pending-\/compilation-\/error-\/handler.\+cc\end{DoxyCompactItemize}

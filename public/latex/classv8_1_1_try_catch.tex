@@ -1,0 +1,228 @@
+\hypertarget{classv8_1_1_try_catch}{}\section{v8\+:\+:Try\+Catch Class Reference}
+\label{classv8_1_1_try_catch}\index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_try_catch_a09b537e2d41504970bf5c4b574580d27}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, Try\+Catch())
+\item 
+\hyperlink{classv8_1_1_try_catch_a623ce624491b383fae60c05d2aeefb1a}{Try\+Catch} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)
+\item 
+\hyperlink{classv8_1_1_try_catch_a2c9ad4b40d17dd31c6dd020736b30679}{$\sim$\+Try\+Catch} ()
+\item 
+bool \hyperlink{classv8_1_1_try_catch_a48f704fbf2b82564b5d2a4ff596e4137}{Has\+Caught} () const 
+\item 
+bool \hyperlink{classv8_1_1_try_catch_a2ec467d4653d26c064d749cab98791cb}{Can\+Continue} () const 
+\item 
+bool \hyperlink{classv8_1_1_try_catch_a7e012477ac47db9480f85d55427987c7}{Has\+Terminated} () const 
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_try_catch_ab8c3a1dbb38e6fd00e37436034daf707}{Re\+Throw} ()
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_try_catch_a99c425f29b3355b4294cbe762377f99b}{Exception} () const 
+\item 
+\hyperlink{classv8_1_1_try_catch_a40bb49f0c8ee86f948cb0a172d7d4b74}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use maybe version.\char`\"{}, Local$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \hyperlink{classv8_1_1_stack_trace}{Stack\+Trace}() const)
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe_local}{Maybe\+Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Stack\+Trace} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ context) const \hypertarget{classv8_1_1_try_catch_a449fe4cdc063d234f2bea39e9297ba28}{}\label{classv8_1_1_try_catch_a449fe4cdc063d234f2bea39e9297ba28}
+
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_message}{v8\+::\+Message} $>$ \hyperlink{classv8_1_1_try_catch_a2811e500fbb906ee505895a3d94fc66f}{Message} () const 
+\item 
+void \hyperlink{classv8_1_1_try_catch_a3aae8acab4c99b374b7d782763d4c8e1}{Reset} ()
+\item 
+void \hyperlink{classv8_1_1_try_catch_a032cd889d76bd596e2616df11ced8682}{Set\+Verbose} (bool value)
+\item 
+void \hyperlink{classv8_1_1_try_catch_a541b8fa6951bd5a439692c22d5c7b73c}{Set\+Capture\+Message} (bool value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{classv8_1_1_try_catch_ac2e6359fa11a2aba609af82fb80cf07a}{J\+S\+Stack\+Comparable\+Address} (\hyperlink{classv8_1_1_try_catch}{v8\+::\+Try\+Catch} $\ast$handler)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Reset\+Internal} ()\hypertarget{classv8_1_1_try_catch_ae0c8d52ffa44aaae9f9ed6aed8571aa6}{}\label{classv8_1_1_try_catch_ae0c8d52ffa44aaae9f9ed6aed8571aa6}
+
+\item 
+{\bfseries Try\+Catch} (const \hyperlink{classv8_1_1_try_catch}{Try\+Catch} \&)\hypertarget{classv8_1_1_try_catch_a2ef3ec2db82538e0ff5540afe0f3660e}{}\label{classv8_1_1_try_catch_a2ef3ec2db82538e0ff5540afe0f3660e}
+
+\item 
+void {\bfseries operator=} (const \hyperlink{classv8_1_1_try_catch}{Try\+Catch} \&)\hypertarget{classv8_1_1_try_catch_aee3add8ba92eff66fdb22af91fce847d}{}\label{classv8_1_1_try_catch_aee3add8ba92eff66fdb22af91fce847d}
+
+\item 
+void $\ast$ {\bfseries operator new} (size\+\_\+t size)\hypertarget{classv8_1_1_try_catch_abe99b582257e711aa72730ddf6661100}{}\label{classv8_1_1_try_catch_abe99b582257e711aa72730ddf6661100}
+
+\item 
+void {\bfseries operator delete} (void $\ast$, size\+\_\+t)\hypertarget{classv8_1_1_try_catch_ad400a5dc4796e85d3d97a0e612adf0f8}{}\label{classv8_1_1_try_catch_ad400a5dc4796e85d3d97a0e612adf0f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+v8\+::internal\+::\+Isolate $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1_try_catch_a41cd5bd5fd37c48d6e0392f769a789d5}{}\label{classv8_1_1_try_catch_a41cd5bd5fd37c48d6e0392f769a789d5}
+
+\item 
+\hyperlink{classv8_1_1_try_catch}{v8\+::\+Try\+Catch} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1_try_catch_a2e9b54b01f7f97f42af5b7b377918334}{}\label{classv8_1_1_try_catch_a2e9b54b01f7f97f42af5b7b377918334}
+
+\item 
+void $\ast$ {\bfseries exception\+\_\+}\hypertarget{classv8_1_1_try_catch_a4ae6a166af0336716516addc1f64fe1f}{}\label{classv8_1_1_try_catch_a4ae6a166af0336716516addc1f64fe1f}
+
+\item 
+void $\ast$ {\bfseries message\+\_\+obj\+\_\+}\hypertarget{classv8_1_1_try_catch_a6efc81ccc783f40c660f0e709b578aaa}{}\label{classv8_1_1_try_catch_a6efc81ccc783f40c660f0e709b578aaa}
+
+\item 
+void $\ast$ {\bfseries js\+\_\+stack\+\_\+comparable\+\_\+address\+\_\+}\hypertarget{classv8_1_1_try_catch_a0f685aca812478ad996fabac7c291e89}{}\label{classv8_1_1_try_catch_a0f685aca812478ad996fabac7c291e89}
+
+\item 
+bool {\bfseries is\+\_\+verbose\+\_\+}\+: 1\hypertarget{classv8_1_1_try_catch_a3c2798d8716a14df4550bfadefdcf6a7}{}\label{classv8_1_1_try_catch_a3c2798d8716a14df4550bfadefdcf6a7}
+
+\item 
+bool {\bfseries can\+\_\+continue\+\_\+}\+: 1\hypertarget{classv8_1_1_try_catch_a92c1bd92eecbc728d6c2150c338fef7d}{}\label{classv8_1_1_try_catch_a92c1bd92eecbc728d6c2150c338fef7d}
+
+\item 
+bool {\bfseries capture\+\_\+message\+\_\+}\+: 1\hypertarget{classv8_1_1_try_catch_ad1f5b0368678fa2bd0d73ac17acf976e}{}\label{classv8_1_1_try_catch_ad1f5b0368678fa2bd0d73ac17acf976e}
+
+\item 
+bool {\bfseries rethrow\+\_\+}\+: 1\hypertarget{classv8_1_1_try_catch_a6c8efeb878409539d0863314fba98a23}{}\label{classv8_1_1_try_catch_a6c8efeb878409539d0863314fba98a23}
+
+\item 
+bool {\bfseries has\+\_\+terminated\+\_\+}\+: 1\hypertarget{classv8_1_1_try_catch_a00a16327470f47613764b652b15d0f71}{}\label{classv8_1_1_try_catch_a00a16327470f47613764b652b15d0f71}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries v8\+::internal\+::\+Isolate}\hypertarget{classv8_1_1_try_catch_acda8e558d20805fa72df899e935081aa}{}\label{classv8_1_1_try_catch_acda8e558d20805fa72df899e935081aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An external exception handler. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Try\+Catch@{Try\+Catch}}
+\index{Try\+Catch@{Try\+Catch}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Try\+Catch(\+Isolate $\ast$isolate)}{TryCatch(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Try\+Catch\+::\+Try\+Catch (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a623ce624491b383fae60c05d2aeefb1a}{}\label{classv8_1_1_try_catch_a623ce624491b383fae60c05d2aeefb1a}
+Creates a new try/catch block and registers it with \hyperlink{namespacev8}{v8}. Note that all \hyperlink{classv8_1_1_try_catch}{Try\+Catch} blocks should be stack allocated because the memory location itself is compared against Java\+Script try/catch blocks. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!````~Try\+Catch@{$\sim$\+Try\+Catch}}
+\index{````~Try\+Catch@{$\sim$\+Try\+Catch}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{$\sim$\+Try\+Catch()}{~TryCatch()}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Try\+Catch\+::$\sim$\+Try\+Catch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a2c9ad4b40d17dd31c6dd020736b30679}{}\label{classv8_1_1_try_catch_a2c9ad4b40d17dd31c6dd020736b30679}
+Unregisters and deletes this try/catch block. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Can\+Continue@{Can\+Continue}}
+\index{Can\+Continue@{Can\+Continue}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Can\+Continue() const }{CanContinue() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Try\+Catch\+::\+Can\+Continue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_try_catch_a2ec467d4653d26c064d749cab98791cb}{}\label{classv8_1_1_try_catch_a2ec467d4653d26c064d749cab98791cb}
+For certain types of exceptions, it makes no sense to continue execution.
+
+If Can\+Continue returns false, the correct action is to perform any C++ cleanup needed and then return. If Can\+Continue returns false and Has\+Terminated returns true, it is possible to call Cancel\+Terminate\+Execution in order to continue calling into the engine. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Exception@{Exception}}
+\index{Exception@{Exception}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Exception() const }{Exception() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Try\+Catch\+::\+Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_try_catch_a99c425f29b3355b4294cbe762377f99b}{}\label{classv8_1_1_try_catch_a99c425f29b3355b4294cbe762377f99b}
+Returns the exception caught by this try/catch block. If no exception has been caught an empty handle is returned.
+
+The returned handle is valid until this \hyperlink{classv8_1_1_try_catch}{Try\+Catch} block has been destroyed. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Has\+Caught@{Has\+Caught}}
+\index{Has\+Caught@{Has\+Caught}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Has\+Caught() const }{HasCaught() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Try\+Catch\+::\+Has\+Caught (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_try_catch_a48f704fbf2b82564b5d2a4ff596e4137}{}\label{classv8_1_1_try_catch_a48f704fbf2b82564b5d2a4ff596e4137}
+Returns true if an exception has been caught by this try/catch block. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Has\+Terminated@{Has\+Terminated}}
+\index{Has\+Terminated@{Has\+Terminated}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Has\+Terminated() const }{HasTerminated() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Try\+Catch\+::\+Has\+Terminated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_try_catch_a7e012477ac47db9480f85d55427987c7}{}\label{classv8_1_1_try_catch_a7e012477ac47db9480f85d55427987c7}
+Returns true if an exception has been caught due to script execution being terminated.
+
+There is no Java\+Script representation of an execution termination exception. Such exceptions are thrown when the Terminate\+Execution methods are called to terminate a long-\/running script.
+
+If such an exception has been thrown, Has\+Terminated will return true, indicating that it is possible to call Cancel\+Terminate\+Execution in order to continue calling into the engine. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!J\+S\+Stack\+Comparable\+Address@{J\+S\+Stack\+Comparable\+Address}}
+\index{J\+S\+Stack\+Comparable\+Address@{J\+S\+Stack\+Comparable\+Address}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{J\+S\+Stack\+Comparable\+Address(v8\+::\+Try\+Catch $\ast$handler)}{JSStackComparableAddress(v8::TryCatch *handler)}}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ v8\+::\+Try\+Catch\+::\+J\+S\+Stack\+Comparable\+Address (
+\begin{DoxyParamCaption}
+\item[{{\bf v8\+::\+Try\+Catch} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classv8_1_1_try_catch_ac2e6359fa11a2aba609af82fb80cf07a}{}\label{classv8_1_1_try_catch_ac2e6359fa11a2aba609af82fb80cf07a}
+There are cases when the raw address of C++ \hyperlink{classv8_1_1_try_catch}{Try\+Catch} object cannot be used for comparisons with addresses into the JS stack. The cases are\+: 1) A\+RM, A\+R\+M64 and M\+I\+PS simulators which have separate JS stack. 2) Address sanitizer allocates local C++ object in the heap when Use\+After\+Return mode is enabled. This method returns address that can be used for comparisons with addresses into the JS stack. When neither simulator nor A\+S\+AN\textquotesingle{}s Use\+After\+Return is enabled, then the address returned will be the address of the C++ try catch handler itself. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Message@{Message}}
+\index{Message@{Message}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Message() const }{Message() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf v8\+::\+Message}$>$ v8\+::\+Try\+Catch\+::\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_try_catch_a2811e500fbb906ee505895a3d94fc66f}{}\label{classv8_1_1_try_catch_a2811e500fbb906ee505895a3d94fc66f}
+Returns the message associated with this exception. If there is no message associated an empty handle is returned.
+
+The returned handle is valid until this \hyperlink{classv8_1_1_try_catch}{Try\+Catch} block has been destroyed. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Reset@{Reset}}
+\index{Reset@{Reset}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Reset()}{Reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Try\+Catch\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a3aae8acab4c99b374b7d782763d4c8e1}{}\label{classv8_1_1_try_catch_a3aae8acab4c99b374b7d782763d4c8e1}
+Clears any exceptions that may have been caught by this try/catch block. After this method has been called, \hyperlink{classv8_1_1_try_catch_a48f704fbf2b82564b5d2a4ff596e4137}{Has\+Caught()} will return false. Cancels the scheduled exception if it is caught and \hyperlink{classv8_1_1_try_catch_ab8c3a1dbb38e6fd00e37436034daf707}{Re\+Throw()} is not called before.
+
+It is not necessary to clear a try/catch block before using it again; if another exception is thrown the previously caught exception will just be overwritten. However, it is often a good idea since it makes it easier to determine which operation threw a given exception. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Re\+Throw@{Re\+Throw}}
+\index{Re\+Throw@{Re\+Throw}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Re\+Throw()}{ReThrow()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Try\+Catch\+::\+Re\+Throw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_ab8c3a1dbb38e6fd00e37436034daf707}{}\label{classv8_1_1_try_catch_ab8c3a1dbb38e6fd00e37436034daf707}
+Throws the exception caught by this \hyperlink{classv8_1_1_try_catch}{Try\+Catch} in a way that avoids it being caught again by this same \hyperlink{classv8_1_1_try_catch}{Try\+Catch}. As with Throw\+Exception it is illegal to execute any Java\+Script operations after calling Re\+Throw; the caller must return immediately to where the exception is caught. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Set\+Capture\+Message@{Set\+Capture\+Message}}
+\index{Set\+Capture\+Message@{Set\+Capture\+Message}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Set\+Capture\+Message(bool value)}{SetCaptureMessage(bool value)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Try\+Catch\+::\+Set\+Capture\+Message (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a541b8fa6951bd5a439692c22d5c7b73c}{}\label{classv8_1_1_try_catch_a541b8fa6951bd5a439692c22d5c7b73c}
+\hyperlink{classv8_1_1_set}{Set} whether or not this \hyperlink{classv8_1_1_try_catch}{Try\+Catch} should capture a \hyperlink{classv8_1_1_message}{Message} object which holds source information about where the exception occurred. True by default. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!Set\+Verbose@{Set\+Verbose}}
+\index{Set\+Verbose@{Set\+Verbose}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{Set\+Verbose(bool value)}{SetVerbose(bool value)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Try\+Catch\+::\+Set\+Verbose (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a032cd889d76bd596e2616df11ced8682}{}\label{classv8_1_1_try_catch_a032cd889d76bd596e2616df11ced8682}
+\hyperlink{classv8_1_1_set}{Set} verbosity of the external exception handler.
+
+By default, exceptions that are caught by an external exception handler are not reported. Call Set\+Verbose with true on an external exception handler to have exceptions caught by the handler reported as if they were not caught. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N(""Use maybe version."", Local$<$ Value $>$ Stack\+Trace() const)}{V8_DEPRECATE_SOON("Use maybe version.", Local< Value > StackTrace() const)}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Try\+Catch\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use maybe version.\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Value} $>$ {\bf Stack\+Trace}()}]{const}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a40bb49f0c8ee86f948cb0a172d7d4b74}{}\label{classv8_1_1_try_catch_a40bb49f0c8ee86f948cb0a172d7d4b74}
+Returns the .stack property of the thrown object. If no .stack property is present an empty handle is returned. \index{v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Try\+Catch@{v8\+::\+Try\+Catch}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", Try\+Catch())}{V8_DEPRECATED("Use isolate version", TryCatch())}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Try\+Catch\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
+\item[{{\bf Try\+Catch}()}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_try_catch_a09b537e2d41504970bf5c4b574580d27}{}\label{classv8_1_1_try_catch_a09b537e2d41504970bf5c4b574580d27}
+Creates a new try/catch block and registers it with \hyperlink{namespacev8}{v8}. Note that all \hyperlink{classv8_1_1_try_catch}{Try\+Catch} blocks should be stack allocated because the memory location itself is compared against Java\+Script try/catch blocks. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\end{DoxyCompactItemize}

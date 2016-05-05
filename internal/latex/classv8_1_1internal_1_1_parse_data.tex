@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_parse_data}{}\section{v8\+:\+:internal\+:\+:Parse\+Data Class Reference}
+\label{classv8_1_1internal_1_1_parse_data}\index{v8\+::internal\+::\+Parse\+Data@{v8\+::internal\+::\+Parse\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_parse_data_ab882f568019e30ca80b6b42f17997e40}{}\label{classv8_1_1internal_1_1_parse_data_ab882f568019e30ca80b6b42f17997e40}
+
+\item 
+Function\+Entry {\bfseries Get\+Function\+Entry} (int start)\hypertarget{classv8_1_1internal_1_1_parse_data_abd9155d674f8b2eea772140c913f1a6b}{}\label{classv8_1_1internal_1_1_parse_data_abd9155d674f8b2eea772140c913f1a6b}
+
+\item 
+int {\bfseries Function\+Count} ()\hypertarget{classv8_1_1internal_1_1_parse_data_aea4434984041962893f383394c63b551}{}\label{classv8_1_1internal_1_1_parse_data_aea4434984041962893f383394c63b551}
+
+\item 
+bool {\bfseries Has\+Error} ()\hypertarget{classv8_1_1internal_1_1_parse_data_a6a3886d7d418beea19699e3579a37083}{}\label{classv8_1_1internal_1_1_parse_data_a6a3886d7d418beea19699e3579a37083}
+
+\item 
+unsigned $\ast$ {\bfseries Data} ()\hypertarget{classv8_1_1internal_1_1_parse_data_ab6393ae557cfea7ba7cb75fdc82965cb}{}\label{classv8_1_1internal_1_1_parse_data_ab6393ae557cfea7ba7cb75fdc82965cb}
+
+\item 
+void {\bfseries Reject} ()\hypertarget{classv8_1_1internal_1_1_parse_data_a941e7a3940f1c64dd9e93a9515635b5f}{}\label{classv8_1_1internal_1_1_parse_data_a941e7a3940f1c64dd9e93a9515635b5f}
+
+\item 
+bool {\bfseries rejected} () const \hypertarget{classv8_1_1internal_1_1_parse_data_a115e5b07fd31436767da36ca49ebfe86}{}\label{classv8_1_1internal_1_1_parse_data_a115e5b07fd31436767da36ca49ebfe86}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_parse_data}{Parse\+Data} $\ast$ {\bfseries From\+Cached\+Data} (\hyperlink{classv8_1_1internal_1_1_script_data}{Script\+Data} $\ast$cached\+\_\+data)\hypertarget{classv8_1_1internal_1_1_parse_data_a4a11d243cd4e09d2ffa2e16a9330f62a}{}\label{classv8_1_1internal_1_1_parse_data_a4a11d243cd4e09d2ffa2e16a9330f62a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Parse\+Data} (\hyperlink{classv8_1_1internal_1_1_script_data}{Script\+Data} $\ast$script\+\_\+data)\hypertarget{classv8_1_1internal_1_1_parse_data_afc234dfebd4a8dd3634d00c7a92ca17e}{}\label{classv8_1_1internal_1_1_parse_data_afc234dfebd4a8dd3634d00c7a92ca17e}
+
+\item 
+bool {\bfseries Is\+Sane} ()\hypertarget{classv8_1_1internal_1_1_parse_data_a68f4e94c3228e99959a558807e16ba1b}{}\label{classv8_1_1internal_1_1_parse_data_a68f4e94c3228e99959a558807e16ba1b}
+
+\item 
+unsigned {\bfseries Magic} ()\hypertarget{classv8_1_1internal_1_1_parse_data_a635e81570423368607ae501bfcaeff64}{}\label{classv8_1_1internal_1_1_parse_data_a635e81570423368607ae501bfcaeff64}
+
+\item 
+unsigned {\bfseries Version} ()\hypertarget{classv8_1_1internal_1_1_parse_data_a9065ff52c14c1cd86e2eac0d40a228e8}{}\label{classv8_1_1internal_1_1_parse_data_a9065ff52c14c1cd86e2eac0d40a228e8}
+
+\item 
+int {\bfseries Functions\+Size} ()\hypertarget{classv8_1_1internal_1_1_parse_data_af74de5ea08d1924ab3e3ffe651df9686}{}\label{classv8_1_1internal_1_1_parse_data_af74de5ea08d1924ab3e3ffe651df9686}
+
+\item 
+int {\bfseries Length} () const \hypertarget{classv8_1_1internal_1_1_parse_data_a85e0e5072d1d5e3ccf3e27b452477314}{}\label{classv8_1_1internal_1_1_parse_data_a85e0e5072d1d5e3ccf3e27b452477314}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_parse_data}{Parse\+Data})\hypertarget{classv8_1_1internal_1_1_parse_data_a7eb6ad99682267e1ace55873c297cdda}{}\label{classv8_1_1internal_1_1_parse_data_a7eb6ad99682267e1ace55873c297cdda}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_script_data}{Script\+Data} $\ast$ {\bfseries script\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_parse_data_a9f8512ad325720c7f31e3b0c9fdc4507}{}\label{classv8_1_1internal_1_1_parse_data_a9f8512ad325720c7f31e3b0c9fdc4507}
+
+\item 
+int {\bfseries function\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_parse_data_a45922b114279f6829c32423073ef638e}{}\label{classv8_1_1internal_1_1_parse_data_a45922b114279f6829c32423073ef638e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream}{}\section{v8\+:\+:internal\+:\+:Utf8\+To\+Utf16\+Character\+Stream Class Reference}
+\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream}\index{v8\+::internal\+::\+Utf8\+To\+Utf16\+Character\+Stream@{v8\+::internal\+::\+Utf8\+To\+Utf16\+Character\+Stream}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Utf8\+To\+Utf16\+Character\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_utf8_to_utf16_character_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Utf8\+To\+Utf16\+Character\+Stream} (const byte $\ast$data, size\+\_\+t length)\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a33948214a9b0808d41503325b18e4352}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a33948214a9b0808d41503325b18e4352}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t {\bfseries Copy\+Chars} (uint16\+\_\+t $\ast$dest, size\+\_\+t length, const byte $\ast$src, size\+\_\+t $\ast$src\+\_\+pos, size\+\_\+t src\+\_\+length)\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ae4ef0603d98144ac547b2aa9e26daf1d}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ae4ef0603d98144ac547b2aa9e26daf1d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries Buffer\+Seek\+Forward} (size\+\_\+t delta) override\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_af5d72355686afc4f7afc4709909de55c}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_af5d72355686afc4f7afc4709909de55c}
+
+\item 
+size\+\_\+t {\bfseries Fill\+Buffer} (size\+\_\+t char\+\_\+position) override\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_aa2ff4d687aec1db0530f4052c6fce62f}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_aa2ff4d687aec1db0530f4052c6fce62f}
+
+\item 
+void {\bfseries Set\+Raw\+Position} (size\+\_\+t char\+\_\+position)\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ab5c801ee70307c8635dc8c14d0e0bbc3}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ab5c801ee70307c8635dc8c14d0e0bbc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const byte $\ast$ {\bfseries raw\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a8e40f877bccff741ffa4205542607806}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a8e40f877bccff741ffa4205542607806}
+
+\item 
+size\+\_\+t {\bfseries raw\+\_\+data\+\_\+length\+\_\+}\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ae420903333ac653584105528ee116daa}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_ae420903333ac653584105528ee116daa}
+
+\item 
+size\+\_\+t {\bfseries raw\+\_\+data\+\_\+pos\+\_\+}\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a8320b28233b907028809575e38c96426}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a8320b28233b907028809575e38c96426}
+
+\item 
+size\+\_\+t {\bfseries raw\+\_\+character\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a6cc40698d35e96d1ba46dd65476c4096}{}\label{classv8_1_1internal_1_1_utf8_to_utf16_character_stream_a6cc40698d35e96d1ba46dd65476c4096}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+cc\end{DoxyCompactItemize}

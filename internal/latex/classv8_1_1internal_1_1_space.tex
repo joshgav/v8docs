@@ -1,0 +1,99 @@
+\hypertarget{classv8_1_1internal_1_1_space}{}\section{v8\+:\+:internal\+:\+:Space Class Reference}
+\label{classv8_1_1internal_1_1_space}\index{v8\+::internal\+::\+Space@{v8\+::internal\+::\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.886598cm]{classv8_1_1internal_1_1_space}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Space} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Allocation\+Space id, Executability executable)\hypertarget{classv8_1_1internal_1_1_space_a02da0d43509d048946769ac3221fa6d4}{}\label{classv8_1_1internal_1_1_space_a02da0d43509d048946769ac3221fa6d4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} () const \hypertarget{classv8_1_1internal_1_1_space_aa2434e21dfedab7d15316ce88f5ee1a2}{}\label{classv8_1_1internal_1_1_space_aa2434e21dfedab7d15316ce88f5ee1a2}
+
+\item 
+Executability {\bfseries executable} ()\hypertarget{classv8_1_1internal_1_1_space_aac4582fa58547eaf2339efa4b39b656c}{}\label{classv8_1_1internal_1_1_space_aac4582fa58547eaf2339efa4b39b656c}
+
+\item 
+Allocation\+Space {\bfseries identity} ()\hypertarget{classv8_1_1internal_1_1_space_a934a26e2755bc4f0d8060cfb3d051cdf}{}\label{classv8_1_1internal_1_1_space_a934a26e2755bc4f0d8060cfb3d051cdf}
+
+\item 
+virtual void {\bfseries Add\+Allocation\+Observer} (\hyperlink{classv8_1_1internal_1_1_allocation_observer}{Allocation\+Observer} $\ast$observer)\hypertarget{classv8_1_1internal_1_1_space_aa23d402f2d845bc9cbabf622a09a7106}{}\label{classv8_1_1internal_1_1_space_aa23d402f2d845bc9cbabf622a09a7106}
+
+\item 
+virtual void {\bfseries Remove\+Allocation\+Observer} (\hyperlink{classv8_1_1internal_1_1_allocation_observer}{Allocation\+Observer} $\ast$observer)\hypertarget{classv8_1_1internal_1_1_space_a923167c327b25f8ec6df7791b6c2bb24}{}\label{classv8_1_1internal_1_1_space_a923167c327b25f8ec6df7791b6c2bb24}
+
+\item 
+virtual void {\bfseries Pause\+Allocation\+Observers} ()\hypertarget{classv8_1_1internal_1_1_space_a637f3f47ff9ba1835ef8f6387da9215d}{}\label{classv8_1_1internal_1_1_space_a637f3f47ff9ba1835ef8f6387da9215d}
+
+\item 
+virtual void {\bfseries Resume\+Allocation\+Observers} ()\hypertarget{classv8_1_1internal_1_1_space_aa0bf86d80c01b5eaf16888e9b0a1f455}{}\label{classv8_1_1internal_1_1_space_aa0bf86d80c01b5eaf16888e9b0a1f455}
+
+\item 
+void {\bfseries Allocation\+Step} (Address soon\+\_\+object, int size)\hypertarget{classv8_1_1internal_1_1_space_aa5bc1cc92224fee32273165ec7728748}{}\label{classv8_1_1internal_1_1_space_aa5bc1cc92224fee32273165ec7728748}
+
+\item 
+virtual intptr\+\_\+t {\bfseries Committed\+Memory} ()\hypertarget{classv8_1_1internal_1_1_space_a7fa41f713651e93e554d9d7e5bdffef9}{}\label{classv8_1_1internal_1_1_space_a7fa41f713651e93e554d9d7e5bdffef9}
+
+\item 
+virtual intptr\+\_\+t {\bfseries Maximum\+Committed\+Memory} ()\hypertarget{classv8_1_1internal_1_1_space_aaf244d4d7bb1aa01b5629a7b6e3080ee}{}\label{classv8_1_1internal_1_1_space_aaf244d4d7bb1aa01b5629a7b6e3080ee}
+
+\item 
+virtual intptr\+\_\+t {\bfseries Size} ()=0\hypertarget{classv8_1_1internal_1_1_space_a25fe1c34c782ee083846478f7e9191b1}{}\label{classv8_1_1internal_1_1_space_a25fe1c34c782ee083846478f7e9191b1}
+
+\item 
+virtual intptr\+\_\+t {\bfseries Size\+Of\+Objects} ()\hypertarget{classv8_1_1internal_1_1_space_a4aea0a53fc833a28da23de49fcff472d}{}\label{classv8_1_1internal_1_1_space_a4aea0a53fc833a28da23de49fcff472d}
+
+\item 
+virtual size\+\_\+t {\bfseries Committed\+Physical\+Memory} ()=0\hypertarget{classv8_1_1internal_1_1_space_aa1f4b42fba0c67f5dbf98230ac009b70}{}\label{classv8_1_1internal_1_1_space_aa1f4b42fba0c67f5dbf98230ac009b70}
+
+\item 
+virtual intptr\+\_\+t {\bfseries Available} ()=0\hypertarget{classv8_1_1internal_1_1_space_aa99d15640a90e0dacc03292191c2466e}{}\label{classv8_1_1internal_1_1_space_aa99d15640a90e0dacc03292191c2466e}
+
+\item 
+virtual int {\bfseries Round\+Size\+Down\+To\+Object\+Alignment} (int size)\hypertarget{classv8_1_1internal_1_1_space_a34965d2c93d16a1fd062d17512193153}{}\label{classv8_1_1internal_1_1_space_a34965d2c93d16a1fd062d17512193153}
+
+\item 
+void {\bfseries Account\+Committed} (intptr\+\_\+t bytes)\hypertarget{classv8_1_1internal_1_1_space_a61932f85bb4fe07213df009b3bd7c4ae}{}\label{classv8_1_1internal_1_1_space_a61932f85bb4fe07213df009b3bd7c4ae}
+
+\item 
+void {\bfseries Account\+Uncommitted} (intptr\+\_\+t bytes)\hypertarget{classv8_1_1internal_1_1_space_ac9844aca2d2c310ce66c2ae9e9518adf}{}\label{classv8_1_1internal_1_1_space_ac9844aca2d2c310ce66c2ae9e9518adf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_smart_pointer}{v8\+::base\+::\+Smart\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_allocation_observer}{Allocation\+Observer} $\ast$ $>$ $>$ {\bfseries allocation\+\_\+observers\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_abf28d3251fd1e137fd773b9820778dd2}{}\label{classv8_1_1internal_1_1_space_abf28d3251fd1e137fd773b9820778dd2}
+
+\item 
+bool {\bfseries allocation\+\_\+observers\+\_\+paused\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_a30f3271188f7df5287a6af154d8ecdfb}{}\label{classv8_1_1internal_1_1_space_a30f3271188f7df5287a6af154d8ecdfb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_aa86f85f7596832e68f1d1a9d1458c380}{}\label{classv8_1_1internal_1_1_space_aa86f85f7596832e68f1d1a9d1458c380}
+
+\item 
+Allocation\+Space {\bfseries id\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_a42824dc491cc01ddaf9b369ff7a3bef3}{}\label{classv8_1_1internal_1_1_space_a42824dc491cc01ddaf9b369ff7a3bef3}
+
+\item 
+Executability {\bfseries executable\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_ae83028032ac49d59555ce756b728950c}{}\label{classv8_1_1internal_1_1_space_ae83028032ac49d59555ce756b728950c}
+
+\item 
+intptr\+\_\+t {\bfseries committed\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_af16baf123ddb7d2750ef899f2aec8101}{}\label{classv8_1_1internal_1_1_space_af16baf123ddb7d2750ef899f2aec8101}
+
+\item 
+intptr\+\_\+t {\bfseries max\+\_\+committed\+\_\+}\hypertarget{classv8_1_1internal_1_1_space_a48d47e8da4325a2f204d1cd6b108d78f}{}\label{classv8_1_1internal_1_1_space_a48d47e8da4325a2f204d1cd6b108d78f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

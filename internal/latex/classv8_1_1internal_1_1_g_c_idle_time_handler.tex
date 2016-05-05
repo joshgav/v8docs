@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler}{}\section{v8\+:\+:internal\+:\+:G\+C\+Idle\+Time\+Handler Class Reference}
+\label{classv8_1_1internal_1_1_g_c_idle_time_handler}\index{v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler@{v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_g_c_idle_time_action}{G\+C\+Idle\+Time\+Action} {\bfseries Compute} (double idle\+\_\+time\+\_\+in\+\_\+ms, \hyperlink{classv8_1_1internal_1_1_g_c_idle_time_heap_state}{G\+C\+Idle\+Time\+Heap\+State} heap\+\_\+state)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a598bc79c7b3083e2e123827ed3feef57}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a598bc79c7b3083e2e123827ed3feef57}
+
+\item 
+void {\bfseries Reset\+No\+Progress\+Counter} ()\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a0ced27dfff862c837bf24895c71cc545}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a0ced27dfff862c837bf24895c71cc545}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t {\bfseries Estimate\+Marking\+Step\+Size} (double idle\+\_\+time\+\_\+in\+\_\+ms, double marking\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a8f4bea1cd70f253107bee82834ebf73d}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a8f4bea1cd70f253107bee82834ebf73d}
+
+\item 
+static double {\bfseries Estimate\+Final\+Incremental\+Mark\+Compact\+Time} (size\+\_\+t size\+\_\+of\+\_\+objects, double mark\+\_\+compact\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a848df7d9be920880d7dc4585ca7f5642}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a848df7d9be920880d7dc4585ca7f5642}
+
+\item 
+static bool {\bfseries Should\+Do\+Context\+Disposal\+Mark\+Compact} (int context\+\_\+disposed, double contexts\+\_\+disposal\+\_\+rate)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a40c24b122dfbb935cb6372088a607d41}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a40c24b122dfbb935cb6372088a607d41}
+
+\item 
+static bool {\bfseries Should\+Do\+Final\+Incremental\+Mark\+Compact} (double idle\+\_\+time\+\_\+in\+\_\+ms, size\+\_\+t size\+\_\+of\+\_\+objects, double final\+\_\+incremental\+\_\+mark\+\_\+compact\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_ae1c8b3b8cc189a68f2e58edb3856171a}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_ae1c8b3b8cc189a68f2e58edb3856171a}
+
+\item 
+static bool {\bfseries Should\+Do\+Over\+Approximate\+Weak\+Closure} (double idle\+\_\+time\+\_\+in\+\_\+ms)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a1fef31ad290f57911bf56f6376703e3c}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a1fef31ad290f57911bf56f6376703e3c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries k\+Initial\+Conservative\+Marking\+Speed} = 100 $\ast$ KB\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a4cea45c6a3a359582e1e787691ec46e1}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a4cea45c6a3a359582e1e787691ec46e1}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Maximum\+Marking\+Step\+Size} = 700 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_ab4cccaad31be98d3d064a19bac735aca}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_ab4cccaad31be98d3d064a19bac735aca}
+
+\item 
+static const double {\bfseries k\+Conservative\+Time\+Ratio} = 0.\+9\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a4242355d37d9b94c8c366d62d8f4a4da}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a4242355d37d9b94c8c366d62d8f4a4da}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Initial\+Conservative\+Mark\+Compact\+Speed} = 2 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a55817441b828a13cfa425466e23e3aaa}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a55817441b828a13cfa425466e23e3aaa}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed}
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Final\+Incremental\+Mark\+Compact\+Time\+In\+Ms} = 1000\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a652e7b5e49fe3251bc270db42a647a9d}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a652e7b5e49fe3251bc270db42a647a9d}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Scheduled\+Idle\+Time} = 50\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a49215ab3e57f3d33ae146d371c2afebd}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a49215ab3e57f3d33ae146d371c2afebd}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Frame\+Rendering\+Idle\+Time} = 17\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a74962b6fe809a1066c3638ed4c79cd89}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a74962b6fe809a1066c3638ed4c79cd89}
+
+\item 
+static const int {\bfseries k\+Min\+Background\+Idle\+Time} = 900\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_abdc12dafbcc66a3a57efa094daca06d2}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_abdc12dafbcc66a3a57efa094daca06d2}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Low\+Allocation\+Throughput} = 1000\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_ae25eb6e8a6a10ee5097ffff5671d3466}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_ae25eb6e8a6a10ee5097ffff5671d3466}
+
+\item 
+static const double {\bfseries k\+High\+Context\+Disposal\+Rate} = 100\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_aefba3e232d4ec9128c842b2a8a4a5d79}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_aefba3e232d4ec9128c842b2a8a4a5d79}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Incremental\+Marking\+Step\+Time\+In\+Ms} = 1\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a1ef856d1b7e95aea63f0d8e7d46103a3}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a1ef856d1b7e95aea63f0d8e7d46103a3}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Min\+Time\+For\+Over\+Approximating\+Weak\+Closure\+In\+Ms} = 1\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a859f061e71f359aee16b3184f000ac02}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a859f061e71f359aee16b3184f000ac02}
+
+\item 
+static const int {\bfseries k\+Max\+No\+Progress\+Idle\+Times} = 10\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_aa1b3ce52d5e1bb25dbf76107cb5a7e12}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_aa1b3ce52d5e1bb25dbf76107cb5a7e12}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_g_c_idle_time_action}{G\+C\+Idle\+Time\+Action} {\bfseries Nothing\+Or\+Done} (double idle\+\_\+time\+\_\+in\+\_\+ms)\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a55a3a4997c8f39172d03cece7d37120d}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a55a3a4997c8f39172d03cece7d37120d}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_g_c_idle_time_handler}{G\+C\+Idle\+Time\+Handler})\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_aa8ced2494e534dcb11202ecee09c0345}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_aa8ced2494e534dcb11202ecee09c0345}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries idle\+\_\+times\+\_\+which\+\_\+made\+\_\+no\+\_\+progress\+\_\+}\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a39c0ea4e90561e1da8f662b3f1b572b4}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a39c0ea4e90561e1da8f662b3f1b572b4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler@{v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler}!k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed@{k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed}}
+\index{k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed@{k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed}!v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler@{v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler}}
+\subsubsection[{\texorpdfstring{k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed}{kInitialConservativeFinalIncrementalMarkCompactSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t v8\+::internal\+::\+G\+C\+Idle\+Time\+Handler\+::k\+Initial\+Conservative\+Final\+Incremental\+Mark\+Compact\+Speed\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_g_c_idle_time_handler_a3cb5f70b983d7221ee62a57d6650a279}{}\label{classv8_1_1internal_1_1_g_c_idle_time_handler_a3cb5f70b983d7221ee62a57d6650a279}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      2 * MB
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/gc-\/idle-\/time-\/handler.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/gc-\/idle-\/time-\/handler.\+cc\end{DoxyCompactItemize}

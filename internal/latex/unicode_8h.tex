@@ -1,0 +1,74 @@
+\hypertarget{unicode_8h}{}\section{/\+Users/joshgav/node/v8/src/unicode.h File Reference}
+\label{unicode_8h}\index{/\+Users/joshgav/node/v8/src/unicode.\+h@{/\+Users/joshgav/node/v8/src/unicode.\+h}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}src/globals.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}src/utils.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classunibrow_1_1_predicate}{unibrow\+::\+Predicate$<$ T, size $>$}
+\item 
+class \hyperlink{classunibrow_1_1_predicate_1_1_cache_entry}{unibrow\+::\+Predicate$<$ T, size $>$\+::\+Cache\+Entry}
+\item 
+class \hyperlink{classunibrow_1_1_predicate_1_1_cache_entry_1_1_code_point_field}{unibrow\+::\+Predicate$<$ T, size $>$\+::\+Cache\+Entry\+::\+Code\+Point\+Field}
+\item 
+class \hyperlink{classunibrow_1_1_predicate_1_1_cache_entry_1_1_value_field}{unibrow\+::\+Predicate$<$ T, size $>$\+::\+Cache\+Entry\+::\+Value\+Field}
+\item 
+class \hyperlink{classunibrow_1_1_mapping}{unibrow\+::\+Mapping$<$ T, size $>$}
+\item 
+struct \hyperlink{structunibrow_1_1_mapping_1_1_cache_entry}{unibrow\+::\+Mapping$<$ T, size $>$\+::\+Cache\+Entry}
+\item 
+class \hyperlink{classunibrow_1_1_unicode_data}{unibrow\+::\+Unicode\+Data}
+\item 
+class \hyperlink{classunibrow_1_1_utf16}{unibrow\+::\+Utf16}
+\item 
+class \hyperlink{classunibrow_1_1_utf8}{unibrow\+::\+Utf8}
+\item 
+struct \hyperlink{structunibrow_1_1_uppercase}{unibrow\+::\+Uppercase}
+\item 
+struct \hyperlink{structunibrow_1_1_lowercase}{unibrow\+::\+Lowercase}
+\item 
+struct \hyperlink{structunibrow_1_1_letter}{unibrow\+::\+Letter}
+\item 
+struct \hyperlink{structunibrow_1_1_i_d___start}{unibrow\+::\+I\+D\+\_\+\+Start}
+\item 
+struct \hyperlink{structunibrow_1_1_i_d___continue}{unibrow\+::\+I\+D\+\_\+\+Continue}
+\item 
+struct \hyperlink{structunibrow_1_1_white_space}{unibrow\+::\+White\+Space}
+\item 
+struct \hyperlink{structunibrow_1_1_line_terminator}{unibrow\+::\+Line\+Terminator}
+\item 
+struct \hyperlink{structunibrow_1_1_to_lowercase}{unibrow\+::\+To\+Lowercase}
+\item 
+struct \hyperlink{structunibrow_1_1_to_uppercase}{unibrow\+::\+To\+Uppercase}
+\item 
+struct \hyperlink{structunibrow_1_1_ecma262_canonicalize}{unibrow\+::\+Ecma262\+Canonicalize}
+\item 
+struct \hyperlink{structunibrow_1_1_ecma262_un_canonicalize}{unibrow\+::\+Ecma262\+Un\+Canonicalize}
+\item 
+struct \hyperlink{structunibrow_1_1_canonicalization_range}{unibrow\+::\+Canonicalization\+Range}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int {\bfseries unibrow\+::uchar}\hypertarget{unicode_8h_a26d471df427ae476bd9a47254334b7e1}{}\label{unicode_8h_a26d471df427ae476bd9a47254334b7e1}
+
+\item 
+typedef unsigned char {\bfseries unibrow\+::byte}\hypertarget{unicode_8h_a81e169d976356d0979aaf9d5a1510650}{}\label{unicode_8h_a81e169d976356d0979aaf9d5a1510650}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{unicode_8h_a2600c7e87038daf623754744942800a8}{unibrow\+::k\+Max\+Mapping\+Size} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definitions and convenience functions for working with unicode. 
+
+\subsection{Variable Documentation}
+\index{unicode.\+h@{unicode.\+h}!k\+Max\+Mapping\+Size@{k\+Max\+Mapping\+Size}}
+\index{k\+Max\+Mapping\+Size@{k\+Max\+Mapping\+Size}!unicode.\+h@{unicode.\+h}}
+\subsubsection[{\texorpdfstring{k\+Max\+Mapping\+Size}{kMaxMappingSize}}]{\setlength{\rightskip}{0pt plus 5cm}const int unibrow\+::k\+Max\+Mapping\+Size = 4}\hypertarget{unicode_8h_file_a2600c7e87038daf623754744942800a8}{}\label{unicode_8h_file_a2600c7e87038daf623754744942800a8}
+The max length of the result of converting the case of a single character. 

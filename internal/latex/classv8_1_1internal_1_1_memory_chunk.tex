@@ -1,0 +1,522 @@
+\hypertarget{classv8_1_1internal_1_1_memory_chunk}{}\section{v8\+:\+:internal\+:\+:Memory\+Chunk Class Reference}
+\label{classv8_1_1internal_1_1_memory_chunk}\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Memory\+Chunk\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_memory_chunk}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Memory\+Chunk\+Flags} \{ \\*
+{\bfseries I\+S\+\_\+\+E\+X\+E\+C\+U\+T\+A\+B\+LE}, 
+\\*
+{\bfseries P\+O\+I\+N\+T\+E\+R\+S\+\_\+\+T\+O\+\_\+\+H\+E\+R\+E\+\_\+\+A\+R\+E\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+NG}, 
+\\*
+{\bfseries P\+O\+I\+N\+T\+E\+R\+S\+\_\+\+F\+R\+O\+M\+\_\+\+H\+E\+R\+E\+\_\+\+A\+R\+E\+\_\+\+I\+N\+T\+E\+R\+E\+S\+T\+I\+NG}, 
+\\*
+{\bfseries I\+N\+\_\+\+F\+R\+O\+M\+\_\+\+S\+P\+A\+CE}, 
+\\*
+{\bfseries I\+N\+\_\+\+T\+O\+\_\+\+S\+P\+A\+CE}, 
+\\*
+{\bfseries N\+E\+W\+\_\+\+S\+P\+A\+C\+E\+\_\+\+B\+E\+L\+O\+W\+\_\+\+A\+G\+E\+\_\+\+M\+A\+RK}, 
+\\*
+{\bfseries E\+V\+A\+C\+U\+A\+T\+I\+O\+N\+\_\+\+C\+A\+N\+D\+I\+D\+A\+TE}, 
+\\*
+{\bfseries N\+E\+V\+E\+R\+\_\+\+E\+V\+A\+C\+U\+A\+TE}, 
+\\*
+{\bfseries H\+A\+S\+\_\+\+P\+R\+O\+G\+R\+E\+S\+S\+\_\+\+B\+AR}, 
+\\*
+{\bfseries P\+A\+G\+E\+\_\+\+N\+E\+W\+\_\+\+O\+L\+D\+\_\+\+P\+R\+O\+M\+O\+T\+I\+ON}, 
+\\*
+{\bfseries B\+L\+A\+C\+K\+\_\+\+P\+A\+GE}, 
+\\*
+{\bfseries F\+O\+R\+C\+E\+\_\+\+E\+V\+A\+C\+U\+A\+T\+I\+O\+N\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+E\+\_\+\+F\+O\+R\+\_\+\+T\+E\+S\+T\+I\+NG}, 
+\\*
+{\bfseries N\+E\+V\+E\+R\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+O\+N\+\_\+\+P\+A\+GE}, 
+\\*
+{\bfseries P\+R\+E\+\_\+\+F\+R\+E\+ED}, 
+\\*
+{\bfseries P\+O\+O\+L\+ED}, 
+\\*
+{\bfseries C\+O\+M\+P\+A\+C\+T\+I\+O\+N\+\_\+\+W\+A\+S\+\_\+\+A\+B\+O\+R\+T\+ED}, 
+\\*
+{\bfseries A\+N\+C\+H\+OR}, 
+\\*
+{\bfseries N\+U\+M\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+C\+H\+U\+N\+K\+\_\+\+F\+L\+A\+GS}
+ \}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a7ec096f924ab4515fe8ae00e9e50af78}{}\label{classv8_1_1internal_1_1_memory_chunk_a7ec096f924ab4515fe8ae00e9e50af78}
+
+\item 
+enum {\bfseries Concurrent\+Sweeping\+State} \{ \\*
+{\bfseries k\+Sweeping\+Done}, 
+\\*
+{\bfseries k\+Sweeping\+Pending}, 
+\\*
+{\bfseries k\+Sweeping\+In\+Progress}
+ \}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3eedfd88d0a89355dae40d476f931ac6}{}\label{classv8_1_1internal_1_1_memory_chunk_a3eedfd88d0a89355dae40d476f931ac6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries address} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ae2a42f2abeb57a8206eee9ff85a07ec6}{}\label{classv8_1_1internal_1_1_memory_chunk_ae2a42f2abeb57a8206eee9ff85a07ec6}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} $\ast$ {\bfseries mutex} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a8f584c3703d4785a6e6693af638c6ce5}{}\label{classv8_1_1internal_1_1_memory_chunk_a8f584c3703d4785a6e6693af638c6ce5}
+
+\item 
+bool {\bfseries Contains} (Address addr)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a1c39761f226a79df38a27e8c6e80d17d}{}\label{classv8_1_1internal_1_1_memory_chunk_a1c39761f226a79df38a27e8c6e80d17d}
+
+\item 
+bool {\bfseries Contains\+Limit} (Address addr)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3c63106e1a91ed8f9ae53fdda7a475f0}{}\label{classv8_1_1internal_1_1_memory_chunk_a3c63106e1a91ed8f9ae53fdda7a475f0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ Concurrent\+Sweeping\+State $>$ \& {\bfseries concurrent\+\_\+sweeping\+\_\+state} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a9b0c133f14775ed30b34a45a12730f90}{}\label{classv8_1_1internal_1_1_memory_chunk_a9b0c133f14775ed30b34a45a12730f90}
+
+\item 
+void {\bfseries Reset\+Live\+Bytes} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a8ef1d427e8915eed249457382e562a0a}{}\label{classv8_1_1internal_1_1_memory_chunk_a8ef1d427e8915eed249457382e562a0a}
+
+\item 
+void {\bfseries Increment\+Live\+Bytes} (int by)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a246e44a97d210359edeb434896f26b2b}{}\label{classv8_1_1internal_1_1_memory_chunk_a246e44a97d210359edeb434896f26b2b}
+
+\item 
+int {\bfseries Live\+Bytes} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a1ee6cbf1d7466945aa5d8ae062ff602f}{}\label{classv8_1_1internal_1_1_memory_chunk_a1ee6cbf1d7466945aa5d8ae062ff602f}
+
+\item 
+void {\bfseries Set\+Live\+Bytes} (int live\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a89f862d2867ef39481e805ebd5a62aa6}{}\label{classv8_1_1internal_1_1_memory_chunk_a89f862d2867ef39481e805ebd5a62aa6}
+
+\item 
+int {\bfseries write\+\_\+barrier\+\_\+counter} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a990cb46b0436c88d26acef1e095e63cb}{}\label{classv8_1_1internal_1_1_memory_chunk_a990cb46b0436c88d26acef1e095e63cb}
+
+\item 
+void {\bfseries set\+\_\+write\+\_\+barrier\+\_\+counter} (int counter)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a2994557a66bc93ae7171847e911e15cc}{}\label{classv8_1_1internal_1_1_memory_chunk_a2994557a66bc93ae7171847e911e15cc}
+
+\item 
+size\+\_\+t {\bfseries size} () const \hypertarget{classv8_1_1internal_1_1_memory_chunk_ae23e3065f4ea40b54471563107ef07c9}{}\label{classv8_1_1internal_1_1_memory_chunk_ae23e3065f4ea40b54471563107ef07c9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} () const \hypertarget{classv8_1_1internal_1_1_memory_chunk_a986114249326be88f9e62b55e2129aa1}{}\label{classv8_1_1internal_1_1_memory_chunk_a986114249326be88f9e62b55e2129aa1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_skip_list}{Skip\+List} $\ast$ {\bfseries skip\+\_\+list} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a07fa46d9e099b97dd2be1b9b35b9750a}{}\label{classv8_1_1internal_1_1_memory_chunk_a07fa46d9e099b97dd2be1b9b35b9750a}
+
+\item 
+void {\bfseries set\+\_\+skip\+\_\+list} (\hyperlink{classv8_1_1internal_1_1_skip_list}{Skip\+List} $\ast$skip\+\_\+list)\hypertarget{classv8_1_1internal_1_1_memory_chunk_abc9c19c1cc451e69db7ee628707b6047}{}\label{classv8_1_1internal_1_1_memory_chunk_abc9c19c1cc451e69db7ee628707b6047}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries old\+\_\+to\+\_\+new\+\_\+slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a63f48a8e4b5e9adefa321826c84ba893}{}\label{classv8_1_1internal_1_1_memory_chunk_a63f48a8e4b5e9adefa321826c84ba893}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries old\+\_\+to\+\_\+old\+\_\+slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3800c57422c3e80051c188e300cbd6e4}{}\label{classv8_1_1internal_1_1_memory_chunk_a3800c57422c3e80051c188e300cbd6e4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_typed_slot_set}{Typed\+Slot\+Set} $\ast$ {\bfseries typed\+\_\+old\+\_\+to\+\_\+old\+\_\+slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac96e79a0ae0a5f6d76aa10b4f624e004}{}\label{classv8_1_1internal_1_1_memory_chunk_ac96e79a0ae0a5f6d76aa10b4f624e004}
+
+\item 
+void {\bfseries Allocate\+Old\+To\+New\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad1b71d5f6d2458af5d6ece81ccb73785}{}\label{classv8_1_1internal_1_1_memory_chunk_ad1b71d5f6d2458af5d6ece81ccb73785}
+
+\item 
+void {\bfseries Release\+Old\+To\+New\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a7695a37e3486c317fb1ecf0b2d73d927}{}\label{classv8_1_1internal_1_1_memory_chunk_a7695a37e3486c317fb1ecf0b2d73d927}
+
+\item 
+void {\bfseries Allocate\+Old\+To\+Old\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a4738247e252f11dfd635536ee5ad23b7}{}\label{classv8_1_1internal_1_1_memory_chunk_a4738247e252f11dfd635536ee5ad23b7}
+
+\item 
+void {\bfseries Release\+Old\+To\+Old\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3be436508a04246fc41eb2bacffe79a4}{}\label{classv8_1_1internal_1_1_memory_chunk_a3be436508a04246fc41eb2bacffe79a4}
+
+\item 
+void {\bfseries Allocate\+Typed\+Old\+To\+Old\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_af59ce3cc7e4a9d0b0725f6be8204772f}{}\label{classv8_1_1internal_1_1_memory_chunk_af59ce3cc7e4a9d0b0725f6be8204772f}
+
+\item 
+void {\bfseries Release\+Typed\+Old\+To\+Old\+Slots} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_af0305290b8f0593acece76539ca22405}{}\label{classv8_1_1internal_1_1_memory_chunk_af0305290b8f0593acece76539ca22405}
+
+\item 
+Address {\bfseries area\+\_\+start} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a8992f4ee6a39c4c82eb82e0b3e33e9fa}{}\label{classv8_1_1internal_1_1_memory_chunk_a8992f4ee6a39c4c82eb82e0b3e33e9fa}
+
+\item 
+Address {\bfseries area\+\_\+end} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad3898b428d291ef457bc87c2999ff18d}{}\label{classv8_1_1internal_1_1_memory_chunk_ad3898b428d291ef457bc87c2999ff18d}
+
+\item 
+int {\bfseries area\+\_\+size} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ada395cf5efb11ccb21b0f084729f065c}{}\label{classv8_1_1internal_1_1_memory_chunk_ada395cf5efb11ccb21b0f084729f065c}
+
+\item 
+bool {\bfseries Commit\+Area} (size\+\_\+t requested)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a14e11434bb32c16ed64018db481b3f14}{}\label{classv8_1_1internal_1_1_memory_chunk_a14e11434bb32c16ed64018db481b3f14}
+
+\item 
+size\+\_\+t {\bfseries Committed\+Physical\+Memory} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab2dc12e2563ade1687d90983ac514f23}{}\label{classv8_1_1internal_1_1_memory_chunk_ab2dc12e2563ade1687d90983ac514f23}
+
+\item 
+int {\bfseries progress\+\_\+bar} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a475ac028bc95b39e8b80d90d4881b99f}{}\label{classv8_1_1internal_1_1_memory_chunk_a475ac028bc95b39e8b80d90d4881b99f}
+
+\item 
+void {\bfseries set\+\_\+progress\+\_\+bar} (int progress\+\_\+bar)\hypertarget{classv8_1_1internal_1_1_memory_chunk_afc84974db55bd3d9f7b7f59a7fe9b8d6}{}\label{classv8_1_1internal_1_1_memory_chunk_afc84974db55bd3d9f7b7f59a7fe9b8d6}
+
+\item 
+void {\bfseries Reset\+Progress\+Bar} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac13610ea6eb684978417777426efa41f}{}\label{classv8_1_1internal_1_1_memory_chunk_ac13610ea6eb684978417777426efa41f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bitmap}{Bitmap} $\ast$ {\bfseries markbits} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab24fe2fc15e5b41706c99c5be3e4282f}{}\label{classv8_1_1internal_1_1_memory_chunk_ab24fe2fc15e5b41706c99c5be3e4282f}
+
+\item 
+uint32\+\_\+t {\bfseries Address\+To\+Markbit\+Index} (Address addr)\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab5034cf79ef9bd456426b830aa87fd61}{}\label{classv8_1_1internal_1_1_memory_chunk_ab5034cf79ef9bd456426b830aa87fd61}
+
+\item 
+Address {\bfseries Markbit\+Index\+To\+Address} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a5ee84229c5c4c3f06227682a94930cf1}{}\label{classv8_1_1internal_1_1_memory_chunk_a5ee84229c5c4c3f06227682a94930cf1}
+
+\item 
+void {\bfseries Print\+Markbits} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a425f2a823238ce64db431053707772f6}{}\label{classv8_1_1internal_1_1_memory_chunk_a425f2a823238ce64db431053707772f6}
+
+\item 
+void {\bfseries Set\+Flag} (int flag)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a79b86e423956219c0a048b3dbcff6abb}{}\label{classv8_1_1internal_1_1_memory_chunk_a79b86e423956219c0a048b3dbcff6abb}
+
+\item 
+void {\bfseries Clear\+Flag} (int flag)\hypertarget{classv8_1_1internal_1_1_memory_chunk_adb4258f348c4ca8d6fd5e0dc962046b3}{}\label{classv8_1_1internal_1_1_memory_chunk_adb4258f348c4ca8d6fd5e0dc962046b3}
+
+\item 
+bool {\bfseries Is\+Flag\+Set} (int flag)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a01e5775f7047a3ff75f0c24afabb6e96}{}\label{classv8_1_1internal_1_1_memory_chunk_a01e5775f7047a3ff75f0c24afabb6e96}
+
+\item 
+void {\bfseries Set\+Flags} (intptr\+\_\+t flags, intptr\+\_\+t mask)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a21cd4531eb88e68db9a9805460824816}{}\label{classv8_1_1internal_1_1_memory_chunk_a21cd4531eb88e68db9a9805460824816}
+
+\item 
+intptr\+\_\+t {\bfseries Get\+Flags} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac57eac8426605f97ed215ddf886d75b4}{}\label{classv8_1_1internal_1_1_memory_chunk_ac57eac8426605f97ed215ddf886d75b4}
+
+\item 
+bool {\bfseries Never\+Evacuate} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_adb32669679a246e5bd54404de55a3429}{}\label{classv8_1_1internal_1_1_memory_chunk_adb32669679a246e5bd54404de55a3429}
+
+\item 
+void {\bfseries Mark\+Never\+Evacuate} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a67bb1a9d9c61a11bc804df209743ebc0}{}\label{classv8_1_1internal_1_1_memory_chunk_a67bb1a9d9c61a11bc804df209743ebc0}
+
+\item 
+bool {\bfseries Is\+Evacuation\+Candidate} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_aa67b67fb53d38d2e88207679397c21ce}{}\label{classv8_1_1internal_1_1_memory_chunk_aa67b67fb53d38d2e88207679397c21ce}
+
+\item 
+bool {\bfseries Can\+Allocate} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a343f2c71ac0ced1674caf06885978bd2}{}\label{classv8_1_1internal_1_1_memory_chunk_a343f2c71ac0ced1674caf06885978bd2}
+
+\item 
+bool {\bfseries Should\+Skip\+Evacuation\+Slot\+Recording} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac9b98d8975917d1442b834c8828d1eb3}{}\label{classv8_1_1internal_1_1_memory_chunk_ac9b98d8975917d1442b834c8828d1eb3}
+
+\item 
+Executability {\bfseries executable} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a09a81cd757b38893db3e4bef37dbdf0b}{}\label{classv8_1_1internal_1_1_memory_chunk_a09a81cd757b38893db3e4bef37dbdf0b}
+
+\item 
+bool {\bfseries In\+New\+Space} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a440a5fbf7b463a4762b6ee1e73224ac7}{}\label{classv8_1_1internal_1_1_memory_chunk_a440a5fbf7b463a4762b6ee1e73224ac7}
+
+\item 
+bool {\bfseries In\+To\+Space} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab6ab9770e08a7a9c80a2e64a180ee98e}{}\label{classv8_1_1internal_1_1_memory_chunk_ab6ab9770e08a7a9c80a2e64a180ee98e}
+
+\item 
+bool {\bfseries In\+From\+Space} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_aab8369550d359793e8d5d1dd0389389a}{}\label{classv8_1_1internal_1_1_memory_chunk_aab8369550d359793e8d5d1dd0389389a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries next\+\_\+chunk} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a78d5e110f4705d1cf13e5e8d06529b4b}{}\label{classv8_1_1internal_1_1_memory_chunk_a78d5e110f4705d1cf13e5e8d06529b4b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries prev\+\_\+chunk} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a8a5a2bb81c2cf48f9902fbe0396991da}{}\label{classv8_1_1internal_1_1_memory_chunk_a8a5a2bb81c2cf48f9902fbe0396991da}
+
+\item 
+void {\bfseries set\+\_\+next\+\_\+chunk} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$next)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a33680f5d5cd36e8094c38e0ff43ffe82}{}\label{classv8_1_1internal_1_1_memory_chunk_a33680f5d5cd36e8094c38e0ff43ffe82}
+
+\item 
+void {\bfseries set\+\_\+prev\+\_\+chunk} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$prev)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a76397898a99e742c97e27cfe0d254407}{}\label{classv8_1_1internal_1_1_memory_chunk_a76397898a99e742c97e27cfe0d254407}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_space}{Space} $\ast$ {\bfseries owner} () const \hypertarget{classv8_1_1internal_1_1_memory_chunk_a3e6f1fb7b24f1662eed90feefb5152ad}{}\label{classv8_1_1internal_1_1_memory_chunk_a3e6f1fb7b24f1662eed90feefb5152ad}
+
+\item 
+void {\bfseries set\+\_\+owner} (\hyperlink{classv8_1_1internal_1_1_space}{Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a0a951759d40cf006e441bf25aa5f6463}{}\label{classv8_1_1internal_1_1_memory_chunk_a0a951759d40cf006e441bf25aa5f6463}
+
+\item 
+bool {\bfseries Has\+Page\+Header} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac302c19081b48795a54110ebc4fdb722}{}\label{classv8_1_1internal_1_1_memory_chunk_ac302c19081b48795a54110ebc4fdb722}
+
+\item 
+void {\bfseries Insert\+After} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$other)\hypertarget{classv8_1_1internal_1_1_memory_chunk_af0b353f3e62e150a748a2d7aef35a0ff}{}\label{classv8_1_1internal_1_1_memory_chunk_af0b353f3e62e150a748a2d7aef35a0ff}
+
+\item 
+void {\bfseries Unlink} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a6567612ab1fca1a2bd3d97f9205f9eda}{}\label{classv8_1_1internal_1_1_memory_chunk_a6567612ab1fca1a2bd3d97f9205f9eda}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Increment\+Live\+Bytes\+From\+Mutator} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, int by)\hypertarget{classv8_1_1internal_1_1_memory_chunk_ae8095fca66d50f1c2190b95dc805deec}{}\label{classv8_1_1internal_1_1_memory_chunk_ae8095fca66d50f1c2190b95dc805deec}
+
+\item 
+static void {\bfseries Increment\+Live\+Bytes\+From\+GC} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, int by)\hypertarget{classv8_1_1internal_1_1_memory_chunk_a31c80e624431bc6fd530a82ca6eebf80}{}\label{classv8_1_1internal_1_1_memory_chunk_a31c80e624431bc6fd530a82ca6eebf80}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries From\+Address} (Address a)\hypertarget{classv8_1_1internal_1_1_memory_chunk_aa085e1ca88c6b66f52e3f12dc4c89195}{}\label{classv8_1_1internal_1_1_memory_chunk_aa085e1ca88c6b66f52e3f12dc4c89195}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries From\+Any\+Pointer\+Address} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Address addr)\hypertarget{classv8_1_1internal_1_1_memory_chunk_aaeeba00d4bdae95dc0fa7c4200924e69}{}\label{classv8_1_1internal_1_1_memory_chunk_aaeeba00d4bdae95dc0fa7c4200924e69}
+
+\item 
+static void {\bfseries Update\+High\+Water\+Mark} (Address mark)\hypertarget{classv8_1_1internal_1_1_memory_chunk_aa477c12d9fb6017aa4378416ad7802b8}{}\label{classv8_1_1internal_1_1_memory_chunk_aa477c12d9fb6017aa4378416ad7802b8}
+
+\item 
+static bool {\bfseries Is\+Valid} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab8999596960d7e2e8e9a2726417b35e3}{}\label{classv8_1_1internal_1_1_memory_chunk_ab8999596960d7e2e8e9a2726417b35e3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Write\+Barrier\+Counter\+Granularity} = 500\hypertarget{classv8_1_1internal_1_1_memory_chunk_a9294579ffbc1f7cde026a740e13e1af2}{}\label{classv8_1_1internal_1_1_memory_chunk_a9294579ffbc1f7cde026a740e13e1af2}
+
+\item 
+static const int {\bfseries k\+Pointers\+To\+Here\+Are\+Interesting\+Mask}
+\item 
+static const int {\bfseries k\+Pointers\+From\+Here\+Are\+Interesting\+Mask}
+\item 
+static const int {\bfseries k\+Evacuation\+Candidate\+Mask} = 1 $<$$<$ E\+V\+A\+C\+U\+A\+T\+I\+O\+N\+\_\+\+C\+A\+N\+D\+I\+D\+A\+TE\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3351831113c80aaa9f987bb46d0c2bf5}{}\label{classv8_1_1internal_1_1_memory_chunk_a3351831113c80aaa9f987bb46d0c2bf5}
+
+\item 
+static const int {\bfseries k\+Skip\+Evacuation\+Slots\+Recording\+Mask}
+\item 
+static const intptr\+\_\+t {\bfseries k\+Alignment}
+\item 
+static const intptr\+\_\+t {\bfseries k\+Alignment\+Mask} = k\+Alignment -\/ 1\hypertarget{classv8_1_1internal_1_1_memory_chunk_aacbc80f7e6ca4f243c9b31dc2d5fd6e8}{}\label{classv8_1_1internal_1_1_memory_chunk_aacbc80f7e6ca4f243c9b31dc2d5fd6e8}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Size\+Offset} = 0\hypertarget{classv8_1_1internal_1_1_memory_chunk_a92f3178835a10fa2ad862528a91f1e66}{}\label{classv8_1_1internal_1_1_memory_chunk_a92f3178835a10fa2ad862528a91f1e66}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Flags\+Offset} = k\+Size\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad9720790421c6b7c580b9296f75dadc1}{}\label{classv8_1_1internal_1_1_memory_chunk_ad9720790421c6b7c580b9296f75dadc1}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Live\+Bytes\+Offset}
+\item 
+static const size\+\_\+t {\bfseries k\+Old\+To\+New\+Slots\+Offset}
+\item 
+static const size\+\_\+t {\bfseries k\+Write\+Barrier\+Counter\+Offset}
+\item 
+static const size\+\_\+t {\bfseries k\+Min\+Header\+Size}
+\item 
+static const size\+\_\+t {\bfseries k\+Header\+Size} = k\+Min\+Header\+Size\hypertarget{classv8_1_1internal_1_1_memory_chunk_a9d854e2a69023012cd6c1f2a811ed3a2}{}\label{classv8_1_1internal_1_1_memory_chunk_a9d854e2a69023012cd6c1f2a811ed3a2}
+
+\item 
+static const int {\bfseries k\+Body\+Offset}
+\item 
+static const int {\bfseries k\+Object\+Start\+Alignment} = 32 $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac2a0cdf9458acf5ae6483384a72b18c2}{}\label{classv8_1_1internal_1_1_memory_chunk_ac2a0cdf9458acf5ae6483384a72b18c2}
+
+\item 
+static const int {\bfseries k\+Object\+Start\+Offset}
+\item 
+static const int {\bfseries k\+Page\+Size} = 1 $<$$<$ k\+Page\+Size\+Bits\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad3fb50a7edf5e288244370fa3b2a3da4}{}\label{classv8_1_1internal_1_1_memory_chunk_ad3fb50a7edf5e288244370fa3b2a3da4}
+
+\item 
+static const intptr\+\_\+t {\bfseries k\+Page\+Alignment\+Mask} = (1 $<$$<$ k\+Page\+Size\+Bits) -\/ 1\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab17c488c2dd31bce8fed2a888fe00d83}{}\label{classv8_1_1internal_1_1_memory_chunk_ab17c488c2dd31bce8fed2a888fe00d83}
+
+\item 
+static const int {\bfseries k\+Allocatable\+Memory} = k\+Page\+Size -\/ k\+Object\+Start\+Offset\hypertarget{classv8_1_1internal_1_1_memory_chunk_af13a1aa127e3e9931d3536c535f6e8b6}{}\label{classv8_1_1internal_1_1_memory_chunk_af13a1aa127e3e9931d3536c535f6e8b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Release\+Allocated\+Memory} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3a18c35d669c988d169bc0fabad4230a}{}\label{classv8_1_1internal_1_1_memory_chunk_a3a18c35d669c988d169bc0fabad4230a}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$ {\bfseries reserved\+\_\+memory} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a10cce2b6c4ee3f96c30fe66e7e481f18}{}\label{classv8_1_1internal_1_1_memory_chunk_a10cce2b6c4ee3f96c30fe66e7e481f18}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Address base, size\+\_\+t size, Address area\+\_\+start, Address area\+\_\+end, Executability executable, \hyperlink{classv8_1_1internal_1_1_space}{Space} $\ast$owner, \hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$reservation)\hypertarget{classv8_1_1internal_1_1_memory_chunk_ae997a6d0172e6245a6d93c1f25991fa2}{}\label{classv8_1_1internal_1_1_memory_chunk_ae997a6d0172e6245a6d93c1f25991fa2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries size\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac05692e8f7065568047e69bd9b4ca36e}{}\label{classv8_1_1internal_1_1_memory_chunk_ac05692e8f7065568047e69bd9b4ca36e}
+
+\item 
+intptr\+\_\+t {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a3ae16f5082dad9677e41dbef85078336}{}\label{classv8_1_1internal_1_1_memory_chunk_a3ae16f5082dad9677e41dbef85078336}
+
+\item 
+Address {\bfseries area\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_adfaa9c39f9046afddf0f2e279b2bad21}{}\label{classv8_1_1internal_1_1_memory_chunk_adfaa9c39f9046afddf0f2e279b2bad21}
+
+\item 
+Address {\bfseries area\+\_\+end\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a53745782f0f13117afa97ede9600eb19}{}\label{classv8_1_1internal_1_1_memory_chunk_a53745782f0f13117afa97ede9600eb19}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} {\bfseries reservation\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_aa6c187b560a4780a217648f4e416bbb3}{}\label{classv8_1_1internal_1_1_memory_chunk_aa6c187b560a4780a217648f4e416bbb3}
+
+\item 
+Address {\bfseries owner\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_aca081334cd06102fecc638fdd2f92bff}{}\label{classv8_1_1internal_1_1_memory_chunk_aca081334cd06102fecc638fdd2f92bff}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a425822569500a696f4484f43692e02f5}{}\label{classv8_1_1internal_1_1_memory_chunk_a425822569500a696f4484f43692e02f5}
+
+\item 
+int {\bfseries progress\+\_\+bar\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a7733fbbf2b3b87248309d4e61e2515c5}{}\label{classv8_1_1internal_1_1_memory_chunk_a7733fbbf2b3b87248309d4e61e2515c5}
+
+\item 
+int {\bfseries live\+\_\+byte\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac36b325338acbe3ba00ade7ea9cd1b32}{}\label{classv8_1_1internal_1_1_memory_chunk_ac36b325338acbe3ba00ade7ea9cd1b32}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries old\+\_\+to\+\_\+new\+\_\+slots\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a0db29d25cc0aea132b037724aab7d02c}{}\label{classv8_1_1internal_1_1_memory_chunk_a0db29d25cc0aea132b037724aab7d02c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries old\+\_\+to\+\_\+old\+\_\+slots\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac6e2bcf34861804c5ab8c7a448be6547}{}\label{classv8_1_1internal_1_1_memory_chunk_ac6e2bcf34861804c5ab8c7a448be6547}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_typed_slot_set}{Typed\+Slot\+Set} $\ast$ {\bfseries typed\+\_\+old\+\_\+to\+\_\+old\+\_\+slots\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a0a2d3b8bf424f3f28d58fb14ee391be9}{}\label{classv8_1_1internal_1_1_memory_chunk_a0a2d3b8bf424f3f28d58fb14ee391be9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_skip_list}{Skip\+List} $\ast$ {\bfseries skip\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a0f375a7b0d832bbca116e0d208e14227}{}\label{classv8_1_1internal_1_1_memory_chunk_a0f375a7b0d832bbca116e0d208e14227}
+
+\item 
+intptr\+\_\+t {\bfseries write\+\_\+barrier\+\_\+counter\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad21419537b079a2d30399c430f159b97}{}\label{classv8_1_1internal_1_1_memory_chunk_ad21419537b079a2d30399c430f159b97}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ intptr\+\_\+t $>$ {\bfseries high\+\_\+water\+\_\+mark\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_aa0d84e116c7382ed0ff4c9b680623c9c}{}\label{classv8_1_1internal_1_1_memory_chunk_aa0d84e116c7382ed0ff4c9b680623c9c}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} $\ast$ {\bfseries mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_adcba9ea489940cd11899faba32202079}{}\label{classv8_1_1internal_1_1_memory_chunk_adcba9ea489940cd11899faba32202079}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ Concurrent\+Sweeping\+State $>$ {\bfseries concurrent\+\_\+sweeping\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a270c76fc3b182e662a375a80916a24cf}{}\label{classv8_1_1internal_1_1_memory_chunk_a270c76fc3b182e662a375a80916a24cf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ intptr\+\_\+t $>$ {\bfseries available\+\_\+in\+\_\+free\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a03b2c99cba48f3eade4384957c19e607}{}\label{classv8_1_1internal_1_1_memory_chunk_a03b2c99cba48f3eade4384957c19e607}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ intptr\+\_\+t $>$ {\bfseries wasted\+\_\+memory\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad79f007b19057d01f1719836d24f5f33}{}\label{classv8_1_1internal_1_1_memory_chunk_ad79f007b19057d01f1719836d24f5f33}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ $>$ {\bfseries next\+\_\+chunk\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a0a4c0a4b0714380eaf43c3746080a1e0}{}\label{classv8_1_1internal_1_1_memory_chunk_a0a4c0a4b0714380eaf43c3746080a1e0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ $>$ {\bfseries prev\+\_\+chunk\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab3429c0a9524b95eed1c35d33d297ea3}{}\label{classv8_1_1internal_1_1_memory_chunk_ab3429c0a9524b95eed1c35d33d297ea3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_list_category}{Free\+List\+Category} {\bfseries categories\+\_\+} \mbox{[}k\+Number\+Of\+Categories\mbox{]}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a5b1e8024498f00883a8b4dd6445e78ce}{}\label{classv8_1_1internal_1_1_memory_chunk_a5b1e8024498f00883a8b4dd6445e78ce}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize\+Reserved\+Memory} ()\hypertarget{classv8_1_1internal_1_1_memory_chunk_a67d9059f8db73364276d6ab010470ba6}{}\label{classv8_1_1internal_1_1_memory_chunk_a67d9059f8db73364276d6ab010470ba6}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Memory\+Allocator}\hypertarget{classv8_1_1internal_1_1_memory_chunk_aea1126d5a764b0d074d2d6edb5a09f23}{}\label{classv8_1_1internal_1_1_memory_chunk_aea1126d5a764b0d074d2d6edb5a09f23}
+
+\item 
+class {\bfseries Memory\+Chunk\+Validator}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a678cb99f13bd8a3b1e597d1639015012}{}\label{classv8_1_1internal_1_1_memory_chunk_a678cb99f13bd8a3b1e597d1639015012}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Alignment@{k\+Alignment}}
+\index{k\+Alignment@{k\+Alignment}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Alignment}{kAlignment}}]{\setlength{\rightskip}{0pt plus 5cm}const intptr\+\_\+t v8\+::internal\+::\+Memory\+Chunk\+::k\+Alignment\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_aeb9f7807568ebb3077c7d89921fcfee2}{}\label{classv8_1_1internal_1_1_memory_chunk_aeb9f7807568ebb3077c7d89921fcfee2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (\textcolor{keyword}{static\_cast<}uintptr\_t\textcolor{keyword}{>}(1) << kPageSizeBits)
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Body\+Offset@{k\+Body\+Offset}}
+\index{k\+Body\+Offset@{k\+Body\+Offset}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Body\+Offset}{kBodyOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Memory\+Chunk\+::k\+Body\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a7529c94094cfc0789acd79a2e439c6dd}{}\label{classv8_1_1internal_1_1_memory_chunk_a7529c94094cfc0789acd79a2e439c6dd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      CODE\_POINTER\_ALIGN(kHeaderSize + Bitmap::kSize)
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Live\+Bytes\+Offset@{k\+Live\+Bytes\+Offset}}
+\index{k\+Live\+Bytes\+Offset@{k\+Live\+Bytes\+Offset}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Live\+Bytes\+Offset}{kLiveBytesOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const intptr\+\_\+t v8\+::internal\+::\+Memory\+Chunk\+::k\+Live\+Bytes\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ad250a03190baf4dc4ddccf477d916d89}{}\label{classv8_1_1internal_1_1_memory_chunk_ad250a03190baf4dc4ddccf477d916d89}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kSizeOffset + kPointerSize  
+      + kIntptrSize               
+      + kPointerSize              
+      + kPointerSize              
+      + 2 * kPointerSize          
+      + kPointerSize              
+      + kPointerSize              
+      + kIntSize
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Min\+Header\+Size@{k\+Min\+Header\+Size}}
+\index{k\+Min\+Header\+Size@{k\+Min\+Header\+Size}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Min\+Header\+Size}{kMinHeaderSize}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t v8\+::internal\+::\+Memory\+Chunk\+::k\+Min\+Header\+Size\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_abeb0e02cd8a07148f8ebd62935f6bf4f}{}\label{classv8_1_1internal_1_1_memory_chunk_abeb0e02cd8a07148f8ebd62935f6bf4f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kWriteBarrierCounterOffset +
+      kIntptrSize         
+      + kPointerSize      
+      + kPointerSize      
+      + kPointerSize      
+      + 2 * kPointerSize  
+      + kPointerSize      
+      + kPointerSize      
+      
+      + FreeListCategory::kSize * kNumberOfCategories
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Object\+Start\+Offset@{k\+Object\+Start\+Offset}}
+\index{k\+Object\+Start\+Offset@{k\+Object\+Start\+Offset}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Object\+Start\+Offset}{kObjectStartOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Memory\+Chunk\+::k\+Object\+Start\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a323d49bf8af911559723fa084503b6e7}{}\label{classv8_1_1internal_1_1_memory_chunk_a323d49bf8af911559723fa084503b6e7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kBodyOffset - 1 +
+      (kObjectStartAlignment - (kBodyOffset - 1) % kObjectStartAlignment)
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Old\+To\+New\+Slots\+Offset@{k\+Old\+To\+New\+Slots\+Offset}}
+\index{k\+Old\+To\+New\+Slots\+Offset@{k\+Old\+To\+New\+Slots\+Offset}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Old\+To\+New\+Slots\+Offset}{kOldToNewSlotsOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t v8\+::internal\+::\+Memory\+Chunk\+::k\+Old\+To\+New\+Slots\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a40b70fb3dc220c199c2edf00fef9a92b}{}\label{classv8_1_1internal_1_1_memory_chunk_a40b70fb3dc220c199c2edf00fef9a92b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kLiveBytesOffset + kIntSize
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Pointers\+From\+Here\+Are\+Interesting\+Mask@{k\+Pointers\+From\+Here\+Are\+Interesting\+Mask}}
+\index{k\+Pointers\+From\+Here\+Are\+Interesting\+Mask@{k\+Pointers\+From\+Here\+Are\+Interesting\+Mask}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Pointers\+From\+Here\+Are\+Interesting\+Mask}{kPointersFromHereAreInterestingMask}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Memory\+Chunk\+::k\+Pointers\+From\+Here\+Are\+Interesting\+Mask\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a095d7d0bdc2f42edd3615fb0367df1a5}{}\label{classv8_1_1internal_1_1_memory_chunk_a095d7d0bdc2f42edd3615fb0367df1a5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      1 << POINTERS\_FROM\_HERE\_ARE\_INTERESTING
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Pointers\+To\+Here\+Are\+Interesting\+Mask@{k\+Pointers\+To\+Here\+Are\+Interesting\+Mask}}
+\index{k\+Pointers\+To\+Here\+Are\+Interesting\+Mask@{k\+Pointers\+To\+Here\+Are\+Interesting\+Mask}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Pointers\+To\+Here\+Are\+Interesting\+Mask}{kPointersToHereAreInterestingMask}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Memory\+Chunk\+::k\+Pointers\+To\+Here\+Are\+Interesting\+Mask\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ab722b79056ded5db4f9444e40ce4e38d}{}\label{classv8_1_1internal_1_1_memory_chunk_ab722b79056ded5db4f9444e40ce4e38d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      1 << POINTERS\_TO\_HERE\_ARE\_INTERESTING
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Skip\+Evacuation\+Slots\+Recording\+Mask@{k\+Skip\+Evacuation\+Slots\+Recording\+Mask}}
+\index{k\+Skip\+Evacuation\+Slots\+Recording\+Mask@{k\+Skip\+Evacuation\+Slots\+Recording\+Mask}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Skip\+Evacuation\+Slots\+Recording\+Mask}{kSkipEvacuationSlotsRecordingMask}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Memory\+Chunk\+::k\+Skip\+Evacuation\+Slots\+Recording\+Mask\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_ac21cadcf39d0971633fd4d18b92969a8}{}\label{classv8_1_1internal_1_1_memory_chunk_ac21cadcf39d0971633fd4d18b92969a8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (1 << EVACUATION\_CANDIDATE) | (1 << IN\_FROM\_SPACE) | (1 << IN\_TO\_SPACE)
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}!k\+Write\+Barrier\+Counter\+Offset@{k\+Write\+Barrier\+Counter\+Offset}}
+\index{k\+Write\+Barrier\+Counter\+Offset@{k\+Write\+Barrier\+Counter\+Offset}!v8\+::internal\+::\+Memory\+Chunk@{v8\+::internal\+::\+Memory\+Chunk}}
+\subsubsection[{\texorpdfstring{k\+Write\+Barrier\+Counter\+Offset}{kWriteBarrierCounterOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t v8\+::internal\+::\+Memory\+Chunk\+::k\+Write\+Barrier\+Counter\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_memory_chunk_a069188cd704a43e4fcce7cf0688f1665}{}\label{classv8_1_1internal_1_1_memory_chunk_a069188cd704a43e4fcce7cf0688f1665}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kOldToNewSlotsOffset + kPointerSize  
+      + kPointerSize                       
+      + kPointerSize   
+      + kPointerSize
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

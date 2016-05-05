@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info}{}\section{v8\+:\+:internal\+:\+:Deoptimized\+Frame\+Info Class Reference}
+\label{classv8_1_1internal_1_1_deoptimized_frame_info}\index{v8\+::internal\+::\+Deoptimized\+Frame\+Info@{v8\+::internal\+::\+Deoptimized\+Frame\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Deoptimized\+Frame\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_deoptimized_frame_info}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Deoptimized\+Frame\+Info} (\hyperlink{classv8_1_1internal_1_1_translated_state}{Translated\+State} $\ast$state, Translated\+State\+::iterator frame\+\_\+it, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_abcd9e3b305e42e71e91aa22fd0e74efc}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_abcd9e3b305e42e71e91aa22fd0e74efc}
+
+\item 
+int {\bfseries parameters\+\_\+count} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_ace9c74d42d04b117979611044f6adc68}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_ace9c74d42d04b117979611044f6adc68}
+
+\item 
+int {\bfseries expression\+\_\+count} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a86000b47a892ff78f37787ed131e61c9}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a86000b47a892ff78f37787ed131e61c9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries Get\+Function} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_addf293d436f9b12f7eda3b732fc08afd}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_addf293d436f9b12f7eda3b732fc08afd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Context} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a41b2845faf5e159c8164b0cc1082f77a}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a41b2845faf5e159c8164b0cc1082f77a}
+
+\item 
+bool {\bfseries Has\+Construct\+Stub} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a89e933d5994a7a794280d8d56f749369}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a89e933d5994a7a794280d8d56f749369}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Parameter} (int index)\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_af3c4c6fbbfed06a8b4b2f765542656ea}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_af3c4c6fbbfed06a8b4b2f765542656ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Expression} (int index)\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_ae2ada6861a34add80240b68c5f6ec2d1}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_ae2ada6861a34add80240b68c5f6ec2d1}
+
+\item 
+int {\bfseries Get\+Source\+Position} ()\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a1f7e7515df0cf92d77692f3861eeab5a}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a1f7e7515df0cf92d77692f3861eeab5a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Parameter} (int index, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ obj)\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a3f30040618f126bca31d06ae16ef70d5}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a3f30040618f126bca31d06ae16ef70d5}
+
+\item 
+void {\bfseries Set\+Expression} (int index, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ obj)\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a813e61e137504e75a5c8f19d5815715d}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a813e61e137504e75a5c8f19d5815715d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries function\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a186b1e15775630d7ffc4cb06e9ef9c08}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a186b1e15775630d7ffc4cb06e9ef9c08}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries context\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_ab7e484d05e9dc767a4d77de1ae4986fa}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_ab7e484d05e9dc767a4d77de1ae4986fa}
+
+\item 
+bool {\bfseries has\+\_\+construct\+\_\+stub\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_ab4dbc581946a7975fd7a04bff44db8a5}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_ab4dbc581946a7975fd7a04bff44db8a5}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ {\bfseries parameters\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a238c860a7a31bfb48f824bce135f6302}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a238c860a7a31bfb48f824bce135f6302}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ {\bfseries expression\+\_\+stack\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_aeee625f6a11f9854ac1cb1f1ad61b8c1}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_aeee625f6a11f9854ac1cb1f1ad61b8c1}
+
+\item 
+int {\bfseries source\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_a2574cac3b30706c3478ca8423c5bb970}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_a2574cac3b30706c3478ca8423c5bb970}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Deoptimizer}\hypertarget{classv8_1_1internal_1_1_deoptimized_frame_info_aa89911581cd6ded032f998021aef9e5c}{}\label{classv8_1_1internal_1_1_deoptimized_frame_info_aa89911581cd6ded032f998021aef9e5c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+h\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{classv8_1_1internal_1_1_array_literal}{}\section{v8\+:\+:internal\+:\+:Array\+Literal Class Reference}
+\label{classv8_1_1internal_1_1_array_literal}\index{v8\+::internal\+::\+Array\+Literal@{v8\+::internal\+::\+Array\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Array\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_array_literal}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Flags} \{ \\*
+{\bfseries k\+No\+Flags} = 0, 
+\\*
+{\bfseries k\+Shallow\+Elements} = 1, 
+\\*
+{\bfseries k\+Disable\+Mementos} = 1 $<$$<$ 1
+ \}\hypertarget{classv8_1_1internal_1_1_array_literal_a6b34203716549cca6f3b51d99e32aecd}{}\label{classv8_1_1internal_1_1_array_literal_a6b34203716549cca6f3b51d99e32aecd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries constant\+\_\+elements} () const \hypertarget{classv8_1_1internal_1_1_array_literal_a002a9a13a866683dfd5eda8c79262fb7}{}\label{classv8_1_1internal_1_1_array_literal_a002a9a13a866683dfd5eda8c79262fb7}
+
+\item 
+Elements\+Kind {\bfseries constant\+\_\+elements\+\_\+kind} () const \hypertarget{classv8_1_1internal_1_1_array_literal_ad4dadd0d290f1922ef4529c2e45ba332}{}\label{classv8_1_1internal_1_1_array_literal_ad4dadd0d290f1922ef4529c2e45ba332}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries values} () const \hypertarget{classv8_1_1internal_1_1_array_literal_ad67607b8facceaf7e6af416e265ede83}{}\label{classv8_1_1internal_1_1_array_literal_ad67607b8facceaf7e6af416e265ede83}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Create\+Literal\+Id} () const \hypertarget{classv8_1_1internal_1_1_array_literal_a75c6a1be5b563f79cb35fc7662e9d5c9}{}\label{classv8_1_1internal_1_1_array_literal_a75c6a1be5b563f79cb35fc7662e9d5c9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Get\+Id\+For\+Element} (int i)\hypertarget{classv8_1_1internal_1_1_array_literal_ac6c3346b77409ba04b3821968a93adf8}{}\label{classv8_1_1internal_1_1_array_literal_ac6c3346b77409ba04b3821968a93adf8}
+
+\item 
+int {\bfseries num\+\_\+ids} () const \hypertarget{classv8_1_1internal_1_1_array_literal_a93f7f58a5ed6da6ae58d47a5c62ebd73}{}\label{classv8_1_1internal_1_1_array_literal_a93f7f58a5ed6da6ae58d47a5c62ebd73}
+
+\item 
+void {\bfseries Build\+Constant\+Elements} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_array_literal_a358250fbd37d0c353259dbfad5986260}{}\label{classv8_1_1internal_1_1_array_literal_a358250fbd37d0c353259dbfad5986260}
+
+\item 
+int {\bfseries Compute\+Flags} (bool disable\+\_\+mementos=false) const \hypertarget{classv8_1_1internal_1_1_array_literal_a2c6b7d89f636f9922c93034844decfb0}{}\label{classv8_1_1internal_1_1_array_literal_a2c6b7d89f636f9922c93034844decfb0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$\+::iterator {\bfseries First\+Spread} () const \hypertarget{classv8_1_1internal_1_1_array_literal_a320dfa8128e8951b00b7d963072c938d}{}\label{classv8_1_1internal_1_1_array_literal_a320dfa8128e8951b00b7d963072c938d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$\+::iterator {\bfseries End\+Value} () const \hypertarget{classv8_1_1internal_1_1_array_literal_a45df219b1eb64aad5ce0f6c9451d0f71}{}\label{classv8_1_1internal_1_1_array_literal_a45df219b1eb64aad5ce0f6c9451d0f71}
+
+\item 
+void {\bfseries Rewind\+Spreads} ()\hypertarget{classv8_1_1internal_1_1_array_literal_a15e6066d7fd1258ecd9d334cecc67087}{}\label{classv8_1_1internal_1_1_array_literal_a15e6066d7fd1258ecd9d334cecc67087}
+
+\item 
+void {\bfseries Assign\+Feedback\+Vector\+Slots} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_feedback_vector_spec}{Feedback\+Vector\+Spec} $\ast$spec, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot_cache}{Feedback\+Vector\+Slot\+Cache} $\ast$cache) override\hypertarget{classv8_1_1internal_1_1_array_literal_ada3eb0a30e2334b845a9fa02a900b99b}{}\label{classv8_1_1internal_1_1_array_literal_ada3eb0a30e2334b845a9fa02a900b99b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} {\bfseries Literal\+Feedback\+Slot} () const \hypertarget{classv8_1_1internal_1_1_array_literal_ad12a5c2a27ee41ff8fa7a44321fba6dd}{}\label{classv8_1_1internal_1_1_array_literal_ad12a5c2a27ee41ff8fa7a44321fba6dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Array\+Literal} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$values, int first\+\_\+spread\+\_\+index, int literal\+\_\+index, int pos)\hypertarget{classv8_1_1internal_1_1_array_literal_aa525ecda43e041b8dff9a504400a6437}{}\label{classv8_1_1internal_1_1_array_literal_aa525ecda43e041b8dff9a504400a6437}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries parent\+\_\+num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_array_literal_a4bfbb3f6dab028be8ba70ecf40e7b4fc}{}\label{classv8_1_1internal_1_1_array_literal_a4bfbb3f6dab028be8ba70ecf40e7b4fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries local\+\_\+id} (int n) const \hypertarget{classv8_1_1internal_1_1_array_literal_acd2ba950618da3d583e5e66becc4f28e}{}\label{classv8_1_1internal_1_1_array_literal_acd2ba950618da3d583e5e66becc4f28e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries constant\+\_\+elements\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_literal_aa6ca241065a0919b44d8f3894ebff497}{}\label{classv8_1_1internal_1_1_array_literal_aa6ca241065a0919b44d8f3894ebff497}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries values\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_literal_a8c4b703d6c85e025282b042923cd0ce2}{}\label{classv8_1_1internal_1_1_array_literal_a8c4b703d6c85e025282b042923cd0ce2}
+
+\item 
+int {\bfseries first\+\_\+spread\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_literal_a270009f1ea0ef63edd4169dd393729aa}{}\label{classv8_1_1internal_1_1_array_literal_a270009f1ea0ef63edd4169dd393729aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} {\bfseries literal\+\_\+slot\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_literal_a1d2a45605cbf6b732e2bfc3df748305c}{}\label{classv8_1_1internal_1_1_array_literal_a1d2a45605cbf6b732e2bfc3df748305c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

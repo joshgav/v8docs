@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Wasm\+Trap\+Helper Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper}\index{v8\+::internal\+::compiler\+::\+Wasm\+Trap\+Helper@{v8\+::internal\+::compiler\+::\+Wasm\+Trap\+Helper}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Wasm\+Trap\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wasm\+Trap\+Helper} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder}{Wasm\+Graph\+Builder} $\ast$builder)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a498e4b1e329de840f5ce203ef1e66834}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a498e4b1e329de840f5ce203ef1e66834}
+
+\item 
+void {\bfseries Unreachable} (wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ab1c8c4c7c6e3fa65aee6ef22354249e2}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ab1c8c4c7c6e3fa65aee6ef22354249e2}
+
+\item 
+void {\bfseries Trap\+Always} (wasm\+::\+Trap\+Reason reason, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a0575d15bd691b02852af7c910aa525b6}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a0575d15bd691b02852af7c910aa525b6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Trap\+If\+Eq32} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, int32\+\_\+t val, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_abaa9d21259aa16bcbaa6ea8c1c67a28f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_abaa9d21259aa16bcbaa6ea8c1c67a28f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Zero\+Check32} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ab02bdaef58a53b21b523b0b90d073f0f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ab02bdaef58a53b21b523b0b90d073f0f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Trap\+If\+Eq64} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, int64\+\_\+t val, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a7ef5c232e57810762dd46ea1eb428e4b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a7ef5c232e57810762dd46ea1eb428e4b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Zero\+Check64} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a2015a5da8b7e7a5f6ca8d53db1efe031}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a2015a5da8b7e7a5f6ca8d53db1efe031}
+
+\item 
+void {\bfseries Add\+Trap\+If\+True} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$cond, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a903b6e638bb72bcbff88b69dc32489ea}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a903b6e638bb72bcbff88b69dc32489ea}
+
+\item 
+void {\bfseries Add\+Trap\+If\+False} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$cond, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a06b15c5c9942f45a198289d73afd3251}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a06b15c5c9942f45a198289d73afd3251}
+
+\item 
+void {\bfseries Add\+Trap\+If} (wasm\+::\+Trap\+Reason reason, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$cond, bool iftrue, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a98363bb80667c62a3bae8ea38953abf8}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a98363bb80667c62a3bae8ea38953abf8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Trap\+Value} (\hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$sig)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a9d5ad165932b79dae675258bce574d68}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a9d5ad165932b79dae675258bce574d68}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a30f4c54faafa5dd2660eff6a859c77d1}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a30f4c54faafa5dd2660eff6a859c77d1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a8ddfbb19d08c0f24fe1bc122127830f8}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a8ddfbb19d08c0f24fe1bc122127830f8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ac447b031d9477bc8ccbd48f8af381987}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_ac447b031d9477bc8ccbd48f8af381987}
+
+\item 
+void {\bfseries Connect\+Trap} (wasm\+::\+Trap\+Reason reason, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a8a1918cea442c5ce663fcf22d87ea08a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a8a1918cea442c5ce663fcf22d87ea08a}
+
+\item 
+void {\bfseries Build\+Trap\+Code} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$reason\+\_\+node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$position\+\_\+node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a4b1144efff3871c1cd63099f0bfcb50a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a4b1144efff3871c1cd63099f0bfcb50a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder}{Wasm\+Graph\+Builder} $\ast$ {\bfseries builder\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a49be4b95fe96012dc743446f67c27a23}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a49be4b95fe96012dc743446f67c27a23}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a20095a3b63ff084fb507233658743b6f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a20095a3b63ff084fb507233658743b6f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a785a2f5ad47386fb8cdb991745ff7698}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a785a2f5ad47386fb8cdb991745ff7698}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries trap\+\_\+merge\+\_\+} = nullptr\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a813c41f90583f3bd815a1300f078bf79}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a813c41f90583f3bd815a1300f078bf79}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries trap\+\_\+effect\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a480a2ddd1accf7fe101378520dcc638e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a480a2ddd1accf7fe101378520dcc638e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries trap\+\_\+reason\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a19ef0ca472677a04d463058004fe5bc7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a19ef0ca472677a04d463058004fe5bc7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries trap\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a0bb024eb214bf229be11ff9d39a799d3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper_a0bb024eb214bf229be11ff9d39a799d3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/wasm-\/compiler.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1_scavenge_job}{}\section{v8\+:\+:internal\+:\+:Scavenge\+Job Class Reference}
+\label{classv8_1_1internal_1_1_scavenge_job}\index{v8\+::internal\+::\+Scavenge\+Job@{v8\+::internal\+::\+Scavenge\+Job}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_scavenge_job_1_1_idle_task}{Idle\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Schedule\+Idle\+Task\+If\+Needed} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, int bytes\+\_\+allocated)\hypertarget{classv8_1_1internal_1_1_scavenge_job_a27884ce03e524dc5039bace60a816137}{}\label{classv8_1_1internal_1_1_scavenge_job_a27884ce03e524dc5039bace60a816137}
+
+\item 
+void {\bfseries Reschedule\+Idle\+Task} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_scavenge_job_ac5836505660266ea4948517856135266}{}\label{classv8_1_1internal_1_1_scavenge_job_ac5836505660266ea4948517856135266}
+
+\item 
+bool {\bfseries Idle\+Task\+Pending} ()\hypertarget{classv8_1_1internal_1_1_scavenge_job_a203b7877a919ad2d51439a1a7694abf7}{}\label{classv8_1_1internal_1_1_scavenge_job_a203b7877a919ad2d51439a1a7694abf7}
+
+\item 
+void {\bfseries Notify\+Idle\+Task} ()\hypertarget{classv8_1_1internal_1_1_scavenge_job_a35e76dd78df598289ea207816fe6f358}{}\label{classv8_1_1internal_1_1_scavenge_job_a35e76dd78df598289ea207816fe6f358}
+
+\item 
+bool {\bfseries Idle\+Task\+Rescheduled} ()\hypertarget{classv8_1_1internal_1_1_scavenge_job_a17f71605b42c832b29e14d87fa610255}{}\label{classv8_1_1internal_1_1_scavenge_job_a17f71605b42c832b29e14d87fa610255}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Reached\+Idle\+Allocation\+Limit} (double scavenge\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms, size\+\_\+t new\+\_\+space\+\_\+size, size\+\_\+t new\+\_\+space\+\_\+capacity)\hypertarget{classv8_1_1internal_1_1_scavenge_job_abc8b32ff3da05cb65d845027951590ec}{}\label{classv8_1_1internal_1_1_scavenge_job_abc8b32ff3da05cb65d845027951590ec}
+
+\item 
+static bool {\bfseries Enough\+Idle\+Time\+For\+Scavenge} (double idle\+\_\+time\+\_\+ms, double scavenge\+\_\+speed\+\_\+in\+\_\+bytes\+\_\+per\+\_\+ms, size\+\_\+t new\+\_\+space\+\_\+size)\hypertarget{classv8_1_1internal_1_1_scavenge_job_a055df953f929bd8b42d52d1ca96958b3}{}\label{classv8_1_1internal_1_1_scavenge_job_a055df953f929bd8b42d52d1ca96958b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Initial\+Scavenge\+Speed\+In\+Bytes\+Per\+Ms} = 256 $\ast$ KB\hypertarget{classv8_1_1internal_1_1_scavenge_job_a73be7a33cd4c9e0621139a61a24524a1}{}\label{classv8_1_1internal_1_1_scavenge_job_a73be7a33cd4c9e0621139a61a24524a1}
+
+\item 
+static const int {\bfseries k\+Average\+Idle\+Time\+Ms} = 5\hypertarget{classv8_1_1internal_1_1_scavenge_job_a23416920357abe1bedcad9805017ddd1}{}\label{classv8_1_1internal_1_1_scavenge_job_a23416920357abe1bedcad9805017ddd1}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Bytes\+Allocated\+Before\+Next\+Idle\+Task} = 512 $\ast$ KB\hypertarget{classv8_1_1internal_1_1_scavenge_job_ae367f695e5a1f6ce8162921108c465e3}{}\label{classv8_1_1internal_1_1_scavenge_job_ae367f695e5a1f6ce8162921108c465e3}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Min\+Allocation\+Limit} = 512 $\ast$ KB\hypertarget{classv8_1_1internal_1_1_scavenge_job_a2b8d60098d3eb019b700acb261facbf8}{}\label{classv8_1_1internal_1_1_scavenge_job_a2b8d60098d3eb019b700acb261facbf8}
+
+\item 
+static const double {\bfseries k\+Max\+Allocation\+Limit\+As\+Fraction\+Of\+New\+Space} = 0.\+8\hypertarget{classv8_1_1internal_1_1_scavenge_job_aa7e3f75336725f3ecf2aff805fd2c29e}{}\label{classv8_1_1internal_1_1_scavenge_job_aa7e3f75336725f3ecf2aff805fd2c29e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Schedule\+Idle\+Task} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_scavenge_job_a20445abbc7ef46d02162d441a8af6416}{}\label{classv8_1_1internal_1_1_scavenge_job_a20445abbc7ef46d02162d441a8af6416}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries idle\+\_\+task\+\_\+pending\+\_\+}\hypertarget{classv8_1_1internal_1_1_scavenge_job_aca9941013bb80600d53bfdfb5b2033a3}{}\label{classv8_1_1internal_1_1_scavenge_job_aca9941013bb80600d53bfdfb5b2033a3}
+
+\item 
+bool {\bfseries idle\+\_\+task\+\_\+rescheduled\+\_\+}\hypertarget{classv8_1_1internal_1_1_scavenge_job_aa4e69b23c6a9be55e7a5be799cc08f74}{}\label{classv8_1_1internal_1_1_scavenge_job_aa4e69b23c6a9be55e7a5be799cc08f74}
+
+\item 
+int {\bfseries bytes\+\_\+allocated\+\_\+since\+\_\+the\+\_\+last\+\_\+task\+\_\+}\hypertarget{classv8_1_1internal_1_1_scavenge_job_ad2e220970ff0d28ecb23bf5c40b2eff1}{}\label{classv8_1_1internal_1_1_scavenge_job_ad2e220970ff0d28ecb23bf5c40b2eff1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/scavenge-\/job.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/scavenge-\/job.\+cc\end{DoxyCompactItemize}

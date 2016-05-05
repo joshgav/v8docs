@@ -1,0 +1,317 @@
+\hypertarget{classv8_1_1internal_1_1_h_basic_block}{}\section{v8\+:\+:internal\+:\+:H\+Basic\+Block Class Reference}
+\label{classv8_1_1internal_1_1_h_basic_block}\index{v8\+::internal\+::\+H\+Basic\+Block@{v8\+::internal\+::\+H\+Basic\+Block}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Basic\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_h_basic_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Basic\+Block} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a71552c2e13d4938a71894dfb0ad8381a}{}\label{classv8_1_1internal_1_1_h_basic_block_a71552c2e13d4938a71894dfb0ad8381a}
+
+\item 
+int {\bfseries block\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a327384b61e0ded23c6bf3282b3a51311}{}\label{classv8_1_1internal_1_1_h_basic_block_a327384b61e0ded23c6bf3282b3a51311}
+
+\item 
+void {\bfseries set\+\_\+block\+\_\+id} (int id)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a700c4b74eaa80088bb1befec5e7c0e1a}{}\label{classv8_1_1internal_1_1_h_basic_block_a700c4b74eaa80088bb1befec5e7c0e1a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_aec741ac74c166d5d52fe562192411a03}{}\label{classv8_1_1internal_1_1_h_basic_block_aec741ac74c166d5d52fe562192411a03}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a1c95d09ba318d4d7f2bc8196953820a4}{}\label{classv8_1_1internal_1_1_h_basic_block_a1c95d09ba318d4d7f2bc8196953820a4}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ $>$ $\ast$ {\bfseries phis} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a2eb90018b3fd4fcc41780aa90e66c529}{}\label{classv8_1_1internal_1_1_h_basic_block_a2eb90018b3fd4fcc41780aa90e66c529}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries first} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_aa9861eb9e90cd55f2fa3e00b3b0a47c4}{}\label{classv8_1_1internal_1_1_h_basic_block_aa9861eb9e90cd55f2fa3e00b3b0a47c4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries last} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a25009e7a70ac6b109d267b8cae72beaa}{}\label{classv8_1_1internal_1_1_h_basic_block_a25009e7a70ac6b109d267b8cae72beaa}
+
+\item 
+void {\bfseries set\+\_\+last} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr)\hypertarget{classv8_1_1internal_1_1_h_basic_block_afd482b3c6294971bc5a63f7c404e3fa3}{}\label{classv8_1_1internal_1_1_h_basic_block_afd482b3c6294971bc5a63f7c404e3fa3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_control_instruction}{H\+Control\+Instruction} $\ast$ {\bfseries end} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a987397be6e40d47d1e93a493dbeff824}{}\label{classv8_1_1internal_1_1_h_basic_block_a987397be6e40d47d1e93a493dbeff824}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries loop\+\_\+information} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a990e4700b87293b12010a034d1162898}{}\label{classv8_1_1internal_1_1_h_basic_block_a990e4700b87293b12010a034d1162898}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries current\+\_\+loop} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a39ee504d2cc7beecc301a549934689a5}{}\label{classv8_1_1internal_1_1_h_basic_block_a39ee504d2cc7beecc301a549934689a5}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$ {\bfseries predecessors} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_ac4b2eab10760026e820cfc9ff7ef4f34}{}\label{classv8_1_1internal_1_1_h_basic_block_ac4b2eab10760026e820cfc9ff7ef4f34}
+
+\item 
+bool {\bfseries Has\+Predecessor} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a6dbb18dee269a0e810ab275fab41bbff}{}\label{classv8_1_1internal_1_1_h_basic_block_a6dbb18dee269a0e810ab275fab41bbff}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$ {\bfseries dominated\+\_\+blocks} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a131312179b10c29c67d199c7cfc30a6d}{}\label{classv8_1_1internal_1_1_h_basic_block_a131312179b10c29c67d199c7cfc30a6d}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ int $>$ $\ast$ {\bfseries deleted\+\_\+phis} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_abb6c3af76dfc3ac5496bf68d350ed52b}{}\label{classv8_1_1internal_1_1_h_basic_block_abb6c3af76dfc3ac5496bf68d350ed52b}
+
+\item 
+void {\bfseries Record\+Deleted\+Phi} (int merge\+\_\+index)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a2374bd5bc8776f0a9072a14c67f350ba}{}\label{classv8_1_1internal_1_1_h_basic_block_a2374bd5bc8776f0a9072a14c67f350ba}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries dominator} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_acb24668e2036de38b14e34fd2a4cc0ce}{}\label{classv8_1_1internal_1_1_h_basic_block_acb24668e2036de38b14e34fd2a4cc0ce}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$ {\bfseries last\+\_\+environment} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a4641fe1076f3919e56657b49c4d0e39c}{}\label{classv8_1_1internal_1_1_h_basic_block_a4641fe1076f3919e56657b49c4d0e39c}
+
+\item 
+int {\bfseries argument\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_aa5f4a8a8ec9a669d8139a6e7714e958c}{}\label{classv8_1_1internal_1_1_h_basic_block_aa5f4a8a8ec9a669d8139a6e7714e958c}
+
+\item 
+void {\bfseries set\+\_\+argument\+\_\+count} (int count)\hypertarget{classv8_1_1internal_1_1_h_basic_block_ad2871fc569a4a16a8b9e2178f43b67dd}{}\label{classv8_1_1internal_1_1_h_basic_block_ad2871fc569a4a16a8b9e2178f43b67dd}
+
+\item 
+int {\bfseries first\+\_\+instruction\+\_\+index} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_af4be5de352687b287a43e11201f02f02}{}\label{classv8_1_1internal_1_1_h_basic_block_af4be5de352687b287a43e11201f02f02}
+
+\item 
+void {\bfseries set\+\_\+first\+\_\+instruction\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_h_basic_block_aa8a7a55c59818a9433fb070376756a6b}{}\label{classv8_1_1internal_1_1_h_basic_block_aa8a7a55c59818a9433fb070376756a6b}
+
+\item 
+int {\bfseries last\+\_\+instruction\+\_\+index} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a0c2433ed998ba1594fba0322f47721a4}{}\label{classv8_1_1internal_1_1_h_basic_block_a0c2433ed998ba1594fba0322f47721a4}
+
+\item 
+void {\bfseries set\+\_\+last\+\_\+instruction\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_h_basic_block_aea363e2593b14442e6445ea83fc874db}{}\label{classv8_1_1internal_1_1_h_basic_block_aea363e2593b14442e6445ea83fc874db}
+
+\item 
+bool {\bfseries is\+\_\+osr\+\_\+entry} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_ac7fb53f5c10e650abcf286da75e80c52}{}\label{classv8_1_1internal_1_1_h_basic_block_ac7fb53f5c10e650abcf286da75e80c52}
+
+\item 
+void {\bfseries set\+\_\+osr\+\_\+entry} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a61ecf1c00614117620cbbde94eda537e}{}\label{classv8_1_1internal_1_1_h_basic_block_a61ecf1c00614117620cbbde94eda537e}
+
+\item 
+void {\bfseries Attach\+Loop\+Information} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a394402279bceb2a037fad93f6be22db5}{}\label{classv8_1_1internal_1_1_h_basic_block_a394402279bceb2a037fad93f6be22db5}
+
+\item 
+void {\bfseries Detach\+Loop\+Information} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a02f37547ef557878c0c895e133ff6ee7}{}\label{classv8_1_1internal_1_1_h_basic_block_a02f37547ef557878c0c895e133ff6ee7}
+
+\item 
+bool {\bfseries Is\+Loop\+Header} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_af8b1e9e0b1a85a50939a0da96d4683f6}{}\label{classv8_1_1internal_1_1_h_basic_block_af8b1e9e0b1a85a50939a0da96d4683f6}
+
+\item 
+bool {\bfseries Is\+Start\+Block} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a5c3ea32372263dd2b6e698314e2f6fba}{}\label{classv8_1_1internal_1_1_h_basic_block_a5c3ea32372263dd2b6e698314e2f6fba}
+
+\item 
+void {\bfseries Post\+Process\+Loop\+Header} (\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$stmt)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a4f08373872a43c262b33990ffee19204}{}\label{classv8_1_1internal_1_1_h_basic_block_a4f08373872a43c262b33990ffee19204}
+
+\item 
+bool {\bfseries Is\+Finished} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_aeeae4883abf72a4408819d65899c32f3}{}\label{classv8_1_1internal_1_1_h_basic_block_aeeae4883abf72a4408819d65899c32f3}
+
+\item 
+void {\bfseries Add\+Phi} (\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$phi)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a0c1b142b6481cf97eb234e8859d8c61f}{}\label{classv8_1_1internal_1_1_h_basic_block_a0c1b142b6481cf97eb234e8859d8c61f}
+
+\item 
+void {\bfseries Remove\+Phi} (\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$phi)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a35c160ddc931193071140da73952d186}{}\label{classv8_1_1internal_1_1_h_basic_block_a35c160ddc931193071140da73952d186}
+
+\item 
+void {\bfseries Add\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a100d4d2e921c5fefb9dd142bd1c2d512}{}\label{classv8_1_1internal_1_1_h_basic_block_a100d4d2e921c5fefb9dd142bd1c2d512}
+
+\item 
+bool {\bfseries Dominates} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$other) const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a591326a0c2a56d28be12015d020df042}{}\label{classv8_1_1internal_1_1_h_basic_block_a591326a0c2a56d28be12015d020df042}
+
+\item 
+bool {\bfseries Equal\+To\+Or\+Dominates} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$other) const \hypertarget{classv8_1_1internal_1_1_h_basic_block_aa7da2b854d9e8b156bcd76b5e165ff8c}{}\label{classv8_1_1internal_1_1_h_basic_block_aa7da2b854d9e8b156bcd76b5e165ff8c}
+
+\item 
+int {\bfseries Loop\+Nesting\+Depth} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_adcff644c0e738e904e133abf804fe019}{}\label{classv8_1_1internal_1_1_h_basic_block_adcff644c0e738e904e133abf804fe019}
+
+\item 
+void {\bfseries Set\+Initial\+Environment} (\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$env)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a03a91c90728b0498138baab9e9307188}{}\label{classv8_1_1internal_1_1_h_basic_block_a03a91c90728b0498138baab9e9307188}
+
+\item 
+void {\bfseries Clear\+Environment} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a62345e57263d4c4ba09f9f8e83c0f66b}{}\label{classv8_1_1internal_1_1_h_basic_block_a62345e57263d4c4ba09f9f8e83c0f66b}
+
+\item 
+bool {\bfseries Has\+Environment} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a2a408bce28815705c0b9785be2f99cac}{}\label{classv8_1_1internal_1_1_h_basic_block_a2a408bce28815705c0b9785be2f99cac}
+
+\item 
+void {\bfseries Update\+Environment} (\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$env)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a5c9ba3b1efad45d4d5890920d4761b5e}{}\label{classv8_1_1internal_1_1_h_basic_block_a5c9ba3b1efad45d4d5890920d4761b5e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries parent\+\_\+loop\+\_\+header} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a0ee7981fb00e3d81403e9e1974cef5ac}{}\label{classv8_1_1internal_1_1_h_basic_block_a0ee7981fb00e3d81403e9e1974cef5ac}
+
+\item 
+void {\bfseries set\+\_\+parent\+\_\+loop\+\_\+header} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_basic_block_ac39c283109c307bd0a7a583ebe7af4ed}{}\label{classv8_1_1internal_1_1_h_basic_block_ac39c283109c307bd0a7a583ebe7af4ed}
+
+\item 
+bool {\bfseries Has\+Parent\+Loop\+Header} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a50e7dd5064befc632aa89b6697bd21e1}{}\label{classv8_1_1internal_1_1_h_basic_block_a50e7dd5064befc632aa89b6697bd21e1}
+
+\item 
+void {\bfseries Set\+Join\+Id} (\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id)\hypertarget{classv8_1_1internal_1_1_h_basic_block_ad65029fcd3d8443167284d2d6b206ec0}{}\label{classv8_1_1internal_1_1_h_basic_block_ad65029fcd3d8443167284d2d6b206ec0}
+
+\item 
+int {\bfseries Predecessor\+Index\+Of} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$predecessor) const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a72e03006d5f06bfb44a7c1f80d6ac13b}{}\label{classv8_1_1internal_1_1_h_basic_block_a72e03006d5f06bfb44a7c1f80d6ac13b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ {\bfseries Add\+New\+Phi} (int merged\+\_\+index)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a1c3504f4fcbb77d1c9429063c898dcaf}{}\label{classv8_1_1internal_1_1_h_basic_block_a1c3504f4fcbb77d1c9429063c898dcaf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$ {\bfseries Add\+New\+Simulate} (\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position, Removable\+Simulate removable=F\+I\+X\+E\+D\+\_\+\+S\+I\+M\+U\+L\+A\+TE)\hypertarget{classv8_1_1internal_1_1_h_basic_block_ac053f0dd303a665676d0cec5ce8a9133}{}\label{classv8_1_1internal_1_1_h_basic_block_ac053f0dd303a665676d0cec5ce8a9133}
+
+\item 
+void {\bfseries Assign\+Common\+Dominator} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a00085ec101a33570dea0490483f7d9af}{}\label{classv8_1_1internal_1_1_h_basic_block_a00085ec101a33570dea0490483f7d9af}
+
+\item 
+void {\bfseries Assign\+Loop\+Successor\+Dominators} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_afa277cf2199bee36eefa5a43296fbaf4}{}\label{classv8_1_1internal_1_1_h_basic_block_afa277cf2199bee36eefa5a43296fbaf4}
+
+\item 
+bool {\bfseries Is\+Inline\+Return\+Target} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a1c9a059704b3b6e5990a6f0004ef5447}{}\label{classv8_1_1internal_1_1_h_basic_block_a1c9a059704b3b6e5990a6f0004ef5447}
+
+\item 
+void {\bfseries Mark\+As\+Inline\+Return\+Target} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$inlined\+\_\+entry\+\_\+block)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a0954eae1b683f87f914a673be7a6d93d}{}\label{classv8_1_1internal_1_1_h_basic_block_a0954eae1b683f87f914a673be7a6d93d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries inlined\+\_\+entry\+\_\+block} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a072a366d22298084c9432870d106ff84}{}\label{classv8_1_1internal_1_1_h_basic_block_a072a366d22298084c9432870d106ff84}
+
+\item 
+bool {\bfseries Is\+Deoptimizing} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a71169f29a79608f43b4c8fbf1a56d258}{}\label{classv8_1_1internal_1_1_h_basic_block_a71169f29a79608f43b4c8fbf1a56d258}
+
+\item 
+void {\bfseries Mark\+Unreachable} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a62e3257fb2704a84b2dbbce417a762ab}{}\label{classv8_1_1internal_1_1_h_basic_block_a62e3257fb2704a84b2dbbce417a762ab}
+
+\item 
+bool {\bfseries Is\+Unreachable} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a1a7b29b8742c5ef8d29d5d92cd576e7a}{}\label{classv8_1_1internal_1_1_h_basic_block_a1a7b29b8742c5ef8d29d5d92cd576e7a}
+
+\item 
+bool {\bfseries Is\+Reachable} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a112b353ca6af1697de7f4969bc45e283}{}\label{classv8_1_1internal_1_1_h_basic_block_a112b353ca6af1697de7f4969bc45e283}
+
+\item 
+bool {\bfseries Is\+Loop\+Successor\+Dominator} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a1391fdae733d055a59473c80cc733eb3}{}\label{classv8_1_1internal_1_1_h_basic_block_a1391fdae733d055a59473c80cc733eb3}
+
+\item 
+void {\bfseries Mark\+As\+Loop\+Successor\+Dominator} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_acc342542a977183df2c4eb32a6809139}{}\label{classv8_1_1internal_1_1_h_basic_block_acc342542a977183df2c4eb32a6809139}
+
+\item 
+bool {\bfseries Is\+Ordered} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_a5740a402bb96c2e7cac1a0c8cb308817}{}\label{classv8_1_1internal_1_1_h_basic_block_a5740a402bb96c2e7cac1a0c8cb308817}
+
+\item 
+void {\bfseries Mark\+As\+Ordered} ()\hypertarget{classv8_1_1internal_1_1_h_basic_block_a99e3c0e4d30736d583b1cf0ebebd1381}{}\label{classv8_1_1internal_1_1_h_basic_block_a99e3c0e4d30736d583b1cf0ebebd1381}
+
+\item 
+void {\bfseries Mark\+Succ\+Edge\+Unreachable} (int succ)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a737e969c97fc7bce5edf716825b41a83}{}\label{classv8_1_1internal_1_1_h_basic_block_a737e969c97fc7bce5edf716825b41a83}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_h_basic_block_acde4088e1bbae28a2ee009a293a66a2c}{}\label{classv8_1_1internal_1_1_h_basic_block_acde4088e1bbae28a2ee009a293a66a2c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$ {\bfseries Create\+Simulate} (\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id, Removable\+Simulate removable)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a3dce2683113482f04300e6912377b7a6}{}\label{classv8_1_1internal_1_1_h_basic_block_a3dce2683113482f04300e6912377b7a6}
+
+\item 
+void {\bfseries Finish} (\hyperlink{classv8_1_1internal_1_1_h_control_instruction}{H\+Control\+Instruction} $\ast$last, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a9103dd6d0bf641d21f556909ccf311fa}{}\label{classv8_1_1internal_1_1_h_basic_block_a9103dd6d0bf641d21f556909ccf311fa}
+
+\item 
+void {\bfseries Finish\+Exit} (\hyperlink{classv8_1_1internal_1_1_h_control_instruction}{H\+Control\+Instruction} $\ast$instruction, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a35cf7770b243be5f94a2fa4abc6c48e2}{}\label{classv8_1_1internal_1_1_h_basic_block_a35cf7770b243be5f94a2fa4abc6c48e2}
+
+\item 
+void {\bfseries Goto} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position, \hyperlink{classv8_1_1internal_1_1_function_state}{Function\+State} $\ast$state=N\+U\+LL, bool add\+\_\+simulate=true)\hypertarget{classv8_1_1internal_1_1_h_basic_block_afb3212eb6ff5a9f466b86fcbc876da70}{}\label{classv8_1_1internal_1_1_h_basic_block_afb3212eb6ff5a9f466b86fcbc876da70}
+
+\item 
+void {\bfseries Goto\+No\+Simulate} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a378af15631c7c7256ed6c9d840df48a5}{}\label{classv8_1_1internal_1_1_h_basic_block_a378af15631c7c7256ed6c9d840df48a5}
+
+\item 
+void {\bfseries Add\+Leave\+Inlined} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$return\+\_\+value, \hyperlink{classv8_1_1internal_1_1_function_state}{Function\+State} $\ast$state, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_basic_block_adef63a7b86ad61dfc10df94acbe2a742}{}\label{classv8_1_1internal_1_1_h_basic_block_adef63a7b86ad61dfc10df94acbe2a742}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Register\+Predecessor} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$pred)\hypertarget{classv8_1_1internal_1_1_h_basic_block_a760528605d06935ae34d5369882996ac}{}\label{classv8_1_1internal_1_1_h_basic_block_a760528605d06935ae34d5369882996ac}
+
+\item 
+void {\bfseries Add\+Dominated\+Block} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_basic_block_acf938f9845e3b2265dc5d40921c96576}{}\label{classv8_1_1internal_1_1_h_basic_block_acf938f9845e3b2265dc5d40921c96576}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries block\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_ae181f768154e9e34424998e0aaa3e1d6}{}\label{classv8_1_1internal_1_1_h_basic_block_ae181f768154e9e34424998e0aaa3e1d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$ {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a6747ae173dcbaa1a8c9504557038d7f0}{}\label{classv8_1_1internal_1_1_h_basic_block_a6747ae173dcbaa1a8c9504557038d7f0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ $>$ {\bfseries phis\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a8d5187afaa827fa9973c56a5c7e4e0de}{}\label{classv8_1_1internal_1_1_h_basic_block_a8d5187afaa827fa9973c56a5c7e4e0de}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries first\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a6e1e254df102375af2e81bce13024bac}{}\label{classv8_1_1internal_1_1_h_basic_block_a6e1e254df102375af2e81bce13024bac}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries last\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a89091a6a6ff3ad7cb5dfa18174969627}{}\label{classv8_1_1internal_1_1_h_basic_block_a89091a6a6ff3ad7cb5dfa18174969627}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_control_instruction}{H\+Control\+Instruction} $\ast$ {\bfseries end\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_aa1dd5490b0d5634b9f4903e93f077f76}{}\label{classv8_1_1internal_1_1_h_basic_block_aa1dd5490b0d5634b9f4903e93f077f76}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries loop\+\_\+information\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a8eeb38895490fecc917fd937ab9c12e9}{}\label{classv8_1_1internal_1_1_h_basic_block_a8eeb38895490fecc917fd937ab9c12e9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ {\bfseries predecessors\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a632de75e975dbd00f2a7a015d3a8aa13}{}\label{classv8_1_1internal_1_1_h_basic_block_a632de75e975dbd00f2a7a015d3a8aa13}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries dominator\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a6f6477a9476dc5c2610b4eb79d5b3ae6}{}\label{classv8_1_1internal_1_1_h_basic_block_a6f6477a9476dc5c2610b4eb79d5b3ae6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ {\bfseries dominated\+\_\+blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a1809f20655c644d1dae279839ec0f64a}{}\label{classv8_1_1internal_1_1_h_basic_block_a1809f20655c644d1dae279839ec0f64a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$ {\bfseries last\+\_\+environment\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_af9225989ebe50cc0acccc5e3e992a51e}{}\label{classv8_1_1internal_1_1_h_basic_block_af9225989ebe50cc0acccc5e3e992a51e}
+
+\item 
+int {\bfseries argument\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a750feadc7e378a92d38b11b19b86064a}{}\label{classv8_1_1internal_1_1_h_basic_block_a750feadc7e378a92d38b11b19b86064a}
+
+\item 
+int {\bfseries first\+\_\+instruction\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_ae26d734f63d20c34a11456410bdf4b3c}{}\label{classv8_1_1internal_1_1_h_basic_block_ae26d734f63d20c34a11456410bdf4b3c}
+
+\item 
+int {\bfseries last\+\_\+instruction\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a547281c84b59300456437d8390aacbcd}{}\label{classv8_1_1internal_1_1_h_basic_block_a547281c84b59300456437d8390aacbcd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ int $>$ {\bfseries deleted\+\_\+phis\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a82bf0ca905c7e880232303ee06f4793f}{}\label{classv8_1_1internal_1_1_h_basic_block_a82bf0ca905c7e880232303ee06f4793f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries parent\+\_\+loop\+\_\+header\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a2b823b8f517530f32f96241888cf81a1}{}\label{classv8_1_1internal_1_1_h_basic_block_a2b823b8f517530f32f96241888cf81a1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries inlined\+\_\+entry\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a4ae147bc2edc69fd792e84e31c2ef848}{}\label{classv8_1_1internal_1_1_h_basic_block_a4ae147bc2edc69fd792e84e31c2ef848}
+
+\item 
+bool {\bfseries is\+\_\+inline\+\_\+return\+\_\+target\+\_\+}\+: 1\hypertarget{classv8_1_1internal_1_1_h_basic_block_a5e0eac96b0440fb91a163a45b145458c}{}\label{classv8_1_1internal_1_1_h_basic_block_a5e0eac96b0440fb91a163a45b145458c}
+
+\item 
+bool {\bfseries is\+\_\+reachable\+\_\+}\+: 1\hypertarget{classv8_1_1internal_1_1_h_basic_block_aad996e069cc255e04233e18ff0003d55}{}\label{classv8_1_1internal_1_1_h_basic_block_aad996e069cc255e04233e18ff0003d55}
+
+\item 
+bool {\bfseries dominates\+\_\+loop\+\_\+successors\+\_\+}\+: 1\hypertarget{classv8_1_1internal_1_1_h_basic_block_a4628efd1e712bcb70b9a45e7de448314}{}\label{classv8_1_1internal_1_1_h_basic_block_a4628efd1e712bcb70b9a45e7de448314}
+
+\item 
+bool {\bfseries is\+\_\+osr\+\_\+entry\+\_\+}\+: 1\hypertarget{classv8_1_1internal_1_1_h_basic_block_a8559ab7f07992e8f7790051399470606}{}\label{classv8_1_1internal_1_1_h_basic_block_a8559ab7f07992e8f7790051399470606}
+
+\item 
+bool {\bfseries is\+\_\+ordered\+\_\+}\+: 1\hypertarget{classv8_1_1internal_1_1_h_basic_block_a839d002f1b8efe530647550962b640b1}{}\label{classv8_1_1internal_1_1_h_basic_block_a839d002f1b8efe530647550962b640b1}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries H\+Graph\+Builder}\hypertarget{classv8_1_1internal_1_1_h_basic_block_a591bb60c51048ff225acce68488b9fa4}{}\label{classv8_1_1internal_1_1_h_basic_block_a591bb60c51048ff225acce68488b9fa4}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

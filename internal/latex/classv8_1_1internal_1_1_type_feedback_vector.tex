@@ -1,0 +1,121 @@
+\hypertarget{classv8_1_1internal_1_1_type_feedback_vector}{}\section{v8\+:\+:internal\+:\+:Type\+Feedback\+Vector Class Reference}
+\label{classv8_1_1internal_1_1_type_feedback_vector}\index{v8\+::internal\+::\+Type\+Feedback\+Vector@{v8\+::internal\+::\+Type\+Feedback\+Vector}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Type\+Feedback\+Vector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_type_feedback_vector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Compute\+Counts} (int $\ast$with\+\_\+type\+\_\+info, int $\ast$generic)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a724cc5ca9654d21cbc8db1c3756ca530}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a724cc5ca9654d21cbc8db1c3756ca530}
+
+\item 
+bool {\bfseries is\+\_\+empty} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a216bdd5e8455b0aab170ab7437fa018c}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a216bdd5e8455b0aab170ab7437fa018c}
+
+\item 
+int {\bfseries slot\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_af08a77e8cc80ca837770dba01f9bf468}{}\label{classv8_1_1internal_1_1_type_feedback_vector_af08a77e8cc80ca837770dba01f9bf468}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_feedback_metadata}{Type\+Feedback\+Metadata} $\ast$ {\bfseries metadata} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a319c20b012e913d8939043bc98d9235f}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a319c20b012e913d8939043bc98d9235f}
+
+\item 
+int {\bfseries Get\+Index} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot) const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a9c25c54d83001f4e1ecee52569a642df}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a9c25c54d83001f4e1ecee52569a642df}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} {\bfseries To\+Slot} (int index) const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_afaa64268bc29a8ce97c03c9de3f46900}{}\label{classv8_1_1internal_1_1_type_feedback_vector_afaa64268bc29a8ce97c03c9de3f46900}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Get} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot) const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_aa1927df73f6925121ebcdba66655b02f}{}\label{classv8_1_1internal_1_1_type_feedback_vector_aa1927df73f6925121ebcdba66655b02f}
+
+\item 
+void {\bfseries Set} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value, Write\+Barrier\+Mode mode=U\+P\+D\+A\+T\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+A\+R\+R\+I\+ER)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a5b4ca019413705353cf336a1ec6a941a}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a5b4ca019413705353cf336a1ec6a941a}
+
+\item 
+Feedback\+Vector\+Slot\+Kind {\bfseries Get\+Kind} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot) const \hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a1c3074f751c5e0d7008f27dee28049cd}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a1c3074f751c5e0d7008f27dee28049cd}
+
+\item 
+void {\bfseries Clear\+Slots} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_abf5f183268bdd65d11d6b9b247184de7}{}\label{classv8_1_1internal_1_1_type_feedback_vector_abf5f183268bdd65d11d6b9b247184de7}
+
+\item 
+void {\bfseries Clear\+Slots\+At\+G\+C\+Time} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a86e48e718e44a28ae86bdafea06c3935}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a86e48e718e44a28ae86bdafea06c3935}
+
+\item 
+void {\bfseries Clear\+Keyed\+Store\+I\+Cs} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_ab2504b50a18e23f902cb8d0b9eef7a2f}{}\label{classv8_1_1internal_1_1_type_feedback_vector_ab2504b50a18e23f902cb8d0b9eef7a2f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$obj)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_af61fd5059ea380cf9883c37f10c74208}{}\label{classv8_1_1internal_1_1_type_feedback_vector_af61fd5059ea380cf9883c37f10c74208}
+
+\item 
+static int {\bfseries Get\+Index\+From\+Spec} (const \hyperlink{classv8_1_1internal_1_1_feedback_vector_spec}{Feedback\+Vector\+Spec} $\ast$spec, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_acc3d5d03278b238c8de32a5b097ecf8e}{}\label{classv8_1_1internal_1_1_type_feedback_vector_acc3d5d03278b238c8de32a5b097ecf8e}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_metadata}{Type\+Feedback\+Metadata} $>$ metadata)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_ab56f736c71e3ab9bb984e3c2dc175494}{}\label{classv8_1_1internal_1_1_type_feedback_vector_ab56f736c71e3ab9bb984e3c2dc175494}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ {\bfseries Copy} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ vector)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_add763ff09f3238a52152063c3785295a}{}\label{classv8_1_1internal_1_1_type_feedback_vector_add763ff09f3238a52152063c3785295a}
+
+\item 
+static void {\bfseries Clear\+All\+Keyed\+Store\+I\+Cs} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_ae17915f0e43616977ae10a1607df182c}{}\label{classv8_1_1internal_1_1_type_feedback_vector_ae17915f0e43616977ae10a1607df182c}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $>$ {\bfseries Uninitialized\+Sentinel} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_ae85ac15e53d5140ff05f6dcec90d75ff}{}\label{classv8_1_1internal_1_1_type_feedback_vector_ae85ac15e53d5140ff05f6dcec90d75ff}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $>$ {\bfseries Megamorphic\+Sentinel} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_af7e676da24c4e048d0d2abf012853c85}{}\label{classv8_1_1internal_1_1_type_feedback_vector_af7e676da24c4e048d0d2abf012853c85}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $>$ {\bfseries Premonomorphic\+Sentinel} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a26bd607d2a16a701e33d1e3be77a1d80}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a26bd607d2a16a701e33d1e3be77a1d80}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $\ast$ {\bfseries Raw\+Uninitialized\+Sentinel} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_acaafae282f79e8a55de89c8926fd8415}{}\label{classv8_1_1internal_1_1_type_feedback_vector_acaafae282f79e8a55de89c8926fd8415}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ {\bfseries Dummy\+Vector} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a6d84c58a9c9e987a6f07279b19c3c7b2}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a6d84c58a9c9e987a6f07279b19c3c7b2}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} {\bfseries Dummy\+Slot} (int dummy\+Index)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a9150a702b26cb7b20535bea77b08cb0f}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a9150a702b26cb7b20535bea77b08cb0f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Metadata\+Index} = 0\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a31655539472264e7bf95efbeab831c52}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a31655539472264e7bf95efbeab831c52}
+
+\item 
+static const int {\bfseries k\+Reserved\+Index\+Count} = 1\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_ad58129664e24d6ee53c1c46fecd8307c}{}\label{classv8_1_1internal_1_1_type_feedback_vector_ad58129664e24d6ee53c1c46fecd8307c}
+
+\item 
+static const int {\bfseries k\+Dummy\+Load\+I\+C\+Slot} = 0\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_adb27ae7aaf4b5c279be93b3f50c05366}{}\label{classv8_1_1internal_1_1_type_feedback_vector_adb27ae7aaf4b5c279be93b3f50c05366}
+
+\item 
+static const int {\bfseries k\+Dummy\+Keyed\+Load\+I\+C\+Slot} = 2\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_adf52ac78b1d602064f7fa84235acf67e}{}\label{classv8_1_1internal_1_1_type_feedback_vector_adf52ac78b1d602064f7fa84235acf67e}
+
+\item 
+static const int {\bfseries k\+Dummy\+Store\+I\+C\+Slot} = 4\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a3dacdd29be436df1608cabc5cb680af7}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a3dacdd29be436df1608cabc5cb680af7}
+
+\item 
+static const int {\bfseries k\+Dummy\+Keyed\+Store\+I\+C\+Slot} = 6\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_a9dea6168c60713c081bc20a861da2a62}{}\label{classv8_1_1internal_1_1_type_feedback_vector_a9dea6168c60713c081bc20a861da2a62}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Clear\+Slots\+Impl} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, bool force\+\_\+clear)\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_abb7e1410103273952be783a1d7153085}{}\label{classv8_1_1internal_1_1_type_feedback_vector_abb7e1410103273952be783a1d7153085}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector})\hypertarget{classv8_1_1internal_1_1_type_feedback_vector_aacb3a7e2545c3b6d868033a9b409c28e}{}\label{classv8_1_1internal_1_1_type_feedback_vector_aacb3a7e2545c3b6d868033a9b409c28e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector.\+h\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector.\+cc\end{DoxyCompactItemize}

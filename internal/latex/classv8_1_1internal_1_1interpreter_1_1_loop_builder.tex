@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Loop\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder}\index{v8\+::internal\+::interpreter\+::\+Loop\+Builder@{v8\+::internal\+::interpreter\+::\+Loop\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Loop\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1interpreter_1_1_loop_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Loop\+Builder} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} $\ast$builder)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a334400c1d428cb46bc40326ce390c677}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a334400c1d428cb46bc40326ce390c677}
+
+\item 
+void {\bfseries Loop\+Header} (\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $>$ $\ast$additional\+\_\+labels)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a74bab7195a60339a43596d5d98cc99c2}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a74bab7195a60339a43596d5d98cc99c2}
+
+\item 
+void {\bfseries Jump\+To\+Header} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_ab0e143965872abbe786f7114cfcd166c}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_ab0e143965872abbe786f7114cfcd166c}
+
+\item 
+void {\bfseries Jump\+To\+Header\+If\+True} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_acd759d327b9ad51a07e285be9f7c2664}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_acd759d327b9ad51a07e285be9f7c2664}
+
+\item 
+void {\bfseries Set\+Continue\+Target} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_ae4e936a7683327e88200c3f1dcadb556}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_ae4e936a7683327e88200c3f1dcadb556}
+
+\item 
+void {\bfseries End\+Loop} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a7554f4f2078c4513d8eae2b64d13064c}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a7554f4f2078c4513d8eae2b64d13064c}
+
+\item 
+void {\bfseries Continue} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a1a97f1c6a3a86a29fe33d23daa11e570}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a1a97f1c6a3a86a29fe33d23daa11e570}
+
+\item 
+void {\bfseries Continue\+If\+True} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a749df2c946ced601de8a5cd8aac000ff}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a749df2c946ced601de8a5cd8aac000ff}
+
+\item 
+void {\bfseries Continue\+If\+Undefined} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a0da593c562dfbcc5a0494e2dc4a053e9}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a0da593c562dfbcc5a0494e2dc4a053e9}
+
+\item 
+void {\bfseries Continue\+If\+Null} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a6e65fd77f0f67bf0dd741e0f72bcb3a4}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a6e65fd77f0f67bf0dd741e0f72bcb3a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} {\bfseries loop\+\_\+header\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a2f686df1a2cf0e7730386017d4d84bbd}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a2f686df1a2cf0e7730386017d4d84bbd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} {\bfseries loop\+\_\+end\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a4c1d2974e29c6967e984d40df839a97e}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a4c1d2974e29c6967e984d40df839a97e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $>$ {\bfseries continue\+\_\+sites\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a609df9185a2346797324dcf973171d0a}{}\label{classv8_1_1internal_1_1interpreter_1_1_loop_builder_a609df9185a2346797324dcf973171d0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/control-\/flow-\/builders.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/control-\/flow-\/builders.\+cc\end{DoxyCompactItemize}

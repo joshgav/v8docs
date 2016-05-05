@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Linkage Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_linkage}\index{v8\+::internal\+::compiler\+::\+Linkage@{v8\+::internal\+::compiler\+::\+Linkage}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Linkage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_linkage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Linkage} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$incoming)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a90cb7c02b3e54f4250ae98f94f70e416}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a90cb7c02b3e54f4250ae98f94f70e416}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Incoming\+Descriptor} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_af6eaa987548cb807e8ade3dd94091a16}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_af6eaa987548cb807e8ade3dd94091a16}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Parameter\+Location} (int index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_aee5cd9387d64071e6c751ab60e4d92ae}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_aee5cd9387d64071e6c751ab60e4d92ae}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries Get\+Parameter\+Type} (int index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a8951239c5401a75e14e97b0a0042b957}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a8951239c5401a75e14e97b0a0042b957}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Return\+Location} (size\+\_\+t index=0) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a68dae800671396bc8d7427153a060160}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a68dae800671396bc8d7427153a060160}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries Get\+Return\+Type} (size\+\_\+t index=0) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a1a3e76dcadcc101b80ee67fafef47d14}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a1a3e76dcadcc101b80ee67fafef47d14}
+
+\item 
+bool {\bfseries Parameter\+Has\+Secondary\+Location} (int index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a4d74b933c79cc65d692afce3d9d9f1ff}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a4d74b933c79cc65d692afce3d9d9f1ff}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Parameter\+Secondary\+Location} (int index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_aa33841644935debd9e29a9d9c54dce39}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_aa33841644935debd9e29a9d9c54dce39}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Osr\+Value\+Location} (int index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_aa2aff8d2d9aab2696651a426bde2aebd}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_aa2aff8d2d9aab2696651a426bde2aebd}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Compute\+Incoming} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_ac0c3e93f5daf6edb23a0b1c10b3b30b8}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_ac0c3e93f5daf6edb23a0b1c10b3b30b8}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+J\+S\+Call\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, bool is\+\_\+osr, int parameter\+\_\+count, \hyperlink{classv8_1_1base_1_1_flags}{Call\+Descriptor\+::\+Flags} flags)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a3bbe9435f778a029e61ffdf7c400ce95}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a3bbe9435f778a029e61ffdf7c400ce95}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Runtime\+Call\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Runtime\+::\+Function\+Id function, int parameter\+\_\+count, \hyperlink{classv8_1_1base_1_1_flags}{Operator\+::\+Properties} properties, \hyperlink{classv8_1_1base_1_1_flags}{Call\+Descriptor\+::\+Flags} flags)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a193c368e77dbf117689ccbd10ab9fdb1}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a193c368e77dbf117689ccbd10ab9fdb1}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Stub\+Call\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} \&descriptor, int stack\+\_\+parameter\+\_\+count, \hyperlink{classv8_1_1base_1_1_flags}{Call\+Descriptor\+::\+Flags} flags, \hyperlink{classv8_1_1base_1_1_flags}{Operator\+::\+Properties} properties=Operator\+::k\+No\+Properties, \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} return\+\_\+type=Machine\+Type\+::\+Any\+Tagged(), size\+\_\+t return\+\_\+count=1)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a1ed67ad00510c1774b3e88bae454f45f}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a1ed67ad00510c1774b3e88bae454f45f}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Allocate\+Call\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a5768b94b10c80e442a09047e37ac7ece}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a5768b94b10c80e442a09047e37ac7ece}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Bytecode\+Dispatch\+Call\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} \&descriptor, int stack\+\_\+parameter\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a778aca734302845c0d9e42a61e867a8c}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a778aca734302845c0d9e42a61e867a8c}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$ {\bfseries Get\+Simplified\+C\+Descriptor} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{classv8_1_1internal_1_1_signature}{Machine\+Signature} $\ast$sig, bool set\+\_\+initialize\+\_\+root\+\_\+flag=false)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a3edd7f4433b17693cd6de2a29ca29001}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a3edd7f4433b17693cd6de2a29ca29001}
+
+\item 
+static int {\bfseries Frame\+State\+Input\+Count} (Runtime\+::\+Function\+Id function)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a406c9221a4da9e734cfb3ad1dad75ed9}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a406c9221a4da9e734cfb3ad1dad75ed9}
+
+\item 
+static int {\bfseries Get\+Stub\+Call\+Context\+Param\+Index} (int parameter\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a31ce646746b89a4b0530561108277f9b}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a31ce646746b89a4b0530561108277f9b}
+
+\item 
+static int {\bfseries Get\+J\+S\+Call\+New\+Target\+Param\+Index} (int parameter\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_af762f3466c13483c3b6d62bcd5e9ac9f}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_af762f3466c13483c3b6d62bcd5e9ac9f}
+
+\item 
+static int {\bfseries Get\+J\+S\+Call\+Arg\+Count\+Param\+Index} (int parameter\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a3915e2418081caad877584238ff3c923}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a3915e2418081caad877584238ff3c923}
+
+\item 
+static int {\bfseries Get\+J\+S\+Call\+Context\+Param\+Index} (int parameter\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a25735a05f61b95969cc11d53306f7329}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a25735a05f61b95969cc11d53306f7329}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+J\+S\+Call\+Closure\+Param\+Index} = -\/1\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a8baedbe94adccb7e24c2b1e568a0c6bc}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a8baedbe94adccb7e24c2b1e568a0c6bc}
+
+\item 
+static const int {\bfseries k\+Osr\+Context\+Spill\+Slot\+Index} = -\/1\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_aa7d05f42f4ed3adf29e52ab2b97944a8}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_aa7d05f42f4ed3adf29e52ab2b97944a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage}{Linkage})\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a7a4646e9da6800e315e3de929ac68ebc}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a7a4646e9da6800e315e3de929ac68ebc}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$const {\bfseries incoming\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_linkage_a0b4cf72fc70ebb4bff767ff75cf303fe}{}\label{classv8_1_1internal_1_1compiler_1_1_linkage_a0b4cf72fc70ebb4bff767ff75cf303fe}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/linkage.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/c-\/linkage.\+cc\item 
+/\+Users/joshgav/node/v8/src/compiler/linkage.\+cc\end{DoxyCompactItemize}

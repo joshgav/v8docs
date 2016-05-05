@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1_worker}{}\section{v8\+:\+:Worker Class Reference}
+\label{classv8_1_1_worker}\index{v8\+::\+Worker@{v8\+::\+Worker}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_worker_1_1_worker_thread}{Worker\+Thread}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Start\+Execute\+In\+Thread} (const char $\ast$script)\hypertarget{classv8_1_1_worker_a148fd74ff315fb120e2bff451141a6b7}{}\label{classv8_1_1_worker_a148fd74ff315fb120e2bff451141a6b7}
+
+\item 
+void {\bfseries Post\+Message} (\hyperlink{classv8_1_1_serialization_data}{Serialization\+Data} $\ast$data)\hypertarget{classv8_1_1_worker_a8f4cd76a869ed2aa34fb78a02564c38b}{}\label{classv8_1_1_worker_a8f4cd76a869ed2aa34fb78a02564c38b}
+
+\item 
+\hyperlink{classv8_1_1_serialization_data}{Serialization\+Data} $\ast$ {\bfseries Get\+Message} ()\hypertarget{classv8_1_1_worker_aaae8255c55514c012677ea0785ade63a}{}\label{classv8_1_1_worker_aaae8255c55514c012677ea0785ade63a}
+
+\item 
+void {\bfseries Terminate} ()\hypertarget{classv8_1_1_worker_a9252812cf431f134826c80898de978e6}{}\label{classv8_1_1_worker_a9252812cf431f134826c80898de978e6}
+
+\item 
+void {\bfseries Wait\+For\+Thread} ()\hypertarget{classv8_1_1_worker_a858ecfde01402d3337943224e6ac2a20}{}\label{classv8_1_1_worker_a858ecfde01402d3337943224e6ac2a20}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Execute\+In\+Thread} ()\hypertarget{classv8_1_1_worker_a366fa9c43d9d6ff2051d38a6dd41cb9e}{}\label{classv8_1_1_worker_a366fa9c43d9d6ff2051d38a6dd41cb9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Post\+Message\+Out} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_worker_aaca428afa266dc14dbd5037888cc9fd8}{}\label{classv8_1_1_worker_aaca428afa266dc14dbd5037888cc9fd8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries in\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1_worker_a47e173381c549f4866c4fb83f5da7c45}{}\label{classv8_1_1_worker_a47e173381c549f4866c4fb83f5da7c45}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries out\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1_worker_a44a13c1702b59c332ee287047317a81e}{}\label{classv8_1_1_worker_a44a13c1702b59c332ee287047317a81e}
+
+\item 
+\hyperlink{classv8_1_1_serialization_data_queue}{Serialization\+Data\+Queue} {\bfseries in\+\_\+queue\+\_\+}\hypertarget{classv8_1_1_worker_af419cd91ba3a107d9d4de61f92465de1}{}\label{classv8_1_1_worker_af419cd91ba3a107d9d4de61f92465de1}
+
+\item 
+\hyperlink{classv8_1_1_serialization_data_queue}{Serialization\+Data\+Queue} {\bfseries out\+\_\+queue\+\_\+}\hypertarget{classv8_1_1_worker_abff27c3a3a357a1cc380d884aba419b8}{}\label{classv8_1_1_worker_abff27c3a3a357a1cc380d884aba419b8}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_thread}{base\+::\+Thread} $\ast$ {\bfseries thread\+\_\+}\hypertarget{classv8_1_1_worker_a3a9fc4f1c37b3e2f8770ec12b2701931}{}\label{classv8_1_1_worker_a3a9fc4f1c37b3e2f8770ec12b2701931}
+
+\item 
+char $\ast$ {\bfseries script\+\_\+}\hypertarget{classv8_1_1_worker_a25c144ae432f3ae26786e481c7d0a206}{}\label{classv8_1_1_worker_a25c144ae432f3ae26786e481c7d0a206}
+
+\item 
+base\+::\+Atomic32 {\bfseries running\+\_\+}\hypertarget{classv8_1_1_worker_a70b6dbcf508a917c7834715482347b90}{}\label{classv8_1_1_worker_a70b6dbcf508a917c7834715482347b90}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/d8.\+h\item 
+/\+Users/joshgav/node/v8/src/d8.\+cc\end{DoxyCompactItemize}

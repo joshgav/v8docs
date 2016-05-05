@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1_h_instruction_map}{}\section{v8\+:\+:internal\+:\+:H\+Instruction\+Map Class Reference}
+\label{classv8_1_1internal_1_1_h_instruction_map}\index{v8\+::internal\+::\+H\+Instruction\+Map@{v8\+::internal\+::\+H\+Instruction\+Map}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Instruction\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_h_instruction_map}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_h_instruction_map_1_1_h_instruction_map_list_element}{H\+Instruction\+Map\+List\+Element}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Instruction\+Map} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Side\+Effects\+Tracker $\ast$side\+\_\+effects\+\_\+tracker)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a95e4896ecfe69b951c41c97cb666825f}{}\label{classv8_1_1internal_1_1_h_instruction_map_a95e4896ecfe69b951c41c97cb666825f}
+
+\item 
+void {\bfseries Kill} (\hyperlink{classv8_1_1internal_1_1_side_effects}{Side\+Effects} side\+\_\+effects)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a298a3a7ecae718863484bc5eb10916b6}{}\label{classv8_1_1internal_1_1_h_instruction_map_a298a3a7ecae718863484bc5eb10916b6}
+
+\item 
+void {\bfseries Add} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a82c2d4be91c0985959bbd13004422f7e}{}\label{classv8_1_1internal_1_1_h_instruction_map_a82c2d4be91c0985959bbd13004422f7e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr) const \hypertarget{classv8_1_1internal_1_1_h_instruction_map_aedb2b07ef9c7e805b1a6504043381d6c}{}\label{classv8_1_1internal_1_1_h_instruction_map_aedb2b07ef9c7e805b1a6504043381d6c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$ {\bfseries Copy} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) const \hypertarget{classv8_1_1internal_1_1_h_instruction_map_a8bb3b824273558215791bf5b16cb0837}{}\label{classv8_1_1internal_1_1_h_instruction_map_a8bb3b824273558215791bf5b16cb0837}
+
+\item 
+bool {\bfseries Is\+Empty} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_map_a2489bdb24f9d638687b3cb0aec5d171c}{}\label{classv8_1_1internal_1_1_h_instruction_map_a2489bdb24f9d638687b3cb0aec5d171c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Instruction\+Map} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a09964832572c20663f4aa1578ba15e78}{}\label{classv8_1_1internal_1_1_h_instruction_map_a09964832572c20663f4aa1578ba15e78}
+
+\item 
+void {\bfseries Resize} (int new\+\_\+size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a3e8c3ff9efaec6f732e9826795e06b68}{}\label{classv8_1_1internal_1_1_h_instruction_map_a3e8c3ff9efaec6f732e9826795e06b68}
+
+\item 
+void {\bfseries Resize\+Lists} (int new\+\_\+size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a441768c8e5f1baed685d2c71e2e8b739}{}\label{classv8_1_1internal_1_1_h_instruction_map_a441768c8e5f1baed685d2c71e2e8b739}
+
+\item 
+void {\bfseries Insert} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a6340aee45923fd5c4a7bc9e4e71264fe}{}\label{classv8_1_1internal_1_1_h_instruction_map_a6340aee45923fd5c4a7bc9e4e71264fe}
+
+\item 
+uint32\+\_\+t {\bfseries Bound} (uint32\+\_\+t value) const \hypertarget{classv8_1_1internal_1_1_h_instruction_map_abac9ab9984264d7d53118ea9c9f91833}{}\label{classv8_1_1internal_1_1_h_instruction_map_abac9ab9984264d7d53118ea9c9f91833}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries array\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a6aeff507a82410fb949d5cb5be085f53}{}\label{classv8_1_1internal_1_1_h_instruction_map_a6aeff507a82410fb949d5cb5be085f53}
+
+\item 
+int {\bfseries lists\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a2f7fa771e9a7983bfa294b950f81e7be}{}\label{classv8_1_1internal_1_1_h_instruction_map_a2f7fa771e9a7983bfa294b950f81e7be}
+
+\item 
+int {\bfseries count\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a17574383e0bd427e41edded9984ef839}{}\label{classv8_1_1internal_1_1_h_instruction_map_a17574383e0bd427e41edded9984ef839}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_side_effects}{Side\+Effects} {\bfseries present\+\_\+depends\+\_\+on\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a62f6e4ada72c96faf7b7d30f0d3b1822}{}\label{classv8_1_1internal_1_1_h_instruction_map_a62f6e4ada72c96faf7b7d30f0d3b1822}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_h_instruction_map_1_1_h_instruction_map_list_element}{H\+Instruction\+Map\+List\+Element} $\ast$ {\bfseries array\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a1c2ded37fa06504a558ff87c317cd605}{}\label{classv8_1_1internal_1_1_h_instruction_map_a1c2ded37fa06504a558ff87c317cd605}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_h_instruction_map_1_1_h_instruction_map_list_element}{H\+Instruction\+Map\+List\+Element} $\ast$ {\bfseries lists\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a094627eb1d9a889fa8055919e9c68f78}{}\label{classv8_1_1internal_1_1_h_instruction_map_a094627eb1d9a889fa8055919e9c68f78}
+
+\item 
+int {\bfseries free\+\_\+list\+\_\+head\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_aaa370524086a8f1a26d24d0fe0bc7f0e}{}\label{classv8_1_1internal_1_1_h_instruction_map_aaa370524086a8f1a26d24d0fe0bc7f0e}
+
+\item 
+Side\+Effects\+Tracker $\ast$ {\bfseries side\+\_\+effects\+\_\+tracker\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_map_aa6f884ed3a7c54cd48edcaf0d11e5361}{}\label{classv8_1_1internal_1_1_h_instruction_map_aa6f884ed3a7c54cd48edcaf0d11e5361}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Nil} = -\/1\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a4e807fa1d149d5a8b5c0a78b0fc0af18}{}\label{classv8_1_1internal_1_1_h_instruction_map_a4e807fa1d149d5a8b5c0a78b0fc0af18}
+
+\item 
+static const int {\bfseries k\+Initial\+Size} = 16\hypertarget{classv8_1_1internal_1_1_h_instruction_map_a5a11c62be72b6e403863ea8613a06ad2}{}\label{classv8_1_1internal_1_1_h_instruction_map_a5a11c62be72b6e403863ea8613a06ad2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/gvn.\+cc\end{DoxyCompactItemize}

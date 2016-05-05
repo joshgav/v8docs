@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Binary\+Operation\+Hints Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}\index{v8\+::internal\+::compiler\+::\+Binary\+Operation\+Hints@{v8\+::internal\+::compiler\+::\+Binary\+Operation\+Hints}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Hint} \{ \\*
+{\bfseries k\+None}, 
+\\*
+{\bfseries k\+Signed\+Small}, 
+\\*
+{\bfseries k\+Signed32}, 
+\\*
+{\bfseries k\+Number}, 
+\\*
+{\bfseries k\+String}, 
+\\*
+{\bfseries k\+Any}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a606f112cf031e789aba9afe5c5bca089}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a606f112cf031e789aba9afe5c5bca089}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Binary\+Operation\+Hints} (Hint left, Hint right, Hint result)\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a3fb2cb5b96e71d853430be120d929e97}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a3fb2cb5b96e71d853430be120d929e97}
+
+\item 
+Hint {\bfseries left} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a66d838f8e37b77e38a97b94efdfb5495}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a66d838f8e37b77e38a97b94efdfb5495}
+
+\item 
+Hint {\bfseries right} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_af3e964fcfe77b19868a122bf20d7cf43}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_af3e964fcfe77b19868a122bf20d7cf43}
+
+\item 
+Hint {\bfseries result} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_afe96b7bef09cff265df87be4af1cd73d}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_afe96b7bef09cff265df87be4af1cd73d}
+
+\item 
+bool {\bfseries operator==} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}{Binary\+Operation\+Hints} const \&that) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_ad0be90ed5eb0bc4326cd9264226917dd}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_ad0be90ed5eb0bc4326cd9264226917dd}
+
+\item 
+bool {\bfseries operator!=} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}{Binary\+Operation\+Hints} const \&that) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a98c926dc1b7310dfe15abf8c9dd6474a}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a98c926dc1b7310dfe15abf8c9dd6474a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}{Binary\+Operation\+Hints} {\bfseries Any} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a1d266d2aff2a93edf7967b1626891f7d}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a1d266d2aff2a93edf7967b1626891f7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ Hint, 0, 3 $>$ {\bfseries Left\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a70bbd62e7d30ae30b70d44b73068ef98}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a70bbd62e7d30ae30b70d44b73068ef98}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ Hint, 3, 3 $>$ {\bfseries Right\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a4f3669d27562da8876aadf52058f53f2}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a4f3669d27562da8876aadf52058f53f2}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ Hint, 6, 3 $>$ {\bfseries Result\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a196af45c2d24a75f3c62807650ad7d78}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_a196af45c2d24a75f3c62807650ad7d78}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries bit\+\_\+field\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_ae4e7380d5eda7d2ca65bae794f012fe8}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_ae4e7380d5eda7d2ca65bae794f012fe8}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries hash\+\_\+value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints}{Binary\+Operation\+Hints} const \&hints)\hypertarget{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_aa949f634fa8abe9caf86dd175a22f563}{}\label{classv8_1_1internal_1_1compiler_1_1_binary_operation_hints_aa949f634fa8abe9caf86dd175a22f563}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/type-\/hints.\+h\end{DoxyCompactItemize}

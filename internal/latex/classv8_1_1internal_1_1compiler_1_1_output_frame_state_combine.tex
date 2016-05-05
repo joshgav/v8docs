@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Output\+Frame\+State\+Combine Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}\index{v8\+::internal\+::compiler\+::\+Output\+Frame\+State\+Combine@{v8\+::internal\+::compiler\+::\+Output\+Frame\+State\+Combine}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Kind} \{ \\*
+{\bfseries k\+Push\+Output}, 
+\\*
+{\bfseries k\+Poke\+At}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a7ae5cb5a14c001c96000c213dc710b46}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a7ae5cb5a14c001c96000c213dc710b46}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Kind {\bfseries kind} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_acd1a43acac1df9d850309df6b6cf63ba}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_acd1a43acac1df9d850309df6b6cf63ba}
+
+\item 
+size\+\_\+t {\bfseries Get\+Push\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a9dbadc402d02168285349cb94e6e1515}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a9dbadc402d02168285349cb94e6e1515}
+
+\item 
+size\+\_\+t {\bfseries Get\+Offset\+To\+Poke\+At} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a9de2b94c272a796b693a94c4e8f0f7b1}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a9de2b94c272a796b693a94c4e8f0f7b1}
+
+\item 
+bool {\bfseries Is\+Output\+Ignored} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_aabb5989f56449f6c14552719ce13db92}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_aabb5989f56449f6c14552719ce13db92}
+
+\item 
+size\+\_\+t {\bfseries Consumed\+Output\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_af95b053f1a73c15f7f7104c6174f55c0}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_af95b053f1a73c15f7f7104c6174f55c0}
+
+\item 
+bool {\bfseries operator==} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} const \&other) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a7b3fbc11bf3c55a1d657fde21202c5ec}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a7b3fbc11bf3c55a1d657fde21202c5ec}
+
+\item 
+bool {\bfseries operator!=} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} const \&other) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a34ae7519cce6726dd6bfd6094c980fba}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a34ae7519cce6726dd6bfd6094c980fba}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} {\bfseries Ignore} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a82c3d7fa1b78d93ef43cfd66db320b71}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a82c3d7fa1b78d93ef43cfd66db320b71}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} {\bfseries Push} (size\+\_\+t count=1)\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a1326ac0e495b55bb3666a7c8d57c6fdd}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a1326ac0e495b55bb3666a7c8d57c6fdd}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} {\bfseries Poke\+At} (size\+\_\+t index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a5d1eb7b7ed10db905db627650485f683}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a5d1eb7b7ed10db905db627650485f683}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Output\+Frame\+State\+Combine} (Kind kind, size\+\_\+t parameter)\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a97add8a32b3207df0aec0f4552861026}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a97add8a32b3207df0aec0f4552861026}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Kind const {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a8156e407ac921fcd1eaeba72fb9b5b9f}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a8156e407ac921fcd1eaeba72fb9b5b9f}
+
+\item 
+size\+\_\+t const {\bfseries parameter\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a2eb32b91e71a6229c4bc2c192c6ff599}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a2eb32b91e71a6229c4bc2c192c6ff599}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries hash\+\_\+value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} const \&)\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a8e824751974d5c56479b21a7aefeceba}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_a8e824751974d5c56479b21a7aefeceba}
+
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, \hyperlink{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine}{Output\+Frame\+State\+Combine} const \&)\hypertarget{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_ae57755b6944618f08876a213d0b47c1b}{}\label{classv8_1_1internal_1_1compiler_1_1_output_frame_state_combine_ae57755b6944618f08876a213d0b47c1b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/frame-\/states.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler}{}\section{v8\+:\+:internal\+:\+:Fast\+Accessor\+Assembler Class Reference}
+\label{classv8_1_1internal_1_1_fast_accessor_assembler}\index{v8\+::internal\+::\+Fast\+Accessor\+Assembler@{v8\+::internal\+::\+Fast\+Accessor\+Assembler}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{v8\+::experimental\+::\+Fast\+Accessor\+Builder\+::\+Value\+Id} {\bfseries Value\+Id}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_aefc68c9be7ba9f185d4726981ba0ff97}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_aefc68c9be7ba9f185d4726981ba0ff97}
+
+\item 
+typedef \hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{v8\+::experimental\+::\+Fast\+Accessor\+Builder\+::\+Label\+Id} {\bfseries Label\+Id}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a803b9341ecb6ef956bcec6a99f2714a0}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a803b9341ecb6ef956bcec6a99f2714a0}
+
+\item 
+typedef v8\+::\+Function\+Callback {\bfseries Function\+Callback}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a808bb0e8bc6836f24263e256bba2ffad}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a808bb0e8bc6836f24263e256bba2ffad}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Fast\+Accessor\+Assembler} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a34718f637e5ea607724ef7ed0056af0d}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a34718f637e5ea607724ef7ed0056af0d}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Integer\+Constant} (int int\+\_\+constant)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a1134d8ae1efccf1073bb159fddfa0004}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a1134d8ae1efccf1073bb159fddfa0004}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Get\+Receiver} ()\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a9db48446e02973969505cc8dea97c02f}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a9db48446e02973969505cc8dea97c02f}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Load\+Internal\+Field} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id, int field\+\_\+no)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_aaceb1ddad87500ae1f0af2f2a66b6e6c}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_aaceb1ddad87500ae1f0af2f2a66b6e6c}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Load\+Value} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id, int offset)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_afeaef40313cb38a7f7ae5e3a86ca2cfc}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_afeaef40313cb38a7f7ae5e3a86ca2cfc}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Load\+Object} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id, int offset)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a5a93c30d212325be312ce4c918314f04}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a5a93c30d212325be312ce4c918314f04}
+
+\item 
+void {\bfseries Return\+Value} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a369cfb769d538a575293cc3d727a4956}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a369cfb769d538a575293cc3d727a4956}
+
+\item 
+void {\bfseries Check\+Flag\+Set\+Or\+Return\+Null} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id, int mask)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ad7c02640fb1efc63209cdef49f22bd5c}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ad7c02640fb1efc63209cdef49f22bd5c}
+
+\item 
+void {\bfseries Check\+Not\+Zero\+Or\+Return\+Null} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a901e245ad00f004ee0689b354b2c02ca}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a901e245ad00f004ee0689b354b2c02ca}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{Label\+Id} {\bfseries Make\+Label} ()\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a201dc778cebe11a8cdb23c80bfe340dc}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a201dc778cebe11a8cdb23c80bfe340dc}
+
+\item 
+void {\bfseries Set\+Label} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{Label\+Id} label\+\_\+id)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a6a3782042c7201555c02a1aaeb9ae027}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a6a3782042c7201555c02a1aaeb9ae027}
+
+\item 
+void {\bfseries Check\+Not\+Zero\+Or\+Jump} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value\+\_\+id, \hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{Label\+Id} label\+\_\+id)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a7f31361f35cf1d21e4de8b23293265a0}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a7f31361f35cf1d21e4de8b23293265a0}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries Call} (Function\+Callback callback, \hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} arg)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a1d48aba62748b44b7b854cb6c7d65d27}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a1d48aba62748b44b7b854cb6c7d65d27}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Build} ()\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a7bfb8b99ad3bcf4f82d47062d64c23d7}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a7bfb8b99ad3bcf4f82d47062d64c23d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries k\+Building}, 
+\\*
+{\bfseries k\+Built}, 
+\\*
+{\bfseries k\+Error}
+ \}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a744123e61c2e932bb181e3e6f74a5ce3}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a744123e61c2e932bb181e3e6f74a5ce3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} {\bfseries From\+Raw} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_adf7cc47ca1d1c6bfb898351c390851d1}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_adf7cc47ca1d1c6bfb898351c390851d1}
+
+\item 
+\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{Label\+Id} {\bfseries From\+Raw} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_label}{Code\+Stub\+Assembler\+::\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_aaf6c42e262caf1ff0bc6b93e4cafae89}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_aaf6c42e262caf1ff0bc6b93e4cafae89}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$ {\bfseries From\+Id} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_value_id}{Value\+Id} value) const \hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a019cb11e7158113ec94758392e7e3970}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a019cb11e7158113ec94758392e7e3970}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_label}{Code\+Stub\+Assembler\+::\+Label} $\ast$ {\bfseries From\+Id} (\hyperlink{structv8_1_1experimental_1_1_fast_accessor_builder_1_1_label_id}{Label\+Id} value) const \hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ab5c413887cd9b1b9ce6fa42235b31962}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ab5c413887cd9b1b9ce6fa42235b31962}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a3e1c606fc8877d9e19a326c461c245c6}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a3e1c606fc8877d9e19a326c461c245c6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a109b9e1b91c741f09ab336ecb955827b}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a109b9e1b91c741f09ab336ecb955827b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ad4bb71807c74b6321af59c200e9bd584}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ad4bb71807c74b6321af59c200e9bd584}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_fast_accessor_assembler}{Fast\+Accessor\+Assembler})\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a62210701a2c6ee64162fc543e2c239a5}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a62210701a2c6ee64162fc543e2c239a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ac7c7bfdeb4e80f51f886254a8b8be404}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ac7c7bfdeb4e80f51f886254a8b8be404}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ae3a1256a74c0c2f342f77ee776cc6da3}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ae3a1256a74c0c2f342f77ee776cc6da3}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_smart_pointer}{base\+::\+Smart\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_code_stub_assembler}{Code\+Stub\+Assembler} $>$ {\bfseries assembler\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_a8640daba74068dd0d02bf3e487266ccd}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_a8640daba74068dd0d02bf3e487266ccd}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$ $>$ {\bfseries nodes\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_aa4ed36477a757338464ddddd7a211167}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_aa4ed36477a757338464ddddd7a211167}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_label}{Code\+Stub\+Assembler\+::\+Label} $\ast$ $>$ {\bfseries labels\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ac9f3a88f71f90fda7ac43a2011b2154b}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ac9f3a88f71f90fda7ac43a2011b2154b}
+
+\item 
+enum v8\+::internal\+::\+Fast\+Accessor\+Assembler\+:: \{ ... \}  {\bfseries state\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_accessor_assembler_ae3b84f6bdcc5e777d1a124e0d1d7a4f7}{}\label{classv8_1_1internal_1_1_fast_accessor_assembler_ae3b84f6bdcc5e777d1a124e0d1d7a4f7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/fast-\/accessor-\/assembler.\+h\item 
+/\+Users/joshgav/node/v8/src/fast-\/accessor-\/assembler.\+cc\end{DoxyCompactItemize}

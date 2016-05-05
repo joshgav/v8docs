@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1_object_hash_table}{}\section{v8\+:\+:internal\+:\+:Object\+Hash\+Table Class Reference}
+\label{classv8_1_1internal_1_1_object_hash_table}\index{v8\+::internal\+::\+Object\+Hash\+Table@{v8\+::internal\+::\+Object\+Hash\+Table}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Object\+Hash\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classv8_1_1internal_1_1_object_hash_table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key)\hypertarget{classv8_1_1internal_1_1_object_hash_table_aabab652b308038cba6f9dd2d99b6b159}{}\label{classv8_1_1internal_1_1_object_hash_table_aabab652b308038cba6f9dd2d99b6b159}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a00dbeb2eb8efbd982c5eb2bc145abdf0}{}\label{classv8_1_1internal_1_1_object_hash_table_a00dbeb2eb8efbd982c5eb2bc145abdf0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a0698c7cb08c4d8cdf07745148a775234}{}\label{classv8_1_1internal_1_1_object_hash_table_a0698c7cb08c4d8cdf07745148a775234}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ {\bfseries Shrink} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ table, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a63897a41f0ff1a796d4f136056a8af4b}{}\label{classv8_1_1internal_1_1_object_hash_table_a63897a41f0ff1a796d4f136056a8af4b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ {\bfseries Put} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ table, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_object_hash_table_ac9439aa9c8e36ffec62faea75de57535}{}\label{classv8_1_1internal_1_1_object_hash_table_ac9439aa9c8e36ffec62faea75de57535}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ {\bfseries Put} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ table, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a8085fcd16810747a32a3451a3f6b9d18}{}\label{classv8_1_1internal_1_1_object_hash_table_a8085fcd16810747a32a3451a3f6b9d18}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ {\bfseries Remove} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ table, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, bool $\ast$was\+\_\+present)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a8a34606509a6db2ea1b8d548461152fb}{}\label{classv8_1_1internal_1_1_object_hash_table_a8a34606509a6db2ea1b8d548461152fb}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ {\bfseries Remove} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table} $>$ table, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, bool $\ast$was\+\_\+present, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a0445c6013e5dbc4dd742bea32744f881}{}\label{classv8_1_1internal_1_1_object_hash_table_a0445c6013e5dbc4dd742bea32744f881}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Entry} (int entry, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$key, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_object_hash_table_a3284fedd077d14a7f22eca259497e9cb}{}\label{classv8_1_1internal_1_1_object_hash_table_a3284fedd077d14a7f22eca259497e9cb}
+
+\item 
+void {\bfseries Remove\+Entry} (int entry)\hypertarget{classv8_1_1internal_1_1_object_hash_table_ae1547c0e2dac808ff7162d0fa6b199c5}{}\label{classv8_1_1internal_1_1_object_hash_table_ae1547c0e2dac808ff7162d0fa6b199c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Entry\+To\+Value\+Index} (int entry)\hypertarget{classv8_1_1internal_1_1_object_hash_table_ab8e3c2ab65d6e2e2b56df21732ae8bd5}{}\label{classv8_1_1internal_1_1_object_hash_table_ab8e3c2ab65d6e2e2b56df21732ae8bd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_hash_table}{Hash\+Table}$<$ \hyperlink{classv8_1_1internal_1_1_object_hash_table}{Object\+Hash\+Table}, \hyperlink{classv8_1_1internal_1_1_object_hash_table_shape}{Object\+Hash\+Table\+Shape}, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ {\bfseries Derived\+Hash\+Table}\hypertarget{classv8_1_1internal_1_1_object_hash_table_ad86c544fab8de70b4ad6575381804646}{}\label{classv8_1_1internal_1_1_object_hash_table_ad86c544fab8de70b4ad6575381804646}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Mark\+Compact\+Collector}\hypertarget{classv8_1_1internal_1_1_object_hash_table_ae585a96455613b2bc2ae3ea75a061d8b}{}\label{classv8_1_1internal_1_1_object_hash_table_ae585a96455613b2bc2ae3ea75a061d8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

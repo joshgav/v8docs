@@ -1,0 +1,73 @@
+\hypertarget{classv8_1_1internal_1_1_const_pool}{}\section{v8\+:\+:internal\+:\+:Const\+Pool Class Reference}
+\label{classv8_1_1internal_1_1_const_pool}\index{v8\+::internal\+::\+Const\+Pool@{v8\+::internal\+::\+Const\+Pool}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Const\+Pool} (\hyperlink{classv8_1_1internal_1_1_assembler}{Assembler} $\ast$assm)\hypertarget{classv8_1_1internal_1_1_const_pool_a10cd51c71aa865ccd6dec22f830bcfe5}{}\label{classv8_1_1internal_1_1_const_pool_a10cd51c71aa865ccd6dec22f830bcfe5}
+
+\item 
+void {\bfseries Record\+Entry} (intptr\+\_\+t data, Reloc\+Info\+::\+Mode mode)\hypertarget{classv8_1_1internal_1_1_const_pool_a6a6bc90a86a47107b5ca98d472ee0862}{}\label{classv8_1_1internal_1_1_const_pool_a6a6bc90a86a47107b5ca98d472ee0862}
+
+\item 
+int {\bfseries Entry\+Count} () const \hypertarget{classv8_1_1internal_1_1_const_pool_ade66358ba77b7d2d86ae874475ad6d3e}{}\label{classv8_1_1internal_1_1_const_pool_ade66358ba77b7d2d86ae874475ad6d3e}
+
+\item 
+bool {\bfseries Is\+Empty} () const \hypertarget{classv8_1_1internal_1_1_const_pool_a9574a67a23915bad86b4a65c5a2090e6}{}\label{classv8_1_1internal_1_1_const_pool_a9574a67a23915bad86b4a65c5a2090e6}
+
+\item 
+int {\bfseries Distance\+To\+First\+Use} ()\hypertarget{classv8_1_1internal_1_1_const_pool_adf9bf9b440686da05462a7b9d734f57f}{}\label{classv8_1_1internal_1_1_const_pool_adf9bf9b440686da05462a7b9d734f57f}
+
+\item 
+int {\bfseries Max\+Pc\+Offset} ()\hypertarget{classv8_1_1internal_1_1_const_pool_a194bc8abbe406d30b3c01834dfda7af8}{}\label{classv8_1_1internal_1_1_const_pool_a194bc8abbe406d30b3c01834dfda7af8}
+
+\item 
+int {\bfseries Worst\+Case\+Size} ()\hypertarget{classv8_1_1internal_1_1_const_pool_ade9c2b9a5ca36f8b2ff6b9df077187c8}{}\label{classv8_1_1internal_1_1_const_pool_ade9c2b9a5ca36f8b2ff6b9df077187c8}
+
+\item 
+int {\bfseries Size\+If\+Emitted\+At\+Current\+Pc} (bool require\+\_\+jump)\hypertarget{classv8_1_1internal_1_1_const_pool_a7564d0079adb1c574dc1f505cf56e97a}{}\label{classv8_1_1internal_1_1_const_pool_a7564d0079adb1c574dc1f505cf56e97a}
+
+\item 
+void {\bfseries Emit} (bool require\+\_\+jump)\hypertarget{classv8_1_1internal_1_1_const_pool_aa6ea87074c1835b249d592f1c696a219}{}\label{classv8_1_1internal_1_1_const_pool_aa6ea87074c1835b249d592f1c696a219}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_const_pool_ad00c13ed8f086484fa21e453c39cc05c}{}\label{classv8_1_1internal_1_1_const_pool_ad00c13ed8f086484fa21e453c39cc05c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Can\+Be\+Shared} (Reloc\+Info\+::\+Mode mode)\hypertarget{classv8_1_1internal_1_1_const_pool_aec8ba4937fbe64d0083f604b939692d9}{}\label{classv8_1_1internal_1_1_const_pool_aec8ba4937fbe64d0083f604b939692d9}
+
+\item 
+void {\bfseries Emit\+Marker} ()\hypertarget{classv8_1_1internal_1_1_const_pool_a566ba50ae7a88405061f8268e0dc56cc}{}\label{classv8_1_1internal_1_1_const_pool_a566ba50ae7a88405061f8268e0dc56cc}
+
+\item 
+void {\bfseries Emit\+Guard} ()\hypertarget{classv8_1_1internal_1_1_const_pool_afcfba5e7c31fa46ca7853cc5276ffa60}{}\label{classv8_1_1internal_1_1_const_pool_afcfba5e7c31fa46ca7853cc5276ffa60}
+
+\item 
+void {\bfseries Emit\+Entries} ()\hypertarget{classv8_1_1internal_1_1_const_pool_a58968805b24d8874c8c9ab929d2616b2}{}\label{classv8_1_1internal_1_1_const_pool_a58968805b24d8874c8c9ab929d2616b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_assembler}{Assembler} $\ast$ {\bfseries assm\+\_\+}\hypertarget{classv8_1_1internal_1_1_const_pool_a41deca963c52db7a2eaf2c1716606e99}{}\label{classv8_1_1internal_1_1_const_pool_a41deca963c52db7a2eaf2c1716606e99}
+
+\item 
+int {\bfseries first\+\_\+use\+\_\+}\hypertarget{classv8_1_1internal_1_1_const_pool_aac993b9aa64325146d7e579d46a16c54}{}\label{classv8_1_1internal_1_1_const_pool_aac993b9aa64325146d7e579d46a16c54}
+
+\item 
+std\+::multimap$<$ uint64\+\_\+t, int $>$ {\bfseries shared\+\_\+entries\+\_\+}\hypertarget{classv8_1_1internal_1_1_const_pool_a4a259eddfd3ac7aac89451f524485092}{}\label{classv8_1_1internal_1_1_const_pool_a4a259eddfd3ac7aac89451f524485092}
+
+\item 
+int {\bfseries shared\+\_\+entries\+\_\+count}\hypertarget{classv8_1_1internal_1_1_const_pool_a375e28096085f82aafb08471afeb8352}{}\label{classv8_1_1internal_1_1_const_pool_a375e28096085f82aafb08471afeb8352}
+
+\item 
+std\+::vector$<$ std\+::pair$<$ uint64\+\_\+t, int $>$ $>$ {\bfseries unique\+\_\+entries\+\_\+}\hypertarget{classv8_1_1internal_1_1_const_pool_abe2e1e9e5ece511c499f78d3b7f448ab}{}\label{classv8_1_1internal_1_1_const_pool_abe2e1e9e5ece511c499f78d3b7f448ab}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/arm64/assembler-\/arm64.\+h\end{DoxyCompactItemize}

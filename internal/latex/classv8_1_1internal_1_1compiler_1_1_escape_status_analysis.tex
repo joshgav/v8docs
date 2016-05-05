@@ -1,0 +1,204 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Escape\+Status\+Analysis Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis}\index{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis@{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Status} \{ \\*
+{\bfseries k\+Unknown} = 0u, 
+\\*
+{\bfseries k\+Tracked} = 1u $<$$<$ 0, 
+\\*
+{\bfseries k\+Escaped} = 1u $<$$<$ 1, 
+\\*
+{\bfseries k\+On\+Stack} = 1u $<$$<$ 2, 
+\\*
+{\bfseries k\+Visited} = 1u $<$$<$ 3, 
+\\*
+{\bfseries k\+Dangling\+Computed} = 1u $<$$<$ 4, 
+\\*
+{\bfseries k\+Dangling} = 1u $<$$<$ 5, 
+\\*
+{\bfseries k\+Branch\+Point\+Computed} = 1u $<$$<$ 6, 
+\\*
+{\bfseries k\+Branch\+Point} = 1u $<$$<$ 7, 
+\\*
+{\bfseries k\+In\+Queue} = 1u $<$$<$ 8
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a502189c82f71a661bfda9ab9b470946c}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a502189c82f71a661bfda9ab9b470946c}
+
+\item 
+typedef Node\+Id {\bfseries Alias}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ab7d785e72916324b8df83dffdd426acb}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ab7d785e72916324b8df83dffdd426acb}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Status, uint16\+\_\+t $>$ {\bfseries Status\+Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a2fa653184c5b168303d8f04f0b370547}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a2fa653184c5b168303d8f04f0b370547}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Run\+Status\+Analysis} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a81ec429cbb7887832d31decb55dbd25b}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a81ec429cbb7887832d31decb55dbd25b}
+
+\item 
+bool {\bfseries Is\+Virtual} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_afbc1476a7cbe6e2e33101707c18f76db}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_afbc1476a7cbe6e2e33101707c18f76db}
+
+\item 
+bool {\bfseries Is\+Escaped} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a85774a93f592b163360b1f7de6b58313}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a85774a93f592b163360b1f7de6b58313}
+
+\item 
+bool {\bfseries Is\+Allocation} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aadcdcfa3e77f27edfcfbe0602e9ea5fa}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aadcdcfa3e77f27edfcfbe0602e9ea5fa}
+
+\item 
+bool {\bfseries Is\+In\+Queue} (Node\+Id id)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae93a90eaeab7d689de1a5c3bcbbc4da5}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae93a90eaeab7d689de1a5c3bcbbc4da5}
+
+\item 
+void {\bfseries Set\+In\+Queue} (Node\+Id id, bool on\+\_\+stack)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aab36f7c4657b00c61593006843f51bf1}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aab36f7c4657b00c61593006843f51bf1}
+
+\item 
+void {\bfseries Debug\+Print} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_abf6689ed790f124a2a4506aff93f801d}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_abf6689ed790f124a2a4506aff93f801d}
+
+\item 
+{\bfseries Escape\+Status\+Analysis} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_escape_analysis}{Escape\+Analysis} $\ast$object\+\_\+analysis, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a16f7b5c8fdafb10ec2437a9a434f90bb}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a16f7b5c8fdafb10ec2437a9a434f90bb}
+
+\item 
+void {\bfseries Enqueue\+For\+Status\+Analysis} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a956e488f6fa47855ee8da9f62383b180}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a956e488f6fa47855ee8da9f62383b180}
+
+\item 
+bool {\bfseries Set\+Escaped} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a397ce5cdbd521bf31811333c96e5e02a}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a397ce5cdbd521bf31811333c96e5e02a}
+
+\item 
+bool {\bfseries Is\+Effect\+Branch\+Point} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a20366aa8016720e9bf7a009861ddef19}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a20366aa8016720e9bf7a009861ddef19}
+
+\item 
+bool {\bfseries Is\+Dangling\+Effect\+Node} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a2f992a12c1ef6cc6f326672d462989b0}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a2f992a12c1ef6cc6f326672d462989b0}
+
+\item 
+void {\bfseries Resize\+Status\+Vector} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a27925ca3f1c469a8c6d1d86c45af5149}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a27925ca3f1c469a8c6d1d86c45af5149}
+
+\item 
+size\+\_\+t {\bfseries Get\+Status\+Vector\+Size} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a07db00d3b009fe0a9bd8c802e8fbe93e}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a07db00d3b009fe0a9bd8c802e8fbe93e}
+
+\item 
+bool {\bfseries Is\+Virtual} (Node\+Id id)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a80aeafece6d56e9f2a11cab7c19e1e83}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a80aeafece6d56e9f2a11cab7c19e1e83}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a6badd2895eb7e0c37396381f70feb47f}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a6badd2895eb7e0c37396381f70feb47f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a34dd23c4dfeaed171a3721c9cd05afce}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a34dd23c4dfeaed171a3721c9cd05afce}
+
+\item 
+void {\bfseries Assign\+Aliases} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a7cadb25f10e695e205f640535dbb9265}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a7cadb25f10e695e205f640535dbb9265}
+
+\item 
+Alias {\bfseries Get\+Alias} (Node\+Id id) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a556cbfb45ec80b98a5f319dd15402df8}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a556cbfb45ec80b98a5f319dd15402df8}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ Alias $>$ \& {\bfseries Get\+Alias\+Map} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_afd26d3d3b328401c59e4a755a3a43d4f}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_afd26d3d3b328401c59e4a755a3a43d4f}
+
+\item 
+Alias {\bfseries Alias\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aedb8d43623ecf83dec21ce6fa4404b3f}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aedb8d43623ecf83dec21ce6fa4404b3f}
+
+\item 
+bool {\bfseries Is\+Not\+Reachable} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a78ddd5e0efdaa37c53a6eda21e1d6df4}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a78ddd5e0efdaa37c53a6eda21e1d6df4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Alias {\bfseries k\+Not\+Reachable}
+\item 
+static const Alias {\bfseries k\+Untrackable}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Process} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aad79bf7d70eafa1e7be7dd93af0fae4e}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aad79bf7d70eafa1e7be7dd93af0fae4e}
+
+\item 
+void {\bfseries Process\+Allocate} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae16606bc1498a6e4389399579a65bfd6}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae16606bc1498a6e4389399579a65bfd6}
+
+\item 
+void {\bfseries Process\+Finish\+Region} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a1fb6df2a8c6e383504ac6552624b6993}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a1fb6df2a8c6e383504ac6552624b6993}
+
+\item 
+void {\bfseries Process\+Store\+Field} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a4c0148a33f663d9dcc6ccd6dc0c03e39}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a4c0148a33f663d9dcc6ccd6dc0c03e39}
+
+\item 
+void {\bfseries Process\+Store\+Element} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae51a668b50a00299fffeff70881bdf2c}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae51a668b50a00299fffeff70881bdf2c}
+
+\item 
+bool {\bfseries Check\+Uses\+For\+Escape} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, bool phi\+\_\+escaping=false)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_af6878f0c8cda00b7b5f2938a6a10342c}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_af6878f0c8cda00b7b5f2938a6a10342c}
+
+\item 
+bool {\bfseries Check\+Uses\+For\+Escape} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$rep, bool phi\+\_\+escaping=false)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a35ec4452104891bed9656945fb9cd83a}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a35ec4452104891bed9656945fb9cd83a}
+
+\item 
+void {\bfseries Revisit\+Uses} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a77264fbaadea35369cfae915c6e37201}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a77264fbaadea35369cfae915c6e37201}
+
+\item 
+void {\bfseries Revisit\+Inputs} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae0f3c8e721a2e3229bbbc7db8304d2ef}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae0f3c8e721a2e3229bbbc7db8304d2ef}
+
+\item 
+Alias {\bfseries Next\+Alias} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a1e734e131c976e560ab7423955b6f988}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a1e734e131c976e560ab7423955b6f988}
+
+\item 
+bool {\bfseries Has\+Entry} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ad9cdb85ccca17ba7e04242baffa78b3c}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ad9cdb85ccca17ba7e04242baffa78b3c}
+
+\item 
+bool {\bfseries Is\+Allocation\+Phi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a6d8257f31e2c4756015584056134d05f}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a6d8257f31e2c4756015584056134d05f}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis}{Escape\+Status\+Analysis})\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aeec8fa3ca6d1d8e54d14550477520ab3}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aeec8fa3ca6d1d8e54d14550477520ab3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries stack\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa988d1da6d7aea56a4fdfa97f30a18b2}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa988d1da6d7aea56a4fdfa97f30a18b2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_escape_analysis}{Escape\+Analysis} $\ast$ {\bfseries object\+\_\+analysis\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a775c5252ae4359bf2c3acac01493ca26}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a775c5252ae4359bf2c3acac01493ca26}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$const {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa38992d23489dc4b887e955db65b7314}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa38992d23489dc4b887e955db65b7314}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$const {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae2110ec0d2fe0c24de6812dce291e078}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_ae2110ec0d2fe0c24de6812dce291e078}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1base_1_1_flags}{Status\+Flags} $>$ {\bfseries status\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_abcc4a9a01dff0b09be1ccf69f65456ff}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_abcc4a9a01dff0b09be1ccf69f65456ff}
+
+\item 
+Alias {\bfseries next\+\_\+free\+\_\+alias\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa6eb62dda443af853c2beb53aa59547f}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa6eb62dda443af853c2beb53aa59547f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries status\+\_\+stack\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a52a31c4f9d91241caa111ef47c20c58a}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a52a31c4f9d91241caa111ef47c20c58a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ Alias $>$ {\bfseries aliases\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa733cb6d40fd11451c7c0d777eea5d28}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_aa733cb6d40fd11451c7c0d777eea5d28}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis@{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis}!k\+Not\+Reachable@{k\+Not\+Reachable}}
+\index{k\+Not\+Reachable@{k\+Not\+Reachable}!v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis@{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis}}
+\subsubsection[{\texorpdfstring{k\+Not\+Reachable}{kNotReachable}}]{\setlength{\rightskip}{0pt plus 5cm}const Alias v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis\+::k\+Not\+Reachable\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a43c42d8b899ad99b0658f58f027684cd}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a43c42d8b899ad99b0658f58f027684cd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    std::numeric\_limits<Alias>::max()
+\end{DoxyCode}
+\index{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis@{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis}!k\+Untrackable@{k\+Untrackable}}
+\index{k\+Untrackable@{k\+Untrackable}!v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis@{v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis}}
+\subsubsection[{\texorpdfstring{k\+Untrackable}{kUntrackable}}]{\setlength{\rightskip}{0pt plus 5cm}const Alias v8\+::internal\+::compiler\+::\+Escape\+Status\+Analysis\+::k\+Untrackable\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a9ba0d620dbcc79ac569498d79494b25c}{}\label{classv8_1_1internal_1_1compiler_1_1_escape_status_analysis_a9ba0d620dbcc79ac569498d79494b25c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    std::numeric\_limits<Alias>::max() - 1
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/escape-\/analysis.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/escape-\/analysis.\+cc\end{DoxyCompactItemize}

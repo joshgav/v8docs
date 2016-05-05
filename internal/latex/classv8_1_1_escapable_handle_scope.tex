@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1_escapable_handle_scope}{}\section{v8\+:\+:Escapable\+Handle\+Scope Class Reference}
+\label{classv8_1_1_escapable_handle_scope}\index{v8\+::\+Escapable\+Handle\+Scope@{v8\+::\+Escapable\+Handle\+Scope}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Escapable\+Handle\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_escapable_handle_scope}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Escapable\+Handle\+Scope} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_escapable_handle_scope_aea39a7fd4dee6da31f3921ff891e1731}{}\label{classv8_1_1_escapable_handle_scope_aea39a7fd4dee6da31f3921ff891e1731}
+
+\item 
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_local}{Local}$<$ T $>$ \hyperlink{classv8_1_1_escapable_handle_scope_afdf0d3850978f65d1a827f78b3a2b6fd}{Escape} (\hyperlink{classv8_1_1_local}{Local}$<$ T $>$ value)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries Escape} (\hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$escape\+\_\+value)\hypertarget{classv8_1_1_escapable_handle_scope_a18a472064c6788f59282ceffa3df30eb}{}\label{classv8_1_1_escapable_handle_scope_a18a472064c6788f59282ceffa3df30eb}
+
+\item 
+{\bfseries Escapable\+Handle\+Scope} (const \hyperlink{classv8_1_1_escapable_handle_scope}{Escapable\+Handle\+Scope} \&)\hypertarget{classv8_1_1_escapable_handle_scope_a3e313c7cf1656a443d947303c3220931}{}\label{classv8_1_1_escapable_handle_scope_a3e313c7cf1656a443d947303c3220931}
+
+\item 
+void {\bfseries operator=} (const \hyperlink{classv8_1_1_escapable_handle_scope}{Escapable\+Handle\+Scope} \&)\hypertarget{classv8_1_1_escapable_handle_scope_a3fbf3f11d4089d8a730d4171bf8f1bed}{}\label{classv8_1_1_escapable_handle_scope_a3fbf3f11d4089d8a730d4171bf8f1bed}
+
+\item 
+void $\ast$ {\bfseries operator new} (size\+\_\+t size)\hypertarget{classv8_1_1_escapable_handle_scope_adf445b7a17fe29a93c9524fe72b65b28}{}\label{classv8_1_1_escapable_handle_scope_adf445b7a17fe29a93c9524fe72b65b28}
+
+\item 
+void {\bfseries operator delete} (void $\ast$, size\+\_\+t)\hypertarget{classv8_1_1_escapable_handle_scope_a082688365df2e134a510dd3bc67629af}{}\label{classv8_1_1_escapable_handle_scope_a082688365df2e134a510dd3bc67629af}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries escape\+\_\+slot\+\_\+}\hypertarget{classv8_1_1_escapable_handle_scope_aa452d2cad22ccec2675174e01526d025}{}\label{classv8_1_1_escapable_handle_scope_aa452d2cad22ccec2675174e01526d025}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classv8_1_1_handle_scope}{Handle\+Scope} which first allocates a handle in the current scope which will be later filled with the escape value. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Escapable\+Handle\+Scope@{v8\+::\+Escapable\+Handle\+Scope}!Escape@{Escape}}
+\index{Escape@{Escape}!v8\+::\+Escapable\+Handle\+Scope@{v8\+::\+Escapable\+Handle\+Scope}}
+\subsubsection[{\texorpdfstring{Escape(\+Local$<$ T $>$ value)}{Escape(Local< T > value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ V8\+\_\+\+I\+N\+L\+I\+NE {\bf Local}$<$T$>$ v8\+::\+Escapable\+Handle\+Scope\+::\+Escape (
+\begin{DoxyParamCaption}
+\item[{{\bf Local}$<$ T $>$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1_escapable_handle_scope_afdf0d3850978f65d1a827f78b3a2b6fd}{}\label{classv8_1_1_escapable_handle_scope_afdf0d3850978f65d1a827f78b3a2b6fd}
+Pushes the value into the previous scope and returns a handle to it. Cannot be called twice. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\item 
+/\+Users/joshgav/node/v8/src/api.\+cc\end{DoxyCompactItemize}

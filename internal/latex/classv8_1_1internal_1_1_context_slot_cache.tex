@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1_context_slot_cache}{}\section{v8\+:\+:internal\+:\+:Context\+Slot\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_context_slot_cache}\index{v8\+::internal\+::\+Context\+Slot\+Cache@{v8\+::internal\+::\+Context\+Slot\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_context_slot_cache_1_1_key}{Key}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_context_slot_cache_1_1_value}{Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$data, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$name, Variable\+Mode $\ast$mode, Initialization\+Flag $\ast$init\+\_\+flag, Maybe\+Assigned\+Flag $\ast$maybe\+\_\+assigned\+\_\+flag)\hypertarget{classv8_1_1internal_1_1_context_slot_cache_a4ebdedd69d39ba5289812097be813f75}{}\label{classv8_1_1internal_1_1_context_slot_cache_a4ebdedd69d39ba5289812097be813f75}
+
+\item 
+void {\bfseries Update} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ data, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name, Variable\+Mode mode, Initialization\+Flag init\+\_\+flag, Maybe\+Assigned\+Flag maybe\+\_\+assigned\+\_\+flag, int slot\+\_\+index)\hypertarget{classv8_1_1internal_1_1_context_slot_cache_ac136190bbd844c5ccc249b59b4b811bb}{}\label{classv8_1_1internal_1_1_context_slot_cache_ac136190bbd844c5ccc249b59b4b811bb}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_context_slot_cache_aad0a26c9e44aa6ad4568327171644375}{}\label{classv8_1_1internal_1_1_context_slot_cache_aad0a26c9e44aa6ad4568327171644375}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Not\+Found} = -\/2\hypertarget{classv8_1_1internal_1_1_context_slot_cache_a596b1217f2c589e46a4327d567c336c2}{}\label{classv8_1_1internal_1_1_context_slot_cache_a596b1217f2c589e46a4327d567c336c2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_context_slot_cache}{Context\+Slot\+Cache})\hypertarget{classv8_1_1internal_1_1_context_slot_cache_abfea02993ce4e93c3db33a32d6df0b42}{}\label{classv8_1_1internal_1_1_context_slot_cache_abfea02993ce4e93c3db33a32d6df0b42}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Hash} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$data, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$name)\hypertarget{classv8_1_1internal_1_1_context_slot_cache_a1d98566c2df1c19c64da57b63c6a1267}{}\label{classv8_1_1internal_1_1_context_slot_cache_a1d98566c2df1c19c64da57b63c6a1267}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_context_slot_cache_1_1_key}{Key} {\bfseries keys\+\_\+} \mbox{[}k\+Length\mbox{]}\hypertarget{classv8_1_1internal_1_1_context_slot_cache_aac784094a9da88bc2d9e6100249e75fc}{}\label{classv8_1_1internal_1_1_context_slot_cache_aac784094a9da88bc2d9e6100249e75fc}
+
+\item 
+uint32\+\_\+t {\bfseries values\+\_\+} \mbox{[}k\+Length\mbox{]}\hypertarget{classv8_1_1internal_1_1_context_slot_cache_a8f78ed00a1b03b867173990060e4344f}{}\label{classv8_1_1internal_1_1_context_slot_cache_a8f78ed00a1b03b867173990060e4344f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Length} = 256\hypertarget{classv8_1_1internal_1_1_context_slot_cache_a86ccac5433f64d7cb0663564dd7d8ac3}{}\label{classv8_1_1internal_1_1_context_slot_cache_a86ccac5433f64d7cb0663564dd7d8ac3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Isolate}\hypertarget{classv8_1_1internal_1_1_context_slot_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}{}\label{classv8_1_1internal_1_1_context_slot_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/scopeinfo.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/scopeinfo.\+cc\end{DoxyCompactItemize}

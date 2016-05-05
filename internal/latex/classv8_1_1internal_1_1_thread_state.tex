@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1_thread_state}{}\section{v8\+:\+:internal\+:\+:Thread\+State Class Reference}
+\label{classv8_1_1internal_1_1_thread_state}\index{v8\+::internal\+::\+Thread\+State@{v8\+::internal\+::\+Thread\+State}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries List} \{ \\*
+{\bfseries F\+R\+E\+E\+\_\+\+L\+I\+ST}, 
+\\*
+{\bfseries I\+N\+\_\+\+U\+S\+E\+\_\+\+L\+I\+ST}
+ \}\hypertarget{classv8_1_1internal_1_1_thread_state_a395f566f2cfacad9de5f830d10867f8e}{}\label{classv8_1_1internal_1_1_thread_state_a395f566f2cfacad9de5f830d10867f8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_state}{Thread\+State} $\ast$ {\bfseries Next} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a72a0930797cee81d1c9554b85d823a85}{}\label{classv8_1_1internal_1_1_thread_state_a72a0930797cee81d1c9554b85d823a85}
+
+\item 
+void {\bfseries Link\+Into} (List list)\hypertarget{classv8_1_1internal_1_1_thread_state_a4defafb5b3668efb14f85d77374bbe3b}{}\label{classv8_1_1internal_1_1_thread_state_a4defafb5b3668efb14f85d77374bbe3b}
+
+\item 
+void {\bfseries Unlink} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a848a04b06e8f8d3007d96f5c5ef92eca}{}\label{classv8_1_1internal_1_1_thread_state_a848a04b06e8f8d3007d96f5c5ef92eca}
+
+\item 
+void {\bfseries set\+\_\+id} (\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} id)\hypertarget{classv8_1_1internal_1_1_thread_state_a29a5b54da6f9f06155d8a1c8757ad6f7}{}\label{classv8_1_1internal_1_1_thread_state_a29a5b54da6f9f06155d8a1c8757ad6f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries id} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a4ea95e4c29e70027b8f5840cc99c38f0}{}\label{classv8_1_1internal_1_1_thread_state_a4ea95e4c29e70027b8f5840cc99c38f0}
+
+\item 
+bool {\bfseries terminate\+\_\+on\+\_\+restore} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a67d1acd28377f5beca24b338d5d8936e}{}\label{classv8_1_1internal_1_1_thread_state_a67d1acd28377f5beca24b338d5d8936e}
+
+\item 
+void {\bfseries set\+\_\+terminate\+\_\+on\+\_\+restore} (bool terminate\+\_\+on\+\_\+restore)\hypertarget{classv8_1_1internal_1_1_thread_state_a660e8d9c78ff99c0ae245aa2c162851c}{}\label{classv8_1_1internal_1_1_thread_state_a660e8d9c78ff99c0ae245aa2c162851c}
+
+\item 
+char $\ast$ {\bfseries data} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a12a9a73b486d3393910b402218a10b0d}{}\label{classv8_1_1internal_1_1_thread_state_a12a9a73b486d3393910b402218a10b0d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Thread\+State} (\hyperlink{classv8_1_1internal_1_1_thread_manager}{Thread\+Manager} $\ast$thread\+\_\+manager)\hypertarget{classv8_1_1internal_1_1_thread_state_ac4ab63f9eacfc3d337c6e4db599dd39f}{}\label{classv8_1_1internal_1_1_thread_state_ac4ab63f9eacfc3d337c6e4db599dd39f}
+
+\item 
+void {\bfseries Allocate\+Space} ()\hypertarget{classv8_1_1internal_1_1_thread_state_a56568601d3edc011a56cc9fd59df70ae}{}\label{classv8_1_1internal_1_1_thread_state_a56568601d3edc011a56cc9fd59df70ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_id}{Thread\+Id} {\bfseries id\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_af0d7ec1e5588fa5eec4ebd1ab71e98b8}{}\label{classv8_1_1internal_1_1_thread_state_af0d7ec1e5588fa5eec4ebd1ab71e98b8}
+
+\item 
+bool {\bfseries terminate\+\_\+on\+\_\+restore\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_a38d0a3a3f0ba1442b6c92eafe75fcc82}{}\label{classv8_1_1internal_1_1_thread_state_a38d0a3a3f0ba1442b6c92eafe75fcc82}
+
+\item 
+char $\ast$ {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_ada5e4dd6f2c80e4e4aef5ccbbd7a999f}{}\label{classv8_1_1internal_1_1_thread_state_ada5e4dd6f2c80e4e4aef5ccbbd7a999f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_state}{Thread\+State} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_a6e3a17b374e832a7634cd892cd4e9ce0}{}\label{classv8_1_1internal_1_1_thread_state_a6e3a17b374e832a7634cd892cd4e9ce0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_state}{Thread\+State} $\ast$ {\bfseries previous\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_a35506e67f5503f2c2934361ed8bcd4d2}{}\label{classv8_1_1internal_1_1_thread_state_a35506e67f5503f2c2934361ed8bcd4d2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_thread_manager}{Thread\+Manager} $\ast$ {\bfseries thread\+\_\+manager\+\_\+}\hypertarget{classv8_1_1internal_1_1_thread_state_ab5b113e820a374a4db02de0e6ae8af2e}{}\label{classv8_1_1internal_1_1_thread_state_ab5b113e820a374a4db02de0e6ae8af2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Thread\+Manager}\hypertarget{classv8_1_1internal_1_1_thread_state_a2a28fc3c6cee05204a42286ac77ace1a}{}\label{classv8_1_1internal_1_1_thread_state_a2a28fc3c6cee05204a42286ac77ace1a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/v8threads.\+h\item 
+/\+Users/joshgav/node/v8/src/v8threads.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context}{}\section{v8\+:\+:internal\+:\+:Full\+Code\+Generator\+:\+:Test\+Context Class Reference}
+\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context}\index{v8\+::internal\+::\+Full\+Code\+Generator\+::\+Test\+Context@{v8\+::internal\+::\+Full\+Code\+Generator\+::\+Test\+Context}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Full\+Code\+Generator\+:\+:Test\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_full_code_generator_1_1_test_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Test\+Context} (\hyperlink{classv8_1_1internal_1_1_full_code_generator}{Full\+Code\+Generator} $\ast$codegen, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$condition, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$true\+\_\+label, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$false\+\_\+label, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$fall\+\_\+through)\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aec0d5c12abb2f48bb49c7348a21ba480}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aec0d5c12abb2f48bb49c7348a21ba480}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries condition} () const \hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a82b6063a3cbb8dd7d8d6e05767eda347}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a82b6063a3cbb8dd7d8d6e05767eda347}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries true\+\_\+label} () const \hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aec80c433d331e70215c120fe1c96452b}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aec80c433d331e70215c120fe1c96452b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries false\+\_\+label} () const \hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5dadeb33894432077cf2f4b15ecf2edf}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5dadeb33894432077cf2f4b15ecf2edf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries fall\+\_\+through} () const \hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ab16b7bc38d767d3a6050d478c345d571}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ab16b7bc38d767d3a6050d478c345d571}
+
+\item 
+void {\bfseries Plug} (bool flag) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a3059e4ff6c5ccf01b6a196ca45294552}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a3059e4ff6c5ccf01b6a196ca45294552}
+
+\item 
+void {\bfseries Plug} (\hyperlink{structv8_1_1internal_1_1_register}{Register} reg) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a385abaa28540d90cd32a141142654730}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a385abaa28540d90cd32a141142654730}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+false) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a366ce4e9d8207e67c618c4377cba1b85}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a366ce4e9d8207e67c618c4377cba1b85}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$var) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a47c50d3b4b4241f9a4aceafc52da50e7}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a47c50d3b4b4241f9a4aceafc52da50e7}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ lit) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a8086875b87b89dda3aac7e70b6e026f4}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a8086875b87b89dda3aac7e70b6e026f4}
+
+\item 
+void {\bfseries Plug} (Heap\+::\+Root\+List\+Index) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5a32e09c2fdc955a10f6c1a2f6d9f643}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5a32e09c2fdc955a10f6c1a2f6d9f643}
+
+\item 
+void {\bfseries Plug\+T\+OS} () const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ae0d5a3f12ddf5b6b840f6d5444e6a969}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ae0d5a3f12ddf5b6b840f6d5444e6a969}
+
+\item 
+void {\bfseries Drop\+And\+Plug} (int count, \hyperlink{structv8_1_1internal_1_1_register}{Register} reg) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a8c03d0c8543c67ced158d94cda18d00e}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a8c03d0c8543c67ced158d94cda18d00e}
+
+\item 
+void {\bfseries Prepare\+Test} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+false, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$if\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$if\+\_\+false, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$fall\+\_\+through) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a9ad1c864500a911c3a2a639f400ff824}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a9ad1c864500a911c3a2a639f400ff824}
+
+\item 
+bool {\bfseries Is\+Test} () const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a551f98616a29f9268029008e10324a5e}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a551f98616a29f9268029008e10324a5e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_full_code_generator_1_1_test_context}{Test\+Context} $\ast$ {\bfseries cast} (const Expression\+Context $\ast$context)\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5a47f581fb5ff2e736d964f00d587c85}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a5a47f581fb5ff2e736d964f00d587c85}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries condition\+\_\+}\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a9ee041fb7a4609e2c63e83716332c866}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_a9ee041fb7a4609e2c63e83716332c866}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries true\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ac8e119003675bcf17a7a0871853ecd7b}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_ac8e119003675bcf17a7a0871853ecd7b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries false\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aa1ad9af38174676248e98876681d9e2f}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_aa1ad9af38174676248e98876681d9e2f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries fall\+\_\+through\+\_\+}\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_afd2c7d8718721dacb6d270e2af359040}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_test_context_afd2c7d8718721dacb6d270e2af359040}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+h\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+cc\end{DoxyCompactItemize}

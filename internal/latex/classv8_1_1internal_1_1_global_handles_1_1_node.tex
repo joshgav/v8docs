@@ -1,0 +1,214 @@
+\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node}{}\section{v8\+:\+:internal\+:\+:Global\+Handles\+:\+:Node Class Reference}
+\label{classv8_1_1internal_1_1_global_handles_1_1_node}\index{v8\+::internal\+::\+Global\+Handles\+::\+Node@{v8\+::internal\+::\+Global\+Handles\+::\+Node}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_is_active}{Is\+Active}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_is_independent}{Is\+Independent}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_is_in_new_space_list}{Is\+In\+New\+Space\+List}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_is_partially_dependent}{Is\+Partially\+Dependent}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_node_state}{Node\+State}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_1_1_node_weakness_type}{Node\+Weakness\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \{ \\*
+{\bfseries F\+R\+EE} = 0, 
+\\*
+{\bfseries N\+O\+R\+M\+AL}, 
+\\*
+{\bfseries W\+E\+AK}, 
+\\*
+{\bfseries P\+E\+N\+D\+I\+NG}, 
+\\*
+{\bfseries N\+E\+A\+R\+\_\+\+D\+E\+A\+TH}, 
+\\*
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+N\+O\+D\+E\+\_\+\+S\+T\+A\+T\+ES}
+ \}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ad0e78c1f3196c693801bcac55e643acb}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ad0e78c1f3196c693801bcac55e643acb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} (int index, \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$$\ast$first\+\_\+free)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ad2092d67d09a06198b48cd86f53f1f4d}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ad2092d67d09a06198b48cd86f53f1f4d}
+
+\item 
+void {\bfseries Acquire} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af7d9c870496b92afc720f5e6deb4e0a7}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af7d9c870496b92afc720f5e6deb4e0a7}
+
+\item 
+void {\bfseries Zap} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a1000ac8a4633c1c149570e41e0b2eef2}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a1000ac8a4633c1c149570e41e0b2eef2}
+
+\item 
+void {\bfseries Release} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a586a56ec9fc3422e6622b6c612f643c8}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a586a56ec9fc3422e6622b6c612f643c8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a2d4d0f96b9a13839c20b4c241ae1e5c3}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a2d4d0f96b9a13839c20b4c241ae1e5c3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries location} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a1e04151b1c5f59f13081dd581092c032}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a1e04151b1c5f59f13081dd581092c032}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries handle} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a76dcdfe5e1c1531af3d4e04bc71d5d2e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a76dcdfe5e1c1531af3d4e04bc71d5d2e}
+
+\item 
+bool {\bfseries has\+\_\+wrapper\+\_\+class\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a51a37969ddb0827dc69d451344341c2e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a51a37969ddb0827dc69d451344341c2e}
+
+\item 
+uint16\+\_\+t {\bfseries wrapper\+\_\+class\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ae9dbf54d075e7f98a46da1288b299d8a}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ae9dbf54d075e7f98a46da1288b299d8a}
+
+\item 
+State {\bfseries state} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_aeac7d9f148b9804ff39130fa41c3655c}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_aeac7d9f148b9804ff39130fa41c3655c}
+
+\item 
+void {\bfseries set\+\_\+state} (State state)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a62cc6905a2626126108d3da1523c5047}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a62cc6905a2626126108d3da1523c5047}
+
+\item 
+bool {\bfseries is\+\_\+independent} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ad705b4dee1c9327be0ccca4eee5be8cb}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ad705b4dee1c9327be0ccca4eee5be8cb}
+
+\item 
+void {\bfseries set\+\_\+independent} (bool v)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a8a41ece055a6ce757b2bbc30a16f3a7e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a8a41ece055a6ce757b2bbc30a16f3a7e}
+
+\item 
+bool {\bfseries is\+\_\+partially\+\_\+dependent} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a06b3b29a7a20ac9406424068cc810a67}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a06b3b29a7a20ac9406424068cc810a67}
+
+\item 
+void {\bfseries set\+\_\+partially\+\_\+dependent} (bool v)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a3836f0f134b37a294fdd4363d2982760}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a3836f0f134b37a294fdd4363d2982760}
+
+\item 
+bool {\bfseries is\+\_\+active} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af4aa20f93be66940a64d72055810fd29}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af4aa20f93be66940a64d72055810fd29}
+
+\item 
+void {\bfseries set\+\_\+active} (bool v)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ab7c0d8ac01eee93f71b327289be7da1c}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ab7c0d8ac01eee93f71b327289be7da1c}
+
+\item 
+bool {\bfseries is\+\_\+in\+\_\+new\+\_\+space\+\_\+list} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a6e5d7f117ce0a0b8e7344c233f3dddb4}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a6e5d7f117ce0a0b8e7344c233f3dddb4}
+
+\item 
+void {\bfseries set\+\_\+in\+\_\+new\+\_\+space\+\_\+list} (bool v)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a5596327b1faad5b93b95132395792fb5}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a5596327b1faad5b93b95132395792fb5}
+
+\item 
+Weakness\+Type {\bfseries weakness\+\_\+type} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a49a2f292dcf8f5789b843f4a4f8a058c}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a49a2f292dcf8f5789b843f4a4f8a058c}
+
+\item 
+void {\bfseries set\+\_\+weakness\+\_\+type} (Weakness\+Type weakness\+\_\+type)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_abaca36fa2c23fd6b16cf86d9ab11f86b}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_abaca36fa2c23fd6b16cf86d9ab11f86b}
+
+\item 
+bool {\bfseries Is\+Near\+Death} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a4dc934f7e29da84517aa8ebd29a9f5c7}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a4dc934f7e29da84517aa8ebd29a9f5c7}
+
+\item 
+bool {\bfseries Is\+Weak} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_abc52cedd40e2532a2bb2a44b8509eba3}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_abc52cedd40e2532a2bb2a44b8509eba3}
+
+\item 
+bool {\bfseries Is\+In\+Use} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a1286b7cea1fa873d5523bd8f05862915}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a1286b7cea1fa873d5523bd8f05862915}
+
+\item 
+bool {\bfseries Is\+Retainer} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af51381e72a48d03e23ec8135279575fa}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af51381e72a48d03e23ec8135279575fa}
+
+\item 
+bool {\bfseries Is\+Strong\+Retainer} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a3d6fb60e9de800ee504bd60da76893e5}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a3d6fb60e9de800ee504bd60da76893e5}
+
+\item 
+bool {\bfseries Is\+Weak\+Retainer} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_aa2cf3a7169b51fe3ff3f5ea343ef3ed5}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_aa2cf3a7169b51fe3ff3f5ea343ef3ed5}
+
+\item 
+void {\bfseries Mark\+Pending} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_acb454925d447ff902497f21a7e596eea}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_acb454925d447ff902497f21a7e596eea}
+
+\item 
+void {\bfseries Mark\+Independent} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a8fc7f9f3d7187b1b980e3900ec619e45}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a8fc7f9f3d7187b1b980e3900ec619e45}
+
+\item 
+void {\bfseries Mark\+Partially\+Dependent} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a81f6467c650368810d1423d9c6e481d9}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a81f6467c650368810d1423d9c6e481d9}
+
+\item 
+void {\bfseries clear\+\_\+partially\+\_\+dependent} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_abac00fd84b58b4a4a972df48bf6bdc3d}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_abac00fd84b58b4a4a972df48bf6bdc3d}
+
+\item 
+void {\bfseries set\+\_\+parameter} (void $\ast$parameter)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a85dffe3db281650c32edf180a0d9d48f}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a85dffe3db281650c32edf180a0d9d48f}
+
+\item 
+void $\ast$ {\bfseries parameter} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a9147080ca6f31bdb7c68ffeb1eb8eab4}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a9147080ca6f31bdb7c68ffeb1eb8eab4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$ {\bfseries next\+\_\+free} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a3c316b1fc6a3d0520e03dd1c81606cbc}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a3c316b1fc6a3d0520e03dd1c81606cbc}
+
+\item 
+void {\bfseries set\+\_\+next\+\_\+free} (\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af10c1ad6d2969bd15bb7843c7beb4452}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af10c1ad6d2969bd15bb7843c7beb4452}
+
+\item 
+void {\bfseries Make\+Weak} (void $\ast$parameter, Weak\+Callback weak\+\_\+callback)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af146205ac78bc2d767d1c00f61069f96}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af146205ac78bc2d767d1c00f61069f96}
+
+\item 
+void {\bfseries Make\+Weak} (void $\ast$parameter, \hyperlink{classv8_1_1_weak_callback_info}{Weak\+Callback\+Info}$<$ void $>$\+::Callback phantom\+\_\+callback, v8\+::\+Weak\+Callback\+Type type)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a60e6a1e4751374ef030ac0ccea784c19}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a60e6a1e4751374ef030ac0ccea784c19}
+
+\item 
+void $\ast$ {\bfseries Clear\+Weakness} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ad2abb4476219d95838cfb9110030a1e6}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ad2abb4476219d95838cfb9110030a1e6}
+
+\item 
+void {\bfseries Collect\+Phantom\+Callback\+Data} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_pending_phantom_callback}{Pending\+Phantom\+Callback} $>$ $\ast$pending\+\_\+phantom\+\_\+callbacks)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_adb4f470094f66644d38ee6551783d614}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_adb4f470094f66644d38ee6551783d614}
+
+\item 
+bool {\bfseries Post\+Garbage\+Collection\+Processing} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af5f7bb202ad8da637eb3bf84f55513a4}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af5f7bb202ad8da637eb3bf84f55513a4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles}{Global\+Handles} $\ast$ {\bfseries Get\+Global\+Handles} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a0ca4bb19bd0b3d379861815ab229d656}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a0ca4bb19bd0b3d379861815ab229d656}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$ {\bfseries From\+Location} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$location)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a96d8edb89864010ec5ce1de5835c8e6f}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a96d8edb89864010ec5ce1de5835c8e6f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries Find\+Block} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a3488a5ee1a9d2b946a5c8def34430747}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a3488a5ee1a9d2b946a5c8def34430747}
+
+\item 
+void {\bfseries Increase\+Block\+Uses} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_afcef17e84de67b73ccc2e02025f1c326}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_afcef17e84de67b73ccc2e02025f1c326}
+
+\item 
+void {\bfseries Decrease\+Block\+Uses} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a14b4d1f0d307e17c51bee8f9ea500436}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a14b4d1f0d307e17c51bee8f9ea500436}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node})\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a13034fe74288bb4d2f2f8eb247719140}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a13034fe74288bb4d2f2f8eb247719140}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries object\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a798deedf56ddc6d5d2af3457a5c16c8c}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a798deedf56ddc6d5d2af3457a5c16c8c}
+
+\item 
+uint16\+\_\+t {\bfseries class\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a81dc6adc4db935794ac319c250c5b84a}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a81dc6adc4db935794ac319c250c5b84a}
+
+\item 
+uint8\+\_\+t {\bfseries index\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ac7116e977f3715ecb505ec7b95b95f84}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ac7116e977f3715ecb505ec7b95b95f84}
+
+\item 
+uint8\+\_\+t {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_af138f3b161960c518e24cdc36c602ff0}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_af138f3b161960c518e24cdc36c602ff0}
+
+\item 
+Weak\+Callback {\bfseries weak\+\_\+callback\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_a84377e381661f44ee2beb5f6ed8e293d}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_a84377e381661f44ee2beb5f6ed8e293d}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void $\ast$ {\bfseries parameter}\\
+\>\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$ {\bfseries next\_free}\\
+\} {\bfseries parameter\_or\_next\_free\_}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_ade3f49953bcf248a910f381e8de8bfcf}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_ade3f49953bcf248a910f381e8de8bfcf}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/global-\/handles.\+cc\end{DoxyCompactItemize}

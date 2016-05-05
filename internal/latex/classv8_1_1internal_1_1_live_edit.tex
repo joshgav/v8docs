@@ -1,0 +1,126 @@
+\hypertarget{classv8_1_1internal_1_1_live_edit}{}\section{v8\+:\+:internal\+:\+:Live\+Edit Class Reference}
+\label{classv8_1_1internal_1_1_live_edit}\index{v8\+::internal\+::\+Live\+Edit@{v8\+::internal\+::\+Live\+Edit}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Live\+Edit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_live_edit}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Frame\+Drop\+Mode} \{ \\*
+{\bfseries F\+R\+A\+M\+E\+S\+\_\+\+U\+N\+T\+O\+U\+C\+H\+ED}, 
+\\*
+{\bfseries F\+R\+A\+M\+E\+\_\+\+D\+R\+O\+P\+P\+E\+D\+\_\+\+I\+N\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+L\+O\+T\+\_\+\+C\+A\+LL}, 
+\\*
+{\bfseries F\+R\+A\+M\+E\+\_\+\+D\+R\+O\+P\+P\+E\+D\+\_\+\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+C\+A\+LL}, 
+\\*
+{\bfseries F\+R\+A\+M\+E\+\_\+\+D\+R\+O\+P\+P\+E\+D\+\_\+\+I\+N\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+A\+LL}, 
+\\*
+{\bfseries C\+U\+R\+R\+E\+N\+T\+L\+Y\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}
+ \}\hypertarget{classv8_1_1internal_1_1_live_edit_a724dd57efc0973924e2a4e2201c1285d}{}\label{classv8_1_1internal_1_1_live_edit_a724dd57efc0973924e2a4e2201c1285d}
+
+\item 
+enum {\bfseries Function\+Patchability\+Status} \{ \\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+F\+O\+R\+\_\+\+P\+A\+T\+CH} = 1, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+O\+N\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+S\+T\+A\+CK} = 2, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+O\+N\+\_\+\+O\+T\+H\+E\+R\+\_\+\+S\+T\+A\+CK} = 3, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+D\+E\+R\+\_\+\+N\+A\+T\+I\+V\+E\+\_\+\+C\+O\+DE} = 4, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+R\+E\+P\+L\+A\+C\+E\+D\+\_\+\+O\+N\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+S\+T\+A\+CK} = 5, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+D\+E\+R\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR} = 6, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR} = 7, 
+\\*
+{\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+B\+L\+O\+C\+K\+E\+D\+\_\+\+N\+O\+\_\+\+N\+E\+W\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+O\+N\+\_\+\+R\+E\+S\+T\+A\+RT} = 8
+ \}\hypertarget{classv8_1_1internal_1_1_live_edit_a06d3bb41b3481e311a84e0c27c40a527}{}\label{classv8_1_1internal_1_1_live_edit_a06d3bb41b3481e311a84e0c27c40a527}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize\+Thread\+Local} (\hyperlink{classv8_1_1internal_1_1_debug}{Debug} $\ast$debug)\hypertarget{classv8_1_1internal_1_1_live_edit_a9b5ea06802163d74690511e89f07cffd}{}\label{classv8_1_1internal_1_1_live_edit_a9b5ea06802163d74690511e89f07cffd}
+
+\item 
+static bool {\bfseries Set\+After\+Break\+Target} (\hyperlink{classv8_1_1internal_1_1_debug}{Debug} $\ast$debug)\hypertarget{classv8_1_1internal_1_1_live_edit_a77e2a52e13a358d14489dea92851d3fb}{}\label{classv8_1_1internal_1_1_live_edit_a77e2a52e13a358d14489dea92851d3fb}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ {\bfseries Gather\+Compile\+Info} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source)\hypertarget{classv8_1_1internal_1_1_live_edit_a58e02c86ce01ee6f35fc20b1fad03086}{}\label{classv8_1_1internal_1_1_live_edit_a58e02c86ce01ee6f35fc20b1fad03086}
+
+\item 
+static void {\bfseries Replace\+Function\+Code} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ new\+\_\+compile\+\_\+info\+\_\+array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ shared\+\_\+info\+\_\+array)\hypertarget{classv8_1_1internal_1_1_live_edit_a6da6ace56f1979c43e01b5fd697a06ae}{}\label{classv8_1_1internal_1_1_live_edit_a6da6ace56f1979c43e01b5fd697a06ae}
+
+\item 
+static void {\bfseries Function\+Source\+Updated} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ shared\+\_\+info\+\_\+array)\hypertarget{classv8_1_1internal_1_1_live_edit_ac3bcd4bd0d8c13126218d67544dc6117}{}\label{classv8_1_1internal_1_1_live_edit_ac3bcd4bd0d8c13126218d67544dc6117}
+
+\item 
+static void {\bfseries Set\+Function\+Script} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_value}{J\+S\+Value} $>$ function\+\_\+wrapper, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ script\+\_\+handle)\hypertarget{classv8_1_1internal_1_1_live_edit_ae077e76eb5240169ce4a0335840e16b5}{}\label{classv8_1_1internal_1_1_live_edit_ae077e76eb5240169ce4a0335840e16b5}
+
+\item 
+static void {\bfseries Patch\+Function\+Positions} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ shared\+\_\+info\+\_\+array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ position\+\_\+change\+\_\+array)\hypertarget{classv8_1_1internal_1_1_live_edit_aadfd0c8a3d53b1e7214ae59052da38e1}{}\label{classv8_1_1internal_1_1_live_edit_aadfd0c8a3d53b1e7214ae59052da38e1}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Change\+Script\+Source} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ original\+\_\+script, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ new\+\_\+source, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ old\+\_\+script\+\_\+name)\hypertarget{classv8_1_1internal_1_1_live_edit_a9a05d33b4381be75f36ddbc1944d108b}{}\label{classv8_1_1internal_1_1_live_edit_a9a05d33b4381be75f36ddbc1944d108b}
+
+\item 
+static void {\bfseries Replace\+Ref\+To\+Nested\+Function} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_value}{J\+S\+Value} $>$ parent\+\_\+function\+\_\+shared, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_value}{J\+S\+Value} $>$ orig\+\_\+function\+\_\+shared, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_value}{J\+S\+Value} $>$ subst\+\_\+function\+\_\+shared)\hypertarget{classv8_1_1internal_1_1_live_edit_a5f745ed37ef70144f3bbe2c7fbca71a7}{}\label{classv8_1_1internal_1_1_live_edit_a5f745ed37ef70144f3bbe2c7fbca71a7}
+
+\item 
+static bool {\bfseries Find\+Active\+Generators} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ shared\+\_\+info\+\_\+array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ result, int len)\hypertarget{classv8_1_1internal_1_1_live_edit_a2a7883bd24f0af7910bdc3af66af6c01}{}\label{classv8_1_1internal_1_1_live_edit_a2a7883bd24f0af7910bdc3af66af6c01}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ {\bfseries Check\+And\+Drop\+Activations} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ old\+\_\+shared\+\_\+array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ new\+\_\+shared\+\_\+array, bool do\+\_\+drop)\hypertarget{classv8_1_1internal_1_1_live_edit_a87cfb1db56ba26136a1f10343454234c}{}\label{classv8_1_1internal_1_1_live_edit_a87cfb1db56ba26136a1f10343454234c}
+
+\item 
+static const char $\ast$ {\bfseries Restart\+Frame} (\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$frame)\hypertarget{classv8_1_1internal_1_1_live_edit_a1bad0f05b0b31ac1c4dcf36ee2052f7a}{}\label{classv8_1_1internal_1_1_live_edit_a1bad0f05b0b31ac1c4dcf36ee2052f7a}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ {\bfseries Compare\+Strings} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ s1, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ s2)\hypertarget{classv8_1_1internal_1_1_live_edit_acd0da5b9c5a98a4029ac4a36b2a566b8}{}\label{classv8_1_1internal_1_1_live_edit_acd0da5b9c5a98a4029ac4a36b2a566b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool {\bfseries k\+Frame\+Dropper\+Supported}\hypertarget{classv8_1_1internal_1_1_live_edit_a065987e52e8dd61f79875776a2ffe141}{}\label{classv8_1_1internal_1_1_live_edit_a065987e52e8dd61f79875776a2ffe141}
+
+\item 
+static const int \hyperlink{classv8_1_1internal_1_1_live_edit_ac4c2e93e880c61cc4b7167211f3509db}{k\+Frame\+Padding\+Initial\+Size} = 1
+\item 
+static const int {\bfseries k\+Frame\+Padding\+Value} = \hyperlink{classv8_1_1internal_1_1_live_edit_ac4c2e93e880c61cc4b7167211f3509db}{k\+Frame\+Padding\+Initial\+Size} + 1\hypertarget{classv8_1_1internal_1_1_live_edit_a0551d143d88b1c65cd64b294aafadc71}{}\label{classv8_1_1internal_1_1_live_edit_a0551d143d88b1c65cd64b294aafadc71}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Live\+Edit@{v8\+::internal\+::\+Live\+Edit}!k\+Frame\+Padding\+Initial\+Size@{k\+Frame\+Padding\+Initial\+Size}}
+\index{k\+Frame\+Padding\+Initial\+Size@{k\+Frame\+Padding\+Initial\+Size}!v8\+::internal\+::\+Live\+Edit@{v8\+::internal\+::\+Live\+Edit}}
+\subsubsection[{\texorpdfstring{k\+Frame\+Padding\+Initial\+Size}{kFramePaddingInitialSize}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Live\+Edit\+::k\+Frame\+Padding\+Initial\+Size = 1\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_live_edit_ac4c2e93e880c61cc4b7167211f3509db}{}\label{classv8_1_1internal_1_1_live_edit_ac4c2e93e880c61cc4b7167211f3509db}
+Defines layout of a stack frame that supports padding. This is a regular internal frame that has a flexible stack structure. \hyperlink{classv8_1_1internal_1_1_live_edit}{Live\+Edit} can shift its lower part up the stack, taking up the \textquotesingle{}padding\textquotesingle{} space when additional stack memory is required. Such frame is expected immediately above the topmost Java\+Script frame.
+
+Stack Layout\+: --- Top \subsubsection*{\hyperlink{classv8_1_1internal_1_1_live_edit}{Live\+Edit} routine frames }
+
+\subsubsection*{C frames of debug handler }
+
+\subsubsection*{... }
+
+An internal frame that has n padding words\+:
+\begin{DoxyItemize}
+\item any number of words as needed by code -- upper part of frame
+\item padding size\+: a \hyperlink{classv8_1_1internal_1_1_smi}{Smi} storing n -- current size of padding
+\item padding\+: n words filled with k\+Padding\+Value in form of \hyperlink{classv8_1_1internal_1_1_smi}{Smi}
+\item 3 context/type words of a regular \hyperlink{classv8_1_1internal_1_1_internal_frame}{Internal\+Frame} \subsubsection*{-\/ fp }
+\end{DoxyItemize}
+
+\subsubsection*{Topmost Java\+Script frame }
+
+... --- Bottom 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/debug/liveedit.\+h\item 
+/\+Users/joshgav/node/v8/src/debug/liveedit.\+cc\end{DoxyCompactItemize}

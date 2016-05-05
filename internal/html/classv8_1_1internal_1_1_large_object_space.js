@@ -1,0 +1,28 @@
+var classv8_1_1internal_1_1_large_object_space =
+[
+    [ "LargeObjectSpace", "classv8_1_1internal_1_1_large_object_space.html#a66af439bbce805dece4e3db9ee5a3d98", null ],
+    [ "~LargeObjectSpace", "classv8_1_1internal_1_1_large_object_space.html#a59945e5e8ce7fc4e7754355df4e0aed2", null ],
+    [ "AllocateRaw", "classv8_1_1internal_1_1_large_object_space.html#a75291aedc520f2efa326ff6c2d024b5e", null ],
+    [ "Available", "classv8_1_1internal_1_1_large_object_space.html#a8f6de3df513c9840802a44f022e545dd", null ],
+    [ "ClearMarkingStateOfLiveObjects", "classv8_1_1internal_1_1_large_object_space.html#a8ae520c71ba1a3b4f8511c73402e928f", null ],
+    [ "CommittedPhysicalMemory", "classv8_1_1internal_1_1_large_object_space.html#a14c63ed50926d569ba244e11768b2a30", null ],
+    [ "Contains", "classv8_1_1internal_1_1_large_object_space.html#a8553cb5254e6f95b8535ec88b8d71f51", null ],
+    [ "ContainsSlow", "classv8_1_1internal_1_1_large_object_space.html#a444e96fa0eb47c6b37c483ce575b0d27", null ],
+    [ "FindObject", "classv8_1_1internal_1_1_large_object_space.html#ac26bd4b38226ed680b8e5bc91d1e4163", null ],
+    [ "FindPage", "classv8_1_1internal_1_1_large_object_space.html#ab41210b34537c0b31f2ba5935e3fb607", null ],
+    [ "first_page", "classv8_1_1internal_1_1_large_object_space.html#a238ecdf0c67e7880af4afa23e6acec29", null ],
+    [ "FreeUnmarkedObjects", "classv8_1_1internal_1_1_large_object_space.html#a074a88a9c1b0045440ae1613d986b294", null ],
+    [ "IsEmpty", "classv8_1_1internal_1_1_large_object_space.html#a1540b1b446a3ce5210b8b6ab9e02aad0", null ],
+    [ "ObjectSizeFor", "classv8_1_1internal_1_1_large_object_space.html#ab02f8331007158171f81c7f511e33f32", null ],
+    [ "PageCount", "classv8_1_1internal_1_1_large_object_space.html#ad785aa0d59494dca8961ab2be41ac656", null ],
+    [ "SetUp", "classv8_1_1internal_1_1_large_object_space.html#a0d6d297e876381ad6e2f0d63ed5051ac", null ],
+    [ "Size", "classv8_1_1internal_1_1_large_object_space.html#af4c3e56b891f31c9e703bd11f9c7ad56", null ],
+    [ "SizeOfObjects", "classv8_1_1internal_1_1_large_object_space.html#a3daafc5d3afa9d1ca7960961bc83fe2c", null ],
+    [ "TearDown", "classv8_1_1internal_1_1_large_object_space.html#a4f1bf837df9444515b16160be0780838", null ],
+    [ "LargeObjectIterator", "classv8_1_1internal_1_1_large_object_space.html#a3bc21bcf0ff3a8b52c6a491296fce3f2", null ],
+    [ "chunk_map_", "classv8_1_1internal_1_1_large_object_space.html#a4187bc132841fd71e75d94b763072e37", null ],
+    [ "first_page_", "classv8_1_1internal_1_1_large_object_space.html#a39d24b8de763ca62ed9874a9aff81826", null ],
+    [ "objects_size_", "classv8_1_1internal_1_1_large_object_space.html#aff752a5f85808250ea08fd16d1116a35", null ],
+    [ "page_count_", "classv8_1_1internal_1_1_large_object_space.html#ad6dfc04a22436ec514721204217a17fa", null ],
+    [ "size_", "classv8_1_1internal_1_1_large_object_space.html#a3133763fd5578a8ac61859487b18d7eb", null ]
+];

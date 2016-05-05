@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1_maybe_local}{}\section{v8\+:\+:Maybe\+Local$<$ T $>$ Class Template Reference}
+\label{classv8_1_1_maybe_local}\index{v8\+::\+Maybe\+Local$<$ T $>$@{v8\+::\+Maybe\+Local$<$ T $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Maybe\+Local} (\hyperlink{classv8_1_1_local}{Local}$<$ S $>$ that)\hypertarget{classv8_1_1_maybe_local_ab488843c2faf4375517616d3c66886e5}{}\label{classv8_1_1_maybe_local_ab488843c2faf4375517616d3c66886e5}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Empty} () const \hypertarget{classv8_1_1_maybe_local_a6d1f2acdc91800c481977d86ae04aa53}{}\label{classv8_1_1_maybe_local_a6d1f2acdc91800c481977d86ae04aa53}
+
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries To\+Local} (\hyperlink{classv8_1_1_local}{Local}$<$ S $>$ $\ast$out) const \hypertarget{classv8_1_1_maybe_local_af3e66ed0bbc8845081fba2488c507c6a}{}\label{classv8_1_1_maybe_local_af3e66ed0bbc8845081fba2488c507c6a}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_local}{Local}$<$ T $>$ {\bfseries To\+Local\+Checked} ()\hypertarget{classv8_1_1_maybe_local_a9b2c9d50fca5897e3a03fd4c25d12415}{}\label{classv8_1_1_maybe_local_a9b2c9d50fca5897e3a03fd4c25d12415}
+
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_local}{Local}$<$ S $>$ {\bfseries From\+Maybe} (\hyperlink{classv8_1_1_local}{Local}$<$ S $>$ default\+\_\+value) const \hypertarget{classv8_1_1_maybe_local_afe1aea162c64385160cc1c83df859eaf}{}\label{classv8_1_1_maybe_local_afe1aea162c64385160cc1c83df859eaf}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ {\bfseries val\+\_\+}\hypertarget{classv8_1_1_maybe_local_aaaa3e33a607bc6d243fe00875a345cc5}{}\label{classv8_1_1_maybe_local_aaaa3e33a607bc6d243fe00875a345cc5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class v8\+::\+Maybe\+Local$<$ T $>$}
+
+A Maybe\+Local$<$$>$ is a wrapper around Local$<$$>$ that enforces a check whether the Local$<$$>$ is empty before it can be used.
+
+If an A\+PI method returns a Maybe\+Local$<$$>$, the A\+PI method can potentially fail either because an exception is thrown, or because an exception is pending, e.\+g. because a previous A\+PI call threw an exception that hasn\textquotesingle{}t been caught yet, or because a Terminate\+Execution exception was thrown. In that case, an empty \hyperlink{classv8_1_1_maybe_local}{Maybe\+Local} is returned. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\end{DoxyCompactItemize}

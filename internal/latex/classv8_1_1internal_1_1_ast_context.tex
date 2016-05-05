@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_ast_context}{}\section{v8\+:\+:internal\+:\+:Ast\+Context Class Reference}
+\label{classv8_1_1internal_1_1_ast_context}\index{v8\+::internal\+::\+Ast\+Context@{v8\+::internal\+::\+Ast\+Context}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Ast\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.558882cm]{classv8_1_1internal_1_1_ast_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Is\+Effect} () const \hypertarget{classv8_1_1internal_1_1_ast_context_a9ef7dcdc0fc4878eac2fba9ec899cf74}{}\label{classv8_1_1internal_1_1_ast_context_a9ef7dcdc0fc4878eac2fba9ec899cf74}
+
+\item 
+bool {\bfseries Is\+Value} () const \hypertarget{classv8_1_1internal_1_1_ast_context_abab34ae1d1f4f30554e402981a9c8b41}{}\label{classv8_1_1internal_1_1_ast_context_abab34ae1d1f4f30554e402981a9c8b41}
+
+\item 
+bool {\bfseries Is\+Test} () const \hypertarget{classv8_1_1internal_1_1_ast_context_a745e8856780d7325898ee9ae28036876}{}\label{classv8_1_1internal_1_1_ast_context_a745e8856780d7325898ee9ae28036876}
+
+\item 
+virtual void {\bfseries Return\+Value} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)=0\hypertarget{classv8_1_1internal_1_1_ast_context_a02a778cd8697728b1d65c7784e81a708}{}\label{classv8_1_1internal_1_1_ast_context_a02a778cd8697728b1d65c7784e81a708}
+
+\item 
+virtual void {\bfseries Return\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id)=0\hypertarget{classv8_1_1internal_1_1_ast_context_ac382417ecde5e65dd502ba717dfeb573}{}\label{classv8_1_1internal_1_1_ast_context_ac382417ecde5e65dd502ba717dfeb573}
+
+\item 
+virtual void {\bfseries Return\+Control} (\hyperlink{classv8_1_1internal_1_1_h_control_instruction}{H\+Control\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id)=0\hypertarget{classv8_1_1internal_1_1_ast_context_a0d14d70c6f23b3ed5a0b093546da90f7}{}\label{classv8_1_1internal_1_1_ast_context_a0d14d70c6f23b3ed5a0b093546da90f7}
+
+\item 
+virtual void {\bfseries Return\+Continuation} (\hyperlink{classv8_1_1internal_1_1_h_if_continuation}{H\+If\+Continuation} $\ast$continuation, \hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} ast\+\_\+id)=0\hypertarget{classv8_1_1internal_1_1_ast_context_a31ce4d727e6c5c4476c385b53418aba9}{}\label{classv8_1_1internal_1_1_ast_context_a31ce4d727e6c5c4476c385b53418aba9}
+
+\item 
+void {\bfseries set\+\_\+typeof\+\_\+mode} (Typeof\+Mode typeof\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_ast_context_ae393c0ac0aa2c0012be4659c17e3c9f2}{}\label{classv8_1_1internal_1_1_ast_context_ae393c0ac0aa2c0012be4659c17e3c9f2}
+
+\item 
+Typeof\+Mode {\bfseries typeof\+\_\+mode} ()\hypertarget{classv8_1_1internal_1_1_ast_context_aeb2fa99ba3732dfd745ef2c1ff059afb}{}\label{classv8_1_1internal_1_1_ast_context_aeb2fa99ba3732dfd745ef2c1ff059afb}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ast\+Context} (\hyperlink{classv8_1_1internal_1_1_h_optimized_graph_builder}{H\+Optimized\+Graph\+Builder} $\ast$owner, Expression\+::\+Context kind)\hypertarget{classv8_1_1internal_1_1_ast_context_a2f95ba98943cf65575eb4fde31afe7fb}{}\label{classv8_1_1internal_1_1_ast_context_a2f95ba98943cf65575eb4fde31afe7fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_optimized_graph_builder}{H\+Optimized\+Graph\+Builder} $\ast$ {\bfseries owner} () const \hypertarget{classv8_1_1internal_1_1_ast_context_a0faad2f9a48cd43801a1d84e9a0b0988}{}\label{classv8_1_1internal_1_1_ast_context_a0faad2f9a48cd43801a1d84e9a0b0988}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_ast_context_abea1ff333fcef5a2057297c917f1fe9b}{}\label{classv8_1_1internal_1_1_ast_context_abea1ff333fcef5a2057297c917f1fe9b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_optimized_graph_builder}{H\+Optimized\+Graph\+Builder} $\ast$ {\bfseries owner\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_context_a70a8c966fff979ab14458150cdbb3669}{}\label{classv8_1_1internal_1_1_ast_context_a70a8c966fff979ab14458150cdbb3669}
+
+\item 
+Expression\+::\+Context {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_context_a39e53cdf38b266d6bfb974067c7e47d6}{}\label{classv8_1_1internal_1_1_ast_context_a39e53cdf38b266d6bfb974067c7e47d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_ast_context}{Ast\+Context} $\ast$ {\bfseries outer\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_context_a3dcab964b38917952ca97bb277f407d1}{}\label{classv8_1_1internal_1_1_ast_context_a3dcab964b38917952ca97bb277f407d1}
+
+\item 
+Typeof\+Mode {\bfseries typeof\+\_\+mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_context_a910ea33a1d0fadf7d5e8665e29c9545e}{}\label{classv8_1_1internal_1_1_ast_context_a910ea33a1d0fadf7d5e8665e29c9545e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

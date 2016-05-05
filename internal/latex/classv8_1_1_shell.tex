@@ -1,0 +1,273 @@
+\hypertarget{classv8_1_1_shell}{}\section{v8\+:\+:Shell Class Reference}
+\label{classv8_1_1_shell}\index{v8\+::\+Shell@{v8\+::\+Shell}}
+Inheritance diagram for v8\+:\+:Shell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_shell}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Source\+Type} \{ \\*
+{\bfseries S\+C\+R\+I\+PT}, 
+\\*
+{\bfseries M\+O\+D\+U\+LE}
+ \}\hypertarget{classv8_1_1_shell_abe245a5c0e5af60c732a9b915f70a980}{}\label{classv8_1_1_shell_abe245a5c0e5af60c732a9b915f70a980}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_list}{i\+::\+List}$<$ \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object}{Object} $>$ $>$ {\bfseries Object\+List}\hypertarget{classv8_1_1_shell_aae1fed615f7a91949352cdfb08151181}{}\label{classv8_1_1_shell_aae1fed615f7a91949352cdfb08151181}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_maybe_local}{Maybe\+Local}$<$ \hyperlink{classv8_1_1_script}{Script} $>$ {\bfseries Compile\+String} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ source, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ name, v8\+::\+Script\+Compiler\+::\+Compile\+Options compile\+\_\+options, Source\+Type source\+\_\+type)\hypertarget{classv8_1_1_shell_a8a2bb13c214e19e733b8121fd9c12a66}{}\label{classv8_1_1_shell_a8a2bb13c214e19e733b8121fd9c12a66}
+
+\item 
+static bool {\bfseries Execute\+String} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ source, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ name, bool print\+\_\+result, bool report\+\_\+exceptions, Source\+Type source\+\_\+type=S\+C\+R\+I\+PT)\hypertarget{classv8_1_1_shell_a5fa4fac8591781915c9709c29f1a8e70}{}\label{classv8_1_1_shell_a5fa4fac8591781915c9709c29f1a8e70}
+
+\item 
+static const char $\ast$ {\bfseries To\+C\+String} (const \hyperlink{classv8_1_1_string_1_1_utf8_value}{v8\+::\+String\+::\+Utf8\+Value} \&value)\hypertarget{classv8_1_1_shell_a4be20a6785bf3b70e8cb546afbae5282}{}\label{classv8_1_1_shell_a4be20a6785bf3b70e8cb546afbae5282}
+
+\item 
+static void {\bfseries Report\+Exception} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_try_catch}{Try\+Catch} $\ast$try\+\_\+catch)\hypertarget{classv8_1_1_shell_a45ffe976e0fcd45629b6ff5f03e80943}{}\label{classv8_1_1_shell_a45ffe976e0fcd45629b6ff5f03e80943}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ {\bfseries Read\+File} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const char $\ast$name)\hypertarget{classv8_1_1_shell_a7031e2aefd0be84b22df14c3e0abedcc}{}\label{classv8_1_1_shell_a7031e2aefd0be84b22df14c3e0abedcc}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ {\bfseries Create\+Evaluation\+Context} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_a7e4313b0046d027e73a03e6665821493}{}\label{classv8_1_1_shell_a7e4313b0046d027e73a03e6665821493}
+
+\item 
+static int {\bfseries Run\+Main} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, bool last\+\_\+run)\hypertarget{classv8_1_1_shell_ad869dfefa18309958f1bcc4f86cc8a2a}{}\label{classv8_1_1_shell_ad869dfefa18309958f1bcc4f86cc8a2a}
+
+\item 
+static int {\bfseries Main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})\hypertarget{classv8_1_1_shell_a057dfc36cac04373f5f6868b051be008}{}\label{classv8_1_1_shell_a057dfc36cac04373f5f6868b051be008}
+
+\item 
+static void {\bfseries Exit} (int exit\+\_\+code)\hypertarget{classv8_1_1_shell_aa9e863415a8d0f603a18a929651ebef6}{}\label{classv8_1_1_shell_aa9e863415a8d0f603a18a929651ebef6}
+
+\item 
+static void {\bfseries On\+Exit} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_a2d7f0ea798fb804ab288b801c2997449}{}\label{classv8_1_1_shell_a2d7f0ea798fb804ab288b801c2997449}
+
+\item 
+static void {\bfseries Collect\+Garbage} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_ad46dde06dc1dbf8c048b6ad7c55686c9}{}\label{classv8_1_1_shell_ad46dde06dc1dbf8c048b6ad7c55686c9}
+
+\item 
+static void {\bfseries Empty\+Message\+Queues} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_a6d067937dac0f7ec522a03db059fe611}{}\label{classv8_1_1_shell_a6d067937dac0f7ec522a03db059fe611}
+
+\item 
+static bool {\bfseries Serialize\+Value} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value, const \hyperlink{classv8_1_1internal_1_1_list}{Object\+List} \&to\+\_\+transfer, \hyperlink{classv8_1_1internal_1_1_list}{Object\+List} $\ast$seen\+\_\+objects, \hyperlink{classv8_1_1_serialization_data}{Serialization\+Data} $\ast$out\+\_\+data)\hypertarget{classv8_1_1_shell_a8d22e547478d8bb20d240643c40e2f2e}{}\label{classv8_1_1_shell_a8d22e547478d8bb20d240643c40e2f2e}
+
+\item 
+static \hyperlink{classv8_1_1_maybe_local}{Maybe\+Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ {\bfseries Deserialize\+Value} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1_serialization_data}{Serialization\+Data} \&data, int $\ast$offset)\hypertarget{classv8_1_1_shell_a00b450d4c47f2a9eeb5151d10337aebc}{}\label{classv8_1_1_shell_a00b450d4c47f2a9eeb5151d10337aebc}
+
+\item 
+static void {\bfseries Cleanup\+Workers} ()\hypertarget{classv8_1_1_shell_a1a5dca359368270ebf13267e7161028b}{}\label{classv8_1_1_shell_a1a5dca359368270ebf13267e7161028b}
+
+\item 
+static int $\ast$ {\bfseries Lookup\+Counter} (const char $\ast$name)\hypertarget{classv8_1_1_shell_ab3c2e43e32a1543b0a78f728bb3df63a}{}\label{classv8_1_1_shell_ab3c2e43e32a1543b0a78f728bb3df63a}
+
+\item 
+static void $\ast$ {\bfseries Create\+Histogram} (const char $\ast$name, int min, int max, size\+\_\+t buckets)\hypertarget{classv8_1_1_shell_a59e39d63603b1766c86614c7a9db0545}{}\label{classv8_1_1_shell_a59e39d63603b1766c86614c7a9db0545}
+
+\item 
+static void {\bfseries Add\+Histogram\+Sample} (void $\ast$histogram, int sample)\hypertarget{classv8_1_1_shell_a0a1b3ff04a7253ba159519945ee7e2e8}{}\label{classv8_1_1_shell_a0a1b3ff04a7253ba159519945ee7e2e8}
+
+\item 
+static void {\bfseries Map\+Counters} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate, const char $\ast$name)\hypertarget{classv8_1_1_shell_af8dc3050b831dab01d9532612f517a9c}{}\label{classv8_1_1_shell_af8dc3050b831dab01d9532612f517a9c}
+
+\item 
+static void {\bfseries Performance\+Now} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a20b4f5fb7215088193a8bcf94a622f83}{}\label{classv8_1_1_shell_a20b4f5fb7215088193a8bcf94a622f83}
+
+\item 
+static void {\bfseries Realm\+Current} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a9a9b12463634c52f521809404acfe972}{}\label{classv8_1_1_shell_a9a9b12463634c52f521809404acfe972}
+
+\item 
+static void {\bfseries Realm\+Owner} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a9b3772fd4ecaac0b3586e66e9c18bcde}{}\label{classv8_1_1_shell_a9b3772fd4ecaac0b3586e66e9c18bcde}
+
+\item 
+static void {\bfseries Realm\+Global} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_acee30321581bbf1c878a31ca8c54d546}{}\label{classv8_1_1_shell_acee30321581bbf1c878a31ca8c54d546}
+
+\item 
+static void {\bfseries Realm\+Create} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a321307d1e9e6a587bbf3091195346f46}{}\label{classv8_1_1_shell_a321307d1e9e6a587bbf3091195346f46}
+
+\item 
+static void {\bfseries Realm\+Dispose} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a8bb9ca4c151b7ed3e6bdd64d3f814a65}{}\label{classv8_1_1_shell_a8bb9ca4c151b7ed3e6bdd64d3f814a65}
+
+\item 
+static void {\bfseries Realm\+Switch} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_ab4b04a517ba41c1843ae1db5f03ee48b}{}\label{classv8_1_1_shell_ab4b04a517ba41c1843ae1db5f03ee48b}
+
+\item 
+static void {\bfseries Realm\+Eval} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a2188e58aebf24a2991a9e5a8c6cc457c}{}\label{classv8_1_1_shell_a2188e58aebf24a2991a9e5a8c6cc457c}
+
+\item 
+static void {\bfseries Realm\+Shared\+Get} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ property, const \hyperlink{classv8_1_1_property_callback_info}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ \&info)\hypertarget{classv8_1_1_shell_a18a4d640a41f7fdc9a178e3db8408a8f}{}\label{classv8_1_1_shell_a18a4d640a41f7fdc9a178e3db8408a8f}
+
+\item 
+static void {\bfseries Realm\+Shared\+Set} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ property, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value, const \hyperlink{classv8_1_1_property_callback_info}{Property\+Callback\+Info}$<$ void $>$ \&info)\hypertarget{classv8_1_1_shell_a88d66b6299a850963f0fc2226e19c157}{}\label{classv8_1_1_shell_a88d66b6299a850963f0fc2226e19c157}
+
+\item 
+static void {\bfseries Print} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a7b8bdce48fa4a1b5e9ce8df50fc0a655}{}\label{classv8_1_1_shell_a7b8bdce48fa4a1b5e9ce8df50fc0a655}
+
+\item 
+static void {\bfseries Write} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_afd3888490889c1e9be9599cf4a2bad4f}{}\label{classv8_1_1_shell_afd3888490889c1e9be9599cf4a2bad4f}
+
+\item 
+static void {\bfseries Quit\+Once} (\hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ $\ast$args)\hypertarget{classv8_1_1_shell_ae7ab8288337d8e4ef62c9e8b65c5138e}{}\label{classv8_1_1_shell_ae7ab8288337d8e4ef62c9e8b65c5138e}
+
+\item 
+static void {\bfseries Quit} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a0ba86babc520a8e061820fab8fbccbbb}{}\label{classv8_1_1_shell_a0ba86babc520a8e061820fab8fbccbbb}
+
+\item 
+static void {\bfseries Version} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a67d9a8c0c96e9cf9a6bb22703ad019e7}{}\label{classv8_1_1_shell_a67d9a8c0c96e9cf9a6bb22703ad019e7}
+
+\item 
+static void {\bfseries Read} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a05de5538b7e495ce8402923d15b16512}{}\label{classv8_1_1_shell_a05de5538b7e495ce8402923d15b16512}
+
+\item 
+static void {\bfseries Read\+Buffer} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a35d2c0d84ddc58b9b51745d47d9acc25}{}\label{classv8_1_1_shell_a35d2c0d84ddc58b9b51745d47d9acc25}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ {\bfseries Read\+From\+Stdin} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_afc4ac604ee375a1effbf9d8e55423db1}{}\label{classv8_1_1_shell_afc4ac604ee375a1effbf9d8e55423db1}
+
+\item 
+static void {\bfseries Read\+Line} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a3f3a76857a48f6e107fe63bcc829396f}{}\label{classv8_1_1_shell_a3f3a76857a48f6e107fe63bcc829396f}
+
+\item 
+static void {\bfseries Load} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_ab4fe0c5dd861c5d36733e2116c793155}{}\label{classv8_1_1_shell_ab4fe0c5dd861c5d36733e2116c793155}
+
+\item 
+static void {\bfseries Worker\+New} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a00ba91a1f9369a559118c0484db90009}{}\label{classv8_1_1_shell_a00ba91a1f9369a559118c0484db90009}
+
+\item 
+static void {\bfseries Worker\+Post\+Message} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a0864855c72409f26946bd551f1a36e72}{}\label{classv8_1_1_shell_a0864855c72409f26946bd551f1a36e72}
+
+\item 
+static void {\bfseries Worker\+Get\+Message} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_ac9721473f8f8523b578096bf7f139016}{}\label{classv8_1_1_shell_ac9721473f8f8523b578096bf7f139016}
+
+\item 
+static void {\bfseries Worker\+Terminate} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_aec3f8248244ba8b07d56446236272b20}{}\label{classv8_1_1_shell_aec3f8248244ba8b07d56446236272b20}
+
+\item 
+static void {\bfseries System} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_ae09de0795a893adba7512629563cc340}{}\label{classv8_1_1_shell_ae09de0795a893adba7512629563cc340}
+
+\item 
+static void {\bfseries Change\+Directory} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_aa08a16a91023b749f2d9e0956c8200e1}{}\label{classv8_1_1_shell_aa08a16a91023b749f2d9e0956c8200e1}
+
+\item 
+static void {\bfseries Set\+Environment} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a0977b415540cff06625e711b5d3e2625}{}\label{classv8_1_1_shell_a0977b415540cff06625e711b5d3e2625}
+
+\item 
+static void {\bfseries Unset\+Environment} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_ae7ac04fd17a20acf9fb66812b611170e}{}\label{classv8_1_1_shell_ae7ac04fd17a20acf9fb66812b611170e}
+
+\item 
+static void {\bfseries Set\+U\+Mask} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_af3f66a1cd6b81cd69e43e9453092b50f}{}\label{classv8_1_1_shell_af3f66a1cd6b81cd69e43e9453092b50f}
+
+\item 
+static void {\bfseries Make\+Directory} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_a739dd021cf5875fe3b5372d4db31dbc3}{}\label{classv8_1_1_shell_a739dd021cf5875fe3b5372d4db31dbc3}
+
+\item 
+static void {\bfseries Remove\+Directory} (const \hyperlink{classv8_1_1_function_callback_info}{v8\+::\+Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1_value}{v8\+::\+Value} $>$ \&args)\hypertarget{classv8_1_1_shell_aec493d82bcbc3295528d275f241cdfb6}{}\label{classv8_1_1_shell_aec493d82bcbc3295528d275f241cdfb6}
+
+\item 
+static void {\bfseries Add\+O\+S\+Methods} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object_template}{Object\+Template} $>$ os\+\_\+template)\hypertarget{classv8_1_1_shell_a0c3ed68c0e468e6af07123281259de4c}{}\label{classv8_1_1_shell_a0c3ed68c0e468e6af07123281259de4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ {\bfseries k\+Prompt}\hypertarget{classv8_1_1_shell_acf6e5f3411221607708dec0b3700a7c2}{}\label{classv8_1_1_shell_acf6e5f3411221607708dec0b3700a7c2}
+
+\item 
+static \hyperlink{classv8_1_1_shell_options}{Shell\+Options} {\bfseries options}\hypertarget{classv8_1_1_shell_aedbe06af26de0fe7e4618cac0ce45790}{}\label{classv8_1_1_shell_aedbe06af26de0fe7e4618cac0ce45790}
+
+\item 
+static \hyperlink{classv8_1_1_array_buffer_1_1_allocator}{Array\+Buffer\+::\+Allocator} $\ast$ {\bfseries array\+\_\+buffer\+\_\+allocator}\hypertarget{classv8_1_1_shell_ad706b940496e9cccf4807a21424c7cc3}{}\label{classv8_1_1_shell_ad706b940496e9cccf4807a21424c7cc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Write\+Ignition\+Dispatch\+Counters\+File} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_ab95d667830e69a0b8c4d165d40d38478}{}\label{classv8_1_1_shell_ab95d667830e69a0b8c4d165d40d38478}
+
+\item 
+static \hyperlink{classv8_1_1_counter}{Counter} $\ast$ {\bfseries Get\+Counter} (const char $\ast$name, bool is\+\_\+histogram)\hypertarget{classv8_1_1_shell_a9a9a749cfd7970fd97ab86cc1423e6d1}{}\label{classv8_1_1_shell_a9a9a749cfd7970fd97ab86cc1423e6d1}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_string}{String} $>$ {\bfseries Stringify} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ value)\hypertarget{classv8_1_1_shell_ad311375692ab88b5c862374dad8563ec}{}\label{classv8_1_1_shell_ad311375692ab88b5c862374dad8563ec}
+
+\item 
+static void {\bfseries Initialize} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_a8d003294b3204a68f445e9a184cd5aca}{}\label{classv8_1_1_shell_a8d003294b3204a68f445e9a184cd5aca}
+
+\item 
+static void {\bfseries Run\+Shell} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_a8efa3d2d7962acc3d7a1301456aa836b}{}\label{classv8_1_1_shell_a8efa3d2d7962acc3d7a1301456aa836b}
+
+\item 
+static bool {\bfseries Set\+Options} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})\hypertarget{classv8_1_1_shell_aa722cb722ec69d5dcb591053ba705674}{}\label{classv8_1_1_shell_aa722cb722ec69d5dcb591053ba705674}
+
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_object_template}{Object\+Template} $>$ {\bfseries Create\+Global\+Template} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_shell_ae940ff9cde3abf34c36a0bee4ed3f490}{}\label{classv8_1_1_shell_ae940ff9cde3abf34c36a0bee4ed3f490}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_global}{Global}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ {\bfseries evaluation\+\_\+context\+\_\+}\hypertarget{classv8_1_1_shell_ac9e618d37d20075ed1b70e704ecc6e64}{}\label{classv8_1_1_shell_ac9e618d37d20075ed1b70e704ecc6e64}
+
+\item 
+static base\+::\+Once\+Type {\bfseries quit\+\_\+once\+\_\+} = V8\+\_\+\+O\+N\+C\+E\+\_\+\+I\+N\+IT\hypertarget{classv8_1_1_shell_a41e0618aad9f0eba818cb2c6923a6bf4}{}\label{classv8_1_1_shell_a41e0618aad9f0eba818cb2c6923a6bf4}
+
+\item 
+static \hyperlink{classv8_1_1_global}{Global}$<$ \hyperlink{classv8_1_1_function}{Function} $>$ {\bfseries stringify\+\_\+function\+\_\+}\hypertarget{classv8_1_1_shell_a1959e01e859955de7ff2953b266cf987}{}\label{classv8_1_1_shell_a1959e01e859955de7ff2953b266cf987}
+
+\item 
+static \hyperlink{classv8_1_1_counter_map}{Counter\+Map} $\ast$ {\bfseries counter\+\_\+map\+\_\+}\hypertarget{classv8_1_1_shell_ab9f883a0bbde53aaac3f404f0edfee8b}{}\label{classv8_1_1_shell_ab9f883a0bbde53aaac3f404f0edfee8b}
+
+\item 
+static \hyperlink{classv8_1_1_counter_collection}{Counter\+Collection} {\bfseries local\+\_\+counters\+\_\+}\hypertarget{classv8_1_1_shell_ab794dde4bb278559dce864d81d4e0e69}{}\label{classv8_1_1_shell_ab794dde4bb278559dce864d81d4e0e69}
+
+\item 
+static \hyperlink{classv8_1_1_counter_collection}{Counter\+Collection} $\ast$ {\bfseries counters\+\_\+} = \&local\+\_\+counters\+\_\+\hypertarget{classv8_1_1_shell_a080d20ce42351a91805f4351df005481}{}\label{classv8_1_1_shell_a080d20ce42351a91805f4351df005481}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_o_s_1_1_memory_mapped_file}{base\+::\+O\+S\+::\+Memory\+Mapped\+File} $\ast$ {\bfseries counters\+\_\+file\+\_\+} = N\+U\+LL\hypertarget{classv8_1_1_shell_a0b1b0c3fa7af5bb1cf2b337bc71642d5}{}\label{classv8_1_1_shell_a0b1b0c3fa7af5bb1cf2b337bc71642d5}
+
+\item 
+static \hyperlink{structv8_1_1base_1_1_lazy_instance_impl}{base\+::\+Lazy\+Mutex} {\bfseries context\+\_\+mutex\+\_\+}\hypertarget{classv8_1_1_shell_ae7a857220b6f30c5aa255ca91e650c83}{}\label{classv8_1_1_shell_ae7a857220b6f30c5aa255ca91e650c83}
+
+\item 
+static const \hyperlink{classv8_1_1base_1_1_time_ticks}{base\+::\+Time\+Ticks} {\bfseries k\+Initial\+Ticks}
+\item 
+static \hyperlink{structv8_1_1base_1_1_lazy_instance_impl}{base\+::\+Lazy\+Mutex} {\bfseries workers\+\_\+mutex\+\_\+}\hypertarget{classv8_1_1_shell_a93a6927ea5799467bd80638a4d2d3cc5}{}\label{classv8_1_1_shell_a93a6927ea5799467bd80638a4d2d3cc5}
+
+\item 
+static bool {\bfseries allow\+\_\+new\+\_\+workers\+\_\+} = true\hypertarget{classv8_1_1_shell_a81de5b4ca09dc165b94db0ee54ec7da7}{}\label{classv8_1_1_shell_a81de5b4ca09dc165b94db0ee54ec7da7}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_list}{i\+::\+List}$<$ \hyperlink{classv8_1_1_worker}{Worker} $\ast$ $>$ {\bfseries workers\+\_\+}\hypertarget{classv8_1_1_shell_af76823cebe196d9ff71611b97ef67db3}{}\label{classv8_1_1_shell_af76823cebe196d9ff71611b97ef67db3}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_list}{i\+::\+List}$<$ \hyperlink{classv8_1_1_shared_array_buffer_1_1_contents}{Shared\+Array\+Buffer\+::\+Contents} $>$ {\bfseries externalized\+\_\+shared\+\_\+contents\+\_\+}\hypertarget{classv8_1_1_shell_a39591404142f49ab72e4379a90a7173a}{}\label{classv8_1_1_shell_a39591404142f49ab72e4379a90a7173a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::\+Shell@{v8\+::\+Shell}!k\+Initial\+Ticks@{k\+Initial\+Ticks}}
+\index{k\+Initial\+Ticks@{k\+Initial\+Ticks}!v8\+::\+Shell@{v8\+::\+Shell}}
+\subsubsection[{\texorpdfstring{k\+Initial\+Ticks}{kInitialTicks}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf base\+::\+Time\+Ticks} v8\+::\+Shell\+::k\+Initial\+Ticks\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1_shell_a99d31ba14620aa85df20e39e9df45597}{}\label{classv8_1_1_shell_a99d31ba14620aa85df20e39e9df45597}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    base::TimeTicks::HighResolutionNow()
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/d8.\+h\item 
+/\+Users/joshgav/node/v8/src/d8-\/posix.\+cc\item 
+/\+Users/joshgav/node/v8/src/d8-\/windows.\+cc\item 
+/\+Users/joshgav/node/v8/src/d8.\+cc\end{DoxyCompactItemize}

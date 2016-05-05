@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Zone\+Pool\+:\+:Stats\+Scope Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope}\index{v8\+::internal\+::compiler\+::\+Zone\+Pool\+::\+Stats\+Scope@{v8\+::internal\+::compiler\+::\+Zone\+Pool\+::\+Stats\+Scope}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Stats\+Scope} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_zone_pool}{Zone\+Pool} $\ast$zone\+\_\+pool)\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aa68e2b9b4a4d23fd85509ecb72e4ffc5}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aa68e2b9b4a4d23fd85509ecb72e4ffc5}
+
+\item 
+size\+\_\+t {\bfseries Get\+Max\+Allocated\+Bytes} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a6ae47d3a38fa795d57079b6dd3fdaa2d}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a6ae47d3a38fa795d57079b6dd3fdaa2d}
+
+\item 
+size\+\_\+t {\bfseries Get\+Current\+Allocated\+Bytes} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a5aee10b1cdb799fd42b1552ba9f33f91}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a5aee10b1cdb799fd42b1552ba9f33f91}
+
+\item 
+size\+\_\+t {\bfseries Get\+Total\+Allocated\+Bytes} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a879242c36b27ed264f454b17f70b0917}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a879242c36b27ed264f454b17f70b0917}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$, size\+\_\+t $>$ {\bfseries Initial\+Values}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_ac4796d0bbae154397d35d0dd34e2d099}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_ac4796d0bbae154397d35d0dd34e2d099}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Zone\+Returned} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a1a8ff071f6ae0fc9818b7f1ef59fa000}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a1a8ff071f6ae0fc9818b7f1ef59fa000}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope}{Stats\+Scope})\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a3620d64b77f4c45e541f04828ca9a6ac}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a3620d64b77f4c45e541f04828ca9a6ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_zone_pool}{Zone\+Pool} $\ast$const {\bfseries zone\+\_\+pool\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a6118ce6ba72252e2f606261b31906c16}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a6118ce6ba72252e2f606261b31906c16}
+
+\item 
+Initial\+Values {\bfseries initial\+\_\+values\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aae673c938cfad689ed98ecb44bb62951}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aae673c938cfad689ed98ecb44bb62951}
+
+\item 
+size\+\_\+t {\bfseries total\+\_\+allocated\+\_\+bytes\+\_\+at\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a69a44471db3294972900d7c10c6b233a}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a69a44471db3294972900d7c10c6b233a}
+
+\item 
+size\+\_\+t {\bfseries max\+\_\+allocated\+\_\+bytes\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a89df55e36212359bb25af13ff89e08cf}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_a89df55e36212359bb25af13ff89e08cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Zone\+Pool}\hypertarget{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aec16737240a3e7ddd418cfc18ee58d6e}{}\label{classv8_1_1internal_1_1compiler_1_1_zone_pool_1_1_stats_scope_aec16737240a3e7ddd418cfc18ee58d6e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/zone-\/pool.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/zone-\/pool.\+cc\end{DoxyCompactItemize}

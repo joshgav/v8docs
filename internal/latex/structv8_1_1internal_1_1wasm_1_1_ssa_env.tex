@@ -1,0 +1,48 @@
+\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Ssa\+Env Struct Reference}
+\label{structv8_1_1internal_1_1wasm_1_1_ssa_env}\index{v8\+::internal\+::wasm\+::\+Ssa\+Env@{v8\+::internal\+::wasm\+::\+Ssa\+Env}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \{ \\*
+{\bfseries k\+Control\+End}, 
+\\*
+{\bfseries k\+Unreachable}, 
+\\*
+{\bfseries k\+Reached}, 
+\\*
+{\bfseries k\+Merged}
+ \}\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_ad5675625356efbfac53c9250fb92892b}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_ad5675625356efbfac53c9250fb92892b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries go} ()\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a1353e423928501e1d0dfc0832c594896}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a1353e423928501e1d0dfc0832c594896}
+
+\item 
+void {\bfseries Kill} (State new\+\_\+state=k\+Control\+End)\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a390819c500229334c9451b111a7f1251}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a390819c500229334c9451b111a7f1251}
+
+\item 
+void {\bfseries Set\+Not\+Merged} ()\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a71d6ca36d13134540603fa9a6c7e932e}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a71d6ca36d13134540603fa9a6c7e932e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+State {\bfseries state}\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a802d4a522a8c9d79fd03758f556176c5}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a802d4a522a8c9d79fd03758f556176c5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{T\+F\+Node} $\ast$ {\bfseries control}\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_ab9f26a0131d8a0f4d81804c50c26e719}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_ab9f26a0131d8a0f4d81804c50c26e719}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{T\+F\+Node} $\ast$ {\bfseries effect}\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a94c0e23051981da0f0c439d42009fe00}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a94c0e23051981da0f0c439d42009fe00}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{T\+F\+Node} $\ast$$\ast$ {\bfseries locals}\hypertarget{structv8_1_1internal_1_1wasm_1_1_ssa_env_a8a5f922072a246fc76b7cb7b6fbd8979}{}\label{structv8_1_1internal_1_1wasm_1_1_ssa_env_a8a5f922072a246fc76b7cb7b6fbd8979}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/ast-\/decoder.\+cc\end{DoxyCompactItemize}

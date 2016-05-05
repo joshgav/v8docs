@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor}{}\section{v8\+:\+:internal\+:\+:Static\+New\+Space\+Visitor$<$ Static\+Visitor $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_static_new_space_visitor}\index{v8\+::internal\+::\+Static\+New\+Space\+Visitor$<$ Static\+Visitor $>$@{v8\+::internal\+::\+Static\+New\+Space\+Visitor$<$ Static\+Visitor $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Static\+New\+Space\+Visitor$<$ Static\+Visitor $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_static_new_space_visitor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_static_new_space_visitor_1_1_data_object_visitor}{Data\+Object\+Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Iterate\+Body(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a058948665e17d6ea3626b73060fb0bc7}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a058948665e17d6ea3626b73060fb0bc7}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Pointers(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object,                                                                                                                                   \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_ad9dcc8fbc25bd14ee754a8f0ccb0d6c2}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_ad9dcc8fbc25bd14ee754a8f0ccb0d6c2}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Code\+Entry(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object,                                                                                                                                       Address entry\+\_\+address))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a5e3969a31021eeaa33d8d7e863ce5bc0}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a5e3969a31021eeaa33d8d7e863ce5bc0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_ac04052efdf8d9d8bf030f68fd06251d5}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_ac04052efdf8d9d8bf030f68fd06251d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_flexible_body_visitor}{Flexible\+Body\+Visitor}$<$ Static\+Visitor, \hyperlink{classv8_1_1internal_1_1_flexible_body_descriptor}{Struct\+Body\+Descriptor}, int $>$ {\bfseries Struct\+Visitor}\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_ace2d61cfb14f9ece8af78783951e7ff2}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_ace2d61cfb14f9ece8af78783951e7ff2}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_flexible_body_visitor}{Flexible\+Body\+Visitor}$<$ Static\+Visitor, \hyperlink{classv8_1_1internal_1_1_flexible_body_descriptor}{J\+S\+Object\+::\+Body\+Descriptor}, int $>$ {\bfseries J\+S\+Object\+Visitor}\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a6fab1f5ca3107d2478c9d48b5f2d55d2}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a6fab1f5ca3107d2478c9d48b5f2d55d2}
+
+\item 
+typedef int($\ast$ {\bfseries Callback}) (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a2f6026d8afef0d78ae014131d216385a}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a2f6026d8afef0d78ae014131d216385a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Byte\+Array(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_aab3f9bdfadbb3eb07b6f2510cf264813}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_aab3f9bdfadbb3eb07b6f2510cf264813}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Fixed\+Double\+Array(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a0c185adced0b1ae5aeccc63f1100d3b2}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a0c185adced0b1ae5aeccc63f1100d3b2}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+J\+S\+Object(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a8351f38e4a5f8b4f9be5636b2f563b8b}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a8351f38e4a5f8b4f9be5636b2f563b8b}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Seq\+One\+Byte\+String(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a186169bd556c55aec81c03d95aeddcd6}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a186169bd556c55aec81c03d95aeddcd6}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Seq\+Two\+Byte\+String(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_aea90bdffdca9f71c804a00bff7f12db2}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_aea90bdffdca9f71c804a00bff7f12db2}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Free\+Space(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a3682ae947d5738ab2a7e9414c0f90ecb}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a3682ae947d5738ab2a7e9414c0f90ecb}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+J\+S\+Array\+Buffer(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a62cb94a5120a04d239e05d94ee70a050}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a62cb94a5120a04d239e05d94ee70a050}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static int Visit\+Bytecode\+Array(\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_a2845eb6ba99f20634f3858e93f6744ba}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_a2845eb6ba99f20634f3858e93f6744ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_visitor_dispatch_table}{Visitor\+Dispatch\+Table}$<$ Callback $>$ {\bfseries table\+\_\+}\hypertarget{classv8_1_1internal_1_1_static_new_space_visitor_af17732a26562753f2735430fce0831bc}{}\label{classv8_1_1internal_1_1_static_new_space_visitor_af17732a26562753f2735430fce0831bc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/objects-\/visiting.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/objects-\/visiting-\/inl.\+h\end{DoxyCompactItemize}

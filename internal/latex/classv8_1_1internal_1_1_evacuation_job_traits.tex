@@ -1,0 +1,31 @@
+\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits}{}\section{v8\+:\+:internal\+:\+:Evacuation\+Job\+Traits Class Reference}
+\label{classv8_1_1internal_1_1_evacuation_job_traits}\index{v8\+::internal\+::\+Evacuation\+Job\+Traits@{v8\+::internal\+::\+Evacuation\+Job\+Traits}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int $\ast$ {\bfseries Per\+Page\+Data}\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits_a46455801a687b9e88da469dcf5d0fb9a}{}\label{classv8_1_1internal_1_1_evacuation_job_traits_a46455801a687b9e88da469dcf5d0fb9a}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator}{Mark\+Compact\+Collector\+::\+Evacuator} $\ast$ {\bfseries Per\+Task\+Data}\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits_aafc096adcf4ab8dafb0f78286c8bb2dc}{}\label{classv8_1_1internal_1_1_evacuation_job_traits_aafc096adcf4ab8dafb0f78286c8bb2dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Process\+Page\+In\+Parallel} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator}{Per\+Task\+Data} evacuator, \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, Per\+Page\+Data)\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits_a24ba514c41c3cb2d4289b4c619058c09}{}\label{classv8_1_1internal_1_1_evacuation_job_traits_a24ba514c41c3cb2d4289b4c619058c09}
+
+\item 
+static void {\bfseries Finalize\+Page\+Sequentially} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, bool success, Per\+Page\+Data data)\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits_a4c291013e18a8c95f729df5e821d1765}{}\label{classv8_1_1internal_1_1_evacuation_job_traits_a4c291013e18a8c95f729df5e821d1765}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool {\bfseries Need\+Sequential\+Finalization} = true\hypertarget{classv8_1_1internal_1_1_evacuation_job_traits_a592f9f187001094ca648177242f3d2ef}{}\label{classv8_1_1internal_1_1_evacuation_job_traits_a592f9f187001094ca648177242f3d2ef}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key}{}\section{v8\+:\+:internal\+:\+:Code\+Cache\+Hash\+Table\+Key Class Reference}
+\label{classv8_1_1internal_1_1_code_cache_hash_table_key}\index{v8\+::internal\+::\+Code\+Cache\+Hash\+Table\+Key@{v8\+::internal\+::\+Code\+Cache\+Hash\+Table\+Key}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Code\+Cache\+Hash\+Table\+Key\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_code_cache_hash_table_key}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Code\+Cache\+Hash\+Table\+Key} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Code\+::\+Flags flags)\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a9db3b32dd54b1b58aa819c7d97c80a9f}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a9db3b32dd54b1b58aa819c7d97c80a9f}
+
+\item 
+{\bfseries Code\+Cache\+Hash\+Table\+Key} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code)\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_ab77301648a515b6214cebdbed170aff3}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_ab77301648a515b6214cebdbed170aff3}
+
+\item 
+bool {\bfseries Is\+Match} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$other) override\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a38a66d8982dd183aaf796e7d6b79bd12}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a38a66d8982dd183aaf796e7d6b79bd12}
+
+\item 
+uint32\+\_\+t {\bfseries Hash} () override\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a1f9a98316741b8cfca8e65bc023d69b0}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a1f9a98316741b8cfca8e65bc023d69b0}
+
+\item 
+uint32\+\_\+t {\bfseries Hash\+For\+Object} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$obj) override\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a062b47384fb77f5a064337d1a608a769}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a062b47384fb77f5a064337d1a608a769}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries As\+Handle} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate) override\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_af41f04e060483fd8363542e4f7802aac}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_af41f04e060483fd8363542e4f7802aac}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries Name\+Flags\+Hash\+Helper} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Code\+::\+Flags flags)\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a02223a374cae60f793d50dfaa6f99a9c}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a02223a374cae60f793d50dfaa6f99a9c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ {\bfseries name\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a2f972645be30a27978aeb82d527d3f14}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a2f972645be30a27978aeb82d527d3f14}
+
+\item 
+Code\+::\+Flags {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_aa5f8a3324172864f2741c3fe33a5400e}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_aa5f8a3324172864f2741c3fe33a5400e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries code\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_cache_hash_table_key_a2267affd6e57c691804c81a224224c73}{}\label{classv8_1_1internal_1_1_code_cache_hash_table_key_a2267affd6e57c691804c81a224224c73}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

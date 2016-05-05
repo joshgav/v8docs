@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1_hot_objects_list}{}\section{v8\+:\+:internal\+:\+:Hot\+Objects\+List Class Reference}
+\label{classv8_1_1internal_1_1_hot_objects_list}\index{v8\+::internal\+::\+Hot\+Objects\+List@{v8\+::internal\+::\+Hot\+Objects\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_hot_objects_list_ae2e8f66dc659ed64711f40b877562c97}{}\label{classv8_1_1internal_1_1_hot_objects_list_ae2e8f66dc659ed64711f40b877562c97}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries Get} (int index)\hypertarget{classv8_1_1internal_1_1_hot_objects_list_aed0128ddec1cbdfd2d07c21426f2abea}{}\label{classv8_1_1internal_1_1_hot_objects_list_aed0128ddec1cbdfd2d07c21426f2abea}
+
+\item 
+int {\bfseries Find} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_hot_objects_list_ac8b67deab7ff6f601d7c8350455696a1}{}\label{classv8_1_1internal_1_1_hot_objects_list_ac8b67deab7ff6f601d7c8350455696a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Not\+Found} = -\/1\hypertarget{classv8_1_1internal_1_1_hot_objects_list_a2d7691ba467e300e60a5b53d7bc93827}{}\label{classv8_1_1internal_1_1_hot_objects_list_a2d7691ba467e300e60a5b53d7bc93827}
+
+\item 
+static const int {\bfseries k\+Size} = 8\hypertarget{classv8_1_1internal_1_1_hot_objects_list_ac0fe4a67bfcd04ddaa0e406590c2c942}{}\label{classv8_1_1internal_1_1_hot_objects_list_ac0fe4a67bfcd04ddaa0e406590c2c942}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (I\+S\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+F\+\_\+\+T\+WO(k\+Size))\hypertarget{classv8_1_1internal_1_1_hot_objects_list_afd2dab0dbe91a93a568b77ccc25cefe9}{}\label{classv8_1_1internal_1_1_hot_objects_list_afd2dab0dbe91a93a568b77ccc25cefe9}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_hot_objects_list}{Hot\+Objects\+List})\hypertarget{classv8_1_1internal_1_1_hot_objects_list_afb836d7a9e66a5899f9c526d0eef6095}{}\label{classv8_1_1internal_1_1_hot_objects_list_afb836d7a9e66a5899f9c526d0eef6095}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries circular\+\_\+queue\+\_\+} \mbox{[}k\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_hot_objects_list_ab3fb4ba142dc5d86be98713f9e0601b1}{}\label{classv8_1_1internal_1_1_hot_objects_list_ab3fb4ba142dc5d86be98713f9e0601b1}
+
+\item 
+int {\bfseries index\+\_\+}\hypertarget{classv8_1_1internal_1_1_hot_objects_list_a203150073b644003ba60ab176e359431}{}\label{classv8_1_1internal_1_1_hot_objects_list_a203150073b644003ba60ab176e359431}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Size\+Mask} = k\+Size -\/ 1\hypertarget{classv8_1_1internal_1_1_hot_objects_list_a7670ea6f4ea7e2544471d658d8f25677}{}\label{classv8_1_1internal_1_1_hot_objects_list_a7670ea6f4ea7e2544471d658d8f25677}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/serializer-\/common.\+h\end{DoxyCompactItemize}

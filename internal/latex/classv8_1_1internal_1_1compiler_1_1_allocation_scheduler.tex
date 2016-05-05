@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Allocation\+Scheduler Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler}\index{v8\+::internal\+::compiler\+::\+Allocation\+Scheduler@{v8\+::internal\+::compiler\+::\+Allocation\+Scheduler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Allocation\+Scheduler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Allocation\+Scheduler} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a956ef2950ead9f2b11fa045d5bd2e810}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a956ef2950ead9f2b11fa045d5bd2e810}
+
+\item 
+void {\bfseries Schedule} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a38c05c59502d3683407a5c73844085f8}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a38c05c59502d3683407a5c73844085f8}
+
+\item 
+void {\bfseries Schedule} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_group}{Live\+Range\+Group} $\ast$group)\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_ac0363114e1cb39d114e57a9466dc00b6}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_ac0363114e1cb39d114e57a9466dc00b6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_allocation_candidate}{Allocation\+Candidate} {\bfseries Get\+Next} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a9701278a58e1819b4a0b4e6370bd7de7}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a9701278a58e1819b4a0b4e6370bd7de7}
+
+\item 
+bool {\bfseries empty} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_adfd981f23281187a10e3fab7e91593eb}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_adfd981f23281187a10e3fab7e91593eb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_zone_priority_queue}{Zone\+Priority\+Queue}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_allocation_candidate}{Allocation\+Candidate} $>$ {\bfseries Schedule\+Queue}\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a043b2cf4cd6202733136b679677ec127}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a043b2cf4cd6202733136b679677ec127}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler}{Allocation\+Scheduler})\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_ae506454e2c0219bfc886c8cfe60a8c8f}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_ae506454e2c0219bfc886c8cfe60a8c8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_priority_queue}{Schedule\+Queue} {\bfseries queue\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a1783d7d2c7ad1c4169932562f85c95e3}{}\label{classv8_1_1internal_1_1compiler_1_1_allocation_scheduler_a1783d7d2c7ad1c4169932562f85c95e3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/greedy-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/greedy-\/allocator.\+cc\end{DoxyCompactItemize}

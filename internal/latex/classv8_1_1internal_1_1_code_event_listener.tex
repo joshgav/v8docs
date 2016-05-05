@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1internal_1_1_code_event_listener}{}\section{v8\+:\+:internal\+:\+:Code\+Event\+Listener Class Reference}
+\label{classv8_1_1internal_1_1_code_event_listener}\index{v8\+::internal\+::\+Code\+Event\+Listener@{v8\+::internal\+::\+Code\+Event\+Listener}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Code\+Event\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.723077cm]{classv8_1_1internal_1_1_code_event_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, const char $\ast$comment)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_ac5d81904079b2b36f398288b1b6b2a0e}{}\label{classv8_1_1internal_1_1_code_event_listener_ac5d81904079b2b36f398288b1b6b2a0e}
+
+\item 
+virtual void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a3685faa8e1c4a65ab1f7cf1bd82eed3a}{}\label{classv8_1_1internal_1_1_code_event_listener_a3685faa8e1c4a65ab1f7cf1bd82eed3a}
+
+\item 
+virtual void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a8f785ecf94c5d9eef42f9d713c8891a4}{}\label{classv8_1_1internal_1_1_code_event_listener_a8f785ecf94c5d9eef42f9d713c8891a4}
+
+\item 
+virtual void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$source, int line, int column)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a9c3a11e21c45d1fc6b3596b8dcaabf3e}{}\label{classv8_1_1internal_1_1_code_event_listener_a9c3a11e21c45d1fc6b3596b8dcaabf3e}
+
+\item 
+virtual void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, int args\+\_\+count)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a1fa98884858547396cd0ffcf4f5638e7}{}\label{classv8_1_1internal_1_1_code_event_listener_a1fa98884858547396cd0ffcf4f5638e7}
+
+\item 
+virtual void {\bfseries Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a6196afb9679f746e0b87ca6f818daf87}{}\label{classv8_1_1internal_1_1_code_event_listener_a6196afb9679f746e0b87ca6f818daf87}
+
+\item 
+virtual void {\bfseries Getter\+Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a75ddb9c2237e17f9cced780be7934d26}{}\label{classv8_1_1internal_1_1_code_event_listener_a75ddb9c2237e17f9cced780be7934d26}
+
+\item 
+virtual void {\bfseries Setter\+Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a84eb541598ca417e605faf8da02aa93b}{}\label{classv8_1_1internal_1_1_code_event_listener_a84eb541598ca417e605faf8da02aa93b}
+
+\item 
+virtual void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$source)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a5210c90cc0d08b70b31e01db3d62d325}{}\label{classv8_1_1internal_1_1_code_event_listener_a5210c90cc0d08b70b31e01db3d62d325}
+
+\item 
+virtual void {\bfseries Code\+Move\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$from, Address to)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a91b7e98f4ab12abbd2e2ba65395da7a3}{}\label{classv8_1_1internal_1_1_code_event_listener_a91b7e98f4ab12abbd2e2ba65395da7a3}
+
+\item 
+virtual void {\bfseries Shared\+Function\+Info\+Move\+Event} (Address from, Address to)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a77afc22a53334cc9c5c789483bae6529}{}\label{classv8_1_1internal_1_1_code_event_listener_a77afc22a53334cc9c5c789483bae6529}
+
+\item 
+virtual void {\bfseries Code\+Moving\+G\+C\+Event} ()=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a26220ae93a543e9ead1267ee1d91882b}{}\label{classv8_1_1internal_1_1_code_event_listener_a26220ae93a543e9ead1267ee1d91882b}
+
+\item 
+virtual void {\bfseries Code\+Disable\+Opt\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared)=0\hypertarget{classv8_1_1internal_1_1_code_event_listener_a404c5f54835ba163f72be24c6e303a14}{}\label{classv8_1_1internal_1_1_code_event_listener_a404c5f54835ba163f72be24c6e303a14}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+h\end{DoxyCompactItemize}

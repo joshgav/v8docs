@@ -1,0 +1,41 @@
+\hypertarget{classv8_1_1platform_1_1_task_queue}{}\section{v8\+:\+:platform\+:\+:Task\+Queue Class Reference}
+\label{classv8_1_1platform_1_1_task_queue}\index{v8\+::platform\+::\+Task\+Queue@{v8\+::platform\+::\+Task\+Queue}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Append} (\hyperlink{classv8_1_1_task}{Task} $\ast$task)\hypertarget{classv8_1_1platform_1_1_task_queue_a14698b4a00c503b5a1103c180f1d6126}{}\label{classv8_1_1platform_1_1_task_queue_a14698b4a00c503b5a1103c180f1d6126}
+
+\item 
+\hyperlink{classv8_1_1_task}{Task} $\ast$ {\bfseries Get\+Next} ()\hypertarget{classv8_1_1platform_1_1_task_queue_af9d42325eacac42bfa2e25afe9604169}{}\label{classv8_1_1platform_1_1_task_queue_af9d42325eacac42bfa2e25afe9604169}
+
+\item 
+void {\bfseries Terminate} ()\hypertarget{classv8_1_1platform_1_1_task_queue_a603c0ef6966c3365db6904199488e978}{}\label{classv8_1_1platform_1_1_task_queue_a603c0ef6966c3365db6904199488e978}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1platform_1_1_task_queue}{Task\+Queue})\hypertarget{classv8_1_1platform_1_1_task_queue_ae2a89e6876b657cc3fbc4cff2c247ecd}{}\label{classv8_1_1platform_1_1_task_queue_ae2a89e6876b657cc3fbc4cff2c247ecd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries process\+\_\+queue\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1platform_1_1_task_queue_ac0886ec14c15a9169e6eae88218bb2be}{}\label{classv8_1_1platform_1_1_task_queue_ac0886ec14c15a9169e6eae88218bb2be}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries lock\+\_\+}\hypertarget{classv8_1_1platform_1_1_task_queue_a8a95c21dadce1d499e5c0ad9d4e6573f}{}\label{classv8_1_1platform_1_1_task_queue_a8a95c21dadce1d499e5c0ad9d4e6573f}
+
+\item 
+std\+::queue$<$ \hyperlink{classv8_1_1_task}{Task} $\ast$ $>$ {\bfseries task\+\_\+queue\+\_\+}\hypertarget{classv8_1_1platform_1_1_task_queue_a0b25953fcc74a57266791c3c6cdf1a51}{}\label{classv8_1_1platform_1_1_task_queue_a0b25953fcc74a57266791c3c6cdf1a51}
+
+\item 
+bool {\bfseries terminated\+\_\+}\hypertarget{classv8_1_1platform_1_1_task_queue_a44af4fe2088b22583ce3c811816c33c2}{}\label{classv8_1_1platform_1_1_task_queue_a44af4fe2088b22583ce3c811816c33c2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/libplatform/task-\/queue.\+h\item 
+/\+Users/joshgav/node/v8/src/libplatform/task-\/queue.\+cc\end{DoxyCompactItemize}

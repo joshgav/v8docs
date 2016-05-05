@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Lookaround Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_lookaround}\index{v8\+::internal\+::\+Reg\+Exp\+Lookaround@{v8\+::internal\+::\+Reg\+Exp\+Lookaround}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Lookaround\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_reg_exp_lookaround}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_reg_exp_lookaround_1_1_builder}{Builder}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries L\+O\+O\+K\+A\+H\+E\+AD}, 
+\\*
+{\bfseries L\+O\+O\+K\+B\+E\+H\+I\+ND}
+ \}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a5982c9f5930a64e1547da44da96836db}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a5982c9f5930a64e1547da44da96836db}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Lookaround} (\hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$body, bool is\+\_\+positive, int capture\+\_\+count, int capture\+\_\+from, Type type)\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a676a682119f03effcc975fe41c0936c1}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a676a682119f03effcc975fe41c0936c1}
+
+\item 
+void $\ast$ {\bfseries Accept} (Reg\+Exp\+Visitor $\ast$visitor, void $\ast$data) override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a42e3aa3233fca1c15774c62d090e7a9f}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a42e3aa3233fca1c15774c62d090e7a9f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries To\+Node} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$on\+\_\+success) override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_aaecf191fb2547c78b12ad372a0467e73}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_aaecf191fb2547c78b12ad372a0467e73}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_lookaround}{Reg\+Exp\+Lookaround} $\ast$ {\bfseries As\+Lookaround} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a39aca1f129b4c5bb07dc8ef10cc4476c}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a39aca1f129b4c5bb07dc8ef10cc4476c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_interval}{Interval} {\bfseries Capture\+Registers} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a62644443efa0d13d6c44bdae22be1764}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a62644443efa0d13d6c44bdae22be1764}
+
+\item 
+bool {\bfseries Is\+Lookaround} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a454f240cf27a5c395306a2ff038e163e}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a454f240cf27a5c395306a2ff038e163e}
+
+\item 
+bool {\bfseries Is\+Anchored\+At\+Start} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a16c0ff4325d453275b2c390efbc14a43}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a16c0ff4325d453275b2c390efbc14a43}
+
+\item 
+int {\bfseries min\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a15837ba2d732a0809843d745a2e17521}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a15837ba2d732a0809843d745a2e17521}
+
+\item 
+int {\bfseries max\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_af20bddc3c92ef40530b7ee02a6e26b4e}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_af20bddc3c92ef40530b7ee02a6e26b4e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$ {\bfseries body} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_ab538d061070c36a13a1e951db73f3915}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_ab538d061070c36a13a1e951db73f3915}
+
+\item 
+bool {\bfseries is\+\_\+positive} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a3af802a6dffd466eaabbe8e343e9184f}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a3af802a6dffd466eaabbe8e343e9184f}
+
+\item 
+int {\bfseries capture\+\_\+count} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a29d3075cfac50bfcf70681cd923b25ff}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a29d3075cfac50bfcf70681cd923b25ff}
+
+\item 
+int {\bfseries capture\+\_\+from} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a37ad3a74be5bfa6d6ba9339e40ea7dff}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a37ad3a74be5bfa6d6ba9339e40ea7dff}
+
+\item 
+Type {\bfseries type} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_ae595543691ac367a51658d9be5e3aa5b}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_ae595543691ac367a51658d9be5e3aa5b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$ {\bfseries body\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a84bf4c204d9f441b1195239af8a49d90}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a84bf4c204d9f441b1195239af8a49d90}
+
+\item 
+bool {\bfseries is\+\_\+positive\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a8e3996d7e11bf906276b43a988c333e6}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a8e3996d7e11bf906276b43a988c333e6}
+
+\item 
+int {\bfseries capture\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a0db42f1f9e7b9ff3c8b947c49dd0c8b5}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a0db42f1f9e7b9ff3c8b947c49dd0c8b5}
+
+\item 
+int {\bfseries capture\+\_\+from\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a979e61649178c1cba85f66ad25708048}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a979e61649178c1cba85f66ad25708048}
+
+\item 
+Type {\bfseries type\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_lookaround_a2c593a36466a230df07168d2d81ed050}{}\label{classv8_1_1internal_1_1_reg_exp_lookaround_a2c593a36466a230df07168d2d81ed050}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

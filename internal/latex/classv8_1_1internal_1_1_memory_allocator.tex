@@ -1,0 +1,205 @@
+\hypertarget{classv8_1_1internal_1_1_memory_allocator}{}\section{v8\+:\+:internal\+:\+:Memory\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1_memory_allocator}\index{v8\+::internal\+::\+Memory\+Allocator@{v8\+::internal\+::\+Memory\+Allocator}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_memory_allocator_1_1_memory_allocation_callback_registration}{Memory\+Allocation\+Callback\+Registration}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper}{Unmapper}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Allocation\+Mode} \{ \\*
+{\bfseries k\+Regular}, 
+\\*
+{\bfseries k\+Pooled}
+ \}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a11e35bec1fa662a922430a198cf7bbab}{}\label{classv8_1_1internal_1_1_memory_allocator_a11e35bec1fa662a922430a198cf7bbab}
+
+\item 
+enum {\bfseries Free\+Mode} \{ \\*
+{\bfseries k\+Full}, 
+\\*
+{\bfseries k\+Pre\+Free\+And\+Queue}, 
+\\*
+{\bfseries k\+Pooled\+And\+Queue}
+ \}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a1c5f0a0deae321ce11d19b7be506ed8b}{}\label{classv8_1_1internal_1_1_memory_allocator_a1c5f0a0deae321ce11d19b7be506ed8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Memory\+Allocator} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_memory_allocator_aac1c43eb76882f367bced94543164335}{}\label{classv8_1_1internal_1_1_memory_allocator_aac1c43eb76882f367bced94543164335}
+
+\item 
+bool {\bfseries Set\+Up} (intptr\+\_\+t max\+\_\+capacity, intptr\+\_\+t capacity\+\_\+executable, intptr\+\_\+t code\+\_\+range\+\_\+size)\hypertarget{classv8_1_1internal_1_1_memory_allocator_aa277df0a26477b6c3df9c98511685c06}{}\label{classv8_1_1internal_1_1_memory_allocator_aa277df0a26477b6c3df9c98511685c06}
+
+\item 
+void {\bfseries Tear\+Down} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a41d0347f476400e5b35fb9f40081471c}{}\label{classv8_1_1internal_1_1_memory_allocator_a41d0347f476400e5b35fb9f40081471c}
+
+\item 
+{\footnotesize template$<$Memory\+Allocator\+::\+Allocation\+Mode alloc\+\_\+mode = k\+Regular, typename Space\+Type $>$ }\\\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries Allocate\+Page} (intptr\+\_\+t size, Space\+Type $\ast$owner, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a9d9fca1cde644395a1dfe2697d87173e}{}\label{classv8_1_1internal_1_1_memory_allocator_a9d9fca1cde644395a1dfe2697d87173e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_large_page}{Large\+Page} $\ast$ {\bfseries Allocate\+Large\+Page} (intptr\+\_\+t size, \hyperlink{classv8_1_1internal_1_1_large_object_space}{Large\+Object\+Space} $\ast$owner, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a38e856602b8fbe0ba032c5cc57bd0f72}{}\label{classv8_1_1internal_1_1_memory_allocator_a38e856602b8fbe0ba032c5cc57bd0f72}
+
+\item 
+{\footnotesize template$<$Memory\+Allocator\+::\+Free\+Mode mode = k\+Full$>$ }\\void {\bfseries Free} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a45142bb4bfeef4b6970fc23bdfa286a4}{}\label{classv8_1_1internal_1_1_memory_allocator_a45142bb4bfeef4b6970fc23bdfa286a4}
+
+\item 
+intptr\+\_\+t {\bfseries Size} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a0e1e4827e1a7833c734af2d992c9b719}{}\label{classv8_1_1internal_1_1_memory_allocator_a0e1e4827e1a7833c734af2d992c9b719}
+
+\item 
+intptr\+\_\+t {\bfseries Size\+Executable} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_ac1bd4519f35220f21ae1b299d95682b3}{}\label{classv8_1_1internal_1_1_memory_allocator_ac1bd4519f35220f21ae1b299d95682b3}
+
+\item 
+intptr\+\_\+t {\bfseries Available} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a46c4c3bcc1674e7b1e8facb4e435998d}{}\label{classv8_1_1internal_1_1_memory_allocator_a46c4c3bcc1674e7b1e8facb4e435998d}
+
+\item 
+intptr\+\_\+t {\bfseries Available\+Executable} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_aa07c912f24a740e537533d67211233f3}{}\label{classv8_1_1internal_1_1_memory_allocator_aa07c912f24a740e537533d67211233f3}
+
+\item 
+intptr\+\_\+t {\bfseries Max\+Available} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_ae9a3874baee3a04e0d5a15fa48fb7a23}{}\label{classv8_1_1internal_1_1_memory_allocator_ae9a3874baee3a04e0d5a15fa48fb7a23}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Outside\+Allocated\+Space} (const void $\ast$address)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a3a6bd72d409f0665e79b6d722ee6e9a0}{}\label{classv8_1_1internal_1_1_memory_allocator_a3a6bd72d409f0665e79b6d722ee6e9a0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries Allocate\+Chunk} (intptr\+\_\+t reserve\+\_\+area\+\_\+size, intptr\+\_\+t commit\+\_\+area\+\_\+size, Executability executable, \hyperlink{classv8_1_1internal_1_1_space}{Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a2eb140916a1ace7dc8bba8f363cc46e5}{}\label{classv8_1_1internal_1_1_memory_allocator_a2eb140916a1ace7dc8bba8f363cc46e5}
+
+\item 
+Address {\bfseries Reserve\+Aligned\+Memory} (size\+\_\+t requested, size\+\_\+t alignment, \hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$controller)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a970ee92239f45e7e3d73b3c7b259d24d}{}\label{classv8_1_1internal_1_1_memory_allocator_a970ee92239f45e7e3d73b3c7b259d24d}
+
+\item 
+Address {\bfseries Allocate\+Aligned\+Memory} (size\+\_\+t reserve\+\_\+size, size\+\_\+t commit\+\_\+size, size\+\_\+t alignment, Executability executable, \hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$controller)\hypertarget{classv8_1_1internal_1_1_memory_allocator_ab46b93127fa4d64c152008473f9465db}{}\label{classv8_1_1internal_1_1_memory_allocator_ab46b93127fa4d64c152008473f9465db}
+
+\item 
+bool {\bfseries Commit\+Memory} (Address addr, size\+\_\+t size, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a28dc1807acf9a4e1a2cbbe44a1cda03c}{}\label{classv8_1_1internal_1_1_memory_allocator_a28dc1807acf9a4e1a2cbbe44a1cda03c}
+
+\item 
+void {\bfseries Free\+Memory} (\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$reservation, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a570b227a43f8f6a0fd72287ec03ea9ac}{}\label{classv8_1_1internal_1_1_memory_allocator_a570b227a43f8f6a0fd72287ec03ea9ac}
+
+\item 
+void {\bfseries Free\+Memory} (Address addr, size\+\_\+t size, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_aa92f0d4e1500cb293ce34782eb6abc57}{}\label{classv8_1_1internal_1_1_memory_allocator_aa92f0d4e1500cb293ce34782eb6abc57}
+
+\item 
+bool {\bfseries Commit\+Block} (Address start, size\+\_\+t size, Executability executable)\hypertarget{classv8_1_1internal_1_1_memory_allocator_af61bfabd2135e51c98481350167da15d}{}\label{classv8_1_1internal_1_1_memory_allocator_af61bfabd2135e51c98481350167da15d}
+
+\item 
+bool {\bfseries Uncommit\+Block} (Address start, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a29690b451bbe497371e041731a9d5057}{}\label{classv8_1_1internal_1_1_memory_allocator_a29690b451bbe497371e041731a9d5057}
+
+\item 
+void {\bfseries Zap\+Block} (Address start, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a5eb45a18bdab6189ae18dc1df48d8005}{}\label{classv8_1_1internal_1_1_memory_allocator_a5eb45a18bdab6189ae18dc1df48d8005}
+
+\item 
+void {\bfseries Perform\+Allocation\+Callback} (Object\+Space space, Allocation\+Action action, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_memory_allocator_ad432ef0063273e468da05b7f1c29d78b}{}\label{classv8_1_1internal_1_1_memory_allocator_ad432ef0063273e468da05b7f1c29d78b}
+
+\item 
+void {\bfseries Add\+Memory\+Allocation\+Callback} (Memory\+Allocation\+Callback callback, Object\+Space space, Allocation\+Action action)\hypertarget{classv8_1_1internal_1_1_memory_allocator_aefc9142ca4bdf32a06ef0eba318a656c}{}\label{classv8_1_1internal_1_1_memory_allocator_aefc9142ca4bdf32a06ef0eba318a656c}
+
+\item 
+void {\bfseries Remove\+Memory\+Allocation\+Callback} (Memory\+Allocation\+Callback callback)\hypertarget{classv8_1_1internal_1_1_memory_allocator_adaec22ea2f91dbd2021093ab19305321}{}\label{classv8_1_1internal_1_1_memory_allocator_adaec22ea2f91dbd2021093ab19305321}
+
+\item 
+bool {\bfseries Memory\+Allocation\+Callback\+Registered} (Memory\+Allocation\+Callback callback)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a1c2ad0f5d133bed2986f7ef40e60919a}{}\label{classv8_1_1internal_1_1_memory_allocator_a1c2ad0f5d133bed2986f7ef40e60919a}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT bool {\bfseries Commit\+Executable\+Memory} (\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$vm, Address start, size\+\_\+t commit\+\_\+size, size\+\_\+t reserved\+\_\+size)\hypertarget{classv8_1_1internal_1_1_memory_allocator_ae3e0006639ea9f5e27e482c5304a66ca}{}\label{classv8_1_1internal_1_1_memory_allocator_ae3e0006639ea9f5e27e482c5304a66ca}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_range}{Code\+Range} $\ast$ {\bfseries code\+\_\+range} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a3aa36333ed70fa6ea99ab591080ac805}{}\label{classv8_1_1internal_1_1_memory_allocator_a3aa36333ed70fa6ea99ab591080ac805}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper}{Unmapper} $\ast$ {\bfseries unmapper} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a47e626016282b63c20f45fbf981d496d}{}\label{classv8_1_1internal_1_1_memory_allocator_a47e626016282b63c20f45fbf981d496d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Code\+Page\+Guard\+Start\+Offset} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_ad43cb45b7e648d7d94dd74569e7cdb14}{}\label{classv8_1_1internal_1_1_memory_allocator_ad43cb45b7e648d7d94dd74569e7cdb14}
+
+\item 
+static int {\bfseries Code\+Page\+Guard\+Size} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a0590c1c4b4d8ee366b602d15e36836d8}{}\label{classv8_1_1internal_1_1_memory_allocator_a0590c1c4b4d8ee366b602d15e36836d8}
+
+\item 
+static int {\bfseries Code\+Page\+Area\+Start\+Offset} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a6a6e23c9c65d7ca6d0d67b0928ca754b}{}\label{classv8_1_1internal_1_1_memory_allocator_a6a6e23c9c65d7ca6d0d67b0928ca754b}
+
+\item 
+static int {\bfseries Code\+Page\+Area\+End\+Offset} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a18785f4628e23735eff19578aecb7906}{}\label{classv8_1_1internal_1_1_memory_allocator_a18785f4628e23735eff19578aecb7906}
+
+\item 
+static int {\bfseries Code\+Page\+Area\+Size} ()\hypertarget{classv8_1_1internal_1_1_memory_allocator_a486888d82bb8401f97f88a192986bb4b}{}\label{classv8_1_1internal_1_1_memory_allocator_a486888d82bb8401f97f88a192986bb4b}
+
+\item 
+static int {\bfseries Page\+Area\+Size} (Allocation\+Space space)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a2ae4299e11848cb944938601d7da24a2}{}\label{classv8_1_1internal_1_1_memory_allocator_a2ae4299e11848cb944938601d7da24a2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Pre\+Free\+Memory} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_allocator_ae2c689d0539a87ee5ce674c52cfa2f44}{}\label{classv8_1_1internal_1_1_memory_allocator_ae2c689d0539a87ee5ce674c52cfa2f44}
+
+\item 
+void {\bfseries Perform\+Free\+Memory} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a869f4348cb329cff6ee1d6963cf15915}{}\label{classv8_1_1internal_1_1_memory_allocator_a869f4348cb329cff6ee1d6963cf15915}
+
+\item 
+{\footnotesize template$<$typename Space\+Type $>$ }\\\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$ {\bfseries Allocate\+Page\+Pooled} (Space\+Type $\ast$owner)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a2f7ed06d6f1cfae71964d4bec8eb8065}{}\label{classv8_1_1internal_1_1_memory_allocator_a2f7ed06d6f1cfae71964d4bec8eb8065}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries Initialize\+Pages\+In\+Chunk} (int chunk\+\_\+id, int pages\+\_\+in\+\_\+chunk, \hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$owner)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a8da7c61175d0e94515e5b4e2e2f2ce43}{}\label{classv8_1_1internal_1_1_memory_allocator_a8da7c61175d0e94515e5b4e2e2f2ce43}
+
+\item 
+void {\bfseries Update\+Allocated\+Space\+Limits} (void $\ast$low, void $\ast$high)\hypertarget{classv8_1_1internal_1_1_memory_allocator_a462aec1c2af0580710f9841ea0a7e2dc}{}\label{classv8_1_1internal_1_1_memory_allocator_a462aec1c2af0580710f9841ea0a7e2dc}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_memory_allocator}{Memory\+Allocator})\hypertarget{classv8_1_1internal_1_1_memory_allocator_ac98b096c1567f0b53c8946ebd197c41a}{}\label{classv8_1_1internal_1_1_memory_allocator_ac98b096c1567f0b53c8946ebd197c41a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a420470b1c4ecfc450ff061d0c14a63b8}{}\label{classv8_1_1internal_1_1_memory_allocator_a420470b1c4ecfc450ff061d0c14a63b8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_range}{Code\+Range} $\ast$ {\bfseries code\+\_\+range\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_aed6785a97c5718faac1d99d81583ef85}{}\label{classv8_1_1internal_1_1_memory_allocator_aed6785a97c5718faac1d99d81583ef85}
+
+\item 
+intptr\+\_\+t {\bfseries capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a5c3ebfee3fcfeaa1c1aaf7f3dd891215}{}\label{classv8_1_1internal_1_1_memory_allocator_a5c3ebfee3fcfeaa1c1aaf7f3dd891215}
+
+\item 
+intptr\+\_\+t {\bfseries capacity\+\_\+executable\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a1d7f9e9d61eac6b49a36048310f55230}{}\label{classv8_1_1internal_1_1_memory_allocator_a1d7f9e9d61eac6b49a36048310f55230}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ intptr\+\_\+t $>$ {\bfseries size\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a4e9e914582299bf3bb81a99975b83b39}{}\label{classv8_1_1internal_1_1_memory_allocator_a4e9e914582299bf3bb81a99975b83b39}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ intptr\+\_\+t $>$ {\bfseries size\+\_\+executable\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a4907d6508143a84fa1d68cc6d067e6a0}{}\label{classv8_1_1internal_1_1_memory_allocator_a4907d6508143a84fa1d68cc6d067e6a0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ void $\ast$ $>$ {\bfseries lowest\+\_\+ever\+\_\+allocated\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a5e91d503636639b2e1e6c6b9887a6264}{}\label{classv8_1_1internal_1_1_memory_allocator_a5e91d503636639b2e1e6c6b9887a6264}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_value}{Atomic\+Value}$<$ void $\ast$ $>$ {\bfseries highest\+\_\+ever\+\_\+allocated\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a652d2ade164fef1525d4263ac9838347}{}\label{classv8_1_1internal_1_1_memory_allocator_a652d2ade164fef1525d4263ac9838347}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{structv8_1_1internal_1_1_memory_allocator_1_1_memory_allocation_callback_registration}{Memory\+Allocation\+Callback\+Registration} $>$ {\bfseries memory\+\_\+allocation\+\_\+callbacks\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a0e113300a0c7d43701d63540e17439c4}{}\label{classv8_1_1internal_1_1_memory_allocator_a0e113300a0c7d43701d63540e17439c4}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} {\bfseries last\+\_\+chunk\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_ae16db4da99ca7219a4b9c1ac9de8351a}{}\label{classv8_1_1internal_1_1_memory_allocator_ae16db4da99ca7219a4b9c1ac9de8351a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_memory_allocator_1_1_unmapper}{Unmapper} {\bfseries unmapper\+\_\+}\hypertarget{classv8_1_1internal_1_1_memory_allocator_a3077cf805d1e4e124f9b76dc5cc522cc}{}\label{classv8_1_1internal_1_1_memory_allocator_a3077cf805d1e4e124f9b76dc5cc522cc}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Test\+Code\+Range\+Scope}\hypertarget{classv8_1_1internal_1_1_memory_allocator_ad80dbbca5b659bae6d1837b48e6df17f}{}\label{classv8_1_1internal_1_1_memory_allocator_ad80dbbca5b659bae6d1837b48e6df17f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

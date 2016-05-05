@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection}{}\section{v8\+:\+:internal\+:\+:Cpu\+Profiles\+Collection Class Reference}
+\label{classv8_1_1internal_1_1_cpu_profiles_collection}\index{v8\+::internal\+::\+Cpu\+Profiles\+Collection@{v8\+::internal\+::\+Cpu\+Profiles\+Collection}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Cpu\+Profiles\+Collection} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a61625974306812831897143ea5dc3e0e}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a61625974306812831897143ea5dc3e0e}
+
+\item 
+bool {\bfseries Start\+Profiling} (const char $\ast$title, bool record\+\_\+samples)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a3b3d660ce79d37aba5ba7479d2f03f2b}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a3b3d660ce79d37aba5ba7479d2f03f2b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_cpu_profile}{Cpu\+Profile} $\ast$ {\bfseries Stop\+Profiling} (const char $\ast$title)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_ae11f54582389f8e972760151438df330}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_ae11f54582389f8e972760151438df330}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_cpu_profile}{Cpu\+Profile} $\ast$ $>$ $\ast$ {\bfseries profiles} ()\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a891193b036afc4dd4f032fa4088b9916}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a891193b036afc4dd4f032fa4088b9916}
+
+\item 
+const char $\ast$ {\bfseries Get\+Name} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a3013fbd52896673bb93ec1ed8f5a4e01}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a3013fbd52896673bb93ec1ed8f5a4e01}
+
+\item 
+const char $\ast$ {\bfseries Get\+Name} (int args\+\_\+count)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a1e6314d9d094fef12d5dfaf8342636a9}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a1e6314d9d094fef12d5dfaf8342636a9}
+
+\item 
+const char $\ast$ {\bfseries Get\+Function\+Name} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a42312f9ef00d25758325a14afe1d695a}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a42312f9ef00d25758325a14afe1d695a}
+
+\item 
+const char $\ast$ {\bfseries Get\+Function\+Name} (const char $\ast$name)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_aeb63cb9ff59e5585d9c0c82396c6f82d}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_aeb63cb9ff59e5585d9c0c82396c6f82d}
+
+\item 
+bool {\bfseries Is\+Last\+Profile} (const char $\ast$title)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_ac5981b296e5fdb7fb06c22dab3548d64}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_ac5981b296e5fdb7fb06c22dab3548d64}
+
+\item 
+void {\bfseries Remove\+Profile} (\hyperlink{classv8_1_1internal_1_1_cpu_profile}{Cpu\+Profile} $\ast$profile)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a4c4bf98364eb1a14e61667f1893faeb4}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a4c4bf98364eb1a14e61667f1893faeb4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ {\bfseries New\+Code\+Entry} (Logger\+::\+Log\+Events\+And\+Tags tag, const char $\ast$name, const char $\ast$name\+\_\+prefix=Code\+Entry\+::k\+Empty\+Name\+Prefix, const char $\ast$resource\+\_\+name=Code\+Entry\+::k\+Empty\+Resource\+Name, int line\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Line\+Number\+Info, int column\+\_\+number=v8\+::\+Cpu\+Profile\+Node\+::k\+No\+Column\+Number\+Info, \hyperlink{classv8_1_1internal_1_1_j_i_t_line_info_table}{J\+I\+T\+Line\+Info\+Table} $\ast$line\+\_\+info=N\+U\+LL, Address instruction\+\_\+start=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_aa4f91fcedf25af009fc0104f3288939e}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_aa4f91fcedf25af009fc0104f3288939e}
+
+\item 
+void {\bfseries Add\+Path\+To\+Current\+Profiles} (\hyperlink{classv8_1_1base_1_1_time_ticks}{base\+::\+Time\+Ticks} timestamp, const std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ $>$ \&path, int src\+\_\+line, bool update\+\_\+stats)\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a8bd0836f447be202143d43571698ebf8}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a8bd0836f447be202143d43571698ebf8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Simultaneous\+Profiles} = 100\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a3c8efd32f53f7fa8fe100cc188d60be7}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a3c8efd32f53f7fa8fe100cc188d60be7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_cpu_profiles_collection}{Cpu\+Profiles\+Collection})\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a943a5725dd48543d0b9bf72a4df932b2}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a943a5725dd48543d0b9bf72a4df932b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_strings_storage}{Strings\+Storage} {\bfseries function\+\_\+and\+\_\+resource\+\_\+names\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a115787029d519fd3685c4cc7558d87be}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a115787029d519fd3685c4cc7558d87be}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ $>$ {\bfseries code\+\_\+entries\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_acadf4f32dd15ba0167e53e7ea6a06ae0}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_acadf4f32dd15ba0167e53e7ea6a06ae0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_cpu_profile}{Cpu\+Profile} $\ast$ $>$ {\bfseries finished\+\_\+profiles\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a6ee03562316d9d4fc963d384250457c9}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a6ee03562316d9d4fc963d384250457c9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a0888b68a083883cd09c847444f1f45b2}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a0888b68a083883cd09c847444f1f45b2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_cpu_profile}{Cpu\+Profile} $\ast$ $>$ {\bfseries current\+\_\+profiles\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_a0cd0319450c23de667dfcdfc12818ff6}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_a0cd0319450c23de667dfcdfc12818ff6}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries current\+\_\+profiles\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1internal_1_1_cpu_profiles_collection_ad6d709824b056793abd3432b49d892cd}{}\label{classv8_1_1internal_1_1_cpu_profiles_collection_ad6d709824b056793abd3432b49d892cd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

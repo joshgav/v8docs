@@ -1,0 +1,125 @@
+\hypertarget{classv8_1_1internal_1_1_dictionary}{}\section{v8\+:\+:internal\+:\+:Dictionary$<$ Derived, Shape, Key $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_dictionary}\index{v8\+::internal\+::\+Dictionary$<$ Derived, Shape, Key $>$@{v8\+::internal\+::\+Dictionary$<$ Derived, Shape, Key $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Dictionary$<$ Derived, Shape, Key $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classv8_1_1internal_1_1_dictionary}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Sort\+Mode} \{ \\*
+{\bfseries U\+N\+S\+O\+R\+T\+ED}, 
+\\*
+{\bfseries S\+O\+R\+T\+ED}
+ \}\hypertarget{classv8_1_1internal_1_1_dictionary_a0090026b780259a31ce767ac796c6200}{}\label{classv8_1_1internal_1_1_dictionary_a0090026b780259a31ce767ac796c6200}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Value\+At} (int entry)\hypertarget{classv8_1_1internal_1_1_dictionary_a51c4bded7e6db0ddf3a4e97edf2127d5}{}\label{classv8_1_1internal_1_1_dictionary_a51c4bded7e6db0ddf3a4e97edf2127d5}
+
+\item 
+void {\bfseries Value\+At\+Put} (int entry, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_dictionary_abbcb17081750bfa03a130632306d6f51}{}\label{classv8_1_1internal_1_1_dictionary_abbcb17081750bfa03a130632306d6f51}
+
+\item 
+Property\+Details {\bfseries Details\+At} (int entry)\hypertarget{classv8_1_1internal_1_1_dictionary_ab21eae90f16085474df143d165453d15}{}\label{classv8_1_1internal_1_1_dictionary_ab21eae90f16085474df143d165453d15}
+
+\item 
+void {\bfseries Details\+At\+Put} (int entry, Property\+Details value)\hypertarget{classv8_1_1internal_1_1_dictionary_ac7ca3816f19a4ce1daeb3f5de1f3855b}{}\label{classv8_1_1internal_1_1_dictionary_ac7ca3816f19a4ce1daeb3f5de1f3855b}
+
+\item 
+bool {\bfseries Is\+Deleted} (int entry)\hypertarget{classv8_1_1internal_1_1_dictionary_a8e96ee95d576a6d97d7a204ae3b75b89}{}\label{classv8_1_1internal_1_1_dictionary_a8e96ee95d576a6d97d7a204ae3b75b89}
+
+\item 
+void {\bfseries Copy\+Values\+To} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$elements)\hypertarget{classv8_1_1internal_1_1_dictionary_aeb39c4273e0be7d10b8cfa017bd4c6f5}{}\label{classv8_1_1internal_1_1_dictionary_aeb39c4273e0be7d10b8cfa017bd4c6f5}
+
+\item 
+int {\bfseries Number\+Of\+Elements\+Filter\+Attributes} (\hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter} filter)\hypertarget{classv8_1_1internal_1_1_dictionary_aa85eb29ea0aec478bc408c0c6b5d6284}{}\label{classv8_1_1internal_1_1_dictionary_aa85eb29ea0aec478bc408c0c6b5d6284}
+
+\item 
+int {\bfseries Number\+Of\+Enum\+Elements} ()\hypertarget{classv8_1_1internal_1_1_dictionary_a704fbe365b3bcd68e9e59c272a30fe23}{}\label{classv8_1_1internal_1_1_dictionary_a704fbe365b3bcd68e9e59c272a30fe23}
+
+\item 
+void {\bfseries Copy\+Enum\+Keys\+To} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$storage)\hypertarget{classv8_1_1internal_1_1_dictionary_ac64cb197e3683cd3a26d929fa61768d4}{}\label{classv8_1_1internal_1_1_dictionary_ac64cb197e3683cd3a26d929fa61768d4}
+
+\item 
+void {\bfseries Set\+Next\+Enumeration\+Index} (int index)\hypertarget{classv8_1_1internal_1_1_dictionary_a77837a47ebe1937fd3b0cccc2b2fbd4b}{}\label{classv8_1_1internal_1_1_dictionary_a77837a47ebe1937fd3b0cccc2b2fbd4b}
+
+\item 
+int {\bfseries Next\+Enumeration\+Index} ()\hypertarget{classv8_1_1internal_1_1_dictionary_af1df140b75b3e96cb9211faca31c7f8f}{}\label{classv8_1_1internal_1_1_dictionary_af1df140b75b3e96cb9211faca31c7f8f}
+
+\item 
+void {\bfseries Set\+Requires\+Copy\+On\+Capacity\+Change} ()\hypertarget{classv8_1_1internal_1_1_dictionary_a6a02651858ecdf58b917c5a8ec9641ef}{}\label{classv8_1_1internal_1_1_dictionary_a6a02651858ecdf58b917c5a8ec9641ef}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries Slow\+Reverse\+Lookup} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_dictionary_ac4e09479a5db5eeb3fc72b24c5af1325}{}\label{classv8_1_1internal_1_1_dictionary_ac4e09479a5db5eeb3fc72b24c5af1325}
+
+\item 
+void {\bfseries Set\+Entry} (int entry, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_dictionary_a7c06c3dbd747928f8f7f93ffbebc331a}{}\label{classv8_1_1internal_1_1_dictionary_a7c06c3dbd747928f8f7f93ffbebc331a}
+
+\item 
+void {\bfseries Set\+Entry} (int entry, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, Property\+Details details)\hypertarget{classv8_1_1internal_1_1_dictionary_a5ffecfeed3054083564312029b8b0dd0}{}\label{classv8_1_1internal_1_1_dictionary_a5ffecfeed3054083564312029b8b0dd0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Delete\+Property} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary, int entry)\hypertarget{classv8_1_1internal_1_1_dictionary_a48a5047e2d7edde0463d79980a16041b}{}\label{classv8_1_1internal_1_1_dictionary_a48a5047e2d7edde0463d79980a16041b}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ {\bfseries Shrink} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary, Key key)\hypertarget{classv8_1_1internal_1_1_dictionary_aae05e9e26a511fba0d89a0d83d801b4d}{}\label{classv8_1_1internal_1_1_dictionary_aae05e9e26a511fba0d89a0d83d801b4d}
+
+\item 
+static void {\bfseries Collect\+Keys\+To} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_dictionary}{Dictionary}$<$ Derived, Shape, Key $>$ $>$ dictionary, Key\+Accumulator $\ast$keys, \hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter} filter)\hypertarget{classv8_1_1internal_1_1_dictionary_a5384683d07782dd361117777bac924b9}{}\label{classv8_1_1internal_1_1_dictionary_a5384683d07782dd361117777bac924b9}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int at\+\_\+least\+\_\+space\+\_\+for, Pretenure\+Flag pretenure=N\+O\+T\+\_\+\+T\+E\+N\+U\+R\+ED)\hypertarget{classv8_1_1internal_1_1_dictionary_a1e58e4d3d15a70c2065fac79b8bff262}{}\label{classv8_1_1internal_1_1_dictionary_a1e58e4d3d15a70c2065fac79b8bff262}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ {\bfseries Ensure\+Capacity} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ obj, int n, Key key)\hypertarget{classv8_1_1internal_1_1_dictionary_a3278fe262a0a67f04c43fdca7079b288}{}\label{classv8_1_1internal_1_1_dictionary_a3278fe262a0a67f04c43fdca7079b288}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ {\bfseries Add} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary, Key key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, Property\+Details details)\hypertarget{classv8_1_1internal_1_1_dictionary_a6888a0be89612ae10da310bae830517d}{}\label{classv8_1_1internal_1_1_dictionary_a6888a0be89612ae10da310bae830517d}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Build\+Iteration\+Indices\+Array} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary)\hypertarget{classv8_1_1internal_1_1_dictionary_a317b86ba6047426243e775e9c8a8de9d}{}\label{classv8_1_1internal_1_1_dictionary_a317b86ba6047426243e775e9c8a8de9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ {\bfseries At\+Put} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary, Key key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_dictionary_a600bf7c2263f46de39c7ffcf7b9f0446}{}\label{classv8_1_1internal_1_1_dictionary_a600bf7c2263f46de39c7ffcf7b9f0446}
+
+\item 
+static void {\bfseries Add\+Entry} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary, Key key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, Property\+Details details, uint32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_dictionary_ae20fc319658ca31c6c045487f8096f1b}{}\label{classv8_1_1internal_1_1_dictionary_ae20fc319658ca31c6c045487f8096f1b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Generate\+New\+Enumeration\+Indices} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ Derived $>$ dictionary)\hypertarget{classv8_1_1internal_1_1_dictionary_a8449610555f21b2a3dcbdf7fa8906058}{}\label{classv8_1_1internal_1_1_dictionary_a8449610555f21b2a3dcbdf7fa8906058}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Number\+Key\+Index} = Derived\+Hash\+Table\+::k\+Prefix\+Start\+Index\hypertarget{classv8_1_1internal_1_1_dictionary_a7a69bd868bc49dfac48d810d96477fd0}{}\label{classv8_1_1internal_1_1_dictionary_a7a69bd868bc49dfac48d810d96477fd0}
+
+\item 
+static const int {\bfseries k\+Next\+Enumeration\+Index\+Index} = k\+Max\+Number\+Key\+Index + 1\hypertarget{classv8_1_1internal_1_1_dictionary_a533fe267328e05aaa345589cc5ae69eb}{}\label{classv8_1_1internal_1_1_dictionary_a533fe267328e05aaa345589cc5ae69eb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_hash_table}{Hash\+Table}$<$ Derived, Shape, Key $>$ {\bfseries Derived\+Hash\+Table}\hypertarget{classv8_1_1internal_1_1_dictionary_a78e6772820ab06a86a4a940e6b1242ee}{}\label{classv8_1_1internal_1_1_dictionary_a78e6772820ab06a86a4a940e6b1242ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

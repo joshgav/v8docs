@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1_weak_callback_info}{}\section{v8\+:\+:Weak\+Callback\+Info$<$ T $>$ Class Template Reference}
+\label{classv8_1_1_weak_callback_info}\index{v8\+::\+Weak\+Callback\+Info$<$ T $>$@{v8\+::\+Weak\+Callback\+Info$<$ T $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ {\bfseries Callback}) (const \hyperlink{classv8_1_1_weak_callback_info}{Weak\+Callback\+Info}$<$ T $>$ \&data)\hypertarget{classv8_1_1_weak_callback_info_a75f50fddcc9d5989e9cc04f8ab144d7d}{}\label{classv8_1_1_weak_callback_info_a75f50fddcc9d5989e9cc04f8ab144d7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Weak\+Callback\+Info} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, T $\ast$parameter, void $\ast$internal\+\_\+fields\mbox{[}k\+Internal\+Fields\+In\+Weak\+Callback\mbox{]}, Callback $\ast$callback)\hypertarget{classv8_1_1_weak_callback_info_a0863d1a5dba908ef4ac42298be4ee402}{}\label{classv8_1_1_weak_callback_info_a0863d1a5dba908ef4ac42298be4ee402}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_isolate}{Isolate} $\ast$ {\bfseries Get\+Isolate} () const \hypertarget{classv8_1_1_weak_callback_info_a5f0fe68cc18853467d3713b1ec48da9a}{}\label{classv8_1_1_weak_callback_info_a5f0fe68cc18853467d3713b1ec48da9a}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries Get\+Parameter} () const \hypertarget{classv8_1_1_weak_callback_info_a515eb1547d96a9813e447e8acfb46a1a}{}\label{classv8_1_1_weak_callback_info_a515eb1547d96a9813e447e8acfb46a1a}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries Get\+Internal\+Field} (int index) const \hypertarget{classv8_1_1_weak_callback_info_ac14e2ded95ad11763a5fdf601e69e004}{}\label{classv8_1_1_weak_callback_info_ac14e2ded95ad11763a5fdf601e69e004}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use indexed version\char`\"{}, void $\ast$Get\+Internal\+Field1() const)\hypertarget{classv8_1_1_weak_callback_info_a3e5c3c00672dc02931fea46129432e80}{}\label{classv8_1_1_weak_callback_info_a3e5c3c00672dc02931fea46129432e80}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use indexed version\char`\"{}, void $\ast$Get\+Internal\+Field2() const)\hypertarget{classv8_1_1_weak_callback_info_a8eec746a3a9435af3ef0555c454f780b}{}\label{classv8_1_1_weak_callback_info_a8eec746a3a9435af3ef0555c454f780b}
+
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Not realiable once Set\+Second\+Pass\+Callback() was used.\char`\"{}, bool Is\+First\+Pass() const)\hypertarget{classv8_1_1_weak_callback_info_a619bad43989c80ac8cbba4ecfa37d8d9}{}\label{classv8_1_1_weak_callback_info_a619bad43989c80ac8cbba4ecfa37d8d9}
+
+\item 
+void {\bfseries Set\+Second\+Pass\+Callback} (Callback callback) const \hypertarget{classv8_1_1_weak_callback_info_a17590c561d242f1250b4cd4020eb8cd7}{}\label{classv8_1_1_weak_callback_info_a17590c561d242f1250b4cd4020eb8cd7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1_weak_callback_info_ae50449492b57da9cd055f5f69c7ca336}{}\label{classv8_1_1_weak_callback_info_ae50449492b57da9cd055f5f69c7ca336}
+
+\item 
+T $\ast$ {\bfseries parameter\+\_\+}\hypertarget{classv8_1_1_weak_callback_info_a98c635b4de81a662986fac486407e895}{}\label{classv8_1_1_weak_callback_info_a98c635b4de81a662986fac486407e895}
+
+\item 
+Callback $\ast$ {\bfseries callback\+\_\+}\hypertarget{classv8_1_1_weak_callback_info_a68460dc23ab6c64334090665d1ddf366}{}\label{classv8_1_1_weak_callback_info_a68460dc23ab6c64334090665d1ddf366}
+
+\item 
+void $\ast$ {\bfseries internal\+\_\+fields\+\_\+} \mbox{[}k\+Internal\+Fields\+In\+Weak\+Callback\mbox{]}\hypertarget{classv8_1_1_weak_callback_info_a9f4de09bcd496ba8109eec7774395a8b}{}\label{classv8_1_1_weak_callback_info_a9f4de09bcd496ba8109eec7774395a8b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\end{DoxyCompactItemize}

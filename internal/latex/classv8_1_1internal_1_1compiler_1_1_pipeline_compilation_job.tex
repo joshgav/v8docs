@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Pipeline\+Compilation\+Job Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job}\index{v8\+::internal\+::compiler\+::\+Pipeline\+Compilation\+Job@{v8\+::internal\+::compiler\+::\+Pipeline\+Compilation\+Job}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Pipeline\+Compilation\+Job\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pipeline\+Compilation\+Job} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_ae40378c047a544e5868b4ae4ec3e1d5d}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_ae40378c047a544e5868b4ae4ec3e1d5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Status {\bfseries Create\+Graph\+Impl} () final\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a88952a4ec80f5c82574f8ec4cfa6604e}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a88952a4ec80f5c82574f8ec4cfa6604e}
+
+\item 
+Status {\bfseries Optimize\+Graph\+Impl} () final\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a83cdeca37f921a892dc92185d8bfeac0}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a83cdeca37f921a892dc92185d8bfeac0}
+
+\item 
+Status {\bfseries Generate\+Code\+Impl} () final\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_aabfd7d66b4bc1f3f75656e8474819564}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_aabfd7d66b4bc1f3f75656e8474819564}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a53e60cbec14946bcde27f817f9773e47}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a53e60cbec14946bcde27f817f9773e47}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_zone_pool}{Zone\+Pool} {\bfseries zone\+\_\+pool\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a2ca225a66abb269d23f7df3bd6f46631}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a2ca225a66abb269d23f7df3bd6f46631}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} {\bfseries parse\+\_\+info\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_ad1cb0cf31c404a790614d84079d3df41}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_ad1cb0cf31c404a790614d84079d3df41}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a7349acd617377d193862b20ad4c21457}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a7349acd617377d193862b20ad4c21457}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_smart_pointer}{base\+::\+Smart\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_pipeline_statistics}{Pipeline\+Statistics} $>$ {\bfseries pipeline\+\_\+statistics\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_af4f669230a23794d87e40bffb209a3d3}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_af4f669230a23794d87e40bffb209a3d3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_pipeline_data}{Pipeline\+Data} {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a6db9f030d1e9b2c3ec4929ab7d045578}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a6db9f030d1e9b2c3ec4929ab7d045578}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_pipeline_impl}{Pipeline\+Impl} {\bfseries pipeline\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_aa7d226277ec44053fb01378af4b7a3b9}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_aa7d226277ec44053fb01378af4b7a3b9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage}{Linkage} $\ast$ {\bfseries linkage\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a855ae8194360d7da38a5cd3639cf05ae}{}\label{classv8_1_1internal_1_1compiler_1_1_pipeline_compilation_job_a855ae8194360d7da38a5cd3639cf05ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/pipeline.\+cc\end{DoxyCompactItemize}

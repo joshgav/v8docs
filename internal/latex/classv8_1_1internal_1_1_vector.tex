@@ -1,0 +1,124 @@
+\hypertarget{classv8_1_1internal_1_1_vector}{}\section{v8\+:\+:internal\+:\+:Vector$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_vector}\index{v8\+::internal\+::\+Vector$<$ T $>$@{v8\+::internal\+::\+Vector$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Vector$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_vector}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_vector_1_1_raw_comparer}{Raw\+Comparer}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T $\ast$ {\bfseries iterator}\hypertarget{classv8_1_1internal_1_1_vector_a4eb1bff96066fd7324ceb3a5c78a58de}{}\label{classv8_1_1internal_1_1_vector_a4eb1bff96066fd7324ceb3a5c78a58de}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vector} (T $\ast$data, int length)\hypertarget{classv8_1_1internal_1_1_vector_ab47ce496195ef09e6e7fe8d9770d8833}{}\label{classv8_1_1internal_1_1_vector_ab47ce496195ef09e6e7fe8d9770d8833}
+
+\item 
+{\footnotesize template$<$int N$>$ }\\{\bfseries Vector} (T(\&arr)\mbox{[}N\mbox{]})\hypertarget{classv8_1_1internal_1_1_vector_a6605fb887d3a2e0df3742ce7686036dd}{}\label{classv8_1_1internal_1_1_vector_a6605fb887d3a2e0df3742ce7686036dd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries Sub\+Vector} (int from, int to)\hypertarget{classv8_1_1internal_1_1_vector_a44a2e5352bc702d3b06fab45bab93be2}{}\label{classv8_1_1internal_1_1_vector_a44a2e5352bc702d3b06fab45bab93be2}
+
+\item 
+int {\bfseries length} () const \hypertarget{classv8_1_1internal_1_1_vector_a445fffd2824071aed691ef4486c100d1}{}\label{classv8_1_1internal_1_1_vector_a445fffd2824071aed691ef4486c100d1}
+
+\item 
+bool {\bfseries is\+\_\+empty} () const \hypertarget{classv8_1_1internal_1_1_vector_ac54ecbed441a0cae8e6c585c305fd96e}{}\label{classv8_1_1internal_1_1_vector_ac54ecbed441a0cae8e6c585c305fd96e}
+
+\item 
+T $\ast$ {\bfseries start} () const \hypertarget{classv8_1_1internal_1_1_vector_a7b6e8d56f87dad2de500125b16ff607b}{}\label{classv8_1_1internal_1_1_vector_a7b6e8d56f87dad2de500125b16ff607b}
+
+\item 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const \hypertarget{classv8_1_1internal_1_1_vector_ab8edc8d98f6111850fbc8120f055acc3}{}\label{classv8_1_1internal_1_1_vector_ab8edc8d98f6111850fbc8120f055acc3}
+
+\item 
+const T \& {\bfseries at} (int index) const \hypertarget{classv8_1_1internal_1_1_vector_a8a136b2239755e011fb8214cd0972eda}{}\label{classv8_1_1internal_1_1_vector_a8a136b2239755e011fb8214cd0972eda}
+
+\item 
+T \& {\bfseries first} ()\hypertarget{classv8_1_1internal_1_1_vector_a13e9fef6a9a3f72da9b4c93d21e089ab}{}\label{classv8_1_1internal_1_1_vector_a13e9fef6a9a3f72da9b4c93d21e089ab}
+
+\item 
+T \& {\bfseries last} ()\hypertarget{classv8_1_1internal_1_1_vector_a5e900c0bafc9fe198955b4013cbf90dc}{}\label{classv8_1_1internal_1_1_vector_a5e900c0bafc9fe198955b4013cbf90dc}
+
+\item 
+iterator {\bfseries begin} () const \hypertarget{classv8_1_1internal_1_1_vector_a56cc693c0457ce95ed9cdd093eac95df}{}\label{classv8_1_1internal_1_1_vector_a56cc693c0457ce95ed9cdd093eac95df}
+
+\item 
+iterator {\bfseries end} () const \hypertarget{classv8_1_1internal_1_1_vector_a616b227e35369d6e76013f01b6512cf9}{}\label{classv8_1_1internal_1_1_vector_a616b227e35369d6e76013f01b6512cf9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries Clone} () const \hypertarget{classv8_1_1internal_1_1_vector_add01b651ef9015bdbe8f3b3228f07bc8}{}\label{classv8_1_1internal_1_1_vector_add01b651ef9015bdbe8f3b3228f07bc8}
+
+\item 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Sort} (Compare\+Function cmp, size\+\_\+t s, size\+\_\+t l)\hypertarget{classv8_1_1internal_1_1_vector_a4cb320f5a69e71d66431a5406cbdf2b0}{}\label{classv8_1_1internal_1_1_vector_a4cb320f5a69e71d66431a5406cbdf2b0}
+
+\item 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Sort} (Compare\+Function cmp)\hypertarget{classv8_1_1internal_1_1_vector_aa287135a0f6de0235a1bf8f3d425220f}{}\label{classv8_1_1internal_1_1_vector_aa287135a0f6de0235a1bf8f3d425220f}
+
+\item 
+void {\bfseries Sort} ()\hypertarget{classv8_1_1internal_1_1_vector_a1914139a503a171e777f3d0b951069aa}{}\label{classv8_1_1internal_1_1_vector_a1914139a503a171e777f3d0b951069aa}
+
+\item 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Stable\+Sort} (Compare\+Function cmp, size\+\_\+t s, size\+\_\+t l)\hypertarget{classv8_1_1internal_1_1_vector_a331d883c24f767fbfb6fb9dcbf0e6942}{}\label{classv8_1_1internal_1_1_vector_a331d883c24f767fbfb6fb9dcbf0e6942}
+
+\item 
+{\footnotesize template$<$typename Compare\+Function $>$ }\\void {\bfseries Stable\+Sort} (Compare\+Function cmp)\hypertarget{classv8_1_1internal_1_1_vector_aa1179492b191705790d1db684c05430f}{}\label{classv8_1_1internal_1_1_vector_aa1179492b191705790d1db684c05430f}
+
+\item 
+void {\bfseries Stable\+Sort} ()\hypertarget{classv8_1_1internal_1_1_vector_a5fc19021882c987a5105126b094f28a4}{}\label{classv8_1_1internal_1_1_vector_a5fc19021882c987a5105126b094f28a4}
+
+\item 
+void {\bfseries Truncate} (int length)\hypertarget{classv8_1_1internal_1_1_vector_abe3333b756820ec1f98474bed844f096}{}\label{classv8_1_1internal_1_1_vector_abe3333b756820ec1f98474bed844f096}
+
+\item 
+void {\bfseries Dispose} ()\hypertarget{classv8_1_1internal_1_1_vector_a29bc665bb5c8a27e328107fcd414eef2}{}\label{classv8_1_1internal_1_1_vector_a29bc665bb5c8a27e328107fcd414eef2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries operator+} (int offset)\hypertarget{classv8_1_1internal_1_1_vector_a3e1a53b737875e85f8c0d0745be3ce31}{}\label{classv8_1_1internal_1_1_vector_a3e1a53b737875e85f8c0d0745be3ce31}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ \&other) const \hypertarget{classv8_1_1internal_1_1_vector_a37fa50b75d0affc934489e33b37d9ede}{}\label{classv8_1_1internal_1_1_vector_a37fa50b75d0affc934489e33b37d9ede}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries New} (int length)\hypertarget{classv8_1_1internal_1_1_vector_adb4189b3dc89e2c2dfd532c5615ead33}{}\label{classv8_1_1internal_1_1_vector_adb4189b3dc89e2c2dfd532c5615ead33}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries empty} ()\hypertarget{classv8_1_1internal_1_1_vector_a5a178ac96e3a64e7f2addc3b201285fd}{}\label{classv8_1_1internal_1_1_vector_a5a178ac96e3a64e7f2addc3b201285fd}
+
+\item 
+{\footnotesize template$<$typename S $>$ }\\static \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ S $>$ input)\hypertarget{classv8_1_1internal_1_1_vector_a12baedd3e605f40b24f28f3d05716a23}{}\label{classv8_1_1internal_1_1_vector_a12baedd3e605f40b24f28f3d05716a23}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+\_\+start} (T $\ast$start)\hypertarget{classv8_1_1internal_1_1_vector_a9da3046624f3492e444896bcd1b5225f}{}\label{classv8_1_1internal_1_1_vector_a9da3046624f3492e444896bcd1b5225f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1_vector_a959351a787733a4e284d0e9e1e1e0ba1}{}\label{classv8_1_1internal_1_1_vector_a959351a787733a4e284d0e9e1e1e0ba1}
+
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_vector_ac90f36ff8dec728d8f75e9870edff298}{}\label{classv8_1_1internal_1_1_vector_ac90f36ff8dec728d8f75e9870edff298}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/list.\+h\item 
+/\+Users/joshgav/node/v8/src/vector.\+h\end{DoxyCompactItemize}

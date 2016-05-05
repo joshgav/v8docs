@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1_back_edge_table}{}\section{v8\+:\+:internal\+:\+:Back\+Edge\+Table Class Reference}
+\label{classv8_1_1internal_1_1_back_edge_table}\index{v8\+::internal\+::\+Back\+Edge\+Table@{v8\+::internal\+::\+Back\+Edge\+Table}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Back\+Edge\+State} \{ \\*
+{\bfseries I\+N\+T\+E\+R\+R\+U\+PT}, 
+\\*
+{\bfseries O\+N\+\_\+\+S\+T\+A\+C\+K\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT}
+ \}\hypertarget{classv8_1_1internal_1_1_back_edge_table_a5fdd294b989ae7d9c3c08deecd60efa2}{}\label{classv8_1_1internal_1_1_back_edge_table_a5fdd294b989ae7d9c3c08deecd60efa2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Back\+Edge\+Table} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_per_thread_assert_scope_debug_only}{Disallow\+Heap\+Allocation} $\ast$required)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a7db2b9b7aa7720c9ed264ad8514f590e}{}\label{classv8_1_1internal_1_1_back_edge_table_a7db2b9b7aa7720c9ed264ad8514f590e}
+
+\item 
+uint32\+\_\+t {\bfseries length} ()\hypertarget{classv8_1_1internal_1_1_back_edge_table_a56b23e90b541646f83902eb5e8653205}{}\label{classv8_1_1internal_1_1_back_edge_table_a56b23e90b541646f83902eb5e8653205}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries ast\+\_\+id} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_back_edge_table_ad2833701689e96f451ab733f1fea52a3}{}\label{classv8_1_1internal_1_1_back_edge_table_ad2833701689e96f451ab733f1fea52a3}
+
+\item 
+uint32\+\_\+t {\bfseries loop\+\_\+depth} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a4385d5f565fb0623ec77a3e150f5b770}{}\label{classv8_1_1internal_1_1_back_edge_table_a4385d5f565fb0623ec77a3e150f5b770}
+
+\item 
+uint32\+\_\+t {\bfseries pc\+\_\+offset} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a287333d13fd7c286ff7751a1c0465d75}{}\label{classv8_1_1internal_1_1_back_edge_table_a287333d13fd7c286ff7751a1c0465d75}
+
+\item 
+Address {\bfseries pc} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_back_edge_table_aea67e907fbd52b3fe1762f8a6c333259}{}\label{classv8_1_1internal_1_1_back_edge_table_aea67e907fbd52b3fe1762f8a6c333259}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$unoptimized\+\_\+code)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a948f9633cd9b7de2c75db208b687329a}{}\label{classv8_1_1internal_1_1_back_edge_table_a948f9633cd9b7de2c75db208b687329a}
+
+\item 
+static void {\bfseries Patch\+At} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$unoptimized\+\_\+code, Address pc, Back\+Edge\+State target\+\_\+state, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$replacement\+\_\+code)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a6c051f1b5eca4c03f8f3147c71ac051c}{}\label{classv8_1_1internal_1_1_back_edge_table_a6c051f1b5eca4c03f8f3147c71ac051c}
+
+\item 
+static void {\bfseries Revert} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$unoptimized\+\_\+code)\hypertarget{classv8_1_1internal_1_1_back_edge_table_aa4a8da5df024f0696f8be96ec8f5dbec}{}\label{classv8_1_1internal_1_1_back_edge_table_aa4a8da5df024f0696f8be96ec8f5dbec}
+
+\item 
+static Back\+Edge\+State {\bfseries Get\+Back\+Edge\+State} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$unoptimized\+\_\+code, Address pc\+\_\+after)\hypertarget{classv8_1_1internal_1_1_back_edge_table_ae4104ee5562bfe57be87eb6ce940ed73}{}\label{classv8_1_1internal_1_1_back_edge_table_ae4104ee5562bfe57be87eb6ce940ed73}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries entry\+\_\+at} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_back_edge_table_a981fbd793660c614f3d1ea56368b85d8}{}\label{classv8_1_1internal_1_1_back_edge_table_a981fbd793660c614f3d1ea56368b85d8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1_back_edge_table_a86e3b0df2bfec3bf09926f74e6f195f7}{}\label{classv8_1_1internal_1_1_back_edge_table_a86e3b0df2bfec3bf09926f74e6f195f7}
+
+\item 
+Address {\bfseries instruction\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1_back_edge_table_ac8756e080b323779682b70c98dc1fc76}{}\label{classv8_1_1internal_1_1_back_edge_table_ac8756e080b323779682b70c98dc1fc76}
+
+\item 
+uint32\+\_\+t {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_back_edge_table_aba88bdc9f658e964e5a8235a7e0a7a93}{}\label{classv8_1_1internal_1_1_back_edge_table_aba88bdc9f658e964e5a8235a7e0a7a93}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Table\+Length\+Size} = k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_back_edge_table_a1f8f0dc1cc15c8ef32bb1165fdc80dde}{}\label{classv8_1_1internal_1_1_back_edge_table_a1f8f0dc1cc15c8ef32bb1165fdc80dde}
+
+\item 
+static const int {\bfseries k\+Ast\+Id\+Offset} = 0 $\ast$ k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_back_edge_table_aad51f56ec7f0d83e8f927664dd29783b}{}\label{classv8_1_1internal_1_1_back_edge_table_aad51f56ec7f0d83e8f927664dd29783b}
+
+\item 
+static const int {\bfseries k\+Pc\+Offset\+Offset} = 1 $\ast$ k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_back_edge_table_aae9efd04afbab2db5e68a1cd2f4a7d3b}{}\label{classv8_1_1internal_1_1_back_edge_table_aae9efd04afbab2db5e68a1cd2f4a7d3b}
+
+\item 
+static const int {\bfseries k\+Loop\+Depth\+Offset} = 2 $\ast$ k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_back_edge_table_a1847b70e9aacf108f35d3eb16e58a370}{}\label{classv8_1_1internal_1_1_back_edge_table_a1847b70e9aacf108f35d3eb16e58a370}
+
+\item 
+static const int {\bfseries k\+Entry\+Size} = 3 $\ast$ k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_back_edge_table_a2e5054f34b30ed4c497e589af53a0db2}{}\label{classv8_1_1internal_1_1_back_edge_table_a2e5054f34b30ed4c497e589af53a0db2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+h\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+cc\end{DoxyCompactItemize}

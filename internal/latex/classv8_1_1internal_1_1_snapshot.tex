@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1_snapshot}{}\section{v8\+:\+:internal\+:\+:Snapshot Class Reference}
+\label{classv8_1_1internal_1_1_snapshot}\index{v8\+::internal\+::\+Snapshot@{v8\+::internal\+::\+Snapshot}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Snapshot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_snapshot}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_snapshot_1_1_metadata}{Metadata}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_snapshot_a5054ae7a1ee4b2db6052099fbbddb401}{}\label{classv8_1_1internal_1_1_snapshot_a5054ae7a1ee4b2db6052099fbbddb401}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries New\+Context\+From\+Snapshot} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_global_proxy}{J\+S\+Global\+Proxy} $>$ global\+\_\+proxy)\hypertarget{classv8_1_1internal_1_1_snapshot_a3b05e6b57f1200165ca7225750178fb5}{}\label{classv8_1_1internal_1_1_snapshot_a3b05e6b57f1200165ca7225750178fb5}
+
+\item 
+static bool {\bfseries Have\+A\+Snapshot\+To\+Start\+From} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_snapshot_ac1eb407d305328582b212a1fc5bcbfaf}{}\label{classv8_1_1internal_1_1_snapshot_ac1eb407d305328582b212a1fc5bcbfaf}
+
+\item 
+static bool {\bfseries Embeds\+Script} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_snapshot_af184992c0dfe5bed33951b55a0abe6b1}{}\label{classv8_1_1internal_1_1_snapshot_af184992c0dfe5bed33951b55a0abe6b1}
+
+\item 
+static uint32\+\_\+t {\bfseries Size\+Of\+First\+Page} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, Allocation\+Space space)\hypertarget{classv8_1_1internal_1_1_snapshot_a10420df192bfa48220b9dfe5e725eb71}{}\label{classv8_1_1internal_1_1_snapshot_a10420df192bfa48220b9dfe5e725eb71}
+
+\item 
+static const \hyperlink{classv8_1_1_startup_data}{v8\+::\+Startup\+Data} $\ast$ {\bfseries Default\+Snapshot\+Blob} ()\hypertarget{classv8_1_1internal_1_1_snapshot_a5581dcad3c8aebccb9e9ad5fd641cf03}{}\label{classv8_1_1internal_1_1_snapshot_a5581dcad3c8aebccb9e9ad5fd641cf03}
+
+\item 
+static \hyperlink{classv8_1_1_startup_data}{v8\+::\+Startup\+Data} {\bfseries Create\+Snapshot\+Blob} (const \hyperlink{classv8_1_1internal_1_1_startup_serializer}{Startup\+Serializer} \&startup\+\_\+ser, const \hyperlink{classv8_1_1internal_1_1_partial_serializer}{Partial\+Serializer} \&context\+\_\+ser, \hyperlink{classv8_1_1internal_1_1_snapshot_1_1_metadata}{Snapshot\+::\+Metadata} metadata)\hypertarget{classv8_1_1internal_1_1_snapshot_a510bc272524de9953b069c3d944ce866}{}\label{classv8_1_1internal_1_1_snapshot_a510bc272524de9953b069c3d944ce866}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_snapshot}{Snapshot})\hypertarget{classv8_1_1internal_1_1_snapshot_a70e107f43ec535d40f77cd8f2cb48c82}{}\label{classv8_1_1internal_1_1_snapshot_a70e107f43ec535d40f77cd8f2cb48c82}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const byte $>$ {\bfseries Extract\+Startup\+Data} (const \hyperlink{classv8_1_1_startup_data}{v8\+::\+Startup\+Data} $\ast$data)\hypertarget{classv8_1_1internal_1_1_snapshot_aee9cc1943fd871b4eeac9ad5f9cb4d3b}{}\label{classv8_1_1internal_1_1_snapshot_aee9cc1943fd871b4eeac9ad5f9cb4d3b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const byte $>$ {\bfseries Extract\+Context\+Data} (const \hyperlink{classv8_1_1_startup_data}{v8\+::\+Startup\+Data} $\ast$data)\hypertarget{classv8_1_1internal_1_1_snapshot_adfaeac0fabe215418e6874b1078dc7ce}{}\label{classv8_1_1internal_1_1_snapshot_adfaeac0fabe215418e6874b1078dc7ce}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_snapshot_1_1_metadata}{Metadata} {\bfseries Extract\+Metadata} (const \hyperlink{classv8_1_1_startup_data}{v8\+::\+Startup\+Data} $\ast$data)\hypertarget{classv8_1_1internal_1_1_snapshot_a45e725d71d24c2562aec4af1b9254fd4}{}\label{classv8_1_1internal_1_1_snapshot_a45e725d71d24c2562aec4af1b9254fd4}
+
+\item 
+static int {\bfseries Context\+Offset} (int startup\+\_\+length)\hypertarget{classv8_1_1internal_1_1_snapshot_a39270475f42beb07da0732484879f1c0}{}\label{classv8_1_1internal_1_1_snapshot_a39270475f42beb07da0732484879f1c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Num\+Paged\+Spaces} = L\+A\+S\+T\+\_\+\+P\+A\+G\+E\+D\+\_\+\+S\+P\+A\+CE -\/ F\+I\+R\+S\+T\+\_\+\+P\+A\+G\+E\+D\+\_\+\+S\+P\+A\+CE + 1\hypertarget{classv8_1_1internal_1_1_snapshot_a00a76cfa3b053713564823dfadcc7df1}{}\label{classv8_1_1internal_1_1_snapshot_a00a76cfa3b053713564823dfadcc7df1}
+
+\item 
+static const int {\bfseries k\+Metadata\+Offset} = 0\hypertarget{classv8_1_1internal_1_1_snapshot_af18d3fbf418755af3bab0173a605b76a}{}\label{classv8_1_1internal_1_1_snapshot_af18d3fbf418755af3bab0173a605b76a}
+
+\item 
+static const int {\bfseries k\+First\+Page\+Sizes\+Offset} = k\+Metadata\+Offset + k\+Int32\+Size\hypertarget{classv8_1_1internal_1_1_snapshot_a123f8b29f13652ef287e06abebd22267}{}\label{classv8_1_1internal_1_1_snapshot_a123f8b29f13652ef287e06abebd22267}
+
+\item 
+static const int {\bfseries k\+Startup\+Length\+Offset}
+\item 
+static const int {\bfseries k\+Startup\+Data\+Offset} = k\+Startup\+Length\+Offset + k\+Int32\+Size\hypertarget{classv8_1_1internal_1_1_snapshot_ac7206067f085f98ff35cb8795adc8024}{}\label{classv8_1_1internal_1_1_snapshot_ac7206067f085f98ff35cb8795adc8024}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Snapshot@{v8\+::internal\+::\+Snapshot}!k\+Startup\+Length\+Offset@{k\+Startup\+Length\+Offset}}
+\index{k\+Startup\+Length\+Offset@{k\+Startup\+Length\+Offset}!v8\+::internal\+::\+Snapshot@{v8\+::internal\+::\+Snapshot}}
+\subsubsection[{\texorpdfstring{k\+Startup\+Length\+Offset}{kStartupLengthOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Snapshot\+::k\+Startup\+Length\+Offset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_snapshot_a5b923848e706bc62e79f69d980dcc55c}{}\label{classv8_1_1internal_1_1_snapshot_a5b923848e706bc62e79f69d980dcc55c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kFirstPageSizesOffset + kNumPagedSpaces * kInt32Size
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/common.\+cc\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/empty.\+cc\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/external.\+cc\end{DoxyCompactItemize}

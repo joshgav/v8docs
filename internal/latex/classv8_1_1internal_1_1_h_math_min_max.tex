@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1_h_math_min_max}{}\section{v8\+:\+:internal\+:\+:H\+Math\+Min\+Max Class Reference}
+\label{classv8_1_1internal_1_1_h_math_min_max}\index{v8\+::internal\+::\+H\+Math\+Min\+Max@{v8\+::internal\+::\+H\+Math\+Min\+Max}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Math\+Min\+Max\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classv8_1_1internal_1_1_h_math_min_max}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Operation} \{ \\*
+{\bfseries k\+Math\+Min}, 
+\\*
+{\bfseries k\+Math\+Max}
+ \}\hypertarget{classv8_1_1internal_1_1_h_math_min_max_aa89ccefaa3806c7dd9b9f2410c74253d}{}\label{classv8_1_1internal_1_1_h_math_min_max_aa89ccefaa3806c7dd9b9f2410c74253d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries observed\+\_\+input\+\_\+representation} (int index) override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a1a7a60aa05b5e58c48f2c4e6a90dc654}{}\label{classv8_1_1internal_1_1_h_math_min_max_a1a7a60aa05b5e58c48f2c4e6a90dc654}
+
+\item 
+void {\bfseries Infer\+Representation} (\hyperlink{classv8_1_1internal_1_1_h_infer_representation_phase}{H\+Infer\+Representation\+Phase} $\ast$h\+\_\+infer) override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a9ae7e837092da9458ffcdc1ab9ce420b}{}\label{classv8_1_1internal_1_1_h_math_min_max_a9ae7e837092da9458ffcdc1ab9ce420b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Representation\+From\+Inputs} () override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a5ea16e446a6ce1dcaf28e629246efa81}{}\label{classv8_1_1internal_1_1_h_math_min_max_a5ea16e446a6ce1dcaf28e629246efa81}
+
+\item 
+bool {\bfseries Is\+Commutative} () const  override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a8d680fc8868ea518066afc7c6fefa3a1}{}\label{classv8_1_1internal_1_1_h_math_min_max_a8d680fc8868ea518066afc7c6fefa3a1}
+
+\item 
+Operation {\bfseries operation} ()\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a47b5f6bfc3195bdd97d3784a67109d7d}{}\label{classv8_1_1internal_1_1_h_math_min_max_a47b5f6bfc3195bdd97d3784a67109d7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right, Operation op)\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a348cf0f60b2aab3f628c013d2944b8d1}{}\label{classv8_1_1internal_1_1_h_math_min_max_a348cf0f60b2aab3f628c013d2944b8d1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Data\+Equals} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$other) override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_ad2dc8fe4c53552d74a564592afbfc0b8}{}\label{classv8_1_1internal_1_1_h_math_min_max_ad2dc8fe4c53552d74a564592afbfc0b8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_range}{Range} $\ast$ {\bfseries Infer\+Range} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) override\hypertarget{classv8_1_1internal_1_1_h_math_min_max_ab9883322ad635ad1e28ff26b46a80290}{}\label{classv8_1_1internal_1_1_h_math_min_max_ab9883322ad635ad1e28ff26b46a80290}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Math\+Min\+Max} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right, Operation op)\hypertarget{classv8_1_1internal_1_1_h_math_min_max_ac7771e49775033d021872ad021657ac2}{}\label{classv8_1_1internal_1_1_h_math_min_max_ac7771e49775033d021872ad021657ac2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Operation {\bfseries operation\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_math_min_max_a0c9b082d5400aec0914d8dc7d60ee665}{}\label{classv8_1_1internal_1_1_h_math_min_max_a0c9b082d5400aec0914d8dc7d60ee665}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+cc\end{DoxyCompactItemize}

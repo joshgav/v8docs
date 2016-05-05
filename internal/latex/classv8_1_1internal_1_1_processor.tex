@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1_processor}{}\section{v8\+:\+:internal\+:\+:Processor Class Reference}
+\label{classv8_1_1internal_1_1_processor}\index{v8\+::internal\+::\+Processor@{v8\+::internal\+::\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Processor} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$result, \hyperlink{classv8_1_1internal_1_1_ast_value_factory}{Ast\+Value\+Factory} $\ast$ast\+\_\+value\+\_\+factory)\hypertarget{classv8_1_1internal_1_1_processor_a2c59ebc91c9e648c7562fc4aa8349c68}{}\label{classv8_1_1internal_1_1_processor_a2c59ebc91c9e648c7562fc4aa8349c68}
+
+\item 
+{\bfseries Processor} (\hyperlink{classv8_1_1internal_1_1_parser}{Parser} $\ast$parser, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$result, \hyperlink{classv8_1_1internal_1_1_ast_value_factory}{Ast\+Value\+Factory} $\ast$ast\+\_\+value\+\_\+factory)\hypertarget{classv8_1_1internal_1_1_processor_a556447e479a9fda48d8179d67bc0c309}{}\label{classv8_1_1internal_1_1_processor_a556447e479a9fda48d8179d67bc0c309}
+
+\item 
+void {\bfseries Process} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statements)\hypertarget{classv8_1_1internal_1_1_processor_a741c174cc2b93af87ae5bfed3471cb24}{}\label{classv8_1_1internal_1_1_processor_a741c174cc2b93af87ae5bfed3471cb24}
+
+\item 
+bool {\bfseries result\+\_\+assigned} () const \hypertarget{classv8_1_1internal_1_1_processor_a3ed0da0296d8cae1005d74fc62e9d24d}{}\label{classv8_1_1internal_1_1_processor_a3ed0da0296d8cae1005d74fc62e9d24d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1_processor_ae0d85fa136ee8369529b7c9e4f26be62}{}\label{classv8_1_1internal_1_1_processor_ae0d85fa136ee8369529b7c9e4f26be62}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope} ()\hypertarget{classv8_1_1internal_1_1_processor_a2a4dac29e14e448709d8e2431b0dcd5c}{}\label{classv8_1_1internal_1_1_processor_a2a4dac29e14e448709d8e2431b0dcd5c}
+
+\item 
+Ast\+Node\+Factory $\ast$ {\bfseries factory} ()\hypertarget{classv8_1_1internal_1_1_processor_af642af827c6cc75d6d466e1e2a27d25c}{}\label{classv8_1_1internal_1_1_processor_af642af827c6cc75d6d466e1e2a27d25c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Set\+Result} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$value)\hypertarget{classv8_1_1internal_1_1_processor_a50365754de1be5320dc3bfd29e4ca004}{}\label{classv8_1_1internal_1_1_processor_a50365754de1be5320dc3bfd29e4ca004}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Assign\+Undefined\+Before} (\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$s)\hypertarget{classv8_1_1internal_1_1_processor_a7c4589695dcd10e2bc35cf10970db8cd}{}\label{classv8_1_1internal_1_1_processor_a7c4589695dcd10e2bc35cf10970db8cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Visit\+Iteration\+Statement} (\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$stmt)\hypertarget{classv8_1_1internal_1_1_processor_ab1bc96069f41d2e5b3de1ab320213750}{}\label{classv8_1_1internal_1_1_processor_ab1bc96069f41d2e5b3de1ab320213750}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+T\+\_\+\+V\+I\+S\+I\+T\+O\+R\+\_\+\+S\+U\+B\+C\+L\+A\+S\+S\+\_\+\+M\+E\+M\+B\+E\+RS} ()\hypertarget{classv8_1_1internal_1_1_processor_a0d534d9977518eab7dcb83bc84416375}{}\label{classv8_1_1internal_1_1_processor_a0d534d9977518eab7dcb83bc84416375}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$ {\bfseries result\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_adbbb310bfcb8d724f77d74005df5c98d}{}\label{classv8_1_1internal_1_1_processor_adbbb310bfcb8d724f77d74005df5c98d}
+
+\item 
+bool {\bfseries result\+\_\+assigned\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_ac6fff3614bb41ba773049b61affa21e9}{}\label{classv8_1_1internal_1_1_processor_ac6fff3614bb41ba773049b61affa21e9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries replacement\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_a8765eabdd635cce6abb97eccd01baa9e}{}\label{classv8_1_1internal_1_1_processor_a8765eabdd635cce6abb97eccd01baa9e}
+
+\item 
+bool {\bfseries is\+\_\+set\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_a78ef8ef0e6f6ccb9635e6ed7b4eb978b}{}\label{classv8_1_1internal_1_1_processor_a78ef8ef0e6f6ccb9635e6ed7b4eb978b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_a46912f704b3fcfb83f89526bfe1a77a1}{}\label{classv8_1_1internal_1_1_processor_a46912f704b3fcfb83f89526bfe1a77a1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_a2523337264ecd832a8eb9447d4637af2}{}\label{classv8_1_1internal_1_1_processor_a2523337264ecd832a8eb9447d4637af2}
+
+\item 
+Ast\+Node\+Factory {\bfseries factory\+\_\+}\hypertarget{classv8_1_1internal_1_1_processor_ae8afc991eb69af00e805e5548371d6af}{}\label{classv8_1_1internal_1_1_processor_ae8afc991eb69af00e805e5548371d6af}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/rewriter.\+cc\end{DoxyCompactItemize}

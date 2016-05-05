@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1_version}{}\section{v8\+:\+:internal\+:\+:Version Class Reference}
+\label{classv8_1_1internal_1_1_version}\index{v8\+::internal\+::\+Version@{v8\+::internal\+::\+Version}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Get\+Major} ()\hypertarget{classv8_1_1internal_1_1_version_a3d8a7322a94b24a794e232e39a810532}{}\label{classv8_1_1internal_1_1_version_a3d8a7322a94b24a794e232e39a810532}
+
+\item 
+static int {\bfseries Get\+Minor} ()\hypertarget{classv8_1_1internal_1_1_version_a72873948c8d86b18bbf1059481259af8}{}\label{classv8_1_1internal_1_1_version_a72873948c8d86b18bbf1059481259af8}
+
+\item 
+static int {\bfseries Get\+Build} ()\hypertarget{classv8_1_1internal_1_1_version_a5fc1a8f4abe00d63ce6b1de28aa10623}{}\label{classv8_1_1internal_1_1_version_a5fc1a8f4abe00d63ce6b1de28aa10623}
+
+\item 
+static int {\bfseries Get\+Patch} ()\hypertarget{classv8_1_1internal_1_1_version_a60b6f29b460ab319280241a1b6273330}{}\label{classv8_1_1internal_1_1_version_a60b6f29b460ab319280241a1b6273330}
+
+\item 
+static bool {\bfseries Is\+Candidate} ()\hypertarget{classv8_1_1internal_1_1_version_ae62c0c059d688ed1b252311d319b56dd}{}\label{classv8_1_1internal_1_1_version_ae62c0c059d688ed1b252311d319b56dd}
+
+\item 
+static uint32\+\_\+t {\bfseries Hash} ()\hypertarget{classv8_1_1internal_1_1_version_ae10e2f0dadfb79d26242991536069390}{}\label{classv8_1_1internal_1_1_version_ae10e2f0dadfb79d26242991536069390}
+
+\item 
+static void {\bfseries Get\+String} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ char $>$ str)\hypertarget{classv8_1_1internal_1_1_version_aebe98dec5081ad84f4c539d5b5f661e0}{}\label{classv8_1_1internal_1_1_version_aebe98dec5081ad84f4c539d5b5f661e0}
+
+\item 
+static void {\bfseries Get\+S\+O\+N\+A\+ME} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ char $>$ str)\hypertarget{classv8_1_1internal_1_1_version_acd1702b2f55cc5b7955c03c4b56d813a}{}\label{classv8_1_1internal_1_1_version_acd1702b2f55cc5b7955c03c4b56d813a}
+
+\item 
+static const char $\ast$ {\bfseries Get\+Version} ()\hypertarget{classv8_1_1internal_1_1_version_a0e4c59ed561ad523f362ba1a5a9b2ca0}{}\label{classv8_1_1internal_1_1_version_a0e4c59ed561ad523f362ba1a5a9b2ca0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries major\+\_\+} = V8\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON\hypertarget{classv8_1_1internal_1_1_version_aea21787b9eef6fd372e5133eaf5e3ccb}{}\label{classv8_1_1internal_1_1_version_aea21787b9eef6fd372e5133eaf5e3ccb}
+
+\item 
+static int {\bfseries minor\+\_\+} = V8\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON\hypertarget{classv8_1_1internal_1_1_version_ad28878e7cebe076bc3089e0f93a66632}{}\label{classv8_1_1internal_1_1_version_ad28878e7cebe076bc3089e0f93a66632}
+
+\item 
+static int {\bfseries build\+\_\+} = V8\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+ER\hypertarget{classv8_1_1internal_1_1_version_a2b677e93973a9d941b6bbea7b287d101}{}\label{classv8_1_1internal_1_1_version_a2b677e93973a9d941b6bbea7b287d101}
+
+\item 
+static int {\bfseries patch\+\_\+} = V8\+\_\+\+P\+A\+T\+C\+H\+\_\+\+L\+E\+V\+EL\hypertarget{classv8_1_1internal_1_1_version_adfe5cc0116264137209342800e5dd12f}{}\label{classv8_1_1internal_1_1_version_adfe5cc0116264137209342800e5dd12f}
+
+\item 
+static bool {\bfseries candidate\+\_\+} = (V8\+\_\+\+I\+S\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+E\+\_\+\+V\+E\+R\+S\+I\+ON != 0)\hypertarget{classv8_1_1internal_1_1_version_a91bb355c275afe4a0adf32a6e1b92b2f}{}\label{classv8_1_1internal_1_1_version_a91bb355c275afe4a0adf32a6e1b92b2f}
+
+\item 
+static const char $\ast$ {\bfseries soname\+\_\+} = S\+O\+N\+A\+ME\hypertarget{classv8_1_1internal_1_1_version_abc42c8d6b680757befe7929a2ae32d5c}{}\label{classv8_1_1internal_1_1_version_abc42c8d6b680757befe7929a2ae32d5c}
+
+\item 
+static const char $\ast$ {\bfseries version\+\_\+string\+\_\+} = V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+NG\hypertarget{classv8_1_1internal_1_1_version_aa15d52578423723e8e30b473725b8592}{}\label{classv8_1_1internal_1_1_version_aa15d52578423723e8e30b473725b8592}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Version} (int major, int minor, int build, int patch, bool candidate, const char $\ast$soname)\hypertarget{classv8_1_1internal_1_1_version_a8cf6f34703ea4ad8ddf5df52abec6592}{}\label{classv8_1_1internal_1_1_version_a8cf6f34703ea4ad8ddf5df52abec6592}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/version.\+h\item 
+/\+Users/joshgav/node/v8/src/version.\+cc\end{DoxyCompactItemize}

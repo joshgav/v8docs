@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source}{}\section{v8\+:\+:internal\+:\+:Snapshot\+Byte\+Source Class Reference}
+\label{classv8_1_1internal_1_1_snapshot_byte_source}\index{v8\+::internal\+::\+Snapshot\+Byte\+Source@{v8\+::internal\+::\+Snapshot\+Byte\+Source}}
+
+
+{\ttfamily \#include $<$snapshot-\/source-\/sink.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Snapshot\+Byte\+Source} (const char $\ast$data, int length)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_aaec870afee9a0ee4db260e5d6d96871a}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_aaec870afee9a0ee4db260e5d6d96871a}
+
+\item 
+{\bfseries Snapshot\+Byte\+Source} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const byte $>$ payload)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a3ca81e1446facca52cb592dbe5b13a05}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a3ca81e1446facca52cb592dbe5b13a05}
+
+\item 
+bool {\bfseries Has\+More} ()\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a957126cd1402ae66976d00619fbff992}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a957126cd1402ae66976d00619fbff992}
+
+\item 
+byte {\bfseries Get} ()\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a02a021e250f8092eec60a678154941fa}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a02a021e250f8092eec60a678154941fa}
+
+\item 
+void {\bfseries Advance} (int by)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a0a711417dc223373cb5b3b6468ceb51a}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a0a711417dc223373cb5b3b6468ceb51a}
+
+\item 
+void {\bfseries Copy\+Raw} (byte $\ast$to, int number\+\_\+of\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a562e8c45079d9b9f73e6e1f125414191}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a562e8c45079d9b9f73e6e1f125414191}
+
+\item 
+int {\bfseries Get\+Int} ()\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_ad5cb3ae81d5d7b7472275810f00b5909}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_ad5cb3ae81d5d7b7472275810f00b5909}
+
+\item 
+int {\bfseries Get\+Blob} (const byte $\ast$$\ast$data)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a0d703872a07e2b59582be56138c35728}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a0d703872a07e2b59582be56138c35728}
+
+\item 
+int {\bfseries position} ()\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a6f196210f0bf57cae0c66ca659e7a130}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a6f196210f0bf57cae0c66ca659e7a130}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_snapshot_byte_source}{Snapshot\+Byte\+Source})\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_a19beaee7a0a52e4055e3cbfd84380b67}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_a19beaee7a0a52e4055e3cbfd84380b67}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const byte $\ast$ {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_afb439006ea3a765eaee32a9f34b842e3}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_afb439006ea3a765eaee32a9f34b842e3}
+
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_ac281b199b9c74eab38f68b053907a902}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_ac281b199b9c74eab38f68b053907a902}
+
+\item 
+int {\bfseries position\+\_\+}\hypertarget{classv8_1_1internal_1_1_snapshot_byte_source_ae1f782248415ee4baf56cfe152deda64}{}\label{classv8_1_1internal_1_1_snapshot_byte_source_ae1f782248415ee4baf56cfe152deda64}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Source to read snapshot and builtins files from.
+
+Note\+: \hyperlink{classv8_1_1internal_1_1_memory}{Memory} ownership remains with callee. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/source-\/sink.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/source-\/sink.\+cc\end{DoxyCompactItemize}

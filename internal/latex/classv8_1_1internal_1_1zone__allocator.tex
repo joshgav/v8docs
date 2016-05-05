@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1zone__allocator}{}\section{v8\+:\+:internal\+:\+:zone\+\_\+allocator$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1zone__allocator}\index{v8\+::internal\+::zone\+\_\+allocator$<$ T $>$@{v8\+::internal\+::zone\+\_\+allocator$<$ T $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1zone__allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T $\ast$ {\bfseries pointer}\hypertarget{classv8_1_1internal_1_1zone__allocator_ac88f72e9cd57a798719633ae06c962ca}{}\label{classv8_1_1internal_1_1zone__allocator_ac88f72e9cd57a798719633ae06c962ca}
+
+\item 
+typedef const T $\ast$ {\bfseries const\+\_\+pointer}\hypertarget{classv8_1_1internal_1_1zone__allocator_aabd57c53ad39267436b4cfd3dc9f8488}{}\label{classv8_1_1internal_1_1zone__allocator_aabd57c53ad39267436b4cfd3dc9f8488}
+
+\item 
+typedef T \& {\bfseries reference}\hypertarget{classv8_1_1internal_1_1zone__allocator_a73ad2c4458a6b4d97114e8bcdecb4a90}{}\label{classv8_1_1internal_1_1zone__allocator_a73ad2c4458a6b4d97114e8bcdecb4a90}
+
+\item 
+typedef const T \& {\bfseries const\+\_\+reference}\hypertarget{classv8_1_1internal_1_1zone__allocator_a3c843bf2eafdcb6db1c195c9a1cb7a01}{}\label{classv8_1_1internal_1_1zone__allocator_a3c843bf2eafdcb6db1c195c9a1cb7a01}
+
+\item 
+typedef T {\bfseries value\+\_\+type}\hypertarget{classv8_1_1internal_1_1zone__allocator_a69f4aa8da7b64ff03d63d7b86af3de6b}{}\label{classv8_1_1internal_1_1zone__allocator_a69f4aa8da7b64ff03d63d7b86af3de6b}
+
+\item 
+typedef size\+\_\+t {\bfseries size\+\_\+type}\hypertarget{classv8_1_1internal_1_1zone__allocator_a5d7dae728ae0be78a49211b55a634e12}{}\label{classv8_1_1internal_1_1zone__allocator_a5d7dae728ae0be78a49211b55a634e12}
+
+\item 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}\hypertarget{classv8_1_1internal_1_1zone__allocator_a0fe1871e429a54a9bd9bec86f1964cb2}{}\label{classv8_1_1internal_1_1zone__allocator_a0fe1871e429a54a9bd9bec86f1964cb2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries zone\+\_\+allocator} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)  throw ()\hypertarget{classv8_1_1internal_1_1zone__allocator_a78b2d8217989b0861c8acc695c5599cc}{}\label{classv8_1_1internal_1_1zone__allocator_a78b2d8217989b0861c8acc695c5599cc}
+
+\item 
+{\bfseries zone\+\_\+allocator} (const \hyperlink{classv8_1_1internal_1_1zone__allocator}{zone\+\_\+allocator} \&other)  throw ()\hypertarget{classv8_1_1internal_1_1zone__allocator_a7c14fb89509fd91fa273afd9bbe04e21}{}\label{classv8_1_1internal_1_1zone__allocator_a7c14fb89509fd91fa273afd9bbe04e21}
+
+\item 
+{\footnotesize template$<$typename U $>$ }\\{\bfseries zone\+\_\+allocator} (const \hyperlink{classv8_1_1internal_1_1zone__allocator}{zone\+\_\+allocator}$<$ U $>$ \&other)  throw ()\hypertarget{classv8_1_1internal_1_1zone__allocator_aad25da967d9ebd3a9736907d5970b473}{}\label{classv8_1_1internal_1_1zone__allocator_aad25da967d9ebd3a9736907d5970b473}
+
+\item 
+pointer {\bfseries address} (reference x) const \hypertarget{classv8_1_1internal_1_1zone__allocator_a447522d95f8ea0db3d4601b4c67a5c1f}{}\label{classv8_1_1internal_1_1zone__allocator_a447522d95f8ea0db3d4601b4c67a5c1f}
+
+\item 
+const\+\_\+pointer {\bfseries address} (const\+\_\+reference x) const \hypertarget{classv8_1_1internal_1_1zone__allocator_a32b315102b63d6dc726d8ca530ede541}{}\label{classv8_1_1internal_1_1zone__allocator_a32b315102b63d6dc726d8ca530ede541}
+
+\item 
+pointer {\bfseries allocate} (size\+\_\+type n, const void $\ast$hint=0)\hypertarget{classv8_1_1internal_1_1zone__allocator_ad3c946af3d4d514e5bf6586e7823ee97}{}\label{classv8_1_1internal_1_1zone__allocator_ad3c946af3d4d514e5bf6586e7823ee97}
+
+\item 
+void {\bfseries deallocate} (pointer p, size\+\_\+type)\hypertarget{classv8_1_1internal_1_1zone__allocator_acc31da3cfb64e71a5f7188f366800ca4}{}\label{classv8_1_1internal_1_1zone__allocator_acc31da3cfb64e71a5f7188f366800ca4}
+
+\item 
+size\+\_\+type {\bfseries max\+\_\+size} () const   throw ()\hypertarget{classv8_1_1internal_1_1zone__allocator_acc053240888a4ee0858b30411dde72d4}{}\label{classv8_1_1internal_1_1zone__allocator_acc053240888a4ee0858b30411dde72d4}
+
+\item 
+void {\bfseries construct} (pointer p, const T \&val)\hypertarget{classv8_1_1internal_1_1zone__allocator_a6577687565596d029f37507793c45967}{}\label{classv8_1_1internal_1_1zone__allocator_a6577687565596d029f37507793c45967}
+
+\item 
+void {\bfseries destroy} (pointer p)\hypertarget{classv8_1_1internal_1_1zone__allocator_a59a75d1b6c2220221bb73863bf66f56b}{}\label{classv8_1_1internal_1_1zone__allocator_a59a75d1b6c2220221bb73863bf66f56b}
+
+\item 
+bool {\bfseries operator==} (\hyperlink{classv8_1_1internal_1_1zone__allocator}{zone\+\_\+allocator} const \&other) const \hypertarget{classv8_1_1internal_1_1zone__allocator_ad47d0343a6939ba85aed7dd97d7326a0}{}\label{classv8_1_1internal_1_1zone__allocator_ad47d0343a6939ba85aed7dd97d7326a0}
+
+\item 
+bool {\bfseries operator!=} (\hyperlink{classv8_1_1internal_1_1zone__allocator}{zone\+\_\+allocator} const \&other) const \hypertarget{classv8_1_1internal_1_1zone__allocator_a9547cd20b0acaba1df1d12bef2b77ec5}{}\label{classv8_1_1internal_1_1zone__allocator_a9547cd20b0acaba1df1d12bef2b77ec5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1zone__allocator_a43a00b3b6f919e207a874ca46bac6a82}{}\label{classv8_1_1internal_1_1zone__allocator_a43a00b3b6f919e207a874ca46bac6a82}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1zone__allocator_aba540559030e40e1d094871b868c4a38}{}\label{classv8_1_1internal_1_1zone__allocator_aba540559030e40e1d094871b868c4a38}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\class {\bfseries zone\+\_\+allocator}\hypertarget{classv8_1_1internal_1_1zone__allocator_afcabc8cbdfd097d75094d17cd848aada}{}\label{classv8_1_1internal_1_1zone__allocator_afcabc8cbdfd097d75094d17cd848aada}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/zone-\/allocator.\+h\end{DoxyCompactItemize}

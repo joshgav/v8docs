@@ -1,0 +1,57 @@
+\hypertarget{structv8_1_1internal_1_1_runtime_call_stats}{}\section{v8\+:\+:internal\+:\+:Runtime\+Call\+Stats Struct Reference}
+\label{structv8_1_1internal_1_1_runtime_call_stats}\index{v8\+::internal\+::\+Runtime\+Call\+Stats@{v8\+::internal\+::\+Runtime\+Call\+Stats}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Enter} (\hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter} $\ast$counter)\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a90bfb6e479f86d9eba91dc6de1c8c1a3}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a90bfb6e479f86d9eba91dc6de1c8c1a3}
+
+\item 
+void {\bfseries Enter} (\hyperlink{classv8_1_1internal_1_1_runtime_call_timer}{Runtime\+Call\+Timer} $\ast$timer)\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a2b364056ad630df88003c09af0f1d778}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a2b364056ad630df88003c09af0f1d778}
+
+\item 
+void {\bfseries Leave} ()\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a37389c377c403cbbee7fa2c3796e7c5a}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a37389c377c403cbbee7fa2c3796e7c5a}
+
+\item 
+void {\bfseries Leave} (\hyperlink{classv8_1_1internal_1_1_runtime_call_timer}{Runtime\+Call\+Timer} $\ast$timer)\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a5d5eeba49d474e5f679f0890dec5f4f9}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a5d5eeba49d474e5f679f0890dec5f4f9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_runtime_call_timer}{Runtime\+Call\+Timer} $\ast$ {\bfseries current\+\_\+timer} ()\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a9c1851ba664ce8878d40c2777d9bcc1b}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a9c1851ba664ce8878d40c2777d9bcc1b}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_ab058d39c32704ceb58055dbb3e81db58}{}\label{structv8_1_1internal_1_1_runtime_call_stats_ab058d39c32704ceb58055dbb3e81db58}
+
+\item 
+void {\bfseries Print} (std\+::ostream \&os)\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a0caa1985c73712d7e45190c4b2e5a0f4}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a0caa1985c73712d7e45190c4b2e5a0f4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter} {\bfseries Unexpected\+Stub\+Miss}
+\item 
+\hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter} {\bfseries External\+Callback} = \hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter}(\char`\"{}External\+Callback\char`\"{})\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a5f2d6db1674a97f623a879ef50a9b7a1}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a5f2d6db1674a97f623a879ef50a9b7a1}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter} {\bfseries GC} = \hyperlink{structv8_1_1internal_1_1_runtime_call_counter}{Runtime\+Call\+Counter}(\char`\"{}GC\char`\"{})\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a79b6a88c8722872adb1017193fbb4dd6}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a79b6a88c8722872adb1017193fbb4dd6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_runtime_call_timer}{Runtime\+Call\+Timer} $\ast$ {\bfseries current\+\_\+timer\+\_\+} = N\+U\+LL\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_a13ca7069975e9aa577cb9e805f0da45a}{}\label{structv8_1_1internal_1_1_runtime_call_stats_a13ca7069975e9aa577cb9e805f0da45a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Runtime\+Call\+Stats@{v8\+::internal\+::\+Runtime\+Call\+Stats}!Unexpected\+Stub\+Miss@{Unexpected\+Stub\+Miss}}
+\index{Unexpected\+Stub\+Miss@{Unexpected\+Stub\+Miss}!v8\+::internal\+::\+Runtime\+Call\+Stats@{v8\+::internal\+::\+Runtime\+Call\+Stats}}
+\subsubsection[{\texorpdfstring{Unexpected\+Stub\+Miss}{UnexpectedStubMiss}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Runtime\+Call\+Counter} v8\+::internal\+::\+Runtime\+Call\+Stats\+::\+Unexpected\+Stub\+Miss}\hypertarget{structv8_1_1internal_1_1_runtime_call_stats_aece77b87a66bf986d7526677bb7c61e6}{}\label{structv8_1_1internal_1_1_runtime_call_stats_aece77b87a66bf986d7526677bb7c61e6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      RuntimeCallCounter(\textcolor{stringliteral}{"UnexpectedStubMiss"})
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/counters.\+h\item 
+/\+Users/joshgav/node/v8/src/counters.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,333 @@
+\hypertarget{classv8_1_1internal_1_1_parser_traits}{}\section{v8\+:\+:internal\+:\+:Parser\+Traits Class Reference}
+\label{classv8_1_1internal_1_1_parser_traits}\index{v8\+::internal\+::\+Parser\+Traits@{v8\+::internal\+::\+Parser\+Traits}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Parser\+Traits\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_parser_traits}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_parser_traits_1_1_type}{Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal} $\ast$ {\bfseries Template\+Literal\+State}\hypertarget{classv8_1_1internal_1_1_parser_traits_aa19672f28198f667f77e9dd756b16948}{}\label{classv8_1_1internal_1_1_parser_traits_aa19672f28198f667f77e9dd756b16948}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Parser\+Traits} (\hyperlink{classv8_1_1internal_1_1_parser}{Parser} $\ast$parser)\hypertarget{classv8_1_1internal_1_1_parser_traits_abfb6b57f03bde44ebd57ba82060e853c}{}\label{classv8_1_1internal_1_1_parser_traits_abfb6b57f03bde44ebd57ba82060e853c}
+
+\item 
+bool {\bfseries Is\+Eval} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_afba95e19eb7118575931870015f0bf1f}{}\label{classv8_1_1internal_1_1_parser_traits_afba95e19eb7118575931870015f0bf1f}
+
+\item 
+bool {\bfseries Is\+Arguments} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_a604e49310c1454c26b9d67a19098b06d}{}\label{classv8_1_1internal_1_1_parser_traits_a604e49310c1454c26b9d67a19098b06d}
+
+\item 
+bool {\bfseries Is\+Eval\+Or\+Arguments} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_a9a797b80683da1e025032f06da7791f4}{}\label{classv8_1_1internal_1_1_parser_traits_a9a797b80683da1e025032f06da7791f4}
+
+\item 
+bool {\bfseries Is\+Undefined} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_a899e7924d65e4fc73517943797575dff}{}\label{classv8_1_1internal_1_1_parser_traits_a899e7924d65e4fc73517943797575dff}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Future\+Strict\+Reserved} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_accd89a1f7c3e9eb5f43c0991bc4f0534}{}\label{classv8_1_1internal_1_1_parser_traits_accd89a1f7c3e9eb5f43c0991bc4f0534}
+
+\item 
+bool {\bfseries Is\+Prototype} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_a063a2f5d01a71be55d8b092dbddf6e01}{}\label{classv8_1_1internal_1_1_parser_traits_a063a2f5d01a71be55d8b092dbddf6e01}
+
+\item 
+bool {\bfseries Is\+Constructor} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$identifier) const \hypertarget{classv8_1_1internal_1_1_parser_traits_a592da66d10de7c1f530bcc356f48326b}{}\label{classv8_1_1internal_1_1_parser_traits_a592da66d10de7c1f530bcc356f48326b}
+
+\item 
+void {\bfseries Push\+Property\+Name} (\hyperlink{classv8_1_1internal_1_1_func_name_inferrer}{Func\+Name\+Inferrer} $\ast$fni, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a84e5b3ddf79722029810dcdd8c32e2a6}{}\label{classv8_1_1internal_1_1_parser_traits_a84e5b3ddf79722029810dcdd8c32e2a6}
+
+\item 
+bool {\bfseries Shortcut\+Numeric\+Literal\+Binary\+Expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$$\ast$x, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$y, Token\+::\+Value op, int pos, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_ad72a8bfdda3341d3ecd1e35274783e79}{}\label{classv8_1_1internal_1_1_parser_traits_ad72a8bfdda3341d3ecd1e35274783e79}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Build\+Unary\+Expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression, Token\+::\+Value op, int pos, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_abef9a98716e76bfa90c80f453ac8169d}{}\label{classv8_1_1internal_1_1_parser_traits_abef9a98716e76bfa90c80f453ac8169d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Build\+Iterator\+Result} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$value, bool done)\hypertarget{classv8_1_1internal_1_1_parser_traits_a5f817159b9b4b0b338a6af6ec9ec6f71}{}\label{classv8_1_1internal_1_1_parser_traits_a5f817159b9b4b0b338a6af6ec9ec6f71}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries New\+Throw\+Reference\+Error} (Message\+Template\+::\+Template message, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a355160b0c838b5a15aae94a85f7ed80e}{}\label{classv8_1_1internal_1_1_parser_traits_a355160b0c838b5a15aae94a85f7ed80e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries New\+Throw\+Syntax\+Error} (Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a7b1e91b8852862c462d69b25573290ec}{}\label{classv8_1_1internal_1_1_parser_traits_a7b1e91b8852862c462d69b25573290ec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries New\+Throw\+Type\+Error} (Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a3d28b5ebe3496f523a2c86d03e337cfa}{}\label{classv8_1_1internal_1_1_parser_traits_a3d28b5ebe3496f523a2c86d03e337cfa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries New\+Throw\+Error} (Runtime\+::\+Function\+Id function\+\_\+id, Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_ae77da3551545aa3d092bdfea64812e0c}{}\label{classv8_1_1internal_1_1_parser_traits_ae77da3551545aa3d092bdfea64812e0c}
+
+\item 
+void {\bfseries Finalize\+Iterator\+Use} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$completion, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$condition, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$iter, \hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$iterator\+\_\+use, \hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$result)\hypertarget{classv8_1_1internal_1_1_parser_traits_aad0a6cc956eb927cc3912f6c08ddb541}{}\label{classv8_1_1internal_1_1_parser_traits_aad0a6cc956eb927cc3912f6c08ddb541}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Finalize\+For\+Of\+Statement} (\hyperlink{classv8_1_1internal_1_1_for_of_statement}{For\+Of\+Statement} $\ast$loop, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa74cbc57020cb7845e09d8c92cb4239d}{}\label{classv8_1_1internal_1_1_parser_traits_aa74cbc57020cb7845e09d8c92cb4239d}
+
+\item 
+void {\bfseries Report\+Message\+At} (\hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} source\+\_\+location, Message\+Template\+::\+Template message, const char $\ast$arg=N\+U\+LL, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_parser_traits_a8d7eca3d0c28744a7f29a393448a9e03}{}\label{classv8_1_1internal_1_1_parser_traits_a8d7eca3d0c28744a7f29a393448a9e03}
+
+\item 
+void {\bfseries Report\+Message} (Message\+Template\+::\+Template message, const char $\ast$arg=N\+U\+LL, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_parser_traits_ae549219aeda1173c30f9235529e4bb5b}{}\label{classv8_1_1internal_1_1_parser_traits_ae549219aeda1173c30f9235529e4bb5b}
+
+\item 
+void {\bfseries Report\+Message} (Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_parser_traits_ab6d6687aedb010cde41cf22ae1851384}{}\label{classv8_1_1internal_1_1_parser_traits_ab6d6687aedb010cde41cf22ae1851384}
+
+\item 
+void {\bfseries Report\+Message\+At} (\hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} source\+\_\+location, Message\+Template\+::\+Template message, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$arg, Parse\+Error\+Type error\+\_\+type=k\+Syntax\+Error)\hypertarget{classv8_1_1internal_1_1_parser_traits_a36f4d99e5905c1955e497e753dd9afd2}{}\label{classv8_1_1internal_1_1_parser_traits_a36f4d99e5905c1955e497e753dd9afd2}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Empty\+Identifier\+String} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_ae1b7fd1a5cc960789abd70756a8ef71b}{}\label{classv8_1_1internal_1_1_parser_traits_ae1b7fd1a5cc960789abd70756a8ef71b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$ {\bfseries Get\+Literal\+The\+Hole} (int position, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_afbaf13f4a9d483f8894de7e82d0dea0b}{}\label{classv8_1_1internal_1_1_parser_traits_afbaf13f4a9d483f8894de7e82d0dea0b}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Get\+Symbol} (\hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} $\ast$scanner)\hypertarget{classv8_1_1internal_1_1_parser_traits_a1d7b04ddff6eacc8ab04512ea3fe31b5}{}\label{classv8_1_1internal_1_1_parser_traits_a1d7b04ddff6eacc8ab04512ea3fe31b5}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Get\+Next\+Symbol} (\hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} $\ast$scanner)\hypertarget{classv8_1_1internal_1_1_parser_traits_a56c2c6fcc416e624da608f611cb22821}{}\label{classv8_1_1internal_1_1_parser_traits_a56c2c6fcc416e624da608f611cb22821}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Get\+Number\+As\+Symbol} (\hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} $\ast$scanner)\hypertarget{classv8_1_1internal_1_1_parser_traits_ab56e4ceb78a7000cd4285c2feb824ade}{}\label{classv8_1_1internal_1_1_parser_traits_ab56e4ceb78a7000cd4285c2feb824ade}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries This\+Expression} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory, int pos=Reloc\+Info\+::k\+No\+Position)\hypertarget{classv8_1_1internal_1_1_parser_traits_af3766589dab2e966849f3e3cc70dda25}{}\label{classv8_1_1internal_1_1_parser_traits_af3766589dab2e966849f3e3cc70dda25}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Super\+Property\+Reference} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a8c16722c60e2f1c98a8d5276e0da5db2}{}\label{classv8_1_1internal_1_1_parser_traits_a8c16722c60e2f1c98a8d5276e0da5db2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Super\+Call\+Reference} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4fb2f1841ae64e8257d6883643631375}{}\label{classv8_1_1internal_1_1_parser_traits_a4fb2f1841ae64e8257d6883643631375}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries New\+Target\+Expression} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa659e357459b9679577d2d4a7ba87d87}{}\label{classv8_1_1internal_1_1_parser_traits_aa659e357459b9679577d2d4a7ba87d87}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Function\+Sent\+Expression} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a7bb915c302c9e3999c488b703fc5130e}{}\label{classv8_1_1internal_1_1_parser_traits_a7bb915c302c9e3999c488b703fc5130e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$ {\bfseries Expression\+From\+Literal} (Token\+::\+Value token, int pos, \hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} $\ast$scanner, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_a739da574e8066c5e7c63e5d619289fb2}{}\label{classv8_1_1internal_1_1_parser_traits_a739da574e8066c5e7c63e5d619289fb2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Expression\+From\+Identifier} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, int start\+\_\+position, int end\+\_\+position, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_a938823938d83ce142b9a7155cbdf0ad4}{}\label{classv8_1_1internal_1_1_parser_traits_a938823938d83ce142b9a7155cbdf0ad4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Expression\+From\+String} (int pos, \hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} $\ast$scanner, Ast\+Node\+Factory $\ast$factory)\hypertarget{classv8_1_1internal_1_1_parser_traits_a34ede555da8519ab286c94b3648c1e64}{}\label{classv8_1_1internal_1_1_parser_traits_a34ede555da8519ab286c94b3648c1e64}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Get\+Iterator} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$iterable, Ast\+Node\+Factory $\ast$factory, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_ae1a656ceb34d59cfe61cf2b694cde503}{}\label{classv8_1_1internal_1_1_parser_traits_ae1a656ceb34d59cfe61cf2b694cde503}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$ {\bfseries New\+Expression\+List} (int size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_parser_traits_aca555b86940ad02d2f75e8add6422b98}{}\label{classv8_1_1internal_1_1_parser_traits_aca555b86940ad02d2f75e8add6422b98}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+::\+Property} $\ast$ $>$ $\ast$ {\bfseries New\+Property\+List} (int size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_parser_traits_a2ca8071c6a740b06803ddefb38eb0f96}{}\label{classv8_1_1internal_1_1_parser_traits_a2ca8071c6a740b06803ddefb38eb0f96}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{v8\+::internal\+::\+Statement} $\ast$ $>$ $\ast$ {\bfseries New\+Statement\+List} (int size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa6ec83169ac86f12d0823b9a3330397d}{}\label{classv8_1_1internal_1_1_parser_traits_aa6ec83169ac86f12d0823b9a3330397d}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Add\+Parameter\+Initialization\+Block} (const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} \&parameters, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{v8\+::internal\+::\+Statement} $\ast$ $>$ $\ast$body, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a140f36ba0ab031860cd75f208c2a92de}{}\label{classv8_1_1internal_1_1_parser_traits_a140f36ba0ab031860cd75f208c2a92de}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries New\+Scope} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$parent\+\_\+scope, Scope\+Type scope\+\_\+type, Function\+Kind kind=k\+Normal\+Function)\hypertarget{classv8_1_1internal_1_1_parser_traits_ac68bc9d14662faf42d4684808d0b4ac2}{}\label{classv8_1_1internal_1_1_parser_traits_ac68bc9d14662faf42d4684808d0b4ac2}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Add\+Formal\+Parameter} (\hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} $\ast$parameters, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$pattern, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$initializer, int initializer\+\_\+end\+\_\+position, bool is\+\_\+rest)\hypertarget{classv8_1_1internal_1_1_parser_traits_add45de04bcff1c95ec7f507d93b54f0b}{}\label{classv8_1_1internal_1_1_parser_traits_add45de04bcff1c95ec7f507d93b54f0b}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Declare\+Formal\+Parameter} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters_1_1_parameter}{Parser\+Formal\+Parameters\+::\+Parameter} \&parameter, \hyperlink{classv8_1_1internal_1_1_expression_classifier}{Type\+::\+Expression\+Classifier} $\ast$classifier)\hypertarget{classv8_1_1internal_1_1_parser_traits_afe6d2d29266c565ef1432cc8b8055c15}{}\label{classv8_1_1internal_1_1_parser_traits_afe6d2d29266c565ef1432cc8b8055c15}
+
+\item 
+void {\bfseries Parse\+Arrow\+Function\+Formal\+Parameters} (\hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} $\ast$parameters, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$params, int end\+\_\+pos, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a8c755b657656db826d0f95990b59f114}{}\label{classv8_1_1internal_1_1_parser_traits_a8c755b657656db826d0f95990b59f114}
+
+\item 
+void {\bfseries Parse\+Arrow\+Function\+Formal\+Parameter\+List} (\hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} $\ast$parameters, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$params, const \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} \&params\+\_\+loc, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} $\ast$duplicate\+\_\+loc, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_ac079aab932f768c0ecc5f485adf421d7}{}\label{classv8_1_1internal_1_1_parser_traits_ac079aab932f768c0ecc5f485adf421d7}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_do_expression}{Do\+Expression} $\ast$ {\bfseries Parse\+Do\+Expression} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a805f1098682d6d6dbe001c92938edfc4}{}\label{classv8_1_1internal_1_1_parser_traits_a805f1098682d6d6dbe001c92938edfc4}
+
+\item 
+void {\bfseries Reindex\+Literals} (const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} \&parameters)\hypertarget{classv8_1_1internal_1_1_parser_traits_a83b75075c504b64b3bb9a604e186d8e0}{}\label{classv8_1_1internal_1_1_parser_traits_a83b75075c504b64b3bb9a604e186d8e0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Parse\+V8\+Intrinsic} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4c1035a3d38d18d607affbac41dc5a42}{}\label{classv8_1_1internal_1_1_parser_traits_a4c1035a3d38d18d607affbac41dc5a42}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Parse\+Function\+Literal} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} function\+\_\+name\+\_\+location, Function\+Name\+Validity function\+\_\+name\+\_\+validity, Function\+Kind kind, int function\+\_\+token\+\_\+position, Function\+Literal\+::\+Function\+Type type, Language\+Mode language\+\_\+mode, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_adb39443ce2eb36346ca195869ec02b02}{}\label{classv8_1_1internal_1_1_parser_traits_adb39443ce2eb36346ca195869ec02b02}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Skip\+Lazy\+Function\+Body} (int $\ast$materialized\+\_\+literal\+\_\+count, int $\ast$expected\+\_\+property\+\_\+count, bool $\ast$ok, \hyperlink{classv8_1_1internal_1_1_scanner_1_1_bookmark_scope}{Scanner\+::\+Bookmark\+Scope} $\ast$bookmark=nullptr)\hypertarget{classv8_1_1internal_1_1_parser_traits_aaaf536f29e16935387fbffc33c0adf65}{}\label{classv8_1_1internal_1_1_parser_traits_aaaf536f29e16935387fbffc33c0adf65}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$ {\bfseries Parse\+Eager\+Function\+Body} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, int pos, const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} \&parameters, Function\+Kind kind, Function\+Literal\+::\+Function\+Type function\+\_\+type, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a7590529a733225c5999cc0f88c2465df}{}\label{classv8_1_1internal_1_1_parser_traits_a7590529a733225c5999cc0f88c2465df}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_class_literal}{Class\+Literal} $\ast$ {\bfseries Parse\+Class\+Literal} (\hyperlink{classv8_1_1internal_1_1_expression_classifier}{Type\+::\+Expression\+Classifier} $\ast$classifier, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} class\+\_\+name\+\_\+location, bool name\+\_\+is\+\_\+strict\+\_\+reserved, int pos, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4c76106215c61f83958c9d288ae8f8b7}{}\label{classv8_1_1internal_1_1_parser_traits_a4c76106215c61f83958c9d288ae8f8b7}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Mark\+Collected\+Tail\+Call\+Expressions} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_ae6b4bba1f1069ecbfe725f579bdd6b44}{}\label{classv8_1_1internal_1_1_parser_traits_ae6b4bba1f1069ecbfe725f579bdd6b44}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Mark\+Tail\+Position} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a87d0d6479a981d8328822b7cafd100df}{}\label{classv8_1_1internal_1_1_parser_traits_a87d0d6479a981d8328822b7cafd100df}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Check\+Conflicting\+Var\+Declarations} (\hyperlink{classv8_1_1internal_1_1_scope}{v8\+::internal\+::\+Scope} $\ast$scope, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4b9edd9f74f476d66c2e8d86453a26b4}{}\label{classv8_1_1internal_1_1_parser_traits_a4b9edd9f74f476d66c2e8d86453a26b4}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} {\bfseries Open\+Template\+Literal} (int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a468e223ed6b4010334a027caae764c9d}{}\label{classv8_1_1internal_1_1_parser_traits_a468e223ed6b4010334a027caae764c9d}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Add\+Template\+Span} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, bool tail)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4ab3dc67e79f7bad8dee348cbae244e3}{}\label{classv8_1_1internal_1_1_parser_traits_a4ab3dc67e79f7bad8dee348cbae244e3}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Add\+Template\+Expression} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a8492116f60b1aaa8038c157e450ebc98}{}\label{classv8_1_1internal_1_1_parser_traits_a8492116f60b1aaa8038c157e450ebc98}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Close\+Template\+Literal} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, int start, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$tag)\hypertarget{classv8_1_1internal_1_1_parser_traits_a8e3276ca768d1ae874f28acc53846f73}{}\label{classv8_1_1internal_1_1_parser_traits_a8e3276ca768d1ae874f28acc53846f73}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries No\+Template\+Tag} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_aeb521e8eca215273215176ef12f50d19}{}\label{classv8_1_1internal_1_1_parser_traits_aeb521e8eca215273215176ef12f50d19}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$ {\bfseries Prepare\+Spread\+Arguments} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$list)\hypertarget{classv8_1_1internal_1_1_parser_traits_af1e362246d5fa6ad02eeefb433e77a34}{}\label{classv8_1_1internal_1_1_parser_traits_af1e362246d5fa6ad02eeefb433e77a34}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Materialize\+Unspread\+Arguments\+Literals} (int count)\hypertarget{classv8_1_1internal_1_1_parser_traits_af9d24e8001903c173b4e9158103f80e7}{}\label{classv8_1_1internal_1_1_parser_traits_af9d24e8001903c173b4e9158103f80e7}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Spread\+Call} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$function, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$args, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a28d537fd20813d23c349422cf7702ad3}{}\label{classv8_1_1internal_1_1_parser_traits_a28d537fd20813d23c349422cf7702ad3}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Spread\+Call\+New} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$function, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$args, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa6324e3aca79dabaf58d37160791585e}{}\label{classv8_1_1internal_1_1_parser_traits_aa6324e3aca79dabaf58d37160791585e}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Rewrite\+Destructuring\+Assignments} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_ab539b32dd1a936be8829563a36c96e0a}{}\label{classv8_1_1internal_1_1_parser_traits_ab539b32dd1a936be8829563a36c96e0a}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Exponentiation} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$left, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$right, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a4cc3350478f26ad5f7d9f26183d88a29}{}\label{classv8_1_1internal_1_1_parser_traits_a4cc3350478f26ad5f7d9f26183d88a29}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Assign\+Exponentiation} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$left, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$right, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa3fa3303f302eebd12719ccc73d05bfe}{}\label{classv8_1_1internal_1_1_parser_traits_aa3fa3303f302eebd12719ccc73d05bfe}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Queue\+Destructuring\+Assignment\+For\+Rewriting} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$assignment)\hypertarget{classv8_1_1internal_1_1_parser_traits_a6c39e29ba81a6d71bdc6db82499fc8ae}{}\label{classv8_1_1internal_1_1_parser_traits_a6c39e29ba81a6d71bdc6db82499fc8ae}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Queue\+Non\+Pattern\+For\+Rewriting} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1_parser_traits_a07a4e3e2033b09e354dfd8d2c4133d51}{}\label{classv8_1_1internal_1_1_parser_traits_a07a4e3e2033b09e354dfd8d2c4133d51}
+
+\item 
+void {\bfseries Set\+Function\+Name\+From\+Property\+Name} (\hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+Property} $\ast$property, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name)\hypertarget{classv8_1_1internal_1_1_parser_traits_a0659af5ab20adb3b37e1f95c00520837}{}\label{classv8_1_1internal_1_1_parser_traits_a0659af5ab20adb3b37e1f95c00520837}
+
+\item 
+void {\bfseries Set\+Function\+Name\+From\+Identifier\+Ref} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$value, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$identifier)\hypertarget{classv8_1_1internal_1_1_parser_traits_a7491ddd97c54e0733b3d9494ad3f9ce1}{}\label{classv8_1_1internal_1_1_parser_traits_a7491ddd97c54e0733b3d9494ad3f9ce1}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Rewrite\+Non\+Pattern} (\hyperlink{classv8_1_1internal_1_1_expression_classifier}{Type\+::\+Expression\+Classifier} $\ast$classifier, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_traits_afd838741d77807879f8c5893e815782f}{}\label{classv8_1_1internal_1_1_parser_traits_afd838741d77807879f8c5893e815782f}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_a47ad5341dbd88592a99a7a3cf2c458b8}{}\label{classv8_1_1internal_1_1_parser_traits_a47ad5341dbd88592a99a7a3cf2c458b8}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries Get\+Non\+Pattern\+List} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_a1b4146e234b7af4eaa92665f27ecc339}{}\label{classv8_1_1internal_1_1_parser_traits_a1b4146e234b7af4eaa92665f27ecc339}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Yield\+Star} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$generator, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_aa76b9d24a487fc8ed8e473dcc8502293}{}\label{classv8_1_1internal_1_1_parser_traits_aa76b9d24a487fc8ed8e473dcc8502293}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Instanceof} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$lhs, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$rhs, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_af6b43e2f8ad2b9d1e6bd39987c059ab7}{}\label{classv8_1_1internal_1_1_parser_traits_af6b43e2f8ad2b9d1e6bd39987c059ab7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Is\+This\+Property} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a18441854b73ca5e19d9e0e1b5bfb60b6}{}\label{classv8_1_1internal_1_1_parser_traits_a18441854b73ca5e19d9e0e1b5bfb60b6}
+
+\item 
+static bool {\bfseries Is\+Identifier} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_afd0b2cb75bc97aea8797e0dedcc1a4a2}{}\label{classv8_1_1internal_1_1_parser_traits_afd0b2cb75bc97aea8797e0dedcc1a4a2}
+
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries As\+Identifier} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a1b9ce47fe3ddaedac13204176e241805}{}\label{classv8_1_1internal_1_1_parser_traits_a1b9ce47fe3ddaedac13204176e241805}
+
+\item 
+static bool {\bfseries Is\+Boilerplate\+Property} (\hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+::\+Property} $\ast$property)\hypertarget{classv8_1_1internal_1_1_parser_traits_a578c0594771c3ec77513ad986e5e57a4}{}\label{classv8_1_1internal_1_1_parser_traits_a578c0594771c3ec77513ad986e5e57a4}
+
+\item 
+static bool {\bfseries Is\+Array\+Index} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$string, uint32\+\_\+t $\ast$index)\hypertarget{classv8_1_1internal_1_1_parser_traits_a79af7977af749454229e6e0d6054f1b8}{}\label{classv8_1_1internal_1_1_parser_traits_a79af7977af749454229e6e0d6054f1b8}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Get\+Property\+Value} (\hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+::\+Property} $\ast$property)\hypertarget{classv8_1_1internal_1_1_parser_traits_a32e9f3ad54474f61a9cad0195bda0030}{}\label{classv8_1_1internal_1_1_parser_traits_a32e9f3ad54474f61a9cad0195bda0030}
+
+\item 
+static void {\bfseries Push\+Literal\+Name} (\hyperlink{classv8_1_1internal_1_1_func_name_inferrer}{Func\+Name\+Inferrer} $\ast$fni, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$id)\hypertarget{classv8_1_1internal_1_1_parser_traits_a3124d51842dcc66220a4cf3db0e254da}{}\label{classv8_1_1internal_1_1_parser_traits_a3124d51842dcc66220a4cf3db0e254da}
+
+\item 
+static void {\bfseries Infer\+Function\+Name} (\hyperlink{classv8_1_1internal_1_1_func_name_inferrer}{Func\+Name\+Inferrer} $\ast$fni, \hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$func\+\_\+to\+\_\+infer)\hypertarget{classv8_1_1internal_1_1_parser_traits_a1616044bda1b861847c29c9d7b8ecec7}{}\label{classv8_1_1internal_1_1_parser_traits_a1616044bda1b861847c29c9d7b8ecec7}
+
+\item 
+static void {\bfseries Check\+Assigning\+Function\+Literal\+To\+Property} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$left, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$right)\hypertarget{classv8_1_1internal_1_1_parser_traits_a21739d8514cf648e427ff8c74df26375}{}\label{classv8_1_1internal_1_1_parser_traits_a21739d8514cf648e427ff8c74df26375}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Mark\+Expression\+As\+Assigned} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_traits_a99204d59464539b7468e8401aaf80bc5}{}\label{classv8_1_1internal_1_1_parser_traits_a99204d59464539b7468e8401aaf80bc5}
+
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Empty\+Identifier} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_a7851f72644ad747ea11af4739f96d234}{}\label{classv8_1_1internal_1_1_parser_traits_a7851f72644ad747ea11af4739f96d234}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Empty\+Expression} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_a835157f245dd4e0aca90c1894ccf99f3}{}\label{classv8_1_1internal_1_1_parser_traits_a835157f245dd4e0aca90c1894ccf99f3}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$ {\bfseries Empty\+Literal} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_af0ab96a38f016048f2df34626915f55f}{}\label{classv8_1_1internal_1_1_parser_traits_af0ab96a38f016048f2df34626915f55f}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+Property} $\ast$ {\bfseries Empty\+Object\+Literal\+Property} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_ab66816c99c51fb2b1c7d4624d8f6e7ea}{}\label{classv8_1_1internal_1_1_parser_traits_ab66816c99c51fb2b1c7d4624d8f6e7ea}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Empty\+Function\+Literal} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_a18ce9ef1b4bbc01ab9fdef911e25ae73}{}\label{classv8_1_1internal_1_1_parser_traits_a18ce9ef1b4bbc01ab9fdef911e25ae73}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries Null\+Expression\+List} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_a0f22a0d39815506203df7680e198ae9c}{}\label{classv8_1_1internal_1_1_parser_traits_a0f22a0d39815506203df7680e198ae9c}
+
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Empty\+Formal\+Parameter} ()\hypertarget{classv8_1_1internal_1_1_parser_traits_ab468bd3e46fd57090cfabfaea9f6d8c0}{}\label{classv8_1_1internal_1_1_parser_traits_ab468bd3e46fd57090cfabfaea9f6d8c0}
+
+\item 
+static V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Tagged\+Template} (const \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$tag)\hypertarget{classv8_1_1internal_1_1_parser_traits_a9a1f4ba6cbb1e2f5efc0a3ca5087644c}{}\label{classv8_1_1internal_1_1_parser_traits_a9a1f4ba6cbb1e2f5efc0a3ca5087644c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Build\+Iterator\+Close} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statements, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$iterator, \hyperlink{classv8_1_1_maybe}{Maybe}$<$ \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$ $>$ input, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$output)\hypertarget{classv8_1_1internal_1_1_parser_traits_a23edb7ce0fff0afa3dea22b91008acdc}{}\label{classv8_1_1internal_1_1_parser_traits_a23edb7ce0fff0afa3dea22b91008acdc}
+
+\item 
+void {\bfseries Build\+Iterator\+Close\+For\+Completion} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statements, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$iterator, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$body\+\_\+threw)\hypertarget{classv8_1_1internal_1_1_parser_traits_ad62360c7f60d29e55876a7294395dedb}{}\label{classv8_1_1internal_1_1_parser_traits_ad62360c7f60d29e55876a7294395dedb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Check\+Callable} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$var, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$error, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_a02ab678c453b5b98f74dfd567d5947c9}{}\label{classv8_1_1internal_1_1_parser_traits_a02ab678c453b5b98f74dfd567d5947c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_parser}{Parser} $\ast$ {\bfseries parser\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_traits_a927ccce9871593acc94f8bbdc7310803}{}\label{classv8_1_1internal_1_1_parser_traits_a927ccce9871593acc94f8bbdc7310803}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+cc\end{DoxyCompactItemize}

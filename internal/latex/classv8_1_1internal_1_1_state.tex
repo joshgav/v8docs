@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1_state}{}\section{v8\+:\+:internal\+:\+:State Class Reference}
+\label{classv8_1_1internal_1_1_state}\index{v8\+::internal\+::\+State@{v8\+::internal\+::\+State}}
+Inheritance diagram for v8\+:\+:internal\+:\+:State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_a9073e7e20a71bfd62fe96a3cefeee4eb}{}\label{classv8_1_1internal_1_1_state_a9073e7e20a71bfd62fe96a3cefeee4eb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Process} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_ada96dfe0c2aa4eb2f48b5c58f43aa0fc}{}\label{classv8_1_1internal_1_1_state_ada96dfe0c2aa4eb2f48b5c58f43aa0fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Merge} (\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$succ\+\_\+state, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$succ\+\_\+block, \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$pred\+\_\+state, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$pred\+\_\+block, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_afe7a1d9946a12238558552959d5110b8}{}\label{classv8_1_1internal_1_1_state_afe7a1d9946a12238558552959d5110b8}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Finish} (\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$state, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_a460c4dcf4815d3973c42e9f8005c93d7}{}\label{classv8_1_1internal_1_1_state_a460c4dcf4815d3973c42e9f8005c93d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries N\+O\+R\+M\+AL}, 
+\\*
+{\bfseries C\+O\+L\+L\+E\+C\+T\+\_\+\+C\+O\+N\+S\+E\+C\+U\+T\+I\+V\+E\+\_\+\+S\+I\+M\+U\+L\+A\+T\+ES}
+ \}\hypertarget{classv8_1_1internal_1_1_state_a4a6c6bb4e3ec9a5961f3f27341e72fdc}{}\label{classv8_1_1internal_1_1_state_a4a6c6bb4e3ec9a5961f3f27341e72fdc}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (const \hyperlink{classv8_1_1internal_1_1_state}{State} \&other)\hypertarget{classv8_1_1internal_1_1_state_a9bb0023e9dce9acb03d225cb639827b2}{}\label{classv8_1_1internal_1_1_state_a9bb0023e9dce9acb03d225cb639827b2}
+
+\item 
+bool {\bfseries Has\+Remembered\+Simulates} () const \hypertarget{classv8_1_1internal_1_1_state_af4c689101b224d1066beb9fc09100549}{}\label{classv8_1_1internal_1_1_state_af4c689101b224d1066beb9fc09100549}
+
+\item 
+void {\bfseries Remember} (\hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$sim)\hypertarget{classv8_1_1internal_1_1_state_a2bd4e386693eefdce1823d63de17fcef}{}\label{classv8_1_1internal_1_1_state_a2bd4e386693eefdce1823d63de17fcef}
+
+\item 
+void {\bfseries Flush\+Simulates} ()\hypertarget{classv8_1_1internal_1_1_state_a2bc35f9e6389b46649fcef12547febf1}{}\label{classv8_1_1internal_1_1_state_a2bc35f9e6389b46649fcef12547febf1}
+
+\item 
+void {\bfseries Remove\+Simulates} ()\hypertarget{classv8_1_1internal_1_1_state_a34ca9558965840b26894049fba590343}{}\label{classv8_1_1internal_1_1_state_a34ca9558965840b26894049fba590343}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Copy} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$succ\+\_\+block, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$pred\+\_\+block, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_a21f74a26c3a5fcaa4ec3a40829477e31}{}\label{classv8_1_1internal_1_1_state_a21f74a26c3a5fcaa4ec3a40829477e31}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Merge} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$succ\+\_\+block, \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$pred\+\_\+state, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$pred\+\_\+block, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_state_ac4c10e86680c70135309d1065df20f1e}{}\label{classv8_1_1internal_1_1_state_ac4c10e86680c70135309d1065df20f1e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_state_aa6882089dad9aba4663ed0b2b18d4a3e}{}\label{classv8_1_1internal_1_1_state_aa6882089dad9aba4663ed0b2b18d4a3e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_simulate}{H\+Simulate} $\ast$ $>$ {\bfseries mergelist\+\_\+}\hypertarget{classv8_1_1internal_1_1_state_affca391c064b5f3895b4148e035e8dc9}{}\label{classv8_1_1internal_1_1_state_affca391c064b5f3895b4148e035e8dc9}
+
+\item 
+bool {\bfseries first\+\_\+}\hypertarget{classv8_1_1internal_1_1_state_aacd1d860e5bcde0bced414a7154fae05}{}\label{classv8_1_1internal_1_1_state_aacd1d860e5bcde0bced414a7154fae05}
+
+\item 
+Mode {\bfseries mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_state_aec8c2e563a3cf13b5b4411b83cae4783}{}\label{classv8_1_1internal_1_1_state_aec8c2e563a3cf13b5b4411b83cae4783}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/removable-\/simulates.\+cc\end{DoxyCompactItemize}

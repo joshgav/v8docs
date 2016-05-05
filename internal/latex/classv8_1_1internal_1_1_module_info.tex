@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1internal_1_1_module_info}{}\section{v8\+:\+:internal\+:\+:Module\+Info Class Reference}
+\label{classv8_1_1internal_1_1_module_info}\index{v8\+::internal\+::\+Module\+Info@{v8\+::internal\+::\+Module\+Info}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Module\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_module_info}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries host\+\_\+index} ()\hypertarget{classv8_1_1internal_1_1_module_info_ada43ca59c5dc2ac2f2d7a805a70f03f4}{}\label{classv8_1_1internal_1_1_module_info_ada43ca59c5dc2ac2f2d7a805a70f03f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$ {\bfseries name} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a829580890fe27d4d2a44573b12208818}{}\label{classv8_1_1internal_1_1_module_info_a829580890fe27d4d2a44573b12208818}
+
+\item 
+Variable\+Mode {\bfseries mode} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a2e61a7fffb0c58459ea532c6874755b2}{}\label{classv8_1_1internal_1_1_module_info_a2e61a7fffb0c58459ea532c6874755b2}
+
+\item 
+int {\bfseries index} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a8e813fd220f17c75e75d64ac236b92d6}{}\label{classv8_1_1internal_1_1_module_info_a8e813fd220f17c75e75d64ac236b92d6}
+
+\item 
+int {\bfseries length} ()\hypertarget{classv8_1_1internal_1_1_module_info_af99fe341ccd935813fd5f669c6ff2b3e}{}\label{classv8_1_1internal_1_1_module_info_af99fe341ccd935813fd5f669c6ff2b3e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_module_info}{Module\+Info} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$description)\hypertarget{classv8_1_1internal_1_1_module_info_a43f619b534925ef73d217c2d202b9bc4}{}\label{classv8_1_1internal_1_1_module_info_a43f619b534925ef73d217c2d202b9bc4}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_module_info}{Module\+Info} $>$ {\bfseries Create} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_module_descriptor}{Module\+Descriptor} $\ast$descriptor, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1_module_info_ac600b184cb9fc1ba31317dfbed1a3afd}{}\label{classv8_1_1internal_1_1_module_info_ac600b184cb9fc1ba31317dfbed1a3afd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries H\+O\+S\+T\+\_\+\+O\+F\+F\+S\+ET}, 
+\\*
+{\bfseries N\+A\+M\+E\+\_\+\+O\+F\+F\+S\+ET}, 
+\\*
+{\bfseries M\+O\+D\+E\+\_\+\+O\+F\+F\+S\+ET}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+O\+F\+F\+S\+ET}, 
+\\*
+{\bfseries H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE} = N\+A\+M\+E\+\_\+\+O\+F\+F\+S\+ET, 
+\\*
+{\bfseries I\+T\+E\+M\+\_\+\+S\+I\+ZE} = I\+N\+D\+E\+X\+\_\+\+O\+F\+F\+S\+ET -\/ N\+A\+M\+E\+\_\+\+O\+F\+F\+S\+ET + 1
+ \}\hypertarget{classv8_1_1internal_1_1_module_info_a46dde48423be0fc2436087788a78a146}{}\label{classv8_1_1internal_1_1_module_info_a46dde48423be0fc2436087788a78a146}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries name\+\_\+offset} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a1e98bb7624a9b67163d5d12e141ae3f2}{}\label{classv8_1_1internal_1_1_module_info_a1e98bb7624a9b67163d5d12e141ae3f2}
+
+\item 
+int {\bfseries mode\+\_\+offset} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a6c08cc229ed1621df2b58193aea8a2e2}{}\label{classv8_1_1internal_1_1_module_info_a6c08cc229ed1621df2b58193aea8a2e2}
+
+\item 
+int {\bfseries index\+\_\+offset} (int i)\hypertarget{classv8_1_1internal_1_1_module_info_a2c795d72eedc3ad0ad8938d85af4a05e}{}\label{classv8_1_1internal_1_1_module_info_a2c795d72eedc3ad0ad8938d85af4a05e}
+
+\item 
+void {\bfseries set\+\_\+host\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_module_info_ad96176ba61987a6c751d051509ec7b11}{}\label{classv8_1_1internal_1_1_module_info_ad96176ba61987a6c751d051509ec7b11}
+
+\item 
+void {\bfseries set\+\_\+name} (int i, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$name)\hypertarget{classv8_1_1internal_1_1_module_info_a5696810f26a86f4b6f8a87bcca828d77}{}\label{classv8_1_1internal_1_1_module_info_a5696810f26a86f4b6f8a87bcca828d77}
+
+\item 
+void {\bfseries set\+\_\+mode} (int i, Variable\+Mode mode)\hypertarget{classv8_1_1internal_1_1_module_info_a36653a6ed8ccd902fc3c0db0e9d33a27}{}\label{classv8_1_1internal_1_1_module_info_a36653a6ed8ccd902fc3c0db0e9d33a27}
+
+\item 
+void {\bfseries set\+\_\+index} (int i, int index)\hypertarget{classv8_1_1internal_1_1_module_info_ad964b68393b9578a32eefb6f8d077078}{}\label{classv8_1_1internal_1_1_module_info_ad964b68393b9578a32eefb6f8d077078}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_module_info}{Module\+Info} $>$ {\bfseries Allocate} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int length)\hypertarget{classv8_1_1internal_1_1_module_info_aefba9903e96cf4f37d2f07a68bebd302}{}\label{classv8_1_1internal_1_1_module_info_aefba9903e96cf4f37d2f07a68bebd302}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/scopeinfo.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/scopeinfo.\+cc\end{DoxyCompactItemize}

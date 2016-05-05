@@ -1,0 +1,187 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Call\+Descriptor Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor}\index{v8\+::internal\+::compiler\+::\+Call\+Descriptor@{v8\+::internal\+::compiler\+::\+Call\+Descriptor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Call\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_call_descriptor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Kind} \{ \\*
+{\bfseries k\+Call\+Code\+Object}, 
+\\*
+{\bfseries k\+Call\+J\+S\+Function}, 
+\\*
+{\bfseries k\+Call\+Address}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_afedde2451ce98788cc0210f0f161ef3b}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_afedde2451ce98788cc0210f0f161ef3b}
+
+\item 
+enum {\bfseries Flag} \{ \\*
+{\bfseries k\+No\+Flags} = 0u, 
+\\*
+{\bfseries k\+Needs\+Frame\+State} = 1u $<$$<$ 0, 
+\\*
+{\bfseries k\+Has\+Exception\+Handler} = 1u $<$$<$ 1, 
+\\*
+{\bfseries k\+Has\+Local\+Catch\+Handler} = 1u $<$$<$ 2, 
+\\*
+{\bfseries k\+Supports\+Tail\+Calls} = 1u $<$$<$ 3, 
+\\*
+{\bfseries k\+Can\+Use\+Roots} = 1u $<$$<$ 4, 
+\\*
+{\bfseries k\+Use\+Native\+Stack} = 1u $<$$<$ 5, 
+\\*
+{\bfseries k\+Restore\+J\+S\+SP} = 1u $<$$<$ 6, 
+\\*
+{\bfseries k\+Restore\+C\+SP} = 1u $<$$<$ 7, 
+\\*
+{\bfseries k\+Initialize\+Root\+Register} = 1u $<$$<$ 8
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aee4b455cd452621a57aaf6cd61368c4c}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aee4b455cd452621a57aaf6cd61368c4c}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Flag $>$ {\bfseries Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aeac972da3bec5cdaf4ead4bb25ddb486}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aeac972da3bec5cdaf4ead4bb25ddb486}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Call\+Descriptor} (Kind kind, \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} target\+\_\+type, \hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} target\+\_\+loc, const \hyperlink{classv8_1_1internal_1_1_signature}{Machine\+Signature} $\ast$machine\+\_\+sig, \hyperlink{classv8_1_1internal_1_1_signature}{Location\+Signature} $\ast$location\+\_\+sig, size\+\_\+t stack\+\_\+param\+\_\+count, \hyperlink{classv8_1_1base_1_1_flags}{Operator\+::\+Properties} properties, Reg\+List callee\+\_\+saved\+\_\+registers, Reg\+List callee\+\_\+saved\+\_\+fp\+\_\+registers, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags, const char $\ast$debug\+\_\+name=\char`\"{}\char`\"{})\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a78694d2f2421f22f1d65cf0901e9685c}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a78694d2f2421f22f1d65cf0901e9685c}
+
+\item 
+Kind {\bfseries kind} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a8cec3c53c13ed87e847783d71c127642}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a8cec3c53c13ed87e847783d71c127642}
+
+\item 
+bool {\bfseries Is\+C\+Function\+Call} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_abf74f46c9e5c462383361218e909c541}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_abf74f46c9e5c462383361218e909c541}
+
+\item 
+bool {\bfseries Is\+J\+S\+Function\+Call} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a5c940f5e6ae6955d9958cbc6333f8bc0}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a5c940f5e6ae6955d9958cbc6333f8bc0}
+
+\item 
+bool {\bfseries Requires\+Frame\+As\+Incoming} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a1a59e365b233f4ec14f43208b25d5dc0}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a1a59e365b233f4ec14f43208b25d5dc0}
+
+\item 
+size\+\_\+t {\bfseries Return\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_acaceed1803274780f8d4491ab07af385}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_acaceed1803274780f8d4491ab07af385}
+
+\item 
+size\+\_\+t {\bfseries C\+Parameter\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac6736b17d6e347597a04464ac46a3e57}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac6736b17d6e347597a04464ac46a3e57}
+
+\item 
+size\+\_\+t {\bfseries Stack\+Parameter\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a5b283d003806720a4eeaa5d37570ab60}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a5b283d003806720a4eeaa5d37570ab60}
+
+\item 
+size\+\_\+t {\bfseries J\+S\+Parameter\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_af3c8b4176c46fc60a0b9df9648a3a0fb}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_af3c8b4176c46fc60a0b9df9648a3a0fb}
+
+\item 
+size\+\_\+t {\bfseries Input\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a077bf437f005b1535b1713b2c48a042e}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a077bf437f005b1535b1713b2c48a042e}
+
+\item 
+size\+\_\+t {\bfseries Frame\+State\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a7897bdb179b1c484b0635bf003df8e97}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a7897bdb179b1c484b0635bf003df8e97}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a346267969430cadd89167bc467b4d1a8}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a346267969430cadd89167bc467b4d1a8}
+
+\item 
+bool {\bfseries Needs\+Frame\+State} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a9790eefa17ae45e0beeed6adfc763f11}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a9790eefa17ae45e0beeed6adfc763f11}
+
+\item 
+bool {\bfseries Supports\+Tail\+Calls} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a3e9c2fd83ebe2593ad2bb69c7d51f3fa}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a3e9c2fd83ebe2593ad2bb69c7d51f3fa}
+
+\item 
+bool {\bfseries Use\+Native\+Stack} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_adbe762334e31071e79ebb092cbab7fd2}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_adbe762334e31071e79ebb092cbab7fd2}
+
+\item 
+bool {\bfseries Initialize\+Root\+Register} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac4716862f814f271e8b553a411854e10}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac4716862f814f271e8b553a411854e10}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Return\+Location} (size\+\_\+t index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_adcd1141dbd78d63810a875d1d1c45801}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_adcd1141dbd78d63810a875d1d1c45801}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries Get\+Input\+Location} (size\+\_\+t index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ad5c7e2848448bf4bcd7265fd32587885}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ad5c7e2848448bf4bcd7265fd32587885}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_signature}{Machine\+Signature} $\ast$ {\bfseries Get\+Machine\+Signature} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aed61508f870af5ffda5e98937ee95eaf}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aed61508f870af5ffda5e98937ee95eaf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries Get\+Return\+Type} (size\+\_\+t index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a392e3083e16c9cc32d2b48d0e4d4a374}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a392e3083e16c9cc32d2b48d0e4d4a374}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries Get\+Input\+Type} (size\+\_\+t index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ae8edf82b1e5244aca72e315f8ec450af}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ae8edf82b1e5244aca72e315f8ec450af}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Operator\+::\+Properties} {\bfseries properties} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ab9123f5162c32870e9ee22618880ed1e}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ab9123f5162c32870e9ee22618880ed1e}
+
+\item 
+Reg\+List {\bfseries Callee\+Saved\+Registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a586bb0679e25956e582d348aba4ba6ff}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a586bb0679e25956e582d348aba4ba6ff}
+
+\item 
+Reg\+List {\bfseries Callee\+Saved\+F\+P\+Registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a01395041e63be763888849d20f9e4088}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a01395041e63be763888849d20f9e4088}
+
+\item 
+const char $\ast$ {\bfseries debug\+\_\+name} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a644f107f3de7cff22b4b16ec200a6e79}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a644f107f3de7cff22b4b16ec200a6e79}
+
+\item 
+bool {\bfseries Uses\+Only\+Registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a36b73f406c7acf4328a96f1fd637902d}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a36b73f406c7acf4328a96f1fd637902d}
+
+\item 
+bool {\bfseries Has\+Same\+Return\+Locations\+As} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor} $\ast$other) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a7def942a64383aa2415225c6543024e9}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a7def942a64383aa2415225c6543024e9}
+
+\item 
+bool {\bfseries Can\+Tail\+Call} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$call, int $\ast$stack\+\_\+param\+\_\+delta) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a923d5f23b1a8320bcc5ba4cefed7cc5d}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a923d5f23b1a8320bcc5ba4cefed7cc5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_descriptor}{Call\+Descriptor})\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ad2f35f6ba3e5da01799d2bdc3dc735c4}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ad2f35f6ba3e5da01799d2bdc3dc735c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Kind {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a3a0034f26ee80084b9fd30d9df746ff6}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a3a0034f26ee80084b9fd30d9df746ff6}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries target\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a696c75fc1f47f102e6a6229856915b13}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a696c75fc1f47f102e6a6229856915b13}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1compiler_1_1_linkage_location}{Linkage\+Location} {\bfseries target\+\_\+loc\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ab183493c856cfa7e6566104638629a24}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ab183493c856cfa7e6566104638629a24}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_signature}{Machine\+Signature} $\ast$const {\bfseries machine\+\_\+sig\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a4c99a3ab803bc8ae337bec33b87ae644}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a4c99a3ab803bc8ae337bec33b87ae644}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_signature}{Location\+Signature} $\ast$const {\bfseries location\+\_\+sig\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a2727dc94bf8b82bc47f21a8ce8d20d97}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a2727dc94bf8b82bc47f21a8ce8d20d97}
+
+\item 
+const size\+\_\+t {\bfseries stack\+\_\+param\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aacef5570da8b390b12e6341ffbc58036}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_aacef5570da8b390b12e6341ffbc58036}
+
+\item 
+const \hyperlink{classv8_1_1base_1_1_flags}{Operator\+::\+Properties} {\bfseries properties\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a56e7136a5a97a330d51c65d68eb93187}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a56e7136a5a97a330d51c65d68eb93187}
+
+\item 
+const Reg\+List {\bfseries callee\+\_\+saved\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac5d1182dda04fe7d81896e210b06af38}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac5d1182dda04fe7d81896e210b06af38}
+
+\item 
+const Reg\+List {\bfseries callee\+\_\+saved\+\_\+fp\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a1ff6754470df26f45f82994c20033f6d}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a1ff6754470df26f45f82994c20033f6d}
+
+\item 
+const \hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac26e0b24b6e3bef9798a1911d960448d}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_ac26e0b24b6e3bef9798a1911d960448d}
+
+\item 
+const char $\ast$const {\bfseries debug\+\_\+name\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a9db0f9dff4854e03f95206e0f9125e15}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a9db0f9dff4854e03f95206e0f9125e15}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Linkage}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a630e1c2c772000cc88aada0fb04d7f76}{}\label{classv8_1_1internal_1_1compiler_1_1_call_descriptor_a630e1c2c772000cc88aada0fb04d7f76}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/linkage.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/linkage.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1internal_1_1_literals_array}{}\section{v8\+:\+:internal\+:\+:Literals\+Array Class Reference}
+\label{classv8_1_1internal_1_1_literals_array}\index{v8\+::internal\+::\+Literals\+Array@{v8\+::internal\+::\+Literals\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Literals\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_literals_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $\ast$ {\bfseries feedback\+\_\+vector} () const \hypertarget{classv8_1_1internal_1_1_literals_array_a066065b783024fd4feffab41044cefc1}{}\label{classv8_1_1internal_1_1_literals_array_a066065b783024fd4feffab41044cefc1}
+
+\item 
+void {\bfseries set\+\_\+feedback\+\_\+vector} (\hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $\ast$vector)\hypertarget{classv8_1_1internal_1_1_literals_array_a49dbf7955ccc5613126e94e0ab7bbc68}{}\label{classv8_1_1internal_1_1_literals_array_a49dbf7955ccc5613126e94e0ab7bbc68}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries literal} (int literal\+\_\+index) const \hypertarget{classv8_1_1internal_1_1_literals_array_a356db8caf76ec7921ce36b4bcef98e25}{}\label{classv8_1_1internal_1_1_literals_array_a356db8caf76ec7921ce36b4bcef98e25}
+
+\item 
+void {\bfseries set\+\_\+literal} (int literal\+\_\+index, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$literal)\hypertarget{classv8_1_1internal_1_1_literals_array_ac4d3ef79aaa5f02d14b15d2c7a22abe6}{}\label{classv8_1_1internal_1_1_literals_array_ac4d3ef79aaa5f02d14b15d2c7a22abe6}
+
+\item 
+int {\bfseries literals\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_literals_array_ac208c3b0ef7f8792c683eb4954798850}{}\label{classv8_1_1internal_1_1_literals_array_ac208c3b0ef7f8792c683eb4954798850}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Offset\+Of\+Literal\+At} (int index)\hypertarget{classv8_1_1internal_1_1_literals_array_a21c4fa0b6d453214c0f0df342df092ec}{}\label{classv8_1_1internal_1_1_literals_array_a21c4fa0b6d453214c0f0df342df092ec}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_literals_array}{Literals\+Array} $>$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ vector, int number\+\_\+of\+\_\+literals, Pretenure\+Flag pretenure)\hypertarget{classv8_1_1internal_1_1_literals_array_a07979785f79c413f8b5fbbbde71f1372}{}\label{classv8_1_1internal_1_1_literals_array_a07979785f79c413f8b5fbbbde71f1372}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Vector\+Index} = 0\hypertarget{classv8_1_1internal_1_1_literals_array_ab66078af612a57c9f6bc9b86f49b616f}{}\label{classv8_1_1internal_1_1_literals_array_ab66078af612a57c9f6bc9b86f49b616f}
+
+\item 
+static const int {\bfseries k\+First\+Literal\+Index} = 1\hypertarget{classv8_1_1internal_1_1_literals_array_adb4c0bad489d5ca9db396e13232bd994}{}\label{classv8_1_1internal_1_1_literals_array_adb4c0bad489d5ca9db396e13232bd994}
+
+\item 
+static const int {\bfseries k\+Offset\+To\+First\+Literal}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries get} (int index) const \hypertarget{classv8_1_1internal_1_1_literals_array_a60516e99538757abbd6ce1791554d7d9}{}\label{classv8_1_1internal_1_1_literals_array_a60516e99538757abbd6ce1791554d7d9}
+
+\item 
+void {\bfseries set} (int index, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_literals_array_ac537e7c32f9ae20f4b06f60a10b18f6e}{}\label{classv8_1_1internal_1_1_literals_array_ac537e7c32f9ae20f4b06f60a10b18f6e}
+
+\item 
+void {\bfseries set} (int index, \hyperlink{classv8_1_1internal_1_1_smi}{Smi} $\ast$value)\hypertarget{classv8_1_1internal_1_1_literals_array_a7ed844b6f3c874b02de020503eb1d824}{}\label{classv8_1_1internal_1_1_literals_array_a7ed844b6f3c874b02de020503eb1d824}
+
+\item 
+void {\bfseries set} (int index, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value, Write\+Barrier\+Mode mode)\hypertarget{classv8_1_1internal_1_1_literals_array_ae3a8c60b6c48dd4cfda9da6109909d75}{}\label{classv8_1_1internal_1_1_literals_array_ae3a8c60b6c48dd4cfda9da6109909d75}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Literals\+Array@{v8\+::internal\+::\+Literals\+Array}!k\+Offset\+To\+First\+Literal@{k\+Offset\+To\+First\+Literal}}
+\index{k\+Offset\+To\+First\+Literal@{k\+Offset\+To\+First\+Literal}!v8\+::internal\+::\+Literals\+Array@{v8\+::internal\+::\+Literals\+Array}}
+\subsubsection[{\texorpdfstring{k\+Offset\+To\+First\+Literal}{kOffsetToFirstLiteral}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Literals\+Array\+::k\+Offset\+To\+First\+Literal\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_literals_array_abc9647e9ff5e0b6823e2312270115beb}{}\label{classv8_1_1internal_1_1_literals_array_abc9647e9ff5e0b6823e2312270115beb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      FixedArray::kHeaderSize + kPointerSize
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

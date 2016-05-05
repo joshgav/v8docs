@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor}{}\section{v8\+:\+:internal\+:\+:Mark\+Compact\+Marking\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1_mark_compact_marking_visitor}\index{v8\+::internal\+::\+Mark\+Compact\+Marking\+Visitor@{v8\+::internal\+::\+Mark\+Compact\+Marking\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Mark\+Compact\+Marking\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1_mark_compact_marking_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Pointer(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$p))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_ac918c9d208af0a7637c0fe9202e32cd3}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_ac918c9d208af0a7637c0fe9202e32cd3}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Pointers(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object,                                                                                                                                   \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_af439590c3e51d41816157e83feae3195}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_af439590c3e51d41816157e83feae3195}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Mark\+Object(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a6116d4f62627948d5c093c8be7828498}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a6116d4f62627948d5c093c8be7828498}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static bool Mark\+Object\+Without\+Push(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a5027990385260bb2aa4cfcced705c017}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a5027990385260bb2aa4cfcced705c017}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Mark\+Object\+By\+Pointer(\hyperlink{classv8_1_1internal_1_1_mark_compact_collector}{Mark\+Compact\+Collector} $\ast$collector,                                                                                                                                                           \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$p))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_ace35e7fd76ab80025607075c2970aab4}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_ace35e7fd76ab80025607075c2970aab4}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static void Visit\+Unmarked\+Object(\hyperlink{classv8_1_1internal_1_1_mark_compact_collector}{Mark\+Compact\+Collector} $\ast$collector,                                                                                                                                                           \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a1913113b6705b814932a00f1ce12386d}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a1913113b6705b814932a00f1ce12386d}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (static bool Visit\+Unmarked\+Objects(\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object,                                                                                                                                                               \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end))\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a6b7acc7accf0b906e9a7b3ab70e085bf}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a6b7acc7accf0b906e9a7b3ab70e085bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a18c90a12328b7b57b1edfa1ef6c12326}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a18c90a12328b7b57b1edfa1ef6c12326}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Update\+Reg\+Exp\+Code\+Age\+And\+Flush} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_j_s_reg_exp}{J\+S\+Reg\+Exp} $\ast$re, bool is\+\_\+one\+\_\+byte)\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a8a1ed8eb3acdf5ab294ca8fe8dbd5e19}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a8a1ed8eb3acdf5ab294ca8fe8dbd5e19}
+
+\item 
+static void {\bfseries Visit\+Reg\+Exp\+And\+Flush\+Code} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_ac6816ac835343c65354a11f766bd8250}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_ac6816ac835343c65354a11f766bd8250}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Reg\+Exp\+Code\+Threshold} = 5\hypertarget{classv8_1_1internal_1_1_mark_compact_marking_visitor_a302d4ba47d32e6b88946c0a0f809517b}{}\label{classv8_1_1internal_1_1_mark_compact_marking_visitor_a302d4ba47d32e6b88946c0a0f809517b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

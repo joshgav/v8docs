@@ -1,0 +1,122 @@
+\hypertarget{classv8_1_1internal_1_1_profiler_events_processor}{}\section{v8\+:\+:internal\+:\+:Profiler\+Events\+Processor Class Reference}
+\label{classv8_1_1internal_1_1_profiler_events_processor}\index{v8\+::internal\+::\+Profiler\+Events\+Processor@{v8\+::internal\+::\+Profiler\+Events\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Profiler\+Events\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_profiler_events_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Profiler\+Events\+Processor} (\hyperlink{classv8_1_1internal_1_1_profile_generator}{Profile\+Generator} $\ast$generator, \hyperlink{classv8_1_1internal_1_1_sampler}{Sampler} $\ast$sampler, \hyperlink{classv8_1_1base_1_1_time_delta}{base\+::\+Time\+Delta} period)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a3632b56f6515a42e5f183f9409e7c97b}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a3632b56f6515a42e5f183f9409e7c97b}
+
+\item 
+virtual void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_af9d1985b1e9c2d300676ac47fc50ecfe}{}\label{classv8_1_1internal_1_1_profiler_events_processor_af9d1985b1e9c2d300676ac47fc50ecfe}
+
+\item 
+void {\bfseries Stop\+Synchronously} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a2c5ebee64884e9de0ca8edac68c91f5b}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a2c5ebee64884e9de0ca8edac68c91f5b}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool running())\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a603bac41b4c09abf8f27e53441f947e9}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a603bac41b4c09abf8f27e53441f947e9}
+
+\item 
+void {\bfseries Enqueue} (const \hyperlink{classv8_1_1internal_1_1_code_events_container}{Code\+Events\+Container} \&event)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a86cc7e6c442f57a7a545805a6cd5fecf}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a86cc7e6c442f57a7a545805a6cd5fecf}
+
+\item 
+void {\bfseries Add\+Current\+Stack} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, bool update\+\_\+stats=false)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_ac9805bd7893d186ffbfa31e203c6eb45}{}\label{classv8_1_1internal_1_1_profiler_events_processor_ac9805bd7893d186ffbfa31e203c6eb45}
+
+\item 
+void {\bfseries Add\+Deopt\+Stack} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, Address from, int fp\+\_\+to\+\_\+sp\+\_\+delta)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_adf10ee1fe41ef2817d23546b18354dbd}{}\label{classv8_1_1internal_1_1_profiler_events_processor_adf10ee1fe41ef2817d23546b18354dbd}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_tick_sample}{Tick\+Sample} $\ast$ {\bfseries Start\+Tick\+Sample} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a10c94b12e3cabf79f33f1e0bd8281dff}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a10c94b12e3cabf79f33f1e0bd8281dff}
+
+\item 
+void {\bfseries Finish\+Tick\+Sample} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a142c38fa289330b932097ac0705bf6ac}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a142c38fa289330b932097ac0705bf6ac}
+
+\item 
+void $\ast$ {\bfseries operator new} (size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_ac90fe204c70433ce94e4125125b78b47}{}\label{classv8_1_1internal_1_1_profiler_events_processor_ac90fe204c70433ce94e4125125b78b47}
+
+\item 
+void {\bfseries operator delete} (void $\ast$ptr)\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a9595db1768685aaba247596a6ea5e8f7}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a9595db1768685aaba247596a6ea5e8f7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Sample\+Processing\+Result} \{ \\*
+{\bfseries One\+Sample\+Processed}, 
+\\*
+{\bfseries Found\+Sample\+For\+Next\+Code\+Event}, 
+\\*
+{\bfseries No\+Samples\+In\+Queue}
+ \}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a1e04e270f39aeb3c99488ce1e65eb154}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a1e04e270f39aeb3c99488ce1e65eb154}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Process\+Code\+Event} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_af06c8e8eb22d0da1dc1e9edbbabca0d2}{}\label{classv8_1_1internal_1_1_profiler_events_processor_af06c8e8eb22d0da1dc1e9edbbabca0d2}
+
+\item 
+Sample\+Processing\+Result {\bfseries Process\+One\+Sample} ()\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a5ba820307df9374333f4419fe5428b05}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a5ba820307df9374333f4419fe5428b05}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_generator}{Profile\+Generator} $\ast$ {\bfseries generator\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_abe12f8408ec5537032a7bc52b8b3c207}{}\label{classv8_1_1internal_1_1_profiler_events_processor_abe12f8408ec5537032a7bc52b8b3c207}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_sampler}{Sampler} $\ast$ {\bfseries sampler\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_aab2dd0f79821259ee2163ec7eac25e1a}{}\label{classv8_1_1internal_1_1_profiler_events_processor_aab2dd0f79821259ee2163ec7eac25e1a}
+
+\item 
+base\+::\+Atomic32 {\bfseries running\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a9d4c8ef93827a88a7d974f818bc9f3d2}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a9d4c8ef93827a88a7d974f818bc9f3d2}
+
+\item 
+const \hyperlink{classv8_1_1base_1_1_time_delta}{base\+::\+Time\+Delta} {\bfseries period\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a655941b730668855ee139d110da67aab}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a655941b730668855ee139d110da67aab}
+
+\item 
+Locked\+Queue$<$ \hyperlink{classv8_1_1internal_1_1_code_events_container}{Code\+Events\+Container} $>$ {\bfseries events\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a665cf1c8f1c968e7e3737f49f8c30d22}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a665cf1c8f1c968e7e3737f49f8c30d22}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_sampling_circular_queue}{Sampling\+Circular\+Queue}$<$ \hyperlink{classv8_1_1internal_1_1_tick_sample_event_record}{Tick\+Sample\+Event\+Record}, k\+Tick\+Sample\+Queue\+Length $>$ {\bfseries ticks\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_ae469aa5921951b1449742f56c07cfaf2}{}\label{classv8_1_1internal_1_1_profiler_events_processor_ae469aa5921951b1449742f56c07cfaf2}
+
+\item 
+Locked\+Queue$<$ \hyperlink{classv8_1_1internal_1_1_tick_sample_event_record}{Tick\+Sample\+Event\+Record} $>$ {\bfseries ticks\+\_\+from\+\_\+vm\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_ab7618f01a46fb423db580f06e65baeb9}{}\label{classv8_1_1internal_1_1_profiler_events_processor_ab7618f01a46fb423db580f06e65baeb9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ unsigned $>$ {\bfseries last\+\_\+code\+\_\+event\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a5006cc5f9e17cea97ca344e9b14715a1}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a5006cc5f9e17cea97ca344e9b14715a1}
+
+\item 
+unsigned {\bfseries last\+\_\+processed\+\_\+code\+\_\+event\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_aea0a102c5b542b8706b2a9076e07f824}{}\label{classv8_1_1internal_1_1_profiler_events_processor_aea0a102c5b542b8706b2a9076e07f824}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries k\+Tick\+Sample\+Buffer\+Size} = 1 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_adba9a2fee4d313343348a0c5ca2ca195}{}\label{classv8_1_1internal_1_1_profiler_events_processor_adba9a2fee4d313343348a0c5ca2ca195}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Tick\+Sample\+Queue\+Length}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Profiler\+Events\+Processor@{v8\+::internal\+::\+Profiler\+Events\+Processor}!k\+Tick\+Sample\+Queue\+Length@{k\+Tick\+Sample\+Queue\+Length}}
+\index{k\+Tick\+Sample\+Queue\+Length@{k\+Tick\+Sample\+Queue\+Length}!v8\+::internal\+::\+Profiler\+Events\+Processor@{v8\+::internal\+::\+Profiler\+Events\+Processor}}
+\subsubsection[{\texorpdfstring{k\+Tick\+Sample\+Queue\+Length}{kTickSampleQueueLength}}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t v8\+::internal\+::\+Profiler\+Events\+Processor\+::k\+Tick\+Sample\+Queue\+Length\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_profiler_events_processor_a7ab4b993c9fc5e588cf76db40696a071}{}\label{classv8_1_1internal_1_1_profiler_events_processor_a7ab4b993c9fc5e588cf76db40696a071}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kTickSampleBufferSize / \textcolor{keyword}{sizeof}(TickSampleEventRecord)
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/cpu-\/profiler.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/cpu-\/profiler-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/cpu-\/profiler.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer}{}\section{v8\+:\+:internal\+:\+:Code\+Event\+Logger\+:\+:Name\+Buffer Class Reference}
+\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer}\index{v8\+::internal\+::\+Code\+Event\+Logger\+::\+Name\+Buffer@{v8\+::internal\+::\+Code\+Event\+Logger\+::\+Name\+Buffer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Reset} ()\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a2f4816566d8394a82560375ccea82bfa}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a2f4816566d8394a82560375ccea82bfa}
+
+\item 
+void {\bfseries Init} (Logger\+::\+Log\+Events\+And\+Tags tag)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a05b2880413af02e892ca99f7d12f1e48}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a05b2880413af02e892ca99f7d12f1e48}
+
+\item 
+void {\bfseries Append\+Name} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a2d3c2d750b61f0da98193804e2a4eff6}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a2d3c2d750b61f0da98193804e2a4eff6}
+
+\item 
+void {\bfseries Append\+String} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$str)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_acf07bc22dd108df5d7cffa753c021a5b}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_acf07bc22dd108df5d7cffa753c021a5b}
+
+\item 
+void {\bfseries Append\+Bytes} (const char $\ast$bytes, int size)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_afbbcc095e6a286550d3368e86bcdab2d}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_afbbcc095e6a286550d3368e86bcdab2d}
+
+\item 
+void {\bfseries Append\+Bytes} (const char $\ast$bytes)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a5db4ff91339345c223d9f376f93ee4dc}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a5db4ff91339345c223d9f376f93ee4dc}
+
+\item 
+void {\bfseries Append\+Byte} (char c)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a15e386f0af065f8e24d9618984d5c81c}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a15e386f0af065f8e24d9618984d5c81c}
+
+\item 
+void {\bfseries Append\+Int} (int n)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a27cebc7c49e02021340b948768737f71}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a27cebc7c49e02021340b948768737f71}
+
+\item 
+void {\bfseries Append\+Hex} (uint32\+\_\+t n)\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a968c4b740fcf4dc461a27e40e5abe6cf}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a968c4b740fcf4dc461a27e40e5abe6cf}
+
+\item 
+const char $\ast$ {\bfseries get} ()\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_adb373c1d68105915a34309ed08a0b451}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_adb373c1d68105915a34309ed08a0b451}
+
+\item 
+int {\bfseries size} () const \hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a98373c0e64aa22df947c230186d8adeb}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a98373c0e64aa22df947c230186d8adeb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries utf8\+\_\+pos\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a0f469437dfe8a4e51b9af0b7f8e46108}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a0f469437dfe8a4e51b9af0b7f8e46108}
+
+\item 
+char {\bfseries utf8\+\_\+buffer\+\_\+} \mbox{[}k\+Utf8\+Buffer\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a8f6077a1ca1a001b55ca23389e4384f3}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_a8f6077a1ca1a001b55ca23389e4384f3}
+
+\item 
+uc16 {\bfseries utf16\+\_\+buffer} \mbox{[}k\+Utf16\+Buffer\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_ac01718893e5cd81fef44bd31b1075ca0}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_ac01718893e5cd81fef44bd31b1075ca0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Utf8\+Buffer\+Size} = 512\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_ad1b771bd1eca7f742dd5efb22dc3bd16}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_ad1b771bd1eca7f742dd5efb22dc3bd16}
+
+\item 
+static const int {\bfseries k\+Utf16\+Buffer\+Size} = k\+Utf8\+Buffer\+Size\hypertarget{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_af3ea9f7d9c2440b14c5d1b4161fa9227}{}\label{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer_af3ea9f7d9c2440b14c5d1b4161fa9227}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+cc\end{DoxyCompactItemize}

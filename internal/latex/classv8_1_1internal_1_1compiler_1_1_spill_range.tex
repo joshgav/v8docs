@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Spill\+Range Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_spill_range}\index{v8\+::internal\+::compiler\+::\+Spill\+Range@{v8\+::internal\+::compiler\+::\+Spill\+Range}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Spill\+Range\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_spill_range}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Spill\+Range} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a5fe69e6919e5b7752e6dbdb4ebaf7e15}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a5fe69e6919e5b7752e6dbdb4ebaf7e15}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$ {\bfseries interval} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a1fb2aabd050577b0026eef6878edfcc4}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a1fb2aabd050577b0026eef6878edfcc4}
+
+\item 
+int {\bfseries Byte\+Width} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_acd10829f8c4142061c1f2edaeb9bca35}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_acd10829f8c4142061c1f2edaeb9bca35}
+
+\item 
+bool {\bfseries Is\+Empty} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a67aaeeb6f44c288eb552ad66a746afab}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a67aaeeb6f44c288eb552ad66a746afab}
+
+\item 
+bool {\bfseries Try\+Merge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_spill_range}{Spill\+Range} $\ast$other)\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a02deae88edf7e3b0129ea52a91ba6460}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a02deae88edf7e3b0129ea52a91ba6460}
+
+\item 
+bool {\bfseries Has\+Slot} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_ad152436413138c00b3bc1cb42a1f07a9}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_ad152436413138c00b3bc1cb42a1f07a9}
+
+\item 
+void {\bfseries set\+\_\+assigned\+\_\+slot} (int index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a04ff4473bd8b839bbbaea612724ba5fb}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a04ff4473bd8b839bbbaea612724ba5fb}
+
+\item 
+int {\bfseries assigned\+\_\+slot} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a8d3ffbfdb3f55f69f3bb244d463404bc}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a8d3ffbfdb3f55f69f3bb244d463404bc}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$ $>$ \& {\bfseries live\+\_\+ranges} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a6e57dfb997f4f13e3a52a18ad835ebb8}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a6e57dfb997f4f13e3a52a18ad835ebb8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$ $>$ \& {\bfseries live\+\_\+ranges} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a3265eaffe21a3c1b2665b587efe079a8}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a3265eaffe21a3c1b2665b587efe079a8}
+
+\item 
+int {\bfseries byte\+\_\+width} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_aa8c37e5f42b50f74bd4a592c084bea29}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_aa8c37e5f42b50f74bd4a592c084bea29}
+
+\item 
+Register\+Kind {\bfseries kind} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a675a4883bec90810ece87dc006eb5ba8}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a675a4883bec90810ece87dc006eb5ba8}
+
+\item 
+void {\bfseries Print} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a8e79978dcbda2c72d15498126a46898f}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a8e79978dcbda2c72d15498126a46898f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Unassigned\+Slot} = -\/1\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a65b6e208d6e983bf6d27510bf4f4ae63}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a65b6e208d6e983bf6d27510bf4f4ae63}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries End} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a58234b0bfad7fc0b09e9ceb51f06893e}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a58234b0bfad7fc0b09e9ceb51f06893e}
+
+\item 
+bool {\bfseries Is\+Intersecting\+With} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_spill_range}{Spill\+Range} $\ast$other) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_ad0a27bb4104090455a630d713369a9cc}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_ad0a27bb4104090455a630d713369a9cc}
+
+\item 
+void {\bfseries Merge\+Disjoint\+Intervals} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$other)\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a7d482b50ae0d817a582f7e7b70548225}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a7d482b50ae0d817a582f7e7b70548225}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_spill_range}{Spill\+Range})\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_ab685c537fc9fe79542b41c11d350f5df}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_ab685c537fc9fe79542b41c11d350f5df}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$ $>$ {\bfseries live\+\_\+ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_aa43f0f215297f576531edd0dd5957d2d}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_aa43f0f215297f576531edd0dd5957d2d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$ {\bfseries use\+\_\+interval\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a1359cde47a3e7125deb3db04af7b1321}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a1359cde47a3e7125deb3db04af7b1321}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries end\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_ae33bb6548e7d8b0043b44005f4a2ac77}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_ae33bb6548e7d8b0043b44005f4a2ac77}
+
+\item 
+int {\bfseries assigned\+\_\+slot\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a05e9f04a1c643b380f4a8cb8b0084b93}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a05e9f04a1c643b380f4a8cb8b0084b93}
+
+\item 
+int {\bfseries byte\+\_\+width\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_a116ed635a1fcdd4cbfeef91f97677fcf}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_a116ed635a1fcdd4cbfeef91f97677fcf}
+
+\item 
+Register\+Kind {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_spill_range_aae3327ce52ec541a7ed01374845a4b38}{}\label{classv8_1_1internal_1_1compiler_1_1_spill_range_aae3327ce52ec541a7ed01374845a4b38}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+cc\end{DoxyCompactItemize}

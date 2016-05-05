@@ -1,0 +1,92 @@
+\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Module Struct Reference}
+\label{structv8_1_1internal_1_1wasm_1_1_wasm_module}\index{v8\+::internal\+::wasm\+::\+Wasm\+Module@{v8\+::internal\+::wasm\+::\+Wasm\+Module}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Wasm\+Name} {\bfseries Get\+Name} (uint32\+\_\+t offset, uint32\+\_\+t length) const \hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ab88b34a3ebb21a6109f0e6d849f0d9d8}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ab88b34a3ebb21a6109f0e6d849f0d9d8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Wasm\+Name} {\bfseries Get\+Name} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$function) const \hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ab1f9c6f8b68c2fc9c845fcff40649d8f}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ab1f9c6f8b68c2fc9c845fcff40649d8f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Wasm\+Name} {\bfseries Get\+Name\+Or\+Null} (uint32\+\_\+t offset, uint32\+\_\+t length) const \hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae14ada0a19b40b5af926b429dfbf1267}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae14ada0a19b40b5af926b429dfbf1267}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Wasm\+Name} {\bfseries Get\+Name\+Or\+Null} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$function) const \hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a96f1153419dac9892de60e58315a1874}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a96f1153419dac9892de60e58315a1874}
+
+\item 
+bool {\bfseries Bounds\+Check} (uint32\+\_\+t start, uint32\+\_\+t end) const \hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a849a24636a1825125fa278af7e7cf183}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a849a24636a1825125fa278af7e7cf183}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Instantiate} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_receiver}{J\+S\+Receiver} $>$ ffi, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array_buffer}{J\+S\+Array\+Buffer} $>$ memory)\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a07383bfc70f388676f0a68609f2df96b}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a07383bfc70f388676f0a68609f2df96b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries shared\+\_\+isolate}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_acfd98bb348798ce117da83a723eaad60}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_acfd98bb348798ce117da83a723eaad60}
+
+\item 
+const byte $\ast$ {\bfseries module\+\_\+start}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ac2bf0445ca0adb04d58ef494ab422b22}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ac2bf0445ca0adb04d58ef494ab422b22}
+
+\item 
+const byte $\ast$ {\bfseries module\+\_\+end}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a5e32abe490bd30b5809db01f36f7df60}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a5e32abe490bd30b5809db01f36f7df60}
+
+\item 
+uint32\+\_\+t {\bfseries min\+\_\+mem\+\_\+pages}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae8cec690d5c5bc3792e0c68939a05f42}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae8cec690d5c5bc3792e0c68939a05f42}
+
+\item 
+uint32\+\_\+t {\bfseries max\+\_\+mem\+\_\+pages}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ad21a10266063bcd1efcc72547d230589}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ad21a10266063bcd1efcc72547d230589}
+
+\item 
+bool {\bfseries mem\+\_\+export}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a2bf25679a0e045b130f221c04b719e34}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a2bf25679a0e045b130f221c04b719e34}
+
+\item 
+bool {\bfseries mem\+\_\+external}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_aaf131860439648921dc09226df0c2991}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_aaf131860439648921dc09226df0c2991}
+
+\item 
+int {\bfseries start\+\_\+function\+\_\+index}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a56901830375bb8e0e1a796e712bace65}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a56901830375bb8e0e1a796e712bace65}
+
+\item 
+Module\+Origin {\bfseries origin}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae8e4fe37215c077dc7bbeec494634c35}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ae8e4fe37215c077dc7bbeec494634c35}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_global}{Wasm\+Global} $>$ {\bfseries globals}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_ac6101242a2a805d0e982fff4ddcc4677}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_ac6101242a2a805d0e982fff4ddcc4677}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$ $>$ {\bfseries signatures}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a1aa6a1224225b0383475abd4ecc217ef}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a1aa6a1224225b0383475abd4ecc217ef}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $>$ {\bfseries functions}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a79b743888793de4a17ae53dd93988de6}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a79b743888793de4a17ae53dd93988de6}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_data_segment}{Wasm\+Data\+Segment} $>$ {\bfseries data\+\_\+segments}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_adc0a70e660a7112df858945f38616edc}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_adc0a70e660a7112df858945f38616edc}
+
+\item 
+std\+::vector$<$ uint16\+\_\+t $>$ {\bfseries function\+\_\+table}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a32d8b6f914fcaa3988f4df5149b13a91}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a32d8b6f914fcaa3988f4df5149b13a91}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_import}{Wasm\+Import} $>$ {\bfseries import\+\_\+table}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a4f710e1d1dd945669cbebae2b51835e5}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a4f710e1d1dd945669cbebae2b51835e5}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_export}{Wasm\+Export} $>$ {\bfseries export\+\_\+table}\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a4dbe8d13d75f2c6c4a8f6e19fdb5eca1}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a4dbe8d13d75f2c6c4a8f6e19fdb5eca1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t {\bfseries k\+Page\+Size} = 0x10000\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_aa1eb943cfb41d8ca5f17bb03f0166e70}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_aa1eb943cfb41d8ca5f17bb03f0166e70}
+
+\item 
+static const uint32\+\_\+t {\bfseries k\+Min\+Mem\+Pages} = 1\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a078d3aaed6c131e67429991252ad03aa}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a078d3aaed6c131e67429991252ad03aa}
+
+\item 
+static const uint32\+\_\+t {\bfseries k\+Max\+Mem\+Pages} = 16384\hypertarget{structv8_1_1internal_1_1wasm_1_1_wasm_module_a83b3491c78cfb8a38607e3bc1438e6da}{}\label{structv8_1_1internal_1_1wasm_1_1_wasm_module_a83b3491c78cfb8a38607e3bc1438e6da}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/wasm-\/module.\+h\item 
+/\+Users/joshgav/node/v8/src/wasm/wasm-\/module.\+cc\end{DoxyCompactItemize}

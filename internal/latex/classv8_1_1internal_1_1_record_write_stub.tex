@@ -1,0 +1,1453 @@
+\hypertarget{classv8_1_1internal_1_1_record_write_stub}{}\section{v8\+:\+:internal\+:\+:Record\+Write\+Stub Class Reference}
+\label{classv8_1_1internal_1_1_record_write_stub}\index{v8\+::internal\+::\+Record\+Write\+Stub@{v8\+::internal\+::\+Record\+Write\+Stub}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Record\+Write\+Stub\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classv8_1_1internal_1_1_record_write_stub}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_address_bits}{Address\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_object_bits}{Object\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_register_allocation}{Register\+Allocation}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_remembered_set_action_bits}{Remembered\+Set\+Action\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_save_f_p_regs_mode_bits}{Save\+F\+P\+Regs\+Mode\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_value_bits}{Value\+Bits}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\item 
+enum {\bfseries Mode} \{ \\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}, 
+\\*
+{\bfseries S\+T\+O\+R\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+AL}, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+C\+O\+M\+P\+A\+C\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}{}\label{classv8_1_1internal_1_1_record_write_stub_adaa3c49c2efe74f9d635fc17eb76aabe}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\item 
+{\bfseries Record\+Write\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{structv8_1_1internal_1_1_register}{Register} object, \hyperlink{structv8_1_1internal_1_1_register}{Register} value, \hyperlink{structv8_1_1internal_1_1_register}{Register} address, Remembered\+Set\+Action remembered\+\_\+set\+\_\+action, Save\+F\+P\+Regs\+Mode fp\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}{}\label{classv8_1_1internal_1_1_record_write_stub_a6f773cf58e28bfb7b2c5da464fd3f145}
+
+\item 
+{\bfseries Record\+Write\+Stub} (uint32\+\_\+t key, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}{}\label{classv8_1_1internal_1_1_record_write_stub_a9442f95c68a538cf8d22e7f5a7a247b5}
+
+\item 
+bool {\bfseries Sometimes\+Sets\+Up\+A\+Frame} () override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}{}\label{classv8_1_1internal_1_1_record_write_stub_a636954d69a10f35b09d319f92e167699}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+N\+U\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR} ()\hypertarget{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}{}\label{classv8_1_1internal_1_1_record_write_stub_a886f020173ce417f40c5704f6a582d6f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Patch\+Branch\+Into\+Nop} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}{}\label{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}
+
+\item 
+static void {\bfseries Patch\+Nop\+Into\+Branch} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}{}\label{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static void {\bfseries Patch\+Branch\+Into\+Nop} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}{}\label{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}
+
+\item 
+static void {\bfseries Patch\+Nop\+Into\+Branch} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}{}\label{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static void {\bfseries Patch\+Branch\+Into\+Nop} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}{}\label{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}
+
+\item 
+static void {\bfseries Patch\+Nop\+Into\+Branch} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}{}\label{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static void {\bfseries Patch\+Branch\+Into\+Nop} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}{}\label{classv8_1_1internal_1_1_record_write_stub_a50dd0cf37a008b46bcedb2350c39a3a1}
+
+\item 
+static void {\bfseries Patch\+Nop\+Into\+Branch} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}{}\label{classv8_1_1internal_1_1_record_write_stub_a55df913981d78a9535b78d8894a33bd7}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static void {\bfseries Patch\+Branch\+Cond\+Mask} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int pos, Condition c)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a58c394f9a54276c07e04359c0ca7cf05}{}\label{classv8_1_1internal_1_1_record_write_stub_a58c394f9a54276c07e04359c0ca7cf05}
+
+\item 
+static bool {\bfseries is\+Branch\+Nop} (Six\+Byte\+Instr instr, int instr\+Length)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aadfcaa6a212aa418958fa35fd97d4f0d}{}\label{classv8_1_1internal_1_1_record_write_stub_aadfcaa6a212aa418958fa35fd97d4f0d}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\item 
+static Mode {\bfseries Get\+Mode} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub)\hypertarget{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}{}\label{classv8_1_1internal_1_1_record_write_stub_af0f27fcc028caac49bec6438383cd51e}
+
+\item 
+static void {\bfseries Patch} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$stub, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}{}\label{classv8_1_1internal_1_1_record_write_stub_ac3c961dc847aeabf6b3d8034de93c8a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const byte {\bfseries k\+Two\+Byte\+Nop\+Instruction} = 0x3c\hypertarget{classv8_1_1internal_1_1_record_write_stub_a7ee58bc46e7fc9981b82269f06e1f764}{}\label{classv8_1_1internal_1_1_record_write_stub_a7ee58bc46e7fc9981b82269f06e1f764}
+
+\item 
+static const byte {\bfseries k\+Two\+Byte\+Jump\+Instruction} = 0xeb\hypertarget{classv8_1_1internal_1_1_record_write_stub_acde68171f7e8e8218ef09f19ce2cf6ec}{}\label{classv8_1_1internal_1_1_record_write_stub_acde68171f7e8e8218ef09f19ce2cf6ec}
+
+\item 
+static const byte {\bfseries k\+Five\+Byte\+Nop\+Instruction} = 0x3d\hypertarget{classv8_1_1internal_1_1_record_write_stub_abe06769c192b5bbec1d64faf38fbe303}{}\label{classv8_1_1internal_1_1_record_write_stub_abe06769c192b5bbec1d64faf38fbe303}
+
+\item 
+static const byte {\bfseries k\+Five\+Byte\+Jump\+Instruction} = 0xe9\hypertarget{classv8_1_1internal_1_1_record_write_stub_a9b40c982f6275aea8c57787d80050817}{}\label{classv8_1_1internal_1_1_record_write_stub_a9b40c982f6275aea8c57787d80050817}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\item 
+enum {\bfseries On\+No\+Need\+To\+Inform\+Incremental\+Marker} \{ \\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Return\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}, 
+\\*
+{\bfseries k\+Update\+Remembered\+Set\+On\+No\+Need\+To\+Inform\+Incremental\+Marker}
+ \}\hypertarget{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}{}\label{classv8_1_1internal_1_1_record_write_stub_a73c74b063dd8faec52398bc09bd68bce}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\item 
+Major {\bfseries Major\+Key} () const  final\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}{}\label{classv8_1_1internal_1_1_record_write_stub_aa48ea86c84fbc9af6c238be1b4b8fa8d}
+
+\item 
+void {\bfseries Generate} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}{}\label{classv8_1_1internal_1_1_record_write_stub_a71cb55552be288a12876045441a66dca}
+
+\item 
+void {\bfseries Generate\+Incremental} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}{}\label{classv8_1_1internal_1_1_record_write_stub_a05cf08ed0350334ba02a2e918b42ffcc}
+
+\item 
+void {\bfseries Check\+Needs\+To\+Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, On\+No\+Need\+To\+Inform\+Incremental\+Marker on\+\_\+no\+\_\+need, Mode mode)\hypertarget{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}{}\label{classv8_1_1internal_1_1_record_write_stub_aa80cd82bd6fa0cdc17b5cb2d17540d59}
+
+\item 
+void {\bfseries Inform\+Incremental\+Marker} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}{}\label{classv8_1_1internal_1_1_record_write_stub_a18e17a353df1617947581e3e6b9e9183}
+
+\item 
+void {\bfseries Activate} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code) override\hypertarget{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}{}\label{classv8_1_1internal_1_1_record_write_stub_aee832e64590d152a601ed41c5e4fdac9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries object} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}{}\label{classv8_1_1internal_1_1_record_write_stub_a6d3a7affc9526b332c46fbe8f54f0b19}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}{}\label{classv8_1_1internal_1_1_record_write_stub_a7c90bc874fcf5f031f8b923b09dee7ad}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries address} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}{}\label{classv8_1_1internal_1_1_record_write_stub_a3735e76e5fcb078fcd9f08c519c94d8c}
+
+\item 
+Remembered\+Set\+Action {\bfseries remembered\+\_\+set\+\_\+action} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}{}\label{classv8_1_1internal_1_1_record_write_stub_ab333b01d325ff4e597af83c7f93bc109}
+
+\item 
+Save\+F\+P\+Regs\+Mode {\bfseries save\+\_\+fp\+\_\+regs\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}{}\label{classv8_1_1internal_1_1_record_write_stub_a958cf062d6f62adc812d2df9b92bd24a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_record_write_stub}{Record\+Write\+Stub})\hypertarget{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}{}\label{classv8_1_1internal_1_1_record_write_stub_ab5fe793d232d0a1fea1b3626df883dd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries slow\+\_\+}\hypertarget{classv8_1_1internal_1_1_record_write_stub_ad6b48e4dab245e66743fdc7656bd30e6}{}\label{classv8_1_1internal_1_1_record_write_stub_ad6b48e4dab245e66743fdc7656bd30e6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_record_write_stub_1_1_register_allocation}{Register\+Allocation} {\bfseries regs\+\_\+}\hypertarget{classv8_1_1internal_1_1_record_write_stub_abb1fd68ef9ca8a7f71fd91e95199af8f}{}\label{classv8_1_1internal_1_1_record_write_stub_abb1fd68ef9ca8a7f71fd91e95199af8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/arm/code-\/stubs-\/arm.\+h\item 
+/\+Users/joshgav/node/v8/src/arm64/code-\/stubs-\/arm64.\+h\item 
+/\+Users/joshgav/node/v8/src/ia32/code-\/stubs-\/ia32.\+h\item 
+/\+Users/joshgav/node/v8/src/mips/code-\/stubs-\/mips.\+h\item 
+/\+Users/joshgav/node/v8/src/mips64/code-\/stubs-\/mips64.\+h\item 
+/\+Users/joshgav/node/v8/src/ppc/code-\/stubs-\/ppc.\+h\item 
+/\+Users/joshgav/node/v8/src/s390/code-\/stubs-\/s390.\+h\item 
+/\+Users/joshgav/node/v8/src/x64/code-\/stubs-\/x64.\+h\item 
+/\+Users/joshgav/node/v8/src/x87/code-\/stubs-\/x87.\+h\end{DoxyCompactItemize}

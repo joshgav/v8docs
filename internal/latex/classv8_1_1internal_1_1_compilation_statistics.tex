@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1_compilation_statistics}{}\section{v8\+:\+:internal\+:\+:Compilation\+Statistics Class Reference}
+\label{classv8_1_1internal_1_1_compilation_statistics}\index{v8\+::internal\+::\+Compilation\+Statistics@{v8\+::internal\+::\+Compilation\+Statistics}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compilation\+Statistics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_compilation_statistics}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_basic_stats}{Basic\+Stats}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_ordered_stats}{Ordered\+Stats}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_phase_stats}{Phase\+Stats}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_total_stats}{Total\+Stats}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Record\+Phase\+Stats} (const char $\ast$phase\+\_\+kind\+\_\+name, const char $\ast$phase\+\_\+name, const \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_basic_stats}{Basic\+Stats} \&stats)\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a0248f4a218dc1fd98f0065c925c582e2}{}\label{classv8_1_1internal_1_1_compilation_statistics_a0248f4a218dc1fd98f0065c925c582e2}
+
+\item 
+void {\bfseries Record\+Phase\+Kind\+Stats} (const char $\ast$phase\+\_\+kind\+\_\+name, const \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_basic_stats}{Basic\+Stats} \&stats)\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a8004a24dfaa736b2fa06521d85a6fc7d}{}\label{classv8_1_1internal_1_1_compilation_statistics_a8004a24dfaa736b2fa06521d85a6fc7d}
+
+\item 
+void {\bfseries Record\+Total\+Stats} (size\+\_\+t source\+\_\+size, const \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_basic_stats}{Basic\+Stats} \&stats)\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a0c3a792d35bd4e9c6c49409e0fb5c9ee}{}\label{classv8_1_1internal_1_1_compilation_statistics_a0c3a792d35bd4e9c6c49409e0fb5c9ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_ordered_stats}{Ordered\+Stats} {\bfseries Phase\+Kind\+Stats}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a80ff8d0a4791579d578545d9e73b4b39}{}\label{classv8_1_1internal_1_1_compilation_statistics_a80ff8d0a4791579d578545d9e73b4b39}
+
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_ordered_stats}{Phase\+Kind\+Stats} $>$ {\bfseries Phase\+Kind\+Map}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a8c72fbbaef548e798ba4941e7642471c}{}\label{classv8_1_1internal_1_1_compilation_statistics_a8c72fbbaef548e798ba4941e7642471c}
+
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_phase_stats}{Phase\+Stats} $>$ {\bfseries Phase\+Map}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_ab60f80699527cb46f553cfe0593b9e83}{}\label{classv8_1_1internal_1_1_compilation_statistics_ab60f80699527cb46f553cfe0593b9e83}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_compilation_statistics}{Compilation\+Statistics})\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a64181dd5ed5f2b23edec383393669a27}{}\label{classv8_1_1internal_1_1_compilation_statistics_a64181dd5ed5f2b23edec383393669a27}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_statistics_1_1_total_stats}{Total\+Stats} {\bfseries total\+\_\+stats\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_aaa71bc738c317590cb5dff63a8298a93}{}\label{classv8_1_1internal_1_1_compilation_statistics_aaa71bc738c317590cb5dff63a8298a93}
+
+\item 
+Phase\+Kind\+Map {\bfseries phase\+\_\+kind\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a581631e000a9f25db8c75831f134eb8d}{}\label{classv8_1_1internal_1_1_compilation_statistics_a581631e000a9f25db8c75831f134eb8d}
+
+\item 
+Phase\+Map {\bfseries phase\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1_compilation_statistics_a6e488f5b1b211f4f693794dcf044a8ce}{}\label{classv8_1_1internal_1_1_compilation_statistics_a6e488f5b1b211f4f693794dcf044a8ce}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classv8_1_1internal_1_1_compilation_statistics}{Compilation\+Statistics} \&s)\hypertarget{classv8_1_1internal_1_1_compilation_statistics_aa63cb735a7bbee98812be50e59c28093}{}\label{classv8_1_1internal_1_1_compilation_statistics_aa63cb735a7bbee98812be50e59c28093}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compilation-\/statistics.\+h\item 
+/\+Users/joshgav/node/v8/src/compilation-\/statistics.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{classv8_1_1internal_1_1_property_cell}{}\section{v8\+:\+:internal\+:\+:Property\+Cell Class Reference}
+\label{classv8_1_1internal_1_1_property_cell}\index{v8\+::internal\+::\+Property\+Cell@{v8\+::internal\+::\+Property\+Cell}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Property\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_property_cell}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_fixed_body_descriptor}{Fixed\+Body\+Descriptor}$<$ k\+Value\+Offset, k\+Size, k\+Size $>$ {\bfseries Body\+Descriptor}\hypertarget{classv8_1_1internal_1_1_property_cell_aa261f74f109f9706cc80a50fcf3fea83}{}\label{classv8_1_1internal_1_1_property_cell_aa261f74f109f9706cc80a50fcf3fea83}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Details {\bfseries property\+\_\+details} ()\hypertarget{classv8_1_1internal_1_1_property_cell_a708c41145948cd884d0a138f259ff13a}{}\label{classv8_1_1internal_1_1_property_cell_a708c41145948cd884d0a138f259ff13a}
+
+\item 
+void {\bfseries set\+\_\+property\+\_\+details} (Property\+Details details)\hypertarget{classv8_1_1internal_1_1_property_cell_a937742725ab442a47662f39d0acccb05}{}\label{classv8_1_1internal_1_1_property_cell_a937742725ab442a47662f39d0acccb05}
+
+\item 
+Property\+Cell\+Constant\+Type {\bfseries Get\+Constant\+Type} ()\hypertarget{classv8_1_1internal_1_1_property_cell_ad575b8b56625ef4ce299f936c1396734}{}\label{classv8_1_1internal_1_1_property_cell_ad575b8b56625ef4ce299f936c1396734}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Property\+Cell\+Type {\bfseries Updated\+Type} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_property_cell}{Property\+Cell} $>$ cell, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, Property\+Details details)\hypertarget{classv8_1_1internal_1_1_property_cell_a6b684b0de3bb24602cd52211fdf1bd09}{}\label{classv8_1_1internal_1_1_property_cell_a6b684b0de3bb24602cd52211fdf1bd09}
+
+\item 
+static void {\bfseries Update\+Cell} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_global_dictionary}{Global\+Dictionary} $>$ dictionary, int entry, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, Property\+Details details)\hypertarget{classv8_1_1internal_1_1_property_cell_ae8b9015a0bcb6dffd685e8816e7a1f68}{}\label{classv8_1_1internal_1_1_property_cell_ae8b9015a0bcb6dffd685e8816e7a1f68}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_property_cell}{Property\+Cell} $>$ {\bfseries Invalidate\+Entry} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_global_dictionary}{Global\+Dictionary} $>$ dictionary, int entry)\hypertarget{classv8_1_1internal_1_1_property_cell_a098f41046501aa1a188687167aee016a}{}\label{classv8_1_1internal_1_1_property_cell_a098f41046501aa1a188687167aee016a}
+
+\item 
+static void {\bfseries Set\+Value\+With\+Invalidation} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_property_cell}{Property\+Cell} $>$ cell, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_property_cell_aed19982e8377efa4079d4fc96b2ee854}{}\label{classv8_1_1internal_1_1_property_cell_aed19982e8377efa4079d4fc96b2ee854}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Details\+Offset} = Heap\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_property_cell_a9eca2ab1acc9e7d269c42234bd6f0ae9}{}\label{classv8_1_1internal_1_1_property_cell_a9eca2ab1acc9e7d269c42234bd6f0ae9}
+
+\item 
+static const int {\bfseries k\+Value\+Offset} = k\+Details\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_property_cell_a35f0fea4789352fe9b971e8486d6034d}{}\label{classv8_1_1internal_1_1_property_cell_a35f0fea4789352fe9b971e8486d6034d}
+
+\item 
+static const int {\bfseries k\+Dependent\+Code\+Offset} = k\+Value\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_property_cell_a4170212f9537f0386e47d0cb3992862d}{}\label{classv8_1_1internal_1_1_property_cell_a4170212f9537f0386e47d0cb3992862d}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Dependent\+Code\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_property_cell_aebba1cc2196a61c1f8e639175a9a83d5}{}\label{classv8_1_1internal_1_1_property_cell_aebba1cc2196a61c1f8e639175a9a83d5}
+
+\item 
+static const int {\bfseries k\+Pointer\+Fields\+Begin\+Offset} = k\+Value\+Offset\hypertarget{classv8_1_1internal_1_1_property_cell_a2124652b9ed706cca12d0ea32d3f9ec9}{}\label{classv8_1_1internal_1_1_property_cell_a2124652b9ed706cca12d0ea32d3f9ec9}
+
+\item 
+static const int {\bfseries k\+Pointer\+Fields\+End\+Offset} = k\+Size\hypertarget{classv8_1_1internal_1_1_property_cell_ab94bf9324dfa02d1ac67aac334083c20}{}\label{classv8_1_1internal_1_1_property_cell_ab94bf9324dfa02d1ac67aac334083c20}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_property_cell}{Property\+Cell})\hypertarget{classv8_1_1internal_1_1_property_cell_ac27122586065fd59a484ba646b3dc771}{}\label{classv8_1_1internal_1_1_property_cell_ac27122586065fd59a484ba646b3dc771}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

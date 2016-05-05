@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:State\+Values\+Cache Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache}\index{v8\+::internal\+::compiler\+::\+State\+Values\+Cache@{v8\+::internal\+::compiler\+::\+State\+Values\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_node_key}{Node\+Key}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_state_values_key}{State\+Values\+Key}
+\item 
+class \hyperlink{classv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_value_array_iterator}{Value\+Array\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State\+Values\+Cache} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$js\+\_\+graph)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_aeb424ea48a844ff289355359c435883e}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_aeb424ea48a844ff289355359c435883e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Node\+For\+Values} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$values, size\+\_\+t count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ad2b11e054731dd69f78a4116713f53b7}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ad2b11e054731dd69f78a4116713f53b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Tree} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_value_array_iterator}{Value\+Array\+Iterator} $\ast$it, size\+\_\+t max\+\_\+height)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ab5b90d1e2dbac22c51847eebdf09a592}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ab5b90d1e2dbac22c51847eebdf09a592}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector} $\ast$ {\bfseries Get\+Working\+Space} (size\+\_\+t level)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ac453e58423a8d3f2771f817f586d7299}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ac453e58423a8d3f2771f817f586d7299}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Empty\+State\+Values} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a8439b5cc62c744838360720f99d83b1a}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a8439b5cc62c744838360720f99d83b1a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Values\+Node\+From\+Cache} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$nodes, size\+\_\+t count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a2bafc38b273e2df8320f5ae8d5666a7e}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a2bafc38b273e2df8320f5ae8d5666a7e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a43244ce0558afdb3d518584d2596febd}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a43244ce0558afdb3d518584d2596febd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_aa09be433123c1884b72bdb6d298a3600}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_aa09be433123c1884b72bdb6d298a3600}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a439020ccef5945514b6f4ec04496fa0d}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a439020ccef5945514b6f4ec04496fa0d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Are\+Keys\+Equal} (void $\ast$key1, void $\ast$key2)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ac83b8932d4b9fc5e8728068a271e8c03}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_ac83b8932d4b9fc5e8728068a271e8c03}
+
+\item 
+static bool {\bfseries Is\+Keys\+Equal\+To\+Node} (\hyperlink{structv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_state_values_key}{State\+Values\+Key} $\ast$key, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a6c80ef903f186c6e2a44d7dfee1217f8}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a6c80ef903f186c6e2a44d7dfee1217f8}
+
+\item 
+static bool {\bfseries Are\+Value\+Keys\+Equal} (\hyperlink{structv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_state_values_key}{State\+Values\+Key} $\ast$key1, \hyperlink{structv8_1_1internal_1_1compiler_1_1_state_values_cache_1_1_state_values_key}{State\+Values\+Key} $\ast$key2)\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a8d117710716366387efb15e85eb88ef9}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a8d117710716366387efb15e85eb88ef9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries js\+\_\+graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a0424819e36b65e89ad88bfbb622e12f4}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a0424819e36b65e89ad88bfbb622e12f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Zone\+Hash\+Map} {\bfseries hash\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_abe4eac42b51c2c599db0f18b82b5bd1a}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_abe4eac42b51c2c599db0f18b82b5bd1a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector} $\ast$ $>$ {\bfseries working\+\_\+space\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a4b91c15a3e011976baa402192a6e6046}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a4b91c15a3e011976baa402192a6e6046}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries empty\+\_\+state\+\_\+values\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a96656aedf1a8d15896046c7010430359}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a96656aedf1a8d15896046c7010430359}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Input\+Count} = 8\hypertarget{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a4828a0b045f4c8d4291fd50116a017af}{}\label{classv8_1_1internal_1_1compiler_1_1_state_values_cache_a4828a0b045f4c8d4291fd50116a017af}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/state-\/values-\/utils.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/state-\/values-\/utils.\+cc\end{DoxyCompactItemize}

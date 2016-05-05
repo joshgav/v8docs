@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1_incremental_marking_job}{}\section{v8\+:\+:internal\+:\+:Incremental\+Marking\+Job Class Reference}
+\label{classv8_1_1internal_1_1_incremental_marking_job}\index{v8\+::internal\+::\+Incremental\+Marking\+Job@{v8\+::internal\+::\+Incremental\+Marking\+Job}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_incremental_marking_job_1_1_delayed_task}{Delayed\+Task}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_incremental_marking_job_1_1_idle_task}{Idle\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Should\+Force\+Marking\+Step} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_a4317359ea520f1b14a355a27e6c797b7}{}\label{classv8_1_1internal_1_1_incremental_marking_job_a4317359ea520f1b14a355a27e6c797b7}
+
+\item 
+bool {\bfseries Idle\+Task\+Pending} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_a9b306e36d00186ea31d100dd64881d5d}{}\label{classv8_1_1internal_1_1_incremental_marking_job_a9b306e36d00186ea31d100dd64881d5d}
+
+\item 
+void {\bfseries Start} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ad8386ebe35f8d71d345ff8bc42490fae}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ad8386ebe35f8d71d345ff8bc42490fae}
+
+\item 
+void {\bfseries Notify\+Idle\+Task} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ae552d58e10d9276ac9424541b6e29acf}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ae552d58e10d9276ac9424541b6e29acf}
+
+\item 
+void {\bfseries Notify\+Delayed\+Task} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ae623cea4c04020a9fc0f5ebf16c70cf7}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ae623cea4c04020a9fc0f5ebf16c70cf7}
+
+\item 
+void {\bfseries Notify\+Idle\+Task\+Progress} ()\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ada51e53d0634009e1e1292f0c55fe69e}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ada51e53d0634009e1e1292f0c55fe69e}
+
+\item 
+void {\bfseries Schedule\+Idle\+Task} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_a285024c9a311cae6a56c8cf361b4e46d}{}\label{classv8_1_1internal_1_1_incremental_marking_job_a285024c9a311cae6a56c8cf361b4e46d}
+
+\item 
+void {\bfseries Schedule\+Delayed\+Task} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ab4a04da07bbc0726a58311a25665a6fb}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ab4a04da07bbc0726a58311a25665a6fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double {\bfseries k\+Long\+Delay\+In\+Seconds} = 5\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ad934edf365c8b948fcf72e2173a86ea6}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ad934edf365c8b948fcf72e2173a86ea6}
+
+\item 
+static const double {\bfseries k\+Short\+Delay\+In\+Seconds} = 0.\+5\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_aaabbf1988f266c5f6537998fad1c8548}{}\label{classv8_1_1internal_1_1_incremental_marking_job_aaabbf1988f266c5f6537998fad1c8548}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries idle\+\_\+task\+\_\+pending\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_ae54c52ea426e96551e9dbc6b34f15ff6}{}\label{classv8_1_1internal_1_1_incremental_marking_job_ae54c52ea426e96551e9dbc6b34f15ff6}
+
+\item 
+bool {\bfseries delayed\+\_\+task\+\_\+pending\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_a74b9f98c48eaba06782ddf2462cffed7}{}\label{classv8_1_1internal_1_1_incremental_marking_job_a74b9f98c48eaba06782ddf2462cffed7}
+
+\item 
+bool {\bfseries made\+\_\+progress\+\_\+since\+\_\+last\+\_\+delayed\+\_\+task\+\_\+}\hypertarget{classv8_1_1internal_1_1_incremental_marking_job_a35e8740cf51d50dab8960f6f3017899c}{}\label{classv8_1_1internal_1_1_incremental_marking_job_a35e8740cf51d50dab8960f6f3017899c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/incremental-\/marking-\/job.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/incremental-\/marking-\/job.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1base_1_1_win32_time}{}\section{v8\+:\+:base\+:\+:Win32\+Time Class Reference}
+\label{classv8_1_1base_1_1_win32_time}\index{v8\+::base\+::\+Win32\+Time@{v8\+::base\+::\+Win32\+Time}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionv8_1_1base_1_1_win32_time_1_1_time_stamp}{Time\+Stamp}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Win32\+Time} (double jstime)\hypertarget{classv8_1_1base_1_1_win32_time_a9f8e83cbab5a3d25b11cf4371305faf8}{}\label{classv8_1_1base_1_1_win32_time_a9f8e83cbab5a3d25b11cf4371305faf8}
+
+\item 
+{\bfseries Win32\+Time} (int year, int mon, int day, int hour, int min, int sec)\hypertarget{classv8_1_1base_1_1_win32_time_a189fecfc6a50f0932db3b0e025f84665}{}\label{classv8_1_1base_1_1_win32_time_a189fecfc6a50f0932db3b0e025f84665}
+
+\item 
+double {\bfseries To\+J\+S\+Time} ()\hypertarget{classv8_1_1base_1_1_win32_time_a052f87c337e9d06abe156757e01c4a09}{}\label{classv8_1_1base_1_1_win32_time_a052f87c337e9d06abe156757e01c4a09}
+
+\item 
+void {\bfseries Set\+To\+Current\+Time} ()\hypertarget{classv8_1_1base_1_1_win32_time_ab6f3f19dd6479e7286e3d5b9e0089b34}{}\label{classv8_1_1base_1_1_win32_time_ab6f3f19dd6479e7286e3d5b9e0089b34}
+
+\item 
+int64\+\_\+t {\bfseries Local\+Offset} (\hyperlink{classv8_1_1base_1_1_timezone_cache}{Timezone\+Cache} $\ast$cache)\hypertarget{classv8_1_1base_1_1_win32_time_a317e80cb271eb52b6e519f02d956b692}{}\label{classv8_1_1base_1_1_win32_time_a317e80cb271eb52b6e519f02d956b692}
+
+\item 
+int64\+\_\+t {\bfseries Daylight\+Savings\+Offset} (\hyperlink{classv8_1_1base_1_1_timezone_cache}{Timezone\+Cache} $\ast$cache)\hypertarget{classv8_1_1base_1_1_win32_time_a5ad17206292bc952feb637d33cd16b8c}{}\label{classv8_1_1base_1_1_win32_time_a5ad17206292bc952feb637d33cd16b8c}
+
+\item 
+char $\ast$ {\bfseries Local\+Timezone} (\hyperlink{classv8_1_1base_1_1_timezone_cache}{Timezone\+Cache} $\ast$cache)\hypertarget{classv8_1_1base_1_1_win32_time_a622e143d3e250f76ae3709de32181f09}{}\label{classv8_1_1base_1_1_win32_time_a622e143d3e250f76ae3709de32181f09}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries In\+D\+ST} (\hyperlink{classv8_1_1base_1_1_timezone_cache}{Timezone\+Cache} $\ast$cache)\hypertarget{classv8_1_1base_1_1_win32_time_af51042ade025ee206775696611044ace}{}\label{classv8_1_1base_1_1_win32_time_af51042ade025ee206775696611044ace}
+
+\item 
+F\+I\+L\+E\+T\+I\+ME \& {\bfseries ft} ()\hypertarget{classv8_1_1base_1_1_win32_time_af474260cb7f8e0e14523d1ceed0709c2}{}\label{classv8_1_1base_1_1_win32_time_af474260cb7f8e0e14523d1ceed0709c2}
+
+\item 
+int64\+\_\+t \& {\bfseries t} ()\hypertarget{classv8_1_1base_1_1_win32_time_a49be8a0d45eaa0a00413e3598e94bfe4}{}\label{classv8_1_1base_1_1_win32_time_a49be8a0d45eaa0a00413e3598e94bfe4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{unionv8_1_1base_1_1_win32_time_1_1_time_stamp}{Time\+Stamp} {\bfseries time\+\_\+}\hypertarget{classv8_1_1base_1_1_win32_time_a84ed4aaddbb963d03ee06735fc1b1731}{}\label{classv8_1_1base_1_1_win32_time_a84ed4aaddbb963d03ee06735fc1b1731}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int64\+\_\+t {\bfseries k\+Time\+Epoc} = 116444736000000000\+LL\hypertarget{classv8_1_1base_1_1_win32_time_acf233546898ede8a70973989391c7f15}{}\label{classv8_1_1base_1_1_win32_time_acf233546898ede8a70973989391c7f15}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Time\+Scaler} = 10000\hypertarget{classv8_1_1base_1_1_win32_time_a1b75f142e1c2816d10f2a3e9a14bc033}{}\label{classv8_1_1base_1_1_win32_time_a1b75f142e1c2816d10f2a3e9a14bc033}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Ms\+Per\+Minute} = 60000\hypertarget{classv8_1_1base_1_1_win32_time_ab9c0056abd7965eeb1872df76de6036d}{}\label{classv8_1_1base_1_1_win32_time_ab9c0056abd7965eeb1872df76de6036d}
+
+\item 
+static const bool {\bfseries k\+Short\+Tz\+Names} = false\hypertarget{classv8_1_1base_1_1_win32_time_a2ff49b8931e65799225ec872bfb3cc5e}{}\label{classv8_1_1base_1_1_win32_time_a2ff49b8931e65799225ec872bfb3cc5e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/base/platform/platform-\/win32.\+cc\end{DoxyCompactItemize}

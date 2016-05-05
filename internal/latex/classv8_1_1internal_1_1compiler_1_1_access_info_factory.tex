@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Access\+Info\+Factory Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory}\index{v8\+::internal\+::compiler\+::\+Access\+Info\+Factory@{v8\+::internal\+::compiler\+::\+Access\+Info\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Access\+Info\+Factory} (\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$dependencies, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aafc5535293ee123adc93261670871aa2}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aafc5535293ee123adc93261670871aa2}
+
+\item 
+bool {\bfseries Compute\+Element\+Access\+Info} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, Access\+Mode access\+\_\+mode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_element_access_info}{Element\+Access\+Info} $\ast$access\+\_\+info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aa7540604d39b50722ee923b8ffaf2145}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aa7540604d39b50722ee923b8ffaf2145}
+
+\item 
+bool {\bfseries Compute\+Element\+Access\+Infos} (\hyperlink{classv8_1_1internal_1_1_list}{Map\+Handle\+List} const \&maps, Access\+Mode access\+\_\+mode, \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_element_access_info}{Element\+Access\+Info} $>$ $\ast$access\+\_\+infos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a428bf7e578848656823cdbb64a88e91a}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a428bf7e578848656823cdbb64a88e91a}
+
+\item 
+bool {\bfseries Compute\+Property\+Access\+Info} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Access\+Mode access\+\_\+mode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_property_access_info}{Property\+Access\+Info} $\ast$access\+\_\+info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a099ee7c7da8ee81a875f4f5570cdfbae}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a099ee7c7da8ee81a875f4f5570cdfbae}
+
+\item 
+bool {\bfseries Compute\+Property\+Access\+Infos} (\hyperlink{classv8_1_1internal_1_1_list}{Map\+Handle\+List} const \&maps, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Access\+Mode access\+\_\+mode, \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_property_access_info}{Property\+Access\+Info} $>$ $\ast$access\+\_\+infos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a0abedcc1b1b7aa570b27991f36d3d31c}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a0abedcc1b1b7aa570b27991f36d3d31c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Lookup\+Special\+Field\+Accessor} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1compiler_1_1_property_access_info}{Property\+Access\+Info} $\ast$access\+\_\+info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aaa37cfffafa24b3c04487708dab6e99b}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aaa37cfffafa24b3c04487708dab6e99b}
+
+\item 
+bool {\bfseries Lookup\+Transition} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ holder, \hyperlink{classv8_1_1internal_1_1compiler_1_1_property_access_info}{Property\+Access\+Info} $\ast$access\+\_\+info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ac4e8c3a84f8f63a087a8ad76978bcf76}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ac4e8c3a84f8f63a087a8ad76978bcf76}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$ {\bfseries dependencies} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ad49204a5516119cd4ecf2092c1a5fbf3}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ad49204a5516119cd4ecf2092c1a5fbf3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_factory}{Factory} $\ast$ {\bfseries factory} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a506bc9c13103839833703cfac3433d23}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a506bc9c13103839833703cfac3433d23}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a2b5f9560950230607d9bc9da5ad35809}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a2b5f9560950230607d9bc9da5ad35809}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries native\+\_\+context} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a971ed0253bf44e64700e24cdd4ca1810}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a971ed0253bf44e64700e24cdd4ca1810}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aa4f8c73983e5a5ee4c0a106507274df5}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_aa4f8c73983e5a5ee4c0a106507274df5}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_access_info_factory}{Access\+Info\+Factory})\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a8d171dfabb5db320db1f92903b2cb4ef}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a8d171dfabb5db320db1f92903b2cb4ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$const {\bfseries dependencies\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a40431c52616f5ab622a3f6ee1505a5d6}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a40431c52616f5ab622a3f6ee1505a5d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ const {\bfseries native\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a646063a9300faf25ac27ba61181f4e17}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a646063a9300faf25ac27ba61181f4e17}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$const {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a59312ab517b84bc8755373307473249b}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a59312ab517b84bc8755373307473249b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_cache}{Type\+Cache} const \& {\bfseries type\+\_\+cache\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ac1417e678c5bdaa0fdf19888cb551236}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_ac1417e678c5bdaa0fdf19888cb551236}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$const {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a0b2cd82eee5d3dd62c56b47ff1f0e144}{}\label{classv8_1_1internal_1_1compiler_1_1_access_info_factory_a0b2cd82eee5d3dd62c56b47ff1f0e144}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/access-\/info.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/access-\/info.\+cc\end{DoxyCompactItemize}

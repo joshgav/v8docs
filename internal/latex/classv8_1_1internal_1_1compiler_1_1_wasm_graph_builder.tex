@@ -1,0 +1,473 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Wasm\+Graph\+Builder Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder}\index{v8\+::internal\+::compiler\+::\+Wasm\+Graph\+Builder@{v8\+::internal\+::compiler\+::\+Wasm\+Graph\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wasm\+Graph\+Builder} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$z, \hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$g, \hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$function\+\_\+signature, \hyperlink{classv8_1_1internal_1_1compiler_1_1_source_position_table}{compiler\+::\+Source\+Position\+Table} $\ast$source\+\_\+position\+\_\+table=nullptr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ace35544806c409550476fb59ad2af00c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ace35544806c409550476fb59ad2af00c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries Buffer} (size\+\_\+t count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a924252c21b42b5a78c148854e8e21e08}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a924252c21b42b5a78c148854e8e21e08}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Error} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a12010451052b3336633e95852d7574ea}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a12010451052b3336633e95852d7574ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Start} (unsigned params)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a92ca9c114840c6f96ce8d19d4cef501c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a92ca9c114840c6f96ce8d19d4cef501c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Param} (unsigned index, wasm\+::\+Local\+Type type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aaf7dcc4f960abcaf2ff5bf2d35a273ec}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aaf7dcc4f960abcaf2ff5bf2d35a273ec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Loop} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$entry)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7dbd7d3586d8a40a3471eb4269938797}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7dbd7d3586d8a40a3471eb4269938797}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Terminate} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6037ae6a672728f6f882398b5b99dea4}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6037ae6a672728f6f882398b5b99dea4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Merge} (unsigned count, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$controls)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aea0d20bba0195ffa2276ece740dd2688}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aea0d20bba0195ffa2276ece740dd2688}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Phi} (wasm\+::\+Local\+Type type, unsigned count, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$vals, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae91045fa7417366f03aed399a3aa1073}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae91045fa7417366f03aed399a3aa1073}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Effect\+Phi} (unsigned count, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$effects, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3ec7c789233d63feb8404f96435eee3b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3ec7c789233d63feb8404f96435eee3b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Number\+Constant} (int32\+\_\+t value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae254299deeb7fccb7cd5cae373f9fdfc}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae254299deeb7fccb7cd5cae373f9fdfc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Int32\+Constant} (int32\+\_\+t value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a651778fbcf36d9d61bae885722675389}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a651778fbcf36d9d61bae885722675389}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Int64\+Constant} (int64\+\_\+t value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a06d4b8c034169f202155d5e2682ed855}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a06d4b8c034169f202155d5e2682ed855}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float32\+Constant} (float value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3c866b2ba425dd2623faac92d9aa7d9a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3c866b2ba425dd2623faac92d9aa7d9a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float64\+Constant} (double value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a88b56d1093cf7e6a8f3ca0d1098c14e2}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a88b56d1093cf7e6a8f3ca0d1098c14e2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Constant} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adaae9729ccfb1daf71331657d874e7f0}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adaae9729ccfb1daf71331657d874e7f0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Binop} (wasm\+::\+Wasm\+Opcode opcode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position=wasm\+::k\+No\+Code\+Position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8b141d6d20ebac7a29f0cbf02cb0b585}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8b141d6d20ebac7a29f0cbf02cb0b585}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Unop} (wasm\+::\+Wasm\+Opcode opcode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position=wasm\+::k\+No\+Code\+Position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a059c21b5509431e3ba2f65764fca72c3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a059c21b5509431e3ba2f65764fca72c3}
+
+\item 
+unsigned {\bfseries Input\+Count} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab63953b3e9a24fe9fddb8b3e37c2a223}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab63953b3e9a24fe9fddb8b3e37c2a223}
+
+\item 
+bool {\bfseries Is\+Phi\+With\+Merge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$phi, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$merge)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af4cac5f51c742fb3c6ee9ebd7228e467}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af4cac5f51c742fb3c6ee9ebd7228e467}
+
+\item 
+void {\bfseries Append\+To\+Merge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$merge, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$from)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab929bf02606c53e36dd88b94c711df51}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab929bf02606c53e36dd88b94c711df51}
+
+\item 
+void {\bfseries Append\+To\+Phi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$phi, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$from)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3c86df6fa7b93ff1d9534b5eab8beb32}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3c86df6fa7b93ff1d9534b5eab8beb32}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Branch} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$cond, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$true\+\_\+node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$false\+\_\+node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad8a1cb45beb0c4578edea78ee205c116}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad8a1cb45beb0c4578edea78ee205c116}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Switch} (unsigned count, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$key)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abdc0251982a8cdc9352375052f5285c6}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abdc0251982a8cdc9352375052f5285c6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries If\+Value} (int32\+\_\+t value, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$sw)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a977422a9bb26013f2881560cd75a9c2b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a977422a9bb26013f2881560cd75a9c2b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries If\+Default} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$sw)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab59f5e9fee0f63153f6e2add223c04d3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab59f5e9fee0f63153f6e2add223c04d3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Return} (unsigned count, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$vals)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3895d8dd5c386648aad945ea3dd68424}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3895d8dd5c386648aad945ea3dd68424}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Return\+Void} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a72a8484592ea6ed7951a20ea865fe9dc}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a72a8484592ea6ed7951a20ea865fe9dc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Unreachable} (wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af49f9159d08309b1606b7f53671f8f7a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af49f9159d08309b1606b7f53671f8f7a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Call\+Direct} (uint32\+\_\+t index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$args, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab51cf88c38e193447b63b11d2973af2f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab51cf88c38e193447b63b11d2973af2f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Call\+Import} (uint32\+\_\+t index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$args, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0cf7a6760e258bff85ed0aebc713e6b3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0cf7a6760e258bff85ed0aebc713e6b3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Call\+Indirect} (uint32\+\_\+t index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$args, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af82b6dbc263b93acec27abb6b710f13c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af82b6dbc263b93acec27abb6b710f13c}
+
+\item 
+void {\bfseries Build\+J\+S\+To\+Wasm\+Wrapper} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ wasm\+\_\+code, \hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$sig)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4e5b72a447b37da7fbb8771d41d206f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4e5b72a447b37da7fbb8771d41d206f}
+
+\item 
+void {\bfseries Build\+Wasm\+To\+J\+S\+Wrapper} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function, \hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$sig)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a20318c9c9fe29ccf7881ed052d1bbd39}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a20318c9c9fe29ccf7881ed052d1bbd39}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries To\+JS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$context, wasm\+::\+Local\+Type type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7bf998ce01d008d3a08e933955494291}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7bf998ce01d008d3a08e933955494291}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries From\+JS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$context, wasm\+::\+Local\+Type type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0a30cf6e2299bdfa68686fa49af9c991}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0a30cf6e2299bdfa68686fa49af9c991}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Invert} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac5f8d22f92489bf9f51dea5088b35203}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac5f8d22f92489bf9f51dea5088b35203}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Function\+Table} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a54e91cf641607d201a202a248ec62def}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a54e91cf641607d201a202a248ec62def}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Mem\+Size} (uint32\+\_\+t offset)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aaf246371759c712e1ebb562d0e0254a9}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aaf246371759c712e1ebb562d0e0254a9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Load\+Global} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4dac1eeafd60f670f95455c0563a1bbe}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4dac1eeafd60f670f95455c0563a1bbe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Store\+Global} (uint32\+\_\+t index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$val)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a19537dbcb66a45d1111bc6e9c9f29166}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a19537dbcb66a45d1111bc6e9c9f29166}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Load\+Mem} (wasm\+::\+Local\+Type type, \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} memtype, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, uint32\+\_\+t offset, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a48a77fb51329cba4e854c1e39c45a7b5}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a48a77fb51329cba4e854c1e39c45a7b5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Store\+Mem} (\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} type, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, uint32\+\_\+t offset, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$val, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a507dc0c67ec2a4b8b3cfd22394eda46a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a507dc0c67ec2a4b8b3cfd22394eda46a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Control} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3e43600f57c08e338d84d41214fc86ae}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3e43600f57c08e338d84d41214fc86ae}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Effect} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8dfdeba639e318c421cdb68aacf925f0}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8dfdeba639e318c421cdb68aacf925f0}
+
+\item 
+void {\bfseries set\+\_\+module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{wasm\+::\+Module\+Env} $\ast$module)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6aa89e47675a5cf2ac1791b95ab3d9b5}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6aa89e47675a5cf2ac1791b95ab3d9b5}
+
+\item 
+void {\bfseries set\+\_\+control\+\_\+ptr} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7d356c78d2f232b81dba7c0ebbf1976a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a7d356c78d2f232b81dba7c0ebbf1976a}
+
+\item 
+void {\bfseries set\+\_\+effect\+\_\+ptr} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$effect)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adb565f62807c31659055ede6d717b3aa}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adb565f62807c31659055ede6d717b3aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$ {\bfseries Get\+Function\+Signature} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4eaa6aecde230948c883db1261208ae8}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4eaa6aecde230948c883db1261208ae8}
+
+\item 
+void {\bfseries Int64\+Lowering\+For\+Testing} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa650569b6f19dcbe6d91eb4822f67d8e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa650569b6f19dcbe6d91eb4822f67d8e}
+
+\item 
+void {\bfseries Set\+Source\+Position} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9c4c61c4955338f692304d6b4d2cf813}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9c4c61c4955338f692304d6b4d2cf813}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Print\+Debug\+Name} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa8845a8a925de032002ddca9bd1000df}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa8845a8a925de032002ddca9bd1000df}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3cf2dd38ca3baefab98e11a83da74978}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3cf2dd38ca3baefab98e11a83da74978}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a365c7c046eaf17dea7cdab7caa76584a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a365c7c046eaf17dea7cdab7caa76584a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries String} (const char $\ast$string)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6c1cc36fa755835008e9b8eee6489e95}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6c1cc36fa755835008e9b8eee6489e95}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Mem\+Buffer} (uint32\+\_\+t offset)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a06ea4cc2658d6a1d44c04520d0c82fe3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a06ea4cc2658d6a1d44c04520d0c82fe3}
+
+\item 
+void {\bfseries Bounds\+Check\+Mem} (\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} memtype, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, uint32\+\_\+t offset, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af524016a638948497014c0a2dac53afe}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af524016a638948497014c0a2dac53afe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Mask\+Shift\+Count32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a42192f9897369d87a7f08020bbf1b7e9}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a42192f9897369d87a7f08020bbf1b7e9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Mask\+Shift\+Count64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a47c4ab1ba9e3d0c45e31ea157f94090b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a47c4ab1ba9e3d0c45e31ea157f94090b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+C\+Call} (\hyperlink{classv8_1_1internal_1_1_signature}{Machine\+Signature} $\ast$sig, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$args)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6c60ae3b267dd47b7cb12c1dc559c71b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6c60ae3b267dd47b7cb12c1dc559c71b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Wasm\+Call} (\hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$sig, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$args, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a2a9bb1937abf7f719d34eed0d5a208fb}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a2a9bb1937abf7f719d34eed0d5a208fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Neg} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4eb673b447f0565aab79668cd47e2d7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4eb673b447f0565aab79668cd47e2d7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Neg} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1ee46b1ed90228081559008660fd090a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1ee46b1ed90228081559008660fd090a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Copy\+Sign} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a203bf829c58cff2523e21a7368857514}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a203bf829c58cff2523e21a7368857514}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Copy\+Sign} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5308beb5b330175ac15d0286db5dd03c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5308beb5b330175ac15d0286db5dd03c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Min} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a859a974899e59abdb57937b31560880e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a859a974899e59abdb57937b31560880e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Max} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a469cf411fedc799ca2c15cbe24ac1a69}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a469cf411fedc799ca2c15cbe24ac1a69}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Min} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a360fcdfdd4826c026df32105e0c724c7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a360fcdfdd4826c026df32105e0c724c7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Max} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad528c9d6cff1bc96929ae6a4338a1251}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad528c9d6cff1bc96929ae6a4338a1251}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+S\+Convert\+F32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4e6c3475936a02b113294ae82c132f31}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4e6c3475936a02b113294ae82c132f31}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+S\+Convert\+F64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a87e2a89dddbfa00fc1c8badc940ea8a3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a87e2a89dddbfa00fc1c8badc940ea8a3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+U\+Convert\+F32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5642d6e8c70080d6f7477f03964b7dc9}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5642d6e8c70080d6f7477f03964b7dc9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+U\+Convert\+F64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa0dc2e3d0293f8af05674f7f227f5e30}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa0dc2e3d0293f8af05674f7f227f5e30}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+Ctz} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a55647ee3b384aac23e73e57b69e03e66}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a55647ee3b384aac23e73e57b69e03e66}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+Popcnt} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a97db19f8fe8674b0e0f035597d972579}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a97db19f8fe8674b0e0f035597d972579}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+Ctz} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a626db5c6f344774be3a227b034f265b5}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a626db5c6f344774be3a227b034f265b5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+Popcnt} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1abe926c2b7a1f10c9687e976822430d}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1abe926c2b7a1f10c9687e976822430d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Bit\+Counting\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, External\+Reference ref, Machine\+Representation input\+\_\+type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9a8a60b6fc3b6596da8c97376b9bcaaf}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9a8a60b6fc3b6596da8c97376b9bcaaf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+C\+Func\+Instruction} (External\+Reference ref, \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} type, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input0, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input1=nullptr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a01ddf4e82f2a9e6c3cceb3cf91acf39b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a01ddf4e82f2a9e6c3cceb3cf91acf39b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Trunc} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6546b148130cd14a50f2aa4e42aad763}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6546b148130cd14a50f2aa4e42aad763}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Floor} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6e4e162c454b7378bca15f7f840287e6}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6e4e162c454b7378bca15f7f840287e6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Ceil} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae71b3a080d0a31dbcaae7f4ed53300b7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae71b3a080d0a31dbcaae7f4ed53300b7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+Nearest\+Int} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af409615b3b77c4d79680d0542af114b2}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af409615b3b77c4d79680d0542af114b2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Trunc} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac404c160a2433b07d3947e71a4724f8f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac404c160a2433b07d3947e71a4724f8f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Floor} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa86ea3a6492c929602bb773df8e46190}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa86ea3a6492c929602bb773df8e46190}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Ceil} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8548dda8a886b85c4bd46c2181534e1c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8548dda8a886b85c4bd46c2181534e1c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Nearest\+Int} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a13d594fe85b3cded0acbab82a2ffaf3f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a13d594fe85b3cded0acbab82a2ffaf3f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+Rol} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae89cc55a258b5a25ed902c7e4b98c978}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ae89cc55a258b5a25ed902c7e4b98c978}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+Rol} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af3b368044a64335a1f2c178eab97f4f2}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af3b368044a64335a1f2c178eab97f4f2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Acos} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9f4eeb99f130f811e6593e7ef3d83042}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9f4eeb99f130f811e6593e7ef3d83042}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Asin} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad7c090ac009cad37d68ab31767266e88}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad7c090ac009cad37d68ab31767266e88}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Atan} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a976efc1cf8b753a7d8b6e3412af301ef}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a976efc1cf8b753a7d8b6e3412af301ef}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Cos} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa318ba2b17ac9bc505e0ecc0678a96a8}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa318ba2b17ac9bc505e0ecc0678a96a8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Sin} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac53995626dc8442b6c8f510ef93fc717}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ac53995626dc8442b6c8f510ef93fc717}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Tan} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af6492a8ba63914e8d041557c66e9dcc0}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af6492a8ba63914e8d041557c66e9dcc0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Exp} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aec6bd479c53d95777100dc353d8e949b}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aec6bd479c53d95777100dc353d8e949b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Log} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9db5edef33df7e648707d0940961d9b1}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9db5edef33df7e648707d0940961d9b1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Pow} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5dfd738785eff2cafdd8dd8537187145}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5dfd738785eff2cafdd8dd8537187145}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Atan2} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afe9cc410419890e480e49400f8ea4287}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afe9cc410419890e480e49400f8ea4287}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+Mod} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5f8d7817607be9831f0c43a7e86813a3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5f8d7817607be9831f0c43a7e86813a3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Int\+To\+Float\+Conversion\+Instruction} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, External\+Reference ref, Machine\+Representation parameter\+\_\+representation, const \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} result\+\_\+type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab00989e428e4e955c18b705d51d6689e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ab00989e428e4e955c18b705d51d6689e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+S\+Convert\+I64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9de07fe0db9ee940d6ace5e91b6a178a}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9de07fe0db9ee940d6ace5e91b6a178a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F32\+U\+Convert\+I64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8695940b9bdfc49fbe3304ccbcf13c17}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8695940b9bdfc49fbe3304ccbcf13c17}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+S\+Convert\+I64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a171e568e3774b83a39fdd9a050a27c9e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a171e568e3774b83a39fdd9a050a27c9e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+F64\+U\+Convert\+I64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1cb5f418cf6efc28e9e7ce4d6b2fdaa5}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1cb5f418cf6efc28e9e7ce4d6b2fdaa5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Float\+To\+Int\+Conversion\+Instruction} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, External\+Reference ref, Machine\+Representation parameter\+\_\+representation, const \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} result\+\_\+type, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adcb491892628e9d75e4ddd1c77774924}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_adcb491892628e9d75e4ddd1c77774924}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+S\+Convert\+F32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afb5eeca16b308dd8c870a0dd36ae5636}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afb5eeca16b308dd8c870a0dd36ae5636}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+U\+Convert\+F32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5a5220117fb2fd703e985051917873a8}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a5a5220117fb2fd703e985051917873a8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+S\+Convert\+F64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4f9dcf225fa0df38758cdb5ae8ca344}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa4f9dcf225fa0df38758cdb5ae8ca344}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+U\+Convert\+F64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a17acc8192111628b639055a6a8a2f155}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a17acc8192111628b639055a6a8a2f155}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+DivS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abd51450e8e0cea71c51f7d70d1c9a59d}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abd51450e8e0cea71c51f7d70d1c9a59d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+RemS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9440bfcb18fee2c3fae9bb3cb9b79e7f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a9440bfcb18fee2c3fae9bb3cb9b79e7f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+DivU} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a190359a57606a3bb8e15a946daa04c66}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a190359a57606a3bb8e15a946daa04c66}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I32\+RemU} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a900157915da9157a2138191f956c902f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a900157915da9157a2138191f956c902f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+DivS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af316ec0ef649947df56092bb6df60c09}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af316ec0ef649947df56092bb6df60c09}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+RemS} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a02f4024dc624e53698d2654e68afe5b2}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a02f4024dc624e53698d2654e68afe5b2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+DivU} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a059691b1b8debd3d88963754f0542991}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a059691b1b8debd3d88963754f0542991}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+I64\+RemU} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa464f52d015a99886f4cf685756f04e5}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aa464f52d015a99886f4cf685756f04e5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Div64\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$left, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$right, External\+Reference ref, \hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} result\+\_\+type, int trap\+\_\+zero, wasm\+::\+Wasm\+Code\+Position position)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a89334ba10ec81f6c7812d825e07dea89}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a89334ba10ec81f6c7812d825e07dea89}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Java\+Script\+To\+Number} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$context, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a254446c722739ddce7595de296b1c4ea}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a254446c722739ddce7595de296b1c4ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Int32\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a322ad55722e9d107021d97e84b5b2066}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a322ad55722e9d107021d97e84b5b2066}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Float64\+To\+Tagged} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aec54502a966becb3a2c2f1464b079891}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_aec54502a966becb3a2c2f1464b079891}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Tagged\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a76dd5d3f14f18340e00755db7cfb98a1}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a76dd5d3f14f18340e00755db7cfb98a1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Int32\+To\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a51eafc74c5f058b89cdeb35134b88789}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a51eafc74c5f058b89cdeb35134b88789}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Smi\+To\+Int32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a76d91e0b57c4e289f9b02415df044c58}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a76d91e0b57c4e289f9b02415df044c58}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Change\+Smi\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af125b888eb53052c1a2852127e9f43cb}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af125b888eb53052c1a2852127e9f43cb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Test\+Not\+Smi} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1b9e73d491b2467d0ac6a930acfcec4f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1b9e73d491b2467d0ac6a930acfcec4f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Smi\+Shift\+Bits\+Constant} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1d1a40a8a876f78d62a6065344db1e86}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1d1a40a8a876f78d62a6065344db1e86}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Allocate\+Heap\+Number\+With\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a40b67dd04033a3fef67b247fb63e446f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a40b67dd04033a3fef67b247fb63e446f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Load\+Heap\+Number\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3b0563c9b81d4d0f6fac4334ede8e46c}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a3b0563c9b81d4d0f6fac4334ede8e46c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Build\+Heap\+Number\+Value\+Index\+Constant} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad6c5adc3903a1480ac9ea2ba7e620837}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_ad6c5adc3903a1480ac9ea2ba7e620837}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries Realloc} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$buffer, size\+\_\+t old\+\_\+count, size\+\_\+t new\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0bf20db454ad63389cde6fcd64211f24}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a0bf20db454ad63389cde6fcd64211f24}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a36c1e0392c5bb1b31258f2c608feec27}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a36c1e0392c5bb1b31258f2c608feec27}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a52e26f4ab031f2eb8fe7a74828e77eef}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a52e26f4ab031f2eb8fe7a74828e77eef}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{wasm\+::\+Module\+Env} $\ast$ {\bfseries module\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6ac908efbd35b4fc0be0cc892d9bbebd}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6ac908efbd35b4fc0be0cc892d9bbebd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries mem\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a165c5f046d3f3b2563a742abe6efac3e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a165c5f046d3f3b2563a742abe6efac3e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries mem\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a87ac9c5270db7dc109f9baf629650efb}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a87ac9c5270db7dc109f9baf629650efb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries function\+\_\+table\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6dc1e6299727809959ca4bdd8ef5dd16}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a6dc1e6299727809959ca4bdd8ef5dd16}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries control\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afd5c3ba45c9dec7bd05afc401960b9af}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_afd5c3ba45c9dec7bd05afc401960b9af}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries effect\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1dc39c8934c221444d2603768dc6c25f}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a1dc39c8934c221444d2603768dc6c25f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries cur\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af41767c808cb75b8502b131787c65298}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_af41767c808cb75b8502b131787c65298}
+
+\item 
+size\+\_\+t {\bfseries cur\+\_\+bufsize\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a95007dfef53598b9cf430b94337788b7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a95007dfef53598b9cf430b94337788b7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries def\+\_\+buffer\+\_\+} \mbox{[}k\+Default\+Buffer\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4a492b86f1d9287b8429d4eef0d5be87}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4a492b86f1d9287b8429d4eef0d5be87}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_wasm_trap_helper}{Wasm\+Trap\+Helper} $\ast$ {\bfseries trap\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4171dbbd95935d747a532d3d580f7205}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a4171dbbd95935d747a532d3d580f7205}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_signature}{wasm\+::\+Function\+Sig} $\ast$ {\bfseries function\+\_\+signature\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8002b3eeaea44ba6e230df9c22d8a3e3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8002b3eeaea44ba6e230df9c22d8a3e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ const \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} $>$ {\bfseries allocate\+\_\+heap\+\_\+number\+\_\+operator\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abe4807cd074284d09fb6efac81766247}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_abe4807cd074284d09fb6efac81766247}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_source_position_table}{compiler\+::\+Source\+Position\+Table} $\ast$ {\bfseries source\+\_\+position\+\_\+table\+\_\+} = nullptr\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a2c5ab810c5ade2bb2ef605534f5905d7}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a2c5ab810c5ade2bb2ef605534f5905d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Default\+Buffer\+Size} = 16\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8fc35ec886696b4ffc28d148774592c3}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a8fc35ec886696b4ffc28d148774592c3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Wasm\+Trap\+Helper}\hypertarget{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a50718211082f11ce0b54867e5950b84e}{}\label{classv8_1_1internal_1_1compiler_1_1_wasm_graph_builder_a50718211082f11ce0b54867e5950b84e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/wasm-\/compiler.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/wasm-\/compiler.\+cc\end{DoxyCompactItemize}

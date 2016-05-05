@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope}{}\section{v8\+:\+:internal\+:\+:Use\+Scratch\+Register\+Scope Class Reference}
+\label{classv8_1_1internal_1_1_use_scratch_register_scope}\index{v8\+::internal\+::\+Use\+Scratch\+Register\+Scope@{v8\+::internal\+::\+Use\+Scratch\+Register\+Scope}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Use\+Scratch\+Register\+Scope} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a8b833fc14b6a172c3ecb6989dbd35efc}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a8b833fc14b6a172c3ecb6989dbd35efc}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries AcquireW} ()\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a634fe38400d85d4aa2cdfb3f746b1ed3}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a634fe38400d85d4aa2cdfb3f746b1ed3}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries AcquireX} ()\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a238d42ff6eebfa45e67638b3969f2d5f}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a238d42ff6eebfa45e67638b3969f2d5f}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_f_p_register}{F\+P\+Register} {\bfseries AcquireS} ()\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_aec2a869ca80afe6b66905b1213354cc4}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_aec2a869ca80afe6b66905b1213354cc4}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_f_p_register}{F\+P\+Register} {\bfseries AcquireD} ()\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_aef5f4d70a09d72ac0e8230b90df1af5d}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_aef5f4d70a09d72ac0e8230b90df1af5d}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries Unsafe\+Acquire} (const \hyperlink{structv8_1_1internal_1_1_register}{Register} \&reg)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a86ca3b877dec5cc31e7e5af668a00d38}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a86ca3b877dec5cc31e7e5af668a00d38}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries Acquire\+Same\+Size\+As} (const \hyperlink{structv8_1_1internal_1_1_register}{Register} \&reg)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a0b0d1c10e65131fcba00e4e3366808d9}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a0b0d1c10e65131fcba00e4e3366808d9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_f_p_register}{F\+P\+Register} {\bfseries Acquire\+Same\+Size\+As} (const \hyperlink{structv8_1_1internal_1_1_f_p_register}{F\+P\+Register} \&reg)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a03dbfcc63a102e596144c4dcf2ab9629}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a03dbfcc63a102e596144c4dcf2ab9629}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structv8_1_1internal_1_1_c_p_u_register}{C\+P\+U\+Register} {\bfseries Acquire\+Next\+Available} (\hyperlink{classv8_1_1internal_1_1_c_p_u_reg_list}{C\+P\+U\+Reg\+List} $\ast$available)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_abe78d60a255418a5520e831a8c3e2d69}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_abe78d60a255418a5520e831a8c3e2d69}
+
+\item 
+static \hyperlink{structv8_1_1internal_1_1_c_p_u_register}{C\+P\+U\+Register} {\bfseries Unsafe\+Acquire} (\hyperlink{classv8_1_1internal_1_1_c_p_u_reg_list}{C\+P\+U\+Reg\+List} $\ast$available, const \hyperlink{structv8_1_1internal_1_1_c_p_u_register}{C\+P\+U\+Register} \&reg)\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a1c8960c1fa64ae9641cded746a4368df}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a1c8960c1fa64ae9641cded746a4368df}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_c_p_u_reg_list}{C\+P\+U\+Reg\+List} $\ast$ {\bfseries available\+\_\+}\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a8fa2d601d821a44e9368fd5597fd7cbe}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a8fa2d601d821a44e9368fd5597fd7cbe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_c_p_u_reg_list}{C\+P\+U\+Reg\+List} $\ast$ {\bfseries availablefp\+\_\+}\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a6620f36d62ed5ac058c3aaa53a82abee}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a6620f36d62ed5ac058c3aaa53a82abee}
+
+\item 
+Reg\+List {\bfseries old\+\_\+available\+\_\+}\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_a841a6ad38ac3b6d1a6a9e5db2ba9ad7d}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_a841a6ad38ac3b6d1a6a9e5db2ba9ad7d}
+
+\item 
+Reg\+List {\bfseries old\+\_\+availablefp\+\_\+}\hypertarget{classv8_1_1internal_1_1_use_scratch_register_scope_aac6ace630c235375815079fae8866c8c}{}\label{classv8_1_1internal_1_1_use_scratch_register_scope_aac6ace630c235375815079fae8866c8c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/arm64/macro-\/assembler-\/arm64.\+h\end{DoxyCompactItemize}

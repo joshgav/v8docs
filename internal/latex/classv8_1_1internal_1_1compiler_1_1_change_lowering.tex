@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Change\+Lowering Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_change_lowering}\index{v8\+::internal\+::compiler\+::\+Change\+Lowering@{v8\+::internal\+::compiler\+::\+Change\+Lowering}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Change\+Lowering\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_change_lowering}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Change\+Lowering} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_advanced_reducer_1_1_editor}{Editor} $\ast$editor, \hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$jsgraph)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a655b76f7a81b956e929b484577924b4f}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a655b76f7a81b956e929b484577924b4f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_ab41eac06ea6b2198c07de4698696ef3f}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_ab41eac06ea6b2198c07de4698696ef3f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Load\+Field} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a77bd676f054ce5f02b4328d75a839d8f}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a77bd676f054ce5f02b4328d75a839d8f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Store\+Field} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_acf31bdb4fc908b97032ffce3c64739e8}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_acf31bdb4fc908b97032ffce3c64739e8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Load\+Element} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a2837396721b97e1394d4a60f1858cf30}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a2837396721b97e1394d4a60f1858cf30}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Store\+Element} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_acc577ee5b6b42a8f63ec54a517fd9beb}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_acc577ee5b6b42a8f63ec54a517fd9beb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Allocate} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a1d46ea10512694c93668c9aa24a10115}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a1d46ea10512694c93668c9aa24a10115}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Compute\+Index} (const \hyperlink{structv8_1_1internal_1_1compiler_1_1_element_access}{Element\+Access} \&access, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const key)\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_ac2eb85bec542d814a40d7b2cad50ffb4}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_ac2eb85bec542d814a40d7b2cad50ffb4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a7dd0ad85d387d0b985a7e11dde9e1ddd}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a7dd0ad85d387d0b985a7e11dde9e1ddd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a3fe186bd6e7d289c62d0f007c2badf1a}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a3fe186bd6e7d289c62d0f007c2badf1a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_ad6f0540a15c87a0cb255a768df51899f}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_ad6f0540a15c87a0cb255a768df51899f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a25494f51c55bfd35e368be7a28994809}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a25494f51c55bfd35e368be7a28994809}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_machine_operator_builder}{Machine\+Operator\+Builder} $\ast$ {\bfseries machine} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a224d938e953788ddde425c910b689038}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a224d938e953788ddde425c910b689038}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$const {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_ab45ce4447b9822682d9e60d1e7dac6bb}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_ab45ce4447b9822682d9e60d1e7dac6bb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ const \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} $>$ {\bfseries allocate\+\_\+operator\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_change_lowering_a14646c7cf626e1e2bf4b91afb342c3d3}{}\label{classv8_1_1internal_1_1compiler_1_1_change_lowering_a14646c7cf626e1e2bf4b91afb342c3d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/change-\/lowering.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/change-\/lowering.\+cc\end{DoxyCompactItemize}

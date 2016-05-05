@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1_dispatch_table}{}\section{v8\+:\+:internal\+:\+:Dispatch\+Table Class Reference}
+\label{classv8_1_1internal_1_1_dispatch_table}\index{v8\+::internal\+::\+Dispatch\+Table@{v8\+::internal\+::\+Dispatch\+Table}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Dispatch\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_dispatch_table}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_dispatch_table_1_1_config}{Config}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_dispatch_table_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Dispatch\+Table} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_dispatch_table_af4b64bc044ec5e385de4b27324604264}{}\label{classv8_1_1internal_1_1_dispatch_table_af4b64bc044ec5e385de4b27324604264}
+
+\item 
+void {\bfseries Add\+Range} (\hyperlink{classv8_1_1internal_1_1_character_range}{Character\+Range} range, int value, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_dispatch_table_a09e154202a1c257ae7a020333366c211}{}\label{classv8_1_1internal_1_1_dispatch_table_a09e154202a1c257ae7a020333366c211}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_out_set}{Out\+Set} $\ast$ {\bfseries Get} (uc32 value)\hypertarget{classv8_1_1internal_1_1_dispatch_table_a9c1164d1cf0666c48f59e151e5c36b0f}{}\label{classv8_1_1internal_1_1_dispatch_table_a9c1164d1cf0666c48f59e151e5c36b0f}
+
+\item 
+void {\bfseries Dump} ()\hypertarget{classv8_1_1internal_1_1_dispatch_table_ae34f706102818431e69470a710ce64c4}{}\label{classv8_1_1internal_1_1_dispatch_table_ae34f706102818431e69470a710ce64c4}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+Each} (Callback $\ast$callback)\hypertarget{classv8_1_1internal_1_1_dispatch_table_a600e5582b3e05d456c423454d61b0eba}{}\label{classv8_1_1internal_1_1_dispatch_table_a600e5582b3e05d456c423454d61b0eba}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_out_set}{Out\+Set} $\ast$ {\bfseries empty} ()\hypertarget{classv8_1_1internal_1_1_dispatch_table_a3ee03e51fdd6919f2a400c03255bdde6}{}\label{classv8_1_1internal_1_1_dispatch_table_a3ee03e51fdd6919f2a400c03255bdde6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_splay_tree}{Zone\+Splay\+Tree}$<$ \hyperlink{classv8_1_1internal_1_1_dispatch_table_1_1_config}{Config} $>$ $\ast$ {\bfseries tree} ()\hypertarget{classv8_1_1internal_1_1_dispatch_table_a773a711474ca98234a2fed6ebaeea2d0}{}\label{classv8_1_1internal_1_1_dispatch_table_a773a711474ca98234a2fed6ebaeea2d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_out_set}{Out\+Set} {\bfseries empty\+\_\+}\hypertarget{classv8_1_1internal_1_1_dispatch_table_a8d00d7ea2f2b79088840ba174396380b}{}\label{classv8_1_1internal_1_1_dispatch_table_a8d00d7ea2f2b79088840ba174396380b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_splay_tree}{Zone\+Splay\+Tree}$<$ \hyperlink{classv8_1_1internal_1_1_dispatch_table_1_1_config}{Config} $>$ {\bfseries tree\+\_\+}\hypertarget{classv8_1_1internal_1_1_dispatch_table_af90098ba8ea3230406349012cb1c3dc5}{}\label{classv8_1_1internal_1_1_dispatch_table_af90098ba8ea3230406349012cb1c3dc5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

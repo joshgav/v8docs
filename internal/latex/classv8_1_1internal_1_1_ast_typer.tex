@@ -1,0 +1,113 @@
+\hypertarget{classv8_1_1internal_1_1_ast_typer}{}\section{v8\+:\+:internal\+:\+:Ast\+Typer Class Reference}
+\label{classv8_1_1internal_1_1_ast_typer}\index{v8\+::internal\+::\+Ast\+Typer@{v8\+::internal\+::\+Ast\+Typer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Ast\+Typer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_ast_typer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ast\+Typer} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ closure, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, \hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} osr\+\_\+ast\+\_\+id, \hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$root)\hypertarget{classv8_1_1internal_1_1_ast_typer_ac90d3cb3751ecbb87df215ed2acdbee4}{}\label{classv8_1_1internal_1_1_ast_typer_ac90d3cb3751ecbb87df215ed2acdbee4}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_ast_typer_a768476a3bb2123cb3a238445a0614101}{}\label{classv8_1_1internal_1_1_ast_typer_a768476a3bb2123cb3a238445a0614101}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+T\+\_\+\+V\+I\+S\+I\+T\+O\+R\+\_\+\+S\+U\+B\+C\+L\+A\+S\+S\+\_\+\+M\+E\+M\+B\+E\+RS} ()\hypertarget{classv8_1_1internal_1_1_ast_typer_a911921c74252f2efa0cc6c0120706767}{}\label{classv8_1_1internal_1_1_ast_typer_a911921c74252f2efa0cc6c0120706767}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_effects}{v8\+::internal\+::\+Effects}$<$ int, k\+No\+Var $>$ {\bfseries Effects}\hypertarget{classv8_1_1internal_1_1_ast_typer_a2fed81b2f2d62bfd24d9ca0aeb55537a}{}\label{classv8_1_1internal_1_1_ast_typer_a2fed81b2f2d62bfd24d9ca0aeb55537a}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_nested_effects}{v8\+::internal\+::\+Nested\+Effects}$<$ int, k\+No\+Var $>$ {\bfseries Store}\hypertarget{classv8_1_1internal_1_1_ast_typer_a11c795feb281454b2974aac13191a11b}{}\label{classv8_1_1internal_1_1_ast_typer_a11c795feb281454b2974aac13191a11b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_effect}{Effect} {\bfseries Observed\+On\+Stack} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_ast_typer_a7efda1566e22e74f2ea982de00ca8277}{}\label{classv8_1_1internal_1_1_ast_typer_a7efda1566e22e74f2ea982de00ca8277}
+
+\item 
+void {\bfseries Observe\+Types\+At\+Osr\+Entry} (\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$stmt)\hypertarget{classv8_1_1internal_1_1_ast_typer_a1994f5b19aac3558526e5e37e00d7d63}{}\label{classv8_1_1internal_1_1_ast_typer_a1994f5b19aac3558526e5e37e00d7d63}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_ast_typer_a14d4b5b1474df1a24e124b9fbad80c39}{}\label{classv8_1_1internal_1_1_ast_typer_a14d4b5b1474df1a24e124b9fbad80c39}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_feedback_oracle}{Type\+Feedback\+Oracle} $\ast$ {\bfseries oracle} ()\hypertarget{classv8_1_1internal_1_1_ast_typer_a8942555cddfaae9cd61214f7c6d8c3fb}{}\label{classv8_1_1internal_1_1_ast_typer_a8942555cddfaae9cd61214f7c6d8c3fb}
+
+\item 
+void {\bfseries Narrow\+Type} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$e, \hyperlink{structv8_1_1internal_1_1_bounds}{Bounds} b)\hypertarget{classv8_1_1internal_1_1_ast_typer_a0883ec88e9231609c3a271ead25b68d3}{}\label{classv8_1_1internal_1_1_ast_typer_a0883ec88e9231609c3a271ead25b68d3}
+
+\item 
+void {\bfseries Narrow\+Lower\+Type} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$e, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$t)\hypertarget{classv8_1_1internal_1_1_ast_typer_a396349c6607725893178074afb41bd76}{}\label{classv8_1_1internal_1_1_ast_typer_a396349c6607725893178074afb41bd76}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_effects}{Effects} {\bfseries Enter\+Effects} ()\hypertarget{classv8_1_1internal_1_1_ast_typer_ada5ed5f2e715f093524fc37c9716a984}{}\label{classv8_1_1internal_1_1_ast_typer_ada5ed5f2e715f093524fc37c9716a984}
+
+\item 
+void {\bfseries Exit\+Effects} ()\hypertarget{classv8_1_1internal_1_1_ast_typer_a4af1c0f8559d883050c516dc8b03b3ea}{}\label{classv8_1_1internal_1_1_ast_typer_a4af1c0f8559d883050c516dc8b03b3ea}
+
+\item 
+int {\bfseries parameter\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_ast_typer_a0cd8b3c4b5e9dfad46577350cb427ee5}{}\label{classv8_1_1internal_1_1_ast_typer_a0cd8b3c4b5e9dfad46577350cb427ee5}
+
+\item 
+int {\bfseries stack\+\_\+local\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_ast_typer_ad127c227a25f3373ac5f1717c0197df4}{}\label{classv8_1_1internal_1_1_ast_typer_ad127c227a25f3373ac5f1717c0197df4}
+
+\item 
+int {\bfseries variable\+\_\+index} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$var)\hypertarget{classv8_1_1internal_1_1_ast_typer_a14dfb7c70683fb3d49a32e1dab5bae01}{}\label{classv8_1_1internal_1_1_ast_typer_a14dfb7c70683fb3d49a32e1dab5bae01}
+
+\item 
+void {\bfseries Visit\+Declarations} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_declaration}{Declaration} $\ast$ $>$ $\ast$declarations) override\hypertarget{classv8_1_1internal_1_1_ast_typer_ab0d598688462914105a912cf31f3006f}{}\label{classv8_1_1internal_1_1_ast_typer_ab0d598688462914105a912cf31f3006f}
+
+\item 
+void {\bfseries Visit\+Statements} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statements) override\hypertarget{classv8_1_1internal_1_1_ast_typer_ae6d47805ddbbcc92852c03f4916d28d8}{}\label{classv8_1_1internal_1_1_ast_typer_ae6d47805ddbbcc92852c03f4916d28d8}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_ast_typer}{Ast\+Typer})\hypertarget{classv8_1_1internal_1_1_ast_typer_a77cb17503da2bad75331293e8c958839}{}\label{classv8_1_1internal_1_1_ast_typer_a77cb17503da2bad75331293e8c958839}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a2547365d912609d44aba9f80d5bb1065}{}\label{classv8_1_1internal_1_1_ast_typer_a2547365d912609d44aba9f80d5bb1065}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a20ce21c40acb6cc7d8a7a76a33c33c96}{}\label{classv8_1_1internal_1_1_ast_typer_a20ce21c40acb6cc7d8a7a76a33c33c96}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries closure\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a7e30a580f85095e7adc4cb4644c115aa}{}\label{classv8_1_1internal_1_1_ast_typer_a7e30a580f85095e7adc4cb4644c115aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a1b0a56eb8118cdd2b526516d9b1db0de}{}\label{classv8_1_1internal_1_1_ast_typer_a1b0a56eb8118cdd2b526516d9b1db0de}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries osr\+\_\+ast\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_aa48444411b96806f4018af11aaca512e}{}\label{classv8_1_1internal_1_1_ast_typer_aa48444411b96806f4018af11aaca512e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries root\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a577bc7eded767c5e60b60865d44b7d76}{}\label{classv8_1_1internal_1_1_ast_typer_a577bc7eded767c5e60b60865d44b7d76}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_feedback_oracle}{Type\+Feedback\+Oracle} {\bfseries oracle\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a24397f502efbf7cebe010b54746c01dc}{}\label{classv8_1_1internal_1_1_ast_typer_a24397f502efbf7cebe010b54746c01dc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_nested_effects}{Store} {\bfseries store\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_typer_a472080a5b9fb35e90cc3f48b574eecd7}{}\label{classv8_1_1internal_1_1_ast_typer_a472080a5b9fb35e90cc3f48b574eecd7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+No\+Var} = I\+N\+T\+\_\+\+M\+IN\hypertarget{classv8_1_1internal_1_1_ast_typer_a65e8878b7e5b2cdb361d38dd50fa1310}{}\label{classv8_1_1internal_1_1_ast_typer_a65e8878b7e5b2cdb361d38dd50fa1310}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/typing.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/typing.\+cc\end{DoxyCompactItemize}

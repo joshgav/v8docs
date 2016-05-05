@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1_object_stats}{}\section{v8\+:\+:internal\+:\+:Object\+Stats Class Reference}
+\label{classv8_1_1internal_1_1_object_stats}\index{v8\+::internal\+::\+Object\+Stats@{v8\+::internal\+::\+Object\+Stats}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries F\+I\+R\+S\+T\+\_\+\+C\+O\+D\+E\+\_\+\+K\+I\+N\+D\+\_\+\+S\+U\+B\+\_\+\+T\+Y\+PE} = L\+A\+S\+T\+\_\+\+T\+Y\+PE + 1, 
+\\*
+{\bfseries F\+I\+R\+S\+T\+\_\+\+F\+I\+X\+E\+D\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+U\+B\+\_\+\+T\+Y\+PE}, 
+\\*
+{\bfseries F\+I\+R\+S\+T\+\_\+\+C\+O\+D\+E\+\_\+\+A\+G\+E\+\_\+\+S\+U\+B\+\_\+\+T\+Y\+PE}, 
+\\*
+{\bfseries O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT} = F\+I\+R\+S\+T\+\_\+\+C\+O\+D\+E\+\_\+\+A\+G\+E\+\_\+\+S\+U\+B\+\_\+\+T\+Y\+PE + Code\+:\+:k\+Code\+Age\+Count + 1
+ \}\hypertarget{classv8_1_1internal_1_1_object_stats_a8cbf2e2797e8e002b39fe6252a0a06b7}{}\label{classv8_1_1internal_1_1_object_stats_a8cbf2e2797e8e002b39fe6252a0a06b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object\+Stats} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_object_stats_a78adee874f8f1284f4caa2ac11aefb60}{}\label{classv8_1_1internal_1_1_object_stats_a78adee874f8f1284f4caa2ac11aefb60}
+
+\item 
+void {\bfseries Clear\+Object\+Stats} (bool clear\+\_\+last\+\_\+time\+\_\+stats=false)\hypertarget{classv8_1_1internal_1_1_object_stats_ab745f971849d58bd37b0a0d956e5564e}{}\label{classv8_1_1internal_1_1_object_stats_ab745f971849d58bd37b0a0d956e5564e}
+
+\item 
+void {\bfseries Trace\+Object\+Stats} ()\hypertarget{classv8_1_1internal_1_1_object_stats_aec008d43332435be0ef74f509ce8b3b0}{}\label{classv8_1_1internal_1_1_object_stats_aec008d43332435be0ef74f509ce8b3b0}
+
+\item 
+void {\bfseries Trace\+Object\+Stat} (const char $\ast$name, int count, int size, double time)\hypertarget{classv8_1_1internal_1_1_object_stats_a230070de19efb34173a8c96346841e97}{}\label{classv8_1_1internal_1_1_object_stats_a230070de19efb34173a8c96346841e97}
+
+\item 
+void {\bfseries Checkpoint\+Object\+Stats} ()\hypertarget{classv8_1_1internal_1_1_object_stats_a14203f3ab5defd5efc18d334430cdc66}{}\label{classv8_1_1internal_1_1_object_stats_a14203f3ab5defd5efc18d334430cdc66}
+
+\item 
+void {\bfseries Record\+Object\+Stats} (Instance\+Type type, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_object_stats_a230437ed3e9bf4a15dc6c42f96386f33}{}\label{classv8_1_1internal_1_1_object_stats_a230437ed3e9bf4a15dc6c42f96386f33}
+
+\item 
+void {\bfseries Record\+Code\+Sub\+Type\+Stats} (int code\+\_\+sub\+\_\+type, int code\+\_\+age, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_object_stats_abb9d2289f7e9cd734a1ea4778d9ba346}{}\label{classv8_1_1internal_1_1_object_stats_abb9d2289f7e9cd734a1ea4778d9ba346}
+
+\item 
+void {\bfseries Record\+Fixed\+Array\+Sub\+Type\+Stats} (int array\+\_\+sub\+\_\+type, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_object_stats_a33d4f3761145568e640b4cd9a47b2039}{}\label{classv8_1_1internal_1_1_object_stats_a33d4f3761145568e640b4cd9a47b2039}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+count\+\_\+last\+\_\+gc} (size\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_object_stats_a5ec04aaae37dc25b78fb2d31c304a6f4}{}\label{classv8_1_1internal_1_1_object_stats_a5ec04aaae37dc25b78fb2d31c304a6f4}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+size\+\_\+last\+\_\+gc} (size\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_object_stats_a6deab872b4cb2141896cf6aa7bd534ed}{}\label{classv8_1_1internal_1_1_object_stats_a6deab872b4cb2141896cf6aa7bd534ed}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1internal_1_1_object_stats_a0247bdf90938829a43fe8651d6728b8b}{}\label{classv8_1_1internal_1_1_object_stats_a0247bdf90938829a43fe8651d6728b8b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} ()\hypertarget{classv8_1_1internal_1_1_object_stats_a1f41356a8c70a8d667afece96c3dc6e4}{}\label{classv8_1_1internal_1_1_object_stats_a1f41356a8c70a8d667afece96c3dc6e4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_object_stats_abe6a95e46fbc44950f510331ef772e8f}{}\label{classv8_1_1internal_1_1_object_stats_abe6a95e46fbc44950f510331ef772e8f}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+counts\+\_\+} \mbox{[}O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classv8_1_1internal_1_1_object_stats_ab1d2fe3bc9f146ac82f01ffd0b349843}{}\label{classv8_1_1internal_1_1_object_stats_ab1d2fe3bc9f146ac82f01ffd0b349843}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+counts\+\_\+last\+\_\+time\+\_\+} \mbox{[}O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classv8_1_1internal_1_1_object_stats_a1bc7d26515e743b19c447a2dad314c00}{}\label{classv8_1_1internal_1_1_object_stats_a1bc7d26515e743b19c447a2dad314c00}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+sizes\+\_\+} \mbox{[}O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classv8_1_1internal_1_1_object_stats_aa57b885f877a96f35ff3f3d9829aeda2}{}\label{classv8_1_1internal_1_1_object_stats_aa57b885f877a96f35ff3f3d9829aeda2}
+
+\item 
+size\+\_\+t {\bfseries object\+\_\+sizes\+\_\+last\+\_\+time\+\_\+} \mbox{[}O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+T\+S\+\_\+\+C\+O\+U\+NT\mbox{]}\hypertarget{classv8_1_1internal_1_1_object_stats_a167186457d4ecc6a7bfd9766fca6e124}{}\label{classv8_1_1internal_1_1_object_stats_a167186457d4ecc6a7bfd9766fca6e124}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/object-\/stats.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/object-\/stats.\+cc\end{DoxyCompactItemize}

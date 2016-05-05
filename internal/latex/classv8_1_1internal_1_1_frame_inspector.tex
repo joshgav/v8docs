@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1_frame_inspector}{}\section{v8\+:\+:internal\+:\+:Frame\+Inspector Class Reference}
+\label{classv8_1_1internal_1_1_frame_inspector}\index{v8\+::internal\+::\+Frame\+Inspector@{v8\+::internal\+::\+Frame\+Inspector}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Frame\+Inspector} (\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$frame, int inlined\+\_\+jsframe\+\_\+index, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_frame_inspector_acfb4607583dd9db87a771e5f0fe1a6bf}{}\label{classv8_1_1internal_1_1_frame_inspector_acfb4607583dd9db87a771e5f0fe1a6bf}
+
+\item 
+int {\bfseries Get\+Parameters\+Count} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_ae868bb8c10b97fe67ac25db4931acdf1}{}\label{classv8_1_1internal_1_1_frame_inspector_ae868bb8c10b97fe67ac25db4931acdf1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Function} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_acce2df7e952f66ca5571f070ad991c48}{}\label{classv8_1_1internal_1_1_frame_inspector_acce2df7e952f66ca5571f070ad991c48}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Parameter} (int index)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a2c78de0af75bd24c129831a2b6d10772}{}\label{classv8_1_1internal_1_1_frame_inspector_a2c78de0af75bd24c129831a2b6d10772}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Expression} (int index)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a7bb13f786091a9a020b1f40191a3cd8d}{}\label{classv8_1_1internal_1_1_frame_inspector_a7bb13f786091a9a020b1f40191a3cd8d}
+
+\item 
+int {\bfseries Get\+Source\+Position} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_a31b51923ecbf8f24b7bb7090b6655271}{}\label{classv8_1_1internal_1_1_frame_inspector_a31b51923ecbf8f24b7bb7090b6655271}
+
+\item 
+bool {\bfseries Is\+Constructor} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_a7e4ed371c98867c2c81e7f567f216a7f}{}\label{classv8_1_1internal_1_1_frame_inspector_a7e4ed371c98867c2c81e7f567f216a7f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Context} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_af1a0a03aed11e26d0f38775c535d3f47}{}\label{classv8_1_1internal_1_1_frame_inspector_af1a0a03aed11e26d0f38775c535d3f47}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$ {\bfseries Get\+Arguments\+Frame} ()\hypertarget{classv8_1_1internal_1_1_frame_inspector_adba3141d604ecbec77f74cff32f05997}{}\label{classv8_1_1internal_1_1_frame_inspector_adba3141d604ecbec77f74cff32f05997}
+
+\item 
+void {\bfseries Set\+Arguments\+Frame} (\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$frame)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a154b259576f39ff2257386bb63231c9b}{}\label{classv8_1_1internal_1_1_frame_inspector_a154b259576f39ff2257386bb63231c9b}
+
+\item 
+void {\bfseries Materialize\+Stack\+Locals} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ target, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ scope\+\_\+info)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a0729159a86243f4566f467477ab4e4c7}{}\label{classv8_1_1internal_1_1_frame_inspector_a0729159a86243f4566f467477ab4e4c7}
+
+\item 
+void {\bfseries Materialize\+Stack\+Locals} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ target, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a091eb8dca8b539cfd6ceab9961f4fee2}{}\label{classv8_1_1internal_1_1_frame_inspector_a091eb8dca8b539cfd6ceab9961f4fee2}
+
+\item 
+void {\bfseries Update\+Stack\+Locals\+From\+Materialized\+Object} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ object, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ scope\+\_\+info)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a71fba9ad7004b31f21f6506f0365628a}{}\label{classv8_1_1internal_1_1_frame_inspector_a71fba9ad7004b31f21f6506f0365628a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Parameter\+Is\+Shadowed\+By\+Context\+Local} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ info, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ parameter\+\_\+name)\hypertarget{classv8_1_1internal_1_1_frame_inspector_a9f49e55c47989988d95567e3da200578}{}\label{classv8_1_1internal_1_1_frame_inspector_a9f49e55c47989988d95567e3da200578}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_frame_inspector}{Frame\+Inspector})\hypertarget{classv8_1_1internal_1_1_frame_inspector_a904cad7de1d0e6ff91970d39c58e26e2}{}\label{classv8_1_1internal_1_1_frame_inspector_a904cad7de1d0e6ff91970d39c58e26e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$ {\bfseries frame\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_a2276a1ea5fb162fff909a380ce545644}{}\label{classv8_1_1internal_1_1_frame_inspector_a2276a1ea5fb162fff909a380ce545644}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_deoptimized_frame_info}{Deoptimized\+Frame\+Info} $\ast$ {\bfseries deoptimized\+\_\+frame\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_a9fbab08a727db02333f90890a4201283}{}\label{classv8_1_1internal_1_1_frame_inspector_a9fbab08a727db02333f90890a4201283}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_aa23c9a1a5caedb5dfb001d90ecb75b1f}{}\label{classv8_1_1internal_1_1_frame_inspector_aa23c9a1a5caedb5dfb001d90ecb75b1f}
+
+\item 
+bool {\bfseries is\+\_\+optimized\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_a92dcf07f000bb2598d9d74a8527fcfa1}{}\label{classv8_1_1internal_1_1_frame_inspector_a92dcf07f000bb2598d9d74a8527fcfa1}
+
+\item 
+bool {\bfseries is\+\_\+interpreted\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_a005a49051f0c0770569c27e9f71b6e5f}{}\label{classv8_1_1internal_1_1_frame_inspector_a005a49051f0c0770569c27e9f71b6e5f}
+
+\item 
+bool {\bfseries is\+\_\+bottommost\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_afa757544f3515c5a0865a1715bf83a1c}{}\label{classv8_1_1internal_1_1_frame_inspector_afa757544f3515c5a0865a1715bf83a1c}
+
+\item 
+bool {\bfseries has\+\_\+adapted\+\_\+arguments\+\_\+}\hypertarget{classv8_1_1internal_1_1_frame_inspector_a2fa03a6d5bca3ed7313101494692f9c1}{}\label{classv8_1_1internal_1_1_frame_inspector_a2fa03a6d5bca3ed7313101494692f9c1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/frames.\+h\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/frames.\+cc\end{DoxyCompactItemize}

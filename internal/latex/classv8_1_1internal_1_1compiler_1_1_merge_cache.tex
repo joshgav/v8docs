@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Merge\+Cache Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_merge_cache}\index{v8\+::internal\+::compiler\+::\+Merge\+Cache@{v8\+::internal\+::compiler\+::\+Merge\+Cache}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Merge\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_merge_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Merge\+Cache} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a5ac97992fc266945893e2cc12d91e863}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a5ac97992fc266945893e2cc12d91e863}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_virtual_state}{Virtual\+State} $\ast$ $>$ \& {\bfseries states} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_af6d0abe5350b81424c40e31b568fbdb2}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_af6d0abe5350b81424c40e31b568fbdb2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_virtual_object}{Virtual\+Object} $\ast$ $>$ \& {\bfseries objects} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a38d09ff12e07e66284efad349bf2ae99}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a38d09ff12e07e66284efad349bf2ae99}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ \& {\bfseries fields} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a5781af06594e51a0eaed374f58f142d6}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a5781af06594e51a0eaed374f58f142d6}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a2387e7597273f25cb96b5ab557e14fd0}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a2387e7597273f25cb96b5ab557e14fd0}
+
+\item 
+size\+\_\+t {\bfseries Load\+Virtual\+Objects\+From\+States\+For} (Alias alias)\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_ab2b4bcec7a1c99c8cd9816310aedc086}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_ab2b4bcec7a1c99c8cd9816310aedc086}
+
+\item 
+void {\bfseries Load\+Virtual\+Objects\+For\+Fields\+From} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_virtual_state}{Virtual\+State} $\ast$state, const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ Alias $>$ \&aliases)\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a9e9adb192f654ab8b2abccf153e045b2}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a9e9adb192f654ab8b2abccf153e045b2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Fields} (size\+\_\+t pos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a2aeb7e623f4d2bc87626ef7daf171b76}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a2aeb7e623f4d2bc87626ef7daf171b76}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_merge_cache}{Merge\+Cache})\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_ab1bd48e3d4ef9471971cef754d99cfd9}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_ab1bd48e3d4ef9471971cef754d99cfd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_virtual_state}{Virtual\+State} $\ast$ $>$ {\bfseries states\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a67892092f24367d0b32488029e77e026}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a67892092f24367d0b32488029e77e026}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_virtual_object}{Virtual\+Object} $\ast$ $>$ {\bfseries objects\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a271ce38664cad053d6d6d0effb789fb5}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a271ce38664cad053d6d6d0effb789fb5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries fields\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_merge_cache_a4b32775e5f643f3fba8116f9fec18f5a}{}\label{classv8_1_1internal_1_1compiler_1_1_merge_cache_a4b32775e5f643f3fba8116f9fec18f5a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/escape-\/analysis.\+cc\end{DoxyCompactItemize}

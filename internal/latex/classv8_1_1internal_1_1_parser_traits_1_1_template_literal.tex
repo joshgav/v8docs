@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{}\section{v8\+:\+:internal\+:\+:Parser\+Traits\+:\+:Template\+Literal Class Reference}
+\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}\index{v8\+::internal\+::\+Parser\+Traits\+::\+Template\+Literal@{v8\+::internal\+::\+Parser\+Traits\+::\+Template\+Literal}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Parser\+Traits\+:\+:Template\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Template\+Literal} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int pos)\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a3333db23b0525e21432ba675acc1c191}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a3333db23b0525e21432ba675acc1c191}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries cooked} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a6a9945d62da0a95fd26e58f737dfde33}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a6a9945d62da0a95fd26e58f737dfde33}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries raw} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a6ed10b348517544201af4f45dae1c797}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a6ed10b348517544201af4f45dae1c797}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries expressions} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a25c45042627178ebf96319ade5a9ef72}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a25c45042627178ebf96319ade5a9ef72}
+
+\item 
+int {\bfseries position} () const \hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_abb2532ec12439f6266f86ed52b8fd801}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_abb2532ec12439f6266f86ed52b8fd801}
+
+\item 
+void {\bfseries Add\+Template\+Span} (\hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$cooked, \hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$raw, int end, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_afec421489324082487aff82733eafab4}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_afec421489324082487aff82733eafab4}
+
+\item 
+void {\bfseries Add\+Expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a8aaed4f251d4659dd974c1e497b1c9b3}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a8aaed4f251d4659dd974c1e497b1c9b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ {\bfseries cooked\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a0acb15e7a4a1f3018f60bcb5b1bf6527}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a0acb15e7a4a1f3018f60bcb5b1bf6527}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ {\bfseries raw\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a514e01b916af46fc2ba7682cc93c1e04}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a514e01b916af46fc2ba7682cc93c1e04}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ {\bfseries expressions\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a77e6a1bc30e83a117f073e232c1079a5}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_a77e6a1bc30e83a117f073e232c1079a5}
+
+\item 
+int {\bfseries pos\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_ab59af6897fc195f0017cb457959e169b}{}\label{classv8_1_1internal_1_1_parser_traits_1_1_template_literal_ab59af6897fc195f0017cb457959e169b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+h\end{DoxyCompactItemize}

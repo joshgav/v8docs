@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder}{}\section{v8\+:\+:internal\+:\+:H\+Graph\+Builder\+:\+:Loop\+Builder Class Reference}
+\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder}\index{v8\+::internal\+::\+H\+Graph\+Builder\+::\+Loop\+Builder@{v8\+::internal\+::\+H\+Graph\+Builder\+::\+Loop\+Builder}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Direction} \{ \\*
+{\bfseries k\+Pre\+Increment}, 
+\\*
+{\bfseries k\+Post\+Increment}, 
+\\*
+{\bfseries k\+Pre\+Decrement}, 
+\\*
+{\bfseries k\+Post\+Decrement}, 
+\\*
+{\bfseries k\+While\+True}
+ \}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a92b0f452334fdd92fc3a095a30ac2617}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a92b0f452334fdd92fc3a095a30ac2617}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Loop\+Builder} (\hyperlink{classv8_1_1internal_1_1_h_graph_builder}{H\+Graph\+Builder} $\ast$builder)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a965eee11ecc403c958b7747bb11894cf}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a965eee11ecc403c958b7747bb11894cf}
+
+\item 
+{\bfseries Loop\+Builder} (\hyperlink{classv8_1_1internal_1_1_h_graph_builder}{H\+Graph\+Builder} $\ast$builder, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, Direction direction)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af134c7657dcfb2e33895d623626f0e24}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af134c7657dcfb2e33895d623626f0e24}
+
+\item 
+{\bfseries Loop\+Builder} (\hyperlink{classv8_1_1internal_1_1_h_graph_builder}{H\+Graph\+Builder} $\ast$builder, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, Direction direction, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$increment\+\_\+amount)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a74d4d55a564dbe729c407a04600e067b}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a74d4d55a564dbe729c407a04600e067b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries Begin\+Body} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$initial, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$terminating, Token\+::\+Value token)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a88389ae85770796002cace9161acd24b}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a88389ae85770796002cace9161acd24b}
+
+\item 
+void {\bfseries Begin\+Body} (int drop\+\_\+count)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_ac4a223eaa668e3829c6086ea15bfa34a}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_ac4a223eaa668e3829c6086ea15bfa34a}
+
+\item 
+void {\bfseries Break} ()\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_aceaf5cf399b18e0a142cd0e632944460}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_aceaf5cf399b18e0a142cd0e632944460}
+
+\item 
+void {\bfseries End\+Body} ()\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_abe18eb8306aaf40d8c784badf3ec12fd}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_abe18eb8306aaf40d8c784badf3ec12fd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_h_graph_builder}{H\+Graph\+Builder} $\ast$builder, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, Direction direction, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$increment\+\_\+amount)\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_addfe76c277875e8cd6ac57b33b3efb4c}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_addfe76c277875e8cd6ac57b33b3efb4c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a1343f0853c4759855a8b25af8dc525a5}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a1343f0853c4759855a8b25af8dc525a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph_builder}{H\+Graph\+Builder} $\ast$ {\bfseries builder\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af1275b6676103853aa5ac9a07c4549f0}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af1275b6676103853aa5ac9a07c4549f0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries context\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af94fb3d620f4b0dcfc87fb97ad984f89}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_af94fb3d620f4b0dcfc87fb97ad984f89}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries increment\+\_\+amount\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a6fcb00f21fb941d6c3e611237460c792}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a6fcb00f21fb941d6c3e611237460c792}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries increment\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_ad31c712159c2348ddd7bd23e41a55adb}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_ad31c712159c2348ddd7bd23e41a55adb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ {\bfseries phi\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a19028d478d37ae3c002b7f12baa06e7c}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a19028d478d37ae3c002b7f12baa06e7c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries header\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a6c13eafeb366ce280f7e801e22c29738}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a6c13eafeb366ce280f7e801e22c29738}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries body\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a708d51387abde016f9acf0a9ca83c1ec}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a708d51387abde016f9acf0a9ca83c1ec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries exit\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a44cbcfab6b4e34e4b685419a161bedcb}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a44cbcfab6b4e34e4b685419a161bedcb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries exit\+\_\+trampoline\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a3d86f19e8997d10bd0811e3d7a85bbf6}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a3d86f19e8997d10bd0811e3d7a85bbf6}
+
+\item 
+Direction {\bfseries direction\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a9ea02bf8480e81ccf6c5d83afca480dc}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a9ea02bf8480e81ccf6c5d83afca480dc}
+
+\item 
+bool {\bfseries finished\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a672bc9e450ad8282c780616861f4f240}{}\label{classv8_1_1internal_1_1_h_graph_builder_1_1_loop_builder_a672bc9e450ad8282c780616861f4f240}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

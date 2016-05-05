@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Try\+Finally\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder}\index{v8\+::internal\+::interpreter\+::\+Try\+Finally\+Builder@{v8\+::internal\+::interpreter\+::\+Try\+Finally\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Try\+Finally\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Try\+Finally\+Builder} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} $\ast$builder, bool will\+\_\+catch)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_aeba13c500ed06ba6c07963e3bef10337}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_aeba13c500ed06ba6c07963e3bef10337}
+
+\item 
+void {\bfseries Begin\+Try} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_addf8f0a64110b6c5bd16a4d73a133cf3}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_addf8f0a64110b6c5bd16a4d73a133cf3}
+
+\item 
+void {\bfseries Leave\+Try} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a973dd22cfc207943b678444654542a3a}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a973dd22cfc207943b678444654542a3a}
+
+\item 
+void {\bfseries End\+Try} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a82ec83eb8a7a9a5459798d12bd30c126}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a82ec83eb8a7a9a5459798d12bd30c126}
+
+\item 
+void {\bfseries Begin\+Handler} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a19da492591acefe3e5c0626fc7fadffe}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a19da492591acefe3e5c0626fc7fadffe}
+
+\item 
+void {\bfseries Begin\+Finally} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a6b90023f87875bc6c84a4bc305766990}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a6b90023f87875bc6c84a4bc305766990}
+
+\item 
+void {\bfseries End\+Finally} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a343cae5354906ec289737e2b08c8e8cb}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a343cae5354906ec289737e2b08c8e8cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries handler\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_ac35b721edfdaf163600dbcc5a43cf1b6}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_ac35b721edfdaf163600dbcc5a43cf1b6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} {\bfseries handler\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_abad9ca9b51b1c421353820f52d3e2cf9}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_abad9ca9b51b1c421353820f52d3e2cf9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $>$ {\bfseries finalization\+\_\+sites\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_ac9c7830b72d5c616fd9459ea703ae963}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_ac9c7830b72d5c616fd9459ea703ae963}
+
+\item 
+bool {\bfseries will\+\_\+catch\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a05220514b9a12e983e5beafd97a9a5b0}{}\label{classv8_1_1internal_1_1interpreter_1_1_try_finally_builder_a05220514b9a12e983e5beafd97a9a5b0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/control-\/flow-\/builders.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/control-\/flow-\/builders.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1_string_search}{}\section{v8\+:\+:internal\+:\+:String\+Search$<$ Pattern\+Char, Subject\+Char $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_string_search}\index{v8\+::internal\+::\+String\+Search$<$ Pattern\+Char, Subject\+Char $>$@{v8\+::internal\+::\+String\+Search$<$ Pattern\+Char, Subject\+Char $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:String\+Search$<$ Pattern\+Char, Subject\+Char $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_string_search}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries String\+Search} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Pattern\+Char $>$ pattern)\hypertarget{classv8_1_1internal_1_1_string_search_ac85cd7d81456c38b54ca0dd30232294e}{}\label{classv8_1_1internal_1_1_string_search_ac85cd7d81456c38b54ca0dd30232294e}
+
+\item 
+int {\bfseries Search} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int index)\hypertarget{classv8_1_1internal_1_1_string_search_ad1e65aa301ab863ab3150ca02d6dfdc2}{}\label{classv8_1_1internal_1_1_string_search_ad1e65aa301ab863ab3150ca02d6dfdc2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Alphabet\+Size} ()\hypertarget{classv8_1_1internal_1_1_string_search_a2fa4be83d94f58d7804f6db7f8ca484d}{}\label{classv8_1_1internal_1_1_string_search_a2fa4be83d94f58d7804f6db7f8ca484d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ {\bfseries Search\+Function}) (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$, int)\hypertarget{classv8_1_1internal_1_1_string_search_adc3739f42f1b6081ca82a0b9c1351503}{}\label{classv8_1_1internal_1_1_string_search_adc3739f42f1b6081ca82a0b9c1351503}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Populate\+Boyer\+Moore\+Horspool\+Table} ()\hypertarget{classv8_1_1internal_1_1_string_search_aba7644461df3d733585aba84ea49ee36}{}\label{classv8_1_1internal_1_1_string_search_aba7644461df3d733585aba84ea49ee36}
+
+\item 
+void {\bfseries Populate\+Boyer\+Moore\+Table} ()\hypertarget{classv8_1_1internal_1_1_string_search_a267bfecba4dba183834807c4c9e8af61}{}\label{classv8_1_1internal_1_1_string_search_a267bfecba4dba183834807c4c9e8af61}
+
+\item 
+int $\ast$ {\bfseries bad\+\_\+char\+\_\+table} ()\hypertarget{classv8_1_1internal_1_1_string_search_aa6621440f74f89006eabcc28d8783be3}{}\label{classv8_1_1internal_1_1_string_search_aa6621440f74f89006eabcc28d8783be3}
+
+\item 
+int $\ast$ {\bfseries good\+\_\+suffix\+\_\+shift\+\_\+table} ()\hypertarget{classv8_1_1internal_1_1_string_search_a114ed6ff8fd55fd2b0436e0a02e4be7c}{}\label{classv8_1_1internal_1_1_string_search_a114ed6ff8fd55fd2b0436e0a02e4be7c}
+
+\item 
+int $\ast$ {\bfseries suffix\+\_\+table} ()\hypertarget{classv8_1_1internal_1_1_string_search_ab42d986785dfbec839e91958736340ef}{}\label{classv8_1_1internal_1_1_string_search_ab42d986785dfbec839e91958736340ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Fail\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$, int)\hypertarget{classv8_1_1internal_1_1_string_search_a786c16ae8ce2b8654bbf504a3ce13762}{}\label{classv8_1_1internal_1_1_string_search_a786c16ae8ce2b8654bbf504a3ce13762}
+
+\item 
+static int {\bfseries Single\+Char\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$search, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1_string_search_ac322eaabc5667b5386ada44886ed4f7f}{}\label{classv8_1_1internal_1_1_string_search_ac322eaabc5667b5386ada44886ed4f7f}
+
+\item 
+static int {\bfseries Linear\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$search, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1_string_search_a113f0fcd53d64d4f0d84a7efcbd4dc17}{}\label{classv8_1_1internal_1_1_string_search_a113f0fcd53d64d4f0d84a7efcbd4dc17}
+
+\item 
+static int {\bfseries Initial\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$search, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1_string_search_ab952d55907e5747e907f3b7ff2ce171d}{}\label{classv8_1_1internal_1_1_string_search_ab952d55907e5747e907f3b7ff2ce171d}
+
+\item 
+static int {\bfseries Boyer\+Moore\+Horspool\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$search, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1_string_search_a02bf298feef5ad59455aacef00b2fb87}{}\label{classv8_1_1internal_1_1_string_search_a02bf298feef5ad59455aacef00b2fb87}
+
+\item 
+static int {\bfseries Boyer\+Moore\+Search} (\hyperlink{classv8_1_1internal_1_1_string_search}{String\+Search}$<$ Pattern\+Char, Subject\+Char $>$ $\ast$search, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Subject\+Char $>$ subject, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1_string_search_a720009fbb9472e1897bf68f0ea035be7}{}\label{classv8_1_1internal_1_1_string_search_a720009fbb9472e1897bf68f0ea035be7}
+
+\item 
+static bool {\bfseries exceeds\+One\+Byte} (uint8\+\_\+t c)\hypertarget{classv8_1_1internal_1_1_string_search_aab09232e863255da3bf2ae1c8b89cfc9}{}\label{classv8_1_1internal_1_1_string_search_aab09232e863255da3bf2ae1c8b89cfc9}
+
+\item 
+static bool {\bfseries exceeds\+One\+Byte} (uint16\+\_\+t c)\hypertarget{classv8_1_1internal_1_1_string_search_a345727e24ab6228477cfd5227e985f5b}{}\label{classv8_1_1internal_1_1_string_search_a345727e24ab6228477cfd5227e985f5b}
+
+\item 
+static int {\bfseries Char\+Occurrence} (int $\ast$bad\+\_\+char\+\_\+occurrence, Subject\+Char char\+\_\+code)\hypertarget{classv8_1_1internal_1_1_string_search_ad5124fe166cfbebe14cf49ebc58afd1b}{}\label{classv8_1_1internal_1_1_string_search_ad5124fe166cfbebe14cf49ebc58afd1b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_search_a9a892d76b3af06afb881ceea61407038}{}\label{classv8_1_1internal_1_1_string_search_a9a892d76b3af06afb881ceea61407038}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const Pattern\+Char $>$ {\bfseries pattern\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_search_ae669e4bc6bbfc52674674c907690ecfd}{}\label{classv8_1_1internal_1_1_string_search_ae669e4bc6bbfc52674674c907690ecfd}
+
+\item 
+Search\+Function {\bfseries strategy\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_search_a1f2db20cc4af8c94842a0592c3e53c6f}{}\label{classv8_1_1internal_1_1_string_search_a1f2db20cc4af8c94842a0592c3e53c6f}
+
+\item 
+int {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_search_a947ddc556bf33d80b412ac0c07999f65}{}\label{classv8_1_1internal_1_1_string_search_a947ddc556bf33d80b412ac0c07999f65}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/string-\/search.\+h\end{DoxyCompactItemize}

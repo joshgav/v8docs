@@ -1,0 +1,149 @@
+\hypertarget{classv8_1_1internal_1_1_message_impl}{}\section{v8\+:\+:internal\+:\+:Message\+Impl Class Reference}
+\label{classv8_1_1internal_1_1_message_impl}\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Message\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_message_impl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classv8_1_1internal_1_1_message_impl_abea1e06c7076154a2d84570950d3ee5d}{Is\+Event} () const 
+\item 
+virtual bool {\bfseries Is\+Response} () const \hypertarget{classv8_1_1internal_1_1_message_impl_ad238ccdcd5b57f7ae8a9d606bece6019}{}\label{classv8_1_1internal_1_1_message_impl_ad238ccdcd5b57f7ae8a9d606bece6019}
+
+\item 
+virtual Debug\+Event {\bfseries Get\+Event} () const \hypertarget{classv8_1_1internal_1_1_message_impl_a1a49aa8866053f667b1d2e98c124f0d8}{}\label{classv8_1_1internal_1_1_message_impl_a1a49aa8866053f667b1d2e98c124f0d8}
+
+\item 
+virtual bool \hyperlink{classv8_1_1internal_1_1_message_impl_a0ab9e3879d700c394048095cfb39caff}{Will\+Start\+Running} () const 
+\item 
+virtual \hyperlink{classv8_1_1_local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1_object}{v8\+::\+Object} $>$ \hyperlink{classv8_1_1internal_1_1_message_impl_a4aeebf9757b0e1ec6b45cb4fead43c32}{Get\+Execution\+State} () const 
+\item 
+virtual \hyperlink{classv8_1_1_local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1_object}{v8\+::\+Object} $>$ {\bfseries Get\+Event\+Data} () const \hypertarget{classv8_1_1internal_1_1_message_impl_a50712b44310f2884e83a78900e699121}{}\label{classv8_1_1internal_1_1_message_impl_a50712b44310f2884e83a78900e699121}
+
+\item 
+virtual \hyperlink{classv8_1_1_local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1_string}{v8\+::\+String} $>$ \hyperlink{classv8_1_1internal_1_1_message_impl_a1dafde62e876090a237ee0875651a41b}{Get\+J\+S\+ON} () const 
+\item 
+virtual \hyperlink{classv8_1_1_local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1_context}{v8\+::\+Context} $>$ \hyperlink{classv8_1_1internal_1_1_message_impl_ad8342e3b8663f9a89e2be154b5ca4e47}{Get\+Event\+Context} () const 
+\item 
+virtual \hyperlink{classv8_1_1_debug_1_1_client_data}{v8\+::\+Debug\+::\+Client\+Data} $\ast$ \hyperlink{classv8_1_1internal_1_1_message_impl_a6ec7b5784c2c2fbc6159103a8904230a}{Get\+Client\+Data} () const 
+\item 
+virtual \hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$ {\bfseries Get\+Isolate} () const \hypertarget{classv8_1_1internal_1_1_message_impl_afd44d25359cc8fcbb12a34c3f85cd8f1}{}\label{classv8_1_1internal_1_1_message_impl_afd44d25359cc8fcbb12a34c3f85cd8f1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_message_impl}{Message\+Impl} {\bfseries New\+Event} (Debug\+Event event, bool running, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ exec\+\_\+state, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ event\+\_\+data)\hypertarget{classv8_1_1internal_1_1_message_impl_aef580b1b84a58d691d48c9cc366df3df}{}\label{classv8_1_1internal_1_1_message_impl_aef580b1b84a58d691d48c9cc366df3df}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_message_impl}{Message\+Impl} {\bfseries New\+Response} (Debug\+Event event, bool running, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ exec\+\_\+state, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ event\+\_\+data, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ response\+\_\+json, \hyperlink{classv8_1_1_debug_1_1_client_data}{v8\+::\+Debug\+::\+Client\+Data} $\ast$client\+\_\+data)\hypertarget{classv8_1_1internal_1_1_message_impl_a3be5a0658500e47124d319b5a2989e53}{}\label{classv8_1_1internal_1_1_message_impl_a3be5a0658500e47124d319b5a2989e53}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Message\+Impl} (bool is\+\_\+event, Debug\+Event event, bool running, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ exec\+\_\+state, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ event\+\_\+data, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ response\+\_\+json, \hyperlink{classv8_1_1_debug_1_1_client_data}{v8\+::\+Debug\+::\+Client\+Data} $\ast$client\+\_\+data)\hypertarget{classv8_1_1internal_1_1_message_impl_ae9cd3559d8a6186b7f0fb3bc86168b34}{}\label{classv8_1_1internal_1_1_message_impl_ae9cd3559d8a6186b7f0fb3bc86168b34}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+\_\+event\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_af47d9f88709bff66e8c8e00fe642148f}{}\label{classv8_1_1internal_1_1_message_impl_af47d9f88709bff66e8c8e00fe642148f}
+
+\item 
+Debug\+Event {\bfseries event\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_a585c88bcbeb3776cc22c4494a6d526d6}{}\label{classv8_1_1internal_1_1_message_impl_a585c88bcbeb3776cc22c4494a6d526d6}
+
+\item 
+bool {\bfseries running\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_ac165c1d8edd9f46a4f4645ccd59ae546}{}\label{classv8_1_1internal_1_1_message_impl_ac165c1d8edd9f46a4f4645ccd59ae546}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries exec\+\_\+state\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_ac61d7a913575cdc7132b4bf2282d7794}{}\label{classv8_1_1internal_1_1_message_impl_ac61d7a913575cdc7132b4bf2282d7794}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries event\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_a5a706a72f3a457bf74a4c084e259285e}{}\label{classv8_1_1internal_1_1_message_impl_a5a706a72f3a457bf74a4c084e259285e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries response\+\_\+json\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_a567543da01289f5369d847739513a5b1}{}\label{classv8_1_1internal_1_1_message_impl_a567543da01289f5369d847739513a5b1}
+
+\item 
+\hyperlink{classv8_1_1_debug_1_1_client_data}{v8\+::\+Debug\+::\+Client\+Data} $\ast$ {\bfseries client\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_message_impl_aedfd682a9df6d1f2685cb029574b5efe}{}\label{classv8_1_1internal_1_1_message_impl_aedfd682a9df6d1f2685cb029574b5efe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Get\+Client\+Data@{Get\+Client\+Data}}
+\index{Get\+Client\+Data@{Get\+Client\+Data}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Get\+Client\+Data() const }{GetClientData() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Debug\+::\+Client\+Data} $\ast$ v8\+::internal\+::\+Message\+Impl\+::\+Get\+Client\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_a6ec7b5784c2c2fbc6159103a8904230a}{}\label{classv8_1_1internal_1_1_message_impl_a6ec7b5784c2c2fbc6159103a8904230a}
+Client data passed with the corresponding request if any. This is the client\+\_\+data data value passed into Debug\+::\+Send\+Command along with the request that led to the message or N\+U\+LL if the message is an event. The debugger takes ownership of the data and will delete it even if there is no message handler. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_a03ec05ff968a01bbe8bb59ac82516bce}{v8\+::\+Debug\+::\+Message}.
+
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Get\+Event\+Context@{Get\+Event\+Context}}
+\index{Get\+Event\+Context@{Get\+Event\+Context}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Get\+Event\+Context() const }{GetEventContext() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Local}$<$ {\bf v8\+::\+Context} $>$ v8\+::internal\+::\+Message\+Impl\+::\+Get\+Event\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_ad8342e3b8663f9a89e2be154b5ca4e47}{}\label{classv8_1_1internal_1_1_message_impl_ad8342e3b8663f9a89e2be154b5ca4e47}
+Get the context active when the debug event happened. Note this is not the current active context as the Java\+Script part of the debugger is running in its own context which is entered at this point. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_aee14299740566b578b75a89bf485cc77}{v8\+::\+Debug\+::\+Message}.
+
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Get\+Execution\+State@{Get\+Execution\+State}}
+\index{Get\+Execution\+State@{Get\+Execution\+State}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Get\+Execution\+State() const }{GetExecutionState() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Local}$<$ {\bf v8\+::\+Object} $>$ v8\+::internal\+::\+Message\+Impl\+::\+Get\+Execution\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_a4aeebf9757b0e1ec6b45cb4fead43c32}{}\label{classv8_1_1internal_1_1_message_impl_a4aeebf9757b0e1ec6b45cb4fead43c32}
+\hyperlink{classv8_1_1internal_1_1_access}{Access} to execution state and event data. Don\textquotesingle{}t store these cross callbacks as their content becomes invalid. These objects are from the debugger event that started the debug message loop. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_a2c7a09ecad899d9ce253399776d64e91}{v8\+::\+Debug\+::\+Message}.
+
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Get\+J\+S\+ON@{Get\+J\+S\+ON}}
+\index{Get\+J\+S\+ON@{Get\+J\+S\+ON}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Get\+J\+S\+O\+N() const }{GetJSON() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Local}$<$ {\bf v8\+::\+String} $>$ v8\+::internal\+::\+Message\+Impl\+::\+Get\+J\+S\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_a1dafde62e876090a237ee0875651a41b}{}\label{classv8_1_1internal_1_1_message_impl_a1dafde62e876090a237ee0875651a41b}
+Get the debugger protocol \hyperlink{classv8_1_1_j_s_o_n}{J\+S\+ON}. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_aa5e2fc7a5a529683bb4dc176fb788cd2}{v8\+::\+Debug\+::\+Message}.
+
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Is\+Event@{Is\+Event}}
+\index{Is\+Event@{Is\+Event}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Is\+Event() const }{IsEvent() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::internal\+::\+Message\+Impl\+::\+Is\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_abea1e06c7076154a2d84570950d3ee5d}{}\label{classv8_1_1internal_1_1_message_impl_abea1e06c7076154a2d84570950d3ee5d}
+Check type of message. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_a371afb8f4b2352ea15ee8c7daa7f788e}{v8\+::\+Debug\+::\+Message}.
+
+\index{v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}!Will\+Start\+Running@{Will\+Start\+Running}}
+\index{Will\+Start\+Running@{Will\+Start\+Running}!v8\+::internal\+::\+Message\+Impl@{v8\+::internal\+::\+Message\+Impl}}
+\subsubsection[{\texorpdfstring{Will\+Start\+Running() const }{WillStartRunning() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::internal\+::\+Message\+Impl\+::\+Will\+Start\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_message_impl_a0ab9e3879d700c394048095cfb39caff}{}\label{classv8_1_1internal_1_1_message_impl_a0ab9e3879d700c394048095cfb39caff}
+Indicate whether this is a response to a continue command which will start the VM running after this is processed. 
+
+Implements \hyperlink{classv8_1_1_debug_1_1_message_ae6197bbed731299fd7d49d072c5ea53a}{v8\+::\+Debug\+::\+Message}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/debug/debug.\+h\item 
+/\+Users/joshgav/node/v8/src/debug/debug.\+cc\end{DoxyCompactItemize}

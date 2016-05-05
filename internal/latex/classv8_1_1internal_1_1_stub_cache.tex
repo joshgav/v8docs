@@ -1,0 +1,122 @@
+\hypertarget{classv8_1_1internal_1_1_stub_cache}{}\section{v8\+:\+:internal\+:\+:Stub\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_stub_cache}\index{v8\+::internal\+::\+Stub\+Cache@{v8\+::internal\+::\+Stub\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Table} \{ \\*
+{\bfseries k\+Primary}, 
+\\*
+{\bfseries k\+Secondary}
+ \}\hypertarget{classv8_1_1internal_1_1_stub_cache_ab15c79e4f18b5d3fbc4ede4c256f35fb}{}\label{classv8_1_1internal_1_1_stub_cache_ab15c79e4f18b5d3fbc4ede4c256f35fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} ()\hypertarget{classv8_1_1internal_1_1_stub_cache_a1d7461d9541a76fea7335451d844449b}{}\label{classv8_1_1internal_1_1_stub_cache_a1d7461d9541a76fea7335451d844449b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ {\bfseries Set} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code)\hypertarget{classv8_1_1internal_1_1_stub_cache_ade482f9122cb2bff3b0136f3e4cc313b}{}\label{classv8_1_1internal_1_1_stub_cache_ade482f9122cb2bff3b0136f3e4cc313b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ {\bfseries Get} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, Code\+::\+Flags flags)\hypertarget{classv8_1_1internal_1_1_stub_cache_a42b3c283ccc57467f9f1cd00b43d42f4}{}\label{classv8_1_1internal_1_1_stub_cache_a42b3c283ccc57467f9f1cd00b43d42f4}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_stub_cache_ab9c691287872be2c5d6dacb76b7635b4}{}\label{classv8_1_1internal_1_1_stub_cache_ab9c691287872be2c5d6dacb76b7635b4}
+
+\item 
+void {\bfseries Collect\+Matching\+Maps} (\hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$types, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Code\+::\+Flags flags, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_stub_cache_ae127fb4575c4d6dad0c436fec0a68081}{}\label{classv8_1_1internal_1_1_stub_cache_ae127fb4575c4d6dad0c436fec0a68081}
+
+\item 
+void {\bfseries Generate\+Probe} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Code\+::\+Kind ic\+\_\+kind, Code\+::\+Flags flags, \hyperlink{structv8_1_1internal_1_1_register}{Register} receiver, \hyperlink{structv8_1_1internal_1_1_register}{Register} name, \hyperlink{structv8_1_1internal_1_1_register}{Register} scratch, \hyperlink{structv8_1_1internal_1_1_register}{Register} extra, \hyperlink{structv8_1_1internal_1_1_register}{Register} extra2=no\+\_\+reg, \hyperlink{structv8_1_1internal_1_1_register}{Register} extra3=no\+\_\+reg)\hypertarget{classv8_1_1internal_1_1_stub_cache_a73e46d89db6ba3c7e9362a32f9d2d3d4}{}\label{classv8_1_1internal_1_1_stub_cache_a73e46d89db6ba3c7e9362a32f9d2d3d4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_s_c_table_reference}{S\+C\+Table\+Reference} {\bfseries key\+\_\+reference} (Stub\+Cache\+::\+Table table)\hypertarget{classv8_1_1internal_1_1_stub_cache_a575962f2abed80344525523caea0f6ff}{}\label{classv8_1_1internal_1_1_stub_cache_a575962f2abed80344525523caea0f6ff}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_s_c_table_reference}{S\+C\+Table\+Reference} {\bfseries map\+\_\+reference} (Stub\+Cache\+::\+Table table)\hypertarget{classv8_1_1internal_1_1_stub_cache_a5fafa8f381e563ececf1822dc4115660}{}\label{classv8_1_1internal_1_1_stub_cache_a5fafa8f381e563ececf1822dc4115660}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_s_c_table_reference}{S\+C\+Table\+Reference} {\bfseries value\+\_\+reference} (Stub\+Cache\+::\+Table table)\hypertarget{classv8_1_1internal_1_1_stub_cache_a24b58a5748ec9e5daddb55777e945319}{}\label{classv8_1_1internal_1_1_stub_cache_a24b58a5748ec9e5daddb55777e945319}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Stub\+Cache\+::\+Entry} $\ast$ {\bfseries first\+\_\+entry} (Stub\+Cache\+::\+Table table)\hypertarget{classv8_1_1internal_1_1_stub_cache_aab4c138ee8789856c0a67058107a9c58}{}\label{classv8_1_1internal_1_1_stub_cache_aab4c138ee8789856c0a67058107a9c58}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1internal_1_1_stub_cache_a09849599e472fa634b681bc3c2aef9af}{}\label{classv8_1_1internal_1_1_stub_cache_a09849599e472fa634b681bc3c2aef9af}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Cache\+Index\+Shift} = Name\+::k\+Hash\+Shift\hypertarget{classv8_1_1internal_1_1_stub_cache_a07d471a2ba3f66c34c0dce09cb11bee8}{}\label{classv8_1_1internal_1_1_stub_cache_a07d471a2ba3f66c34c0dce09cb11bee8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Stub\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_stub_cache_a3da7a5deaea1235ff591685f3314ea9e}{}\label{classv8_1_1internal_1_1_stub_cache_a3da7a5deaea1235ff591685f3314ea9e}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_stub_cache}{Stub\+Cache})\hypertarget{classv8_1_1internal_1_1_stub_cache_a26ffce43906f690e8d134d710abf5d89}{}\label{classv8_1_1internal_1_1_stub_cache_a26ffce43906f690e8d134d710abf5d89}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Primary\+Offset} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Code\+::\+Flags flags, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map)\hypertarget{classv8_1_1internal_1_1_stub_cache_a71067bca17c7de53d96834de64ccd87a}{}\label{classv8_1_1internal_1_1_stub_cache_a71067bca17c7de53d96834de64ccd87a}
+
+\item 
+static int {\bfseries Secondary\+Offset} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Code\+::\+Flags flags, int seed)\hypertarget{classv8_1_1internal_1_1_stub_cache_ab1646a7fff299b47a77fbc48cc0f20cb}{}\label{classv8_1_1internal_1_1_stub_cache_ab1646a7fff299b47a77fbc48cc0f20cb}
+
+\item 
+static \hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Entry} $\ast$ {\bfseries entry} (\hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Entry} $\ast$table, int offset)\hypertarget{classv8_1_1internal_1_1_stub_cache_a1c2a541bb2aabad9f4f4c133f40ddc76}{}\label{classv8_1_1internal_1_1_stub_cache_a1c2a541bb2aabad9f4f4c133f40ddc76}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Entry} {\bfseries primary\+\_\+} \mbox{[}k\+Primary\+Table\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_stub_cache_ab8bf2dd09007dc40717d7ee60291d2eb}{}\label{classv8_1_1internal_1_1_stub_cache_ab8bf2dd09007dc40717d7ee60291d2eb}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_stub_cache_1_1_entry}{Entry} {\bfseries secondary\+\_\+} \mbox{[}k\+Secondary\+Table\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_stub_cache_a2b8d5ee43540a51d8c3ff007b785a1ea}{}\label{classv8_1_1internal_1_1_stub_cache_a2b8d5ee43540a51d8c3ff007b785a1ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_stub_cache_a2a26800405e87bd5f0b900036c938517}{}\label{classv8_1_1internal_1_1_stub_cache_a2a26800405e87bd5f0b900036c938517}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Primary\+Table\+Bits} = 11\hypertarget{classv8_1_1internal_1_1_stub_cache_a227170c5270d6466a4f116206a12f879}{}\label{classv8_1_1internal_1_1_stub_cache_a227170c5270d6466a4f116206a12f879}
+
+\item 
+static const int {\bfseries k\+Primary\+Table\+Size} = (1 $<$$<$ k\+Primary\+Table\+Bits)\hypertarget{classv8_1_1internal_1_1_stub_cache_aadaf0bfada4516c5918921ed05bdfb74}{}\label{classv8_1_1internal_1_1_stub_cache_aadaf0bfada4516c5918921ed05bdfb74}
+
+\item 
+static const int {\bfseries k\+Secondary\+Table\+Bits} = 9\hypertarget{classv8_1_1internal_1_1_stub_cache_a38beaddc959a149be39c0945b839c696}{}\label{classv8_1_1internal_1_1_stub_cache_a38beaddc959a149be39c0945b839c696}
+
+\item 
+static const int {\bfseries k\+Secondary\+Table\+Size} = (1 $<$$<$ k\+Secondary\+Table\+Bits)\hypertarget{classv8_1_1internal_1_1_stub_cache_a9166b165aa5c1debb4c3d83923948df8}{}\label{classv8_1_1internal_1_1_stub_cache_a9166b165aa5c1debb4c3d83923948df8}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Isolate}\hypertarget{classv8_1_1internal_1_1_stub_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}{}\label{classv8_1_1internal_1_1_stub_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\item 
+class {\bfseries S\+C\+Table\+Reference}\hypertarget{classv8_1_1internal_1_1_stub_cache_ad842275e288fccee190c3166f1bc3eed}{}\label{classv8_1_1internal_1_1_stub_cache_ad842275e288fccee190c3166f1bc3eed}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ic/stub-\/cache.\+h\item 
+/\+Users/joshgav/node/v8/src/ic/stub-\/cache.\+cc\end{DoxyCompactItemize}

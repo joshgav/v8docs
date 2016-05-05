@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1_handle}{}\section{v8\+:\+:internal\+:\+:Handle$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_handle}\index{v8\+::internal\+::\+Handle$<$ T $>$@{v8\+::internal\+::\+Handle$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Handle$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_handle}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_handle_1_1equal__to}{equal\+\_\+to}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_handle_1_1hash}{hash}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (T $\ast$$\ast$location=nullptr)\hypertarget{classv8_1_1internal_1_1_handle_aae003703e6e94f2220693cf051573e86}{}\label{classv8_1_1internal_1_1_handle_aae003703e6e94f2220693cf051573e86}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (T $\ast$object)\hypertarget{classv8_1_1internal_1_1_handle_acd040f051feaec4d69c4a9025c919bda}{}\label{classv8_1_1internal_1_1_handle_acd040f051feaec4d69c4a9025c919bda}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (T $\ast$object, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_handle_a1a012172ce28683885a29c5397aec853}{}\label{classv8_1_1internal_1_1_handle_a1a012172ce28683885a29c5397aec853}
+
+\item 
+{\footnotesize template$<$typename S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries Handle} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ S $>$ handle)\hypertarget{classv8_1_1internal_1_1_handle_a272121e8322f53f202cdcffb0b14011c}{}\label{classv8_1_1internal_1_1_handle_a272121e8322f53f202cdcffb0b14011c}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries operator-\/$>$} () const \hypertarget{classv8_1_1internal_1_1_handle_a22f021b1c69738664b4aa8345d77a884}{}\label{classv8_1_1internal_1_1_handle_a22f021b1c69738664b4aa8345d77a884}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries operator$\ast$} () const \hypertarget{classv8_1_1internal_1_1_handle_ad0d72cb70328f7e7e40de5952bce93ac}{}\label{classv8_1_1internal_1_1_handle_ad0d72cb70328f7e7e40de5952bce93ac}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$$\ast$ {\bfseries location} () const \hypertarget{classv8_1_1internal_1_1_handle_ab3859bc21dac65fe8dec504e3baaf240}{}\label{classv8_1_1internal_1_1_handle_ab3859bc21dac65fe8dec504e3baaf240}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ T $>$ {\bfseries New} (T $\ast$object, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_handle_ad348890679aca96078fa60a622a798aa}{}\label{classv8_1_1internal_1_1_handle_ad348890679aca96078fa60a622a798aa}
+
+\item 
+{\footnotesize template$<$typename S $>$ }\\static const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ T $>$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ S $>$ that)\hypertarget{classv8_1_1internal_1_1_handle_a5b75ef088fce8d626304bf6a27bfbfff}{}\label{classv8_1_1internal_1_1_handle_a5b75ef088fce8d626304bf6a27bfbfff}
+
+\item 
+static const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ T $>$ {\bfseries null} ()\hypertarget{classv8_1_1internal_1_1_handle_a5370e41511ebb3dd59333d20f35fe9ab}{}\label{classv8_1_1internal_1_1_handle_a5370e41511ebb3dd59333d20f35fe9ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename $>$ }\\class {\bfseries Handle}\hypertarget{classv8_1_1internal_1_1_handle_a67ca1a2d91273eaf85fb3d23ba8ce984}{}\label{classv8_1_1internal_1_1_handle_a67ca1a2d91273eaf85fb3d23ba8ce984}
+
+\item 
+{\footnotesize template$<$typename $>$ }\\class {\bfseries Maybe\+Handle}\hypertarget{classv8_1_1internal_1_1_handle_a43ca95cbc5708225727b3674f4690233}{}\label{classv8_1_1internal_1_1_handle_a43ca95cbc5708225727b3674f4690233}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/common-\/node-\/cache.\+h\item 
+/\+Users/joshgav/node/v8/src/handles.\+h\item 
+/\+Users/joshgav/node/v8/src/handles-\/inl.\+h\end{DoxyCompactItemize}

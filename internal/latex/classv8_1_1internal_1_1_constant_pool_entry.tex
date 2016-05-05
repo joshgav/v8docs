@@ -1,0 +1,96 @@
+\hypertarget{classv8_1_1internal_1_1_constant_pool_entry}{}\section{v8\+:\+:internal\+:\+:Constant\+Pool\+Entry Class Reference}
+\label{classv8_1_1internal_1_1_constant_pool_entry}\index{v8\+::internal\+::\+Constant\+Pool\+Entry@{v8\+::internal\+::\+Constant\+Pool\+Entry}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries I\+N\+T\+P\+TR}, 
+\\*
+{\bfseries D\+O\+U\+B\+LE}, 
+\\*
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+T\+Y\+P\+ES}
+ \}\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a7544bf628d1729f4c2043ac53cf4eb34}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a7544bf628d1729f4c2043ac53cf4eb34}
+
+\item 
+enum {\bfseries Access} \{ \\*
+{\bfseries R\+E\+G\+U\+L\+AR}, 
+\\*
+{\bfseries O\+V\+E\+R\+F\+L\+O\+W\+ED}
+ \}\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a3b552e534b5468e4b9fc4c6dfc67e3c8}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a3b552e534b5468e4b9fc4c6dfc67e3c8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Constant\+Pool\+Entry} (int position, intptr\+\_\+t value, bool sharing\+\_\+ok)\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a7fb565350c4a308975044d7154786f6c}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a7fb565350c4a308975044d7154786f6c}
+
+\item 
+{\bfseries Constant\+Pool\+Entry} (int position, double value)\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a80efd5b10c5fa606b1bac9d959142941}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a80efd5b10c5fa606b1bac9d959142941}
+
+\item 
+int {\bfseries position} () const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a4ac9a12ca911ed36f9ea5378c8879758}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a4ac9a12ca911ed36f9ea5378c8879758}
+
+\item 
+bool {\bfseries sharing\+\_\+ok} () const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_ab18225c1ab02d7a0e4dcf60f01d64214}{}\label{classv8_1_1internal_1_1_constant_pool_entry_ab18225c1ab02d7a0e4dcf60f01d64214}
+
+\item 
+bool {\bfseries is\+\_\+merged} () const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_ad77e21399b740c5fe0b25b5645d88360}{}\label{classv8_1_1internal_1_1_constant_pool_entry_ad77e21399b740c5fe0b25b5645d88360}
+
+\item 
+int {\bfseries merged\+\_\+index} (void) const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a7eff0b750e97671edc516e0454aaa544}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a7eff0b750e97671edc516e0454aaa544}
+
+\item 
+void {\bfseries set\+\_\+merged\+\_\+index} (int index)\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a5990c4b32551a11641b0bcc894fe8fd4}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a5990c4b32551a11641b0bcc894fe8fd4}
+
+\item 
+int {\bfseries offset} (void) const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_afedadd719cbf0b483add1e3f5afcf140}{}\label{classv8_1_1internal_1_1_constant_pool_entry_afedadd719cbf0b483add1e3f5afcf140}
+
+\item 
+void {\bfseries set\+\_\+offset} (int offset)\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a8d63e159ab6e3dc4bdfa6c7b317dc898}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a8d63e159ab6e3dc4bdfa6c7b317dc898}
+
+\item 
+intptr\+\_\+t {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a98c8b65e7484a3b754c0f9729dfe5fe8}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a98c8b65e7484a3b754c0f9729dfe5fe8}
+
+\item 
+uint64\+\_\+t {\bfseries value64} () const \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a700812656bd17b4e9fab158fb08a5a6d}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a700812656bd17b4e9fab158fb08a5a6d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries size} (Type type)\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a11980869d87e0390dcea4827cc067fb0}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a11980869d87e0390dcea4827cc067fb0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries S\+H\+A\+R\+I\+N\+G\+\_\+\+P\+R\+O\+H\+I\+B\+I\+T\+ED} = -\/2, 
+\\*
+{\bfseries S\+H\+A\+R\+I\+N\+G\+\_\+\+A\+L\+L\+O\+W\+ED} = -\/1
+ \}\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a1134a7d476858b1dd257f363bbd4eef0}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a1134a7d476858b1dd257f363bbd4eef0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries position\+\_\+}\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_a69be31809c8fb62eefe216fdfd50242f}{}\label{classv8_1_1internal_1_1_constant_pool_entry_a69be31809c8fb62eefe216fdfd50242f}
+
+\item 
+int {\bfseries merged\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_constant_pool_entry_ae1c95cd82cc979e822466a5178ee26b9}{}\label{classv8_1_1internal_1_1_constant_pool_entry_ae1c95cd82cc979e822466a5178ee26b9}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>intptr\_t {\bfseries value\_}\\
+\>double {\bfseries value64\_}\\
+\}; \hypertarget{classv8_1_1internal_1_1_constant_pool_entry_afd41002bd15d0a96509b8e4d4a44ae48}{}\label{classv8_1_1internal_1_1_constant_pool_entry_afd41002bd15d0a96509b8e4d4a44ae48}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/assembler.\+h\end{DoxyCompactItemize}

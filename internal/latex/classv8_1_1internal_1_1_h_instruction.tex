@@ -1,0 +1,114 @@
+\hypertarget{classv8_1_1internal_1_1_h_instruction}{}\section{v8\+:\+:internal\+:\+:H\+Instruction Class Reference}
+\label{classv8_1_1internal_1_1_h_instruction}\index{v8\+::internal\+::\+H\+Instruction@{v8\+::internal\+::\+H\+Instruction}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1_h_instruction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries next} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_a9d29db127d6b84d78fd83c6210c67373}{}\label{classv8_1_1internal_1_1_h_instruction_a9d29db127d6b84d78fd83c6210c67373}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries previous} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_aa317dc653ee98b47c0cc517785d4a8dc}{}\label{classv8_1_1internal_1_1_h_instruction_aa317dc653ee98b47c0cc517785d4a8dc}
+
+\item 
+std\+::ostream \& {\bfseries Print\+To} (std\+::ostream \&os) const  override\hypertarget{classv8_1_1internal_1_1_h_instruction_a5df6c420617bc734902de7a54a26d88c}{}\label{classv8_1_1internal_1_1_h_instruction_a5df6c420617bc734902de7a54a26d88c}
+
+\item 
+virtual std\+::ostream \& {\bfseries Print\+Data\+To} (std\+::ostream \&os) const \hypertarget{classv8_1_1internal_1_1_h_instruction_ada3a04d744c3edc9d43924c52da9b167}{}\label{classv8_1_1internal_1_1_h_instruction_ada3a04d744c3edc9d43924c52da9b167}
+
+\item 
+bool {\bfseries Is\+Linked} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_a0737a8647d62e10cf5eb5edff24bbce6}{}\label{classv8_1_1internal_1_1_h_instruction_a0737a8647d62e10cf5eb5edff24bbce6}
+
+\item 
+void {\bfseries Unlink} ()\hypertarget{classv8_1_1internal_1_1_h_instruction_a8a41f7ab33dca87ccf47c3e8d0371fe0}{}\label{classv8_1_1internal_1_1_h_instruction_a8a41f7ab33dca87ccf47c3e8d0371fe0}
+
+\item 
+void {\bfseries Insert\+Before} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$next)\hypertarget{classv8_1_1internal_1_1_h_instruction_aafa2427dae17803315948b5d7271dd39}{}\label{classv8_1_1internal_1_1_h_instruction_aafa2427dae17803315948b5d7271dd39}
+
+\item 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ {\bfseries Prepend} (T $\ast$instr)\hypertarget{classv8_1_1internal_1_1_h_instruction_af8ae4eebc5b54317669978c2f9d2b498}{}\label{classv8_1_1internal_1_1_h_instruction_af8ae4eebc5b54317669978c2f9d2b498}
+
+\item 
+void {\bfseries Insert\+After} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$previous)\hypertarget{classv8_1_1internal_1_1_h_instruction_a400c1cad5a34fa123931d641721ae77f}{}\label{classv8_1_1internal_1_1_h_instruction_a400c1cad5a34fa123931d641721ae77f}
+
+\item 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ {\bfseries Append} (T $\ast$instr)\hypertarget{classv8_1_1internal_1_1_h_instruction_ad065b646bfd3bd2626eda41a82fe55ce}{}\label{classv8_1_1internal_1_1_h_instruction_ad065b646bfd3bd2626eda41a82fe55ce}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} {\bfseries position} () const  override\hypertarget{classv8_1_1internal_1_1_h_instruction_a89d3b4379b4dbb9fd8339eb708783d56}{}\label{classv8_1_1internal_1_1_h_instruction_a89d3b4379b4dbb9fd8339eb708783d56}
+
+\item 
+bool {\bfseries has\+\_\+position} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_a344ac3efbe9ec162686efc31d37c3b03}{}\label{classv8_1_1internal_1_1_h_instruction_a344ac3efbe9ec162686efc31d37c3b03}
+
+\item 
+void {\bfseries set\+\_\+position} (\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_instruction_ab586463481b1b01b49858f91728d330c}{}\label{classv8_1_1internal_1_1_h_instruction_ab586463481b1b01b49858f91728d330c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} {\bfseries operand\+\_\+position} (int index) const  override\hypertarget{classv8_1_1internal_1_1_h_instruction_a3d62639fbb9465b2b345f86f7d273e0b}{}\label{classv8_1_1internal_1_1_h_instruction_a3d62639fbb9465b2b345f86f7d273e0b}
+
+\item 
+void {\bfseries set\+\_\+operand\+\_\+position} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int index, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} pos)\hypertarget{classv8_1_1internal_1_1_h_instruction_a6f32ab46b64bbe5987883e1e5bc438fe}{}\label{classv8_1_1internal_1_1_h_instruction_a6f32ab46b64bbe5987883e1e5bc438fe}
+
+\item 
+bool {\bfseries Dominates} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_instruction_a7cd697bfc5bdd48459eebcbd755b9242}{}\label{classv8_1_1internal_1_1_h_instruction_a7cd697bfc5bdd48459eebcbd755b9242}
+
+\item 
+bool {\bfseries Can\+Truncate\+To\+Smi} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_acfd544bb90a73437660575233535b3ae}{}\label{classv8_1_1internal_1_1_h_instruction_acfd544bb90a73437660575233535b3ae}
+
+\item 
+bool {\bfseries Can\+Truncate\+To\+Int32} () const \hypertarget{classv8_1_1internal_1_1_h_instruction_af5a9f77ebff424833c6e25643743b32c}{}\label{classv8_1_1internal_1_1_h_instruction_af5a9f77ebff424833c6e25643743b32c}
+
+\item 
+virtual \hyperlink{classv8_1_1internal_1_1_l_instruction}{L\+Instruction} $\ast$ {\bfseries Compile\+To\+Lithium} (\hyperlink{classv8_1_1internal_1_1_l_chunk_builder}{L\+Chunk\+Builder} $\ast$builder)=0\hypertarget{classv8_1_1internal_1_1_h_instruction_a3428771211f74e7e291c6035503f35a2}{}\label{classv8_1_1internal_1_1_h_instruction_a3428771211f74e7e291c6035503f35a2}
+
+\item 
+bool {\bfseries Can\+Deoptimize} ()\hypertarget{classv8_1_1internal_1_1_h_instruction_a1c8ab2a3554f77765809ef84915ba974}{}\label{classv8_1_1internal_1_1_h_instruction_a1c8ab2a3554f77765809ef84915ba974}
+
+\item 
+virtual bool {\bfseries Has\+Stack\+Check} ()\hypertarget{classv8_1_1internal_1_1_h_instruction_a0e461c3f454423764e87a9b2224bb518}{}\label{classv8_1_1internal_1_1_h_instruction_a0e461c3f454423764e87a9b2224bb518}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_type}{H\+Type} type=H\+Type\+::\+Tagged())\hypertarget{classv8_1_1internal_1_1_h_instruction_a5e199eeb1213e9c24ce0056cc7660e73}{}\label{classv8_1_1internal_1_1_h_instruction_a5e199eeb1213e9c24ce0056cc7660e73}
+
+\item 
+void {\bfseries Delete\+From\+Graph} () override\hypertarget{classv8_1_1internal_1_1_h_instruction_a856030aab1da547c374de11ed865f441}{}\label{classv8_1_1internal_1_1_h_instruction_a856030aab1da547c374de11ed865f441}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize\+As\+First} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_instruction_a08b9e228a6e6625187acad1dcde17821}{}\label{classv8_1_1internal_1_1_h_instruction_a08b9e228a6e6625187acad1dcde17821}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_a114ee099c361fe11595dba64a118f3ea}{}\label{classv8_1_1internal_1_1_h_instruction_a114ee099c361fe11595dba64a118f3ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries previous\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_af06943545e0ee0ddbe84bb45fce62108}{}\label{classv8_1_1internal_1_1_h_instruction_af06943545e0ee0ddbe84bb45fce62108}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_position_info}{H\+Position\+Info} {\bfseries position\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_instruction_a586e984ecd2234e28c59e8bf2376f9d2}{}\label{classv8_1_1internal_1_1_h_instruction_a586e984ecd2234e28c59e8bf2376f9d2}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries H\+Basic\+Block}\hypertarget{classv8_1_1internal_1_1_h_instruction_a5478374b6d520142cfdd17f9f28605d3}{}\label{classv8_1_1internal_1_1_h_instruction_a5478374b6d520142cfdd17f9f28605d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+cc\end{DoxyCompactItemize}

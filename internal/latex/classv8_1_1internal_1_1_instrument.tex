@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1_instrument}{}\section{v8\+:\+:internal\+:\+:Instrument Class Reference}
+\label{classv8_1_1internal_1_1_instrument}\index{v8\+::internal\+::\+Instrument@{v8\+::internal\+::\+Instrument}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Instrument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_instrument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Instrument} (const char $\ast$datafile=N\+U\+LL, uint64\+\_\+t sample\+\_\+period=k\+Default\+Instrumentation\+Sampling\+Period)\hypertarget{classv8_1_1internal_1_1_instrument_ad1ca591d1222710f6db79dbbbaadeda5}{}\label{classv8_1_1internal_1_1_instrument_ad1ca591d1222710f6db79dbbbaadeda5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Update} ()\hypertarget{classv8_1_1internal_1_1_instrument_a6c1533d4099de1b8d1ebea4d3805f286}{}\label{classv8_1_1internal_1_1_instrument_a6c1533d4099de1b8d1ebea4d3805f286}
+
+\item 
+void {\bfseries Enable} ()\hypertarget{classv8_1_1internal_1_1_instrument_ac97e86420bcd4d813d7c15ed6b674dc1}{}\label{classv8_1_1internal_1_1_instrument_ac97e86420bcd4d813d7c15ed6b674dc1}
+
+\item 
+void {\bfseries Disable} ()\hypertarget{classv8_1_1internal_1_1_instrument_aff6f75f519931afddb8d4c727c3bbfdb}{}\label{classv8_1_1internal_1_1_instrument_aff6f75f519931afddb8d4c727c3bbfdb}
+
+\item 
+void {\bfseries Dump\+Counters} ()\hypertarget{classv8_1_1internal_1_1_instrument_a5429e3855b88c6b68e6cb5b16863e17a}{}\label{classv8_1_1internal_1_1_instrument_a5429e3855b88c6b68e6cb5b16863e17a}
+
+\item 
+void {\bfseries Dump\+Counter\+Names} ()\hypertarget{classv8_1_1internal_1_1_instrument_a39f4b5095ca7abfa8b335df504e182b0}{}\label{classv8_1_1internal_1_1_instrument_a39f4b5095ca7abfa8b335df504e182b0}
+
+\item 
+void {\bfseries Dump\+Event\+Marker} (unsigned marker)\hypertarget{classv8_1_1internal_1_1_instrument_a158ea9a45b2e9fbe64e3814cba4acce2}{}\label{classv8_1_1internal_1_1_instrument_a158ea9a45b2e9fbe64e3814cba4acce2}
+
+\item 
+void {\bfseries Handle\+Instrumentation\+Event} (unsigned event)\hypertarget{classv8_1_1internal_1_1_instrument_a04eef1e50bf1a09e91b494b2ca6041ce}{}\label{classv8_1_1internal_1_1_instrument_a04eef1e50bf1a09e91b494b2ca6041ce}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_counter}{Counter} $\ast$ {\bfseries Get\+Counter} (const char $\ast$name)\hypertarget{classv8_1_1internal_1_1_instrument_ab8fef0365c62ba1f1f07ad46c3d97a14}{}\label{classv8_1_1internal_1_1_instrument_ab8fef0365c62ba1f1f07ad46c3d97a14}
+
+\item 
+void {\bfseries Instrument\+Load\+Store} (\hyperlink{classv8_1_1internal_1_1_instruction}{Instruction} $\ast$instr)\hypertarget{classv8_1_1internal_1_1_instrument_ad5d76c2ec3b65ebb8e7c43dce6cc7a7b}{}\label{classv8_1_1internal_1_1_instrument_ad5d76c2ec3b65ebb8e7c43dce6cc7a7b}
+
+\item 
+void {\bfseries Instrument\+Load\+Store\+Pair} (\hyperlink{classv8_1_1internal_1_1_instruction}{Instruction} $\ast$instr)\hypertarget{classv8_1_1internal_1_1_instrument_ad779e03b660d66c26c567bd96f0c7dd3}{}\label{classv8_1_1internal_1_1_instrument_ad779e03b660d66c26c567bd96f0c7dd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \hyperlink{classv8_1_1internal_1_1_counter}{Counter} $\ast$ $>$ {\bfseries counters\+\_\+}\hypertarget{classv8_1_1internal_1_1_instrument_a21ace3d86fc8997d6ea449fe6b9aa3ed}{}\label{classv8_1_1internal_1_1_instrument_a21ace3d86fc8997d6ea449fe6b9aa3ed}
+
+\item 
+F\+I\+LE $\ast$ {\bfseries output\+\_\+stream\+\_\+}\hypertarget{classv8_1_1internal_1_1_instrument_a1675d885fef89cb6cdd45ba17371e624}{}\label{classv8_1_1internal_1_1_instrument_a1675d885fef89cb6cdd45ba17371e624}
+
+\item 
+uint64\+\_\+t {\bfseries sample\+\_\+period\+\_\+}\hypertarget{classv8_1_1internal_1_1_instrument_a437c710d5027b8d6371b306eebcc9a68}{}\label{classv8_1_1internal_1_1_instrument_a437c710d5027b8d6371b306eebcc9a68}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/arm64/instrument-\/arm64.\+h\item 
+/\+Users/joshgav/node/v8/src/arm64/instrument-\/arm64.\+cc\end{DoxyCompactItemize}

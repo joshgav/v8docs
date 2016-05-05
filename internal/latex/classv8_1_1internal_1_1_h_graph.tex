@@ -1,0 +1,311 @@
+\hypertarget{classv8_1_1internal_1_1_h_graph}{}\section{v8\+:\+:internal\+:\+:H\+Graph Class Reference}
+\label{classv8_1_1internal_1_1_h_graph}\index{v8\+::internal\+::\+H\+Graph@{v8\+::internal\+::\+H\+Graph}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_h_graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Graph} (\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} descriptor)\hypertarget{classv8_1_1internal_1_1_h_graph_af7118368e6ac3c82caa5e03798b631be}{}\label{classv8_1_1internal_1_1_h_graph_af7118368e6ac3c82caa5e03798b631be}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a30035ffc39015ed0fb2fa8aff4dffe9f}{}\label{classv8_1_1internal_1_1_h_graph_a30035ffc39015ed0fb2fa8aff4dffe9f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_h_graph_aad6e72e873e172a4c16f67a5a34dd039}{}\label{classv8_1_1internal_1_1_h_graph_aad6e72e873e172a4c16f67a5a34dd039}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info} () const \hypertarget{classv8_1_1internal_1_1_h_graph_acafb049ab00ae5821b3ee7f15025760d}{}\label{classv8_1_1internal_1_1_h_graph_acafb049ab00ae5821b3ee7f15025760d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} {\bfseries descriptor} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a72fb5bfd0a080705eaeed0185bbd2594}{}\label{classv8_1_1internal_1_1_h_graph_a72fb5bfd0a080705eaeed0185bbd2594}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$ {\bfseries blocks} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a0eea252671d47a213e9a2f2abd60800c}{}\label{classv8_1_1internal_1_1_h_graph_a0eea252671d47a213e9a2f2abd60800c}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ $>$ $\ast$ {\bfseries phi\+\_\+list} () const \hypertarget{classv8_1_1internal_1_1_h_graph_aa095cee25c0e691f0892c1bf05a5a5ed}{}\label{classv8_1_1internal_1_1_h_graph_aa095cee25c0e691f0892c1bf05a5a5ed}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries entry\+\_\+block} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a0adfd4fbc0de428b9028976f7bb0e6f4}{}\label{classv8_1_1internal_1_1_h_graph_a0adfd4fbc0de428b9028976f7bb0e6f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$ {\bfseries start\+\_\+environment} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a8a3279a3aa2f6cdce85853266f1a0321}{}\label{classv8_1_1internal_1_1_h_graph_a8a3279a3aa2f6cdce85853266f1a0321}
+
+\item 
+void {\bfseries Finalize\+Uniqueness} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a4b46403aca4c7435a39873c899d3d8b5}{}\label{classv8_1_1internal_1_1_h_graph_a4b46403aca4c7435a39873c899d3d8b5}
+
+\item 
+void {\bfseries Order\+Blocks} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a0dbaff638f6e62d594bcb1e78f1192f6}{}\label{classv8_1_1internal_1_1_h_graph_a0dbaff638f6e62d594bcb1e78f1192f6}
+
+\item 
+void {\bfseries Assign\+Dominators} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ab7a72760e8c2e5a5e422cd8671d9ed42}{}\label{classv8_1_1internal_1_1_h_graph_ab7a72760e8c2e5a5e422cd8671d9ed42}
+
+\item 
+void {\bfseries Restore\+Actual\+Values} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a4c3fac21c8bf2fe04ffeb534991c16c6}{}\label{classv8_1_1internal_1_1_h_graph_a4c3fac21c8bf2fe04ffeb534991c16c6}
+
+\item 
+bool {\bfseries Check\+Arguments\+Phi\+Uses} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a7625be879e044f86248a52cc22c41532}{}\label{classv8_1_1internal_1_1_h_graph_a7625be879e044f86248a52cc22c41532}
+
+\item 
+bool {\bfseries Check\+Const\+Phi\+Uses} ()\hypertarget{classv8_1_1internal_1_1_h_graph_aece071f17485afbcec7d21151a9c8f7d}{}\label{classv8_1_1internal_1_1_h_graph_aece071f17485afbcec7d21151a9c8f7d}
+
+\item 
+void {\bfseries Collect\+Phis} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ab020826346879f58fcea86dae75c8d75}{}\label{classv8_1_1internal_1_1_h_graph_ab020826346879f58fcea86dae75c8d75}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Undefined} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a00f4c6f362edd91984696a155fda1b59}{}\label{classv8_1_1internal_1_1_h_graph_a00f4c6f362edd91984696a155fda1b59}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant0} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ad63d26fd4d76511e40fa2905a2c0b9da}{}\label{classv8_1_1internal_1_1_h_graph_ad63d26fd4d76511e40fa2905a2c0b9da}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant1} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ae14fd28ea7c899ed5467927f18e9f151}{}\label{classv8_1_1internal_1_1_h_graph_ae14fd28ea7c899ed5467927f18e9f151}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Minus1} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a90d75f215eb6f6bca4cca101e1df02f1}{}\label{classv8_1_1internal_1_1_h_graph_a90d75f215eb6f6bca4cca101e1df02f1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+True} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a3ab14ba27b1a60e9673b4d2e1560f009}{}\label{classv8_1_1internal_1_1_h_graph_a3ab14ba27b1a60e9673b4d2e1560f009}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+False} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a23aaa9cff19e288b8a025a7c1bfb1bc2}{}\label{classv8_1_1internal_1_1_h_graph_a23aaa9cff19e288b8a025a7c1bfb1bc2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Bool} (bool value)\hypertarget{classv8_1_1internal_1_1_h_graph_a05353d012fa82a6679217ea1050fdba6}{}\label{classv8_1_1internal_1_1_h_graph_a05353d012fa82a6679217ea1050fdba6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Hole} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ae8b1bccf0a0fd1ddc9b6784261cb3df4}{}\label{classv8_1_1internal_1_1_h_graph_ae8b1bccf0a0fd1ddc9b6784261cb3df4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Null} ()\hypertarget{classv8_1_1internal_1_1_h_graph_aed549f1b5b8c6119423c8559202692e8}{}\label{classv8_1_1internal_1_1_h_graph_aed549f1b5b8c6119423c8559202692e8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant\+Optimized\+Out} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a7ea748df4cb0f938ee4dade25c281139}{}\label{classv8_1_1internal_1_1_h_graph_a7ea748df4cb0f938ee4dade25c281139}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Invalid\+Context} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a572770c46aea8c60d5e9218bdccbb90a}{}\label{classv8_1_1internal_1_1_h_graph_a572770c46aea8c60d5e9218bdccbb90a}
+
+\item 
+bool {\bfseries Is\+Constant\+Undefined} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_a24a48a6531fc3bbc9d4eb7f7da757793}{}\label{classv8_1_1internal_1_1_h_graph_a24a48a6531fc3bbc9d4eb7f7da757793}
+
+\item 
+bool {\bfseries Is\+Constant0} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_ab1ac6051256eb74c02b4246bc9337557}{}\label{classv8_1_1internal_1_1_h_graph_ab1ac6051256eb74c02b4246bc9337557}
+
+\item 
+bool {\bfseries Is\+Constant1} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_ad5a9b9ab942d98526f71e1b133cb0f2a}{}\label{classv8_1_1internal_1_1_h_graph_ad5a9b9ab942d98526f71e1b133cb0f2a}
+
+\item 
+bool {\bfseries Is\+Constant\+Minus1} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_aecb27893cfa81470db7d1236bebfdc05}{}\label{classv8_1_1internal_1_1_h_graph_aecb27893cfa81470db7d1236bebfdc05}
+
+\item 
+bool {\bfseries Is\+Constant\+True} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_a7f957df4b0e6256601064294848362c1}{}\label{classv8_1_1internal_1_1_h_graph_a7f957df4b0e6256601064294848362c1}
+
+\item 
+bool {\bfseries Is\+Constant\+False} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_ab028effa411c91126c4414c4fdee2727}{}\label{classv8_1_1internal_1_1_h_graph_ab028effa411c91126c4414c4fdee2727}
+
+\item 
+bool {\bfseries Is\+Constant\+Hole} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_a8c9a6cf1666c98319582a719a2c81e81}{}\label{classv8_1_1internal_1_1_h_graph_a8c9a6cf1666c98319582a719a2c81e81}
+
+\item 
+bool {\bfseries Is\+Constant\+Null} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_aa643ba3aa9435589b76117286249e2da}{}\label{classv8_1_1internal_1_1_h_graph_aa643ba3aa9435589b76117286249e2da}
+
+\item 
+bool {\bfseries Is\+Standard\+Constant} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_aa971ad76795feb0faf80aad5a4862350}{}\label{classv8_1_1internal_1_1_h_graph_aa971ad76795feb0faf80aad5a4862350}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries Create\+Basic\+Block} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a9b42cbfc32e914d43c37a855d14e510b}{}\label{classv8_1_1internal_1_1_h_graph_a9b42cbfc32e914d43c37a855d14e510b}
+
+\item 
+int {\bfseries Get\+Maximum\+Value\+ID} () const \hypertarget{classv8_1_1internal_1_1_h_graph_ab00ed8bcf01cb4fc4565ead09ff518c3}{}\label{classv8_1_1internal_1_1_h_graph_ab00ed8bcf01cb4fc4565ead09ff518c3}
+
+\item 
+int {\bfseries Get\+Next\+Block\+ID} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a859331c1f129c022a7cddbb0ba421994}{}\label{classv8_1_1internal_1_1_h_graph_a859331c1f129c022a7cddbb0ba421994}
+
+\item 
+int {\bfseries Get\+Next\+Value\+ID} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_graph_a366fe3026b56b888c57a0b82bd2e1ec3}{}\label{classv8_1_1internal_1_1_h_graph_a366fe3026b56b888c57a0b82bd2e1ec3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries Lookup\+Value} (int id) const \hypertarget{classv8_1_1internal_1_1_h_graph_af57b73539c7535e0096de1fd7b65da74}{}\label{classv8_1_1internal_1_1_h_graph_af57b73539c7535e0096de1fd7b65da74}
+
+\item 
+void {\bfseries Disallow\+Adding\+New\+Values} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a4536e5ac44475cb9366e79c658195db4}{}\label{classv8_1_1internal_1_1_h_graph_a4536e5ac44475cb9366e79c658195db4}
+
+\item 
+bool {\bfseries Optimize} (Bailout\+Reason $\ast$bailout\+\_\+reason)\hypertarget{classv8_1_1internal_1_1_h_graph_a9299a25db0f64d51c6357b9af56a3964}{}\label{classv8_1_1internal_1_1_h_graph_a9299a25db0f64d51c6357b9af56a3964}
+
+\item 
+bool {\bfseries has\+\_\+osr} ()\hypertarget{classv8_1_1internal_1_1_h_graph_af49a3668eb4c213a49e436dea0de8abe}{}\label{classv8_1_1internal_1_1_h_graph_af49a3668eb4c213a49e436dea0de8abe}
+
+\item 
+void {\bfseries set\+\_\+osr} (\hyperlink{classv8_1_1internal_1_1_h_osr_builder}{H\+Osr\+Builder} $\ast$osr)\hypertarget{classv8_1_1internal_1_1_h_graph_a338bda42cbffb9a3612bc4f1cfe7d711}{}\label{classv8_1_1internal_1_1_h_graph_a338bda42cbffb9a3612bc4f1cfe7d711}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_osr_builder}{H\+Osr\+Builder} $\ast$ {\bfseries osr} ()\hypertarget{classv8_1_1internal_1_1_h_graph_ab28d9a0e864b62dfbc281dc501bdb9cb}{}\label{classv8_1_1internal_1_1_h_graph_ab28d9a0e864b62dfbc281dc501bdb9cb}
+
+\item 
+int {\bfseries update\+\_\+type\+\_\+change\+\_\+checksum} (int delta)\hypertarget{classv8_1_1internal_1_1_h_graph_aeecb7d9dd0938abdf7ba1876403711d0}{}\label{classv8_1_1internal_1_1_h_graph_aeecb7d9dd0938abdf7ba1876403711d0}
+
+\item 
+void {\bfseries update\+\_\+maximum\+\_\+environment\+\_\+size} (int environment\+\_\+size)\hypertarget{classv8_1_1internal_1_1_h_graph_a202acbd24a60215e5b15cb94c92b0579}{}\label{classv8_1_1internal_1_1_h_graph_a202acbd24a60215e5b15cb94c92b0579}
+
+\item 
+int {\bfseries maximum\+\_\+environment\+\_\+size} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a3371d77565e8b672f1b90819ecb1973d}{}\label{classv8_1_1internal_1_1_h_graph_a3371d77565e8b672f1b90819ecb1973d}
+
+\item 
+bool {\bfseries allow\+\_\+code\+\_\+motion} () const \hypertarget{classv8_1_1internal_1_1_h_graph_ac078cb9e7db5bc61b3c4c5f80c677599}{}\label{classv8_1_1internal_1_1_h_graph_ac078cb9e7db5bc61b3c4c5f80c677599}
+
+\item 
+void {\bfseries set\+\_\+allow\+\_\+code\+\_\+motion} (bool value)\hypertarget{classv8_1_1internal_1_1_h_graph_a2b2c6549590785aa88db794dda3f7fd5}{}\label{classv8_1_1internal_1_1_h_graph_a2b2c6549590785aa88db794dda3f7fd5}
+
+\item 
+bool {\bfseries use\+\_\+optimistic\+\_\+licm} () const \hypertarget{classv8_1_1internal_1_1_h_graph_a93424377722c1c14e19428320600af3a}{}\label{classv8_1_1internal_1_1_h_graph_a93424377722c1c14e19428320600af3a}
+
+\item 
+void {\bfseries set\+\_\+use\+\_\+optimistic\+\_\+licm} (bool value)\hypertarget{classv8_1_1internal_1_1_h_graph_af2933f1c59d5989806ab072bcc976b59}{}\label{classv8_1_1internal_1_1_h_graph_af2933f1c59d5989806ab072bcc976b59}
+
+\item 
+void {\bfseries Mark\+Depends\+On\+Empty\+Array\+Proto\+Elements} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a6ed67ba894d386f49e5880693c3542f4}{}\label{classv8_1_1internal_1_1_h_graph_a6ed67ba894d386f49e5880693c3542f4}
+
+\item 
+bool {\bfseries depends\+\_\+on\+\_\+empty\+\_\+array\+\_\+proto\+\_\+elements} ()\hypertarget{classv8_1_1internal_1_1_h_graph_af748e3b4fa5874f60550717ebe9969dd}{}\label{classv8_1_1internal_1_1_h_graph_af748e3b4fa5874f60550717ebe9969dd}
+
+\item 
+bool {\bfseries has\+\_\+uint32\+\_\+instructions} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a4d20cefedbe60b2abd5a04c4feb035c3}{}\label{classv8_1_1internal_1_1_h_graph_a4d20cefedbe60b2abd5a04c4feb035c3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ $>$ $\ast$ {\bfseries uint32\+\_\+instructions} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a825d76e5af2049325f58f71a79eeb301}{}\label{classv8_1_1internal_1_1_h_graph_a825d76e5af2049325f58f71a79eeb301}
+
+\item 
+void {\bfseries Record\+Uint32\+Instruction} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr)\hypertarget{classv8_1_1internal_1_1_h_graph_a6a4cfb87806331c53451a03f7a880bef}{}\label{classv8_1_1internal_1_1_h_graph_a6a4cfb87806331c53451a03f7a880bef}
+
+\item 
+void {\bfseries Increment\+In\+No\+Side\+Effects\+Scope} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a8da20bebb6d5d9d0e102f73454d812fc}{}\label{classv8_1_1internal_1_1_h_graph_a8da20bebb6d5d9d0e102f73454d812fc}
+
+\item 
+void {\bfseries Decrement\+In\+No\+Side\+Effects\+Scope} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a636b695ae14df0aa15f9cb876f6d47a2}{}\label{classv8_1_1internal_1_1_h_graph_a636b695ae14df0aa15f9cb876f6d47a2}
+
+\item 
+bool {\bfseries Is\+Inside\+No\+Side\+Effects\+Scope} ()\hypertarget{classv8_1_1internal_1_1_h_graph_af0e72f1626fa8be53342f4dcd99ecdb6}{}\label{classv8_1_1internal_1_1_h_graph_af0e72f1626fa8be53342f4dcd99ecdb6}
+
+\item 
+int {\bfseries Trace\+Inlined\+Function} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ shared, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_graph_a237f469eaee4e6a118154a6cd01b6974}{}\label{classv8_1_1internal_1_1_h_graph_a237f469eaee4e6a118154a6cd01b6974}
+
+\item 
+int {\bfseries Source\+Position\+To\+Script\+Position} (\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} position)\hypertarget{classv8_1_1internal_1_1_h_graph_aaa7585d172cb7c73f13a95685565f0bd}{}\label{classv8_1_1internal_1_1_h_graph_aaa7585d172cb7c73f13a95685565f0bd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Reinsert\+Constant\+If\+Necessary} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_h_graph_a1d7d4007eba84e48558da935ddcf67c8}{}\label{classv8_1_1internal_1_1_h_graph_a1d7d4007eba84e48558da935ddcf67c8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Get\+Constant} (\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ $\ast$pointer, int32\+\_\+t integer\+\_\+value)\hypertarget{classv8_1_1internal_1_1_h_graph_a3a2d55e10492f50f28d854a5cb06e004}{}\label{classv8_1_1internal_1_1_h_graph_a3a2d55e10492f50f28d854a5cb06e004}
+
+\item 
+{\footnotesize template$<$class Phase $>$ }\\void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_h_graph_a2c3ab4a3802562ae606332bc3b7fd1b3}{}\label{classv8_1_1internal_1_1_h_graph_a2c3ab4a3802562ae606332bc3b7fd1b3}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph})\hypertarget{classv8_1_1internal_1_1_h_graph_a42aaf723a3632ca1fb3e3b51801a825e}{}\label{classv8_1_1internal_1_1_h_graph_a42aaf723a3632ca1fb3e3b51801a825e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_acf3fb92158b54fdb49a2be8ea997cc3a}{}\label{classv8_1_1internal_1_1_h_graph_acf3fb92158b54fdb49a2be8ea997cc3a}
+
+\item 
+int {\bfseries next\+\_\+block\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_afc4733b8b50feacef3e5548f3e7074f7}{}\label{classv8_1_1internal_1_1_h_graph_afc4733b8b50feacef3e5548f3e7074f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries entry\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a365d854957788a0d5785811146d79863}{}\label{classv8_1_1internal_1_1_h_graph_a365d854957788a0d5785811146d79863}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_environment}{H\+Environment} $\ast$ {\bfseries start\+\_\+environment\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a09752e7e0e15d960ac4c987b446702d0}{}\label{classv8_1_1internal_1_1_h_graph_a09752e7e0e15d960ac4c987b446702d0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ {\bfseries blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a0d56f60d8cdc377cf7fb0fad896491ae}{}\label{classv8_1_1internal_1_1_h_graph_a0d56f60d8cdc377cf7fb0fad896491ae}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ $>$ {\bfseries values\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_aed40c66f00c9d094dace34bfa936489b}{}\label{classv8_1_1internal_1_1_h_graph_aed40c66f00c9d094dace34bfa936489b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ $>$ $\ast$ {\bfseries phi\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_ac09cdb9e74b5c21a85f68e653bcdea18}{}\label{classv8_1_1internal_1_1_h_graph_ac09cdb9e74b5c21a85f68e653bcdea18}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ $>$ $\ast$ {\bfseries uint32\+\_\+instructions\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_aeb4212ce50928317ebdb9499cfd921ea}{}\label{classv8_1_1internal_1_1_h_graph_aeb4212ce50928317ebdb9499cfd921ea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+undefined\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a0908612943b9f8f06d5296f5657ef201}{}\label{classv8_1_1internal_1_1_h_graph_a0908612943b9f8f06d5296f5657ef201}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+0\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a32641d3fb4379b3bc21decc6265719bf}{}\label{classv8_1_1internal_1_1_h_graph_a32641d3fb4379b3bc21decc6265719bf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+1\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a5dce8858d12be1af0e7c28818177214c}{}\label{classv8_1_1internal_1_1_h_graph_a5dce8858d12be1af0e7c28818177214c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+minus1\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_abdb6b4201c4db740c54f5fd244dbd051}{}\label{classv8_1_1internal_1_1_h_graph_abdb6b4201c4db740c54f5fd244dbd051}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+true\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_ab5fd09386a02f88035987fdc5558ab8f}{}\label{classv8_1_1internal_1_1_h_graph_ab5fd09386a02f88035987fdc5558ab8f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+false\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_ab350b85af80840badc85b335cd92c5e4}{}\label{classv8_1_1internal_1_1_h_graph_ab350b85af80840badc85b335cd92c5e4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+the\+\_\+hole\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a0a41f779c58f7a0d4747a659d22a244e}{}\label{classv8_1_1internal_1_1_h_graph_a0a41f779c58f7a0d4747a659d22a244e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+null\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_ab4784c1630bca91ceb11e8d8eff2fcdf}{}\label{classv8_1_1internal_1_1_h_graph_ab4784c1630bca91ceb11e8d8eff2fcdf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+optimized\+\_\+out\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_aeb478845c93088ffc721c0d1c7ee2d42}{}\label{classv8_1_1internal_1_1_h_graph_aeb478845c93088ffc721c0d1c7ee2d42}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $>$ {\bfseries constant\+\_\+invalid\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_ad2db5855fc5031af4bddf631db600cb7}{}\label{classv8_1_1internal_1_1_h_graph_ad2db5855fc5031af4bddf631db600cb7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_osr_builder}{H\+Osr\+Builder} $\ast$ {\bfseries osr\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_aec59313d16b5efbdc5ebb5455777d4df}{}\label{classv8_1_1internal_1_1_h_graph_aec59313d16b5efbdc5ebb5455777d4df}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a7a53323985f6781c55b6b8a7e415cd90}{}\label{classv8_1_1internal_1_1_h_graph_a7a53323985f6781c55b6b8a7e415cd90}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} {\bfseries descriptor\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a883762f77605005e06bf385d99486263}{}\label{classv8_1_1internal_1_1_h_graph_a883762f77605005e06bf385d99486263}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a701a9cd311b8f328b6be6b1d5ff0ba9c}{}\label{classv8_1_1internal_1_1_h_graph_a701a9cd311b8f328b6be6b1d5ff0ba9c}
+
+\item 
+bool {\bfseries allow\+\_\+code\+\_\+motion\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a23b3415f11057c510134bbdf885a0b4b}{}\label{classv8_1_1internal_1_1_h_graph_a23b3415f11057c510134bbdf885a0b4b}
+
+\item 
+bool {\bfseries use\+\_\+optimistic\+\_\+licm\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a17dfb0ea178eb9f126a6022b214f0c7c}{}\label{classv8_1_1internal_1_1_h_graph_a17dfb0ea178eb9f126a6022b214f0c7c}
+
+\item 
+bool {\bfseries depends\+\_\+on\+\_\+empty\+\_\+array\+\_\+proto\+\_\+elements\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_aecd25692242b5270b07822a97c58c614}{}\label{classv8_1_1internal_1_1_h_graph_aecd25692242b5270b07822a97c58c614}
+
+\item 
+int {\bfseries type\+\_\+change\+\_\+checksum\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a7af2a4a694575822362f4115aad181cc}{}\label{classv8_1_1internal_1_1_h_graph_a7af2a4a694575822362f4115aad181cc}
+
+\item 
+int {\bfseries maximum\+\_\+environment\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_abd6bbd0f2fca9a79687434d725079b4e}{}\label{classv8_1_1internal_1_1_h_graph_abd6bbd0f2fca9a79687434d725079b4e}
+
+\item 
+int {\bfseries no\+\_\+side\+\_\+effects\+\_\+scope\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a56f8958052718d88f5a3e3478002f2a3}{}\label{classv8_1_1internal_1_1_h_graph_a56f8958052718d88f5a3e3478002f2a3}
+
+\item 
+bool {\bfseries disallow\+\_\+adding\+\_\+new\+\_\+values\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_graph_a737c08149394ff8d45cbaca6bd5ae7bd}{}\label{classv8_1_1internal_1_1_h_graph_a737c08149394ff8d45cbaca6bd5ae7bd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

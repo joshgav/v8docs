@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor}{}\section{v8\+:\+:internal\+:\+:Ast\+Expression\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1_ast_expression_visitor}\index{v8\+::internal\+::\+Ast\+Expression\+Visitor@{v8\+::internal\+::\+Ast\+Expression\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Ast\+Expression\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.745098cm]{classv8_1_1internal_1_1_ast_expression_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ast\+Expression\+Visitor} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$root)\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a0f04d9b2eeb2585678441e10dee56ee1}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a0f04d9b2eeb2585678441e10dee56ee1}
+
+\item 
+{\bfseries Ast\+Expression\+Visitor} (uintptr\+\_\+t stack\+\_\+limit, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$root)\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a56aedb707e53f46cf724731ebf41cc0a}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a56aedb707e53f46cf724731ebf41cc0a}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a7eaeaa2d95b1cabf63e48c76883795e3}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a7eaeaa2d95b1cabf63e48c76883795e3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Visit\+Expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)=0\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_ad71791090dd0446e9646102213613566}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_ad71791090dd0446e9646102213613566}
+
+\item 
+int {\bfseries depth} ()\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a2d26bfcafb51a82ac8475b59f371d1ed}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a2d26bfcafb51a82ac8475b59f371d1ed}
+
+\item 
+void {\bfseries Visit\+Declarations} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_declaration}{Declaration} $\ast$ $>$ $\ast$d) override\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_ac22237d23356e730ee935638d0df86c2}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_ac22237d23356e730ee935638d0df86c2}
+
+\item 
+void {\bfseries Visit\+Statements} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$s) override\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a19e47fa64828b128ef71e08b65bed2c9}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a19e47fa64828b128ef71e08b65bed2c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+T\+\_\+\+V\+I\+S\+I\+T\+O\+R\+\_\+\+S\+U\+B\+C\+L\+A\+S\+S\+\_\+\+M\+E\+M\+B\+E\+RS} ()\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a6727ffd006b60c417d302fcaca29f85a}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a6727ffd006b60c417d302fcaca29f85a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_ast_expression_visitor}{Ast\+Expression\+Visitor})\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a8931059dead7c5609b0bbcd1765648c0}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a8931059dead7c5609b0bbcd1765648c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries root\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a7c27b20bc86c934d2a8bfa55aeebaa3a}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a7c27b20bc86c934d2a8bfa55aeebaa3a}
+
+\item 
+int {\bfseries depth\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_expression_visitor_a7f353591798649f576dd57315caed479}{}\label{classv8_1_1internal_1_1_ast_expression_visitor_a7f353591798649f576dd57315caed479}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast-\/expression-\/visitor.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/ast-\/expression-\/visitor.\+cc\end{DoxyCompactItemize}

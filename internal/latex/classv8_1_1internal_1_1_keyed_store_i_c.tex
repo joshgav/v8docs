@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c}{}\section{v8\+:\+:internal\+:\+:Keyed\+Store\+IC Class Reference}
+\label{classv8_1_1internal_1_1_keyed_store_i_c}\index{v8\+::internal\+::\+Keyed\+Store\+IC@{v8\+::internal\+::\+Keyed\+Store\+IC}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Keyed\+Store\+IC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_keyed_store_i_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Keyed\+Access\+Store\+Mode {\bfseries Get\+Keyed\+Access\+Store\+Mode} ()\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a0d99a86f21d342854c18ee615f814287}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a0d99a86f21d342854c18ee615f814287}
+
+\item 
+{\bfseries Keyed\+Store\+IC} (Frame\+Depth depth, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_keyed_store_i_c_nexus}{Keyed\+Store\+I\+C\+Nexus} $\ast$nexus=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a22c1c024dbe25a0f5b0e54ffcffd0820}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a22c1c024dbe25a0f5b0e54ffcffd0820}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Store} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ object, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a10e43cfebb31810bfba3ff4ae22e0225}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a10e43cfebb31810bfba3ff4ae22e0225}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Generate\+Miss} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a22007a75a837a9f92c911cfefe8af694}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a22007a75a837a9f92c911cfefe8af694}
+
+\item 
+static void {\bfseries Generate\+Slow} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a5bf0a57d77dbb95409358f2a59f83f6e}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a5bf0a57d77dbb95409358f2a59f83f6e}
+
+\item 
+static void {\bfseries Generate\+Megamorphic} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_aa9c4d4eddf60cc6ef5f75fc469610e3f}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_aa9c4d4eddf60cc6ef5f75fc469610e3f}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries initialize\+\_\+stub\+\_\+in\+\_\+optimized\+\_\+code} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, Language\+Mode language\+\_\+mode, State initialization\+\_\+state)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a90ecd3ca5c68f270425e8fd721da4a8b}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a90ecd3ca5c68f270425e8fd721da4a8b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Choose\+Megamorphic\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, Extra\+I\+C\+State extra\+\_\+state)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a9a5085973a223f2a0eadedc185e31584}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a9a5085973a223f2a0eadedc185e31584}
+
+\item 
+static void {\bfseries Clear} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$host, \hyperlink{classv8_1_1internal_1_1_keyed_store_i_c_nexus}{Keyed\+Store\+I\+C\+Nexus} $\ast$nexus)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a330251e31ea21cbcb56526c0e842c014}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a330251e31ea21cbcb56526c0e842c014}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Update\+Store\+Element} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ receiver\+\_\+map, Keyed\+Access\+Store\+Mode store\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_ab216233532324e889e32b82339b28ba6}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_ab216233532324e889e32b82339b28ba6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ {\bfseries Compute\+Transitioned\+Map} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, Keyed\+Access\+Store\+Mode store\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_a58dba767985c698f06c6545c2f802280}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_a58dba767985c698f06c6545c2f802280}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries IC}\hypertarget{classv8_1_1internal_1_1_keyed_store_i_c_ae59e849648858af1fd22081890d47b78}{}\label{classv8_1_1internal_1_1_keyed_store_i_c_ae59e849648858af1fd22081890d47b78}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ic/ic.\+h\item 
+/\+Users/joshgav/node/v8/src/ic/ic.\+cc\end{DoxyCompactItemize}

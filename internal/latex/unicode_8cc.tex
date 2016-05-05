@@ -1,0 +1,1230 @@
+\hypertarget{unicode_8cc}{}\section{/\+Users/joshgav/node/v8/src/unicode.cc File Reference}
+\label{unicode_8cc}\index{/\+Users/joshgav/node/v8/src/unicode.\+cc@{/\+Users/joshgav/node/v8/src/unicode.\+cc}}
+{\ttfamily \#include \char`\"{}src/unicode.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}src/unicode-\/inl.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structunibrow_1_1_multi_character_special_case}{unibrow\+::\+Multi\+Character\+Special\+Case$<$ k\+W $>$}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef signed short {\bfseries unibrow\+::int16\+\_\+t}\hypertarget{unicode_8cc_a5b1ef8c20eda54dede6691e1d3c9dee3}{}\label{unicode_8cc_a5b1ef8c20eda54dede6691e1d3c9dee3}
+
+\item 
+typedef unsigned short {\bfseries unibrow\+::uint16\+\_\+t}\hypertarget{unicode_8cc_a1a9f000a71024f8d15d88a4fa57e1a18}{}\label{unicode_8cc_a1a9f000a71024f8d15d88a4fa57e1a18}
+
+\item 
+typedef int {\bfseries unibrow\+::int32\+\_\+t}\hypertarget{unicode_8cc_a60d2324d08aaa746bbaaa291aca51448}{}\label{unicode_8cc_a60d2324d08aaa746bbaaa291aca51448}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int D$>$ }\\static uchar {\bfseries unibrow\+::\+Table\+Get} (const int32\+\_\+t $\ast$table, int index)\hypertarget{unicode_8cc_ac174058bb95c4eefb6eb00fabc06ddfe}{}\label{unicode_8cc_ac174058bb95c4eefb6eb00fabc06ddfe}
+
+\item 
+static uchar {\bfseries unibrow\+::\+Get\+Entry} (int32\+\_\+t entry)\hypertarget{unicode_8cc_aa56e02dc78ac7da0723493316f527e12}{}\label{unicode_8cc_aa56e02dc78ac7da0723493316f527e12}
+
+\item 
+static bool {\bfseries unibrow\+::\+Is\+Start} (int32\+\_\+t entry)\hypertarget{unicode_8cc_a10d2586f6228c0d8da0befc5bc0477cb}{}\label{unicode_8cc_a10d2586f6228c0d8da0befc5bc0477cb}
+
+\item 
+static bool \hyperlink{unicode_8cc_ae0104c29021e60659d5de7c3f05dac88}{unibrow\+::\+Lookup\+Predicate} (const int32\+\_\+t $\ast$table, uint16\+\_\+t size, uchar chr)
+\item 
+{\footnotesize template$<$bool ranges\+\_\+are\+\_\+linear, int kW$>$ }\\static int {\bfseries unibrow\+::\+Lookup\+Mapping} (const int32\+\_\+t $\ast$table, uint16\+\_\+t size, const Multi\+Character\+Special\+Case$<$ kW $>$ $\ast$multi\+\_\+chars, uchar chr, uchar next, uchar $\ast$result, bool $\ast$allow\+\_\+caching\+\_\+ptr)\hypertarget{unicode_8cc_a7fd3491403ff6a788cfba0c74293378e}{}\label{unicode_8cc_a7fd3491403ff6a788cfba0c74293378e}
+
+\item 
+static size\+\_\+t {\bfseries unibrow\+::\+Non\+A\+S\+C\+I\+I\+Sequence\+Length} (byte first)\hypertarget{unicode_8cc_a6f9480b67c5b02d88f3e9201969f72ca}{}\label{unicode_8cc_a6f9480b67c5b02d88f3e9201969f72ca}
+
+\item 
+static bool {\bfseries unibrow\+::\+Is\+Continuation\+Character} (byte chr)\hypertarget{unicode_8cc_adf0113a2be510cb52f18d171fbc53d17}{}\label{unicode_8cc_adf0113a2be510cb52f18d171fbc53d17}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries unibrow\+::k\+Start\+Bit} = (1 $<$$<$ 30)\hypertarget{unicode_8cc_a041faa20fff6138ad7a300e8852d90f7}{}\label{unicode_8cc_a041faa20fff6138ad7a300e8852d90f7}
+
+\item 
+static const int {\bfseries unibrow\+::k\+Chunk\+Bits} = (1 $<$$<$ 13)\hypertarget{unicode_8cc_a7113516a5895173ab425ab8310e734cc}{}\label{unicode_8cc_a7113516a5895173ab425ab8310e734cc}
+
+\item 
+static const uchar {\bfseries unibrow\+::k\+Sentinel} = static\+\_\+cast$<$uchar$>$(-\/1)\hypertarget{unicode_8cc_a587392fd3ed08111285e8f6e12b407fd}{}\label{unicode_8cc_a587392fd3ed08111285e8f6e12b407fd}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table0\+Size} = 455\hypertarget{unicode_8cc_af56c655c3005f5cc541f318470b05a73}{}\label{unicode_8cc_af56c655c3005f5cc541f318470b05a73}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table0} \mbox{[}455\mbox{]}\hypertarget{unicode_8cc_a24f9b5ae295ce7a77770227a3c5c8ec8}{}\label{unicode_8cc_a24f9b5ae295ce7a77770227a3c5c8ec8}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table1\+Size} = 86\hypertarget{unicode_8cc_a2c0b3962c413ae23af3518c7b9eb0419}{}\label{unicode_8cc_a2c0b3962c413ae23af3518c7b9eb0419}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table1} \mbox{[}86\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table5\+Size} = 101\hypertarget{unicode_8cc_a7581e3496be76d3227ac24ab5a94f586}{}\label{unicode_8cc_a7581e3496be76d3227ac24ab5a94f586}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table5} \mbox{[}101\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table7\+Size} = 2\hypertarget{unicode_8cc_a61687a98b583d545444e08d8a7c581e2}{}\label{unicode_8cc_a61687a98b583d545444e08d8a7c581e2}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Uppercase\+Table7} \mbox{[}2\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table0\+Size} = 467\hypertarget{unicode_8cc_a4446cfc3b7c54db9026919c4a5ab2c9f}{}\label{unicode_8cc_a4446cfc3b7c54db9026919c4a5ab2c9f}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table0} \mbox{[}467\mbox{]}\hypertarget{unicode_8cc_a554c610c7e0469349440a9ac2df75929}{}\label{unicode_8cc_a554c610c7e0469349440a9ac2df75929}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table1\+Size} = 84\hypertarget{unicode_8cc_a2fb0814f720833c34a6f011953f82f3f}{}\label{unicode_8cc_a2fb0814f720833c34a6f011953f82f3f}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table1} \mbox{[}84\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table5\+Size} = 105\hypertarget{unicode_8cc_a2aac45b6cd524be61f793d986b7ed8a6}{}\label{unicode_8cc_a2aac45b6cd524be61f793d986b7ed8a6}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table5} \mbox{[}105\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table7\+Size} = 6\hypertarget{unicode_8cc_a27d04d61ea0f425e7e80475ac940e1ff}{}\label{unicode_8cc_a27d04d61ea0f425e7e80475ac940e1ff}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Lowercase\+Table7} \mbox{[}6\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table0\+Size} = 431\hypertarget{unicode_8cc_aa5898001e53be654f68d96126a317123}{}\label{unicode_8cc_aa5898001e53be654f68d96126a317123}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table0} \mbox{[}431\mbox{]}\hypertarget{unicode_8cc_a0faef6d302925ec8ec018923b0e7d909}{}\label{unicode_8cc_a0faef6d302925ec8ec018923b0e7d909}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table1\+Size} = 87\hypertarget{unicode_8cc_a073626ae33d48e07c5d6f1ebf8efbca9}{}\label{unicode_8cc_a073626ae33d48e07c5d6f1ebf8efbca9}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table1} \mbox{[}87\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table2\+Size} = 4\hypertarget{unicode_8cc_a243e53bd22adbf24f8f1ab3da042d905}{}\label{unicode_8cc_a243e53bd22adbf24f8f1ab3da042d905}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table2} \mbox{[}4\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table3\+Size} = 2\hypertarget{unicode_8cc_ace6666af210bb6a72e7917b3dbdfbcfb}{}\label{unicode_8cc_ace6666af210bb6a72e7917b3dbdfbcfb}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table3} \mbox{[}2\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table4\+Size} = 2\hypertarget{unicode_8cc_a8ea961da63cb4acfbc7705f775a9d35e}{}\label{unicode_8cc_a8ea961da63cb4acfbc7705f775a9d35e}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table4} \mbox{[}2\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table5\+Size} = 100\hypertarget{unicode_8cc_af69a46d88f02e97099c9461b79caaab9}{}\label{unicode_8cc_af69a46d88f02e97099c9461b79caaab9}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table5} \mbox{[}100\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table6\+Size} = 6\hypertarget{unicode_8cc_a192a4ccc30807cf4f543365e98335f80}{}\label{unicode_8cc_a192a4ccc30807cf4f543365e98335f80}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table6} \mbox{[}6\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table7\+Size} = 48\hypertarget{unicode_8cc_a80b96cf52c5b3e835d5f88170f576ea4}{}\label{unicode_8cc_a80b96cf52c5b3e835d5f88170f576ea4}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Letter\+Table7} \mbox{[}48\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table0\+Size} = 434\hypertarget{unicode_8cc_ac87c76ccb6d277d4ca46d138443402a6}{}\label{unicode_8cc_ac87c76ccb6d277d4ca46d138443402a6}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table0} \mbox{[}434\mbox{]}\hypertarget{unicode_8cc_ab157df4e3ba716c36bc4b9215982cf95}{}\label{unicode_8cc_ab157df4e3ba716c36bc4b9215982cf95}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table1\+Size} = 84\hypertarget{unicode_8cc_a4f571f1459c28b0670389cd5ce8d3f5b}{}\label{unicode_8cc_a4f571f1459c28b0670389cd5ce8d3f5b}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table1} \mbox{[}84\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table2\+Size} = 4\hypertarget{unicode_8cc_a1a6ef6c7ad5a644355f2071c60a68124}{}\label{unicode_8cc_a1a6ef6c7ad5a644355f2071c60a68124}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table2} \mbox{[}4\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table3\+Size} = 2\hypertarget{unicode_8cc_a726190cdf0befb09450718db25e4bc75}{}\label{unicode_8cc_a726190cdf0befb09450718db25e4bc75}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table3} \mbox{[}2\mbox{]} = \{1073741824, 8191\}\hypertarget{unicode_8cc_a9ce0c19513d121ea067dcd7590359cea}{}\label{unicode_8cc_a9ce0c19513d121ea067dcd7590359cea}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table4\+Size} = 2\hypertarget{unicode_8cc_a12a26b0cf65d74f4c4591c6650dbae56}{}\label{unicode_8cc_a12a26b0cf65d74f4c4591c6650dbae56}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table4} \mbox{[}2\mbox{]} = \{1073741824, 8140\}\hypertarget{unicode_8cc_af37ed99cf5c7d5a57f72d4f802da4f54}{}\label{unicode_8cc_af37ed99cf5c7d5a57f72d4f802da4f54}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table5\+Size} = 100\hypertarget{unicode_8cc_a09857497dc89b4677ecaf72d8071a26d}{}\label{unicode_8cc_a09857497dc89b4677ecaf72d8071a26d}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table5} \mbox{[}100\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table6\+Size} = 6\hypertarget{unicode_8cc_a1a9c39bdec7051dac31e071add0ece6b}{}\label{unicode_8cc_a1a9c39bdec7051dac31e071add0ece6b}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table6} \mbox{[}6\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table7\+Size} = 48\hypertarget{unicode_8cc_ad004a34778158ef81dbf1973bd7e31e8}{}\label{unicode_8cc_ad004a34778158ef81dbf1973bd7e31e8}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Start\+Table7} \mbox{[}48\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table0\+Size} = 315\hypertarget{unicode_8cc_a442788b79cf698db0a7187c3ed54ef79}{}\label{unicode_8cc_a442788b79cf698db0a7187c3ed54ef79}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table0} \mbox{[}315\mbox{]}\hypertarget{unicode_8cc_a3fbe524dc6e538a6c83fea7398263910}{}\label{unicode_8cc_a3fbe524dc6e538a6c83fea7398263910}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table1\+Size} = 19\hypertarget{unicode_8cc_ac3e903d2c2c0ae9efae953294d9240c4}{}\label{unicode_8cc_ac3e903d2c2c0ae9efae953294d9240c4}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table1} \mbox{[}19\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table5\+Size} = 63\hypertarget{unicode_8cc_a0349a192809283e543da26487f99f0c4}{}\label{unicode_8cc_a0349a192809283e543da26487f99f0c4}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table5} \mbox{[}63\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table7\+Size} = 12\hypertarget{unicode_8cc_ae0c935af832b03730a39ef9f7d0f621d}{}\label{unicode_8cc_ae0c935af832b03730a39ef9f7d0f621d}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+I\+D\+\_\+\+Continue\+Table7} \mbox{[}12\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table0\+Size} = 7\hypertarget{unicode_8cc_a0022194a720e1faacf606d08165282bc}{}\label{unicode_8cc_a0022194a720e1faacf606d08165282bc}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table0} \mbox{[}7\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table1\+Size} = 5\hypertarget{unicode_8cc_ab83876195d68182a13fa35bc34f1cf8a}{}\label{unicode_8cc_ab83876195d68182a13fa35bc34f1cf8a}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table1} \mbox{[}5\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table7\+Size} = 1\hypertarget{unicode_8cc_acce414433a4220d6c9f46ed791d2bec7}{}\label{unicode_8cc_acce414433a4220d6c9f46ed791d2bec7}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+White\+Space\+Table7} \mbox{[}1\mbox{]} = \{7935\}\hypertarget{unicode_8cc_a89ceb1bad3a7923cebb38f01ec0e9fd3}{}\label{unicode_8cc_a89ceb1bad3a7923cebb38f01ec0e9fd3}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Line\+Terminator\+Table0\+Size} = 2\hypertarget{unicode_8cc_a2a846eead906114fa53844b800512875}{}\label{unicode_8cc_a2a846eead906114fa53844b800512875}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Line\+Terminator\+Table0} \mbox{[}2\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Line\+Terminator\+Table1\+Size} = 2\hypertarget{unicode_8cc_a386d9ca17c64d025ead7636a2c2ad1c0}{}\label{unicode_8cc_a386d9ca17c64d025ead7636a2c2ad1c0}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Line\+Terminator\+Table1} \mbox{[}2\mbox{]}
+\item 
+static const Multi\+Character\+Special\+Case$<$ 2 $>$ {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings0} \mbox{[}2\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table0\+Size} = 488\hypertarget{unicode_8cc_aa3b561dac34f57f89621492f9c112eb8}{}\label{unicode_8cc_aa3b561dac34f57f89621492f9c112eb8}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table0} \mbox{[}976\mbox{]}\hypertarget{unicode_8cc_a4f1a78bf331d23eecd575d53a6221004}{}\label{unicode_8cc_a4f1a78bf331d23eecd575d53a6221004}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings0\+Size} = 2\hypertarget{unicode_8cc_ade93a307773473e72d1ac2781051f22c}{}\label{unicode_8cc_ade93a307773473e72d1ac2781051f22c}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings1} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table1\+Size} = 79\hypertarget{unicode_8cc_a48b5a922bf067747ff41594c663fca95}{}\label{unicode_8cc_a48b5a922bf067747ff41594c663fca95}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table1} \mbox{[}158\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings1\+Size} = 1\hypertarget{unicode_8cc_a6f2e7579fa93ba952c69e5a39ba95fa9}{}\label{unicode_8cc_a6f2e7579fa93ba952c69e5a39ba95fa9}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings5} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table5\+Size} = 103\hypertarget{unicode_8cc_a628c94a838b53ca91003a5ca8f5ac77c}{}\label{unicode_8cc_a628c94a838b53ca91003a5ca8f5ac77c}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table5} \mbox{[}206\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings5\+Size} = 1\hypertarget{unicode_8cc_a00c20c238de8aa822a29849c855a4026}{}\label{unicode_8cc_a00c20c238de8aa822a29849c855a4026}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings7} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table7\+Size} = 2\hypertarget{unicode_8cc_aa5513e02d6576eb6d45a860d57c92782}{}\label{unicode_8cc_aa5513e02d6576eb6d45a860d57c92782}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Table7} \mbox{[}4\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Lowercase\+Multi\+Strings7\+Size} = 1\hypertarget{unicode_8cc_a19949f0519b53e86081ecccb4697848c}{}\label{unicode_8cc_a19949f0519b53e86081ecccb4697848c}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 3 $>$ {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings0} \mbox{[}62\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table0\+Size} = 590\hypertarget{unicode_8cc_a54162d183e9e50930eb3aaf62f7d43d3}{}\label{unicode_8cc_a54162d183e9e50930eb3aaf62f7d43d3}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table0} \mbox{[}1180\mbox{]}\hypertarget{unicode_8cc_ada7b57150094f43a4f40b2243a65c787}{}\label{unicode_8cc_ada7b57150094f43a4f40b2243a65c787}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings0\+Size} = 62\hypertarget{unicode_8cc_a2158cc852b24e64aaf72cbb2e7821d4d}{}\label{unicode_8cc_a2158cc852b24e64aaf72cbb2e7821d4d}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings1} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table1\+Size} = 73\hypertarget{unicode_8cc_a1663b8e9e91a4eb08222d3d7ab714683}{}\label{unicode_8cc_a1663b8e9e91a4eb08222d3d7ab714683}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table1} \mbox{[}146\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings1\+Size} = 1\hypertarget{unicode_8cc_ae62dd0f000c73768058e93640f562533}{}\label{unicode_8cc_ae62dd0f000c73768058e93640f562533}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings5} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table5\+Size} = 95\hypertarget{unicode_8cc_a0fb416998426fdaa8694cb80367e23de}{}\label{unicode_8cc_a0fb416998426fdaa8694cb80367e23de}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table5} \mbox{[}190\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings5\+Size} = 1\hypertarget{unicode_8cc_ab30335b71c4a47477d12d4b04c991729}{}\label{unicode_8cc_ab30335b71c4a47477d12d4b04c991729}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 3 $>$ {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings7} \mbox{[}12\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table7\+Size} = 14\hypertarget{unicode_8cc_a51078cff8ad5f5119834a49b3e771e65}{}\label{unicode_8cc_a51078cff8ad5f5119834a49b3e771e65}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Table7} \mbox{[}28\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+To\+Uppercase\+Multi\+Strings7\+Size} = 12\hypertarget{unicode_8cc_a63b4ff450f532f235179738135093e84}{}\label{unicode_8cc_a63b4ff450f532f235179738135093e84}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings0} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table0\+Size} = 498\hypertarget{unicode_8cc_af418c4d103cdbf612092efee24aab464}{}\label{unicode_8cc_af418c4d103cdbf612092efee24aab464}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table0} \mbox{[}996\mbox{]}\hypertarget{unicode_8cc_a760ffbe99d4a323c07cb6e4c8a60f761}{}\label{unicode_8cc_a760ffbe99d4a323c07cb6e4c8a60f761}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings0\+Size} = 1\hypertarget{unicode_8cc_af338ecd66d5b82317e7b7e54efa4cc38}{}\label{unicode_8cc_af338ecd66d5b82317e7b7e54efa4cc38}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings1} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table1\+Size} = 73\hypertarget{unicode_8cc_af58b9f9f61d62b43f8b53a952890e059}{}\label{unicode_8cc_af58b9f9f61d62b43f8b53a952890e059}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table1} \mbox{[}146\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings1\+Size} = 1\hypertarget{unicode_8cc_a8e332a43dfb0d2a6aa2bd98199f4dfd7}{}\label{unicode_8cc_a8e332a43dfb0d2a6aa2bd98199f4dfd7}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings5} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table5\+Size} = 95\hypertarget{unicode_8cc_a25d653432578fa06952e57a017e09aac}{}\label{unicode_8cc_a25d653432578fa06952e57a017e09aac}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table5} \mbox{[}190\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings5\+Size} = 1\hypertarget{unicode_8cc_a6d233db610140f357c649fb8d283432b}{}\label{unicode_8cc_a6d233db610140f357c649fb8d283432b}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings7} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table7\+Size} = 2\hypertarget{unicode_8cc_a175834c5edc782a925aaef15d8807fac}{}\label{unicode_8cc_a175834c5edc782a925aaef15d8807fac}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Table7} \mbox{[}4\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings7\+Size} = 1\hypertarget{unicode_8cc_a4c9d9664e1545f04a045a04678a7b8e4}{}\label{unicode_8cc_a4c9d9664e1545f04a045a04678a7b8e4}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 4 $>$ {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings0} \mbox{[}507\mbox{]}\hypertarget{unicode_8cc_abd5008667adb462ff7d239a9637271e2}{}\label{unicode_8cc_abd5008667adb462ff7d239a9637271e2}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table0\+Size} = 1005\hypertarget{unicode_8cc_a8e6642beff7dd071c3a8fb571cbc3b6d}{}\label{unicode_8cc_a8e6642beff7dd071c3a8fb571cbc3b6d}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table0} \mbox{[}2010\mbox{]}\hypertarget{unicode_8cc_a4edfc0b257f9b8996bbb5d13c6b8728c}{}\label{unicode_8cc_a4edfc0b257f9b8996bbb5d13c6b8728c}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings0\+Size} = 507\hypertarget{unicode_8cc_a5bb809d8883d36becd29cb32f22a7843}{}\label{unicode_8cc_a5bb809d8883d36becd29cb32f22a7843}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 2 $>$ {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1} \mbox{[}83\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table1\+Size} = 149\hypertarget{unicode_8cc_addc32ec5deeeb6ac7d317532973db52b}{}\label{unicode_8cc_addc32ec5deeeb6ac7d317532973db52b}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table1} \mbox{[}298\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1\+Size} = 83\hypertarget{unicode_8cc_a63dbef19a1d7b641455d54b57fd866d5}{}\label{unicode_8cc_a63dbef19a1d7b641455d54b57fd866d5}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 2 $>$ {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings5} \mbox{[}104\mbox{]}\hypertarget{unicode_8cc_af6832f93ae88c35f37bb0b7e15f43827}{}\label{unicode_8cc_af6832f93ae88c35f37bb0b7e15f43827}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table5\+Size} = 198\hypertarget{unicode_8cc_ab30e0eb6cfffe8e3380f46f1dcd7f9a5}{}\label{unicode_8cc_ab30e0eb6cfffe8e3380f46f1dcd7f9a5}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table5} \mbox{[}396\mbox{]}\hypertarget{unicode_8cc_af9d7acb6bf39d49c768d9cec3cdbb09c}{}\label{unicode_8cc_af9d7acb6bf39d49c768d9cec3cdbb09c}
+
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings5\+Size} = 104\hypertarget{unicode_8cc_acca51c8c0e2c2677e41a24fdef75df51}{}\label{unicode_8cc_acca51c8c0e2c2677e41a24fdef75df51}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 2 $>$ {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7} \mbox{[}3\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table7\+Size} = 4\hypertarget{unicode_8cc_a2ec97bb81fec164ec4df05f51403908b}{}\label{unicode_8cc_a2ec97bb81fec164ec4df05f51403908b}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table7} \mbox{[}8\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7\+Size} = 3\hypertarget{unicode_8cc_a3f6eea1571f9b0a62b46c0a202ebd79a}{}\label{unicode_8cc_a3f6eea1571f9b0a62b46c0a202ebd79a}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings0} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table0\+Size} = 70\hypertarget{unicode_8cc_aa17fabf9382a150844209a452017824e}{}\label{unicode_8cc_aa17fabf9382a150844209a452017824e}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table0} \mbox{[}140\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings0\+Size} = 1\hypertarget{unicode_8cc_af79793610e4ba6735b13a2d6a4639378}{}\label{unicode_8cc_af79793610e4ba6735b13a2d6a4639378}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings1} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table1\+Size} = 14\hypertarget{unicode_8cc_a5a5415b11db922d3b76b1c1a859f5384}{}\label{unicode_8cc_a5a5415b11db922d3b76b1c1a859f5384}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table1} \mbox{[}28\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings1\+Size} = 1\hypertarget{unicode_8cc_aa74c0d5f0c6e88d0b584fa7abd520cb7}{}\label{unicode_8cc_aa74c0d5f0c6e88d0b584fa7abd520cb7}
+
+\item 
+static const Multi\+Character\+Special\+Case$<$ 1 $>$ {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings7} \mbox{[}1\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table7\+Size} = 4\hypertarget{unicode_8cc_a020bffa8c5ec9afc6b54d03b21f9de53}{}\label{unicode_8cc_a020bffa8c5ec9afc6b54d03b21f9de53}
+
+\item 
+static const int32\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Table7} \mbox{[}8\mbox{]}
+\item 
+static const uint16\+\_\+t {\bfseries unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings7\+Size} = 1\hypertarget{unicode_8cc_a7973f966246bd958e6e07e24dddac9d3}{}\label{unicode_8cc_a7973f966246bd958e6e07e24dddac9d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementations of functions for working with unicode. 
+
+\subsection{Function Documentation}
+\index{unicode.\+cc@{unicode.\+cc}!Lookup\+Predicate@{Lookup\+Predicate}}
+\index{Lookup\+Predicate@{Lookup\+Predicate}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{Lookup\+Predicate(const int32\+\_\+t $\ast$table, uint16\+\_\+t size, uchar chr)}{LookupPredicate(const int32_t *table, uint16_t size, uchar chr)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool unibrow\+::\+Lookup\+Predicate (
+\begin{DoxyParamCaption}
+\item[{const int32\+\_\+t $\ast$}]{table, }
+\item[{uint16\+\_\+t}]{size, }
+\item[{uchar}]{chr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ae0104c29021e60659d5de7c3f05dac88}{}\label{unicode_8cc_file_ae0104c29021e60659d5de7c3f05dac88}
+Look up a character in the unicode table using a mix of binary and interpolation search. For a uniformly distributed array interpolation search beats binary search by a wide margin. However, in this case interpolation search degenerates because of some very high values in the lower end of the table so this function uses a combination. The average number of steps to look up the information about a character is around 10, slightly higher if there is no information available about the character. 
+
+\subsection{Variable Documentation}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Multi\+Strings0@{k\+Canonicalization\+Range\+Multi\+Strings0}}
+\index{k\+Canonicalization\+Range\+Multi\+Strings0@{k\+Canonicalization\+Range\+Multi\+Strings0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Multi\+Strings0}{kCanonicalizationRangeMultiStrings0}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings0\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_adcc24e53815baa2572bb56b2c5e066b6}{}\label{unicode_8cc_file_adcc24e53815baa2572bb56b2c5e066b6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Multi\+Strings1@{k\+Canonicalization\+Range\+Multi\+Strings1}}
+\index{k\+Canonicalization\+Range\+Multi\+Strings1@{k\+Canonicalization\+Range\+Multi\+Strings1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Multi\+Strings1}{kCanonicalizationRangeMultiStrings1}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings1\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a8370459edefdecfd897b39d6776d34d8}{}\label{unicode_8cc_file_a8370459edefdecfd897b39d6776d34d8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Multi\+Strings7@{k\+Canonicalization\+Range\+Multi\+Strings7}}
+\index{k\+Canonicalization\+Range\+Multi\+Strings7@{k\+Canonicalization\+Range\+Multi\+Strings7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Multi\+Strings7}{kCanonicalizationRangeMultiStrings7}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Canonicalization\+Range\+Multi\+Strings7\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a5c79d3a62205eafaa08968cb0936d945}{}\label{unicode_8cc_file_a5c79d3a62205eafaa08968cb0936d945}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Table0@{k\+Canonicalization\+Range\+Table0}}
+\index{k\+Canonicalization\+Range\+Table0@{k\+Canonicalization\+Range\+Table0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Table0}{kCanonicalizationRangeTable0}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Canonicalization\+Range\+Table0\mbox{[}140\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ae2b8198ea55761a7263e0c282179928a}{}\label{unicode_8cc_file_ae2b8198ea55761a7263e0c282179928a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741889, 100, 90, 0, 1073741921, 100, 122, 0, 1073742016, 88, 214, 0, 1073742040, 24, 222, 0,  
+  1073742048, 88, 246, 0, 1073742072, 24, 254, 0, 1073742715, 8, 893, 0, 1073742728, 8, 906, 0,  
+  1073742749, 8, 927, 0, 1073742759, 16, 939, 0, 1073742765, 8, 943, 0, 1073742781, 8, 959, 0,  
+  1073742791, 16, 971, 0, 1073742845, 8, 1023, 0, 1073742848, 60, 1039, 0, 1073742864, 124, 1071, 0,  
+  1073742896, 124, 1103, 0, 1073742928, 60, 1119, 0, 1073743153, 148, 1366, 0, 1073743201, 148, 1414, 0,  
+  1073746080, 148, 4293, 0, 1073749760, 28, 7943, 0, 1073749768, 28, 7951, 0, 1073749776, 20, 7957, 0,  
+  1073749784, 20, 7965, 0, 1073749792, 28, 7975, 0, 1073749800, 28, 7983, 0, 1073749808, 28, 7991, 0,  
+  1073749816, 28, 7999, 0, 1073749824, 20, 8005, 0, 1073749832, 20, 8013, 0, 1073749856, 28, 8039, 0,  
+  1073749864, 28, 8047, 0, 1073749874, 12, 8053, 0, 1073749960, 12, 8139, 0 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Table1@{k\+Canonicalization\+Range\+Table1}}
+\index{k\+Canonicalization\+Range\+Table1@{k\+Canonicalization\+Range\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Table1}{kCanonicalizationRangeTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Canonicalization\+Range\+Table1\mbox{[}28\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a54119865cf8f2cc1b3684f47c54dc960}{}\label{unicode_8cc_file_a54119865cf8f2cc1b3684f47c54dc960}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073742176, 60, 367, 0, 1073742192, 60, 383, 0, 1073743030, 100, 1231, 0, 1073743056, 100, 1257, 0,  
+  1073744896, 184, 3118, 0, 1073744944, 184, 3166, 0, 1073745152, 148, 3365, 0 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Canonicalization\+Range\+Table7@{k\+Canonicalization\+Range\+Table7}}
+\index{k\+Canonicalization\+Range\+Table7@{k\+Canonicalization\+Range\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Canonicalization\+Range\+Table7}{kCanonicalizationRangeTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Canonicalization\+Range\+Table7\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a2175fc6ede75b96f59e65cb1d59d4d86}{}\label{unicode_8cc_file_a2175fc6ede75b96f59e65cb1d59d4d86}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073749793, 100, 7994, 0, 1073749825, 100, 8026, 0 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Multi\+Strings0@{k\+Ecma262\+Canonicalize\+Multi\+Strings0}}
+\index{k\+Ecma262\+Canonicalize\+Multi\+Strings0@{k\+Ecma262\+Canonicalize\+Multi\+Strings0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Multi\+Strings0}{kEcma262CanonicalizeMultiStrings0}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings0\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_afbd7a7aaf248130b0c742e79f9fae747}{}\label{unicode_8cc_file_afbd7a7aaf248130b0c742e79f9fae747}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Multi\+Strings1@{k\+Ecma262\+Canonicalize\+Multi\+Strings1}}
+\index{k\+Ecma262\+Canonicalize\+Multi\+Strings1@{k\+Ecma262\+Canonicalize\+Multi\+Strings1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Multi\+Strings1}{kEcma262CanonicalizeMultiStrings1}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings1\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a017e0d421082b132d5329dfd603e2f9c}{}\label{unicode_8cc_file_a017e0d421082b132d5329dfd603e2f9c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Multi\+Strings5@{k\+Ecma262\+Canonicalize\+Multi\+Strings5}}
+\index{k\+Ecma262\+Canonicalize\+Multi\+Strings5@{k\+Ecma262\+Canonicalize\+Multi\+Strings5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Multi\+Strings5}{kEcma262CanonicalizeMultiStrings5}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings5\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a3ffbad9f94e53ea8b79cbea8a8280bc0}{}\label{unicode_8cc_file_a3ffbad9f94e53ea8b79cbea8a8280bc0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Multi\+Strings7@{k\+Ecma262\+Canonicalize\+Multi\+Strings7}}
+\index{k\+Ecma262\+Canonicalize\+Multi\+Strings7@{k\+Ecma262\+Canonicalize\+Multi\+Strings7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Multi\+Strings7}{kEcma262CanonicalizeMultiStrings7}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+Ecma262\+Canonicalize\+Multi\+Strings7\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a27343dc7e3ba16efc3e538c3ba02e7d6}{}\label{unicode_8cc_file_a27343dc7e3ba16efc3e538c3ba02e7d6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Table1@{k\+Ecma262\+Canonicalize\+Table1}}
+\index{k\+Ecma262\+Canonicalize\+Table1@{k\+Ecma262\+Canonicalize\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Table1}{kEcma262CanonicalizeTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Ecma262\+Canonicalize\+Table1\mbox{[}146\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_aba3dc92761cf6953c1dc9437a20be822}{}\label{unicode_8cc_file_aba3dc92761cf6953c1dc9437a20be822}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  334, -112, 1073742192, -64, 383, -64, 388, -4, 1073743056, -104, 1257, -104, 1073744944, -192, 3166, -192
+      ,  
+  3169, -4, 3173, -43180, 3174, -43168, 3176, -4, 3178, -4, 3180, -4, 3187, -4, 3190, -4,  
+  3201, -4, 3203, -4, 3205, -4, 3207, -4, 3209, -4, 3211, -4, 3213, -4, 3215, -4,  
+  3217, -4, 3219, -4, 3221, -4, 3223, -4, 3225, -4, 3227, -4, 3229, -4, 3231, -4,  
+  3233, -4, 3235, -4, 3237, -4, 3239, -4, 3241, -4, 3243, -4, 3245, -4, 3247, -4,  
+  3249, -4, 3251, -4, 3253, -4, 3255, -4, 3257, -4, 3259, -4, 3261, -4, 3263, -4,  
+  3265, -4, 3267, -4, 3269, -4, 3271, -4, 3273, -4, 3275, -4, 3277, -4, 3279, -4,  
+  3281, -4, 3283, -4, 3285, -4, 3287, -4, 3289, -4, 3291, -4, 3293, -4, 3295, -4,  
+  3297, -4, 3299, -4, 3308, -4, 3310, -4, 3315, -4, 1073745152, -29056, 3365, -29056, 3367, -29056,  
+  3373, -29056 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Table5@{k\+Ecma262\+Canonicalize\+Table5}}
+\index{k\+Ecma262\+Canonicalize\+Table5@{k\+Ecma262\+Canonicalize\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Table5}{kEcma262CanonicalizeTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Ecma262\+Canonicalize\+Table5\mbox{[}190\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ae2d3c00379d0289496b1003b22c71cf9}{}\label{unicode_8cc_file_ae2d3c00379d0289496b1003b22c71cf9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{1601, -4, 1603, -4, 1605, -4, 1607, -4,
+             1609, -4, 1611, -4, 1613, -4, 1615, -4,  
+             1617, -4, 1619, -4, 1621, -4, 1623, -4,
+             1625, -4, 1627, -4, 1629, -4, 1631, -4,  
+             1633, -4, 1635, -4, 1637, -4, 1639, -4,
+             1641, -4, 1643, -4, 1645, -4, 1665, -4,  
+             1667, -4, 1669, -4, 1671, -4, 1673, -4,
+             1675, -4, 1677, -4, 1679, -4, 1681, -4,  
+             1683, -4, 1685, -4, 1687, -4, 1689, -4,
+             1691, -4, 1827, -4, 1829, -4, 1831, -4,  
+             1833, -4, 1835, -4, 1837, -4, 1839, -4,
+             1843, -4, 1845, -4, 1847, -4, 1849, -4,  
+             1851, -4, 1853, -4, 1855, -4, 1857, -4,
+             1859, -4, 1861, -4, 1863, -4, 1865, -4,  
+             1867, -4, 1869, -4, 1871, -4, 1873, -4,
+             1875, -4, 1877, -4, 1879, -4, 1881, -4,  
+             1883, -4, 1885, -4, 1887, -4, 1889, -4,
+             1891, -4, 1893, -4, 1895, -4, 1897, -4,  
+             1899, -4, 1901, -4, 1903, -4, 1914, -4,
+             1916, -4, 1919, -4, 1921, -4, 1923, -4,  
+             1925, -4, 1927, -4, 1932, -4, 1937, -4,
+             1939, -4, 1943, -4, 1945, -4, 1947, -4,  
+             1949, -4, 1951, -4, 1953, -4, 1955, -4,
+             1957, -4, 1959, -4, 1961, -4\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Canonicalize\+Table7@{k\+Ecma262\+Canonicalize\+Table7}}
+\index{k\+Ecma262\+Canonicalize\+Table7@{k\+Ecma262\+Canonicalize\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Canonicalize\+Table7}{kEcma262CanonicalizeTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Ecma262\+Canonicalize\+Table7\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_af427a2a749a26b048712f18b75cd04a6}{}\label{unicode_8cc_file_af427a2a749a26b048712f18b75cd04a6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073749825, -128, 8026, -128 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1@{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1}}
+\index{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1@{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1}{kEcma262UnCanonicalizeMultiStrings1}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$2$>$ unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings1\mbox{[}83\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a065aefe332a0b3b62baedb8dd8142858}{}\label{unicode_8cc_file_a065aefe332a0b3b62baedb8dd8142858}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{8498, 8526\}\}, \{\{8544, 8560\}\}, \{\{8559, 8575\}\}, \{\{8579, 8580\}\},  
+  \{\{9398, 9424\}\}, \{\{9423, 9449\}\}, \{\{11264, 11312\}\}, \{\{11310, 11358\}\},  
+  \{\{11360, 11361\}\}, \{\{619, 11362\}\}, \{\{7549, 11363\}\}, \{\{637, 11364\}\},  
+  \{\{570, 11365\}\}, \{\{574, 11366\}\}, \{\{11367, 11368\}\}, \{\{11369, 11370\}\},  
+  \{\{11371, 11372\}\}, \{\{593, 11373\}\}, \{\{625, 11374\}\}, \{\{592, 11375\}\},  
+  \{\{594, 11376\}\}, \{\{11378, 11379\}\}, \{\{11381, 11382\}\}, \{\{575, 11390\}\},  
+  \{\{576, 11391\}\}, \{\{11392, 11393\}\}, \{\{11394, 11395\}\}, \{\{11396, 11397\}\},  
+  \{\{11398, 11399\}\}, \{\{11400, 11401\}\}, \{\{11402, 11403\}\}, \{\{11404, 11405\}\},  
+  \{\{11406, 11407\}\}, \{\{11408, 11409\}\}, \{\{11410, 11411\}\}, \{\{11412, 11413\}\},  
+  \{\{11414, 11415\}\}, \{\{11416, 11417\}\}, \{\{11418, 11419\}\}, \{\{11420, 11421\}\},  
+  \{\{11422, 11423\}\}, \{\{11424, 11425\}\}, \{\{11426, 11427\}\}, \{\{11428, 11429\}\},  
+  \{\{11430, 11431\}\}, \{\{11432, 11433\}\}, \{\{11434, 11435\}\}, \{\{11436, 11437\}\},  
+  \{\{11438, 11439\}\}, \{\{11440, 11441\}\}, \{\{11442, 11443\}\}, \{\{11444, 11445\}\},  
+  \{\{11446, 11447\}\}, \{\{11448, 11449\}\}, \{\{11450, 11451\}\}, \{\{11452, 11453\}\},  
+  \{\{11454, 11455\}\}, \{\{11456, 11457\}\}, \{\{11458, 11459\}\}, \{\{11460, 11461\}\},  
+  \{\{11462, 11463\}\}, \{\{11464, 11465\}\}, \{\{11466, 11467\}\}, \{\{11468, 11469\}\},  
+  \{\{11470, 11471\}\}, \{\{11472, 11473\}\}, \{\{11474, 11475\}\}, \{\{11476, 11477\}\},  
+  \{\{11478, 11479\}\}, \{\{11480, 11481\}\}, \{\{11482, 11483\}\}, \{\{11484, 11485\}\},  
+  \{\{11486, 11487\}\}, \{\{11488, 11489\}\}, \{\{11490, 11491\}\}, \{\{11499, 11500\}\},  
+  \{\{11501, 11502\}\}, \{\{11506, 11507\}\}, \{\{4256, 11520\}\}, \{\{4293, 11557\}\},  
+  \{\{4295, 11559\}\}, \{\{4301, 11565\}\}, \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7@{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7}}
+\index{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7@{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7}{kEcma262UnCanonicalizeMultiStrings7}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$2$>$ unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Multi\+Strings7\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ace9d0ed3d5fd1bfbd9c16619fe8d3eec}{}\label{unicode_8cc_file_ace9d0ed3d5fd1bfbd9c16619fe8d3eec}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{65313, 65345\}\}, \{\{65338, 65370\}\}, \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Un\+Canonicalize\+Table1@{k\+Ecma262\+Un\+Canonicalize\+Table1}}
+\index{k\+Ecma262\+Un\+Canonicalize\+Table1@{k\+Ecma262\+Un\+Canonicalize\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Un\+Canonicalize\+Table1}{kEcma262UnCanonicalizeTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table1\mbox{[}298\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_aa4d7e21f30d143266734e68d72415efb}{}\label{unicode_8cc_file_aa4d7e21f30d143266734e68d72415efb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  306, 1, 334, 1, 1073742176, 5, 367, 9, 1073742192, 5, 383, 9, 387, 13, 388, 13,  
+  1073743030, 17, 1231, 21, 1073743056, 17, 1257, 21, 1073744896, 25, 3118, 29, 1073744944, 25, 3166, 29,  
+  3168, 33, 3169, 33, 3170, 37, 3171, 41, 3172, 45, 3173, 49, 3174, 53, 3175, 57,  
+  3176, 57, 3177, 61, 3178, 61, 3179, 65, 3180, 65, 3181, 69, 3182, 73, 3183, 77,  
+  3184, 81, 3186, 85, 3187, 85, 3189, 89, 3190, 89, 1073745022, 93, 3199, 97, 3200, 101,  
+  3201, 101, 3202, 105, 3203, 105, 3204, 109, 3205, 109, 3206, 113, 3207, 113, 3208, 117,  
+  3209, 117, 3210, 121, 3211, 121, 3212, 125, 3213, 125, 3214, 129, 3215, 129, 3216, 133,  
+  3217, 133, 3218, 137, 3219, 137, 3220, 141, 3221, 141, 3222, 145, 3223, 145, 3224, 149,  
+  3225, 149, 3226, 153, 3227, 153, 3228, 157, 3229, 157, 3230, 161, 3231, 161, 3232, 165,  
+  3233, 165, 3234, 169, 3235, 169, 3236, 173, 3237, 173, 3238, 177, 3239, 177, 3240, 181,  
+  3241, 181, 3242, 185, 3243, 185, 3244, 189, 3245, 189, 3246, 193, 3247, 193, 3248, 197,  
+  3249, 197, 3250, 201, 3251, 201, 3252, 205, 3253, 205, 3254, 209, 3255, 209, 3256, 213,  
+  3257, 213, 3258, 217, 3259, 217, 3260, 221, 3261, 221, 3262, 225, 3263, 225, 3264, 229,  
+  3265, 229, 3266, 233, 3267, 233, 3268, 237, 3269, 237, 3270, 241, 3271, 241, 3272, 245,  
+  3273, 245, 3274, 249, 3275, 249, 3276, 253, 3277, 253, 3278, 257, 3279, 257, 3280, 261,  
+  3281, 261, 3282, 265, 3283, 265, 3284, 269, 3285, 269, 3286, 273, 3287, 273, 3288, 277,  
+  3289, 277, 3290, 281, 3291, 281, 3292, 285, 3293, 285, 3294, 289, 3295, 289, 3296, 293,  
+  3297, 293, 3298, 297, 3299, 297, 3307, 301, 3308, 301, 3309, 305, 3310, 305, 3314, 309,  
+  3315, 309, 1073745152, 313, 3365, 317, 3367, 321, 3373, 325 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Ecma262\+Un\+Canonicalize\+Table7@{k\+Ecma262\+Un\+Canonicalize\+Table7}}
+\index{k\+Ecma262\+Un\+Canonicalize\+Table7@{k\+Ecma262\+Un\+Canonicalize\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Ecma262\+Un\+Canonicalize\+Table7}{kEcma262UnCanonicalizeTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Ecma262\+Un\+Canonicalize\+Table7\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ab1741ae3cb132867e5fc734701a1927e}{}\label{unicode_8cc_file_ab1741ae3cb132867e5fc734701a1927e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073749793, 1, 7994, 5, 1073749825, 1, 8026, 5 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Continue\+Table1@{k\+I\+D\+\_\+\+Continue\+Table1}}
+\index{k\+I\+D\+\_\+\+Continue\+Table1@{k\+I\+D\+\_\+\+Continue\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Continue\+Table1}{kID_ContinueTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Continue\+Table1\mbox{[}19\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ac53344174561c945dee64dfe79335f46}{}\label{unicode_8cc_file_ac53344174561c945dee64dfe79335f46}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1073741836, 13,         1073741887, 64,
+    84,         1073742032, 220,        225,  
+    1073742053, 240,        1073745135, 3313,
+    3455,       1073745376, 3583,       1073745962,  
+    4143,       1073746073, 4250\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Continue\+Table5@{k\+I\+D\+\_\+\+Continue\+Table5}}
+\index{k\+I\+D\+\_\+\+Continue\+Table5@{k\+I\+D\+\_\+\+Continue\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Continue\+Table5}{kID_ContinueTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Continue\+Table5\mbox{[}63\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a6165945f9a606d464d99ade58545d201}{}\label{unicode_8cc_file_a6165945f9a606d464d99ade58545d201}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1073743392, 1577,       1647,       1073743476,
+    1661,       1695,       1073743600, 1777,  
+    2050,       2054,       2059,       1073743907,
+    2087,       1073744000, 2177,       1073744052,  
+    2244,       1073744080, 2265,       1073744096,
+    2289,       1073744128, 2313,       1073744166,  
+    2349,       1073744199, 2387,       1073744256,
+    2435,       1073744307, 2496,       1073744336,  
+    2521,       2533,       1073744368, 2553,
+    1073744425, 2614,       2627,       1073744460,  
+    2637,       1073744464, 2649,       1073744507,
+    2685,       2736,       1073744562, 2740,  
+    1073744567, 2744,       1073744574, 2751,
+    2753,       1073744619, 2799,       1073744629,  
+    2806,       1073744867, 3050,       1073744876,
+    3053,       1073744880, 3065\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Continue\+Table7@{k\+I\+D\+\_\+\+Continue\+Table7}}
+\index{k\+I\+D\+\_\+\+Continue\+Table7@{k\+I\+D\+\_\+\+Continue\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Continue\+Table7}{kID_ContinueTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Continue\+Table7\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_abd4a757fb7b505de11dde620197dcaab}{}\label{unicode_8cc_file_abd4a757fb7b505de11dde620197dcaab}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    6942, 1073749504, 7695, 1073749536,
+    7725, 1073749555, 7732, 1073749581,  
+    7759, 1073749776, 7961, 7999\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Start\+Table1@{k\+I\+D\+\_\+\+Start\+Table1}}
+\index{k\+I\+D\+\_\+\+Start\+Table1@{k\+I\+D\+\_\+\+Start\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Start\+Table1}{kID_StartTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Start\+Table1\mbox{[}84\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a4aa253789f3a145b9765bd42b2c85097}{}\label{unicode_8cc_file_a4aa253789f3a145b9765bd42b2c85097}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    113,        127,        1073741968, 156,
+    258,        263,        1073742090, 275,  
+    277,        1073742104, 285,        292,
+    294,        296,        1073742122, 313,  
+    1073742140, 319,        1073742149, 329,
+    334,        1073742176, 392,        1073744896,  
+    3118,       1073744944, 3166,       1073744992,
+    3300,       1073745131, 3310,       1073745138,  
+    3315,       1073745152, 3365,       3367,
+    3373,       1073745200, 3431,       3439,  
+    1073745280, 3478,       1073745312, 3494,
+    1073745320, 3502,       1073745328, 3510,  
+    1073745336, 3518,       1073745344, 3526,
+    1073745352, 3534,       1073745360, 3542,  
+    1073745368, 3550,       1073745925, 4103,
+    1073745953, 4137,       1073745969, 4149,  
+    1073745976, 4156,       1073745985, 4246,
+    1073746075, 4255,       1073746081, 4346,  
+    1073746172, 4351,       1073746181, 4397,
+    1073746225, 4494,       1073746336, 4538,   
+    1073746416, 4607,       1073746944, 8191\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Start\+Table2@{k\+I\+D\+\_\+\+Start\+Table2}}
+\index{k\+I\+D\+\_\+\+Start\+Table2@{k\+I\+D\+\_\+\+Start\+Table2}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Start\+Table2}{kID_StartTable2}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Start\+Table2\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a5d2333c55c8912298b6a5d8ce5289a0a}{}\label{unicode_8cc_file_a5d2333c55c8912298b6a5d8ce5289a0a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{1073741824, 3509, 1073745408,
+                                           8191\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Start\+Table5@{k\+I\+D\+\_\+\+Start\+Table5}}
+\index{k\+I\+D\+\_\+\+Start\+Table5@{k\+I\+D\+\_\+\+Start\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Start\+Table5}{kID_StartTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Start\+Table5\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_af2c1a2719704e9de14954c3aaa0dc9ca}{}\label{unicode_8cc_file_af2c1a2719704e9de14954c3aaa0dc9ca}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1073741824, 1164,       1073743056, 1277,
+    1073743104, 1548,       1073743376, 1567,  
+    1073743402, 1579,       1073743424, 1646,
+    1073743487, 1693,       1073743520, 1775,  
+    1073743639, 1823,       1073743650, 1928,
+    1073743755, 1934,       1073743760, 1965,  
+    1073743792, 1969,       1073743863, 2049,
+    1073743875, 2053,       1073743879, 2058,  
+    1073743884, 2082,       1073743936, 2163,
+    1073744002, 2227,       1073744114, 2295,  
+    2299,       1073744138, 2341,       1073744176,
+    2374,       1073744224, 2428,       1073744260,  
+    2482,       2511,       1073744352, 2532,
+    1073744358, 2543,       1073744378, 2558,  
+    1073744384, 2600,       1073744448, 2626,
+    1073744452, 2635,       1073744480, 2678,  
+    2682,       1073744510, 2735,       2737,
+    1073744565, 2742,       1073744569, 2749,  
+    2752,       2754,       1073744603, 2781,
+    1073744608, 2794,       1073744626, 2804,  
+    1073744641, 2822,       1073744649, 2830,
+    1073744657, 2838,       1073744672, 2854,  
+    1073744680, 2862,       1073744688, 2906,
+    1073744732, 2911,       1073744740, 2917,   
+    1073744832, 3042,       1073744896, 8191\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Start\+Table6@{k\+I\+D\+\_\+\+Start\+Table6}}
+\index{k\+I\+D\+\_\+\+Start\+Table6@{k\+I\+D\+\_\+\+Start\+Table6}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Start\+Table6}{kID_StartTable6}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Start\+Table6\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a01915c7033eb9e741c475baafc945c13}{}\label{unicode_8cc_file_a01915c7033eb9e741c475baafc945c13}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{1073741824, 6051, 1073747888, 6086,
+                                           1073747915, 6139\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+I\+D\+\_\+\+Start\+Table7@{k\+I\+D\+\_\+\+Start\+Table7}}
+\index{k\+I\+D\+\_\+\+Start\+Table7@{k\+I\+D\+\_\+\+Start\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+I\+D\+\_\+\+Start\+Table7}{kID_StartTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+I\+D\+\_\+\+Start\+Table7\mbox{[}48\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a670003bc25a272e9014e5f88f9b25fbf}{}\label{unicode_8cc_file_a670003bc25a272e9014e5f88f9b25fbf}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1073748224, 6765,       1073748592, 6873,
+    1073748736, 6918,       1073748755, 6935,  
+    6941,       1073748767, 6952,       1073748778,
+    6966,       1073748792, 6972,       6974,  
+    1073748800, 6977,       1073748803, 6980,
+    1073748806, 7089,       1073748947, 7485,  
+    1073749328, 7567,       1073749394, 7623,
+    1073749488, 7675,       1073749616, 7796,  
+    1073749622, 7932,       1073749793, 7994,
+    1073749825, 8026,       1073749862, 8126,  
+    1073749954, 8135,       1073749962, 8143,
+    1073749970, 8151,       1073749978, 8156\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table1@{k\+Letter\+Table1}}
+\index{k\+Letter\+Table1@{k\+Letter\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table1}{kLetterTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table1\mbox{[}87\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a17baad21face050edb219061a9e06038}{}\label{unicode_8cc_file_a17baad21face050edb219061a9e06038}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  113, 127, 1073741968, 156, 258, 263, 1073742090, 275,  
+  277, 1073742105, 285, 292, 294, 296, 1073742122, 301,  
+  1073742127, 313, 1073742140, 319, 1073742149, 329, 334, 1073742176,  
+  392, 1073744896, 3118, 1073744944, 3166, 1073744992, 3300, 1073745131,  
+  3310, 1073745138, 3315, 1073745152, 3365, 3367, 3373, 1073745200,  
+  3431, 3439, 1073745280, 3478, 1073745312, 3494, 1073745320, 3502,  
+  1073745328, 3510, 1073745336, 3518, 1073745344, 3526, 1073745352, 3534,  
+  1073745360, 3542, 1073745368, 3550, 3631, 1073745925, 4103, 1073745953,  
+  4137, 1073745969, 4149, 1073745976, 4156, 1073745985, 4246, 1073746077,  
+  4255, 1073746081, 4346, 1073746172, 4351, 1073746181, 4397, 1073746225,  
+  4494, 1073746336, 4538, 1073746416, 4607, 1073746944, 8191 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table2@{k\+Letter\+Table2}}
+\index{k\+Letter\+Table2@{k\+Letter\+Table2}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table2}{kLetterTable2}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table2\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a98d393a69a0c68a3f79adf6c8e131feb}{}\label{unicode_8cc_file_a98d393a69a0c68a3f79adf6c8e131feb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741824, 3509, 1073745408, 8191 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table3@{k\+Letter\+Table3}}
+\index{k\+Letter\+Table3@{k\+Letter\+Table3}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table3}{kLetterTable3}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table3\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_af74670c9c76c966bbaffff5f7afb2da0}{}\label{unicode_8cc_file_af74670c9c76c966bbaffff5f7afb2da0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741824, 8191 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table4@{k\+Letter\+Table4}}
+\index{k\+Letter\+Table4@{k\+Letter\+Table4}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table4}{kLetterTable4}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table4\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ac50b2b564ab1d063316d6c035640f79e}{}\label{unicode_8cc_file_ac50b2b564ab1d063316d6c035640f79e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741824, 8140 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table5@{k\+Letter\+Table5}}
+\index{k\+Letter\+Table5@{k\+Letter\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table5}{kLetterTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table5\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a5be216d6d29bdf5d56d8ebf842debfc5}{}\label{unicode_8cc_file_a5be216d6d29bdf5d56d8ebf842debfc5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1073741824, 1164,       1073743056, 1277,
+    1073743104, 1548,       1073743376, 1567,  
+    1073743402, 1579,       1073743424, 1646,
+    1073743487, 1693,       1073743520, 1775,  
+    1073743639, 1823,       1073743650, 1928,
+    1073743755, 1934,       1073743760, 1965,  
+    1073743792, 1969,       1073743863, 2049,
+    1073743875, 2053,       1073743879, 2058,  
+    1073743884, 2082,       1073743936, 2163,
+    1073744002, 2227,       1073744114, 2295,  
+    2299,       1073744138, 2341,       1073744176,
+    2374,       1073744224, 2428,       1073744260,  
+    2482,       2511,       1073744352, 2532,
+    1073744358, 2543,       1073744378, 2558,  
+    1073744384, 2600,       1073744448, 2626,
+    1073744452, 2635,       1073744480, 2678,  
+    2682,       1073744510, 2735,       2737,
+    1073744565, 2742,       1073744569, 2749,  
+    2752,       2754,       1073744603, 2781,
+    1073744608, 2794,       1073744626, 2804,  
+    1073744641, 2822,       1073744649, 2830,
+    1073744657, 2838,       1073744672, 2854,  
+    1073744680, 2862,       1073744688, 2906,
+    1073744732, 2911,       1073744740, 2917,   
+    1073744832, 3042,       1073744896, 8191\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table6@{k\+Letter\+Table6}}
+\index{k\+Letter\+Table6@{k\+Letter\+Table6}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table6}{kLetterTable6}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table6\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a59c20f311c68ab19b59eac10be5019ef}{}\label{unicode_8cc_file_a59c20f311c68ab19b59eac10be5019ef}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741824, 6051, 1073747888, 6086, 1073747915, 6139 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Letter\+Table7@{k\+Letter\+Table7}}
+\index{k\+Letter\+Table7@{k\+Letter\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Letter\+Table7}{kLetterTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Letter\+Table7\mbox{[}48\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a1804b693202b1a0bee9ca215df4754bc}{}\label{unicode_8cc_file_a1804b693202b1a0bee9ca215df4754bc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073748224, 6765, 1073748592, 6873, 1073748736, 6918, 1073748755, 6935,  
+  6941, 1073748767, 6952, 1073748778, 6966, 1073748792, 6972, 6974,  
+  1073748800, 6977, 1073748803, 6980, 1073748806, 7089, 1073748947, 7485,  
+  1073749328, 7567, 1073749394, 7623, 1073749488, 7675, 1073749616, 7796,  
+  1073749622, 7932, 1073749793, 7994, 1073749825, 8026, 1073749862, 8126,  
+  1073749954, 8135, 1073749962, 8143, 1073749970, 8151, 1073749978, 8156 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Line\+Terminator\+Table0@{k\+Line\+Terminator\+Table0}}
+\index{k\+Line\+Terminator\+Table0@{k\+Line\+Terminator\+Table0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Line\+Terminator\+Table0}{kLineTerminatorTable0}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Line\+Terminator\+Table0\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_aff5415848ba40a57f258f25180f3dfd4}{}\label{unicode_8cc_file_aff5415848ba40a57f258f25180f3dfd4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  10, 13 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Line\+Terminator\+Table1@{k\+Line\+Terminator\+Table1}}
+\index{k\+Line\+Terminator\+Table1@{k\+Line\+Terminator\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Line\+Terminator\+Table1}{kLineTerminatorTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Line\+Terminator\+Table1\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a32dcf14cb0430d3b705fbc3eebcc6702}{}\label{unicode_8cc_file_a32dcf14cb0430d3b705fbc3eebcc6702}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741864, 41 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Lowercase\+Table1@{k\+Lowercase\+Table1}}
+\index{k\+Lowercase\+Table1@{k\+Lowercase\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Lowercase\+Table1}{kLowercaseTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Lowercase\+Table1\mbox{[}84\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a4de0c72cfb0689b9d5cc4cbb304b72f6}{}\label{unicode_8cc_file_a4de0c72cfb0689b9d5cc4cbb304b72f6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  266, 1073742094, 271, 275, 303, 308, 313, 1073742140,  
+  317, 1073742150, 329, 334, 388, 1073744944, 3166, 3169,  
+  1073744997, 3174, 3176, 3178, 3180, 3185, 1073745011, 3188,  
+  1073745014, 3195, 3201, 3203, 3205, 3207, 3209, 3211,  
+  3213, 3215, 3217, 3219, 3221, 3223, 3225, 3227,  
+  3229, 3231, 3233, 3235, 3237, 3239, 3241, 3243,  
+  3245, 3247, 3249, 3251, 3253, 3255, 3257, 3259,  
+  3261, 3263, 3265, 3267, 3269, 3271, 3273, 3275,  
+  3277, 3279, 3281, 3283, 3285, 3287, 3289, 3291,  
+  3293, 3295, 3297, 1073745123, 3300, 3308, 3310, 3315,  
+  1073745152, 3365, 3367, 3373 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Lowercase\+Table5@{k\+Lowercase\+Table5}}
+\index{k\+Lowercase\+Table5@{k\+Lowercase\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Lowercase\+Table5}{kLowercaseTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Lowercase\+Table5\mbox{[}105\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a0cbc7fdce8388d51c0dd7a0e7f1324ce}{}\label{unicode_8cc_file_a0cbc7fdce8388d51c0dd7a0e7f1324ce}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1601,       1603,       1605, 1607,
+    1609,       1611,       1613, 1615,  
+    1617,       1619,       1621, 1623,
+    1625,       1627,       1629, 1631,  
+    1633,       1635,       1637, 1639,
+    1641,       1643,       1645, 1665,  
+    1667,       1669,       1671, 1673,
+    1675,       1677,       1679, 1681,  
+    1683,       1685,       1687, 1689,
+    1691,       1827,       1829, 1831,  
+    1833,       1835,       1837, 1073743663,
+    1841,       1843,       1845, 1847,  
+    1849,       1851,       1853, 1855,
+    1857,       1859,       1861, 1863,  
+    1865,       1867,       1869, 1871,
+    1873,       1875,       1877, 1879,  
+    1881,       1883,       1885, 1887,
+    1889,       1891,       1893, 1895,  
+    1897,       1899,       1901, 1903,
+    1073743729, 1912,       1914, 1916,  
+    1919,       1921,       1923, 1925,
+    1927,       1932,       1934, 1937,  
+    1073743763, 1941,       1943, 1945,
+    1947,       1949,       1951, 1953,  
+    1955,       1957,       1959, 1961,
+    2042,       1073744688, 2906, 1073744740,  
+    2917\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Lowercase\+Table7@{k\+Lowercase\+Table7}}
+\index{k\+Lowercase\+Table7@{k\+Lowercase\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Lowercase\+Table7}{kLowercaseTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Lowercase\+Table7\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_af657ab95c0e9fd72e472a0f23d55f238}{}\label{unicode_8cc_file_af657ab95c0e9fd72e472a0f23d55f238}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073748736, 6918, 1073748755, 6935, 1073749825, 8026 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Multi\+Strings0@{k\+To\+Lowercase\+Multi\+Strings0}}
+\index{k\+To\+Lowercase\+Multi\+Strings0@{k\+To\+Lowercase\+Multi\+Strings0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Multi\+Strings0}{kToLowercaseMultiStrings0}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$2$>$ unibrow\+::k\+To\+Lowercase\+Multi\+Strings0\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a5df81dd4e0bf34d68e0943cd4733ff8b}{}\label{unicode_8cc_file_a5df81dd4e0bf34d68e0943cd4733ff8b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{105, 775\}\}, \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Multi\+Strings1@{k\+To\+Lowercase\+Multi\+Strings1}}
+\index{k\+To\+Lowercase\+Multi\+Strings1@{k\+To\+Lowercase\+Multi\+Strings1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Multi\+Strings1}{kToLowercaseMultiStrings1}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+To\+Lowercase\+Multi\+Strings1\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a79aa4a6663b73e5099f779ce88679dbe}{}\label{unicode_8cc_file_a79aa4a6663b73e5099f779ce88679dbe}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Multi\+Strings5@{k\+To\+Lowercase\+Multi\+Strings5}}
+\index{k\+To\+Lowercase\+Multi\+Strings5@{k\+To\+Lowercase\+Multi\+Strings5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Multi\+Strings5}{kToLowercaseMultiStrings5}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+To\+Lowercase\+Multi\+Strings5\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a6a03aba6e12ed3f4c571e15b02654cfd}{}\label{unicode_8cc_file_a6a03aba6e12ed3f4c571e15b02654cfd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Multi\+Strings7@{k\+To\+Lowercase\+Multi\+Strings7}}
+\index{k\+To\+Lowercase\+Multi\+Strings7@{k\+To\+Lowercase\+Multi\+Strings7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Multi\+Strings7}{kToLowercaseMultiStrings7}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+To\+Lowercase\+Multi\+Strings7\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ac028aed6c622cd7ffee59b7864da4ec8}{}\label{unicode_8cc_file_ac028aed6c622cd7ffee59b7864da4ec8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Table1@{k\+To\+Lowercase\+Table1}}
+\index{k\+To\+Lowercase\+Table1@{k\+To\+Lowercase\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Table1}{kToLowercaseTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Lowercase\+Table1\mbox{[}158\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_aa68b32f2d3c1c1728ea3e4d076cd41e1}{}\label{unicode_8cc_file_aa68b32f2d3c1c1728ea3e4d076cd41e1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  294, -30068, 298, -33532, 299, -33048, 306, 112, 1073742176, 64, 367, 64, 387, 4, 1073743030, 104,  
+  1231, 104, 1073744896, 192, 3118, 192, 3168, 4, 3170, -42972, 3171, -15256, 3172, -42908, 3175, 4,  
+  3177, 4, 3179, 4, 3181, -43120, 3182, -42996, 3183, -43132, 3184, -43128, 3186, 4, 3189, 4,  
+  1073745022, -43260, 3199, -43260, 3200, 4, 3202, 4, 3204, 4, 3206, 4, 3208, 4, 3210, 4,  
+  3212, 4, 3214, 4, 3216, 4, 3218, 4, 3220, 4, 3222, 4, 3224, 4, 3226, 4,  
+  3228, 4, 3230, 4, 3232, 4, 3234, 4, 3236, 4, 3238, 4, 3240, 4, 3242, 4,  
+  3244, 4, 3246, 4, 3248, 4, 3250, 4, 3252, 4, 3254, 4, 3256, 4, 3258, 4,  
+  3260, 4, 3262, 4, 3264, 4, 3266, 4, 3268, 4, 3270, 4, 3272, 4, 3274, 4,  
+  3276, 4, 3278, 4, 3280, 4, 3282, 4, 3284, 4, 3286, 4, 3288, 4, 3290, 4,  
+  3292, 4, 3294, 4, 3296, 4, 3298, 4, 3307, 4, 3309, 4, 3314, 4 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Table5@{k\+To\+Lowercase\+Table5}}
+\index{k\+To\+Lowercase\+Table5@{k\+To\+Lowercase\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Table5}{kToLowercaseTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Lowercase\+Table5\mbox{[}206\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a7d518a3aaf7dfe0eafecd40c161a7d19}{}\label{unicode_8cc_file_a7d518a3aaf7dfe0eafecd40c161a7d19}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1600, 4,       1602, 4,       1604, 4,       1606, 4,
+    1608, 4,       1610, 4,       1612, 4,       1614, 4,  
+    1616, 4,       1618, 4,       1620, 4,       1622, 4,
+    1624, 4,       1626, 4,       1628, 4,       1630, 4,  
+    1632, 4,       1634, 4,       1636, 4,       1638, 4,
+    1640, 4,       1642, 4,       1644, 4,       1664, 4,  
+    1666, 4,       1668, 4,       1670, 4,       1672, 4,
+    1674, 4,       1676, 4,       1678, 4,       1680, 4,  
+    1682, 4,       1684, 4,       1686, 4,       1688, 4,
+    1690, 4,       1826, 4,       1828, 4,       1830, 4,  
+    1832, 4,       1834, 4,       1836, 4,       1838, 4,
+    1842, 4,       1844, 4,       1846, 4,       1848, 4,  
+    1850, 4,       1852, 4,       1854, 4,       1856, 4,
+    1858, 4,       1860, 4,       1862, 4,       1864, 4,  
+    1866, 4,       1868, 4,       1870, 4,       1872, 4,
+    1874, 4,       1876, 4,       1878, 4,       1880, 4,  
+    1882, 4,       1884, 4,       1886, 4,       1888, 4,
+    1890, 4,       1892, 4,       1894, 4,       1896, 4,  
+    1898, 4,       1900, 4,       1902, 4,       1913, 4,
+    1915, 4,       1917, -141328, 1918, 4,       1920, 4,  
+    1922, 4,       1924, 4,       1926, 4,       1931, 4,
+    1933, -169120, 1936, 4,       1938, 4,       1942, 4,  
+    1944, 4,       1946, 4,       1948, 4,       1950, 4,
+    1952, 4,       1954, 4,       1956, 4,       1958, 4,  
+    1960, 4,       1962, -169232, 1963, -169276, 1964, -169260,
+    1965, -169220, 1968, -169032, 1969, -169128\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Lowercase\+Table7@{k\+To\+Lowercase\+Table7}}
+\index{k\+To\+Lowercase\+Table7@{k\+To\+Lowercase\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Lowercase\+Table7}{kToLowercaseTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Lowercase\+Table7\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_abd55f5d698e4521ce2d947d33a15e07b}{}\label{unicode_8cc_file_abd55f5d698e4521ce2d947d33a15e07b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073749793, 128, 7994, 128 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Multi\+Strings0@{k\+To\+Uppercase\+Multi\+Strings0}}
+\index{k\+To\+Uppercase\+Multi\+Strings0@{k\+To\+Uppercase\+Multi\+Strings0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Multi\+Strings0}{kToUppercaseMultiStrings0}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$3$>$ unibrow\+::k\+To\+Uppercase\+Multi\+Strings0\mbox{[}62\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a7151361f3f1afc22a326c4d51c842957}{}\label{unicode_8cc_file_a7151361f3f1afc22a326c4d51c842957}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{83, 83, kSentinel\}\}, \{\{700, 78, kSentinel\}\}, \{\{74, 780, kSentinel\}\}, \{\{921, 776, 769\}\},  
+  \{\{933, 776, 769\}\}, \{\{1333, 1362, kSentinel\}\}, \{\{72, 817, kSentinel\}\}, \{\{84, 776, kSentinel\}\},  
+  \{\{87, 778, kSentinel\}\}, \{\{89, 778, kSentinel\}\}, \{\{65, 702, kSentinel\}\}, \{\{933, 787, kSentinel\}\},  
+  \{\{933, 787, 768\}\}, \{\{933, 787, 769\}\}, \{\{933, 787, 834\}\}, \{\{7944, 921, kSentinel\}\},  
+  \{\{7945, 921, kSentinel\}\}, \{\{7946, 921, kSentinel\}\}, \{\{7947, 921, kSentinel\}\}, \{\{7948, 921, kSentinel\}\},  
+  \{\{7949, 921, kSentinel\}\}, \{\{7950, 921, kSentinel\}\}, \{\{7951, 921, kSentinel\}\}, \{\{7976, 921, kSentinel\}\},  
+  \{\{7977, 921, kSentinel\}\}, \{\{7978, 921, kSentinel\}\}, \{\{7979, 921, kSentinel\}\}, \{\{7980, 921, kSentinel\}\},  
+  \{\{7981, 921, kSentinel\}\}, \{\{7982, 921, kSentinel\}\}, \{\{7983, 921, kSentinel\}\}, \{\{8040, 921, kSentinel\}\},  
+  \{\{8041, 921, kSentinel\}\}, \{\{8042, 921, kSentinel\}\}, \{\{8043, 921, kSentinel\}\}, \{\{8044, 921, kSentinel\}\},  
+  \{\{8045, 921, kSentinel\}\}, \{\{8046, 921, kSentinel\}\}, \{\{8047, 921, kSentinel\}\}, \{\{8122, 921, kSentinel\}\},  
+  \{\{913, 921, kSentinel\}\}, \{\{902, 921, kSentinel\}\}, \{\{913, 834, kSentinel\}\}, \{\{913, 834, 921\}\},  
+  \{\{8138, 921, kSentinel\}\}, \{\{919, 921, kSentinel\}\}, \{\{905, 921, kSentinel\}\}, \{\{919, 834, kSentinel\}\},  
+  \{\{919, 834, 921\}\}, \{\{921, 776, 768\}\}, \{\{921, 834, kSentinel\}\}, \{\{921, 776, 834\}\},  
+  \{\{933, 776, 768\}\}, \{\{929, 787, kSentinel\}\}, \{\{933, 834, kSentinel\}\}, \{\{933, 776, 834\}\},  
+  \{\{8186, 921, kSentinel\}\}, \{\{937, 921, kSentinel\}\}, \{\{911, 921, kSentinel\}\}, \{\{937, 834, kSentinel\}\},  
+  \{\{937, 834, 921\}\}, \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Multi\+Strings1@{k\+To\+Uppercase\+Multi\+Strings1}}
+\index{k\+To\+Uppercase\+Multi\+Strings1@{k\+To\+Uppercase\+Multi\+Strings1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Multi\+Strings1}{kToUppercaseMultiStrings1}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+To\+Uppercase\+Multi\+Strings1\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a2d45a680ce399c0feca1b2519199c21b}{}\label{unicode_8cc_file_a2d45a680ce399c0feca1b2519199c21b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Multi\+Strings5@{k\+To\+Uppercase\+Multi\+Strings5}}
+\index{k\+To\+Uppercase\+Multi\+Strings5@{k\+To\+Uppercase\+Multi\+Strings5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Multi\+Strings5}{kToUppercaseMultiStrings5}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$1$>$ unibrow\+::k\+To\+Uppercase\+Multi\+Strings5\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a78ae56a158c69659ec64344bf7a6d83f}{}\label{unicode_8cc_file_a78ae56a158c69659ec64344bf7a6d83f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Multi\+Strings7@{k\+To\+Uppercase\+Multi\+Strings7}}
+\index{k\+To\+Uppercase\+Multi\+Strings7@{k\+To\+Uppercase\+Multi\+Strings7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Multi\+Strings7}{kToUppercaseMultiStrings7}}]{\setlength{\rightskip}{0pt plus 5cm}const Multi\+Character\+Special\+Case$<$3$>$ unibrow\+::k\+To\+Uppercase\+Multi\+Strings7\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a9a3b3ba8764bb2f56616d9bed41c2886}{}\label{unicode_8cc_file_a9a3b3ba8764bb2f56616d9bed41c2886}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{  
+  \{\{70, 70, kSentinel\}\}, \{\{70, 73, kSentinel\}\}, \{\{70, 76, kSentinel\}\}, \{\{70, 70, 73\}\},  
+  \{\{70, 70, 76\}\}, \{\{83, 84, kSentinel\}\}, \{\{1348, 1350, kSentinel\}\}, \{\{1348, 1333, kSentinel\}\},  
+  \{\{1348, 1339, kSentinel\}\}, \{\{1358, 1350, kSentinel\}\}, \{\{1348, 1341, kSentinel\}\}, \{\{kSentinel\}\} \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Table1@{k\+To\+Uppercase\+Table1}}
+\index{k\+To\+Uppercase\+Table1@{k\+To\+Uppercase\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Table1}{kToUppercaseTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Uppercase\+Table1\mbox{[}146\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a49c1c7520908a9b3db847d8050a12d98}{}\label{unicode_8cc_file_a49c1c7520908a9b3db847d8050a12d98}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  334, -112, 1073742192, -64, 383, -64, 388, -4, 1073743056, -104, 1257, -104, 1073744944, -192, 3166, -192
+      ,  
+  3169, -4, 3173, -43180, 3174, -43168, 3176, -4, 3178, -4, 3180, -4, 3187, -4, 3190, -4,  
+  3201, -4, 3203, -4, 3205, -4, 3207, -4, 3209, -4, 3211, -4, 3213, -4, 3215, -4,  
+  3217, -4, 3219, -4, 3221, -4, 3223, -4, 3225, -4, 3227, -4, 3229, -4, 3231, -4,  
+  3233, -4, 3235, -4, 3237, -4, 3239, -4, 3241, -4, 3243, -4, 3245, -4, 3247, -4,  
+  3249, -4, 3251, -4, 3253, -4, 3255, -4, 3257, -4, 3259, -4, 3261, -4, 3263, -4,  
+  3265, -4, 3267, -4, 3269, -4, 3271, -4, 3273, -4, 3275, -4, 3277, -4, 3279, -4,  
+  3281, -4, 3283, -4, 3285, -4, 3287, -4, 3289, -4, 3291, -4, 3293, -4, 3295, -4,  
+  3297, -4, 3299, -4, 3308, -4, 3310, -4, 3315, -4, 1073745152, -29056, 3365, -29056, 3367, -29056,  
+  3373, -29056 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Table5@{k\+To\+Uppercase\+Table5}}
+\index{k\+To\+Uppercase\+Table5@{k\+To\+Uppercase\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Table5}{kToUppercaseTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Uppercase\+Table5\mbox{[}190\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_ad06c99b84e4b9144f6de239baf05b975}{}\label{unicode_8cc_file_ad06c99b84e4b9144f6de239baf05b975}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{1601, -4, 1603, -4, 1605, -4, 1607, -4, 1609, -4,
+                               1611, -4, 1613, -4, 1615, -4,  
+                               1617, -4, 1619, -4, 1621, -4, 1623, -4, 1625, -4,
+                               1627, -4, 1629, -4, 1631, -4,  
+                               1633, -4, 1635, -4, 1637, -4, 1639, -4, 1641, -4,
+                               1643, -4, 1645, -4, 1665, -4,  
+                               1667, -4, 1669, -4, 1671, -4, 1673, -4, 1675, -4,
+                               1677, -4, 1679, -4, 1681, -4,  
+                               1683, -4, 1685, -4, 1687, -4, 1689, -4, 1691, -4,
+                               1827, -4, 1829, -4, 1831, -4,  
+                               1833, -4, 1835, -4, 1837, -4, 1839, -4, 1843, -4,
+                               1845, -4, 1847, -4, 1849, -4,  
+                               1851, -4, 1853, -4, 1855, -4, 1857, -4, 1859, -4,
+                               1861, -4, 1863, -4, 1865, -4,  
+                               1867, -4, 1869, -4, 1871, -4, 1873, -4, 1875, -4,
+                               1877, -4, 1879, -4, 1881, -4,  
+                               1883, -4, 1885, -4, 1887, -4, 1889, -4, 1891, -4,
+                               1893, -4, 1895, -4, 1897, -4,  
+                               1899, -4, 1901, -4, 1903, -4, 1914, -4, 1916, -4,
+                               1919, -4, 1921, -4, 1923, -4,  
+                               1925, -4, 1927, -4, 1932, -4, 1937, -4, 1939, -4,
+                               1943, -4, 1945, -4, 1947, -4,  
+                               1949, -4, 1951, -4, 1953, -4, 1955, -4, 1957, -4,
+                               1959, -4, 1961, -4\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+To\+Uppercase\+Table7@{k\+To\+Uppercase\+Table7}}
+\index{k\+To\+Uppercase\+Table7@{k\+To\+Uppercase\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+To\+Uppercase\+Table7}{kToUppercaseTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+To\+Uppercase\+Table7\mbox{[}28\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a68b15330fd2d1749b3aa29e931f812de}{}\label{unicode_8cc_file_a68b15330fd2d1749b3aa29e931f812de}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  6912, 1, 6913, 5, 6914, 9, 6915, 13, 6916, 17, 6917, 21, 6918, 21, 6931, 25,  
+  6932, 29, 6933, 33, 6934, 37, 6935, 41, 1073749825, -128, 8026, -128 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Uppercase\+Table1@{k\+Uppercase\+Table1}}
+\index{k\+Uppercase\+Table1@{k\+Uppercase\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Uppercase\+Table1}{kUppercaseTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Uppercase\+Table1\mbox{[}86\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_acdf13c2e7f84f311622ef6ea9896948c}{}\label{unicode_8cc_file_acdf13c2e7f84f311622ef6ea9896948c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  258, 263, 1073742091, 269, 1073742096, 274, 277, 1073742105,  
+  285, 292, 294, 296, 1073742122, 301, 1073742128, 307,  
+  1073742142, 319, 325, 387, 1073744896, 3118, 3168, 1073744994,  
+  3172, 3175, 3177, 3179, 1073745005, 3184, 3186, 3189,  
+  1073745022, 3200, 3202, 3204, 3206, 3208, 3210, 3212,  
+  3214, 3216, 3218, 3220, 3222, 3224, 3226, 3228,  
+  3230, 3232, 3234, 3236, 3238, 3240, 3242, 3244,  
+  3246, 3248, 3250, 3252, 3254, 3256, 3258, 3260,  
+  3262, 3264, 3266, 3268, 3270, 3272, 3274, 3276,  
+  3278, 3280, 3282, 3284, 3286, 3288, 3290, 3292,  
+  3294, 3296, 3298, 3307, 3309, 3314 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Uppercase\+Table5@{k\+Uppercase\+Table5}}
+\index{k\+Uppercase\+Table5@{k\+Uppercase\+Table5}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Uppercase\+Table5}{kUppercaseTable5}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Uppercase\+Table5\mbox{[}101\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a1008364a67e284d24a6a0407be2748a8}{}\label{unicode_8cc_file_a1008364a67e284d24a6a0407be2748a8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    1600, 1602,       1604, 1606,       1608, 1610,       1612, 1614,  
+    1616, 1618,       1620, 1622,       1624, 1626,       1628, 1630,  
+    1632, 1634,       1636, 1638,       1640, 1642,       1644, 1664,  
+    1666, 1668,       1670, 1672,       1674, 1676,       1678, 1680,  
+    1682, 1684,       1686, 1688,       1690, 1826,       1828, 1830,  
+    1832, 1834,       1836, 1838,       1842, 1844,       1846, 1848,  
+    1850, 1852,       1854, 1856,       1858, 1860,       1862, 1864,  
+    1866, 1868,       1870, 1872,       1874, 1876,       1878, 1880,  
+    1882, 1884,       1886, 1888,       1890, 1892,       1894, 1896,  
+    1898, 1900,       1902, 1913,       1915, 1073743741, 1918, 1920,  
+    1922, 1924,       1926, 1931,       1933, 1936,       1938, 1942,  
+    1944, 1946,       1948, 1950,       1952, 1954,       1956, 1958,  
+    1960, 1073743786, 1965, 1073743792, 1969\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+Uppercase\+Table7@{k\+Uppercase\+Table7}}
+\index{k\+Uppercase\+Table7@{k\+Uppercase\+Table7}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+Uppercase\+Table7}{kUppercaseTable7}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+Uppercase\+Table7\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a894b3c8f8f4f9caba3b34f556063b9a1}{}\label{unicode_8cc_file_a894b3c8f8f4f9caba3b34f556063b9a1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073749793, 7994 \}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+White\+Space\+Table0@{k\+White\+Space\+Table0}}
+\index{k\+White\+Space\+Table0@{k\+White\+Space\+Table0}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+White\+Space\+Table0}{kWhiteSpaceTable0}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+White\+Space\+Table0\mbox{[}7\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a6e60dae23168dee93cbb799caed9ab32}{}\label{unicode_8cc_file_a6e60dae23168dee93cbb799caed9ab32}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{9,   1073741835, 12,  32,
+                                             160, 5760,       6158\}
+\end{DoxyCode}
+\index{unicode.\+cc@{unicode.\+cc}!k\+White\+Space\+Table1@{k\+White\+Space\+Table1}}
+\index{k\+White\+Space\+Table1@{k\+White\+Space\+Table1}!unicode.\+cc@{unicode.\+cc}}
+\subsubsection[{\texorpdfstring{k\+White\+Space\+Table1}{kWhiteSpaceTable1}}]{\setlength{\rightskip}{0pt plus 5cm}const int32\+\_\+t unibrow\+::k\+White\+Space\+Table1\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{unicode_8cc_file_a6af58962ea8c4f3cfa66e5b8ec4296a5}{}\label{unicode_8cc_file_a6af58962ea8c4f3cfa66e5b8ec4296a5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  1073741824, 10, 47, 95, 4096 \}
+\end{DoxyCode}

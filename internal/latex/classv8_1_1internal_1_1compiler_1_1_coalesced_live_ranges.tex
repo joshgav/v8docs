@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Coalesced\+Live\+Ranges Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges}\index{v8\+::internal\+::compiler\+::\+Coalesced\+Live\+Ranges@{v8\+::internal\+::compiler\+::\+Coalesced\+Live\+Ranges}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Coalesced\+Live\+Ranges\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Coalesced\+Live\+Ranges} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a6200de418563832c393cd3162b3978a0}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a6200de418563832c393cd3162b3978a0}
+
+\item 
+void {\bfseries clear} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_aa65fa877d2578a16b52f0cd349ee4e7e}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_aa65fa877d2578a16b52f0cd349ee4e7e}
+
+\item 
+bool {\bfseries empty} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_af6d73fa27d93e02b82bee5cde6b042f0}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_af6d73fa27d93e02b82bee5cde6b042f0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_conflict_iterator}{Live\+Range\+Conflict\+Iterator} {\bfseries Get\+Conflicts} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a82d7e8207ae9c973bbcf68f3e67a8a7b}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a82d7e8207ae9c973bbcf68f3e67a8a7b}
+
+\item 
+void {\bfseries Allocate\+Range} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a75cbd0251a459faf1f59e8de20a3f900}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a75cbd0251a459faf1f59e8de20a3f900}
+
+\item 
+bool {\bfseries Verify\+Allocations\+Are\+Valid\+For\+Testing} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_ad2ba245214dd4fa0254d82c243bd0921}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_ad2ba245214dd4fa0254d82c243bd0921}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_set}{Interval\+Store} \& {\bfseries intervals} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a1d449f7d0ff34ceb20a44630bd5889b5}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a1d449f7d0ff34ceb20a44630bd5889b5}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_set}{Interval\+Store} \& {\bfseries intervals} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a5f214e5325c7c7560e66c8e4d2b72801}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a5f214e5325c7c7560e66c8e4d2b72801}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges}{Coalesced\+Live\+Ranges})\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_ad4266b46e8e0ae281600f9a4a266c07a}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_ad4266b46e8e0ae281600f9a4a266c07a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Update\+Weight\+At\+Allocation} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_aa85d1b49844c4a557ad239fbe7bad557}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_aa85d1b49844c4a557ad239fbe7bad557}
+
+\item 
+static void {\bfseries Update\+Weight\+At\+Eviction} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a90c6bd251fafce6606803a2940bcf73e}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a90c6bd251fafce6606803a2940bcf73e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_set}{Interval\+Store} {\bfseries intervals\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a397235300dd11d082d9f8b0efb95a77c}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a397235300dd11d082d9f8b0efb95a77c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float {\bfseries k\+Allocated\+Range\+Multiplier}\hypertarget{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a397687a8923a4c011618cdd99d9c2bdf}{}\label{classv8_1_1internal_1_1compiler_1_1_coalesced_live_ranges_a397687a8923a4c011618cdd99d9c2bdf}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/coalesced-\/live-\/ranges.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/coalesced-\/live-\/ranges.\+cc\end{DoxyCompactItemize}

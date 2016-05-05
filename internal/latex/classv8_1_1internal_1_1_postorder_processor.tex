@@ -1,0 +1,128 @@
+\hypertarget{classv8_1_1internal_1_1_postorder_processor}{}\section{v8\+:\+:internal\+:\+:Postorder\+Processor Class Reference}
+\label{classv8_1_1internal_1_1_postorder_processor}\index{v8\+::internal\+::\+Postorder\+Processor@{v8\+::internal\+::\+Postorder\+Processor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Postorder\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_postorder_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries parent} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_a9dd8ea5cd5d41e886c635f05535d046d}{}\label{classv8_1_1internal_1_1_postorder_processor_a9dd8ea5cd5d41e886c635f05535d046d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries child} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_ad43b69fbb66c32b6815b889305bb1a52}{}\label{classv8_1_1internal_1_1_postorder_processor_ad43b69fbb66c32b6815b889305bb1a52}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries block} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_a4ff4376a050013db2c4245de2647c80d}{}\label{classv8_1_1internal_1_1_postorder_processor_a4ff4376a050013db2c4245de2647c80d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries loop} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_a0b58299a391ea21e89a77d4c130a2f76}{}\label{classv8_1_1internal_1_1_postorder_processor_a0b58299a391ea21e89a77d4c130a2f76}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries loop\+\_\+header} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_ac5de7ee5b4269a882cc59f0a98b55802}{}\label{classv8_1_1internal_1_1_postorder_processor_ac5de7ee5b4269a882cc59f0a98b55802}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Perform\+Step} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$order)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a8746152c2882edabc129fddf14deccce}{}\label{classv8_1_1internal_1_1_postorder_processor_a8746152c2882edabc129fddf14deccce}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Create\+Entry\+Processor} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a93f8f020ad8ab4f2810d0c14c72380c9}{}\label{classv8_1_1internal_1_1_postorder_processor_a93f8f020ad8ab4f2810d0c14c72380c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Loop\+Kind} \{ \\*
+{\bfseries N\+O\+NE}, 
+\\*
+{\bfseries S\+U\+C\+C\+E\+S\+S\+O\+RS}, 
+\\*
+{\bfseries S\+U\+C\+C\+E\+S\+S\+O\+R\+S\+\_\+\+O\+F\+\_\+\+L\+O\+O\+P\+\_\+\+H\+E\+A\+D\+ER}, 
+\\*
+{\bfseries L\+O\+O\+P\+\_\+\+M\+E\+M\+B\+E\+RS}, 
+\\*
+{\bfseries S\+U\+C\+C\+E\+S\+S\+O\+R\+S\+\_\+\+O\+F\+\_\+\+L\+O\+O\+P\+\_\+\+M\+E\+M\+B\+ER}
+ \}\hypertarget{classv8_1_1internal_1_1_postorder_processor_ab4f14b4cc00d02b8b2bd280567e78eac}{}\label{classv8_1_1internal_1_1_postorder_processor_ab4f14b4cc00d02b8b2bd280567e78eac}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Postorder\+Processor} (\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$father)\hypertarget{classv8_1_1internal_1_1_postorder_processor_ac7e582d6d072e1df50dd81fa7d383c3c}{}\label{classv8_1_1internal_1_1_postorder_processor_ac7e582d6d072e1df50dd81fa7d383c3c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Setup\+Successors} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$loop\+\_\+header)\hypertarget{classv8_1_1internal_1_1_postorder_processor_ae4139e32baf63cd0cba92c741551360a}{}\label{classv8_1_1internal_1_1_postorder_processor_ae4139e32baf63cd0cba92c741551360a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Setup\+Loop\+Members} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$loop, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$loop\+\_\+header)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a31b90334db7765f140022934387ee259}{}\label{classv8_1_1internal_1_1_postorder_processor_a31b90334db7765f140022934387ee259}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Setup\+Successors\+Of\+Loop\+Member} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$loop, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$loop\+\_\+header)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a0dbfea7b029d1deefec95a0b8d38ce61}{}\label{classv8_1_1internal_1_1_postorder_processor_a0dbfea7b029d1deefec95a0b8d38ce61}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Push} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a8c7838bfe485f815dca2f8ff53080b28}{}\label{classv8_1_1internal_1_1_postorder_processor_a8c7838bfe485f815dca2f8ff53080b28}
+
+\item 
+void {\bfseries Close\+Postorder} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$order, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_postorder_processor_af7cbbad7b418f99b1399dedda507b76f}{}\label{classv8_1_1internal_1_1_postorder_processor_af7cbbad7b418f99b1399dedda507b76f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Pop} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$order)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a8642b2fed50dfe482bbb9adae44712fd}{}\label{classv8_1_1internal_1_1_postorder_processor_a8642b2fed50dfe482bbb9adae44712fd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Backtrack} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$order)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a0364e41b6ba3706961236ef42a6d360e}{}\label{classv8_1_1internal_1_1_postorder_processor_a0364e41b6ba3706961236ef42a6d360e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries Perform\+Non\+Backtracking\+Step} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$order)\hypertarget{classv8_1_1internal_1_1_postorder_processor_a4bb53beb948dfe62bd14c25de0275873}{}\label{classv8_1_1internal_1_1_postorder_processor_a4bb53beb948dfe62bd14c25de0275873}
+
+\item 
+void {\bfseries Initialize\+Successors} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_ab0c76d5b2165742db64258c2f9608979}{}\label{classv8_1_1internal_1_1_postorder_processor_ab0c76d5b2165742db64258c2f9608979}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries Advance\+Successors} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_a786b20c9f4124a8531b75b14c1be62f3}{}\label{classv8_1_1internal_1_1_postorder_processor_a786b20c9f4124a8531b75b14c1be62f3}
+
+\item 
+void {\bfseries Initialize\+Loop\+Members} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_ad5c1f54fc437e78ae4869f1daeea2ae7}{}\label{classv8_1_1internal_1_1_postorder_processor_ad5c1f54fc437e78ae4869f1daeea2ae7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries Advance\+Loop\+Members} ()\hypertarget{classv8_1_1internal_1_1_postorder_processor_ac50e18ee52cd3d233e72563c018a6b01}{}\label{classv8_1_1internal_1_1_postorder_processor_ac50e18ee52cd3d233e72563c018a6b01}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Loop\+Kind {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a2ceffb377163344cf2bd28bba6907c5f}{}\label{classv8_1_1internal_1_1_postorder_processor_a2ceffb377163344cf2bd28bba6907c5f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries father\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a94333cf5d033669aff4ccfab53656b0a}{}\label{classv8_1_1internal_1_1_postorder_processor_a94333cf5d033669aff4ccfab53656b0a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_postorder_processor}{Postorder\+Processor} $\ast$ {\bfseries child\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a6b767a28cee566e13d4610949e8658b9}{}\label{classv8_1_1internal_1_1_postorder_processor_a6b767a28cee566e13d4610949e8658b9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries loop\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a48d9be833dfe7ad5f39cc3634ae212ef}{}\label{classv8_1_1internal_1_1_postorder_processor_a48d9be833dfe7ad5f39cc3634ae212ef}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries block\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a92447762147628e8d6f4766cb1c948b1}{}\label{classv8_1_1internal_1_1_postorder_processor_a92447762147628e8d6f4766cb1c948b1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries loop\+\_\+header\+\_\+}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a3f2b5ed2d8cc5d5aeb287e3aea216ac6}{}\label{classv8_1_1internal_1_1_postorder_processor_a3f2b5ed2d8cc5d5aeb287e3aea216ac6}
+
+\item 
+int {\bfseries loop\+\_\+index}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a188707d207532bcacf08b90b43155add}{}\label{classv8_1_1internal_1_1_postorder_processor_a188707d207532bcacf08b90b43155add}
+
+\item 
+int {\bfseries loop\+\_\+length}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a0e2099dc559c117cf3e2890ba4964859}{}\label{classv8_1_1internal_1_1_postorder_processor_a0e2099dc559c117cf3e2890ba4964859}
+
+\item 
+H\+Successor\+Iterator {\bfseries successor\+\_\+iterator}\hypertarget{classv8_1_1internal_1_1_postorder_processor_a8e44b6e5cb6b773acf9dc1a2ed73b8f6}{}\label{classv8_1_1internal_1_1_postorder_processor_a8e44b6e5cb6b773acf9dc1a2ed73b8f6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}{}\section{v8\+:\+:internal\+:\+:L\+Code\+Gen\+:\+:X87\+Stack Class Reference}
+\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}\index{v8\+::internal\+::\+L\+Code\+Gen\+::\+X87\+Stack@{v8\+::internal\+::\+L\+Code\+Gen\+::\+X87\+Stack}}
+Inheritance diagram for v8\+:\+:internal\+:\+:L\+Code\+Gen\+:\+:X87\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries X87\+Stack} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a6eefcba20194c087885f45123ee62829}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a6eefcba20194c087885f45123ee62829}
+
+\item 
+{\bfseries X87\+Stack} (const \hyperlink{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}{X87\+Stack} \&other)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_ac5e549c77b87b10a05270177bd7da854}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_ac5e549c77b87b10a05270177bd7da854}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}{X87\+Stack} \&other) const \hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a49b7552779d482511be6ea860a95842d}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a49b7552779d482511be6ea860a95842d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}{X87\+Stack} \& {\bfseries operator=} (const \hyperlink{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack}{X87\+Stack} \&other)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a3f64475de8e1b2d2e85ae0d739a757c8}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a3f64475de8e1b2d2e85ae0d739a757c8}
+
+\item 
+bool {\bfseries Contains} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aabc544f2caa802095e6ea2785485dfed}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aabc544f2caa802095e6ea2785485dfed}
+
+\item 
+void {\bfseries Fxch} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg, int other\+\_\+slot=0)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_acd3418217b9a0f6d3a32184349728472}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_acd3418217b9a0f6d3a32184349728472}
+
+\item 
+void {\bfseries Free} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a2d8ed48df6b43cbbe1a3abb9ec45671d}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a2d8ed48df6b43cbbe1a3abb9ec45671d}
+
+\item 
+void {\bfseries Prepare\+To\+Write} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_added8f0956d30214d910825bbb25a7f9}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_added8f0956d30214d910825bbb25a7f9}
+
+\item 
+void {\bfseries Commit\+Write} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a6356c65d4ceb03037284c416cc97858f}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a6356c65d4ceb03037284c416cc97858f}
+
+\item 
+void {\bfseries Flush\+If\+Necessary} (\hyperlink{classv8_1_1internal_1_1_l_instruction}{L\+Instruction} $\ast$instr, \hyperlink{classv8_1_1internal_1_1_l_code_gen}{L\+Code\+Gen} $\ast$cgen)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a148685257cd0fd4ab03b583b73012127}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a148685257cd0fd4ab03b583b73012127}
+
+\item 
+void {\bfseries Leaving\+Block} (int current\+\_\+block\+\_\+id, \hyperlink{classv8_1_1internal_1_1_l_goto}{L\+Goto} $\ast$goto\+\_\+instr, \hyperlink{classv8_1_1internal_1_1_l_code_gen}{L\+Code\+Gen} $\ast$cgen)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_acee287c98f339246aa452a1eb655f0e4}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_acee287c98f339246aa452a1eb655f0e4}
+
+\item 
+int {\bfseries depth} () const \hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_afe3de6b83c9eeefd71bf6ace812a6113}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_afe3de6b83c9eeefd71bf6ace812a6113}
+
+\item 
+int {\bfseries Get\+Layout} ()\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aad2f27d4cf0cf230b457507ee0514039}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aad2f27d4cf0cf230b457507ee0514039}
+
+\item 
+int {\bfseries st} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a49e9bab92da1b9f73a8fba50f2e88951}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a49e9bab92da1b9f73a8fba50f2e88951}
+
+\item 
+void {\bfseries pop} ()\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a952006d1b99caa7d9ee8738951dfdaa5}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a952006d1b99caa7d9ee8738951dfdaa5}
+
+\item 
+void {\bfseries push} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a2f975dae0c3b9b3c3bc8fe49d1c75ae9}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a2f975dae0c3b9b3c3bc8fe49d1c75ae9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$ {\bfseries masm} () const \hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a84e60dedf96e6758ddd685c12dca6cb7}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a84e60dedf96e6758ddd685c12dca6cb7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a3c9ba01a49c456c14087f9cfa4ed8b4f}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a3c9ba01a49c456c14087f9cfa4ed8b4f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Array\+Index} (\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} reg)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_abec8ac31d70fe61d10d7e1398bcac710}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_abec8ac31d70fe61d10d7e1398bcac710}
+
+\item 
+int {\bfseries st2idx} (int pos)\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a0e2bff4f5dc9c42a26c1753d8cf54d92}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a0e2bff4f5dc9c42a26c1753d8cf54d92}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_double_register}{X87\+Register} {\bfseries stack\+\_\+} \mbox{[}X87\+Register\+::k\+Max\+Num\+Allocatable\+Registers\mbox{]}\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a898d561e6571d0786e1c3c4750e7eebe}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a898d561e6571d0786e1c3c4750e7eebe}
+
+\item 
+int {\bfseries stack\+\_\+depth\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aaf90c32755cf9d88cc357d852c4cc759}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_aaf90c32755cf9d88cc357d852c4cc759}
+
+\item 
+bool {\bfseries is\+\_\+mutable\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a92daf5d04525d34fbfb6c7aee20c6ce4}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_a92daf5d04525d34fbfb6c7aee20c6ce4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$ {\bfseries masm\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_ab078b2374a10fd47ad7fc52f8058da89}{}\label{classv8_1_1internal_1_1_l_code_gen_1_1_x87_stack_ab078b2374a10fd47ad7fc52f8058da89}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/x87/lithium-\/codegen-\/x87.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Character\+Class Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_character_class}\index{v8\+::internal\+::\+Reg\+Exp\+Character\+Class@{v8\+::internal\+::\+Reg\+Exp\+Character\+Class}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Character\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_reg_exp_character_class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Character\+Class} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_character_range}{Character\+Range} $>$ $\ast$ranges, bool is\+\_\+negated)\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a6f94c18120f036feb475807ae007acf1}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a6f94c18120f036feb475807ae007acf1}
+
+\item 
+{\bfseries Reg\+Exp\+Character\+Class} (uc16 type)\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a4f7c86e1330d0627998f0087c1337384}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a4f7c86e1330d0627998f0087c1337384}
+
+\item 
+void $\ast$ {\bfseries Accept} (Reg\+Exp\+Visitor $\ast$visitor, void $\ast$data) override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_adc213a458ec43d1a553adb2e0528ca49}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_adc213a458ec43d1a553adb2e0528ca49}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries To\+Node} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$on\+\_\+success) override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a01b0c45fbf9fe6f74f74d4696500600d}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a01b0c45fbf9fe6f74f74d4696500600d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_character_class}{Reg\+Exp\+Character\+Class} $\ast$ {\bfseries As\+Character\+Class} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_aaf0ba1148e04f1875b42f5493383356d}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_aaf0ba1148e04f1875b42f5493383356d}
+
+\item 
+bool {\bfseries Is\+Character\+Class} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_abd6e8ece4b15e332a4f77e528516651f}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_abd6e8ece4b15e332a4f77e528516651f}
+
+\item 
+bool {\bfseries Is\+Text\+Element} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a6a73a75f22232e7e2e322dc3fdd10bd3}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a6a73a75f22232e7e2e322dc3fdd10bd3}
+
+\item 
+int {\bfseries min\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a41015390326c62e06d046ee891ea96ae}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a41015390326c62e06d046ee891ea96ae}
+
+\item 
+int {\bfseries max\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_ab1c395ca89b299506141b17c1ee7703f}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_ab1c395ca89b299506141b17c1ee7703f}
+
+\item 
+void {\bfseries Append\+To\+Text} (\hyperlink{classv8_1_1internal_1_1_reg_exp_text}{Reg\+Exp\+Text} $\ast$text, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) override\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a2c13a305e7541f7ccfd7cff09daf0a3c}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a2c13a305e7541f7ccfd7cff09daf0a3c}
+
+\item 
+Character\+Set {\bfseries character\+\_\+set} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_aeb09e449abac9af4e9ae45ca61643f7b}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_aeb09e449abac9af4e9ae45ca61643f7b}
+
+\item 
+bool {\bfseries is\+\_\+standard} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a5d06881217e78455f3d95b08e4c0118a}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a5d06881217e78455f3d95b08e4c0118a}
+
+\item 
+uc16 {\bfseries standard\+\_\+type} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a6f4ecd26b57cb35dd8d62a964393231c}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a6f4ecd26b57cb35dd8d62a964393231c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_character_range}{Character\+Range} $>$ $\ast$ {\bfseries ranges} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a5ff03e7b8e528731216c7d8d4e26fe7a}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a5ff03e7b8e528731216c7d8d4e26fe7a}
+
+\item 
+bool {\bfseries is\+\_\+negated} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a4a01a86e00c94d163a2f42018b6b62f4}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a4a01a86e00c94d163a2f42018b6b62f4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Character\+Set {\bfseries set\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a1d74030e2b2e762d561cdd5a0f340fb5}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a1d74030e2b2e762d561cdd5a0f340fb5}
+
+\item 
+bool {\bfseries is\+\_\+negated\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_character_class_a96c43918ee52b69f36f305209ff1ce85}{}\label{classv8_1_1internal_1_1_reg_exp_character_class_a96c43918ee52b69f36f305209ff1ce85}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

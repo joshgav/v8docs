@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1_address_to_trace_map}{}\section{v8\+:\+:internal\+:\+:Address\+To\+Trace\+Map Class Reference}
+\label{classv8_1_1internal_1_1_address_to_trace_map}\index{v8\+::internal\+::\+Address\+To\+Trace\+Map@{v8\+::internal\+::\+Address\+To\+Trace\+Map}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_address_to_trace_map_1_1_range_stack}{Range\+Stack}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Range} (Address addr, int size, unsigned node\+\_\+id)\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_a3b1bc8f1abc6f072a660d2b689852838}{}\label{classv8_1_1internal_1_1_address_to_trace_map_a3b1bc8f1abc6f072a660d2b689852838}
+
+\item 
+unsigned {\bfseries Get\+Trace\+Node\+Id} (Address addr)\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_ab76fa587a105ae24f300f171d8cb22a6}{}\label{classv8_1_1internal_1_1_address_to_trace_map_ab76fa587a105ae24f300f171d8cb22a6}
+
+\item 
+void {\bfseries Move\+Object} (Address from, Address to, int size)\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_a02c96d03b3486527aeb46a461c43cf15}{}\label{classv8_1_1internal_1_1_address_to_trace_map_a02c96d03b3486527aeb46a461c43cf15}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_aa705b7b0e3c00645af20ff4d61140f02}{}\label{classv8_1_1internal_1_1_address_to_trace_map_aa705b7b0e3c00645af20ff4d61140f02}
+
+\item 
+size\+\_\+t {\bfseries size} ()\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_a6acf57cbb1975fe242c744f4ad5669f3}{}\label{classv8_1_1internal_1_1_address_to_trace_map_a6acf57cbb1975fe242c744f4ad5669f3}
+
+\item 
+void {\bfseries Print} ()\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_a8aa12b1b9b85be5aba73b0631d1ea389}{}\label{classv8_1_1internal_1_1_address_to_trace_map_a8aa12b1b9b85be5aba73b0631d1ea389}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ Address, \hyperlink{structv8_1_1internal_1_1_address_to_trace_map_1_1_range_stack}{Range\+Stack} $>$ {\bfseries Range\+Map}\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_afd65f8eb3d8a0b639299248866bec150}{}\label{classv8_1_1internal_1_1_address_to_trace_map_afd65f8eb3d8a0b639299248866bec150}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Remove\+Range} (Address start, Address end)\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_a5fced099832218b998c2bb3ab6de9906}{}\label{classv8_1_1internal_1_1_address_to_trace_map_a5fced099832218b998c2bb3ab6de9906}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Range\+Map {\bfseries ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1_address_to_trace_map_ad84aa834e379d1a872155acc3811b23c}{}\label{classv8_1_1internal_1_1_address_to_trace_map_ad84aa834e379d1a872155acc3811b23c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/allocation-\/tracker.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/allocation-\/tracker.\+cc\end{DoxyCompactItemize}

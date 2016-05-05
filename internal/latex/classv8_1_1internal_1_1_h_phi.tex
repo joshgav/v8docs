@@ -1,0 +1,141 @@
+\hypertarget{classv8_1_1internal_1_1_h_phi}{}\section{v8\+:\+:internal\+:\+:H\+Phi Class Reference}
+\label{classv8_1_1internal_1_1_h_phi}\index{v8\+::internal\+::\+H\+Phi@{v8\+::internal\+::\+H\+Phi}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Phi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_h_phi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Phi} (int merged\+\_\+index, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_phi_afaa7e8b841d6884a543feef9ec503b08}{}\label{classv8_1_1internal_1_1_h_phi_afaa7e8b841d6884a543feef9ec503b08}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Representation\+From\+Inputs} () override\hypertarget{classv8_1_1internal_1_1_h_phi_acc898b08e52db212e943e3fecb0ae1ee}{}\label{classv8_1_1internal_1_1_h_phi_acc898b08e52db212e943e3fecb0ae1ee}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_range}{Range} $\ast$ {\bfseries Infer\+Range} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) override\hypertarget{classv8_1_1internal_1_1_h_phi_a795e22016bf84873b15248da2029eab8}{}\label{classv8_1_1internal_1_1_h_phi_a795e22016bf84873b15248da2029eab8}
+
+\item 
+void {\bfseries Infer\+Representation} (\hyperlink{classv8_1_1internal_1_1_h_infer_representation_phase}{H\+Infer\+Representation\+Phase} $\ast$h\+\_\+infer) override\hypertarget{classv8_1_1internal_1_1_h_phi_a3b5bed2fc378930a3321417892f36dc4}{}\label{classv8_1_1internal_1_1_h_phi_a3b5bed2fc378930a3321417892f36dc4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Required\+Input\+Representation} (int index) override\hypertarget{classv8_1_1internal_1_1_h_phi_af8a192d2d2896c685e28c0feab4a36fa}{}\label{classv8_1_1internal_1_1_h_phi_af8a192d2d2896c685e28c0feab4a36fa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Known\+Optimal\+Representation} () override\hypertarget{classv8_1_1internal_1_1_h_phi_a81d804a5948ed5ec193a1b22881b0fb6}{}\label{classv8_1_1internal_1_1_h_phi_a81d804a5948ed5ec193a1b22881b0fb6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_type}{H\+Type} {\bfseries Calculate\+Inferred\+Type} () override\hypertarget{classv8_1_1internal_1_1_h_phi_ab9a1507de737a25c812d38bbb0a283f9}{}\label{classv8_1_1internal_1_1_h_phi_ab9a1507de737a25c812d38bbb0a283f9}
+
+\item 
+int {\bfseries Operand\+Count} () const  override\hypertarget{classv8_1_1internal_1_1_h_phi_a2535279e0c0d75ef333aaf232dcfb537}{}\label{classv8_1_1internal_1_1_h_phi_a2535279e0c0d75ef333aaf232dcfb537}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries Operand\+At} (int index) const  override\hypertarget{classv8_1_1internal_1_1_h_phi_aa0ea3372da6469f77d8babf0d152f229}{}\label{classv8_1_1internal_1_1_h_phi_aa0ea3372da6469f77d8babf0d152f229}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries Get\+Redundant\+Replacement} ()\hypertarget{classv8_1_1internal_1_1_h_phi_a0e5d57591f1b4229ab664ae107217adc}{}\label{classv8_1_1internal_1_1_h_phi_a0e5d57591f1b4229ab664ae107217adc}
+
+\item 
+void {\bfseries Add\+Input} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_phi_a0bbd8104044b7d1bb5b15a0c189a568e}{}\label{classv8_1_1internal_1_1_h_phi_a0bbd8104044b7d1bb5b15a0c189a568e}
+
+\item 
+bool {\bfseries Has\+Real\+Uses} ()\hypertarget{classv8_1_1internal_1_1_h_phi_a7da4e780f2acf7a28f778ffbe39ec3d8}{}\label{classv8_1_1internal_1_1_h_phi_a7da4e780f2acf7a28f778ffbe39ec3d8}
+
+\item 
+bool {\bfseries Is\+Receiver} () const \hypertarget{classv8_1_1internal_1_1_h_phi_a60f7580126d9c7daaa1ad92f701fbe91}{}\label{classv8_1_1internal_1_1_h_phi_a60f7580126d9c7daaa1ad92f701fbe91}
+
+\item 
+bool {\bfseries Has\+Merged\+Index} () const \hypertarget{classv8_1_1internal_1_1_h_phi_adf5b97ad36b63ca156e1f088e07ad146}{}\label{classv8_1_1internal_1_1_h_phi_adf5b97ad36b63ca156e1f088e07ad146}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} {\bfseries position} () const  override\hypertarget{classv8_1_1internal_1_1_h_phi_ac9e039dca38a732e36db53f35dc118ca}{}\label{classv8_1_1internal_1_1_h_phi_ac9e039dca38a732e36db53f35dc118ca}
+
+\item 
+int {\bfseries merged\+\_\+index} () const \hypertarget{classv8_1_1internal_1_1_h_phi_a426e1797e7feccd51e86ac3cb019070b}{}\label{classv8_1_1internal_1_1_h_phi_a426e1797e7feccd51e86ac3cb019070b}
+
+\item 
+std\+::ostream \& {\bfseries Print\+To} (std\+::ostream \&os) const  override\hypertarget{classv8_1_1internal_1_1_h_phi_ab04510ce1e2eed0045a6e1a0442478ea}{}\label{classv8_1_1internal_1_1_h_phi_ab04510ce1e2eed0045a6e1a0442478ea}
+
+\item 
+void {\bfseries Init\+Real\+Uses} (int id)\hypertarget{classv8_1_1internal_1_1_h_phi_aafbc6e8bf11cd4695d9e28204e2cff3a}{}\label{classv8_1_1internal_1_1_h_phi_aafbc6e8bf11cd4695d9e28204e2cff3a}
+
+\item 
+void {\bfseries Add\+Non\+Phi\+Uses\+From} (\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_phi_a5547772b2adbd8e6054bf9c32668ca14}{}\label{classv8_1_1internal_1_1_h_phi_a5547772b2adbd8e6054bf9c32668ca14}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries representation\+\_\+from\+\_\+indirect\+\_\+uses} () const \hypertarget{classv8_1_1internal_1_1_h_phi_a8c610694e70132d96b5fe17cf9553c83}{}\label{classv8_1_1internal_1_1_h_phi_a8c610694e70132d96b5fe17cf9553c83}
+
+\item 
+bool {\bfseries has\+\_\+type\+\_\+feedback\+\_\+from\+\_\+uses} () const \hypertarget{classv8_1_1internal_1_1_h_phi_ac1670a7c0c1d6f1b4335489e23d95ebc}{}\label{classv8_1_1internal_1_1_h_phi_ac1670a7c0c1d6f1b4335489e23d95ebc}
+
+\item 
+int {\bfseries phi\+\_\+id} ()\hypertarget{classv8_1_1internal_1_1_h_phi_a459b618e1e716802ef349cdd96937525}{}\label{classv8_1_1internal_1_1_h_phi_a459b618e1e716802ef349cdd96937525}
+
+\item 
+Opcode {\bfseries opcode} () const  override\hypertarget{classv8_1_1internal_1_1_h_phi_a60c5017d5d5feca8f9aa0b5b662d5dc1}{}\label{classv8_1_1internal_1_1_h_phi_a60c5017d5d5feca8f9aa0b5b662d5dc1}
+
+\item 
+void {\bfseries Simplify\+Constant\+Inputs} ()\hypertarget{classv8_1_1internal_1_1_h_phi_a783af1e1da563b04b37f1628f3ee3dac}{}\label{classv8_1_1internal_1_1_h_phi_a783af1e1da563b04b37f1628f3ee3dac}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_phi_ab0b9a381e69bd3f7c169189a0f49ef76}{}\label{classv8_1_1internal_1_1_h_phi_ab0b9a381e69bd3f7c169189a0f49ef76}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Invalid\+Merged\+Index} = -\/1\hypertarget{classv8_1_1internal_1_1_h_phi_a43bb73e94ded110d46825371668d1398}{}\label{classv8_1_1internal_1_1_h_phi_a43bb73e94ded110d46825371668d1398}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Delete\+From\+Graph} () override\hypertarget{classv8_1_1internal_1_1_h_phi_a2fa1c273178dec5f70fd907462567987}{}\label{classv8_1_1internal_1_1_h_phi_a2fa1c273178dec5f70fd907462567987}
+
+\item 
+void {\bfseries Internal\+Set\+Operand\+At} (int index, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value) override\hypertarget{classv8_1_1internal_1_1_h_phi_afcdda62ba586a0c3af51024111fd5655}{}\label{classv8_1_1internal_1_1_h_phi_afcdda62ba586a0c3af51024111fd5655}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries representation\+\_\+from\+\_\+non\+\_\+phi\+\_\+uses} () const \hypertarget{classv8_1_1internal_1_1_h_phi_a001c9d9a670ef810acaf4440009319d0}{}\label{classv8_1_1internal_1_1_h_phi_a001c9d9a670ef810acaf4440009319d0}
+
+\item 
+bool {\bfseries Is\+Deletable} () const  override\hypertarget{classv8_1_1internal_1_1_h_phi_a5a8b62bfd1048a4271cb6c0a053f5264}{}\label{classv8_1_1internal_1_1_h_phi_a5a8b62bfd1048a4271cb6c0a053f5264}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ $>$ {\bfseries inputs\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_phi_a7d3d68075d5992be7a8542c45fb60bfe}{}\label{classv8_1_1internal_1_1_h_phi_a7d3d68075d5992be7a8542c45fb60bfe}
+
+\item 
+int {\bfseries merged\+\_\+index\+\_\+} = 0\hypertarget{classv8_1_1internal_1_1_h_phi_a77ed034689479f510d3eac0251908d9c}{}\label{classv8_1_1internal_1_1_h_phi_a77ed034689479f510d3eac0251908d9c}
+
+\item 
+int {\bfseries phi\+\_\+id\+\_\+} = -\/1\hypertarget{classv8_1_1internal_1_1_h_phi_a023995ed030756aaf6d142844e3fc585}{}\label{classv8_1_1internal_1_1_h_phi_a023995ed030756aaf6d142844e3fc585}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries representation\+\_\+from\+\_\+indirect\+\_\+uses\+\_\+} = Representation\+::\+None()\hypertarget{classv8_1_1internal_1_1_h_phi_a403c11c75886c8a05b16ff30a9ed243f}{}\label{classv8_1_1internal_1_1_h_phi_a403c11c75886c8a05b16ff30a9ed243f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries representation\+\_\+from\+\_\+non\+\_\+phi\+\_\+uses\+\_\+} = Representation\+::\+None()\hypertarget{classv8_1_1internal_1_1_h_phi_afd0cfcda2e7bb5b14d76708953291e57}{}\label{classv8_1_1internal_1_1_h_phi_afd0cfcda2e7bb5b14d76708953291e57}
+
+\item 
+bool {\bfseries has\+\_\+type\+\_\+feedback\+\_\+from\+\_\+uses\+\_\+} = false\hypertarget{classv8_1_1internal_1_1_h_phi_a493985d5400f725ef539fc0fbd18d05d}{}\label{classv8_1_1internal_1_1_h_phi_a493985d5400f725ef539fc0fbd18d05d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+cc\end{DoxyCompactItemize}

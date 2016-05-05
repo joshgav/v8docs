@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub}{}\section{v8\+:\+:internal\+:\+:Call\+Api\+Callback\+Stub Class Reference}
+\label{classv8_1_1internal_1_1_call_api_callback_stub}\index{v8\+::internal\+::\+Call\+Api\+Callback\+Stub@{v8\+::internal\+::\+Call\+Api\+Callback\+Stub}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Call\+Api\+Callback\+Stub\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_call_api_callback_stub}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_call_api_callback_stub_1_1_argument_bits}{Argument\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_call_api_callback_stub_1_1_call_data_undefined_bits}{Call\+Data\+Undefined\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_call_api_callback_stub_1_1_is_lazy_accessor_bits}{Is\+Lazy\+Accessor\+Bits}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_call_api_callback_stub_1_1_is_store_bits}{Is\+Store\+Bits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Call\+Api\+Callback\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, bool is\+\_\+store, bool call\+\_\+data\+\_\+undefined, bool is\+\_\+lazy)\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a1c2b83968c4d6170eea14086974f0944}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a1c2b83968c4d6170eea14086974f0944}
+
+\item 
+{\bfseries Call\+Api\+Callback\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int argc, bool call\+\_\+data\+\_\+undefined)\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a90c4ec3e9f7a7ceb0613ed4cd9f2de2b}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a90c4ec3e9f7a7ceb0613ed4cd9f2de2b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_call_interface_descriptor}{Call\+Interface\+Descriptor} {\bfseries Get\+Call\+Interface\+Descriptor} () const  override\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_ab8455ce0508b8f65500adcf53a1dea7f}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_ab8455ce0508b8f65500adcf53a1dea7f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Arg\+Bits} = 3\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a01bed92bdb50d4c1466364c3864b16c3}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a01bed92bdb50d4c1466364c3864b16c3}
+
+\item 
+static const int {\bfseries k\+Arg\+Max} = (1 $<$$<$ k\+Arg\+Bits) -\/ 1\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a1b9144f1a90fd2a03f718898bf65af2c}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a1b9144f1a90fd2a03f718898bf65af2c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Call\+Api\+Callback\+Stub} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int argc, bool is\+\_\+store, bool call\+\_\+data\+\_\+undefined, bool is\+\_\+lazy)\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a2c3136663936ec72a32547489d185e6f}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a2c3136663936ec72a32547489d185e6f}
+
+\item 
+bool {\bfseries is\+\_\+store} () const \hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a4db7b4444eacd524ee3d97e3cbceef99}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a4db7b4444eacd524ee3d97e3cbceef99}
+
+\item 
+bool {\bfseries is\+\_\+lazy} () const \hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_ab2adb490481cf144ad063cb8a851f9bd}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_ab2adb490481cf144ad063cb8a851f9bd}
+
+\item 
+bool {\bfseries call\+\_\+data\+\_\+undefined} () const \hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a523f1b846b28ac709c069dccdbeff076}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a523f1b846b28ac709c069dccdbeff076}
+
+\item 
+int {\bfseries argc} () const \hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_a67afb188959038383220b383e675a667}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_a67afb188959038383220b383e675a667}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+C\+O\+D\+E\+\_\+\+S\+T\+UB} (Call\+Api\+Callback, \hyperlink{classv8_1_1internal_1_1_platform_code_stub}{Platform\+Code\+Stub})\hypertarget{classv8_1_1internal_1_1_call_api_callback_stub_aa650a096cb8d53ce7e09c99a0aaf035e}{}\label{classv8_1_1internal_1_1_call_api_callback_stub_aa650a096cb8d53ce7e09c99a0aaf035e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/code-\/stubs.\+h\end{DoxyCompactItemize}

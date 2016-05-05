@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1_store_buffer}{}\section{v8\+:\+:internal\+:\+:Store\+Buffer Class Reference}
+\label{classv8_1_1internal_1_1_store_buffer}\index{v8\+::internal\+::\+Store\+Buffer@{v8\+::internal\+::\+Store\+Buffer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Store\+Buffer} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_store_buffer_afeb036a2c6157abd9b20c2b8ffa28052}{}\label{classv8_1_1internal_1_1_store_buffer_afeb036a2c6157abd9b20c2b8ffa28052}
+
+\item 
+void {\bfseries Set\+Up} ()\hypertarget{classv8_1_1internal_1_1_store_buffer_a031dcd4df4a4c83bcb856c70ec4e4fbc}{}\label{classv8_1_1internal_1_1_store_buffer_a031dcd4df4a4c83bcb856c70ec4e4fbc}
+
+\item 
+void {\bfseries Tear\+Down} ()\hypertarget{classv8_1_1internal_1_1_store_buffer_ad05bd8e03f20976385f7308304792398}{}\label{classv8_1_1internal_1_1_store_buffer_ad05bd8e03f20976385f7308304792398}
+
+\item 
+Address $\ast$ {\bfseries top\+\_\+address} ()\hypertarget{classv8_1_1internal_1_1_store_buffer_ab4b8b19cb1c629044f1c17e028b4f1ab}{}\label{classv8_1_1internal_1_1_store_buffer_ab4b8b19cb1c629044f1c17e028b4f1ab}
+
+\item 
+void {\bfseries Move\+Entries\+To\+Remembered\+Set} ()\hypertarget{classv8_1_1internal_1_1_store_buffer_a991cca17f889688ecdab3e71877ba6de}{}\label{classv8_1_1internal_1_1_store_buffer_a991cca17f889688ecdab3e71877ba6de}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Store\+Buffer\+Overflow} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_store_buffer_a9005265f6f854d3db5b098749ef2f616}{}\label{classv8_1_1internal_1_1_store_buffer_a9005265f6f854d3db5b098749ef2f616}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Store\+Buffer\+Size} = 1 $<$$<$ (14 + k\+Pointer\+Size\+Log2)\hypertarget{classv8_1_1internal_1_1_store_buffer_ad1e8d91749d99db471ce7f75ddc6dbfc}{}\label{classv8_1_1internal_1_1_store_buffer_ad1e8d91749d99db471ce7f75ddc6dbfc}
+
+\item 
+static const int {\bfseries k\+Store\+Buffer\+Mask} = k\+Store\+Buffer\+Size -\/ 1\hypertarget{classv8_1_1internal_1_1_store_buffer_aba773520960e5bb924b2da224136f597}{}\label{classv8_1_1internal_1_1_store_buffer_aba773520960e5bb924b2da224136f597}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_store_buffer_a795795da67e7d66210e3dd99c0c23bc5}{}\label{classv8_1_1internal_1_1_store_buffer_a795795da67e7d66210e3dd99c0c23bc5}
+
+\item 
+Address $\ast$ {\bfseries top\+\_\+}\hypertarget{classv8_1_1internal_1_1_store_buffer_ac7f49c93558618be64bf209734499e6d}{}\label{classv8_1_1internal_1_1_store_buffer_ac7f49c93558618be64bf209734499e6d}
+
+\item 
+Address $\ast$ {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1_store_buffer_ac7fd76199db652e59c06b0c21f218f7a}{}\label{classv8_1_1internal_1_1_store_buffer_ac7fd76199db652e59c06b0c21f218f7a}
+
+\item 
+Address $\ast$ {\bfseries limit\+\_\+}\hypertarget{classv8_1_1internal_1_1_store_buffer_a2ef311a7a136673b9beaa9dac38f2191}{}\label{classv8_1_1internal_1_1_store_buffer_a2ef311a7a136673b9beaa9dac38f2191}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$ {\bfseries virtual\+\_\+memory\+\_\+}\hypertarget{classv8_1_1internal_1_1_store_buffer_a7d0a7ea917f0ca94c3d1b53599b4c301}{}\label{classv8_1_1internal_1_1_store_buffer_a7d0a7ea917f0ca94c3d1b53599b4c301}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/store-\/buffer.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/store-\/buffer.\+cc\end{DoxyCompactItemize}

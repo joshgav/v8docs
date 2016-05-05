@@ -1,0 +1,48 @@
+\hypertarget{classv8_1_1internal_1_1_allocation_profile}{}\section{v8\+:\+:internal\+:\+:Allocation\+Profile Class Reference}
+\label{classv8_1_1internal_1_1_allocation_profile}\index{v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Allocation\+Profile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_allocation_profile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1_allocation_profile_1_1_node}{v8\+::\+Allocation\+Profile\+::\+Node} $\ast$ \hyperlink{classv8_1_1internal_1_1_allocation_profile_abb93406eaccd8b37de3e080d0620bc2b}{Get\+Root\+Node} () override
+\item 
+std\+::deque$<$ \hyperlink{structv8_1_1_allocation_profile_1_1_node}{v8\+::\+Allocation\+Profile\+::\+Node} $>$ \& {\bfseries nodes} ()\hypertarget{classv8_1_1internal_1_1_allocation_profile_aae4669a89f83fbb4cb0d6bcf334d617b}{}\label{classv8_1_1internal_1_1_allocation_profile_aae4669a89f83fbb4cb0d6bcf334d617b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_allocation_profile}{Allocation\+Profile})\hypertarget{classv8_1_1internal_1_1_allocation_profile_a6d8a3ded6b83bf1a664d05b7940070df}{}\label{classv8_1_1internal_1_1_allocation_profile_a6d8a3ded6b83bf1a664d05b7940070df}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::deque$<$ \hyperlink{structv8_1_1_allocation_profile_1_1_node}{v8\+::\+Allocation\+Profile\+::\+Node} $>$ {\bfseries nodes\+\_\+}\hypertarget{classv8_1_1internal_1_1_allocation_profile_a43cc2c37b9ea845241551f7d165a530e}{}\label{classv8_1_1internal_1_1_allocation_profile_a43cc2c37b9ea845241551f7d165a530e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}!Get\+Root\+Node@{Get\+Root\+Node}}
+\index{Get\+Root\+Node@{Get\+Root\+Node}!v8\+::internal\+::\+Allocation\+Profile@{v8\+::internal\+::\+Allocation\+Profile}}
+\subsubsection[{\texorpdfstring{Get\+Root\+Node() override}{GetRootNode() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Allocation\+Profile\+::\+Node}$\ast$ v8\+::internal\+::\+Allocation\+Profile\+::\+Get\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1internal_1_1_allocation_profile_abb93406eaccd8b37de3e080d0620bc2b}{}\label{classv8_1_1internal_1_1_allocation_profile_abb93406eaccd8b37de3e080d0620bc2b}
+Returns the root node of the call-\/graph. The root node corresponds to an empty JS call-\/stack. The lifetime of the returned Node$\ast$ is scoped to the containing \hyperlink{classv8_1_1internal_1_1_allocation_profile}{Allocation\+Profile}. 
+
+Implements \hyperlink{classv8_1_1_allocation_profile_afea045dae30df5477088e2f0b7edb6c4}{v8\+::\+Allocation\+Profile}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/sampling-\/heap-\/profiler.\+h\end{DoxyCompactItemize}

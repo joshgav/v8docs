@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1_set}{}\section{v8\+:\+:Set Class Reference}
+\label{classv8_1_1_set}\index{v8\+::\+Set@{v8\+::\+Set}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_set}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries Size} () const \hypertarget{classv8_1_1_set_a7ae1a3522f51a8061813f562086baa91}{}\label{classv8_1_1_set_a7ae1a3522f51a8061813f562086baa91}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1_set_a5f7e4dbd6729a503ca617415d5eeedf0}{}\label{classv8_1_1_set_a5f7e4dbd6729a503ca617415d5eeedf0}
+
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe_local}{Maybe\+Local}$<$ \hyperlink{classv8_1_1_set}{Set} $>$ {\bfseries Add} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key)\hypertarget{classv8_1_1_set_afe7b3f75000e7bca468199e87cea27b7}{}\label{classv8_1_1_set_afe7b3f75000e7bca468199e87cea27b7}
+
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe}{Maybe}$<$ bool $>$ {\bfseries Has} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key)\hypertarget{classv8_1_1_set_ac8703cf3d49bb0142f3425ac57fe0679}{}\label{classv8_1_1_set_ac8703cf3d49bb0142f3425ac57fe0679}
+
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe}{Maybe}$<$ bool $>$ {\bfseries Delete} (\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_value}{Value} $>$ key)\hypertarget{classv8_1_1_set_a680215d1b7b1c2c52848f70ae9f6d01a}{}\label{classv8_1_1_set_a680215d1b7b1c2c52848f70ae9f6d01a}
+
+\item 
+\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_array}{Array} $>$ \hyperlink{classv8_1_1_set_a6c295700b7f46dbfaf3165d39e15bd96}{As\+Array} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_set}{Set} $>$ \hyperlink{classv8_1_1_set_a4fa9826ffcbb58a49e9855ed86a3abac}{New} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)
+\item 
+static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_set}{Set} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\hypertarget{classv8_1_1_set_a1739da4ee6bf39c381b83023f653e995}{}\label{classv8_1_1_set_a1739da4ee6bf39c381b83023f653e995}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Check\+Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\hypertarget{classv8_1_1_set_a3bd2b0d4842cb96a9ec14546f49af5ed}{}\label{classv8_1_1_set_a3bd2b0d4842cb96a9ec14546f49af5ed}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of the built-\/in \hyperlink{classv8_1_1_set}{Set} constructor (E\+C\+M\+A-\/262, 6th Edition, 23.\+2.\+1). 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Set@{v8\+::\+Set}!As\+Array@{As\+Array}}
+\index{As\+Array@{As\+Array}!v8\+::\+Set@{v8\+::\+Set}}
+\subsubsection[{\texorpdfstring{As\+Array() const }{AsArray() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf Array} $>$ v8\+::\+Set\+::\+As\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classv8_1_1_set_a6c295700b7f46dbfaf3165d39e15bd96}{}\label{classv8_1_1_set_a6c295700b7f46dbfaf3165d39e15bd96}
+Returns an array of the keys in this \hyperlink{classv8_1_1_set}{Set}. \index{v8\+::\+Set@{v8\+::\+Set}!New@{New}}
+\index{New@{New}!v8\+::\+Set@{v8\+::\+Set}}
+\subsubsection[{\texorpdfstring{New(\+Isolate $\ast$isolate)}{New(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf v8\+::\+Set} $>$ v8\+::\+Set\+::\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1_set_a4fa9826ffcbb58a49e9855ed86a3abac}{}\label{classv8_1_1_set_a4fa9826ffcbb58a49e9855ed86a3abac}
+Creates a new empty \hyperlink{classv8_1_1_set}{Set}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\item 
+/\+Users/joshgav/node/v8/src/api.\+cc\end{DoxyCompactItemize}

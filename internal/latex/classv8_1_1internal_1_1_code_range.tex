@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1_code_range}{}\section{v8\+:\+:internal\+:\+:Code\+Range Class Reference}
+\label{classv8_1_1internal_1_1_code_range}\index{v8\+::internal\+::\+Code\+Range@{v8\+::internal\+::\+Code\+Range}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Code\+Range} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_code_range_a2da59ac7ea807e47ff203a3ec0819f22}{}\label{classv8_1_1internal_1_1_code_range_a2da59ac7ea807e47ff203a3ec0819f22}
+
+\item 
+bool {\bfseries Set\+Up} (size\+\_\+t requested\+\_\+size)\hypertarget{classv8_1_1internal_1_1_code_range_ab1082d1ad9b6ce86a731ab6361d2c8c2}{}\label{classv8_1_1internal_1_1_code_range_ab1082d1ad9b6ce86a731ab6361d2c8c2}
+
+\item 
+bool {\bfseries valid} ()\hypertarget{classv8_1_1internal_1_1_code_range_afadcd51c16f631264936da438f1d6cc9}{}\label{classv8_1_1internal_1_1_code_range_afadcd51c16f631264936da438f1d6cc9}
+
+\item 
+Address {\bfseries start} ()\hypertarget{classv8_1_1internal_1_1_code_range_a7a5983aaf6d9d12992fc769650f15423}{}\label{classv8_1_1internal_1_1_code_range_a7a5983aaf6d9d12992fc769650f15423}
+
+\item 
+size\+\_\+t {\bfseries size} ()\hypertarget{classv8_1_1internal_1_1_code_range_a4697153e507a7535167fb4020ea3b7fe}{}\label{classv8_1_1internal_1_1_code_range_a4697153e507a7535167fb4020ea3b7fe}
+
+\item 
+bool {\bfseries contains} (Address address)\hypertarget{classv8_1_1internal_1_1_code_range_a02dc5af7ad63aee79f0b772b255d7e09}{}\label{classv8_1_1internal_1_1_code_range_a02dc5af7ad63aee79f0b772b255d7e09}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT Address {\bfseries Allocate\+Raw\+Memory} (const size\+\_\+t requested\+\_\+size, const size\+\_\+t commit\+\_\+size, size\+\_\+t $\ast$allocated)\hypertarget{classv8_1_1internal_1_1_code_range_ab770d600d0f42aa2834a5968fa812942}{}\label{classv8_1_1internal_1_1_code_range_ab770d600d0f42aa2834a5968fa812942}
+
+\item 
+bool {\bfseries Commit\+Raw\+Memory} (Address start, size\+\_\+t length)\hypertarget{classv8_1_1internal_1_1_code_range_ac52f5532656c5e6aa6a8750dd5dadd5d}{}\label{classv8_1_1internal_1_1_code_range_ac52f5532656c5e6aa6a8750dd5dadd5d}
+
+\item 
+bool {\bfseries Uncommit\+Raw\+Memory} (Address start, size\+\_\+t length)\hypertarget{classv8_1_1internal_1_1_code_range_aee7c86999c6002cd2ce3004ab1ffc5c7}{}\label{classv8_1_1internal_1_1_code_range_aee7c86999c6002cd2ce3004ab1ffc5c7}
+
+\item 
+void {\bfseries Free\+Raw\+Memory} (Address buf, size\+\_\+t length)\hypertarget{classv8_1_1internal_1_1_code_range_a1dbd30c12efca7e40cc0612e81515821}{}\label{classv8_1_1internal_1_1_code_range_a1dbd30c12efca7e40cc0612e81515821}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Tear\+Down} ()\hypertarget{classv8_1_1internal_1_1_code_range_a1c0a54e3aff48da76ebb4dea2b69ca37}{}\label{classv8_1_1internal_1_1_code_range_a1c0a54e3aff48da76ebb4dea2b69ca37}
+
+\item 
+bool {\bfseries Get\+Next\+Allocation\+Block} (size\+\_\+t requested)\hypertarget{classv8_1_1internal_1_1_code_range_ab426857d0e5d7dd2fa8fcc58c90a7424}{}\label{classv8_1_1internal_1_1_code_range_ab426857d0e5d7dd2fa8fcc58c90a7424}
+
+\item 
+bool {\bfseries Reserve\+Block} (const size\+\_\+t requested\+\_\+size, \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_code_range_ae4b3125115c3b73baef0ddc37152704c}{}\label{classv8_1_1internal_1_1_code_range_ae4b3125115c3b73baef0ddc37152704c}
+
+\item 
+void {\bfseries Release\+Block} (const \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_code_range_a1a157bdcdd2c87d27e5acef3e07462f7}{}\label{classv8_1_1internal_1_1_code_range_a1a157bdcdd2c87d27e5acef3e07462f7}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_code_range}{Code\+Range})\hypertarget{classv8_1_1internal_1_1_code_range_a46a0e9856e0881eb3f9ae82cf9f12502}{}\label{classv8_1_1internal_1_1_code_range_a46a0e9856e0881eb3f9ae82cf9f12502}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Compare\+Free\+Block\+Address} (const \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $\ast$left, const \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $\ast$right)\hypertarget{classv8_1_1internal_1_1_code_range_a68bc3c5cddc6eb004f610667e1fe7be6}{}\label{classv8_1_1internal_1_1_code_range_a68bc3c5cddc6eb004f610667e1fe7be6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_a955b7b8eb2f5c91db57b3d0e46b45e05}{}\label{classv8_1_1internal_1_1_code_range_a955b7b8eb2f5c91db57b3d0e46b45e05}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_virtual_memory}{base\+::\+Virtual\+Memory} $\ast$ {\bfseries code\+\_\+range\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_a152a11786099e79390a14b05b6dd4780}{}\label{classv8_1_1internal_1_1_code_range_a152a11786099e79390a14b05b6dd4780}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries code\+\_\+range\+\_\+mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_aa83cb77c2be0f9b9042f067e36df29b3}{}\label{classv8_1_1internal_1_1_code_range_aa83cb77c2be0f9b9042f067e36df29b3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $>$ {\bfseries free\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_ab386ade291987b66669acd60c82e3d88}{}\label{classv8_1_1internal_1_1_code_range_ab386ade291987b66669acd60c82e3d88}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_code_range_1_1_free_block}{Free\+Block} $>$ {\bfseries allocation\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_a70689cc4730d0e73a89a63b4980f3ad4}{}\label{classv8_1_1internal_1_1_code_range_a70689cc4730d0e73a89a63b4980f3ad4}
+
+\item 
+int {\bfseries current\+\_\+allocation\+\_\+block\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_range_a0fb4f845674ba4ba549aba71dcc96b66}{}\label{classv8_1_1internal_1_1_code_range_a0fb4f845674ba4ba549aba71dcc96b66}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

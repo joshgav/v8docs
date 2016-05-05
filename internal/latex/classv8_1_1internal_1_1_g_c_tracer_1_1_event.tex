@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event}{}\section{v8\+:\+:internal\+:\+:G\+C\+Tracer\+:\+:Event Class Reference}
+\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event}\index{v8\+::internal\+::\+G\+C\+Tracer\+::\+Event@{v8\+::internal\+::\+G\+C\+Tracer\+::\+Event}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries S\+C\+A\+V\+E\+N\+G\+ER} = 0, 
+\\*
+{\bfseries M\+A\+R\+K\+\_\+\+C\+O\+M\+P\+A\+C\+T\+OR} = 1, 
+\\*
+{\bfseries I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+M\+A\+R\+K\+\_\+\+C\+O\+M\+P\+A\+C\+T\+OR} = 2, 
+\\*
+{\bfseries S\+T\+A\+RT} = 3
+ \}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a0f3b1f2a3d83c7041662d371f94ac3f4}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a0f3b1f2a3d83c7041662d371f94ac3f4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Event} (Type type, const char $\ast$gc\+\_\+reason, const char $\ast$collector\+\_\+reason)\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_abfc808d5b6ae9dbb4aa3d05b889b1c7d}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_abfc808d5b6ae9dbb4aa3d05b889b1c7d}
+
+\item 
+const char $\ast$ {\bfseries Type\+Name} (bool short\+\_\+name) const \hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a6ce96cd39411592c945e602a6a33d742}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a6ce96cd39411592c945e602a6a33d742}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Type {\bfseries type}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_aa4e8172e84b3b2f7c1465827d8f8706e}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_aa4e8172e84b3b2f7c1465827d8f8706e}
+
+\item 
+const char $\ast$ {\bfseries gc\+\_\+reason}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a51f3fabac4ba27c2f7a0186bad3a6044}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a51f3fabac4ba27c2f7a0186bad3a6044}
+
+\item 
+const char $\ast$ {\bfseries collector\+\_\+reason}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a38a7a934142f05bcd46bdf099bd7bd0d}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a38a7a934142f05bcd46bdf099bd7bd0d}
+
+\item 
+double {\bfseries start\+\_\+time}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a76bac34aff2cc172fb923ecbf0527bf3}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a76bac34aff2cc172fb923ecbf0527bf3}
+
+\item 
+double {\bfseries end\+\_\+time}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a2b236e7c2f31751fd4c8f98f54c6f99d}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a2b236e7c2f31751fd4c8f98f54c6f99d}
+
+\item 
+bool {\bfseries reduce\+\_\+memory}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a8f6bcceda319cf086a219b2e2b0a3a44}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a8f6bcceda319cf086a219b2e2b0a3a44}
+
+\item 
+intptr\+\_\+t {\bfseries start\+\_\+object\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a867e0a22e2a8b817dcbc58abcce20df6}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a867e0a22e2a8b817dcbc58abcce20df6}
+
+\item 
+intptr\+\_\+t {\bfseries end\+\_\+object\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ab9abfdd627aa471c2ddcd6778121e36f}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ab9abfdd627aa471c2ddcd6778121e36f}
+
+\item 
+intptr\+\_\+t {\bfseries start\+\_\+memory\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_afe5bf0624e66246493bfb232caf95bc9}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_afe5bf0624e66246493bfb232caf95bc9}
+
+\item 
+intptr\+\_\+t {\bfseries end\+\_\+memory\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a60102d5918dfff8b6a0724e14c5463f5}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a60102d5918dfff8b6a0724e14c5463f5}
+
+\item 
+intptr\+\_\+t {\bfseries start\+\_\+holes\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a7c679e0ac4a057c0d18d5f0c282f045f}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a7c679e0ac4a057c0d18d5f0c282f045f}
+
+\item 
+intptr\+\_\+t {\bfseries end\+\_\+holes\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a0ae16b3e6141b7a2a90071c78d4c4f92}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a0ae16b3e6141b7a2a90071c78d4c4f92}
+
+\item 
+intptr\+\_\+t {\bfseries new\+\_\+space\+\_\+object\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ac9246c49525061f50a5f496289cdbb1f}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ac9246c49525061f50a5f496289cdbb1f}
+
+\item 
+intptr\+\_\+t {\bfseries survived\+\_\+new\+\_\+space\+\_\+object\+\_\+size}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ad5adb8fd35a759afb75a0dd7a95aabae}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ad5adb8fd35a759afb75a0dd7a95aabae}
+
+\item 
+int {\bfseries cumulative\+\_\+incremental\+\_\+marking\+\_\+steps}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a6fe471b8193c2bcfa3ef4b6908369446}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a6fe471b8193c2bcfa3ef4b6908369446}
+
+\item 
+int {\bfseries incremental\+\_\+marking\+\_\+steps}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a111a3b5ce6f817ac606cd73012686b7e}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a111a3b5ce6f817ac606cd73012686b7e}
+
+\item 
+intptr\+\_\+t {\bfseries cumulative\+\_\+incremental\+\_\+marking\+\_\+bytes}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ad2d4b245751173527573ed9773dcecfe}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_ad2d4b245751173527573ed9773dcecfe}
+
+\item 
+intptr\+\_\+t {\bfseries incremental\+\_\+marking\+\_\+bytes}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a8f884a484eaa06898253d1149503582a}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a8f884a484eaa06898253d1149503582a}
+
+\item 
+double {\bfseries cumulative\+\_\+incremental\+\_\+marking\+\_\+duration}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a24a8d3d6a0ee5c0d7fe545a2a664b6a0}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a24a8d3d6a0ee5c0d7fe545a2a664b6a0}
+
+\item 
+double {\bfseries incremental\+\_\+marking\+\_\+duration}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_abb2c3827a1615b7e15d0530a7b598679}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_abb2c3827a1615b7e15d0530a7b598679}
+
+\item 
+double {\bfseries cumulative\+\_\+pure\+\_\+incremental\+\_\+marking\+\_\+duration}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a059d8f814f8ffaa7596cacdbd4660c5a}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a059d8f814f8ffaa7596cacdbd4660c5a}
+
+\item 
+double {\bfseries pure\+\_\+incremental\+\_\+marking\+\_\+duration}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a85ce46e2d272e1134f5ce23d59b9d610}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a85ce46e2d272e1134f5ce23d59b9d610}
+
+\item 
+double {\bfseries longest\+\_\+incremental\+\_\+marking\+\_\+step}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a43de71f2911958f61fa127510a65094e}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_a43de71f2911958f61fa127510a65094e}
+
+\item 
+double {\bfseries scopes} \mbox{[}Scope\+::\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+C\+O\+P\+ES\mbox{]}\hypertarget{classv8_1_1internal_1_1_g_c_tracer_1_1_event_add05c317c9067e4b3d6fce6ce114a802}{}\label{classv8_1_1internal_1_1_g_c_tracer_1_1_event_add05c317c9067e4b3d6fce6ce114a802}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/gc-\/tracer.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/gc-\/tracer.\+cc\end{DoxyCompactItemize}

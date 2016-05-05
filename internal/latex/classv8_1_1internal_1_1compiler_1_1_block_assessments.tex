@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Block\+Assessments Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_block_assessments}\index{v8\+::internal\+::compiler\+::\+Block\+Assessments@{v8\+::internal\+::compiler\+::\+Block\+Assessments}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Block\+Assessments\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_block_assessments}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_zone_map}{Zone\+Map}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand}, \hyperlink{classv8_1_1internal_1_1compiler_1_1_assessment}{Assessment} $\ast$, \hyperlink{structv8_1_1internal_1_1compiler_1_1_operand_as_key_less}{Operand\+As\+Key\+Less} $>$ {\bfseries Operand\+Map}\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_aadb80ba282499ca7661203edf35956ba}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_aadb80ba282499ca7661203edf35956ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Block\+Assessments} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a700e4a6d5b772dd3227058d09d8e2afd}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a700e4a6d5b772dd3227058d09d8e2afd}
+
+\item 
+void {\bfseries Drop} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} operand)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_af426cc23b18a87d752c7a0d603ff902a}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_af426cc23b18a87d752c7a0d603ff902a}
+
+\item 
+void {\bfseries Drop\+Registers} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_adc89da8c1bc90dd088292ca2d0412f7f}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_adc89da8c1bc90dd088292ca2d0412f7f}
+
+\item 
+void {\bfseries Add\+Definition} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} operand, int virtual\+\_\+register)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a64c6a0b81ec94e830a85773a2bf3bd89}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a64c6a0b81ec94e830a85773a2bf3bd89}
+
+\item 
+void {\bfseries Perform\+Moves} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction}{Instruction} $\ast$instruction)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a63528cb219f683bfde6d5f40d893e5dc}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a63528cb219f683bfde6d5f40d893e5dc}
+
+\item 
+void {\bfseries Perform\+Parallel\+Moves} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_parallel_move}{Parallel\+Move} $\ast$moves)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a37a06801540f257333623693a349743d}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a37a06801540f257333623693a349743d}
+
+\item 
+void {\bfseries Copy\+From} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments} $\ast$other)\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a61768a55893c2e2c08b5de928d3708ac}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a61768a55893c2e2c08b5de928d3708ac}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_map}{Operand\+Map} \& {\bfseries map} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_ac12e8c9f7acbd913d5b04639fbcc463d}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_ac12e8c9f7acbd913d5b04639fbcc463d}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_map}{Operand\+Map} \& {\bfseries map} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a79b8430b1a353d6ce2a8edb487514963}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a79b8430b1a353d6ce2a8edb487514963}
+
+\item 
+void {\bfseries Print} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a32a2269aae98f454665ea36fbc10d237}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a32a2269aae98f454665ea36fbc10d237}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_block_assessments}{Block\+Assessments})\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_acefebf04f149c047b1bede0082d03906}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_acefebf04f149c047b1bede0082d03906}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_map}{Operand\+Map} {\bfseries map\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a1fff68bfc4301a4a17c0692a9d34cc73}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a1fff68bfc4301a4a17c0692a9d34cc73}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_map}{Operand\+Map} {\bfseries map\+\_\+for\+\_\+moves\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a90936198810bfaf89985df4c1194b25d}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a90936198810bfaf89985df4c1194b25d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_block_assessments_a5404dc61bbf91af21be4456e53b5d570}{}\label{classv8_1_1internal_1_1compiler_1_1_block_assessments_a5404dc61bbf91af21be4456e53b5d570}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator-\/verifier.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator-\/verifier.\+cc\end{DoxyCompactItemize}

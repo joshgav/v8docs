@@ -1,0 +1,154 @@
+\hypertarget{classv8_1_1internal_1_1_translated_frame}{}\section{v8\+:\+:internal\+:\+:Translated\+Frame Class Reference}
+\label{classv8_1_1internal_1_1_translated_frame}\index{v8\+::internal\+::\+Translated\+Frame@{v8\+::internal\+::\+Translated\+Frame}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_translated_frame_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Kind} \{ \\*
+{\bfseries k\+Function}, 
+\\*
+{\bfseries k\+Interpreted\+Function}, 
+\\*
+{\bfseries k\+Getter}, 
+\\*
+{\bfseries k\+Setter}, 
+\\*
+{\bfseries k\+Tail\+Caller\+Function}, 
+\\*
+{\bfseries k\+Arguments\+Adaptor}, 
+\\*
+{\bfseries k\+Construct\+Stub}, 
+\\*
+{\bfseries k\+Compiled\+Stub}, 
+\\*
+{\bfseries k\+Invalid}
+ \}\hypertarget{classv8_1_1internal_1_1_translated_frame_aa6931f8e7c4e1e1bf42252d1d8e1bf9d}{}\label{classv8_1_1internal_1_1_translated_frame_aa6931f8e7c4e1e1bf42252d1d8e1bf9d}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} \& {\bfseries reference}\hypertarget{classv8_1_1internal_1_1_translated_frame_a729f1e8f225634f1ecf4e88e93ed70ae}{}\label{classv8_1_1internal_1_1_translated_frame_a729f1e8f225634f1ecf4e88e93ed70ae}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} const \& {\bfseries const\+\_\+reference}\hypertarget{classv8_1_1internal_1_1_translated_frame_a598659983fe92a1b0f6853c97582c5cc}{}\label{classv8_1_1internal_1_1_translated_frame_a598659983fe92a1b0f6853c97582c5cc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Get\+Value\+Count} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_a689c1d2b07853f5e222509f8b0c7cd5f}{}\label{classv8_1_1internal_1_1_translated_frame_a689c1d2b07853f5e222509f8b0c7cd5f}
+
+\item 
+Kind {\bfseries kind} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_a2ce968e294fc80171218fee72a8f60f7}{}\label{classv8_1_1internal_1_1_translated_frame_a2ce968e294fc80171218fee72a8f60f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries node\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_a54621688ca5f96a1e82acadd98780cd2}{}\label{classv8_1_1internal_1_1_translated_frame_a54621688ca5f96a1e82acadd98780cd2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries shared\+\_\+info} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_adaa1c7c91eedff3fc2b24a85bc39375c}{}\label{classv8_1_1internal_1_1_translated_frame_adaa1c7c91eedff3fc2b24a85bc39375c}
+
+\item 
+int {\bfseries height} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_a444e59fdd4025b8b583132381610d528}{}\label{classv8_1_1internal_1_1_translated_frame_a444e59fdd4025b8b583132381610d528}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$ {\bfseries raw\+\_\+shared\+\_\+info} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_a5ae8679ef796c246a4b9344579d183d3}{}\label{classv8_1_1internal_1_1_translated_frame_a5ae8679ef796c246a4b9344579d183d3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_frame_1_1iterator}{iterator} {\bfseries begin} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_ab8fe3880b57f7f14f4ebfd907dfeb723}{}\label{classv8_1_1internal_1_1_translated_frame_ab8fe3880b57f7f14f4ebfd907dfeb723}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_frame_1_1iterator}{iterator} {\bfseries end} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_a045d000f672509ec860ed19e309ec800}{}\label{classv8_1_1internal_1_1_translated_frame_a045d000f672509ec860ed19e309ec800}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_value}{reference} {\bfseries front} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_a10dbd5e39f866cfebdd40ec9afd15ec6}{}\label{classv8_1_1internal_1_1_translated_frame_a10dbd5e39f866cfebdd40ec9afd15ec6}
+
+\item 
+const\+\_\+reference {\bfseries front} () const \hypertarget{classv8_1_1internal_1_1_translated_frame_ad92e7e59ff48aeb99159f7f12bd80976}{}\label{classv8_1_1internal_1_1_translated_frame_ad92e7e59ff48aeb99159f7f12bd80976}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ \hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} $>$ {\bfseries Values\+Container}\hypertarget{classv8_1_1internal_1_1_translated_frame_ad59c375ca68658dc394e10c9117e2430}{}\label{classv8_1_1internal_1_1_translated_frame_ad59c375ca68658dc394e10c9117e2430}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Translated\+Frame} (Kind kind, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info=nullptr, int height=0)\hypertarget{classv8_1_1internal_1_1_translated_frame_af90a7c22f46c7224b3686f0ad73a4e5b}{}\label{classv8_1_1internal_1_1_translated_frame_af90a7c22f46c7224b3686f0ad73a4e5b}
+
+\item 
+void {\bfseries Add} (const \hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} \&value)\hypertarget{classv8_1_1internal_1_1_translated_frame_a441977f16d6e055336c34f6b6235a5a4}{}\label{classv8_1_1internal_1_1_translated_frame_a441977f16d6e055336c34f6b6235a5a4}
+
+\item 
+void {\bfseries Handlify} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_a380d7cc3b1111e48ad911289d3072e18}{}\label{classv8_1_1internal_1_1_translated_frame_a380d7cc3b1111e48ad911289d3072e18}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries J\+S\+Frame} (\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} node\+\_\+id, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info, int height)\hypertarget{classv8_1_1internal_1_1_translated_frame_ac254551631bef0c94b37d50cff8d08b0}{}\label{classv8_1_1internal_1_1_translated_frame_ac254551631bef0c94b37d50cff8d08b0}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Interpreted\+Frame} (\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} bytecode\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info, int height)\hypertarget{classv8_1_1internal_1_1_translated_frame_ae8ad8345a17e3580f3a2e8a4a754a1ca}{}\label{classv8_1_1internal_1_1_translated_frame_ae8ad8345a17e3580f3a2e8a4a754a1ca}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Accessor\+Frame} (Kind kind, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info)\hypertarget{classv8_1_1internal_1_1_translated_frame_a80a44a6d404315fd49afa16e426d5622}{}\label{classv8_1_1internal_1_1_translated_frame_a80a44a6d404315fd49afa16e426d5622}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Arguments\+Adaptor\+Frame} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info, int height)\hypertarget{classv8_1_1internal_1_1_translated_frame_a6135fc340cf352e046ae08cdfef78d17}{}\label{classv8_1_1internal_1_1_translated_frame_a6135fc340cf352e046ae08cdfef78d17}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Tail\+Caller\+Frame} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info)\hypertarget{classv8_1_1internal_1_1_translated_frame_a6507d0f57b3f77e29d1019ccb34d8881}{}\label{classv8_1_1internal_1_1_translated_frame_a6507d0f57b3f77e29d1019ccb34d8881}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Construct\+Stub\+Frame} (\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared\+\_\+info, int height)\hypertarget{classv8_1_1internal_1_1_translated_frame_a7d101e102d1f3fc5ffff0492b15e8472}{}\label{classv8_1_1internal_1_1_translated_frame_a7d101e102d1f3fc5ffff0492b15e8472}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Compiled\+Stub\+Frame} (int height, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_translated_frame_a0d60f9ee6c197a2123515e091a9944cd}{}\label{classv8_1_1internal_1_1_translated_frame_a0d60f9ee6c197a2123515e091a9944cd}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Invalid\+Frame} ()\hypertarget{classv8_1_1internal_1_1_translated_frame_a62a04003112f972dd0d13fdfc72c5f9f}{}\label{classv8_1_1internal_1_1_translated_frame_a62a04003112f972dd0d13fdfc72c5f9f}
+
+\item 
+static void {\bfseries Advance\+Iterator} (std\+::deque$<$ \hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} $>$\+::\hyperlink{classv8_1_1internal_1_1_translated_frame_1_1iterator}{iterator} $\ast$iter)\hypertarget{classv8_1_1internal_1_1_translated_frame_af1595da4a664fedf8ff2fbdd7dc96c21}{}\label{classv8_1_1internal_1_1_translated_frame_af1595da4a664fedf8ff2fbdd7dc96c21}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Kind {\bfseries kind\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_a5bf01690c437319a34353b87b15da519}{}\label{classv8_1_1internal_1_1_translated_frame_a5bf01690c437319a34353b87b15da519}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries node\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_a7d60861a99d56656a754631cf1cb009c}{}\label{classv8_1_1internal_1_1_translated_frame_a7d60861a99d56656a754631cf1cb009c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$ {\bfseries raw\+\_\+shared\+\_\+info\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_afe4a2f212ec5d9f8b2242c7e1544f062}{}\label{classv8_1_1internal_1_1_translated_frame_afe4a2f212ec5d9f8b2242c7e1544f062}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries shared\+\_\+info\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_a53ca2b417f11bdfdae23214f0772ed2a}{}\label{classv8_1_1internal_1_1_translated_frame_a53ca2b417f11bdfdae23214f0772ed2a}
+
+\item 
+int {\bfseries height\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_afcbf7de33f3c2330c6b25cecc8edacd7}{}\label{classv8_1_1internal_1_1_translated_frame_afcbf7de33f3c2330c6b25cecc8edacd7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_adaef06efa7dadf5d84bd2d9f2a488b9c}{}\label{classv8_1_1internal_1_1_translated_frame_adaef06efa7dadf5d84bd2d9f2a488b9c}
+
+\item 
+Values\+Container {\bfseries values\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_frame_aa97fc2f2a3a16d2579f42bbcd1150c61}{}\label{classv8_1_1internal_1_1_translated_frame_aa97fc2f2a3a16d2579f42bbcd1150c61}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Translated\+State}\hypertarget{classv8_1_1internal_1_1_translated_frame_a93214c289745cbbfea7af56c3a474a3b}{}\label{classv8_1_1internal_1_1_translated_frame_a93214c289745cbbfea7af56c3a474a3b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+h\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Simplified\+Lowering Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering}\index{v8\+::internal\+::compiler\+::\+Simplified\+Lowering@{v8\+::internal\+::compiler\+::\+Simplified\+Lowering}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Simplified\+Lowering} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$jsgraph, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_source_position_table}{Source\+Position\+Table} $\ast$source\+\_\+positions)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a82e8fa8e40fa4c31e94c724fbba5a61e}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a82e8fa8e40fa4c31e94c724fbba5a61e}
+
+\item 
+void {\bfseries Lower\+All\+Nodes} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aaa6438ebf75ae0cd397e843b3b9bc183}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aaa6438ebf75ae0cd397e843b3b9bc183}
+
+\item 
+void {\bfseries Do\+J\+S\+To\+Number\+Truncates\+To\+Float64} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_representation_selector}{Representation\+Selector} $\ast$selector)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aa6dfea62944d86f05932c6cc84b9e655}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aa6dfea62944d86f05932c6cc84b9e655}
+
+\item 
+void {\bfseries Do\+J\+S\+To\+Number\+Truncates\+To\+Word32} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_representation_selector}{Representation\+Selector} $\ast$selector)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a73ce24cb274bd6d634c4ec18c4060dc7}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a73ce24cb274bd6d634c4ec18c4060dc7}
+
+\item 
+void {\bfseries Do\+Load\+Buffer} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, Machine\+Representation rep, \hyperlink{classv8_1_1internal_1_1compiler_1_1_representation_changer}{Representation\+Changer} $\ast$changer)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aa36e43ffba152499ca87751a77f2785b}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aa36e43ffba152499ca87751a77f2785b}
+
+\item 
+void {\bfseries Do\+Store\+Buffer} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a598352940249f22bde6627a4112fd6f2}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a598352940249f22bde6627a4112fd6f2}
+
+\item 
+void {\bfseries Do\+Shift} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} const $\ast$op, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$rhs\+\_\+type)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_af28ebfbd693243162fe80523f3e026c5}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_af28ebfbd693243162fe80523f3e026c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float64\+Ceil} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aace05dcf1e7fc0bb8246fcf1293f0073}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_aace05dcf1e7fc0bb8246fcf1293f0073}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float64\+Floor} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a9ab23c19607dbc778fc7188c100708a3}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a9ab23c19607dbc778fc7188c100708a3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float64\+Round} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a70bc99e7b4ba7331fd0e5c1eccce5180}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a70bc99e7b4ba7331fd0e5c1eccce5180}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Float64\+Trunc} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a67894b490c909370f8fc1a2baab99f43}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a67894b490c909370f8fc1a2baab99f43}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Int32\+Div} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a29f7650fca13aebff5c340df19f7cb4d}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a29f7650fca13aebff5c340df19f7cb4d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Int32\+Mod} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ad9267f10b0b51602cd94f8ccf2037eb3}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ad9267f10b0b51602cd94f8ccf2037eb3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Uint32\+Div} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a1521c19d75bda8e71e8761538f4dfc16}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a1521c19d75bda8e71e8761538f4dfc16}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Uint32\+Mod} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_abf8690f6a156651b545bfbf045fb6ec9}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_abf8690f6a156651b545bfbf045fb6ec9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries To\+Number\+Code} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a5d510f02683920498983440c1193cd54}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a5d510f02683920498983440c1193cd54}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} const $\ast$ {\bfseries To\+Number\+Operator} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab2e86f74dba0436cb4cf571ff5c2b385}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab2e86f74dba0436cb4cf571ff5c2b385}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a84c57163cc6ac1675a54e2d65105e465}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a84c57163cc6ac1675a54e2d65105e465}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a57cf25a2b0c7d017a03e9b2942376ab5}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a57cf25a2b0c7d017a03e9b2942376ab5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a68f07fc837338153967e3f222feb9140}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a68f07fc837338153967e3f222feb9140}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a4bb196e266cc92a9dae5b5e21d249793}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a4bb196e266cc92a9dae5b5e21d249793}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab381d9f82b2f967009c9295bec757166}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab381d9f82b2f967009c9295bec757166}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_machine_operator_builder}{Machine\+Operator\+Builder} $\ast$ {\bfseries machine} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab3cd2a25d9119e650fd56633fd76a84b}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab3cd2a25d9119e650fd56633fd76a84b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_simplified_operator_builder}{Simplified\+Operator\+Builder} $\ast$ {\bfseries simplified} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a155d1f3ba80710569c42ac860649c052}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a155d1f3ba80710569c42ac860649c052}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$const {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a328ed885bdefd1992291e7bad8ccde49}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a328ed885bdefd1992291e7bad8ccde49}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$const {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a834a8906ee9a064889775ec65ae02e30}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a834a8906ee9a064889775ec65ae02e30}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_cache}{Type\+Cache} const \& {\bfseries type\+\_\+cache\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a8928f21127f95529da6a1a89c39ee74f}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a8928f21127f95529da6a1a89c39ee74f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $>$ {\bfseries to\+\_\+number\+\_\+code\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab98ad2ee83346632207c40205e6c335f}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ab98ad2ee83346632207c40205e6c335f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_set_once_pointer}{Set\+Once\+Pointer}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} const  $>$ {\bfseries to\+\_\+number\+\_\+operator\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a3c44b2f151547ad0db489e1cb4862f92}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a3c44b2f151547ad0db489e1cb4862f92}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_source_position_table}{Source\+Position\+Table} $\ast$ {\bfseries source\+\_\+positions\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a6e175c50f14a3544761ab11d2ade630c}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_a6e175c50f14a3544761ab11d2ade630c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Representation\+Selector}\hypertarget{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ad8d54b364c13d0305a845ae6fcb97830}{}\label{classv8_1_1internal_1_1compiler_1_1_simplified_lowering_ad8d54b364c13d0305a845ae6fcb97830}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/simplified-\/lowering.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/simplified-\/lowering.\+cc\end{DoxyCompactItemize}

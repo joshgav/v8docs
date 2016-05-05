@@ -1,0 +1,67 @@
+\hypertarget{classv8_1_1internal_1_1_code_event_logger}{}\section{v8\+:\+:internal\+:\+:Code\+Event\+Logger Class Reference}
+\label{classv8_1_1internal_1_1_code_event_logger}\index{v8\+::internal\+::\+Code\+Event\+Logger@{v8\+::internal\+::\+Code\+Event\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Code\+Event\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.723077cm]{classv8_1_1internal_1_1_code_event_logger}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer}{Name\+Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, const char $\ast$comment) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_ac6533a216b4c8f45126d80cec59da31d}{}\label{classv8_1_1internal_1_1_code_event_logger_ac6533a216b4c8f45126d80cec59da31d}
+
+\item 
+void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a3d4a2166654c7a3b64dc141050dbea47}{}\label{classv8_1_1internal_1_1_code_event_logger_a3d4a2166654c7a3b64dc141050dbea47}
+
+\item 
+void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, int args\+\_\+count) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a402ccb5bcf1add1d69130b81295366dc}{}\label{classv8_1_1internal_1_1_code_event_logger_a402ccb5bcf1add1d69130b81295366dc}
+
+\item 
+void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_af70e028af8a6016e51fe1c5c44bbb284}{}\label{classv8_1_1internal_1_1_code_event_logger_af70e028af8a6016e51fe1c5c44bbb284}
+
+\item 
+void {\bfseries Code\+Create\+Event} (Logger\+::\+Log\+Events\+And\+Tags tag, \hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$source, int line, int column) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_aaddd9b1adb47ae6bcc1c377058a43509}{}\label{classv8_1_1internal_1_1_code_event_logger_aaddd9b1adb47ae6bcc1c377058a43509}
+
+\item 
+void {\bfseries Reg\+Exp\+Code\+Create\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$source) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a8bb646de3165bbe1a39a0c07b3075f55}{}\label{classv8_1_1internal_1_1_code_event_logger_a8bb646de3165bbe1a39a0c07b3075f55}
+
+\item 
+void {\bfseries Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a81b0e268b2e5318d574cbf0862b101bc}{}\label{classv8_1_1internal_1_1_code_event_logger_a81b0e268b2e5318d574cbf0862b101bc}
+
+\item 
+void {\bfseries Getter\+Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a3caaade2e5e702420a1ac63f1a009170}{}\label{classv8_1_1internal_1_1_code_event_logger_a3caaade2e5e702420a1ac63f1a009170}
+
+\item 
+void {\bfseries Setter\+Callback\+Event} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Address entry\+\_\+point) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_aaa5517c3a288585208e959bf92c0f5ad}{}\label{classv8_1_1internal_1_1_code_event_logger_aaa5517c3a288585208e959bf92c0f5ad}
+
+\item 
+void {\bfseries Shared\+Function\+Info\+Move\+Event} (Address from, Address to) override\hypertarget{classv8_1_1internal_1_1_code_event_logger_aba57706aa2d5625494d9cf6182a0bf07}{}\label{classv8_1_1internal_1_1_code_event_logger_aba57706aa2d5625494d9cf6182a0bf07}
+
+\item 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override\hypertarget{classv8_1_1internal_1_1_code_event_logger_a1e7773a2cbfc92976ed978cd58aacce3}{}\label{classv8_1_1internal_1_1_code_event_logger_a1e7773a2cbfc92976ed978cd58aacce3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Log\+Recorded\+Buffer} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, const char $\ast$name, int length)=0\hypertarget{classv8_1_1internal_1_1_code_event_logger_aefa97d3db407a07a22ae0be69b8c7aa4}{}\label{classv8_1_1internal_1_1_code_event_logger_aefa97d3db407a07a22ae0be69b8c7aa4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_event_logger_1_1_name_buffer}{Name\+Buffer} $\ast$ {\bfseries name\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_code_event_logger_aeff32cc91f51a13b85ec4c8d012c31fc}{}\label{classv8_1_1internal_1_1_code_event_logger_aeff32cc91f51a13b85ec4c8d012c31fc}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+h\item 
+/\+Users/joshgav/node/v8/src/log.\+cc\end{DoxyCompactItemize}

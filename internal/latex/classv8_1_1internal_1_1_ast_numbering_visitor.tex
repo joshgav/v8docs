@@ -1,0 +1,97 @@
+\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor}{}\section{v8\+:\+:internal\+:\+:Ast\+Numbering\+Visitor Class Reference}
+\label{classv8_1_1internal_1_1_ast_numbering_visitor}\index{v8\+::internal\+::\+Ast\+Numbering\+Visitor@{v8\+::internal\+::\+Ast\+Numbering\+Visitor}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Ast\+Numbering\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_ast_numbering_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ast\+Numbering\+Visitor} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a010b1971412f010ce1075dd7c19fbe4f}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a010b1971412f010ce1075dd7c19fbe4f}
+
+\item 
+bool {\bfseries Renumber} (\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$node)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_ac69aa83326191d03a722d808f2ff0695}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_ac69aa83326191d03a722d808f2ff0695}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Visit\+Variable\+Proxy\+Reference} (\hyperlink{classv8_1_1internal_1_1_variable_proxy}{Variable\+Proxy} $\ast$node)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a0f27b6b047de74d801f44241eec687cc}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a0f27b6b047de74d801f44241eec687cc}
+
+\item 
+void {\bfseries Visit\+Property\+Reference} (\hyperlink{classv8_1_1internal_1_1_property}{Property} $\ast$node)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a8d0a4159db064fe88bf84a3da8166235}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a8d0a4159db064fe88bf84a3da8166235}
+
+\item 
+void {\bfseries Visit\+Reference} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a9a1133b54d9b0d50752daabc0a6383a6}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a9a1133b54d9b0d50752daabc0a6383a6}
+
+\item 
+void {\bfseries Visit\+Statements} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statements) override\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a4635322ae62023c2ecf1c201777b2263}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a4635322ae62023c2ecf1c201777b2263}
+
+\item 
+void {\bfseries Visit\+Declarations} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_declaration}{Declaration} $\ast$ $>$ $\ast$declarations) override\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a98076f4ae4468d086a87a31be5e4fe15}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a98076f4ae4468d086a87a31be5e4fe15}
+
+\item 
+void {\bfseries Visit\+Arguments} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$arguments)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a908e71c49bcc51fb9a184b18468768db}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a908e71c49bcc51fb9a184b18468768db}
+
+\item 
+void {\bfseries Visit\+Object\+Literal\+Property} (\hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+Property} $\ast$property)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_ae0beac08193ae5af961d6677e6dc8d62}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_ae0beac08193ae5af961d6677e6dc8d62}
+
+\item 
+int {\bfseries Reserve\+Id\+Range} (int n)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a5e4f99d3e20b9a739cb745c51d2d7441}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a5e4f99d3e20b9a739cb745c51d2d7441}
+
+\item 
+void {\bfseries Increment\+Node\+Count} ()\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_afa12ba83b7fc2eb21b7a70718efcc1ee}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_afa12ba83b7fc2eb21b7a70718efcc1ee}
+
+\item 
+void {\bfseries Disable\+Self\+Optimization} ()\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a8961a4dbfdf6de02ffc808cce8ea6d79}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a8961a4dbfdf6de02ffc808cce8ea6d79}
+
+\item 
+void {\bfseries Disable\+Optimization} (Bailout\+Reason reason)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a42adf25e4ce919a9917e8f9646b61c70}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a42adf25e4ce919a9917e8f9646b61c70}
+
+\item 
+void {\bfseries Disable\+Crankshaft} (Bailout\+Reason reason)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a1298e7a8fba29ead9d414c35df88e5a4}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a1298e7a8fba29ead9d414c35df88e5a4}
+
+\item 
+{\footnotesize template$<$typename Node $>$ }\\void {\bfseries Reserve\+Feedback\+Slots} (Node $\ast$node)\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_aa2580a9e1686e0f8fcc77369dcf7df35}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_aa2580a9e1686e0f8fcc77369dcf7df35}
+
+\item 
+Bailout\+Reason {\bfseries dont\+\_\+optimize\+\_\+reason} () const \hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a5a165ad17c819cdb27fccee2fb93bc41}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a5a165ad17c819cdb27fccee2fb93bc41}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+T\+\_\+\+V\+I\+S\+I\+T\+O\+R\+\_\+\+S\+U\+B\+C\+L\+A\+S\+S\+\_\+\+M\+E\+M\+B\+E\+RS} ()\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a8cf84490d5820e583ddad449c48f9274}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a8cf84490d5820e583ddad449c48f9274}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_ast_numbering_visitor}{Ast\+Numbering\+Visitor})\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a45ff0dba6c65fa45af581eb5125fc56b}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a45ff0dba6c65fa45af581eb5125fc56b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a43f83bc9ed71519475ea54ab26228846}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a43f83bc9ed71519475ea54ab26228846}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_ae72329a2a57767537797f9af44105e19}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_ae72329a2a57767537797f9af44105e19}
+
+\item 
+int {\bfseries next\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_af905663edd1d3c1cff95400c2049db46}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_af905663edd1d3c1cff95400c2049db46}
+
+\item 
+int {\bfseries yield\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_ac7dfb476a80affcdbbad0ece223ec42c}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_ac7dfb476a80affcdbbad0ece223ec42c}
+
+\item 
+Ast\+Properties {\bfseries properties\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_adbc7878805b70ff63c56e19e6f0742ba}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_adbc7878805b70ff63c56e19e6f0742ba}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot_cache}{Feedback\+Vector\+Slot\+Cache} {\bfseries slot\+\_\+cache\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a34e2431c962ce68bfbb2dbedf1660dae}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a34e2431c962ce68bfbb2dbedf1660dae}
+
+\item 
+Bailout\+Reason {\bfseries dont\+\_\+optimize\+\_\+reason\+\_\+}\hypertarget{classv8_1_1internal_1_1_ast_numbering_visitor_a53ff3bb0e556d065439f39146bea2d17}{}\label{classv8_1_1internal_1_1_ast_numbering_visitor_a53ff3bb0e556d065439f39146bea2d17}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast-\/numbering.\+cc\end{DoxyCompactItemize}

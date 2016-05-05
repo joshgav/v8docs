@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1_page_parallel_job}{}\section{v8\+:\+:internal\+:\+:Page\+Parallel\+Job$<$ Job\+Traits $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_page_parallel_job}\index{v8\+::internal\+::\+Page\+Parallel\+Job$<$ Job\+Traits $>$@{v8\+::internal\+::\+Page\+Parallel\+Job$<$ Job\+Traits $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_page_parallel_job_1_1_item}{Item}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_page_parallel_job_1_1_task}{Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Page\+Parallel\+Job} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_cancelable_task_manager}{Cancelable\+Task\+Manager} $\ast$cancelable\+\_\+task\+\_\+manager)\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a7b24b6f4259e36b72b1c9bfe3e79feb1}{}\label{classv8_1_1internal_1_1_page_parallel_job_a7b24b6f4259e36b72b1c9bfe3e79feb1}
+
+\item 
+void {\bfseries Add\+Page} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, typename Job\+Traits\+::\+Per\+Page\+Data data)\hypertarget{classv8_1_1internal_1_1_page_parallel_job_acde7a3508b8a01b43441e8a26a1665a9}{}\label{classv8_1_1internal_1_1_page_parallel_job_acde7a3508b8a01b43441e8a26a1665a9}
+
+\item 
+int {\bfseries Number\+Of\+Pages} ()\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a96a9fb8eb2a956eee5cd1556afb5673e}{}\label{classv8_1_1internal_1_1_page_parallel_job_a96a9fb8eb2a956eee5cd1556afb5673e}
+
+\item 
+int {\bfseries Number\+Of\+Tasks} ()\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a68ac2a9685864294f53de532c36c8be1}{}\label{classv8_1_1internal_1_1_page_parallel_job_a68ac2a9685864294f53de532c36c8be1}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries Run} (int num\+\_\+tasks, Callback per\+\_\+task\+\_\+data\+\_\+callback)\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a50f1488b3e3b939a3dfe585808676a56}{}\label{classv8_1_1internal_1_1_page_parallel_job_a50f1488b3e3b939a3dfe585808676a56}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Processing\+State} \{ \\*
+{\bfseries k\+Available}, 
+\\*
+{\bfseries k\+Processing}, 
+\\*
+{\bfseries k\+Finished}, 
+\\*
+{\bfseries k\+Failed}
+ \}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a9bc8059f7ce79dde6534f2e34eb11764}{}\label{classv8_1_1internal_1_1_page_parallel_job_a9bc8059f7ce79dde6534f2e34eb11764}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_page_parallel_job}{Page\+Parallel\+Job})\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a28c94c84f4b11203f3fc5396187d3721}{}\label{classv8_1_1internal_1_1_page_parallel_job_a28c94c84f4b11203f3fc5396187d3721}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a46cce6332ad23de670c3df7ce7f95647}{}\label{classv8_1_1internal_1_1_page_parallel_job_a46cce6332ad23de670c3df7ce7f95647}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_cancelable_task_manager}{Cancelable\+Task\+Manager} $\ast$ {\bfseries cancelable\+\_\+task\+\_\+manager\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a53e3adecfbef71931d24ebbb4ac9f1f5}{}\label{classv8_1_1internal_1_1_page_parallel_job_a53e3adecfbef71931d24ebbb4ac9f1f5}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_page_parallel_job_1_1_item}{Item} $\ast$ {\bfseries items\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a191ff6f00ad72de1fe33b1a9076cc714}{}\label{classv8_1_1internal_1_1_page_parallel_job_a191ff6f00ad72de1fe33b1a9076cc714}
+
+\item 
+int {\bfseries num\+\_\+items\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a2650d606c70217499edb8f452cac01ec}{}\label{classv8_1_1internal_1_1_page_parallel_job_a2650d606c70217499edb8f452cac01ec}
+
+\item 
+int {\bfseries num\+\_\+tasks\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a68bf926a82495abd8529240b2a50fef5}{}\label{classv8_1_1internal_1_1_page_parallel_job_a68bf926a82495abd8529240b2a50fef5}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} $\ast$ {\bfseries pending\+\_\+tasks\+\_\+}\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a44f93644808381084e6ed639d4feeefe}{}\label{classv8_1_1internal_1_1_page_parallel_job_a44f93644808381084e6ed639d4feeefe}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Number\+Of\+Tasks} = 10\hypertarget{classv8_1_1internal_1_1_page_parallel_job_a380add603d565b4b61dd8d612e6c9f0c}{}\label{classv8_1_1internal_1_1_page_parallel_job_a380add603d565b4b61dd8d612e6c9f0c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/page-\/parallel-\/job.\+h\end{DoxyCompactItemize}

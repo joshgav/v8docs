@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1_replacement_string_builder}{}\section{v8\+:\+:internal\+:\+:Replacement\+String\+Builder Class Reference}
+\label{classv8_1_1internal_1_1_replacement_string_builder}\index{v8\+::internal\+::\+Replacement\+String\+Builder@{v8\+::internal\+::\+Replacement\+String\+Builder}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Replacement\+String\+Builder} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ subject, int estimated\+\_\+part\+\_\+count)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_aa6ed9782d2325a8fdd46a6e15393eece}{}\label{classv8_1_1internal_1_1_replacement_string_builder_aa6ed9782d2325a8fdd46a6e15393eece}
+
+\item 
+void {\bfseries Ensure\+Capacity} (int elements)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_aa9308f62a984d9fd648403128ed0118f}{}\label{classv8_1_1internal_1_1_replacement_string_builder_aa9308f62a984d9fd648403128ed0118f}
+
+\item 
+void {\bfseries Add\+Subject\+Slice} (int from, int to)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_ae8334fc56c55ed336a2a1d14b2fab3f5}{}\label{classv8_1_1internal_1_1_replacement_string_builder_ae8334fc56c55ed336a2a1d14b2fab3f5}
+
+\item 
+void {\bfseries Add\+String} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ string)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a18e4204c090838012e9cca169c7302b6}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a18e4204c090838012e9cca169c7302b6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries To\+String} ()\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a3f24ac0bf599fc8de7972e53afa62ad7}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a3f24ac0bf599fc8de7972e53afa62ad7}
+
+\item 
+void {\bfseries Increment\+Character\+Count} (int by)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_ac6b4287222a6e168b84cba200a290910}{}\label{classv8_1_1internal_1_1_replacement_string_builder_ac6b4287222a6e168b84cba200a290910}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Add\+Subject\+Slice} (\hyperlink{classv8_1_1internal_1_1_fixed_array_builder}{Fixed\+Array\+Builder} $\ast$builder, int from, int to)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_aba524477fe28f1c8ae3f7c9f2d969208}{}\label{classv8_1_1internal_1_1_replacement_string_builder_aba524477fe28f1c8ae3f7c9f2d969208}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Element} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$element)\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a1afbecacb50ed9de70c2461f7c02b47d}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a1afbecacb50ed9de70c2461f7c02b47d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_acb5d2b4d2668ef9472e720cf3a33a778}{}\label{classv8_1_1internal_1_1_replacement_string_builder_acb5d2b4d2668ef9472e720cf3a33a778}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_fixed_array_builder}{Fixed\+Array\+Builder} {\bfseries array\+\_\+builder\+\_\+}\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_aefafa9a36e1c54541670540cdb6a4712}{}\label{classv8_1_1internal_1_1_replacement_string_builder_aefafa9a36e1c54541670540cdb6a4712}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries subject\+\_\+}\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a737bbb353ce756f4a24e36dff8680dd4}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a737bbb353ce756f4a24e36dff8680dd4}
+
+\item 
+int {\bfseries character\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a2fce778b5bac2b1a196b6eb791895523}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a2fce778b5bac2b1a196b6eb791895523}
+
+\item 
+bool {\bfseries is\+\_\+one\+\_\+byte\+\_\+}\hypertarget{classv8_1_1internal_1_1_replacement_string_builder_a617f58fb28dc375c3b0d110b403ea571}{}\label{classv8_1_1internal_1_1_replacement_string_builder_a617f58fb28dc375c3b0d110b403ea571}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/string-\/builder.\+h\item 
+/\+Users/joshgav/node/v8/src/string-\/builder.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Module\+Decoder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1_module_decoder}\index{v8\+::internal\+::wasm\+::\+Module\+Decoder@{v8\+::internal\+::wasm\+::\+Module\+Decoder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Module\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1_module_decoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Module\+Decoder} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const byte $\ast$module\+\_\+start, const byte $\ast$module\+\_\+end, Module\+Origin origin)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_aed4f8b1010871b48585bbaae846f55d2}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_aed4f8b1010871b48585bbaae846f55d2}
+
+\item 
+virtual void {\bfseries on\+First\+Error} ()\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a903485aca0a570104d4681b8f0e399e4}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a903485aca0a570104d4681b8f0e399e4}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1wasm_1_1_result}{Module\+Result} {\bfseries Decode\+Module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, bool verify\+\_\+functions=true)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a485ed6e18046df2b9b579e719da7d6d8}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a485ed6e18046df2b9b579e719da7d6d8}
+
+\item 
+uint32\+\_\+t {\bfseries Safe\+Reserve} (uint32\+\_\+t count)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_ab570f953e245fd5d21516d262830054e}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_ab570f953e245fd5d21516d262830054e}
+
+\item 
+void {\bfseries Check\+For\+Functions} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, Wasm\+Section\+::\+Code section)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a95eade55409408cb8ebece85e139d70d}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a95eade55409408cb8ebece85e139d70d}
+
+\item 
+int {\bfseries Check\+Section\+Order} (int current\+\_\+order, Wasm\+Section\+::\+Code section)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a7a41478cb8165167c76d24852978bcb3}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a7a41478cb8165167c76d24852978bcb3}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1wasm_1_1_result}{Function\+Result} {\bfseries Decode\+Single\+Function} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{Module\+Env} $\ast$module\+\_\+env, \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$function)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a0e15cd2c6c958e4bca7532a6dad92195}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a0e15cd2c6c958e4bca7532a6dad92195}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$ {\bfseries Decode\+Function\+Signature} (const byte $\ast$start)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_ae0c8611f789131425b6a18b24b6b1173}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_ae0c8611f789131425b6a18b24b6b1173}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Dump\+Module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, \hyperlink{structv8_1_1internal_1_1wasm_1_1_result}{Module\+Result} result)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_ae7d20f160f76c2d6b5137d58d9d1e123}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_ae7d20f160f76c2d6b5137d58d9d1e123}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries off} (const byte $\ast$ptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_af462e5c822e57a511ae24d054e9ad390}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_af462e5c822e57a511ae24d054e9ad390}
+
+\item 
+void {\bfseries Decode\+Global\+In\+Module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_global}{Wasm\+Global} $\ast$global)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a07dcab56eb315870e8da224309973349}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a07dcab56eb315870e8da224309973349}
+
+\item 
+void {\bfseries Decode\+Function\+In\+Module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$function, bool verify\+\_\+body=true)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_abf9e2c2a99c84851ee240aae51c683a2}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_abf9e2c2a99c84851ee240aae51c683a2}
+
+\item 
+bool {\bfseries Is\+Within\+Limit} (uint32\+\_\+t limit, uint32\+\_\+t offset, uint32\+\_\+t size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a3615e93a7d266e0b87b00d17da0ea1f2}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a3615e93a7d266e0b87b00d17da0ea1f2}
+
+\item 
+void {\bfseries Decode\+Data\+Segment\+In\+Module} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_data_segment}{Wasm\+Data\+Segment} $\ast$segment)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a121595867746b79f35e6bc046d1cb8e2}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a121595867746b79f35e6bc046d1cb8e2}
+
+\item 
+void {\bfseries Verify\+Function\+Body} (uint32\+\_\+t func\+\_\+num, \hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{Module\+Env} $\ast$menv, \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$function)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_aeb358635aa9cdf10d22232d14cb8ee8b}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_aeb358635aa9cdf10d22232d14cb8ee8b}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+offset} (const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a66f5360c69b290d7c799def796c4fdb2}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a66f5360c69b290d7c799def796c4fdb2}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+string} (uint32\+\_\+t $\ast$length, const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a15db722bfd32f7690ec1807c289e0f29}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a15db722bfd32f7690ec1807c289e0f29}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+sig\+\_\+index} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, \hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$$\ast$sig)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a07f4783cfa9f5f1d8c97ea2378e3f80a}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a07f4783cfa9f5f1d8c97ea2378e3f80a}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+func\+\_\+index} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_module}{Wasm\+Module} $\ast$module, \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function}{Wasm\+Function} $\ast$$\ast$func)\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a78e84aa02101961e4b6522edc9de001f}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a78e84aa02101961e4b6522edc9de001f}
+
+\item 
+Local\+Type {\bfseries consume\+\_\+local\+\_\+type} ()\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a6d1d3d05abed7ddd09df579eecd80912}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a6d1d3d05abed7ddd09df579eecd80912}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_machine_type}{Machine\+Type} {\bfseries mem\+\_\+type} ()\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_acb100c69721de4200644083a0b9e6518}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_acb100c69721de4200644083a0b9e6518}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$ {\bfseries consume\+\_\+sig} ()\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_aa33d02c78f0ac2fa548ec37b2c5c0854}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_aa33d02c78f0ac2fa548ec37b2c5c0854}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries module\+\_\+zone}\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a27cd48d1204a8d90536698132cb75960}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a27cd48d1204a8d90536698132cb75960}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1wasm_1_1_result}{Module\+Result} {\bfseries result\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_ad96490ee4ec5d5906a1f47f3f36c4bf6}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_ad96490ee4ec5d5906a1f47f3f36c4bf6}
+
+\item 
+Module\+Origin {\bfseries origin\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_module_decoder_a9c25d87f23efead4883879781490af3e}{}\label{classv8_1_1internal_1_1wasm_1_1_module_decoder_a9c25d87f23efead4883879781490af3e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/module-\/decoder.\+cc\end{DoxyCompactItemize}

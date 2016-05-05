@@ -1,0 +1,83 @@
+\hypertarget{classv8_1_1internal_1_1_h_tracer}{}\section{v8\+:\+:internal\+:\+:H\+Tracer Class Reference}
+\label{classv8_1_1internal_1_1_h_tracer}\index{v8\+::internal\+::\+H\+Tracer@{v8\+::internal\+::\+H\+Tracer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Tracer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_h_tracer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_h_tracer_1_1_b_a_s_e___e_m_b_e_d_d_e_d}{B\+A\+S\+E\+\_\+\+E\+M\+B\+E\+D\+D\+ED}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Tracer} (int isolate\+\_\+id)\hypertarget{classv8_1_1internal_1_1_h_tracer_a6461783e84565455063646c57ec8294f}{}\label{classv8_1_1internal_1_1_h_tracer_a6461783e84565455063646c57ec8294f}
+
+\item 
+void {\bfseries Trace\+Compilation} (\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_h_tracer_ae4e7d6d89293f68036a7aa340fa3fe07}{}\label{classv8_1_1internal_1_1_h_tracer_ae4e7d6d89293f68036a7aa340fa3fe07}
+
+\item 
+void {\bfseries Trace\+Hydrogen} (const char $\ast$name, \hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_h_tracer_ad406f30471736913fbcfeb31db100d7e}{}\label{classv8_1_1internal_1_1_h_tracer_ad406f30471736913fbcfeb31db100d7e}
+
+\item 
+void {\bfseries Trace\+Lithium} (const char $\ast$name, \hyperlink{classv8_1_1internal_1_1_l_chunk}{L\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_h_tracer_abb7a80f283ffbfc8b1cbc3c0a4c62df0}{}\label{classv8_1_1internal_1_1_h_tracer_abb7a80f283ffbfc8b1cbc3c0a4c62df0}
+
+\item 
+void {\bfseries Trace\+Live\+Ranges} (const char $\ast$name, L\+Allocator $\ast$allocator)\hypertarget{classv8_1_1internal_1_1_h_tracer_a8fe6379015e3590bf0fcd3bf25d01d7d}{}\label{classv8_1_1internal_1_1_h_tracer_a8fe6379015e3590bf0fcd3bf25d01d7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Trace\+Live\+Range} (\hyperlink{classv8_1_1internal_1_1_live_range}{Live\+Range} $\ast$range, const char $\ast$type, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_tracer_a761874f29b15a57db27178105b86f928}{}\label{classv8_1_1internal_1_1_h_tracer_a761874f29b15a57db27178105b86f928}
+
+\item 
+void {\bfseries Trace} (const char $\ast$name, \hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1_l_chunk}{L\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_h_tracer_ad54bde1e18563985d093c404307de045}{}\label{classv8_1_1internal_1_1_h_tracer_ad54bde1e18563985d093c404307de045}
+
+\item 
+void {\bfseries Flush\+To\+File} ()\hypertarget{classv8_1_1internal_1_1_h_tracer_a5462b9eb7e302a7ba355d328f30d163b}{}\label{classv8_1_1internal_1_1_h_tracer_a5462b9eb7e302a7ba355d328f30d163b}
+
+\item 
+void {\bfseries Print\+Empty\+Property} (const char $\ast$name)\hypertarget{classv8_1_1internal_1_1_h_tracer_aa882f518b6c7989498c30d1f5896aca1}{}\label{classv8_1_1internal_1_1_h_tracer_aa882f518b6c7989498c30d1f5896aca1}
+
+\item 
+void {\bfseries Print\+String\+Property} (const char $\ast$name, const char $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_tracer_a2c321855cce4646d3d0fe2db2e3b0ae0}{}\label{classv8_1_1internal_1_1_h_tracer_a2c321855cce4646d3d0fe2db2e3b0ae0}
+
+\item 
+void {\bfseries Print\+Long\+Property} (const char $\ast$name, int64\+\_\+t value)\hypertarget{classv8_1_1internal_1_1_h_tracer_ad04d5a3b777b25a37e44ae6da8170aaf}{}\label{classv8_1_1internal_1_1_h_tracer_ad04d5a3b777b25a37e44ae6da8170aaf}
+
+\item 
+void {\bfseries Print\+Block\+Property} (const char $\ast$name, int block\+\_\+id)\hypertarget{classv8_1_1internal_1_1_h_tracer_aedf3ec9a34dc5962a4f759e082e89a2a}{}\label{classv8_1_1internal_1_1_h_tracer_aedf3ec9a34dc5962a4f759e082e89a2a}
+
+\item 
+void {\bfseries Print\+Int\+Property} (const char $\ast$name, int value)\hypertarget{classv8_1_1internal_1_1_h_tracer_a98aea2a6e746a00fe4f52bfc6d648d1b}{}\label{classv8_1_1internal_1_1_h_tracer_a98aea2a6e746a00fe4f52bfc6d648d1b}
+
+\item 
+void {\bfseries Print\+Indent} ()\hypertarget{classv8_1_1internal_1_1_h_tracer_a4f85cc66c634f5b9a2ecffcb721f5f60}{}\label{classv8_1_1internal_1_1_h_tracer_a4f85cc66c634f5b9a2ecffcb721f5f60}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_embedded_vector}{Embedded\+Vector}$<$ char, 64 $>$ {\bfseries filename\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_tracer_a8005272a0ef05a4d63fbc6e7a40f7f16}{}\label{classv8_1_1internal_1_1_h_tracer_a8005272a0ef05a4d63fbc6e7a40f7f16}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_string_allocator}{Heap\+String\+Allocator} {\bfseries string\+\_\+allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_tracer_a73de159b604af7ae2300ecfa08bc20f5}{}\label{classv8_1_1internal_1_1_h_tracer_a73de159b604af7ae2300ecfa08bc20f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_string_stream}{String\+Stream} {\bfseries trace\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_tracer_a68574627f662dcacd9c8184a15d347cb}{}\label{classv8_1_1internal_1_1_h_tracer_a68574627f662dcacd9c8184a15d347cb}
+
+\item 
+int {\bfseries indent\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_tracer_a0d00ded204fe038941f7a72e92e40912}{}\label{classv8_1_1internal_1_1_h_tracer_a0d00ded204fe038941f7a72e92e40912}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

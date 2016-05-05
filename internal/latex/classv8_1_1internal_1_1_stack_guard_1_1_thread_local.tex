@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local}{}\section{v8\+:\+:internal\+:\+:Stack\+Guard\+:\+:Thread\+Local Class Reference}
+\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local}\index{v8\+::internal\+::\+Stack\+Guard\+::\+Thread\+Local@{v8\+::internal\+::\+Stack\+Guard\+::\+Thread\+Local}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ac1c4967b6c909e999acabe4ac50e6f0a}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ac1c4967b6c909e999acabe4ac50e6f0a}
+
+\item 
+bool {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_abb373d7bdbbfb51b1d0d770fbbe96da6}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_abb373d7bdbbfb51b1d0d770fbbe96da6}
+
+\item 
+uintptr\+\_\+t {\bfseries jslimit} ()\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a9db27b7ab8f5b6462d9f5aa86b9f8654}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a9db27b7ab8f5b6462d9f5aa86b9f8654}
+
+\item 
+void {\bfseries set\+\_\+jslimit} (uintptr\+\_\+t limit)\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ae0f5e84ce488b12edabedad1d7c99bf5}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ae0f5e84ce488b12edabedad1d7c99bf5}
+
+\item 
+uintptr\+\_\+t {\bfseries climit} ()\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_aefda2914744007007621534243e9b288}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_aefda2914744007007621534243e9b288}
+
+\item 
+void {\bfseries set\+\_\+climit} (uintptr\+\_\+t limit)\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ad585f61056924397d8baa14d2b9f0735}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ad585f61056924397d8baa14d2b9f0735}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uintptr\+\_\+t {\bfseries real\+\_\+jslimit\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a06f2ec0bd13a31132859f4d1749179be}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a06f2ec0bd13a31132859f4d1749179be}
+
+\item 
+uintptr\+\_\+t {\bfseries real\+\_\+climit\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_aebe6953c66e34e2f35f601954d504b97}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_aebe6953c66e34e2f35f601954d504b97}
+
+\item 
+base\+::\+Atomic\+Word {\bfseries jslimit\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ad2eaff47c790e51551753aaaa73dd58d}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_ad2eaff47c790e51551753aaaa73dd58d}
+
+\item 
+base\+::\+Atomic\+Word {\bfseries climit\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a3650cf32a9188751a7cd42c23de101d2}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a3650cf32a9188751a7cd42c23de101d2}
+
+\item 
+Postpone\+Interrupts\+Scope $\ast$ {\bfseries postpone\+\_\+interrupts\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a0c556d1816f10a572365c9e7181070d2}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a0c556d1816f10a572365c9e7181070d2}
+
+\item 
+int {\bfseries interrupt\+\_\+flags\+\_\+}\hypertarget{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a8f95f4e987c16bd89a19e27a9fef0a47}{}\label{classv8_1_1internal_1_1_stack_guard_1_1_thread_local_a8f95f4e987c16bd89a19e27a9fef0a47}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/execution.\+h\item 
+/\+Users/joshgav/node/v8/src/execution.\+cc\end{DoxyCompactItemize}

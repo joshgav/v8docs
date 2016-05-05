@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase}{}\section{v8\+:\+:internal\+:\+:H\+Range\+Analysis\+Phase Class Reference}
+\label{classv8_1_1internal_1_1_h_range_analysis_phase}\index{v8\+::internal\+::\+H\+Range\+Analysis\+Phase@{v8\+::internal\+::\+H\+Range\+Analysis\+Phase}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Range\+Analysis\+Phase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_h_range_analysis_phase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Range\+Analysis\+Phase} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_aedf3f369c4c99b18c01974dbf1be898f}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_aedf3f369c4c99b18c01974dbf1be898f}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a0569cf1f523621c5c967baccc95c12e8}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a0569cf1f523621c5c967baccc95c12e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (2, 3) void Trace\+Range(const char $\ast$msg\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a9c395f9a8141c92a19f2cd994faf9fb0}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a9c395f9a8141c92a19f2cd994faf9fb0}
+
+\item 
+void {\bfseries Infer\+Control\+Flow\+Range} (\hyperlink{classv8_1_1internal_1_1_h_compare_numeric_and_branch}{H\+Compare\+Numeric\+And\+Branch} $\ast$test, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$dest)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_ab9b3ec91d55ccd55b5979f9c8ee0314e}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_ab9b3ec91d55ccd55b5979f9c8ee0314e}
+
+\item 
+void {\bfseries Update\+Control\+Flow\+Range} (Token\+::\+Value op, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a2a8f42ba01fc6d918af5f11ddf852646}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a2a8f42ba01fc6d918af5f11ddf852646}
+
+\item 
+void {\bfseries Infer\+Range} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_aee0eed83360e7092ae2716e44f6ed869}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_aee0eed83360e7092ae2716e44f6ed869}
+
+\item 
+void {\bfseries Roll\+Back\+To} (int index)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_aecb9e4359cfd049c18721289545eef8a}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_aecb9e4359cfd049c18721289545eef8a}
+
+\item 
+void {\bfseries Add\+Range} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value, \hyperlink{classv8_1_1internal_1_1_range}{Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_aafbfba06696aa24cf719161f052a8eaa}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_aafbfba06696aa24cf719161f052a8eaa}
+
+\item 
+void {\bfseries Add\+To\+Worklist} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_af75612c69eb0b4d655bba94c9d6b3052}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_af75612c69eb0b4d655bba94c9d6b3052}
+
+\item 
+void {\bfseries Propagate\+Minus\+Zero\+Checks} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value)\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a21e6f4735c2a23a662f5766fe65dd335}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a21e6f4735c2a23a662f5766fe65dd335}
+
+\item 
+void {\bfseries Poison\+Ranges} ()\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a2d5aec050826ab5f27e399d9e00ffaec}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a2d5aec050826ab5f27e399d9e00ffaec}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_h_range_analysis_phase}{H\+Range\+Analysis\+Phase})\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_addf3befa9ad4a19eb291acd9bda9529e}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_addf3befa9ad4a19eb291acd9bda9529e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ $>$ {\bfseries changed\+\_\+ranges\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a24f46837be0b91630be0435d7bb9a21d}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a24f46837be0b91630be0435d7bb9a21d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} {\bfseries in\+\_\+worklist\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_a38289edc80fc1ea8b1c9059c6e3dc1e3}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_a38289edc80fc1ea8b1c9059c6e3dc1e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ $>$ {\bfseries worklist\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_range_analysis_phase_aed83f09a0e6c5743ecdf2a420c6a17e2}{}\label{classv8_1_1internal_1_1_h_range_analysis_phase_aed83f09a0e6c5743ecdf2a420c6a17e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/range-\/analysis.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/range-\/analysis.\+cc\end{DoxyCompactItemize}

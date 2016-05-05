@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Call\+Reducer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer}\index{v8\+::internal\+::compiler\+::\+J\+S\+Call\+Reducer@{v8\+::internal\+::compiler\+::\+J\+S\+Call\+Reducer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Call\+Reducer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Flag} \{ \\*
+{\bfseries k\+No\+Flags} = 0u, 
+\\*
+{\bfseries k\+Deoptimization\+Enabled} = 1u $<$$<$ 0
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a6996f7826b08cb7b4ef61f9bd5874a9c}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a6996f7826b08cb7b4ef61f9bd5874a9c}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Flag $>$ {\bfseries Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a920d8d4abde8cc564a01f8c7580a39d8}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a920d8d4abde8cc564a01f8c7580a39d8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries J\+S\+Call\+Reducer} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$jsgraph, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags, \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad6eae642a8a0e8b431765907f9b3bdf2}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad6eae642a8a0e8b431765907f9b3bdf2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_abf441e16cdaa5b1d3be850e853803674}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_abf441e16cdaa5b1d3be850e853803674}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Array\+Constructor} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad045270871eb9b60a59d641ae1eb251f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad045270871eb9b60a59d641ae1eb251f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Number\+Constructor} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a118f1666cc5eb0d5eccdbbe1df5a4178}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a118f1666cc5eb0d5eccdbbe1df5a4178}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Function\+Prototype\+Apply} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a451473545fc835ea914254843f1082f5}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a451473545fc835ea914254843f1082f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Function\+Prototype\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a9de4d884001b39779d2faa041d31990c}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a9de4d884001b39779d2faa041d31990c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Call\+Construct} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a09f7daad5396ac997edd46fd1a0bbd60}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a09f7daad5396ac997edd46fd1a0bbd60}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Call\+Function} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ac67edf4d472c2a44d777755a69c8558d}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ac67edf4d472c2a44d777755a69c8558d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries Get\+Native\+Context} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a92565be4861ed5f61d120a48fffeed6f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a92565be4861ed5f61d120a48fffeed6f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a59678765cf8cf732f49cab32910b0890}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a59678765cf8cf732f49cab32910b0890}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a6e28a5a453a96dd7988295b4d9af9358}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a6e28a5a453a96dd7988295b4d9af9358}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_afca747ad1e76b2b2c4e1edd0fd2066ab}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_afca747ad1e76b2b2c4e1edd0fd2066ab}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a73eac8d24ffb9417985524aaa6e29ad1}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a73eac8d24ffb9417985524aaa6e29ad1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries native\+\_\+context} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad9e29e41bf1f81b404e9b982cfac205b}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ad9e29e41bf1f81b404e9b982cfac205b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a256c9ebd5661292351d23c2682120874}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a256c9ebd5661292351d23c2682120874}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_operator_builder}{J\+S\+Operator\+Builder} $\ast$ {\bfseries javascript} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_aea57d0baabeb610eaa43a62a3f6bb2fc}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_aea57d0baabeb610eaa43a62a3f6bb2fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$const {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ab075fd19ded792191508fbc8a00a3f04}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_ab075fd19ded792191508fbc8a00a3f04}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} const {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a65f8c707b6da10c8c39513c0fe56e109}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a65f8c707b6da10c8c39513c0fe56e109}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ const {\bfseries native\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a3c738122f30e1f970d84a5eba6684db7}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_call_reducer_a3c738122f30e1f970d84a5eba6684db7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/call-\/reducer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/call-\/reducer.\+cc\end{DoxyCompactItemize}

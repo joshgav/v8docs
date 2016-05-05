@@ -1,0 +1,130 @@
+\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler}{}\section{v8\+:\+:internal\+:\+:Named\+Load\+Handler\+Compiler Class Reference}
+\label{classv8_1_1internal_1_1_named_load_handler_compiler}\index{v8\+::internal\+::\+Named\+Load\+Handler\+Compiler@{v8\+::internal\+::\+Named\+Load\+Handler\+Compiler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Named\+Load\+Handler\+Compiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_named_load_handler_compiler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Named\+Load\+Handler\+Compiler} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ holder, Cache\+Holder\+Flag cache\+\_\+holder)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_ab0475d84e8be09e057cec3db380c199d}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_ab0475d84e8be09e057cec3db380c199d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Field} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_field_index}{Field\+Index} index)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a39d6289bb9e55f86cf8d642a022bae13}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a39d6289bb9e55f86cf8d642a022bae13}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Callback} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_accessor_info}{Accessor\+Info} $>$ callback)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_ac9e36e0b1f5e736078e86e6f4af519da}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_ac9e36e0b1f5e736078e86e6f4af519da}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Callback} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, const Call\+Optimization \&call\+\_\+optimization, int accessor\+\_\+index)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_aaa76a0a2ab6898e6dcb0fb1a075dcc20}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_aaa76a0a2ab6898e6dcb0fb1a075dcc20}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Constant} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, int constant\+\_\+index)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_ab697521344f940ad4653d834fbff9092}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_ab697521344f940ad4653d834fbff9092}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Interceptor} (Lookup\+Iterator $\ast$it)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a7234edda17c185d080bdecde5c2deb5f}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a7234edda17c185d080bdecde5c2deb5f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Via\+Getter} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, int accessor\+\_\+index, int expected\+\_\+arguments)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a77ddd3264d36ade4939a2d4071ac58c4}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a77ddd3264d36ade4939a2d4071ac58c4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Global} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_property_cell}{Property\+Cell} $>$ cell, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, bool is\+\_\+configurable)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a2c69771346d074e8eb53f64b11db30a4}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a2c69771346d074e8eb53f64b11db30a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compute\+Load\+Nonexistent} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a87ec8d9d42adcd303ea06fb499c82c7a}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a87ec8d9d42adcd303ea06fb499c82c7a}
+
+\item 
+static void {\bfseries Generate\+Load\+Via\+Getter} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{structv8_1_1internal_1_1_register}{Register} receiver, \hyperlink{structv8_1_1internal_1_1_register}{Register} holder, int accessor\+\_\+index, int expected\+\_\+arguments, \hyperlink{structv8_1_1internal_1_1_register}{Register} scratch)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a46c02fa664971431dde0cbe8c22815b6}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a46c02fa664971431dde0cbe8c22815b6}
+
+\item 
+static void {\bfseries Generate\+Load\+Via\+Getter\+For\+Deopt} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a2dabd036a1b57ba6f3922fa97bb3923c}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a2dabd036a1b57ba6f3922fa97bb3923c}
+
+\item 
+static void {\bfseries Generate\+Load\+Function\+Prototype} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, \hyperlink{structv8_1_1internal_1_1_register}{Register} receiver, \hyperlink{structv8_1_1internal_1_1_register}{Register} scratch1, \hyperlink{structv8_1_1internal_1_1_register}{Register} scratch2, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$miss\+\_\+label)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_ab1e2b4faf9bb03146129d2dfce125fb2}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_ab1e2b4faf9bb03146129d2dfce125fb2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Interceptor\+Args\+Name\+Index} = 0\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a10e312b3b7e04901a0235d57be68e189}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a10e312b3b7e04901a0235d57be68e189}
+
+\item 
+static const int {\bfseries k\+Interceptor\+Args\+This\+Index} = 1\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a36622c1a3c3fd9469e1195465ae39d9e}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a36622c1a3c3fd9469e1195465ae39d9e}
+
+\item 
+static const int {\bfseries k\+Interceptor\+Args\+Holder\+Index} = 2\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a83c9799650b422af9e4d82fb01b898b5}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a83c9799650b422af9e4d82fb01b898b5}
+
+\item 
+static const int {\bfseries k\+Interceptor\+Args\+Length} = 3\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_abc10b90f6abcb5b3c8ae82addd6499c0}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_abc10b90f6abcb5b3c8ae82addd6499c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries Frontend\+Header} (\hyperlink{structv8_1_1internal_1_1_register}{Register} object\+\_\+reg, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$miss, Return\+Holder return\+\_\+what)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a2b08c72fc1d96a3bc9b44fc2318d51c6}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a2b08c72fc1d96a3bc9b44fc2318d51c6}
+
+\item 
+virtual void {\bfseries Frontend\+Footer} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$miss)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a377b8a231a1b049f808a0870929c837f}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a377b8a231a1b049f808a0870929c837f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Pop\+Mode} \{ \\*
+{\bfseries P\+OP}, 
+\\*
+{\bfseries D\+I\+S\+C\+A\+RD}
+ \}\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a857bd04df041f349ed871457f4952568}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a857bd04df041f349ed871457f4952568}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Compile\+Load\+Nonexistent} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a47beb8a7c753a9b33ae95df2b5b0044a}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a47beb8a7c753a9b33ae95df2b5b0044a}
+
+\item 
+void {\bfseries Generate\+Load\+Constant} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a92c109caa65c4f6c208c3f06f2b8758b}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a92c109caa65c4f6c208c3f06f2b8758b}
+
+\item 
+void {\bfseries Generate\+Load\+Callback} (\hyperlink{structv8_1_1internal_1_1_register}{Register} reg, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_accessor_info}{Accessor\+Info} $>$ callback)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a5b2ef34680848a908a3bb1f1500174fb}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a5b2ef34680848a908a3bb1f1500174fb}
+
+\item 
+void {\bfseries Generate\+Load\+Callback} (const Call\+Optimization \&call\+\_\+optimization, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ receiver\+\_\+map)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a0bae3f816aaa9b03eccd72c94d8f8dc6}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a0bae3f816aaa9b03eccd72c94d8f8dc6}
+
+\item 
+void {\bfseries Interceptor\+Vector\+Slot\+Push} (\hyperlink{structv8_1_1internal_1_1_register}{Register} holder\+\_\+reg)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a6f9dc3899f3eca11120b76b949a2f1d6}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a6f9dc3899f3eca11120b76b949a2f1d6}
+
+\item 
+void {\bfseries Interceptor\+Vector\+Slot\+Pop} (\hyperlink{structv8_1_1internal_1_1_register}{Register} holder\+\_\+reg, Pop\+Mode mode=P\+OP)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_ac11d260f0475b26a0fa57f137a496a88}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_ac11d260f0475b26a0fa57f137a496a88}
+
+\item 
+void {\bfseries Generate\+Load\+Interceptor} (\hyperlink{structv8_1_1internal_1_1_register}{Register} holder\+\_\+reg)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a9ba4d08f6fa7a48afa052b5b784d3dce}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a9ba4d08f6fa7a48afa052b5b784d3dce}
+
+\item 
+void {\bfseries Generate\+Load\+Interceptor\+With\+Followup} (Lookup\+Iterator $\ast$it, \hyperlink{structv8_1_1internal_1_1_register}{Register} holder\+\_\+reg)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a69d712ea48657a485dc2350939f59fb4}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a69d712ea48657a485dc2350939f59fb4}
+
+\item 
+void {\bfseries Generate\+Load\+Post\+Interceptor} (Lookup\+Iterator $\ast$it, \hyperlink{structv8_1_1internal_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_acc4bb7afea47dae42696f1964cae720e}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_acc4bb7afea47dae42696f1964cae720e}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries scratch4} ()\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a0a81a065544af40f1911c3e717b96f2d}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a0a81a065544af40f1911c3e717b96f2d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Generate\+Direct\+Load\+Global\+Function\+Prototype} (\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$masm, int index, \hyperlink{structv8_1_1internal_1_1_register}{Register} prototype, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$miss)\hypertarget{classv8_1_1internal_1_1_named_load_handler_compiler_a54cfda20929bfc4d1ccbc9bf25cd6431}{}\label{classv8_1_1internal_1_1_named_load_handler_compiler_a54cfda20929bfc4d1ccbc9bf25cd6431}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ic/handler-\/compiler.\+h\item 
+/\+Users/joshgav/node/v8/src/ic/handler-\/compiler.\+cc\end{DoxyCompactItemize}

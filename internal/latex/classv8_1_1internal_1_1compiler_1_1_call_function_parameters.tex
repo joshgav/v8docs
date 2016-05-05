@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Call\+Function\+Parameters Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters}\index{v8\+::internal\+::compiler\+::\+Call\+Function\+Parameters@{v8\+::internal\+::compiler\+::\+Call\+Function\+Parameters}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Call\+Function\+Parameters} (size\+\_\+t arity, \hyperlink{classv8_1_1internal_1_1compiler_1_1_vector_slot_pair}{Vector\+Slot\+Pair} const \&feedback, Tail\+Call\+Mode tail\+\_\+call\+\_\+mode, Convert\+Receiver\+Mode convert\+\_\+mode)\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_aad6f46db228e176273e99e028e2336c3}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_aad6f46db228e176273e99e028e2336c3}
+
+\item 
+size\+\_\+t {\bfseries arity} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_ad0a874b2d27d6eb53669860d25526cc3}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_ad0a874b2d27d6eb53669860d25526cc3}
+
+\item 
+Convert\+Receiver\+Mode {\bfseries convert\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_af95b3e6060d9c2171526768173dc89ec}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_af95b3e6060d9c2171526768173dc89ec}
+
+\item 
+Tail\+Call\+Mode {\bfseries tail\+\_\+call\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a0d3352483b609cf10bd46dd0bda7c294}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a0d3352483b609cf10bd46dd0bda7c294}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_vector_slot_pair}{Vector\+Slot\+Pair} const \& {\bfseries feedback} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a74b9c4c66292266b94462b32688c66be}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a74b9c4c66292266b94462b32688c66be}
+
+\item 
+bool {\bfseries operator==} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_function_parameters}{Call\+Function\+Parameters} const \&that) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_abfff8999f5d6ef74f3169b673d97fc50}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_abfff8999f5d6ef74f3169b673d97fc50}
+
+\item 
+bool {\bfseries operator!=} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_function_parameters}{Call\+Function\+Parameters} const \&that) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a755a5d4ed4cdee7bf2db040e59dc3b47}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a755a5d4ed4cdee7bf2db040e59dc3b47}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ size\+\_\+t, 0, 29 $>$ {\bfseries Arity\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a89cb620ab1afb3e0b3522ba0c904aaf3}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a89cb620ab1afb3e0b3522ba0c904aaf3}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ Convert\+Receiver\+Mode, 29, 2 $>$ {\bfseries Convert\+Receiver\+Mode\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a8e1ccfc7a7a37f9395023116c4167df7}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a8e1ccfc7a7a37f9395023116c4167df7}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_field}{Bit\+Field}$<$ Tail\+Call\+Mode, 31, 1 $>$ {\bfseries Tail\+Call\+Mode\+Field}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_af4ad5f63e743ad4bb0fe2b78cab1f14c}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_af4ad5f63e743ad4bb0fe2b78cab1f14c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t {\bfseries bit\+\_\+field\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_ab37b9c3c6613ca468568d3b04a96348e}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_ab37b9c3c6613ca468568d3b04a96348e}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1compiler_1_1_vector_slot_pair}{Vector\+Slot\+Pair} {\bfseries feedback\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a03244dcc0a4798360701ab00ec96de8e}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a03244dcc0a4798360701ab00ec96de8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries hash\+\_\+value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_call_function_parameters}{Call\+Function\+Parameters} const \&p)\hypertarget{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a6bee52532e17c4167b2d6e950d8f47bf}{}\label{classv8_1_1internal_1_1compiler_1_1_call_function_parameters_a6bee52532e17c4167b2d6e950d8f47bf}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/operator.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Operator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_operator}\index{v8\+::internal\+::compiler\+::\+Operator@{v8\+::internal\+::compiler\+::\+Operator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Operator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.220183cm]{classv8_1_1internal_1_1compiler_1_1_operator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Property} \{ \\*
+{\bfseries k\+No\+Properties} = 0, 
+\\*
+{\bfseries k\+Reducible} = 1 $<$$<$ 0, 
+\\*
+{\bfseries k\+Commutative} = 1 $<$$<$ 1, 
+\\*
+{\bfseries k\+Associative} = 1 $<$$<$ 2, 
+\\*
+{\bfseries k\+Idempotent} = 1 $<$$<$ 3, 
+\\*
+{\bfseries k\+No\+Read} = 1 $<$$<$ 4, 
+\\*
+{\bfseries k\+No\+Write} = 1 $<$$<$ 5, 
+\\*
+{\bfseries k\+No\+Throw} = 1 $<$$<$ 6, 
+\\*
+{\bfseries k\+Foldable} = k\+No\+Read $\vert$ k\+No\+Write, 
+\\*
+{\bfseries k\+Kontrol} = k\+Foldable $\vert$ k\+No\+Throw, 
+\\*
+{\bfseries k\+Eliminatable} = k\+No\+Write $\vert$ k\+No\+Throw, 
+\\*
+{\bfseries k\+Pure} = k\+No\+Read $\vert$ k\+No\+Write $\vert$ k\+No\+Throw $\vert$ k\+Idempotent
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a46a45dbac84017b87c0432803df4c3ef}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a46a45dbac84017b87c0432803df4c3ef}
+
+\item 
+typedef uint16\+\_\+t {\bfseries Opcode}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a724184f5fca57dc0399824a2aa482f8d}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a724184f5fca57dc0399824a2aa482f8d}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Property, uint8\+\_\+t $>$ {\bfseries Properties}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a55dce20c11e09a5294d6bfdceb9ababa}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a55dce20c11e09a5294d6bfdceb9ababa}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Operator} (Opcode opcode, \hyperlink{classv8_1_1base_1_1_flags}{Properties} properties, const char $\ast$mnemonic, size\+\_\+t value\+\_\+in, size\+\_\+t effect\+\_\+in, size\+\_\+t control\+\_\+in, size\+\_\+t value\+\_\+out, size\+\_\+t effect\+\_\+out, size\+\_\+t control\+\_\+out)\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_acc2f4b9a63bafed89965702360034cef}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_acc2f4b9a63bafed89965702360034cef}
+
+\item 
+Opcode {\bfseries opcode} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a1778c8bb076c44bcc34be7e8897f7b67}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a1778c8bb076c44bcc34be7e8897f7b67}
+
+\item 
+const char $\ast$ {\bfseries mnemonic} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_aff0cd35724bca8dbb37c2bb1483aff0b}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_aff0cd35724bca8dbb37c2bb1483aff0b}
+
+\item 
+virtual bool {\bfseries Equals} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} $\ast$that) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a4a05b0cf1c4a6c48b67433696bf48508}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a4a05b0cf1c4a6c48b67433696bf48508}
+
+\item 
+virtual size\+\_\+t {\bfseries Hash\+Code} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a30372620310126825e12d31efa84add8}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a30372620310126825e12d31efa84add8}
+
+\item 
+bool {\bfseries Has\+Property} (Property property) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ae459aa7cc7501c9f6225a3759b4457c8}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ae459aa7cc7501c9f6225a3759b4457c8}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Properties} {\bfseries properties} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a489ed3c677b8e93d76e11ab93ad18a73}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a489ed3c677b8e93d76e11ab93ad18a73}
+
+\item 
+int {\bfseries Value\+Input\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a6d872475330d122858a5d0bde4345c1b}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a6d872475330d122858a5d0bde4345c1b}
+
+\item 
+int {\bfseries Effect\+Input\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a15f30e9fde232661d7bce0a9940ad15a}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a15f30e9fde232661d7bce0a9940ad15a}
+
+\item 
+int {\bfseries Control\+Input\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ad5423f3c1059b1b2d0eea263240ddd19}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ad5423f3c1059b1b2d0eea263240ddd19}
+
+\item 
+int {\bfseries Value\+Output\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a40e9e9c64296d3c521397ab0df0d0ea3}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a40e9e9c64296d3c521397ab0df0d0ea3}
+
+\item 
+int {\bfseries Effect\+Output\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a69e8fd151d6219ebf7e28fe4b66b1ea0}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a69e8fd151d6219ebf7e28fe4b66b1ea0}
+
+\item 
+int {\bfseries Control\+Output\+Count} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ae2c1fb3eec0c79cfd5873129b2767d3d}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ae2c1fb3eec0c79cfd5873129b2767d3d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t {\bfseries Zero\+If\+Eliminatable} (\hyperlink{classv8_1_1base_1_1_flags}{Properties} properties)\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_abfd4399c6dc901728864bf616c52b5ce}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_abfd4399c6dc901728864bf616c52b5ce}
+
+\item 
+static size\+\_\+t {\bfseries Zero\+If\+No\+Throw} (\hyperlink{classv8_1_1base_1_1_flags}{Properties} properties)\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a33ac290c997f8d9889d20c6e34b7d622}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a33ac290c997f8d9889d20c6e34b7d622}
+
+\item 
+static size\+\_\+t {\bfseries Zero\+If\+Pure} (\hyperlink{classv8_1_1base_1_1_flags}{Properties} properties)\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ac05d4213206e14d84b683018c2e996d5}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ac05d4213206e14d84b683018c2e996d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries k\+Max\+Control\+Output\+Count} = (1u $<$$<$ 16) -\/ 1\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a53db1ad736625bfeee9b9e3985bcafc0}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a53db1ad736625bfeee9b9e3985bcafc0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Print\+To} (std\+::ostream \&os) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a3308d0fc4fa4ab1ecb27358f99663f76}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a3308d0fc4fa4ab1ecb27358f99663f76}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator})\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a642ff72c07dd81a43ae99acc314339ff}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a642ff72c07dd81a43ae99acc314339ff}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Opcode {\bfseries opcode\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ad560da225c828fead2028d4b6939034a}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ad560da225c828fead2028d4b6939034a}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Properties} {\bfseries properties\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a76958899fa42674aee4b228760354f47}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a76958899fa42674aee4b228760354f47}
+
+\item 
+const char $\ast$ {\bfseries mnemonic\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_acde9bf3f0cd205ba55817ce9ef6d3348}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_acde9bf3f0cd205ba55817ce9ef6d3348}
+
+\item 
+uint32\+\_\+t {\bfseries value\+\_\+in\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_af487cf21d58d31016d50fcac34ba97c7}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_af487cf21d58d31016d50fcac34ba97c7}
+
+\item 
+uint16\+\_\+t {\bfseries effect\+\_\+in\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_af470799187ef9d1d843183657554217d}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_af470799187ef9d1d843183657554217d}
+
+\item 
+uint16\+\_\+t {\bfseries control\+\_\+in\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a51d6d1ae322b43359fcd7c1bdc09a348}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a51d6d1ae322b43359fcd7c1bdc09a348}
+
+\item 
+uint16\+\_\+t {\bfseries value\+\_\+out\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a64b004160748afcecd44560a1c119168}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a64b004160748afcecd44560a1c119168}
+
+\item 
+uint8\+\_\+t {\bfseries effect\+\_\+out\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ae5e823a0bbf53a5971c3d65b23d71a28}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ae5e823a0bbf53a5971c3d65b23d71a28}
+
+\item 
+uint16\+\_\+t {\bfseries control\+\_\+out\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_ac43b30bf62daf52a3d223e364a4d5a51}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_ac43b30bf62daf52a3d223e364a4d5a51}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classv8_1_1internal_1_1compiler_1_1_operator}{Operator} \&op)\hypertarget{classv8_1_1internal_1_1compiler_1_1_operator_a66c2d3b9a481a94bbff029086cf30a38}{}\label{classv8_1_1internal_1_1compiler_1_1_operator_a66c2d3b9a481a94bbff029086cf30a38}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/operator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/operator.\+cc\end{DoxyCompactItemize}

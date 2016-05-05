@@ -1,0 +1,149 @@
+\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper}{}\section{v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+:\+:Sweeper Class Reference}
+\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper}\index{v8\+::internal\+::\+Mark\+Compact\+Collector\+::\+Sweeper@{v8\+::internal\+::\+Mark\+Compact\+Collector\+::\+Sweeper}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_1_1_sweeper_task}{Sweeper\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Sweeping\+Mode} \{ \\*
+{\bfseries S\+W\+E\+E\+P\+\_\+\+O\+N\+LY}, 
+\\*
+{\bfseries S\+W\+E\+E\+P\+\_\+\+A\+N\+D\+\_\+\+V\+I\+S\+I\+T\+\_\+\+L\+I\+V\+E\+\_\+\+O\+B\+J\+E\+C\+TS}
+ \}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_afe1b41e628e99a91ffaed56dff52a1f0}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_afe1b41e628e99a91ffaed56dff52a1f0}
+
+\item 
+enum {\bfseries Skip\+List\+Rebuilding\+Mode} \{ \\*
+{\bfseries R\+E\+B\+U\+I\+L\+D\+\_\+\+S\+K\+I\+P\+\_\+\+L\+I\+ST}, 
+\\*
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+S\+K\+I\+P\+\_\+\+L\+I\+ST}
+ \}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ad89d7b2bfb6031b10ef7808d5b59a693}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ad89d7b2bfb6031b10ef7808d5b59a693}
+
+\item 
+enum {\bfseries Free\+Space\+Treatment\+Mode} \{ \\*
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+F\+R\+E\+E\+\_\+\+S\+P\+A\+CE}, 
+\\*
+{\bfseries Z\+A\+P\+\_\+\+F\+R\+E\+E\+\_\+\+S\+P\+A\+CE}
+ \}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_adbacfa20f7833e3bd1c908628dc820f1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_adbacfa20f7833e3bd1c908628dc820f1}
+
+\item 
+enum {\bfseries Sweeping\+Parallelism} \{ \\*
+{\bfseries S\+W\+E\+E\+P\+\_\+\+O\+N\+\_\+\+M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+AD}, 
+\\*
+{\bfseries S\+W\+E\+E\+P\+\_\+\+I\+N\+\_\+\+P\+A\+R\+A\+L\+L\+EL}
+ \}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a066d73fc3b1cc91243086492ad0334de}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a066d73fc3b1cc91243086492ad0334de}
+
+\item 
+typedef std\+::deque$<$ \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ $>$ {\bfseries Sweeping\+List}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_abf083554d5c2ce0a779c65b299a25b0b}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_abf083554d5c2ce0a779c65b299a25b0b}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ $>$ {\bfseries Swept\+List}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a33e0fcfd7531f3e9762ec15d89f9f22d}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a33e0fcfd7531f3e9762ec15d89f9f22d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sweeper} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ad29e9b75a94c9d797a0b49d3a4907ad9}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ad29e9b75a94c9d797a0b49d3a4907ad9}
+
+\item 
+bool {\bfseries sweeping\+\_\+in\+\_\+progress} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a258218d4676a646d4d280944d8418ff2}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a258218d4676a646d4d280944d8418ff2}
+
+\item 
+bool {\bfseries contains\+\_\+late\+\_\+pages} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a816be37ca6d9a5c2733ef5b8a0ba2912}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a816be37ca6d9a5c2733ef5b8a0ba2912}
+
+\item 
+void {\bfseries Add\+Page} (Allocation\+Space space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a611a28b18536cecc68e607587a2365ae}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a611a28b18536cecc68e607587a2365ae}
+
+\item 
+void {\bfseries Add\+Late\+Page} (Allocation\+Space space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a9796533bf672198109ef824349abbab0}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a9796533bf672198109ef824349abbab0}
+
+\item 
+int {\bfseries Parallel\+Sweep\+Space} (Allocation\+Space identity, int required\+\_\+freed\+\_\+bytes, int max\+\_\+pages=0)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_abfb8bd676f662b93aef637f27d3d20a8}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_abfb8bd676f662b93aef637f27d3d20a8}
+
+\item 
+int {\bfseries Parallel\+Sweep\+Page} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, \hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a6d1d797e55de73869c883dd8752513b7}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a6d1d797e55de73869c883dd8752513b7}
+
+\item 
+void {\bfseries Start\+Sweeping} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa38ded94f135c84e06788672c48d97a3}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa38ded94f135c84e06788672c48d97a3}
+
+\item 
+void {\bfseries Start\+Sweeping\+Helper} (Allocation\+Space space\+\_\+to\+\_\+start)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a11fd070f65d9aba1140218e42bf72986}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a11fd070f65d9aba1140218e42bf72986}
+
+\item 
+void {\bfseries Ensure\+Completed} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab2c9b899974d99f4de8d2504ba4dc934}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab2c9b899974d99f4de8d2504ba4dc934}
+
+\item 
+bool {\bfseries Is\+Sweeping\+Completed} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a85f5ef291770a4f0174c00572ca26d0f}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a85f5ef291770a4f0174c00572ca26d0f}
+
+\item 
+void {\bfseries Sweep\+Or\+Wait\+Until\+Sweeping\+Completed} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a4fdb36c58eff1009e50ee46fd01b3b34}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a4fdb36c58eff1009e50ee46fd01b3b34}
+
+\item 
+void {\bfseries Add\+Swept\+Page\+Safe} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a842249b6edeb21e89d0cf7dcb03f9696}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a842249b6edeb21e89d0cf7dcb03f9696}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries Get\+Swept\+Page\+Safe} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a4bfd95fb8004dba5b4c04aeaebf93e6f}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a4bfd95fb8004dba5b4c04aeaebf93e6f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Sweeping\+Mode sweeping\+\_\+mode, Sweeping\+Parallelism parallelism, Skip\+List\+Rebuilding\+Mode skip\+\_\+list\+\_\+mode, Free\+Space\+Treatment\+Mode free\+\_\+space\+\_\+mode$>$ }\\static int {\bfseries Raw\+Sweep} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$p, Object\+Visitor $\ast$v)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a3f4272148222117840a48a262596d3f1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a3f4272148222117840a48a262596d3f1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+All\+Sweeping\+Spaces} (Callback callback)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa2c4f897399ae8b2a4a040622258de62}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa2c4f897399ae8b2a4a040622258de62}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries Get\+Sweeping\+Page\+Safe} (Allocation\+Space space)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a7ee336c2c7ab0b76805013cca4ccd8f8}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a7ee336c2c7ab0b76805013cca4ccd8f8}
+
+\item 
+void {\bfseries Add\+Sweeping\+Page\+Safe} (Allocation\+Space space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aadd3ef32dcd27490f842363f37aa4658}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aadd3ef32dcd27490f842363f37aa4658}
+
+\item 
+void {\bfseries Prepare\+To\+Be\+Swept\+Page} (Allocation\+Space space, \hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a9e3dfac3abf7cda9c43b60fdd3fe8bae}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a9e3dfac3abf7cda9c43b60fdd3fe8bae}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab5ec1acc507a54631225c6f32855242b}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab5ec1acc507a54631225c6f32855242b}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_semaphore}{base\+::\+Semaphore} {\bfseries pending\+\_\+sweeper\+\_\+tasks\+\_\+semaphore\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ae3cf58676e59276791a2852ee183824b}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ae3cf58676e59276791a2852ee183824b}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a0e26df0607d03ff279421b5d97396812}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a0e26df0607d03ff279421b5d97396812}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{Swept\+List} {\bfseries swept\+\_\+list\+\_\+} \mbox{[}k\+Allocation\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab9d3da168b937eb767fd903420c92266}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_ab9d3da168b937eb767fd903420c92266}
+
+\item 
+Sweeping\+List {\bfseries sweeping\+\_\+list\+\_\+} \mbox{[}k\+Allocation\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a45fd2b9c27d942d32d607faffe9134a1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a45fd2b9c27d942d32d607faffe9134a1}
+
+\item 
+bool {\bfseries sweeping\+\_\+in\+\_\+progress\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa6b7eb624c86ee6c5f282bed72714ac1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_aa6b7eb624c86ee6c5f282bed72714ac1}
+
+\item 
+bool {\bfseries late\+\_\+pages\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a7bebbe4845bf9034ba0c84480efa7aa1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a7bebbe4845bf9034ba0c84480efa7aa1}
+
+\item 
+int {\bfseries num\+\_\+sweeping\+\_\+tasks\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a27a7be82091a10217d6cc5c12ac531c0}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a27a7be82091a10217d6cc5c12ac531c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Allocation\+Spaces} = L\+A\+S\+T\+\_\+\+P\+A\+G\+E\+D\+\_\+\+S\+P\+A\+CE + 1\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a53d47e0e635be5f9c8dba478b413017e}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_sweeper_a53d47e0e635be5f9c8dba478b413017e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/mark-\/compact.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

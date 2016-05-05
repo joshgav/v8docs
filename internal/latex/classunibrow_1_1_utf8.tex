@@ -1,0 +1,57 @@
+\hypertarget{classunibrow_1_1_utf8}{}\section{unibrow\+:\+:Utf8 Class Reference}
+\label{classunibrow_1_1_utf8}\index{unibrow\+::\+Utf8@{unibrow\+::\+Utf8}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uchar {\bfseries Length} (uchar chr, int previous)\hypertarget{classunibrow_1_1_utf8_a5c6a30a8610649fee6dbb05057862113}{}\label{classunibrow_1_1_utf8_a5c6a30a8610649fee6dbb05057862113}
+
+\item 
+static unsigned {\bfseries Encode\+One\+Byte} (char $\ast$out, uint8\+\_\+t c)\hypertarget{classunibrow_1_1_utf8_a944c72d1ddbcccc8f6386f1ff971404f}{}\label{classunibrow_1_1_utf8_a944c72d1ddbcccc8f6386f1ff971404f}
+
+\item 
+static unsigned {\bfseries Encode} (char $\ast$out, uchar c, int previous, bool replace\+\_\+invalid=false)\hypertarget{classunibrow_1_1_utf8_acf0af099acd418650bf1a8080f14e926}{}\label{classunibrow_1_1_utf8_acf0af099acd418650bf1a8080f14e926}
+
+\item 
+static uchar {\bfseries Calculate\+Value} (const byte $\ast$str, size\+\_\+t length, size\+\_\+t $\ast$cursor)\hypertarget{classunibrow_1_1_utf8_a7c355e692f5abdea8fcf4aff60adb728}{}\label{classunibrow_1_1_utf8_a7c355e692f5abdea8fcf4aff60adb728}
+
+\item 
+static uchar {\bfseries Value\+Of} (const byte $\ast$str, size\+\_\+t length, size\+\_\+t $\ast$cursor)\hypertarget{classunibrow_1_1_utf8_a694bc73a14569ce19c6baa4b6caf1c99}{}\label{classunibrow_1_1_utf8_a694bc73a14569ce19c6baa4b6caf1c99}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uchar {\bfseries k\+Bad\+Char} = 0x\+F\+F\+FD\hypertarget{classunibrow_1_1_utf8_a4e5ed3c61ce8976082104caf8f6e2ff8}{}\label{classunibrow_1_1_utf8_a4e5ed3c61ce8976082104caf8f6e2ff8}
+
+\item 
+static const unsigned {\bfseries k\+Max\+Encoded\+Size} = 4\hypertarget{classunibrow_1_1_utf8_a863e13744b7f1bafb2e7cefa88db22e8}{}\label{classunibrow_1_1_utf8_a863e13744b7f1bafb2e7cefa88db22e8}
+
+\item 
+static const unsigned {\bfseries k\+Max\+One\+Byte\+Char} = 0x7f\hypertarget{classunibrow_1_1_utf8_a133ef06049e8474299fe9a84de6f2de0}{}\label{classunibrow_1_1_utf8_a133ef06049e8474299fe9a84de6f2de0}
+
+\item 
+static const unsigned {\bfseries k\+Max\+Two\+Byte\+Char} = 0x7ff\hypertarget{classunibrow_1_1_utf8_ab9ef696115d867a8a3d8e66db07d8211}{}\label{classunibrow_1_1_utf8_ab9ef696115d867a8a3d8e66db07d8211}
+
+\item 
+static const unsigned {\bfseries k\+Max\+Three\+Byte\+Char} = 0xffff\hypertarget{classunibrow_1_1_utf8_a0c0efe6dd154eaddb19bfbc7001307aa}{}\label{classunibrow_1_1_utf8_a0c0efe6dd154eaddb19bfbc7001307aa}
+
+\item 
+static const unsigned {\bfseries k\+Max\+Four\+Byte\+Char} = 0x1fffff\hypertarget{classunibrow_1_1_utf8_a7d30c60658c9742cfe77512de617a4b6}{}\label{classunibrow_1_1_utf8_a7d30c60658c9742cfe77512de617a4b6}
+
+\item 
+static const unsigned {\bfseries k\+Bytes\+Saved\+By\+Combining\+Surrogates} = 2\hypertarget{classunibrow_1_1_utf8_ad8db1cc81f7247e91d356a28392c79f9}{}\label{classunibrow_1_1_utf8_ad8db1cc81f7247e91d356a28392c79f9}
+
+\item 
+static const unsigned {\bfseries k\+Size\+Of\+Unmatched\+Surrogate} = 3\hypertarget{classunibrow_1_1_utf8_ae299e468227458f62545d61201a256eb}{}\label{classunibrow_1_1_utf8_ae299e468227458f62545d61201a256eb}
+
+\item 
+static const unsigned {\bfseries k\+Max16\+Bit\+Code\+Unit\+Size} = 3\hypertarget{classunibrow_1_1_utf8_ac950664b85f1ad13505134334f32d0c5}{}\label{classunibrow_1_1_utf8_ac950664b85f1ad13505134334f32d0c5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/\hyperlink{unicode_8h}{unicode.\+h}\item 
+/\+Users/joshgav/node/v8/src/unicode-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/\hyperlink{unicode_8cc}{unicode.\+cc}\end{DoxyCompactItemize}

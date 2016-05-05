@@ -1,0 +1,76 @@
+\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata}{}\section{v8\+:\+:internal\+:\+:Type\+Feedback\+Metadata Class Reference}
+\label{classv8_1_1internal_1_1_type_feedback_metadata}\index{v8\+::internal\+::\+Type\+Feedback\+Metadata@{v8\+::internal\+::\+Type\+Feedback\+Metadata}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Type\+Feedback\+Metadata\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_type_feedback_metadata}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Spec\+Differs\+From} (const \hyperlink{classv8_1_1internal_1_1_feedback_vector_spec}{Feedback\+Vector\+Spec} $\ast$other\+\_\+spec) const \hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a48a580f15b0cc818124cf600202e3d9e}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a48a580f15b0cc818124cf600202e3d9e}
+
+\item 
+int {\bfseries slot\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_ac98b508aed599f792822f7c8d514f3df}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_ac98b508aed599f792822f7c8d514f3df}
+
+\item 
+Feedback\+Vector\+Slot\+Kind {\bfseries Get\+Kind} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot) const \hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_af68eec47f1102d8a5edcc181242726b4}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_af68eec47f1102d8a5edcc181242726b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_type_feedback_metadata}{Type\+Feedback\+Metadata} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$obj)\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a9c8fee792d0fa498fb683a6fecdc2848}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a9c8fee792d0fa498fb683a6fecdc2848}
+
+\item 
+static int {\bfseries Get\+Slot\+Size} (Feedback\+Vector\+Slot\+Kind kind)\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a058c2567caba5b1e74d0a2cff5782826}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a058c2567caba5b1e74d0a2cff5782826}
+
+\item 
+{\footnotesize template$<$typename Spec $>$ }\\static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_metadata}{Type\+Feedback\+Metadata} $>$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, const Spec $\ast$spec)\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_aa67312896e194beb6e321ef02b275089}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_aa67312896e194beb6e321ef02b275089}
+
+\item 
+static const char $\ast$ {\bfseries Kind2\+String} (Feedback\+Vector\+Slot\+Kind kind)\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_aa258dcf14293c07c34c828779ea64ea9}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_aa258dcf14293c07c34c828779ea64ea9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Slots\+Count\+Index} = 0\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a8f130c4581a1c51eff5b57043701997e}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a8f130c4581a1c51eff5b57043701997e}
+
+\item 
+static const int {\bfseries k\+Reserved\+Index\+Count} = 1\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a4bf10c653118cb0f05ebd6948ee682b1}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a4bf10c653118cb0f05ebd6948ee682b1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_bit_set_computer}{Bit\+Set\+Computer}$<$ Feedback\+Vector\+Slot\+Kind, k\+Feedback\+Vector\+Slot\+Kind\+Bits, k\+Smi\+Value\+Size, uint32\+\_\+t $>$ {\bfseries Vector\+I\+C\+Computer}\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_a7599378c748db01866ba5da01c0cd1fb}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_a7599378c748db01866ba5da01c0cd1fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (static\+\_\+cast$<$ int $>$(Feedback\+Vector\+Slot\+Kind\+::\+K\+I\+N\+D\+S\+\_\+\+N\+U\+M\+B\+ER)$<$ (1$<$$<$ k\+Feedback\+Vector\+Slot\+Kind\+Bits))\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_ade1cdb54942ba76a893fe8575d8f0947}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_ade1cdb54942ba76a893fe8575d8f0947}
+
+\item 
+void {\bfseries Set\+Kind} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, Feedback\+Vector\+Slot\+Kind kind)\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_af1c650ed49405501bcad11ad6e2832b7}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_af1c650ed49405501bcad11ad6e2832b7}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_type_feedback_metadata}{Type\+Feedback\+Metadata})\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_ab6cc3f13bfd9bd8f76c97e4c4802ebf7}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_ab6cc3f13bfd9bd8f76c97e4c4802ebf7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Feedback\+Vector\+Slot\+Kind\+Bits} = 3\hypertarget{classv8_1_1internal_1_1_type_feedback_metadata_ab9963039bef02fcc0c8385f758e9a1d4}{}\label{classv8_1_1internal_1_1_type_feedback_metadata_ab9963039bef02fcc0c8385f758e9a1d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector.\+h\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/type-\/feedback-\/vector.\+cc\end{DoxyCompactItemize}

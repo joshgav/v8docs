@@ -1,0 +1,115 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Decoder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1_decoder}\index{v8\+::internal\+::wasm\+::\+Decoder@{v8\+::internal\+::wasm\+::\+Decoder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1wasm_1_1_decoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Decoder} (const byte $\ast$start, const byte $\ast$end)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_aed37fc13e742edf7d829c8eba099ce7b}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_aed37fc13e742edf7d829c8eba099ce7b}
+
+\item 
+bool {\bfseries check} (const byte $\ast$base, int offset, int length, const char $\ast$msg)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a027ba786a9dc21f8c315873c3e19ec83}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a027ba786a9dc21f8c315873c3e19ec83}
+
+\item 
+uint8\+\_\+t {\bfseries checked\+\_\+read\+\_\+u8} (const byte $\ast$base, int offset, const char $\ast$msg=\char`\"{}expected 1 byte\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ac93d9e4957b721071c6ba83fa34aecaa}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ac93d9e4957b721071c6ba83fa34aecaa}
+
+\item 
+uint16\+\_\+t {\bfseries checked\+\_\+read\+\_\+u16} (const byte $\ast$base, int offset, const char $\ast$msg=\char`\"{}expected 2 bytes\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_aae61392691730c8e66bd2294c77ddcc9}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_aae61392691730c8e66bd2294c77ddcc9}
+
+\item 
+uint32\+\_\+t {\bfseries checked\+\_\+read\+\_\+u32} (const byte $\ast$base, int offset, const char $\ast$msg=\char`\"{}expected 4 bytes\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a3b1c769d8d0a1468c8cd0ed9df77402c}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a3b1c769d8d0a1468c8cd0ed9df77402c}
+
+\item 
+uint64\+\_\+t {\bfseries checked\+\_\+read\+\_\+u64} (const byte $\ast$base, int offset, const char $\ast$msg=\char`\"{}expected 8 bytes\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a5d91cb56b0db7e666e4a6761787f0ff5}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a5d91cb56b0db7e666e4a6761787f0ff5}
+
+\item 
+uint32\+\_\+t {\bfseries checked\+\_\+read\+\_\+u32v} (const byte $\ast$base, int offset, int $\ast$length, const char $\ast$msg=\char`\"{}expected L\+E\+B32\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ad9424fc0c16b29c66d62aace8d1c756b}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ad9424fc0c16b29c66d62aace8d1c756b}
+
+\item 
+int32\+\_\+t {\bfseries checked\+\_\+read\+\_\+i32v} (const byte $\ast$base, int offset, int $\ast$length, const char $\ast$msg=\char`\"{}expected S\+L\+E\+B32\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a3cf4f162282ebebb241cd35777b52fce}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a3cf4f162282ebebb241cd35777b52fce}
+
+\item 
+uint64\+\_\+t {\bfseries checked\+\_\+read\+\_\+u64v} (const byte $\ast$base, int offset, int $\ast$length, const char $\ast$msg=\char`\"{}expected L\+E\+B64\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_af6269818a571fce9932415824d67af6a}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_af6269818a571fce9932415824d67af6a}
+
+\item 
+int64\+\_\+t {\bfseries checked\+\_\+read\+\_\+i64v} (const byte $\ast$base, int offset, int $\ast$length, const char $\ast$msg=\char`\"{}expected S\+L\+E\+B64\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a32fc06b08e20e208a60976e398a02683}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a32fc06b08e20e208a60976e398a02683}
+
+\item 
+uint16\+\_\+t {\bfseries read\+\_\+u16} (const byte $\ast$ptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a73135248172a521c81080cb0e2f718eb}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a73135248172a521c81080cb0e2f718eb}
+
+\item 
+uint32\+\_\+t {\bfseries read\+\_\+u32} (const byte $\ast$ptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a92edbd918cf7876dd2b523b303a94882}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a92edbd918cf7876dd2b523b303a94882}
+
+\item 
+uint64\+\_\+t {\bfseries read\+\_\+u64} (const byte $\ast$ptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a4c93c777b3ae1f324d1d9b24f41665ae}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a4c93c777b3ae1f324d1d9b24f41665ae}
+
+\item 
+uint8\+\_\+t {\bfseries consume\+\_\+u8} (const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ab8c9114e7c6d08ca12bd58eb98f25478}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ab8c9114e7c6d08ca12bd58eb98f25478}
+
+\item 
+uint16\+\_\+t {\bfseries consume\+\_\+u16} (const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_afae6d52d177a5b3f157234b6220ac259}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_afae6d52d177a5b3f157234b6220ac259}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+u32} (const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a054cedf3bb3d425e384fc96c34cde417}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a054cedf3bb3d425e384fc96c34cde417}
+
+\item 
+uint32\+\_\+t {\bfseries consume\+\_\+u32v} (int $\ast$length, const char $\ast$name=nullptr)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_aa3bf4aa1f2932bf1127c9e091ee8a709}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_aa3bf4aa1f2932bf1127c9e091ee8a709}
+
+\item 
+void {\bfseries consume\+\_\+bytes} (int size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a70ada731b5665fff490346d05c0bbfa4}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a70ada731b5665fff490346d05c0bbfa4}
+
+\item 
+bool {\bfseries check\+Available} (int size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_acec73f0eed5012ec33fa4acf4649a067}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_acec73f0eed5012ec33fa4acf4649a067}
+
+\item 
+void {\bfseries error} (const char $\ast$msg)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a8de1515317bff5dc875a702f2007e13f}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a8de1515317bff5dc875a702f2007e13f}
+
+\item 
+void {\bfseries error} (const byte $\ast$pc, const char $\ast$msg)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ada714b098cf1976c6634b90622a420fe}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ada714b098cf1976c6634b90622a420fe}
+
+\item 
+void {\bfseries P\+R\+I\+N\+T\+F\+\_\+\+F\+O\+R\+M\+AT} (4, 5) error(const byte $\ast$pc\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ad0bdae22728deb3b9061732598c1db84}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ad0bdae22728deb3b9061732598c1db84}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void const byte $\ast$ {\bfseries pt}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a89427dbc7b3c6cdcab4170ae1e0c0c1d}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a89427dbc7b3c6cdcab4170ae1e0c0c1d}
+
+\item 
+void const byte const char $\ast$ {\bfseries format}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a8621fa95a0132e4681f8da5493370ee9}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a8621fa95a0132e4681f8da5493370ee9}
+
+\item 
+void const byte const char const byte $\ast$ {\bfseries pc\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ac33a81a943512e2fda98670a4c4cdbb4}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ac33a81a943512e2fda98670a4c4cdbb4}
+
+\item 
+const byte $\ast$ {\bfseries limit\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_ad9703f8a7079f9a2cdb3f5440122bfd0}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_ad9703f8a7079f9a2cdb3f5440122bfd0}
+
+\item 
+const byte $\ast$ {\bfseries end\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a091e7b1a0913396a619891eb692ece17}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a091e7b1a0913396a619891eb692ece17}
+
+\item 
+const byte $\ast$ {\bfseries error\+\_\+pc\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a2fd122b98f63729ef2b65e246bfb3af4}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a2fd122b98f63729ef2b65e246bfb3af4}
+
+\item 
+const byte $\ast$ {\bfseries error\+\_\+pt\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a860341f02dbaaaa54f1db083120c3c7a}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a860341f02dbaaaa54f1db083120c3c7a}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_smart_array_pointer}{base\+::\+Smart\+Array\+Pointer}$<$ char $>$ {\bfseries error\+\_\+msg\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_a7e2e98a37aea6986f673668bfb7403bb}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_a7e2e98a37aea6986f673668bfb7403bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Int\+Type , bool is\+\_\+signed$>$ }\\Int\+Type {\bfseries checked\+\_\+read\+\_\+leb} (const byte $\ast$base, int offset, int $\ast$length, const char $\ast$msg)\hypertarget{classv8_1_1internal_1_1wasm_1_1_decoder_aebd15ec76af37ab8276ac7729cf00fb1}{}\label{classv8_1_1internal_1_1wasm_1_1_decoder_aebd15ec76af37ab8276ac7729cf00fb1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/decoder.\+h\end{DoxyCompactItemize}

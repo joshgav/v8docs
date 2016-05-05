@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_text}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Text Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_text}\index{v8\+::internal\+::\+Reg\+Exp\+Text@{v8\+::internal\+::\+Reg\+Exp\+Text}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_reg_exp_text}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Text} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a0324310cc71e60bd7b4809c422d23d32}{}\label{classv8_1_1internal_1_1_reg_exp_text_a0324310cc71e60bd7b4809c422d23d32}
+
+\item 
+void $\ast$ {\bfseries Accept} (Reg\+Exp\+Visitor $\ast$visitor, void $\ast$data) override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_aea179b143ae81674b36bb232fc7faefa}{}\label{classv8_1_1internal_1_1_reg_exp_text_aea179b143ae81674b36bb232fc7faefa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries To\+Node} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$on\+\_\+success) override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a6ea6b99a77e2b5fd64a5d29837be5ff7}{}\label{classv8_1_1internal_1_1_reg_exp_text_a6ea6b99a77e2b5fd64a5d29837be5ff7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_text}{Reg\+Exp\+Text} $\ast$ {\bfseries As\+Text} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a92671346bcc28980f0f6fce28a1f1bbe}{}\label{classv8_1_1internal_1_1_reg_exp_text_a92671346bcc28980f0f6fce28a1f1bbe}
+
+\item 
+bool {\bfseries Is\+Text} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_acba0fe87d94d0d3d2273c1c756b3b4fb}{}\label{classv8_1_1internal_1_1_reg_exp_text_acba0fe87d94d0d3d2273c1c756b3b4fb}
+
+\item 
+bool {\bfseries Is\+Text\+Element} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a9656a07fc9368d7d4b2cec3959fde1c9}{}\label{classv8_1_1internal_1_1_reg_exp_text_a9656a07fc9368d7d4b2cec3959fde1c9}
+
+\item 
+int {\bfseries min\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_aa314a4eba4ea4c94205347204cc2d102}{}\label{classv8_1_1internal_1_1_reg_exp_text_aa314a4eba4ea4c94205347204cc2d102}
+
+\item 
+int {\bfseries max\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_ac6e7ca99e8d7dc54bbd1b205953d2c52}{}\label{classv8_1_1internal_1_1_reg_exp_text_ac6e7ca99e8d7dc54bbd1b205953d2c52}
+
+\item 
+void {\bfseries Append\+To\+Text} (\hyperlink{classv8_1_1internal_1_1_reg_exp_text}{Reg\+Exp\+Text} $\ast$text, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) override\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a08e5bd7d0143a9b18a96cb99e0fac798}{}\label{classv8_1_1internal_1_1_reg_exp_text_a08e5bd7d0143a9b18a96cb99e0fac798}
+
+\item 
+void {\bfseries Add\+Element} (Text\+Element elm, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a712a212b61a1885e17e905724731a233}{}\label{classv8_1_1internal_1_1_reg_exp_text_a712a212b61a1885e17e905724731a233}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ Text\+Element $>$ $\ast$ {\bfseries elements} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a54dc3a5be0ef2e6447e154e594f3c779}{}\label{classv8_1_1internal_1_1_reg_exp_text_a54dc3a5be0ef2e6447e154e594f3c779}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ Text\+Element $>$ {\bfseries elements\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a53fa0e6b9c28cdf22bd4a95ab0fb17b8}{}\label{classv8_1_1internal_1_1_reg_exp_text_a53fa0e6b9c28cdf22bd4a95ab0fb17b8}
+
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_text_a1e4a9bad2aa9561772258cfb7dba7db1}{}\label{classv8_1_1internal_1_1_reg_exp_text_a1e4a9bad2aa9561772258cfb7dba7db1}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

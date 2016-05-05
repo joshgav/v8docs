@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1internal_1_1_external_streaming_stream}{}\section{v8\+:\+:internal\+:\+:External\+Streaming\+Stream Class Reference}
+\label{classv8_1_1internal_1_1_external_streaming_stream}\index{v8\+::internal\+::\+External\+Streaming\+Stream@{v8\+::internal\+::\+External\+Streaming\+Stream}}
+Inheritance diagram for v8\+:\+:internal\+:\+:External\+Streaming\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_external_streaming_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries External\+Streaming\+Stream} (\hyperlink{classv8_1_1_script_compiler_1_1_external_source_stream}{Script\+Compiler\+::\+External\+Source\+Stream} $\ast$source\+\_\+stream, v8\+::\+Script\+Compiler\+::\+Streamed\+Source\+::\+Encoding encoding)\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_ad2e7551b91a1ff90a62b7a0f0975f3d1}{}\label{classv8_1_1internal_1_1_external_streaming_stream_ad2e7551b91a1ff90a62b7a0f0975f3d1}
+
+\item 
+size\+\_\+t {\bfseries Buffer\+Seek\+Forward} (size\+\_\+t delta) override\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a2e365ef0a56638899312a329154ef135}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a2e365ef0a56638899312a329154ef135}
+
+\item 
+size\+\_\+t {\bfseries Fill\+Buffer} (size\+\_\+t position) override\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a087f8260c28121a436e2f86c75908572}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a087f8260c28121a436e2f86c75908572}
+
+\item 
+bool {\bfseries Set\+Bookmark} () override\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a490f67bc96a0ad88160b2d336fc89ecb}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a490f67bc96a0ad88160b2d336fc89ecb}
+
+\item 
+void {\bfseries Reset\+To\+Bookmark} () override\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_afdfe1bc92955de3f3458e66aa56e9799}{}\label{classv8_1_1internal_1_1_external_streaming_stream_afdfe1bc92955de3f3458e66aa56e9799}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Handle\+Utf8\+Split\+Characters} (size\+\_\+t $\ast$data\+\_\+in\+\_\+buffer)\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_ad71e8b92c7bf62b34e89283e706c05be}{}\label{classv8_1_1internal_1_1_external_streaming_stream_ad71e8b92c7bf62b34e89283e706c05be}
+
+\item 
+void {\bfseries Flush\+Current} ()\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a19751f2fce1c74dfe2af7eb5ea416138}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a19751f2fce1c74dfe2af7eb5ea416138}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_script_compiler_1_1_external_source_stream}{Script\+Compiler\+::\+External\+Source\+Stream} $\ast$ {\bfseries source\+\_\+stream\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a10d3f25ab3c905380f0d250f9484d7a6}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a10d3f25ab3c905380f0d250f9484d7a6}
+
+\item 
+v8\+::\+Script\+Compiler\+::\+Streamed\+Source\+::\+Encoding {\bfseries encoding\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a49b4856073010306a4498e3a799609b2}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a49b4856073010306a4498e3a799609b2}
+
+\item 
+const uint8\+\_\+t $\ast$ {\bfseries current\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a140ef27f297e9bd7f70b71e944f823a4}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a140ef27f297e9bd7f70b71e944f823a4}
+
+\item 
+size\+\_\+t {\bfseries current\+\_\+data\+\_\+offset\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a43af73c382f0e5c226ff6a881121e9b2}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a43af73c382f0e5c226ff6a881121e9b2}
+
+\item 
+size\+\_\+t {\bfseries current\+\_\+data\+\_\+length\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_acf96eef227c3e7c47cc23e57f57f68c5}{}\label{classv8_1_1internal_1_1_external_streaming_stream_acf96eef227c3e7c47cc23e57f57f68c5}
+
+\item 
+uint8\+\_\+t {\bfseries utf8\+\_\+split\+\_\+char\+\_\+buffer\+\_\+} \mbox{[}4\mbox{]}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a0e62fa45a2092c655c1390dad5b52363}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a0e62fa45a2092c655c1390dad5b52363}
+
+\item 
+size\+\_\+t {\bfseries utf8\+\_\+split\+\_\+char\+\_\+buffer\+\_\+length\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a2c3c6c18fb249e986e37827adda77070}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a2c3c6c18fb249e986e37827adda77070}
+
+\item 
+size\+\_\+t {\bfseries bookmark\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a29db2052e514867a54439746d0b516aa}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a29db2052e514867a54439746d0b516aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ uint16\+\_\+t $>$ {\bfseries bookmark\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a0baca8316446f6457b9922ace8eed514}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a0baca8316446f6457b9922ace8eed514}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ uint8\+\_\+t $>$ {\bfseries bookmark\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a8155720a21c405465ffb1ce50ac189e7}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a8155720a21c405465ffb1ce50ac189e7}
+
+\item 
+bool {\bfseries bookmark\+\_\+data\+\_\+is\+\_\+from\+\_\+current\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_aa198c922d820cb093d296dc2f18c850a}{}\label{classv8_1_1internal_1_1_external_streaming_stream_aa198c922d820cb093d296dc2f18c850a}
+
+\item 
+size\+\_\+t {\bfseries bookmark\+\_\+data\+\_\+offset\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_ad09c45dac7b0ada4c23d1ebbdd3823a0}{}\label{classv8_1_1internal_1_1_external_streaming_stream_ad09c45dac7b0ada4c23d1ebbdd3823a0}
+
+\item 
+uint8\+\_\+t {\bfseries bookmark\+\_\+utf8\+\_\+split\+\_\+char\+\_\+buffer\+\_\+} \mbox{[}4\mbox{]}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_a1ef91e071e3aaf0c7251780481477f1a}{}\label{classv8_1_1internal_1_1_external_streaming_stream_a1ef91e071e3aaf0c7251780481477f1a}
+
+\item 
+size\+\_\+t {\bfseries bookmark\+\_\+utf8\+\_\+split\+\_\+char\+\_\+buffer\+\_\+length\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_streaming_stream_ade49d40c8ba94a70e9514ee241794ad4}{}\label{classv8_1_1internal_1_1_external_streaming_stream_ade49d40c8ba94a70e9514ee241794ad4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+cc\end{DoxyCompactItemize}

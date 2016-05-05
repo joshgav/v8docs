@@ -1,0 +1,59 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Source\+Position\+Table\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder}\index{v8\+::internal\+::interpreter\+::\+Source\+Position\+Table\+Builder@{v8\+::internal\+::interpreter\+::\+Source\+Position\+Table\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Source\+Position\+Table\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Source\+Position\+Table\+Builder} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a3b2ca705966da48a87dac2dd674cc1df}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a3b2ca705966da48a87dac2dd674cc1df}
+
+\item 
+void {\bfseries Add\+Statement\+Position} (size\+\_\+t bytecode\+\_\+offset, int source\+\_\+position)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a81a88c192c2e59d0bf9366fb9010dc12}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a81a88c192c2e59d0bf9366fb9010dc12}
+
+\item 
+void {\bfseries Add\+Expression\+Position} (size\+\_\+t bytecode\+\_\+offset, int source\+\_\+position)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a443c586bf410ca44ff6072c88012dec8}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a443c586bf410ca44ff6072c88012dec8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_byte_array}{Byte\+Array} $>$ {\bfseries To\+Source\+Position\+Table} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a94211da2ecc23a00056d70dcd06e3651}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a94211da2ecc23a00056d70dcd06e3651}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Entry} (const \hyperlink{structv8_1_1internal_1_1interpreter_1_1_position_table_entry}{Position\+Table\+Entry} \&entry)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a03fed665ecaaccdc9e8a92423ec0e068}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a03fed665ecaaccdc9e8a92423ec0e068}
+
+\item 
+void {\bfseries Commit\+Entry} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a9db386919200bca9b480db6b2e1b7af8}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a9db386919200bca9b480db6b2e1b7af8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aa3350ed07d1c365fe6aa8182cf2f5be6}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aa3350ed07d1c365fe6aa8182cf2f5be6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ byte $>$ {\bfseries bytes\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a44c6ac53d611e26e48ffa4ae14fd2705}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a44c6ac53d611e26e48ffa4ae14fd2705}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1interpreter_1_1_position_table_entry}{Position\+Table\+Entry} {\bfseries candidate\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a16f7492d0e2ab19985cdebf67a677e09}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_a16f7492d0e2ab19985cdebf67a677e09}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1interpreter_1_1_position_table_entry}{Position\+Table\+Entry} {\bfseries previous\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aee3317a54621b90d1219f1eb912fdfc5}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aee3317a54621b90d1219f1eb912fdfc5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Uninitialized\+Candidate\+Offset} = -\/1\hypertarget{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aa5b0da5d5de2444a8feaeb031fa70827}{}\label{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder_aa5b0da5d5de2444a8feaeb031fa70827}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/source-\/position-\/table.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/source-\/position-\/table.\+cc\end{DoxyCompactItemize}

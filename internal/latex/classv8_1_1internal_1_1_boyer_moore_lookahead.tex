@@ -1,0 +1,77 @@
+\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead}{}\section{v8\+:\+:internal\+:\+:Boyer\+Moore\+Lookahead Class Reference}
+\label{classv8_1_1internal_1_1_boyer_moore_lookahead}\index{v8\+::internal\+::\+Boyer\+Moore\+Lookahead@{v8\+::internal\+::\+Boyer\+Moore\+Lookahead}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Boyer\+Moore\+Lookahead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_boyer_moore_lookahead}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Boyer\+Moore\+Lookahead} (int length, \hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_ab6a48b1e2e6882f08b2b6675ff8df09c}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_ab6a48b1e2e6882f08b2b6675ff8df09c}
+
+\item 
+int {\bfseries length} ()\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_adf8931d50830d985a1423b6b1b8612db}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_adf8931d50830d985a1423b6b1b8612db}
+
+\item 
+int {\bfseries max\+\_\+char} ()\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_aa29b6ac73eb53c5bfce5be63b0a7ebd5}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_aa29b6ac73eb53c5bfce5be63b0a7ebd5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$ {\bfseries compiler} ()\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_aa9e74726e490b7e55d846bfbf9117b74}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_aa9e74726e490b7e55d846bfbf9117b74}
+
+\item 
+int {\bfseries Count} (int map\+\_\+number)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a59acc100fba6e91982d56037e23430a2}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a59acc100fba6e91982d56037e23430a2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_boyer_moore_position_info}{Boyer\+Moore\+Position\+Info} $\ast$ {\bfseries at} (int i)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a966ed7328590844feb533c01078ad12f}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a966ed7328590844feb533c01078ad12f}
+
+\item 
+void {\bfseries Set} (int map\+\_\+number, int character)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_af4c7e21eb752bb01e83017365c1f9df0}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_af4c7e21eb752bb01e83017365c1f9df0}
+
+\item 
+void {\bfseries Set\+Interval} (int map\+\_\+number, const \hyperlink{classv8_1_1internal_1_1_interval}{Interval} \&interval)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a10f6403132f37e64c3ea5b02e1476b1c}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a10f6403132f37e64c3ea5b02e1476b1c}
+
+\item 
+void {\bfseries Set\+All} (int map\+\_\+number)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a36418e6a797298179b6386f16462b7d8}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a36418e6a797298179b6386f16462b7d8}
+
+\item 
+void {\bfseries Set\+Rest} (int from\+\_\+map)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_aa0c55e2cb8b8bb1c6781fead233fb37f}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_aa0c55e2cb8b8bb1c6781fead233fb37f}
+
+\item 
+void {\bfseries Emit\+Skip\+Instructions} (\hyperlink{classv8_1_1internal_1_1_reg_exp_macro_assembler}{Reg\+Exp\+Macro\+Assembler} $\ast$masm)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_ade25cef1e93047f545c040b8b1af156d}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_ade25cef1e93047f545c040b8b1af156d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Get\+Skip\+Table} (int min\+\_\+lookahead, int max\+\_\+lookahead, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_byte_array}{Byte\+Array} $>$ boolean\+\_\+skip\+\_\+table)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a04a97e98e560a43806bb7f57bb1ef511}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a04a97e98e560a43806bb7f57bb1ef511}
+
+\item 
+bool {\bfseries Find\+Worthwhile\+Interval} (int $\ast$from, int $\ast$to)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_ac9f50793c7f87b4549585139b0a39b2f}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_ac9f50793c7f87b4549585139b0a39b2f}
+
+\item 
+int {\bfseries Find\+Best\+Interval} (int max\+\_\+number\+\_\+of\+\_\+chars, int old\+\_\+biggest\+\_\+points, int $\ast$from, int $\ast$to)\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_add0442f473b80d85577c0742c370741a}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_add0442f473b80d85577c0742c370741a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_afa52b264f0331523887415a3d7fa0c77}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_afa52b264f0331523887415a3d7fa0c77}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$ {\bfseries compiler\+\_\+}\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a7573d38c150f142eff26f7ee645e5141}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a7573d38c150f142eff26f7ee645e5141}
+
+\item 
+int {\bfseries max\+\_\+char\+\_\+}\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_ab801c31a7d225a369f086bce36169030}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_ab801c31a7d225a369f086bce36169030}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_boyer_moore_position_info}{Boyer\+Moore\+Position\+Info} $\ast$ $>$ $\ast$ {\bfseries bitmaps\+\_\+}\hypertarget{classv8_1_1internal_1_1_boyer_moore_lookahead_a32699010f4b00592f1866255f51ed8d3}{}\label{classv8_1_1internal_1_1_boyer_moore_lookahead_a32699010f4b00592f1866255f51ed8d3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

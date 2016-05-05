@@ -1,0 +1,93 @@
+\hypertarget{classv8_1_1internal_1_1_j_s_array}{}\section{v8\+:\+:internal\+:\+:J\+S\+Array Class Reference}
+\label{classv8_1_1internal_1_1_j_s_array}\index{v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1_j_s_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+\_\+length} (\hyperlink{classv8_1_1internal_1_1_smi}{Smi} $\ast$length)\hypertarget{classv8_1_1internal_1_1_j_s_array_a161cb54446d5b70543257297463c72ab}{}\label{classv8_1_1internal_1_1_j_s_array_a161cb54446d5b70543257297463c72ab}
+
+\item 
+bool {\bfseries Set\+Length\+Would\+Normalize} (uint32\+\_\+t new\+\_\+length)\hypertarget{classv8_1_1internal_1_1_j_s_array_a08a73b7a43f807fb88bf9df19855fad3}{}\label{classv8_1_1internal_1_1_j_s_array_a08a73b7a43f807fb88bf9df19855fad3}
+
+\item 
+bool {\bfseries Allows\+Set\+Length} ()\hypertarget{classv8_1_1internal_1_1_j_s_array_ae90f5435e217abb3debb5b5e28ec4eb5}{}\label{classv8_1_1internal_1_1_j_s_array_ae90f5435e217abb3debb5b5e28ec4eb5}
+
+\item 
+bool {\bfseries Has\+Array\+Prototype} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_j_s_array_a942aa05a4af5d802acf8679cf5c35a82}{}\label{classv8_1_1internal_1_1_j_s_array_a942aa05a4af5d802acf8679cf5c35a82}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Has\+Read\+Only\+Length} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ array)\hypertarget{classv8_1_1internal_1_1_j_s_array_a0ebad386294cd7ba5e09f1289f84b23b}{}\label{classv8_1_1internal_1_1_j_s_array_a0ebad386294cd7ba5e09f1289f84b23b}
+
+\item 
+static bool {\bfseries Would\+Change\+Read\+Only\+Length} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ array, uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1_j_s_array_ab250b04720a407005395098e350026f5}{}\label{classv8_1_1internal_1_1_j_s_array_ab250b04720a407005395098e350026f5}
+
+\item 
+static void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ array, int capacity, int length=0)\hypertarget{classv8_1_1internal_1_1_j_s_array_ac34bb2e7768e194e679b3b1556b4e168}{}\label{classv8_1_1internal_1_1_j_s_array_ac34bb2e7768e194e679b3b1556b4e168}
+
+\item 
+static bool {\bfseries Set\+Length\+Would\+Normalize} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, uint32\+\_\+t new\+\_\+length)\hypertarget{classv8_1_1internal_1_1_j_s_array_aceeca4831590d83fe633b9471936e78e}{}\label{classv8_1_1internal_1_1_j_s_array_aceeca4831590d83fe633b9471936e78e}
+
+\item 
+static void {\bfseries Set\+Length} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ array, uint32\+\_\+t length)\hypertarget{classv8_1_1internal_1_1_j_s_array_a393d220b4a4df41af5589d3c3774281b}{}\label{classv8_1_1internal_1_1_j_s_array_a393d220b4a4df41af5589d3c3774281b}
+
+\item 
+static void {\bfseries Set\+Content} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ array, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array_base}{Fixed\+Array\+Base} $>$ storage)\hypertarget{classv8_1_1internal_1_1_j_s_array_a41f6ed171dd4166868145bfbd59ae829}{}\label{classv8_1_1internal_1_1_j_s_array_a41f6ed171dd4166868145bfbd59ae829}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe}{Maybe}$<$ bool $>$ {\bfseries Define\+Own\+Property} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ o, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ name, \hyperlink{classv8_1_1internal_1_1_property_descriptor}{Property\+Descriptor} $\ast$desc, Should\+Throw should\+\_\+throw)\hypertarget{classv8_1_1internal_1_1_j_s_array_a6bcefd1ec362326a85e9e5e072883d27}{}\label{classv8_1_1internal_1_1_j_s_array_a6bcefd1ec362326a85e9e5e072883d27}
+
+\item 
+static bool {\bfseries Anything\+To\+Array\+Length} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ length\+\_\+object, uint32\+\_\+t $\ast$output)\hypertarget{classv8_1_1internal_1_1_j_s_array_ab1c733216a8e34bb2a814162dabd8008}{}\label{classv8_1_1internal_1_1_j_s_array_ab1c733216a8e34bb2a814162dabd8008}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1_maybe}{Maybe}$<$ bool $>$ {\bfseries Array\+Set\+Length} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array} $>$ a, \hyperlink{classv8_1_1internal_1_1_property_descriptor}{Property\+Descriptor} $\ast$desc, Should\+Throw should\+\_\+throw)\hypertarget{classv8_1_1internal_1_1_j_s_array_a1a85c4694c5c524713cf52d58d577049}{}\label{classv8_1_1internal_1_1_j_s_array_a1a85c4694c5c524713cf52d58d577049}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Preallocated\+Array\+Elements} = 4\hypertarget{classv8_1_1internal_1_1_j_s_array_a67bc60ae3f9c63e64f3b8cc94d718bc0}{}\label{classv8_1_1internal_1_1_j_s_array_a67bc60ae3f9c63e64f3b8cc94d718bc0}
+
+\item 
+static const int {\bfseries k\+Length\+Offset} = J\+S\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_j_s_array_aea530131fca7e137fdd66ad7215a8352}{}\label{classv8_1_1internal_1_1_j_s_array_aea530131fca7e137fdd66ad7215a8352}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Length\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_array_ab3779f1079b0ff1ef3ba3ae3fa226ba0}{}\label{classv8_1_1internal_1_1_j_s_array_ab3779f1079b0ff1ef3ba3ae3fa226ba0}
+
+\item 
+static const int {\bfseries k\+Initial\+Max\+Fast\+Element\+Array}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_j_s_array}{J\+S\+Array})\hypertarget{classv8_1_1internal_1_1_j_s_array_a44e94e522910a3a815ac24cf2bd4013c}{}\label{classv8_1_1internal_1_1_j_s_array_a44e94e522910a3a815ac24cf2bd4013c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}!k\+Initial\+Max\+Fast\+Element\+Array@{k\+Initial\+Max\+Fast\+Element\+Array}}
+\index{k\+Initial\+Max\+Fast\+Element\+Array@{k\+Initial\+Max\+Fast\+Element\+Array}!v8\+::internal\+::\+J\+S\+Array@{v8\+::internal\+::\+J\+S\+Array}}
+\subsubsection[{\texorpdfstring{k\+Initial\+Max\+Fast\+Element\+Array}{kInitialMaxFastElementArray}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+J\+S\+Array\+::k\+Initial\+Max\+Fast\+Element\+Array\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_j_s_array_a42a590c6a358190389066e4b127bcf5b}{}\label{classv8_1_1internal_1_1_j_s_array_a42a590c6a358190389066e4b127bcf5b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (600 * KB - FixedArray::kHeaderSize - kSize - AllocationMemento::kSize) /
+      kPointerSize
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

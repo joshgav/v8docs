@@ -1,0 +1,63 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Ast\+Graph\+Builder\+:\+:Control\+Scope\+:\+:Deferred\+Commands Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands}\index{v8\+::internal\+::compiler\+::\+Ast\+Graph\+Builder\+::\+Control\+Scope\+::\+Deferred\+Commands@{v8\+::internal\+::compiler\+::\+Ast\+Graph\+Builder\+::\+Control\+Scope\+::\+Deferred\+Commands}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Ast\+Graph\+Builder\+:\+:Control\+Scope\+:\+:Deferred\+Commands\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Deferred\+Commands} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder}{Ast\+Graph\+Builder} $\ast$owner)\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a7709a1209344cdf7bb196edbb7fc9f61}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a7709a1209344cdf7bb196edbb7fc9f61}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Record\+Command} (Command cmd, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a13083c463ee1906575e77dfcf2021c9c}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a13083c463ee1906575e77dfcf2021c9c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Get\+Fall\+Through\+Token} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a4f36772f143d0a3036e3306f048d445d}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a4f36772f143d0a3036e3306f048d445d}
+
+\item 
+void {\bfseries Apply\+Deferred\+Commands} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$token, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value)\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_ad29000ca9f3ddf7ff49aea05bf378288}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_ad29000ca9f3ddf7ff49aea05bf378288}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries New\+Path\+Token} (int token\+\_\+id)\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a2d55d1d438515eafb5176a8e4b456e14}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a2d55d1d438515eafb5176a8e4b456e14}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries New\+Path\+Token\+For\+Implicit\+Fall\+Through} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_aaf5a2ef7267b2ea765abfb8c996c2639}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_aaf5a2ef7267b2ea765abfb8c996c2639}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries New\+Path\+Dispatch\+Condition} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$t1, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$t2)\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_ad569702566b15c224ec6b496f68aabf2}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_ad569702566b15c224ec6b496f68aabf2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_token_dispenser_for_finally}{Token\+Dispenser\+For\+Finally} {\bfseries dispenser\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a8d066ecadd8b595fd915893560fe3e48}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a8d066ecadd8b595fd915893560fe3e48}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder}{Ast\+Graph\+Builder} $\ast$ {\bfseries owner\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a56cb671c36f97ecf95cf130868ebad47}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a56cb671c36f97ecf95cf130868ebad47}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{structv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_1_1_entry}{Entry} $>$ {\bfseries deferred\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a27dd30fb1abe3386f370788023306c7f}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a27dd30fb1abe3386f370788023306c7f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries return\+\_\+token\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a5bfab363ce627b33bf5fc5fa8c8d29ee}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a5bfab363ce627b33bf5fc5fa8c8d29ee}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries throw\+\_\+token\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a3304131ff595ac8a9a3d30c0ab53d553}{}\label{classv8_1_1internal_1_1compiler_1_1_ast_graph_builder_1_1_control_scope_1_1_deferred_commands_a3304131ff595ac8a9a3d30c0ab53d553}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/ast-\/graph-\/builder.\+cc\end{DoxyCompactItemize}

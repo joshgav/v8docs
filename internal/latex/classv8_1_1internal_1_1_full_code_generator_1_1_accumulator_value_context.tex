@@ -1,0 +1,50 @@
+\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context}{}\section{v8\+:\+:internal\+:\+:Full\+Code\+Generator\+:\+:Accumulator\+Value\+Context Class Reference}
+\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context}\index{v8\+::internal\+::\+Full\+Code\+Generator\+::\+Accumulator\+Value\+Context@{v8\+::internal\+::\+Full\+Code\+Generator\+::\+Accumulator\+Value\+Context}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Full\+Code\+Generator\+:\+:Accumulator\+Value\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Accumulator\+Value\+Context} (\hyperlink{classv8_1_1internal_1_1_full_code_generator}{Full\+Code\+Generator} $\ast$codegen)\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_acaf85d1dacd64e3889ffd29fd6e8b5e6}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_acaf85d1dacd64e3889ffd29fd6e8b5e6}
+
+\item 
+void {\bfseries Plug} (bool flag) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a132632b035aa524bb5bd52f06024d7e6}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a132632b035aa524bb5bd52f06024d7e6}
+
+\item 
+void {\bfseries Plug} (\hyperlink{structv8_1_1internal_1_1_register}{Register} reg) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_ac5b465e0ef98af1602b8948253acd919}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_ac5b465e0ef98af1602b8948253acd919}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+false) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a4b9053a97b77e077e5f245924f3d532b}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a4b9053a97b77e077e5f245924f3d532b}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$var) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a4fd6b87fc575c3014627896ffc7f2c1b}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a4fd6b87fc575c3014627896ffc7f2c1b}
+
+\item 
+void {\bfseries Plug} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ lit) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_ab3c75037693081717e8385c2e9b84a93}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_ab3c75037693081717e8385c2e9b84a93}
+
+\item 
+void {\bfseries Plug} (Heap\+::\+Root\+List\+Index) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a589c763fbb18e59f9f44bf335333775e}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a589c763fbb18e59f9f44bf335333775e}
+
+\item 
+void {\bfseries Plug\+T\+OS} () const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a7710c8085856e8a8f45031ac9e6d0502}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a7710c8085856e8a8f45031ac9e6d0502}
+
+\item 
+void {\bfseries Drop\+And\+Plug} (int count, \hyperlink{structv8_1_1internal_1_1_register}{Register} reg) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a809be7887775f63549ee281dbafccb4f}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a809be7887775f63549ee281dbafccb4f}
+
+\item 
+void {\bfseries Prepare\+Test} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$materialize\+\_\+false, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$if\+\_\+true, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$if\+\_\+false, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$$\ast$fall\+\_\+through) const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a3b64159d3356198a2ce1767cabe3d32b}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_a3b64159d3356198a2ce1767cabe3d32b}
+
+\item 
+bool {\bfseries Is\+Accumulator\+Value} () const  override\hypertarget{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_aae0528cd170cdfd2190c40e983df7332}{}\label{classv8_1_1internal_1_1_full_code_generator_1_1_accumulator_value_context_aae0528cd170cdfd2190c40e983df7332}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+h\item 
+/\+Users/joshgav/node/v8/src/full-\/codegen/full-\/codegen.\+cc\end{DoxyCompactItemize}

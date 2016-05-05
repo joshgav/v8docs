@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Constant Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_constant}\index{v8\+::internal\+::compiler\+::\+Constant@{v8\+::internal\+::compiler\+::\+Constant}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries k\+Int32}, 
+\\*
+{\bfseries k\+Int64}, 
+\\*
+{\bfseries k\+Float32}, 
+\\*
+{\bfseries k\+Float64}, 
+\\*
+{\bfseries k\+External\+Reference}, 
+\\*
+{\bfseries k\+Heap\+Object}, 
+\\*
+{\bfseries k\+Rpo\+Number}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a77b19008bb8c006158bcca90c4b45fb5}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a77b19008bb8c006158bcca90c4b45fb5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Constant} (int32\+\_\+t v)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a6f3041c880e083150c24aa037dc0af2f}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a6f3041c880e083150c24aa037dc0af2f}
+
+\item 
+{\bfseries Constant} (int64\+\_\+t v)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a17b8e2c5d10f5c02876e0d66c45fabcd}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a17b8e2c5d10f5c02876e0d66c45fabcd}
+
+\item 
+{\bfseries Constant} (float v)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_ae528790e57e8076a51649e4107847ddb}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_ae528790e57e8076a51649e4107847ddb}
+
+\item 
+{\bfseries Constant} (double v)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_acc91c2e015cc92ede4a78c3aa976475a}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_acc91c2e015cc92ede4a78c3aa976475a}
+
+\item 
+{\bfseries Constant} (External\+Reference ref)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_ae6dc6f3aa32006205f30c64204ed6af5}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_ae6dc6f3aa32006205f30c64204ed6af5}
+
+\item 
+{\bfseries Constant} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $>$ obj)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_ae14a2d998bbce2eeb0bbb444c68171b4}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_ae14a2d998bbce2eeb0bbb444c68171b4}
+
+\item 
+{\bfseries Constant} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} rpo)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_aaf24e3729247acc661bfa72a3c4e4e71}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_aaf24e3729247acc661bfa72a3c4e4e71}
+
+\item 
+{\bfseries Constant} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_relocatable_ptr_constant_info}{Relocatable\+Ptr\+Constant\+Info} info)\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a8609fc7ec0684b2ce6b952f0300a285e}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a8609fc7ec0684b2ce6b952f0300a285e}
+
+\item 
+Type {\bfseries type} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a95fa934dc3b504bddb5317c2514719f0}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a95fa934dc3b504bddb5317c2514719f0}
+
+\item 
+Reloc\+Info\+::\+Mode {\bfseries rmode} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_aa1685238162ccb8abe2d6d99588ac4d2}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_aa1685238162ccb8abe2d6d99588ac4d2}
+
+\item 
+int32\+\_\+t {\bfseries To\+Int32} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_abfc3b9b0827cfab61268b4cb687c8028}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_abfc3b9b0827cfab61268b4cb687c8028}
+
+\item 
+int64\+\_\+t {\bfseries To\+Int64} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a6cc8426799457768f714fd9895a0eb64}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a6cc8426799457768f714fd9895a0eb64}
+
+\item 
+float {\bfseries To\+Float32} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a3bb29b0a753d5e19df87d655b4a09d79}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a3bb29b0a753d5e19df87d655b4a09d79}
+
+\item 
+double {\bfseries To\+Float64} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a8b47d580f27415c03007642fa8a149e8}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a8b47d580f27415c03007642fa8a149e8}
+
+\item 
+External\+Reference {\bfseries To\+External\+Reference} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a7ce4c2e10529593fd120d10da2d8d92f}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a7ce4c2e10529593fd120d10da2d8d92f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} {\bfseries To\+Rpo\+Number} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_adbdf0c3fe60ac3809be94527367e594e}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_adbdf0c3fe60ac3809be94527367e594e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $>$ {\bfseries To\+Heap\+Object} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_ade44290f374a7cb8b3541d3f5598b278}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_ade44290f374a7cb8b3541d3f5598b278}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Type {\bfseries type\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a1acdd5a2cc80eed3b860595791d16f09}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a1acdd5a2cc80eed3b860595791d16f09}
+
+\item 
+int64\+\_\+t {\bfseries value\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_aab8d226eeedf1c978ed4c78519cec603}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_aab8d226eeedf1c978ed4c78519cec603}
+
+\item 
+Reloc\+Info\+::\+Mode {\bfseries rmode\+\_\+} = Reloc\+Info\+::\+N\+O\+N\+E64\hypertarget{classv8_1_1internal_1_1compiler_1_1_constant_a8540d1193ff104d563a557c9ab59590b}{}\label{classv8_1_1internal_1_1compiler_1_1_constant_a8540d1193ff104d563a557c9ab59590b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/instruction.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/instruction.\+cc\end{DoxyCompactItemize}

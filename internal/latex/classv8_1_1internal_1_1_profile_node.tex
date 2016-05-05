@@ -1,0 +1,111 @@
+\hypertarget{classv8_1_1internal_1_1_profile_node}{}\section{v8\+:\+:internal\+:\+:Profile\+Node Class Reference}
+\label{classv8_1_1internal_1_1_profile_node}\index{v8\+::internal\+::\+Profile\+Node@{v8\+::internal\+::\+Profile\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Profile\+Node} (\hyperlink{classv8_1_1internal_1_1_profile_tree}{Profile\+Tree} $\ast$tree, \hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_profile_node_afeb26f68b37dac7e9d3102463a19b850}{}\label{classv8_1_1internal_1_1_profile_node_afeb26f68b37dac7e9d3102463a19b850}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ {\bfseries Find\+Child} (\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_profile_node_ac96d366da81d11a5b0df39395107c94c}{}\label{classv8_1_1internal_1_1_profile_node_ac96d366da81d11a5b0df39395107c94c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ {\bfseries Find\+Or\+Add\+Child} (\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_profile_node_ad497489ded1efb610de028ba9c411ea9}{}\label{classv8_1_1internal_1_1_profile_node_ad497489ded1efb610de028ba9c411ea9}
+
+\item 
+void {\bfseries Increment\+Self\+Ticks} ()\hypertarget{classv8_1_1internal_1_1_profile_node_a651b8b8c09b8a8dda1acb22d41bebd09}{}\label{classv8_1_1internal_1_1_profile_node_a651b8b8c09b8a8dda1acb22d41bebd09}
+
+\item 
+void {\bfseries Increase\+Self\+Ticks} (unsigned amount)\hypertarget{classv8_1_1internal_1_1_profile_node_af4feb4a8fec76e8bc6d0426ae261bb0c}{}\label{classv8_1_1internal_1_1_profile_node_af4feb4a8fec76e8bc6d0426ae261bb0c}
+
+\item 
+void {\bfseries Increment\+Line\+Ticks} (int src\+\_\+line)\hypertarget{classv8_1_1internal_1_1_profile_node_a778b6f214de8367560f62a963fad3d37}{}\label{classv8_1_1internal_1_1_profile_node_a778b6f214de8367560f62a963fad3d37}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ {\bfseries entry} () const \hypertarget{classv8_1_1internal_1_1_profile_node_ad005fdfaa64e5363d646c80bc2d9b43f}{}\label{classv8_1_1internal_1_1_profile_node_ad005fdfaa64e5363d646c80bc2d9b43f}
+
+\item 
+unsigned {\bfseries self\+\_\+ticks} () const \hypertarget{classv8_1_1internal_1_1_profile_node_aaa113beacbfc9c2554aca110cac8ec46}{}\label{classv8_1_1internal_1_1_profile_node_aaa113beacbfc9c2554aca110cac8ec46}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ $>$ $\ast$ {\bfseries children} () const \hypertarget{classv8_1_1internal_1_1_profile_node_a379d97d5038a260a945ab224571180fb}{}\label{classv8_1_1internal_1_1_profile_node_a379d97d5038a260a945ab224571180fb}
+
+\item 
+unsigned {\bfseries id} () const \hypertarget{classv8_1_1internal_1_1_profile_node_aa4b4f78b613dded4aea38443b4105c3a}{}\label{classv8_1_1internal_1_1_profile_node_aa4b4f78b613dded4aea38443b4105c3a}
+
+\item 
+unsigned {\bfseries function\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_profile_node_a81fa810cab9aaa81a96009dff469e1ff}{}\label{classv8_1_1internal_1_1_profile_node_a81fa810cab9aaa81a96009dff469e1ff}
+
+\item 
+unsigned int {\bfseries Get\+Hit\+Line\+Count} () const \hypertarget{classv8_1_1internal_1_1_profile_node_aef3c736723769968390b2c317fe2fdfb}{}\label{classv8_1_1internal_1_1_profile_node_aef3c736723769968390b2c317fe2fdfb}
+
+\item 
+bool {\bfseries Get\+Line\+Ticks} (\hyperlink{structv8_1_1_cpu_profile_node_1_1_line_tick}{v8\+::\+Cpu\+Profile\+Node\+::\+Line\+Tick} $\ast$entries, unsigned int length) const \hypertarget{classv8_1_1internal_1_1_profile_node_a0d806163118bd6666fdc0daccffc94e5}{}\label{classv8_1_1internal_1_1_profile_node_a0d806163118bd6666fdc0daccffc94e5}
+
+\item 
+void {\bfseries Collect\+Deopt\+Info} (\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_profile_node_aef32ed3f614d3be0712f5386532bd62b}{}\label{classv8_1_1internal_1_1_profile_node_aef32ed3f614d3be0712f5386532bd62b}
+
+\item 
+const std\+::vector$<$ \hyperlink{structv8_1_1_cpu_profile_deopt_info}{Cpu\+Profile\+Deopt\+Info} $>$ \& {\bfseries deopt\+\_\+infos} () const \hypertarget{classv8_1_1internal_1_1_profile_node_a7997bf12869e0337e31eb42a2695b57b}{}\label{classv8_1_1internal_1_1_profile_node_a7997bf12869e0337e31eb42a2695b57b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_profile_node_af6bdbf5275f5c7e17fafa45b531d8906}{}\label{classv8_1_1internal_1_1_profile_node_af6bdbf5275f5c7e17fafa45b531d8906}
+
+\item 
+void {\bfseries Print} (int indent)\hypertarget{classv8_1_1internal_1_1_profile_node_a197b95750e6a2103f6b2f87128b84b39}{}\label{classv8_1_1internal_1_1_profile_node_a197b95750e6a2103f6b2f87128b84b39}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Code\+Entries\+Match} (void $\ast$entry1, void $\ast$entry2)\hypertarget{classv8_1_1internal_1_1_profile_node_a07c1b149ad3da926f361abfc9b530736}{}\label{classv8_1_1internal_1_1_profile_node_a07c1b149ad3da926f361abfc9b530736}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node})\hypertarget{classv8_1_1internal_1_1_profile_node_a933270c04bab0f2c5cc954d1a30752a0}{}\label{classv8_1_1internal_1_1_profile_node_a933270c04bab0f2c5cc954d1a30752a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries Code\+Entry\+Hash} (\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$entry)\hypertarget{classv8_1_1internal_1_1_profile_node_ae664b35f3a67be5488e3cf9914b6bcb4}{}\label{classv8_1_1internal_1_1_profile_node_ae664b35f3a67be5488e3cf9914b6bcb4}
+
+\item 
+static bool {\bfseries Line\+Tick\+Match} (void $\ast$a, void $\ast$b)\hypertarget{classv8_1_1internal_1_1_profile_node_ae44a389e8328f7e1540363dd5ccb0daa}{}\label{classv8_1_1internal_1_1_profile_node_ae44a389e8328f7e1540363dd5ccb0daa}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_profile_tree}{Profile\+Tree} $\ast$ {\bfseries tree\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_a95ffcc86cc201a6b62b3e5db28c3b8a0}{}\label{classv8_1_1internal_1_1_profile_node_a95ffcc86cc201a6b62b3e5db28c3b8a0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_entry}{Code\+Entry} $\ast$ {\bfseries entry\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_a17419f0e9ea349339e44a9882246988d}{}\label{classv8_1_1internal_1_1_profile_node_a17419f0e9ea349339e44a9882246988d}
+
+\item 
+unsigned {\bfseries self\+\_\+ticks\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_a055ff62f17af6dacd8315d7f0c574b93}{}\label{classv8_1_1internal_1_1_profile_node_a055ff62f17af6dacd8315d7f0c574b93}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Hash\+Map} {\bfseries children\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_ad5f2606af523be43064899243ab0187d}{}\label{classv8_1_1internal_1_1_profile_node_ad5f2606af523be43064899243ab0187d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_profile_node}{Profile\+Node} $\ast$ $>$ {\bfseries children\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_af89fe679aefa474a1ff3397486dcc02a}{}\label{classv8_1_1internal_1_1_profile_node_af89fe679aefa474a1ff3397486dcc02a}
+
+\item 
+unsigned {\bfseries id\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_ae8481feeaa84904bc894cc00da7720cf}{}\label{classv8_1_1internal_1_1_profile_node_ae8481feeaa84904bc894cc00da7720cf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Hash\+Map} {\bfseries line\+\_\+ticks\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_a350959d6f9e00ff6f830031a2d9f5be1}{}\label{classv8_1_1internal_1_1_profile_node_a350959d6f9e00ff6f830031a2d9f5be1}
+
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1_cpu_profile_deopt_info}{Cpu\+Profile\+Deopt\+Info} $>$ {\bfseries deopt\+\_\+infos\+\_\+}\hypertarget{classv8_1_1internal_1_1_profile_node_a06173625ff00433b333748aa6d47b318}{}\label{classv8_1_1internal_1_1_profile_node_a06173625ff00433b333748aa6d47b318}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/profiler/profile-\/generator.\+cc\end{DoxyCompactItemize}

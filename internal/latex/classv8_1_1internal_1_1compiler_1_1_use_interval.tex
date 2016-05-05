@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Use\+Interval Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_use_interval}\index{v8\+::internal\+::compiler\+::\+Use\+Interval@{v8\+::internal\+::compiler\+::\+Use\+Interval}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Use\+Interval\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_use_interval}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Use\+Interval} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a380f6c0b436865a6251ebe30c8c152a3}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a380f6c0b436865a6251ebe30c8c152a3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries start} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a4b64f677170da1f5f28c9ae2b412f0fa}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a4b64f677170da1f5f28c9ae2b412f0fa}
+
+\item 
+void {\bfseries set\+\_\+start} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start)\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a42ca7aec1a891356dd5bac37a251df32}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a42ca7aec1a891356dd5bac37a251df32}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries end} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a12421dfa9b4aa297f609137ebdd8b349}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a12421dfa9b4aa297f609137ebdd8b349}
+
+\item 
+void {\bfseries set\+\_\+end} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_af6dee18ca848cf12e539937c70eb2299}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_af6dee18ca848cf12e539937c70eb2299}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$ {\bfseries next} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a3a8ec9152ef5b39b61e6f5f2d2d1df37}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a3a8ec9152ef5b39b61e6f5f2d2d1df37}
+
+\item 
+void {\bfseries set\+\_\+next} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$next)\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a2cff1253205146384fe5aec4cb0ae9ee}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a2cff1253205146384fe5aec4cb0ae9ee}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$ {\bfseries Split\+At} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} pos, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a0180944c1453ab4f5a95f634d36bb0f6}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a0180944c1453ab4f5a95f634d36bb0f6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries Intersect} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$other) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a6027f0a6af72e0ccf836f8af3fe57a91}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a6027f0a6af72e0ccf836f8af3fe57a91}
+
+\item 
+bool {\bfseries Contains} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} point) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a480547117f5d096b489129ff9dfc6c08}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a480547117f5d096b489129ff9dfc6c08}
+
+\item 
+int {\bfseries First\+Gap\+Index} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_af710e0e0a54aac8ed8d027c33a113064}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_af710e0e0a54aac8ed8d027c33a113064}
+
+\item 
+int {\bfseries Last\+Gap\+Index} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_aaf7c665211db545aefff371c38d25617}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_aaf7c665211db545aefff371c38d25617}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval})\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a7b3362b8c6cba6c0006ba150c336dd83}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a7b3362b8c6cba6c0006ba150c336dd83}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a5b50e95431d5ab18280706810339e828}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a5b50e95431d5ab18280706810339e828}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries end\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a681a1bb0eaa96757b950c5e4834fdfa8}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a681a1bb0eaa96757b950c5e4834fdfa8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_use_interval}{Use\+Interval} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_use_interval_a1b12fe0a8936b749c20032f24a1f4c62}{}\label{classv8_1_1internal_1_1compiler_1_1_use_interval_a1b12fe0a8936b749c20032f24a1f4c62}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+cc\end{DoxyCompactItemize}

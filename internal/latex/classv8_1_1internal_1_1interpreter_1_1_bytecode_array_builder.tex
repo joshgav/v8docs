@@ -1,0 +1,497 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Array\+Builder Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Array\+Builder@{v8\+::internal\+::interpreter\+::\+Bytecode\+Array\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Array\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bytecode\+Array\+Builder} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int parameter\+\_\+count, int context\+\_\+count, int locals\+\_\+count, \hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$literal=nullptr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a579f832bf14939632b6ad9aa2db62dfa}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a579f832bf14939632b6ad9aa2db62dfa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_bytecode_array}{Bytecode\+Array} $>$ {\bfseries To\+Bytecode\+Array} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a99d2a305738132cdeed0ac64a22f697e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a99d2a305738132cdeed0ac64a22f697e}
+
+\item 
+int {\bfseries parameter\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad059f72150db93f27b4aac16c751cdff}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad059f72150db93f27b4aac16c751cdff}
+
+\item 
+int {\bfseries locals\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad442176e43ef84198cd4791ddcd68c5b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad442176e43ef84198cd4791ddcd68c5b}
+
+\item 
+int {\bfseries context\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9db25b6bb1c0247045df7e930fdaa1a0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9db25b6bb1c0247045df7e930fdaa1a0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries first\+\_\+context\+\_\+register} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a014d804bd9878c6569f5e0a183c4c592}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a014d804bd9878c6569f5e0a183c4c592}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries last\+\_\+context\+\_\+register} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6d8b2b69af461a3f1a764fd4c3ab91ea}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6d8b2b69af461a3f1a764fd4c3ab91ea}
+
+\item 
+int {\bfseries fixed\+\_\+register\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4a44b9aed08358a421452e3b0c6bbb47}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4a44b9aed08358a421452e3b0c6bbb47}
+
+\item 
+int {\bfseries fixed\+\_\+and\+\_\+temporary\+\_\+register\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a746c45111f327c3c627763fa54d4fdd1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a746c45111f327c3c627763fa54d4fdd1}
+
+\item 
+int {\bfseries temporary\+\_\+register\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af823151c8aefeff7aebd0f355d7fb706}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af823151c8aefeff7aebd0f355d7fb706}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Parameter} (int parameter\+\_\+index) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a35f687b0bdc18192fd5523ab828aa45a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a35f687b0bdc18192fd5523ab828aa45a}
+
+\item 
+bool {\bfseries Register\+Is\+Parameter\+Or\+Local} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1d25c47aec65a6e569a437c063aea385}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1d25c47aec65a6e569a437c063aea385}
+
+\item 
+bool {\bfseries Temporary\+Register\+Is\+Live} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2913f58cd5843d615ac5078c03f39c2b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2913f58cd5843d615ac5078c03f39c2b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Literal} (\hyperlink{classv8_1_1internal_1_1_smi}{v8\+::internal\+::\+Smi} $\ast$value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a32a9671778f3ba63c7cea154d514eacb}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a32a9671778f3ba63c7cea154d514eacb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Literal} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ object)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af43dde3c6750e63451217edf4fe6fda5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af43dde3c6750e63451217edf4fe6fda5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Undefined} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4be7b3b1463a40ca50003a7580673083}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4be7b3b1463a40ca50003a7580673083}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Null} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9341b6c6be5a2d30f57284f0dede940f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9341b6c6be5a2d30f57284f0dede940f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+The\+Hole} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1f2fa51110fbe733acf6420ec62c5c7b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1f2fa51110fbe733acf6420ec62c5c7b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+True} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5d7546b194350948b0b94019100ee932}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5d7546b194350948b0b94019100ee932}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+False} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aba10f576a97f62673dfd539ba2ee00fb}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aba10f576a97f62673dfd539ba2ee00fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Global} (const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name, int feedback\+\_\+slot, Typeof\+Mode typeof\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a35b42ef8d10236f5fa373422278932fc}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a35b42ef8d10236f5fa373422278932fc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Global} (const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name, int feedback\+\_\+slot, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a021971bfcbc14c00116e04caf0820f73}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a021971bfcbc14c00116e04caf0820f73}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Context\+Slot} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context, int slot\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a99cf235bb0fd6d0956bb9c9ed6bfb628}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a99cf235bb0fd6d0956bb9c9ed6bfb628}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Context\+Slot} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context, int slot\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2bc3c2b394d8101e905561ba49f57fdf}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2bc3c2b394d8101e905561ba49f57fdf}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Accumulator\+With\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac703b07d7c466ad9faaa1e0021c2f8b7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac703b07d7c466ad9faaa1e0021c2f8b7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Accumulator\+In\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a50cb18f002812d87364941b874643d98}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a50cb18f002812d87364941b874643d98}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Move\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} from, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} to)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9de93bda69a5bd086cb9a6d018c3ba5d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9de93bda69a5bd086cb9a6d018c3ba5d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Named\+Property} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} object, const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, int feedback\+\_\+slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9726987fb4054cdfcaef17885c4b5ba6}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9726987fb4054cdfcaef17885c4b5ba6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Keyed\+Property} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} object, int feedback\+\_\+slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a957fa566813e3ef81f2626514c3536e3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a957fa566813e3ef81f2626514c3536e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Named\+Property} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} object, const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, int feedback\+\_\+slot, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aa8af0c4fa45304d53af144b8c04dc2c3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aa8af0c4fa45304d53af144b8c04dc2c3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Keyed\+Property} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} object, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} key, int feedback\+\_\+slot, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4645078e64bbc3f22ae83c0adc291931}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4645078e64bbc3f22ae83c0adc291931}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Load\+Lookup\+Slot} (const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name, Typeof\+Mode typeof\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae71e60a5582e1d621f6d7e72ed19e8a2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae71e60a5582e1d621f6d7e72ed19e8a2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Store\+Lookup\+Slot} (const \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8e555a0617d3cc6f0e1a27f29918a00f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8e555a0617d3cc6f0e1a27f29918a00f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Create\+Closure} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ shared\+\_\+info, Pretenure\+Flag tenured)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5dd0bb9cf0d3c4fb7087f1a85a851be7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5dd0bb9cf0d3c4fb7087f1a85a851be7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Create\+Arguments} (Create\+Arguments\+Type type)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae7721ffd4fb5229a3ff38bca9073b97a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae7721ffd4fb5229a3ff38bca9073b97a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Create\+Reg\+Exp\+Literal} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ pattern, int literal\+\_\+index, int flags)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8251e797197a146e728f53e85297c0b0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8251e797197a146e728f53e85297c0b0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Create\+Array\+Literal} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ constant\+\_\+elements, int literal\+\_\+index, int flags)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0a5721daeabf533eb0e56d09b0635e66}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0a5721daeabf533eb0e56d09b0635e66}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Create\+Object\+Literal} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ constant\+\_\+properties, int literal\+\_\+index, int flags)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5695fd3195f0ab9e3f10201c5f2d4916}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5695fd3195f0ab9e3f10201c5f2d4916}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Push\+Context} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad8aa38ef9f15d6dbcadeb29bc88a6be1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad8aa38ef9f15d6dbcadeb29bc88a6be1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Pop\+Context} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9e9eadc8d63aec9dfad15460eceefd36}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9e9eadc8d63aec9dfad15460eceefd36}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Call} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} callable, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver\+\_\+args, size\+\_\+t receiver\+\_\+arg\+\_\+count, int feedback\+\_\+slot, Tail\+Call\+Mode tail\+\_\+call\+\_\+mode=Tail\+Call\+Mode\+::k\+Disallow)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abcf2348997dd9025272554abacd52e3d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abcf2348997dd9025272554abacd52e3d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Tail\+Call} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} callable, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver\+\_\+args, size\+\_\+t receiver\+\_\+arg\+\_\+count, int feedback\+\_\+slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad3cc4640739fb2698ae3bb147fb54ae9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad3cc4640739fb2698ae3bb147fb54ae9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries New} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} constructor, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} first\+\_\+arg, size\+\_\+t arg\+\_\+count)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab060e059e8194c65ad8969990cf0ffe9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab060e059e8194c65ad8969990cf0ffe9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Call\+Runtime} (Runtime\+::\+Function\+Id function\+\_\+id, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} first\+\_\+arg, size\+\_\+t arg\+\_\+count)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aff5e2175d61475f019af85520c6adc7e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aff5e2175d61475f019af85520c6adc7e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Call\+Runtime\+For\+Pair} (Runtime\+::\+Function\+Id function\+\_\+id, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} first\+\_\+arg, size\+\_\+t arg\+\_\+count, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} first\+\_\+return)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a93c8fda2c70cf158f425b278eaf669a0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a93c8fda2c70cf158f425b278eaf669a0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Call\+J\+S\+Runtime} (int context\+\_\+index, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver\+\_\+args, size\+\_\+t receiver\+\_\+args\+\_\+count)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a981bbe6ed9bdd358bc6fb416c8c037b1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a981bbe6ed9bdd358bc6fb416c8c037b1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Binary\+Operation} (Token\+::\+Value binop, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a605becf2a138ca9869ae631d0ce2f914}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a605becf2a138ca9869ae631d0ce2f914}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Count\+Operation} (Token\+::\+Value op)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4771c2f325adb481bedfc0ca7a4c7f15}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4771c2f325adb481bedfc0ca7a4c7f15}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Logical\+Not} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af8ba2e991acd5ad5102d91c762e2a9e2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af8ba2e991acd5ad5102d91c762e2a9e2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Type\+Of} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae6be0d520a7d5ca939bab3fd191d6755}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae6be0d520a7d5ca939bab3fd191d6755}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Delete} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} object, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a20b30aebdb832939ce79f18639fc051b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a20b30aebdb832939ce79f18639fc051b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Compare\+Operation} (Token\+::\+Value op, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab05d577c0affa69d24a76d911896240b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab05d577c0affa69d24a76d911896240b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Cast\+Accumulator\+To\+Boolean} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab04116d36ccdd7be10d265f013f72a96}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab04116d36ccdd7be10d265f013f72a96}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Cast\+Accumulator\+To\+J\+S\+Object} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_adb4cb7e8861d9da5bb8d5aab3af0b132}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_adb4cb7e8861d9da5bb8d5aab3af0b132}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Cast\+Accumulator\+To\+Name} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9329dfb91fee256f8bcaf62db719bd87}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9329dfb91fee256f8bcaf62db719bd87}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Cast\+Accumulator\+To\+Number} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8e30e5394d69c82dbd86cfda569ccc87}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8e30e5394d69c82dbd86cfda569ccc87}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Bind} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a759b22e77477a3255c2793400c1efbd3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a759b22e77477a3255c2793400c1efbd3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Bind} (const \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} \&target, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9c0266919998cd7a26ff7101dca98194}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9c0266919998cd7a26ff7101dca98194}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_accbd6d4f77f176c17ecd7ce1714fb186}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_accbd6d4f77f176c17ecd7ce1714fb186}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump\+If\+True} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a703be20b812edd19a563d66c38989d64}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a703be20b812edd19a563d66c38989d64}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump\+If\+False} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3b8d401197b21892980b133752fefb81}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3b8d401197b21892980b133752fefb81}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump\+If\+Not\+Hole} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a221d919c4099506cb9fd7a02eb5a5e4f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a221d919c4099506cb9fd7a02eb5a5e4f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump\+If\+Null} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4d168004a8cc3306e2716f1a1c1a9d2b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4d168004a8cc3306e2716f1a1c1a9d2b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Jump\+If\+Undefined} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a75be009eb53da267297a5f117db12e51}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a75be009eb53da267297a5f117db12e51}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Stack\+Check} (int position)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a98bd128fa8da46a0819c2e8066e6ce12}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a98bd128fa8da46a0819c2e8066e6ce12}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Throw} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae40f8bc5d629ea0d05035a68e4e579d4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae40f8bc5d629ea0d05035a68e4e579d4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Re\+Throw} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a122cb15d90967446e08dce46ae39476f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a122cb15d90967446e08dce46ae39476f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Return} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5227e0da1ea1d9cd85a7617b9bbcc9e4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5227e0da1ea1d9cd85a7617b9bbcc9e4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Illegal} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a29d2bcb64fe272289a958a2351a6eef4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a29d2bcb64fe272289a958a2351a6eef4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Debugger} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae8ce648ee4608a1226e380d9e60d957e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae8ce648ee4608a1226e380d9e60d957e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries For\+In\+Prepare} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} cache\+\_\+info\+\_\+triple)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afde6babadf03e4daeb3f774c00650c6f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afde6babadf03e4daeb3f774c00650c6f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries For\+In\+Done} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} index, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} cache\+\_\+length)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abad8201d0e958a5b923bc044410818d7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abad8201d0e958a5b923bc044410818d7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries For\+In\+Next} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} index, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} cache\+\_\+type\+\_\+array\+\_\+pair, int feedback\+\_\+slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a041c2558f6b2fe449db1464ea8ee28ab}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a041c2558f6b2fe449db1464ea8ee28ab}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries For\+In\+Step} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a081a74c4f339c747ce5fa9c04f2c323d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a081a74c4f339c747ce5fa9c04f2c323d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Suspend\+Generator} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} generator)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a59ffbd47675114274e659487c040289c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a59ffbd47675114274e659487c040289c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Resume\+Generator} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} generator)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af4735920357433856c0376b5b8ebf213}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af4735920357433856c0376b5b8ebf213}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Mark\+Handler} (int handler\+\_\+id, bool will\+\_\+catch)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8dfc4d4a5a57bcbbe502712b1f9ae2f8}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8dfc4d4a5a57bcbbe502712b1f9ae2f8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Mark\+Try\+Begin} (int handler\+\_\+id, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} context)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a731a728898532b3cb04140f4690ca209}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a731a728898532b3cb04140f4690ca209}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Mark\+Try\+End} (int handler\+\_\+id)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a66ea85da5de34f05ffd475a85fdd112d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a66ea85da5de34f05ffd475a85fdd112d}
+
+\item 
+int {\bfseries New\+Handler\+Entry} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abb7087d75993a684a0f0c7dc29c2bd36}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abb7087d75993a684a0f0c7dc29c2bd36}
+
+\item 
+void {\bfseries Initialize\+Return\+Position} (\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$literal)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afb4eeb3f50b7400151cca45926bb813d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afb4eeb3f50b7400151cca45926bb813d}
+
+\item 
+void {\bfseries Set\+Statement\+Position} (\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$stmt)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afbd3253bf6894bbb6f08cfb907830ed5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afbd3253bf6894bbb6f08cfb907830ed5}
+
+\item 
+void {\bfseries Set\+Expression\+Position} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a32e1548453ffea384d543e6a10deb279}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a32e1548453ffea384d543e6a10deb279}
+
+\item 
+void {\bfseries Set\+Expression\+As\+Statement\+Position} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac6d1be67df4f07d190b6618ee758d69b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac6d1be67df4f07d190b6618ee758d69b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad7cff58ef56b6087eae2e37aca64aca5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad7cff58ef56b6087eae2e37aca64aca5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}{Temporary\+Register\+Allocator} $\ast$ {\bfseries temporary\+\_\+register\+\_\+allocator} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac34016ab5c760cce6bdf7d2167a4783b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac34016ab5c760cce6bdf7d2167a4783b}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}{Temporary\+Register\+Allocator} $\ast$ {\bfseries temporary\+\_\+register\+\_\+allocator} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aadffee334436705a0aa2f78015d2c0f3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aadffee334436705a0aa2f78015d2c0f3}
+
+\item 
+void {\bfseries Ensure\+Return} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aff91ebd8aa084ac6155066172826589b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aff91ebd8aa084ac6155066172826589b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Operand\+Scale {\bfseries Operand\+Sizes\+To\+Scale} (Operand\+Size size0, Operand\+Size size1=Operand\+Size\+::k\+Byte, Operand\+Size size2=Operand\+Size\+::k\+Byte, Operand\+Size size3=Operand\+Size\+::k\+Byte)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0e4313dfb2dda386282d01b3baca16b5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0e4313dfb2dda386282d01b3baca16b5}
+
+\item 
+static Operand\+Size {\bfseries Size\+For\+Register\+Operand} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aedb14bddd1e7ad4396e17e6a39273369}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aedb14bddd1e7ad4396e17e6a39273369}
+
+\item 
+static Operand\+Size {\bfseries Size\+For\+Signed\+Operand} (int value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae7aeb85252e5febf251b844dd974613d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae7aeb85252e5febf251b844dd974613d}
+
+\item 
+static Operand\+Size {\bfseries Size\+For\+Unsigned\+Operand} (int value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5f5c4e4fb1ff3b8ca9716d6857a5a0ac}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5f5c4e4fb1ff3b8ca9716d6857a5a0ac}
+
+\item 
+static Operand\+Size {\bfseries Size\+For\+Unsigned\+Operand} (size\+\_\+t value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4f5746579117b69fb82af56507213187}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4f5746579117b69fb82af56507213187}
+
+\item 
+static uint32\+\_\+t {\bfseries Register\+Operand} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a71ca37f711c66cbfcb2d5e14c060c5d8}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a71ca37f711c66cbfcb2d5e14c060c5d8}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Register\+From\+Operand} (uint32\+\_\+t operand)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a97c7a5ae78d055ca661a908ef84efbff}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a97c7a5ae78d055ca661a908ef84efbff}
+
+\item 
+static uint32\+\_\+t {\bfseries Signed\+Operand} (int value, Operand\+Size size)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9510b47ccc7244a43821c9570e82a208}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9510b47ccc7244a43821c9570e82a208}
+
+\item 
+static uint32\+\_\+t {\bfseries Unsigned\+Operand} (int value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a023bf1837c34cf411a42e4ae33536e5b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a023bf1837c34cf411a42e4ae33536e5b}
+
+\item 
+static uint32\+\_\+t {\bfseries Unsigned\+Operand} (size\+\_\+t value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_adba9d9c4474b84d906c010cdba7d3071}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_adba9d9c4474b84d906c010cdba7d3071}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\{\bfseries I\+N\+L\+I\+NE} (void Output(Bytecode bytecode, uint32\+\_\+t(\&operands)\mbox{[}N\mbox{]},                                                                           Operand\+Scale operand\+\_\+scale=Operand\+Scale\+::k\+Single))\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8a9b88a7a0a693136d3b20bd90be19e7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8a9b88a7a0a693136d3b20bd90be19e7}
+
+\item 
+void {\bfseries Output} (Bytecode bytecode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac9794d162285bf9a61d412f587fe859d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ac9794d162285bf9a61d412f587fe859d}
+
+\item 
+void {\bfseries Output\+Scaled} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, uint32\+\_\+t operand0, uint32\+\_\+t operand1, uint32\+\_\+t operand2, uint32\+\_\+t operand3)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aea0dd06101242e3c0d2453d3bdb70d18}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aea0dd06101242e3c0d2453d3bdb70d18}
+
+\item 
+void {\bfseries Output\+Scaled} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, uint32\+\_\+t operand0, uint32\+\_\+t operand1, uint32\+\_\+t operand2)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2b9446f5cb41b3489bdb39600e963bda}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2b9446f5cb41b3489bdb39600e963bda}
+
+\item 
+void {\bfseries Output\+Scaled} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, uint32\+\_\+t operand0, uint32\+\_\+t operand1)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af54e05ad87401da65845b2d5f8ff9f4a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af54e05ad87401da65845b2d5f8ff9f4a}
+
+\item 
+void {\bfseries Output\+Scaled} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, uint32\+\_\+t operand0)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a485621cc268f216110d53a7d39b5082e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a485621cc268f216110d53a7d39b5082e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} \& {\bfseries Output\+Jump} (Bytecode jump\+\_\+bytecode, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab459c5bc0752e672beba7da98f979e98}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab459c5bc0752e672beba7da98f979e98}
+
+\item 
+void {\bfseries Patch\+Jump} (const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$\+::iterator \&jump\+\_\+target, const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$\+::iterator \&jump\+\_\+location)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1d907ac161ddfeb9f29e125c2665a8cf}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1d907ac161ddfeb9f29e125c2665a8cf}
+
+\item 
+void {\bfseries Patch\+Indirect\+Jump\+With8\+Bit\+Operand} (const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$\+::iterator \&jump\+\_\+location, int delta)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a548873797f1f3c417c9c7768aaeed3b2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a548873797f1f3c417c9c7768aaeed3b2}
+
+\item 
+void {\bfseries Patch\+Indirect\+Jump\+With16\+Bit\+Operand} (const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$\+::iterator \&jump\+\_\+location, int delta)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae11811da92be476d34156619862b1317}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae11811da92be476d34156619862b1317}
+
+\item 
+void {\bfseries Patch\+Indirect\+Jump\+With32\+Bit\+Operand} (const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$\+::iterator \&jump\+\_\+location, int delta)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2722102b0cd7a35491caf27a3dfb16fc}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2722102b0cd7a35491caf27a3dfb16fc}
+
+\item 
+void {\bfseries Leave\+Basic\+Block} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3c21e43551d3574cd48805b3f45199fd}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3c21e43551d3574cd48805b3f45199fd}
+
+\item 
+bool {\bfseries Operand\+Is\+Valid} (Bytecode bytecode, Operand\+Scale operand\+\_\+scale, int operand\+\_\+index, uint32\+\_\+t operand\+\_\+value) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a290291742c56f322d43104382010778e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a290291742c56f322d43104382010778e}
+
+\item 
+bool {\bfseries Register\+Is\+Valid} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg, Operand\+Size reg\+\_\+size) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6163a2239fb1e8b895c0e53da0618d8c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6163a2239fb1e8b895c0e53da0618d8c}
+
+\item 
+bool {\bfseries Last\+Bytecode\+In\+Same\+Block} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af8056ad920f2c6b87b926c5d7793d154}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af8056ad920f2c6b87b926c5d7793d154}
+
+\item 
+bool {\bfseries Need\+To\+Boolean\+Cast} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9c9995421e225e56907e279d498a260b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9c9995421e225e56907e279d498a260b}
+
+\item 
+bool {\bfseries Is\+Register\+In\+Accumulator} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af2310d5d8c7d62a9e78b6c0da9e67d23}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af2310d5d8c7d62a9e78b6c0da9e67d23}
+
+\item 
+void {\bfseries Set\+Return\+Position} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a039842104611cd99d617acdf5995fe12}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a039842104611cd99d617acdf5995fe12}
+
+\item 
+size\+\_\+t {\bfseries Get\+Constant\+Pool\+Entry} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ object)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0997bdfaf38a73943736f809ef390445}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0997bdfaf38a73943736f809ef390445}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$ $\ast$ {\bfseries bytecodes} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a13c5273cdf36cf9ec386fdddbf3fa607}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a13c5273cdf36cf9ec386fdddbf3fa607}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$ $\ast$ {\bfseries bytecodes} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab3c01ffbdcbf35ae95125ab2b996ef77}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab3c01ffbdcbf35ae95125ab2b996ef77}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9d80b5907364ca66e267da189db9549e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9d80b5907364ca66e267da189db9549e}
+
+\item 
+Constant\+Array\+Builder $\ast$ {\bfseries constant\+\_\+array\+\_\+builder} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2e958a528507cf07445f299f5574a51a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a2e958a528507cf07445f299f5574a51a}
+
+\item 
+const Constant\+Array\+Builder $\ast$ {\bfseries constant\+\_\+array\+\_\+builder} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a909761ee997366f7cb0ffcde57d2afef}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a909761ee997366f7cb0ffcde57d2afef}
+
+\item 
+Handler\+Table\+Builder $\ast$ {\bfseries handler\+\_\+table\+\_\+builder} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8987c8fba0285d8f096866a44abc3a3f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8987c8fba0285d8f096866a44abc3a3f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder}{Source\+Position\+Table\+Builder} $\ast$ {\bfseries source\+\_\+position\+\_\+table\+\_\+builder} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae841575bc9451bb2682f317c707140d4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae841575bc9451bb2682f317c707140d4}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder})\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abd3ae60dd26e4b7d98ae0bde11a37168}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abd3ae60dd26e4b7d98ae0bde11a37168}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Binary\+Operation} (Token\+::\+Value op)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afcb46baf6f73e002e6363e2b42f6f626}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_afcb46baf6f73e002e6363e2b42f6f626}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Count\+Operation} (Token\+::\+Value op)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a159361a198e3be5787781092d14e6506}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a159361a198e3be5787781092d14e6506}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Compare\+Operation} (Token\+::\+Value op)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_acd57768296ba90aa4ebf8d1ff2fd009a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_acd57768296ba90aa4ebf8d1ff2fd009a}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Store\+IC} (Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1ced5b070c9e32990b65b24ddd1075f3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a1ced5b070c9e32990b65b24ddd1075f3}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Keyed\+Store\+IC} (Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aead62f508ce1d5b8e814adfb79ca9769}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aead62f508ce1d5b8e814adfb79ca9769}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Load\+Global} (Typeof\+Mode typeof\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0493b85cbae451f54e16de75715ee348}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a0493b85cbae451f54e16de75715ee348}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Store\+Global} (Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a03365a38c9d8f556c9232aae8620e1ff}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a03365a38c9d8f556c9232aae8620e1ff}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Store\+Lookup\+Slot} (Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad10c64ef6ebcffbff6930c6720e3fdd7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad10c64ef6ebcffbff6930c6720e3fdd7}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Create\+Arguments} (Create\+Arguments\+Type type)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af810e688e09c1e5820109667843742bd}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af810e688e09c1e5820109667843742bd}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Delete} (Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab206186a22eb9220eb08b7f7d84d3f58}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab206186a22eb9220eb08b7f7d84d3f58}
+
+\item 
+static Bytecode {\bfseries Bytecode\+For\+Call} (Tail\+Call\+Mode tail\+\_\+call\+\_\+mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9a2ad32b2e6b258d3a1f54c23238253f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9a2ad32b2e6b258d3a1f54c23238253f}
+
+\item 
+static Bytecode {\bfseries Get\+Jump\+With\+Constant\+Operand} (Bytecode jump\+\_\+smi8\+\_\+operand)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abc509a4602bc2e9e8776a04cbbbe6db0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_abc509a4602bc2e9e8776a04cbbbe6db0}
+
+\item 
+static Bytecode {\bfseries Get\+Jump\+With\+To\+Boolean} (Bytecode jump\+\_\+smi8\+\_\+operand)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3b647ba770a3a0837362acba115362ce}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a3b647ba770a3a0837362acba115362ce}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5c861b4db88b152593c085dee4cb428b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a5c861b4db88b152593c085dee4cb428b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab296cc8d4b9bb167eeb2a1d29397388f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ab296cc8d4b9bb167eeb2a1d29397388f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$ {\bfseries bytecodes\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8ddf7fcfaf0fa41a88d706fd084aa343}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a8ddf7fcfaf0fa41a88d706fd084aa343}
+
+\item 
+bool {\bfseries bytecode\+\_\+generated\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aeeb2fbe5bd92e59e946ad7312577acc7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aeeb2fbe5bd92e59e946ad7312577acc7}
+
+\item 
+Constant\+Array\+Builder {\bfseries constant\+\_\+array\+\_\+builder\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad189a9e51742cef69647aef76df2af91}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ad189a9e51742cef69647aef76df2af91}
+
+\item 
+Handler\+Table\+Builder {\bfseries handler\+\_\+table\+\_\+builder\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6e94637a31eee5c32432678ed56b2f10}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6e94637a31eee5c32432678ed56b2f10}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_source_position_table_builder}{Source\+Position\+Table\+Builder} {\bfseries source\+\_\+position\+\_\+table\+\_\+builder\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae45b62157816f4edca45dc67280737ee}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae45b62157816f4edca45dc67280737ee}
+
+\item 
+size\+\_\+t {\bfseries last\+\_\+block\+\_\+end\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae6625fc9cf4ca1b56691bc388c71a7b0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae6625fc9cf4ca1b56691bc388c71a7b0}
+
+\item 
+size\+\_\+t {\bfseries last\+\_\+bytecode\+\_\+start\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6f730793506d99c13cab95c506bced07}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6f730793506d99c13cab95c506bced07}
+
+\item 
+bool {\bfseries exit\+\_\+seen\+\_\+in\+\_\+block\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae21a1ead5a0d25d528365f1018e88185}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_ae21a1ead5a0d25d528365f1018e88185}
+
+\item 
+int {\bfseries unbound\+\_\+jumps\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9aba20378c115d257ece1d5de3047b66}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9aba20378c115d257ece1d5de3047b66}
+
+\item 
+int {\bfseries parameter\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4f5e8f57bbc453acd63fec58bb897568}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a4f5e8f57bbc453acd63fec58bb897568}
+
+\item 
+int {\bfseries local\+\_\+register\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a73e38591a2dbe60532193c2732400714}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a73e38591a2dbe60532193c2732400714}
+
+\item 
+int {\bfseries context\+\_\+register\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af54e21e28ba3dc2ca8f63744cf61f1d7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_af54e21e28ba3dc2ca8f63744cf61f1d7}
+
+\item 
+int {\bfseries return\+\_\+position\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9e580dc04f1353887e67dc406d767d9f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a9e580dc04f1353887e67dc406d767d9f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}{Temporary\+Register\+Allocator} {\bfseries temporary\+\_\+allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aa100b3a6432d101130fe31db7c0a234a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_aa100b3a6432d101130fe31db7c0a234a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Bytecode\+Register\+Allocator}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6c4ddb408c6a194cb1f6eefea239cd51}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder_a6c4ddb408c6a194cb1f6eefea239cd51}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/array-\/builder.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/array-\/builder.\+cc\end{DoxyCompactItemize}

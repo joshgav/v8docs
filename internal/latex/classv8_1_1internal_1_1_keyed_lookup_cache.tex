@@ -1,0 +1,97 @@
+\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache}{}\section{v8\+:\+:internal\+:\+:Keyed\+Lookup\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_keyed_lookup_cache}\index{v8\+::internal\+::\+Keyed\+Lookup\+Cache@{v8\+::internal\+::\+Keyed\+Lookup\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_keyed_lookup_cache_1_1_key}{Key}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name)\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a610bd0b8305231bf0ad14b12b1027329}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a610bd0b8305231bf0ad14b12b1027329}
+
+\item 
+void {\bfseries Update} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, int field\+\_\+offset)\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_aa79fc50d288ad350be2eab3409e6a4be}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_aa79fc50d288ad350be2eab3409e6a4be}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a184b47e6d6636f89403e34e339885264}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a184b47e6d6636f89403e34e339885264}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} ((k\+Entries\+Per\+Bucket \&(k\+Entries\+Per\+Bucket-\/1))==0)\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_ad8ed15b794045bc9bcfd8fda6e1a1ee3}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_ad8ed15b794045bc9bcfd8fda6e1a1ee3}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Entries\+Per\+Bucket==-\/k\+Hash\+Mask)\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_af353055f81bb5be7e711efed5b03d139}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_af353055f81bb5be7e711efed5b03d139}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Length} = 256\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a0921540bfdcf49a134a3d044b0814f4e}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a0921540bfdcf49a134a3d044b0814f4e}
+
+\item 
+static const int {\bfseries k\+Capacity\+Mask} = k\+Length -\/ 1\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a519bc8beaec79dca651742fc7251f06f}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a519bc8beaec79dca651742fc7251f06f}
+
+\item 
+static const int {\bfseries k\+Map\+Hash\+Shift} = 5\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a61dff332772e195884cf9193815b910d}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a61dff332772e195884cf9193815b910d}
+
+\item 
+static const int {\bfseries k\+Hash\+Mask} = -\/4\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a18e9484fd2dc636aaaaad3ba36c11e90}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a18e9484fd2dc636aaaaad3ba36c11e90}
+
+\item 
+static const int {\bfseries k\+Entries\+Per\+Bucket} = 4\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a77d60d2504047311092aa0acf5ace640}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a77d60d2504047311092aa0acf5ace640}
+
+\item 
+static const int {\bfseries k\+Entry\+Length} = 2\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_ad42a2f8e060478cd667a3e17882d0dc7}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_ad42a2f8e060478cd667a3e17882d0dc7}
+
+\item 
+static const int {\bfseries k\+Map\+Index} = 0\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_af3300da3a01659c5c91b4719a7c32201}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_af3300da3a01659c5c91b4719a7c32201}
+
+\item 
+static const int {\bfseries k\+Key\+Index} = 1\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a1f6e78ce4a3b02755a264b1e57506f6a}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a1f6e78ce4a3b02755a264b1e57506f6a}
+
+\item 
+static const int {\bfseries k\+Not\+Found} = -\/1\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a7d515a4270f99864f9f73543ea201aee}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a7d515a4270f99864f9f73543ea201aee}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries keys\+\_\+address} ()\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a4a17f7114245a2b383222b016443da76}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a4a17f7114245a2b383222b016443da76}
+
+\item 
+Address {\bfseries field\+\_\+offsets\+\_\+address} ()\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a336f7939d8561afd65798bd1fff1ad2a}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a336f7939d8561afd65798bd1fff1ad2a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_keyed_lookup_cache}{Keyed\+Lookup\+Cache})\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a29c82e1aa14b2761537a2e5d34c93761}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a29c82e1aa14b2761537a2e5d34c93761}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Hash} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name)\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a8f8d49512dbbb3d6b78449537983b2bf}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a8f8d49512dbbb3d6b78449537983b2bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_keyed_lookup_cache_1_1_key}{Key} {\bfseries keys\+\_\+} \mbox{[}k\+Length\mbox{]}\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_ac06b6aa96ae183442111abbb65440e35}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_ac06b6aa96ae183442111abbb65440e35}
+
+\item 
+int {\bfseries field\+\_\+offsets\+\_\+} \mbox{[}k\+Length\mbox{]}\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_ae705017d261c489a82421aba542ba839}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_ae705017d261c489a82421aba542ba839}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries External\+Reference}\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_a6cad52a007e84a78f169131b667e2d49}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_a6cad52a007e84a78f169131b667e2d49}
+
+\item 
+class {\bfseries Isolate}\hypertarget{classv8_1_1internal_1_1_keyed_lookup_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}{}\label{classv8_1_1internal_1_1_keyed_lookup_cache_aba4f0964bdacf2bbf62cf876e5d28d0a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/heap.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/heap.\+cc\end{DoxyCompactItemize}

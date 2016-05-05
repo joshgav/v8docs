@@ -1,0 +1,175 @@
+\hypertarget{classv8_1_1internal_1_1_serializer}{}\section{v8\+:\+:internal\+:\+:Serializer Class Reference}
+\label{classv8_1_1internal_1_1_serializer}\index{v8\+::internal\+::\+Serializer@{v8\+::internal\+::\+Serializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.555556cm]{classv8_1_1internal_1_1_serializer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_serializer_1_1_object_serializer}{Object\+Serializer}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_serializer_1_1_recursion_scope}{Recursion\+Scope}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Serializer} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_snapshot_byte_sink}{Snapshot\+Byte\+Sink} $\ast$sink)\hypertarget{classv8_1_1internal_1_1_serializer_aaceee205adfe86e70640d2d50ad852c8}{}\label{classv8_1_1internal_1_1_serializer_aaceee205adfe86e70640d2d50ad852c8}
+
+\item 
+void {\bfseries Encode\+Reservations} (\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_serialized_data_1_1_reservation}{Serialized\+Data\+::\+Reservation} $>$ $\ast$out) const \hypertarget{classv8_1_1internal_1_1_serializer_a4369f3c382f047e42d25a16b17bce639}{}\label{classv8_1_1internal_1_1_serializer_a4369f3c382f047e42d25a16b17bce639}
+
+\item 
+void {\bfseries Serialize\+Deferred\+Objects} ()\hypertarget{classv8_1_1internal_1_1_serializer_a96ef0df54684240f4839fc03c1e6717c}{}\label{classv8_1_1internal_1_1_serializer_a96ef0df54684240f4839fc03c1e6717c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_serializer_a2b71e58ac55ccc7036d536a910b4623e}{}\label{classv8_1_1internal_1_1_serializer_a2b71e58ac55ccc7036d536a910b4623e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_back_reference_map}{Back\+Reference\+Map} $\ast$ {\bfseries back\+\_\+reference\+\_\+map} ()\hypertarget{classv8_1_1internal_1_1_serializer_a6634b86a4bf872bdd1f3fc01e55de6dd}{}\label{classv8_1_1internal_1_1_serializer_a6634b86a4bf872bdd1f3fc01e55de6dd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_root_index_map}{Root\+Index\+Map} $\ast$ {\bfseries root\+\_\+index\+\_\+map} ()\hypertarget{classv8_1_1internal_1_1_serializer_a011a1b048b43466869828f1efd61b6a3}{}\label{classv8_1_1internal_1_1_serializer_a011a1b048b43466869828f1efd61b6a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Serialize\+Object} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$o, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, int skip)=0\hypertarget{classv8_1_1internal_1_1_serializer_a98c44c473660f94be2ec5e3762e2c547}{}\label{classv8_1_1internal_1_1_serializer_a98c44c473660f94be2ec5e3762e2c547}
+
+\item 
+void {\bfseries Visit\+Pointers} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end) override\hypertarget{classv8_1_1internal_1_1_serializer_a0efa92f29805d3134e88fd291a704021}{}\label{classv8_1_1internal_1_1_serializer_a0efa92f29805d3134e88fd291a704021}
+
+\item 
+void {\bfseries Put\+Root} (int index, \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, How\+To\+Code how, Where\+To\+Point where, int skip)\hypertarget{classv8_1_1internal_1_1_serializer_af56867deddb051bccdcd959b61ff4def}{}\label{classv8_1_1internal_1_1_serializer_af56867deddb051bccdcd959b61ff4def}
+
+\item 
+void {\bfseries Put\+Smi} (\hyperlink{classv8_1_1internal_1_1_smi}{Smi} $\ast$smi)\hypertarget{classv8_1_1internal_1_1_serializer_a4deaad7fb6a2e99e0614221c20b0b8ac}{}\label{classv8_1_1internal_1_1_serializer_a4deaad7fb6a2e99e0614221c20b0b8ac}
+
+\item 
+void {\bfseries Put\+Back\+Reference} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, \hyperlink{classv8_1_1internal_1_1_back_reference}{Back\+Reference} reference)\hypertarget{classv8_1_1internal_1_1_serializer_ac6a3f2f5a1bbee65dec2539252efbbd3}{}\label{classv8_1_1internal_1_1_serializer_ac6a3f2f5a1bbee65dec2539252efbbd3}
+
+\item 
+int {\bfseries Put\+Alignment\+Prefix} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_serializer_ab2d4d6dc19c242d9e0ea92aaa0ac55df}{}\label{classv8_1_1internal_1_1_serializer_ab2d4d6dc19c242d9e0ea92aaa0ac55df}
+
+\item 
+bool {\bfseries Serialize\+Known\+Object} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, How\+To\+Code how\+\_\+to\+\_\+code, Where\+To\+Point where\+\_\+to\+\_\+point, int skip)\hypertarget{classv8_1_1internal_1_1_serializer_a27e6e9673737b561ecb102c2b6236034}{}\label{classv8_1_1internal_1_1_serializer_a27e6e9673737b561ecb102c2b6236034}
+
+\item 
+void {\bfseries Flush\+Skip} (int skip)\hypertarget{classv8_1_1internal_1_1_serializer_a7e2eb2286a158742af313150f62b1b7a}{}\label{classv8_1_1internal_1_1_serializer_a7e2eb2286a158742af313150f62b1b7a}
+
+\item 
+bool {\bfseries Back\+Reference\+Is\+Already\+Allocated} (\hyperlink{classv8_1_1internal_1_1_back_reference}{Back\+Reference} back\+\_\+reference)\hypertarget{classv8_1_1internal_1_1_serializer_a208e83e360350f15aa04edf591bcba35}{}\label{classv8_1_1internal_1_1_serializer_a208e83e360350f15aa04edf591bcba35}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_back_reference}{Back\+Reference} {\bfseries Allocate\+Large\+Object} (int size)\hypertarget{classv8_1_1internal_1_1_serializer_ac0df9e2797e2022aca9eee374cfbe23e}{}\label{classv8_1_1internal_1_1_serializer_ac0df9e2797e2022aca9eee374cfbe23e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_back_reference}{Back\+Reference} {\bfseries Allocate} (Allocation\+Space space, int size)\hypertarget{classv8_1_1internal_1_1_serializer_a130c394bdab285e1c1f1c06ac33eee64}{}\label{classv8_1_1internal_1_1_serializer_a130c394bdab285e1c1f1c06ac33eee64}
+
+\item 
+int {\bfseries Encode\+External\+Reference} (Address addr)\hypertarget{classv8_1_1internal_1_1_serializer_ab710617f1fb4f096d8356d0ae83315c3}{}\label{classv8_1_1internal_1_1_serializer_ab710617f1fb4f096d8356d0ae83315c3}
+
+\item 
+bool {\bfseries Has\+Not\+Exceeded\+First\+Page\+Of\+Each\+Space} ()\hypertarget{classv8_1_1internal_1_1_serializer_a21a16afa98b12bfd814f05581f4a3b83}{}\label{classv8_1_1internal_1_1_serializer_a21a16afa98b12bfd814f05581f4a3b83}
+
+\item 
+void {\bfseries Pad} ()\hypertarget{classv8_1_1internal_1_1_serializer_a559527d81f46ac224fc0437456958b47}{}\label{classv8_1_1internal_1_1_serializer_a559527d81f46ac224fc0437456958b47}
+
+\item 
+void {\bfseries Initialize\+Code\+Address\+Map} ()\hypertarget{classv8_1_1internal_1_1_serializer_a02df94cb146e256696d93d0062282d28}{}\label{classv8_1_1internal_1_1_serializer_a02df94cb146e256696d93d0062282d28}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ {\bfseries Copy\+Code} (\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$code)\hypertarget{classv8_1_1internal_1_1_serializer_ab6a8754392876566fe27aa93b5b62e3e}{}\label{classv8_1_1internal_1_1_serializer_ab6a8754392876566fe27aa93b5b62e3e}
+
+\item 
+uint32\+\_\+t {\bfseries max\+\_\+chunk\+\_\+size} (int space) const \hypertarget{classv8_1_1internal_1_1_serializer_a5dcc7a503d3dc721d535251b59744ea3}{}\label{classv8_1_1internal_1_1_serializer_a5dcc7a503d3dc721d535251b59744ea3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_snapshot_byte_sink}{Snapshot\+Byte\+Sink} $\ast$ {\bfseries sink} () const \hypertarget{classv8_1_1internal_1_1_serializer_a264a6cf21d826fd9edccee9a2780c31a}{}\label{classv8_1_1internal_1_1_serializer_a264a6cf21d826fd9edccee9a2780c31a}
+
+\item 
+void {\bfseries Queue\+Deferred\+Object} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj)\hypertarget{classv8_1_1internal_1_1_serializer_a75fd7fb8eaacf0ce9874137e56d0e887}{}\label{classv8_1_1internal_1_1_serializer_a75fd7fb8eaacf0ce9874137e56d0e887}
+
+\item 
+void {\bfseries Output\+Statistics} (const char $\ast$name)\hypertarget{classv8_1_1internal_1_1_serializer_aa71724460718545dc17a6ce88b2c4300}{}\label{classv8_1_1internal_1_1_serializer_aa71724460718545dc17a6ce88b2c4300}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a2a0bb475a79a6094294882195dd6cb86}{}\label{classv8_1_1internal_1_1_serializer_a2a0bb475a79a6094294882195dd6cb86}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_snapshot_byte_sink}{Snapshot\+Byte\+Sink} $\ast$ {\bfseries sink\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a58e895e50aa57b424f78777c8be962c0}{}\label{classv8_1_1internal_1_1_serializer_a58e895e50aa57b424f78777c8be962c0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_external_reference_encoder}{External\+Reference\+Encoder} {\bfseries external\+\_\+reference\+\_\+encoder\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a77ce43f8a7fe3b7dfb19208665eb5d14}{}\label{classv8_1_1internal_1_1_serializer_a77ce43f8a7fe3b7dfb19208665eb5d14}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_back_reference_map}{Back\+Reference\+Map} {\bfseries back\+\_\+reference\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_acd6ddb93446545718c421b9a0d6fe563}{}\label{classv8_1_1internal_1_1_serializer_acd6ddb93446545718c421b9a0d6fe563}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_root_index_map}{Root\+Index\+Map} {\bfseries root\+\_\+index\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a4256760da33786e0706d86823f10aaeb}{}\label{classv8_1_1internal_1_1_serializer_a4256760da33786e0706d86823f10aaeb}
+
+\item 
+int {\bfseries recursion\+\_\+depth\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_af22b7761fa592a50cba1d5b002fa351d}{}\label{classv8_1_1internal_1_1_serializer_af22b7761fa592a50cba1d5b002fa351d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_serializer}{Serializer})\hypertarget{classv8_1_1internal_1_1_serializer_ac1f373e7635d2c88507803f55d67b554}{}\label{classv8_1_1internal_1_1_serializer_ac1f373e7635d2c88507803f55d67b554}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_code_address_map}{Code\+Address\+Map} $\ast$ {\bfseries code\+\_\+address\+\_\+map\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a73db10da79ce3ae61754ee3e17497612}{}\label{classv8_1_1internal_1_1_serializer_a73db10da79ce3ae61754ee3e17497612}
+
+\item 
+uint32\+\_\+t {\bfseries pending\+\_\+chunk\+\_\+} \mbox{[}k\+Number\+Of\+Preallocated\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_serializer_a8d1549dab32e1dcf226db3b9f7caab30}{}\label{classv8_1_1internal_1_1_serializer_a8d1549dab32e1dcf226db3b9f7caab30}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ uint32\+\_\+t $>$ {\bfseries completed\+\_\+chunks\+\_\+} \mbox{[}k\+Number\+Of\+Preallocated\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_serializer_a34050fce67b5d274c02b9c9d11f61810}{}\label{classv8_1_1internal_1_1_serializer_a34050fce67b5d274c02b9c9d11f61810}
+
+\item 
+uint32\+\_\+t {\bfseries max\+\_\+chunk\+\_\+size\+\_\+} \mbox{[}k\+Number\+Of\+Preallocated\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_serializer_a8a1e6361aece72f30ea4bc373b1e77ab}{}\label{classv8_1_1internal_1_1_serializer_a8a1e6361aece72f30ea4bc373b1e77ab}
+
+\item 
+uint32\+\_\+t {\bfseries large\+\_\+objects\+\_\+total\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a63cdbd53dcff4d74f4de209f4f24846e}{}\label{classv8_1_1internal_1_1_serializer_a63cdbd53dcff4d74f4de209f4f24846e}
+
+\item 
+uint32\+\_\+t {\bfseries seen\+\_\+large\+\_\+objects\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_abe3162c486ad10b285d7683e0bb373f1}{}\label{classv8_1_1internal_1_1_serializer_abe3162c486ad10b285d7683e0bb373f1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ byte $>$ {\bfseries code\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a5a37c6661940b03a3dceb50faf3cb6d1}{}\label{classv8_1_1internal_1_1_serializer_a5a37c6661940b03a3dceb50faf3cb6d1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ $>$ {\bfseries deferred\+\_\+objects\+\_\+}\hypertarget{classv8_1_1internal_1_1_serializer_a47a2b47cd975ca57a213174a9589a590}{}\label{classv8_1_1internal_1_1_serializer_a47a2b47cd975ca57a213174a9589a590}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Deserializer}\hypertarget{classv8_1_1internal_1_1_serializer_a0c541e43f0cc8d5a52e519ebcf1709f5}{}\label{classv8_1_1internal_1_1_serializer_a0c541e43f0cc8d5a52e519ebcf1709f5}
+
+\item 
+class {\bfseries Object\+Serializer}\hypertarget{classv8_1_1internal_1_1_serializer_a075eec39eaa96c886c847f9364a847c4}{}\label{classv8_1_1internal_1_1_serializer_a075eec39eaa96c886c847f9364a847c4}
+
+\item 
+class {\bfseries Recursion\+Scope}\hypertarget{classv8_1_1internal_1_1_serializer_a55104e5c91ee0965928e74136814504c}{}\label{classv8_1_1internal_1_1_serializer_a55104e5c91ee0965928e74136814504c}
+
+\item 
+class {\bfseries Snapshot\+Data}\hypertarget{classv8_1_1internal_1_1_serializer_aa8477a89e7de3c34fb2b443ff877f9da}{}\label{classv8_1_1internal_1_1_serializer_aa8477a89e7de3c34fb2b443ff877f9da}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/serializer.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/serializer.\+cc\end{DoxyCompactItemize}

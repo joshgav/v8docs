@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream}{}\section{v8\+:\+:internal\+:\+:External\+Two\+Byte\+String\+Utf16\+Character\+Stream Class Reference}
+\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream}\index{v8\+::internal\+::\+External\+Two\+Byte\+String\+Utf16\+Character\+Stream@{v8\+::internal\+::\+External\+Two\+Byte\+String\+Utf16\+Character\+Stream}}
+Inheritance diagram for v8\+:\+:internal\+:\+:External\+Two\+Byte\+String\+Utf16\+Character\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries External\+Two\+Byte\+String\+Utf16\+Character\+Stream} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_external_two_byte_string}{External\+Two\+Byte\+String} $>$ data, int start\+\_\+position, int end\+\_\+position)\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a610de706475becc6bacd2f40bf2a08c9}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a610de706475becc6bacd2f40bf2a08c9}
+
+\item 
+void {\bfseries Push\+Back} (uc32 character) override\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a2b8c2e3e1ef0c87b0dc470608931fef9}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a2b8c2e3e1ef0c87b0dc470608931fef9}
+
+\item 
+bool {\bfseries Set\+Bookmark} () override\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_aea5e2226251ad82bf361511d0a5f01cf}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_aea5e2226251ad82bf361511d0a5f01cf}
+
+\item 
+void {\bfseries Reset\+To\+Bookmark} () override\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a7873567ae9923815ec5a21af1ab0a910}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a7873567ae9923815ec5a21af1ab0a910}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries Slow\+Seek\+Forward} (size\+\_\+t delta) override\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_abf0f9a983f8e60a23825b9f4bfe7e6ff}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_abf0f9a983f8e60a23825b9f4bfe7e6ff}
+
+\item 
+bool {\bfseries Read\+Block} () override\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a10a6c535605f20f481cfda7e77e99b84}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a10a6c535605f20f481cfda7e77e99b84}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_external_two_byte_string}{External\+Two\+Byte\+String} $>$ {\bfseries source\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a09eb9109a053bf71a42d3830e5b9e9c2}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a09eb9109a053bf71a42d3830e5b9e9c2}
+
+\item 
+const uc16 $\ast$ {\bfseries raw\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_afd50205c07147770b784f86ba3b09929}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_afd50205c07147770b784f86ba3b09929}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries bookmark\+\_\+}\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a542a762aeb143b57f6eafee4f0870c99}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a542a762aeb143b57f6eafee4f0870c99}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t {\bfseries k\+No\+Bookmark} = -\/1\hypertarget{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a0d835dd8898e5ba24fd6ef2ebb98430e}{}\label{classv8_1_1internal_1_1_external_two_byte_string_utf16_character_stream_a0d835dd8898e5ba24fd6ef2ebb98430e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/scanner-\/character-\/streams.\+cc\end{DoxyCompactItemize}

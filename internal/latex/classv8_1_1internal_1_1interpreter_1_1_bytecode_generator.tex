@@ -1,0 +1,340 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}\index{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator@{v8\+::internal\+::interpreter\+::\+Bytecode\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:interpreter\+:\+:Bytecode\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_accumulator_result_scope}{Accumulator\+Result\+Scope}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_control_scope_for_breakable}{Control\+Scope\+For\+Breakable}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_control_scope_for_iteration}{Control\+Scope\+For\+Iteration}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_control_scope_for_top_level}{Control\+Scope\+For\+Top\+Level}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_control_scope_for_try_catch}{Control\+Scope\+For\+Try\+Catch}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_control_scope_for_try_finally}{Control\+Scope\+For\+Try\+Finally}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_effect_result_scope}{Effect\+Result\+Scope}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope}
+\item 
+class \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_result_scope}{Register\+Result\+Scope}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bytecode\+Generator} (\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5e7846efeee1a24ed0b4e975d6c7f0fc}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5e7846efeee1a24ed0b4e975d6c7f0fc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_bytecode_array}{Bytecode\+Array} $>$ {\bfseries Make\+Bytecode} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_affc615ad2a1a78c079a74c217841f2b3}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_affc615ad2a1a78c079a74c217841f2b3}
+
+\item 
+void {\bfseries Visit\+Declarations} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_declaration}{Declaration} $\ast$ $>$ $\ast$declarations) override\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a365dd36a7343c455714e0fc2d237be5d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a365dd36a7343c455714e0fc2d237be5d}
+
+\item 
+void {\bfseries Visit\+Statements} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$statments) override\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1f848fedfd63304f834d8ed9020c0273}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1f848fedfd63304f834d8ed9020c0273}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Make\+Bytecode\+Body} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af14c3fa3e6a16f3e37c798b5af404f3c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af14c3fa3e6a16f3e37c798b5af404f3c}
+
+\item 
+{\bfseries D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+T\+\_\+\+V\+I\+S\+I\+T\+O\+R\+\_\+\+S\+U\+B\+C\+L\+A\+S\+S\+\_\+\+M\+E\+M\+B\+E\+RS} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a281d99407da512d691def082c6766e64}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a281d99407da512d691def082c6766e64}
+
+\item 
+void {\bfseries Visit\+Arithmetic\+Expression} (\hyperlink{classv8_1_1internal_1_1_binary_operation}{Binary\+Operation} $\ast$binop)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a77b728520ede91f38fc4effb623f5471}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a77b728520ede91f38fc4effb623f5471}
+
+\item 
+void {\bfseries Visit\+Comma\+Expression} (\hyperlink{classv8_1_1internal_1_1_binary_operation}{Binary\+Operation} $\ast$binop)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a0d91900f4b9ea089f4e10fe0733e4612}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a0d91900f4b9ea089f4e10fe0733e4612}
+
+\item 
+void {\bfseries Visit\+Logical\+Or\+Expression} (\hyperlink{classv8_1_1internal_1_1_binary_operation}{Binary\+Operation} $\ast$binop)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a69bd75b71a98dc533c65f6a4a5c2f5c1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a69bd75b71a98dc533c65f6a4a5c2f5c1}
+
+\item 
+void {\bfseries Visit\+Logical\+And\+Expression} (\hyperlink{classv8_1_1internal_1_1_binary_operation}{Binary\+Operation} $\ast$binop)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_addf55e88359f9571be2e3bd58a128fa4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_addf55e88359f9571be2e3bd58a128fa4}
+
+\item 
+void {\bfseries Visit\+Void} (\hyperlink{classv8_1_1internal_1_1_unary_operation}{Unary\+Operation} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aeb77ca1e7bf08d9ae07a6cd05df14dba}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aeb77ca1e7bf08d9ae07a6cd05df14dba}
+
+\item 
+void {\bfseries Visit\+Type\+Of} (\hyperlink{classv8_1_1internal_1_1_unary_operation}{Unary\+Operation} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a76136383af4a654ff91f2bde6a11d4de}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a76136383af4a654ff91f2bde6a11d4de}
+
+\item 
+void {\bfseries Visit\+Not} (\hyperlink{classv8_1_1internal_1_1_unary_operation}{Unary\+Operation} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a02d541cf0ecbd44834b72971b6e52259}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a02d541cf0ecbd44834b72971b6e52259}
+
+\item 
+void {\bfseries Visit\+Delete} (\hyperlink{classv8_1_1internal_1_1_unary_operation}{Unary\+Operation} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab694e7c8d2cfd80987ba24f96092d054}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab694e7c8d2cfd80987ba24f96092d054}
+
+\item 
+void {\bfseries Visit\+Condition} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a86ae626e2038ce32c47af6377c581874}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a86ae626e2038ce32c47af6377c581874}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Visit\+Arguments} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$arguments)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a35b3d8e96c5085b79d7e27e52b17fbb1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a35b3d8e96c5085b79d7e27e52b17fbb1}
+
+\item 
+void {\bfseries Visit\+Keyed\+Super\+Property\+Load} (\hyperlink{classv8_1_1internal_1_1_property}{Property} $\ast$property, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} opt\+\_\+receiver\+\_\+out)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6cc523319725687798cdb2ba72072fb9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6cc523319725687798cdb2ba72072fb9}
+
+\item 
+void {\bfseries Visit\+Named\+Super\+Property\+Load} (\hyperlink{classv8_1_1internal_1_1_property}{Property} $\ast$property, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} opt\+\_\+receiver\+\_\+out)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad870b7e180d617c38d665a23bb3fedb7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad870b7e180d617c38d665a23bb3fedb7}
+
+\item 
+void {\bfseries Visit\+Property\+Load} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} obj, \hyperlink{classv8_1_1internal_1_1_property}{Property} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5b19c723d3de4a078586c05276095378}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5b19c723d3de4a078586c05276095378}
+
+\item 
+void {\bfseries Visit\+Property\+Load\+For\+Accumulator} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} obj, \hyperlink{classv8_1_1internal_1_1_property}{Property} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9c97aad8abd6c8f820377e23328e9018}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9c97aad8abd6c8f820377e23328e9018}
+
+\item 
+void {\bfseries Visit\+Variable\+Load} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, Typeof\+Mode typeof\+\_\+mode=N\+O\+T\+\_\+\+I\+N\+S\+I\+D\+E\+\_\+\+T\+Y\+P\+E\+OF)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_acc9b52aa74a9de60859ee8226081779d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_acc9b52aa74a9de60859ee8226081779d}
+
+\item 
+void {\bfseries Visit\+Variable\+Load\+For\+Accumulator\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, Typeof\+Mode typeof\+\_\+mode=N\+O\+T\+\_\+\+I\+N\+S\+I\+D\+E\+\_\+\+T\+Y\+P\+E\+OF)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a836ca9175605f1977e19ae00b4fd61a5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a836ca9175605f1977e19ae00b4fd61a5}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Visit\+Variable\+Load\+For\+Register\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, Typeof\+Mode typeof\+\_\+mode=N\+O\+T\+\_\+\+I\+N\+S\+I\+D\+E\+\_\+\+T\+Y\+P\+E\+OF)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a14bfad98c13f985cd6d78186182e67ee}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a14bfad98c13f985cd6d78186182e67ee}
+
+\item 
+void {\bfseries Visit\+Variable\+Assignment} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable, Token\+::\+Value op, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a8a56fc2e0b56f6a0bf35b0c3af289956}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a8a56fc2e0b56f6a0bf35b0c3af289956}
+
+\item 
+void {\bfseries Build\+Named\+Super\+Property\+Store} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} name, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab0cc26b1168b573533a6eb33116c8f49}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab0cc26b1168b573533a6eb33116c8f49}
+
+\item 
+void {\bfseries Build\+Keyed\+Super\+Property\+Store} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} key, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} value)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a837b7b8b2d3383bc0cc4f57b7fac7d34}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a837b7b8b2d3383bc0cc4f57b7fac7d34}
+
+\item 
+void {\bfseries Build\+Named\+Super\+Property\+Load} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a269249ba85274247f719cc0b307cbcd0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a269249ba85274247f719cc0b307cbcd0}
+
+\item 
+void {\bfseries Build\+Keyed\+Super\+Property\+Load} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} receiver, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} key)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2a706d4979615bb49cda1a78a59e68d0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2a706d4979615bb49cda1a78a59e68d0}
+
+\item 
+void {\bfseries Build\+Throw\+If\+Hole} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a224a62136531e415c0d0d858118ce416}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a224a62136531e415c0d0d858118ce416}
+
+\item 
+void {\bfseries Build\+Throw\+If\+Not\+Hole} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af962b7a666b6904758f7c1c06700a615}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af962b7a666b6904758f7c1c06700a615}
+
+\item 
+void {\bfseries Build\+Throw\+Reassign\+Constant} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afc5a462036a3fbf5c6d975ef2a3a6905}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afc5a462036a3fbf5c6d975ef2a3a6905}
+
+\item 
+void {\bfseries Build\+Throw\+Reference\+Error} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9ec97272615093e7dc6eb57e6ab332cb}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9ec97272615093e7dc6eb57e6ab332cb}
+
+\item 
+void {\bfseries Build\+Hole\+Check\+For\+Variable\+Load} (Variable\+Mode mode, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad1b35710d0a21580b62f0243e229ba69}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad1b35710d0a21580b62f0243e229ba69}
+
+\item 
+void {\bfseries Build\+Hole\+Check\+For\+Variable\+Assignment} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable, Token\+::\+Value op)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a0ddaf27eb189c062f9e2938fd539e2d6}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a0ddaf27eb189c062f9e2938fd539e2d6}
+
+\item 
+void {\bfseries Build\+Indexed\+Jump} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} value, size\+\_\+t start\+\_\+index, size\+\_\+t size, \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $>$ \&targets)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af04c49b2b9c07233b5fcb06148b79ef5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af04c49b2b9c07233b5fcb06148b79ef5}
+
+\item 
+void {\bfseries Visit\+Generator\+Prologue} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a78df59fe4a2ff7fe07e201f3371d1904}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a78df59fe4a2ff7fe07e201f3371d1904}
+
+\item 
+void {\bfseries Visit\+Arguments\+Object} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_adcf05c3d3f41624448f0e79dbda31e36}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_adcf05c3d3f41624448f0e79dbda31e36}
+
+\item 
+void {\bfseries Visit\+Rest\+Arguments\+Array} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$rest)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7cce0d46222645bd27caafc91273b2fe}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7cce0d46222645bd27caafc91273b2fe}
+
+\item 
+void {\bfseries Visit\+Call\+Super} (\hyperlink{classv8_1_1internal_1_1_call}{Call} $\ast$call)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4df029789a7461d31cfef49517882d33}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4df029789a7461d31cfef49517882d33}
+
+\item 
+void {\bfseries Visit\+Class\+Literal\+Contents} (\hyperlink{classv8_1_1internal_1_1_class_literal}{Class\+Literal} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ac53586e30556af12e0d230fcbc7b42b9}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ac53586e30556af12e0d230fcbc7b42b9}
+
+\item 
+void {\bfseries Visit\+Class\+Literal\+For\+Runtime\+Definition} (\hyperlink{classv8_1_1internal_1_1_class_literal}{Class\+Literal} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5a987ebe3660662855ae9b5aaf96a189}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a5a987ebe3660662855ae9b5aaf96a189}
+
+\item 
+void {\bfseries Visit\+Class\+Literal\+Properties} (\hyperlink{classv8_1_1internal_1_1_class_literal}{Class\+Literal} $\ast$expr, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} literal, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} prototype)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab0d2c0a5eab03b02057bb2429a0ca5ae}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab0d2c0a5eab03b02057bb2429a0ca5ae}
+
+\item 
+void {\bfseries Visit\+Class\+Literal\+Static\+Prototype\+With\+Computed\+Name} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} name)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a93f75a9082797c066e4d39654c7749a5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a93f75a9082797c066e4d39654c7749a5}
+
+\item 
+void {\bfseries Visit\+This\+Function\+Variable} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afd215299d634a3420f3d68ee45919f75}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afd215299d634a3420f3d68ee45919f75}
+
+\item 
+void {\bfseries Visit\+New\+Target\+Variable} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad0f4d414ee1f4ea8c0eb69b84c5a5b01}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad0f4d414ee1f4ea8c0eb69b84c5a5b01}
+
+\item 
+void {\bfseries Visit\+New\+Local\+Function\+Context} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a32f702ae5a953f59623a1d02a8d7fae5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a32f702ae5a953f59623a1d02a8d7fae5}
+
+\item 
+void {\bfseries Visit\+Build\+Local\+Activation\+Context} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae17ad206f087527d2de97fb467b7d68b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae17ad206f087527d2de97fb467b7d68b}
+
+\item 
+void {\bfseries Visit\+Block\+Declarations\+And\+Statements} (\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$stmt)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a48c70c92b22e63e1aa78aa07e5ffe331}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a48c70c92b22e63e1aa78aa07e5ffe331}
+
+\item 
+void {\bfseries Visit\+New\+Local\+Block\+Context} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4309ea6d2524be2f2e4e04c50d88e136}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4309ea6d2524be2f2e4e04c50d88e136}
+
+\item 
+void {\bfseries Visit\+New\+Local\+Catch\+Context} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_code_assembler_1_1_variable}{Variable} $\ast$variable)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa8bfba1719da5d1ae697297f3da8d524}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa8bfba1719da5d1ae697297f3da8d524}
+
+\item 
+void {\bfseries Visit\+New\+Local\+With\+Context} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1ea1f7c3321c56d77c7aa40f4ddaaf61}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1ea1f7c3321c56d77c7aa40f4ddaaf61}
+
+\item 
+void {\bfseries Visit\+Function\+Closure\+For\+Context} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae6ab02d11e00704cb543762cb21f6c96}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae6ab02d11e00704cb543762cb21f6c96}
+
+\item 
+void {\bfseries Visit\+Set\+Home\+Object} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} value, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+Property} $\ast$property, int slot\+\_\+number=0)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6d2b9afd2a2cc3267cd3c51cb985a9c2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6d2b9afd2a2cc3267cd3c51cb985a9c2}
+
+\item 
+void {\bfseries Visit\+Object\+Literal\+Accessor} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} home\+\_\+object, \hyperlink{classv8_1_1internal_1_1_object_literal_property}{Object\+Literal\+Property} $\ast$property, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} value\+\_\+out)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ac426a8388b96f4b4b47cb6949397837a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ac426a8388b96f4b4b47cb6949397837a}
+
+\item 
+void {\bfseries Visit\+For\+In\+Assignment} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr, \hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1a44d85f28107e6a4e46a6c3639ca653}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a1a44d85f28107e6a4e46a6c3639ca653}
+
+\item 
+void {\bfseries Visit\+Iteration\+Header} (\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_loop_builder}{Loop\+Builder} $\ast$loop\+\_\+builder)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad7a20a2d87aa0db7896226accf272400}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad7a20a2d87aa0db7896226accf272400}
+
+\item 
+void {\bfseries Visit\+Iteration\+Body} (\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_loop_builder}{Loop\+Builder} $\ast$loop\+\_\+builder)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2bfc67707a297e7acb23af167760c40b}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2bfc67707a297e7acb23af167760c40b}
+
+\item 
+void {\bfseries Visit\+In\+Scope} (\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae11b594fef89c1ad455de2049f4a246d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae11b594fef89c1ad455de2049f4a246d}
+
+\item 
+void {\bfseries Visit\+For\+Accumulator\+Value} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a23fa4fc1045e29595ca3f057e859e884}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a23fa4fc1045e29595ca3f057e859e884}
+
+\item 
+void {\bfseries Visit\+For\+Accumulator\+Value\+Or\+The\+Hole} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a512b2bcac93160e6696f0f365d283c2d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a512b2bcac93160e6696f0f365d283c2d}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Visit\+For\+Register\+Value} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a48ca4e1a512e832f48d7cfd25ff4a11a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a48ca4e1a512e832f48d7cfd25ff4a11a}
+
+\item 
+void {\bfseries Visit\+For\+Register\+Value} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr, \hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} destination)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7eed0c5b2d4920e51c45cf3245aebaf1}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7eed0c5b2d4920e51c45cf3245aebaf1}
+
+\item 
+void {\bfseries Visit\+For\+Effect} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af2e305820bd8762ace86ab74f6f86d7c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af2e305820bd8762ace86ab74f6f86d7c}
+
+\item 
+void {\bfseries Record\+Store\+To\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a638f535aeab7ad4b3417b3b99dff3f1e}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a638f535aeab7ad4b3417b3b99dff3f1e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries Load\+From\+Aliased\+Register} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab4bd4b49079db02da5169a16794893d7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab4bd4b49079db02da5169a16794893d7}
+
+\item 
+bool {\bfseries Is\+Inside\+Try\+Catch} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4a0bb89768c47651ac5d9c584e85f52a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4a0bb89768c47651ac5d9c584e85f52a}
+
+\item 
+bool {\bfseries Is\+Inside\+Try\+Finally} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa6b336498fbc1293517d86a16079e1a8}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa6b336498fbc1293517d86a16079e1a8}
+
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\void {\bfseries Initialize\+With\+Consecutive\+Registers} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register}(\&registers)\mbox{[}N\mbox{]})\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa39188ada22ad0d9e5aeac638fb65ed2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa39188ada22ad0d9e5aeac638fb65ed2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} $\ast$ {\bfseries builder} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4671c8bcf24944f2e26ca3d30b93a35f}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a4671c8bcf24944f2e26ca3d30b93a35f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6188816ce79aa3b54b3ce8859a776b75}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a6188816ce79aa3b54b3ce8859a776b75}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_abbb7d38c3699e7a58a9ff980928c5848}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_abbb7d38c3699e7a58a9ff980928c5848}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a8cf785d1b385ae3875fcaef899e3c96d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a8cf785d1b385ae3875fcaef899e3c96d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afef84e22b0c0eb64be109e17df2dede7}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afef84e22b0c0eb64be109e17df2dede7}
+
+\item 
+Control\+Scope $\ast$ {\bfseries execution\+\_\+control} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_acb31e5e96c22a3a9b8c013a39548bcc5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_acb31e5e96c22a3a9b8c013a39548bcc5}
+
+\item 
+void {\bfseries set\+\_\+execution\+\_\+control} (Control\+Scope $\ast$scope)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9386c0ae1c1bd68ec432244ff2f149bf}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a9386c0ae1c1bd68ec432244ff2f149bf}
+
+\item 
+Context\+Scope $\ast$ {\bfseries execution\+\_\+context} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afbdbf5bcb07874c4cc66410fc10f774c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_afbdbf5bcb07874c4cc66410fc10f774c}
+
+\item 
+void {\bfseries set\+\_\+execution\+\_\+context} (Context\+Scope $\ast$context)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7b94d782fbb2111acecc7bfc2963ceca}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7b94d782fbb2111acecc7bfc2963ceca}
+
+\item 
+void {\bfseries set\+\_\+execution\+\_\+result} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope} $\ast$execution\+\_\+result)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa62c6005ab666db17f94eba923b5f8f8}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aa62c6005ab666db17f94eba923b5f8f8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope} $\ast$ {\bfseries execution\+\_\+result} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aff9d853dc3351a567c0853949d896e2a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aff9d853dc3351a567c0853949d896e2a}
+
+\item 
+void {\bfseries set\+\_\+register\+\_\+allocator} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope} $\ast$register\+\_\+allocator)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae86a4fd98e8118c95d2344a7965dc843}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ae86a4fd98e8118c95d2344a7965dc843}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope} $\ast$ {\bfseries register\+\_\+allocator} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af5a1a2d02a94c8b6811a2010098a02d4}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af5a1a2d02a94c8b6811a2010098a02d4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ $\ast$ {\bfseries globals} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af948f022ef1208472581a0cff0e377a6}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af948f022ef1208472581a0cff0e377a6}
+
+\item 
+Language\+Mode {\bfseries language\+\_\+mode} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a91d53d3214867417cde6f29dbbfb2065}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a91d53d3214867417cde6f29dbbfb2065}
+
+\item 
+int {\bfseries feedback\+\_\+index} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad0cfe85dfa814467ba1b4b3f7b27a7c0}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ad0cfe85dfa814467ba1b4b3f7b27a7c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2e7a70b9a8d812eb80d8ba1aab74e385}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2e7a70b9a8d812eb80d8ba1aab74e385}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7587c76b8922ab7b2a0f0f582d6dae70}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7587c76b8922ab7b2a0f0f582d6dae70}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_array_builder}{Bytecode\+Array\+Builder} $\ast$ {\bfseries builder\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a017fe076fb834b332ee1aa27db8d6eb2}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a017fe076fb834b332ee1aa27db8d6eb2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2a5abc4b250f5d68b483a77589f4938d}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a2a5abc4b250f5d68b483a77589f4938d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7df9db5f52bbf8eb26d523fa56193f92}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a7df9db5f52bbf8eb26d523fa56193f92}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ {\bfseries globals\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aab61be1dceaee2a9cd7b8ec11174d053}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_aab61be1dceaee2a9cd7b8ec11174d053}
+
+\item 
+Control\+Scope $\ast$ {\bfseries execution\+\_\+control\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a3bf27774ea06606e521279bb8eec610c}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a3bf27774ea06606e521279bb8eec610c}
+
+\item 
+Context\+Scope $\ast$ {\bfseries execution\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af9eee168f0466ad6182a0ab9ffa50af5}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_af9eee168f0466ad6182a0ab9ffa50af5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_expression_result_scope}{Expression\+Result\+Scope} $\ast$ {\bfseries execution\+\_\+result\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a807fdc3653638f6253796dd59bada99a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a807fdc3653638f6253796dd59bada99a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_1_1_register_allocation_scope}{Register\+Allocation\+Scope} $\ast$ {\bfseries register\+\_\+allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a188483228e52e74664fb190669d17f5a}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a188483228e52e74664fb190669d17f5a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1interpreter_1_1_bytecode_label}{Bytecode\+Label} $>$ {\bfseries generator\+\_\+resume\+\_\+points\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a924a6831e3f2d6613ce3967df0cc4f57}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a924a6831e3f2d6613ce3967df0cc4f57}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries generator\+\_\+state\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab85a6982d95c66370150669f77c3a267}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_ab85a6982d95c66370150669f77c3a267}
+
+\item 
+int {\bfseries try\+\_\+catch\+\_\+nesting\+\_\+level\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_abad178e375e46ba154da742eb51e2027}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_abad178e375e46ba154da742eb51e2027}
+
+\item 
+int {\bfseries try\+\_\+finally\+\_\+nesting\+\_\+level\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a59f36bf8351b2b76e98ad7569faa0645}{}\label{classv8_1_1internal_1_1interpreter_1_1_bytecode_generator_a59f36bf8351b2b76e98ad7569faa0645}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/generator.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/generator.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1_default_persistent_value_map_traits}{}\section{v8\+:\+:Default\+Persistent\+Value\+Map\+Traits$<$ K, V $>$ Class Template Reference}
+\label{classv8_1_1_default_persistent_value_map_traits}\index{v8\+::\+Default\+Persistent\+Value\+Map\+Traits$<$ K, V $>$@{v8\+::\+Default\+Persistent\+Value\+Map\+Traits$<$ K, V $>$}}
+
+
+{\ttfamily \#include $<$v8-\/util.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Default\+Persistent\+Value\+Map\+Traits$<$ K, V $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_default_persistent_value_map_traits}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1_persistent_value_map}{Persistent\+Value\+Map}$<$ K, V, \hyperlink{classv8_1_1_default_persistent_value_map_traits}{Default\+Persistent\+Value\+Map\+Traits}$<$ K, V $>$ $>$ {\bfseries Map\+Type}\hypertarget{classv8_1_1_default_persistent_value_map_traits_a05cbd536d6bb9ba4949198351e074854}{}\label{classv8_1_1_default_persistent_value_map_traits_a05cbd536d6bb9ba4949198351e074854}
+
+\item 
+typedef void {\bfseries Weak\+Callback\+Data\+Type}\hypertarget{classv8_1_1_default_persistent_value_map_traits_a379f8c42e727a9576fb0954bb0245d8f}{}\label{classv8_1_1_default_persistent_value_map_traits_a379f8c42e727a9576fb0954bb0245d8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Weak\+Callback\+Data\+Type $\ast$ {\bfseries Weak\+Callback\+Parameter} (\hyperlink{classv8_1_1_persistent_value_map}{Map\+Type} $\ast$map, const K \&key, \hyperlink{classv8_1_1_local}{Local}$<$ V $>$ value)\hypertarget{classv8_1_1_default_persistent_value_map_traits_a63b6fc80207ce6ac7d1eaa306b68768c}{}\label{classv8_1_1_default_persistent_value_map_traits_a63b6fc80207ce6ac7d1eaa306b68768c}
+
+\item 
+static \hyperlink{classv8_1_1_persistent_value_map}{Map\+Type} $\ast$ {\bfseries Map\+From\+Weak\+Callback\+Data} (const \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ V, Weak\+Callback\+Data\+Type $>$ \&data)\hypertarget{classv8_1_1_default_persistent_value_map_traits_a721a7a6624ffe207af1adee6d6be2fe3}{}\label{classv8_1_1_default_persistent_value_map_traits_a721a7a6624ffe207af1adee6d6be2fe3}
+
+\item 
+static K {\bfseries Key\+From\+Weak\+Callback\+Data} (const \hyperlink{classv8_1_1_weak_callback_data}{Weak\+Callback\+Data}$<$ V, Weak\+Callback\+Data\+Type $>$ \&data)\hypertarget{classv8_1_1_default_persistent_value_map_traits_ac85c6254f23d246d78a84721a80babae}{}\label{classv8_1_1_default_persistent_value_map_traits_ac85c6254f23d246d78a84721a80babae}
+
+\item 
+static void {\bfseries Dispose\+Callback\+Data} (Weak\+Callback\+Data\+Type $\ast$data)\hypertarget{classv8_1_1_default_persistent_value_map_traits_a9e5c3a4a054b13f46065adec2c44ddfe}{}\label{classv8_1_1_default_persistent_value_map_traits_a9e5c3a4a054b13f46065adec2c44ddfe}
+
+\item 
+static void {\bfseries Dispose} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_global}{Global}$<$ V $>$ value, K key)\hypertarget{classv8_1_1_default_persistent_value_map_traits_a28f1a2d349eb5a6ad376b6e968d51490}{}\label{classv8_1_1_default_persistent_value_map_traits_a28f1a2d349eb5a6ad376b6e968d51490}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Persistent\+Container\+Callback\+Type {\bfseries k\+Callback\+Type} = k\+Not\+Weak\hypertarget{classv8_1_1_default_persistent_value_map_traits_a1f57d8246e4ace68bc9be1047eb7cc40}{}\label{classv8_1_1_default_persistent_value_map_traits_a1f57d8246e4ace68bc9be1047eb7cc40}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename K, typename V$>$\\*
+class v8\+::\+Default\+Persistent\+Value\+Map\+Traits$<$ K, V $>$}
+
+A default trait implementation for \hyperlink{classv8_1_1_persistent_value_map}{Persistent\+Value\+Map}, which inherits a std\+:map backing map from \hyperlink{classv8_1_1_std_map_traits}{Std\+Map\+Traits} and holds non-\/weak persistent objects and has no special Dispose handling.
+
+You should not derive from this class, since Map\+Type depends on the surrounding class, and hence a subclass cannot simply inherit the methods. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8-\/util.\+h\end{DoxyCompactItemize}

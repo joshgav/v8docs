@@ -1,0 +1,123 @@
+\hypertarget{classv8_1_1internal_1_1_oddball}{}\section{v8\+:\+:internal\+:\+:Oddball Class Reference}
+\label{classv8_1_1internal_1_1_oddball}\index{v8\+::internal\+::\+Oddball@{v8\+::internal\+::\+Oddball}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Oddball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_oddball}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_fixed_body_descriptor}{Fixed\+Body\+Descriptor}$<$ k\+To\+String\+Offset, k\+Type\+Of\+Offset+k\+Pointer\+Size, k\+Size $>$ {\bfseries Body\+Descriptor}\hypertarget{classv8_1_1internal_1_1_oddball_a45d95a2cd4e1df3c4e74b41286dd61b8}{}\label{classv8_1_1internal_1_1_oddball_a45d95a2cd4e1df3c4e74b41286dd61b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries to\+\_\+number\+\_\+raw} () const \hypertarget{classv8_1_1internal_1_1_oddball_a3ba4cdb414fb33b993b24bf90424348e}{}\label{classv8_1_1internal_1_1_oddball_a3ba4cdb414fb33b993b24bf90424348e}
+
+\item 
+void {\bfseries set\+\_\+to\+\_\+number\+\_\+raw} (double value)\hypertarget{classv8_1_1internal_1_1_oddball_ac159738887b097e944744bb5624dbe90}{}\label{classv8_1_1internal_1_1_oddball_ac159738887b097e944744bb5624dbe90}
+
+\item 
+byte {\bfseries kind} () const \hypertarget{classv8_1_1internal_1_1_oddball_a4e4dcda0283ac0d7c5075ac66a450c13}{}\label{classv8_1_1internal_1_1_oddball_a4e4dcda0283ac0d7c5075ac66a450c13}
+
+\item 
+void {\bfseries set\+\_\+kind} (byte kind)\hypertarget{classv8_1_1internal_1_1_oddball_a23ac73dee2b9eccc79fad51864a92061}{}\label{classv8_1_1internal_1_1_oddball_a23ac73dee2b9eccc79fad51864a92061}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+To\+Number\+Raw\+Offset==Heap\+Number\+::k\+Value\+Offset)\hypertarget{classv8_1_1internal_1_1_oddball_a006489f581dec0fe6d2bc2c467fa2817}{}\label{classv8_1_1internal_1_1_oddball_a006489f581dec0fe6d2bc2c467fa2817}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Kind\+Offset==Internals\+::k\+Oddball\+Kind\+Offset)\hypertarget{classv8_1_1internal_1_1_oddball_adaa90c45078014efb0017364c9fc7505}{}\label{classv8_1_1internal_1_1_oddball_adaa90c45078014efb0017364c9fc7505}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Null==Internals\+::k\+Null\+Oddball\+Kind)\hypertarget{classv8_1_1internal_1_1_oddball_a8b098918d70d60336f7cb6686df4cee3}{}\label{classv8_1_1internal_1_1_oddball_a8b098918d70d60336f7cb6686df4cee3}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Undefined==Internals\+::k\+Undefined\+Oddball\+Kind)\hypertarget{classv8_1_1internal_1_1_oddball_ac59ae66d1803a5c087b45515d9358891}{}\label{classv8_1_1internal_1_1_oddball_ac59ae66d1803a5c087b45515d9358891}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries To\+Number} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_oddball}{Oddball} $>$ input)\hypertarget{classv8_1_1internal_1_1_oddball_a553306e19ed7f09b101ec2d0aeea18c9}{}\label{classv8_1_1internal_1_1_oddball_a553306e19ed7f09b101ec2d0aeea18c9}
+
+\item 
+static void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_oddball}{Oddball} $>$ oddball, const char $\ast$to\+\_\+string, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ to\+\_\+number, bool to\+\_\+boolean, const char $\ast$type\+\_\+of, byte kind)\hypertarget{classv8_1_1internal_1_1_oddball_af41e9d6d2819db26e1f34ccd9b498a40}{}\label{classv8_1_1internal_1_1_oddball_af41e9d6d2819db26e1f34ccd9b498a40}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+To\+Number\+Raw\+Offset} = Heap\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_oddball_a359c026098ad7b1d1c64b5d80e139ffd}{}\label{classv8_1_1internal_1_1_oddball_a359c026098ad7b1d1c64b5d80e139ffd}
+
+\item 
+static const int {\bfseries k\+To\+String\+Offset} = k\+To\+Number\+Raw\+Offset + k\+Double\+Size\hypertarget{classv8_1_1internal_1_1_oddball_aa6a9637c9e8da1a28f83c788c1027013}{}\label{classv8_1_1internal_1_1_oddball_aa6a9637c9e8da1a28f83c788c1027013}
+
+\item 
+static const int {\bfseries k\+To\+Number\+Offset} = k\+To\+String\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_oddball_a15f1533c8dc4c622d3a14c291103d5e3}{}\label{classv8_1_1internal_1_1_oddball_a15f1533c8dc4c622d3a14c291103d5e3}
+
+\item 
+static const int {\bfseries k\+To\+Boolean\+Offset} = k\+To\+Number\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_oddball_afd31936290ee07b07a8ba5f581646836}{}\label{classv8_1_1internal_1_1_oddball_afd31936290ee07b07a8ba5f581646836}
+
+\item 
+static const int {\bfseries k\+Type\+Of\+Offset} = k\+To\+Boolean\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_oddball_a0df5c29f24ad428f01022a78853b89ce}{}\label{classv8_1_1internal_1_1_oddball_a0df5c29f24ad428f01022a78853b89ce}
+
+\item 
+static const int {\bfseries k\+Kind\+Offset} = k\+Type\+Of\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_oddball_a3aa86ed02d356c506c27a284e683b865}{}\label{classv8_1_1internal_1_1_oddball_a3aa86ed02d356c506c27a284e683b865}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Kind\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_oddball_a94ef696c3fd95d44b6ace00ae799d890}{}\label{classv8_1_1internal_1_1_oddball_a94ef696c3fd95d44b6ace00ae799d890}
+
+\item 
+static const byte {\bfseries k\+False} = 0\hypertarget{classv8_1_1internal_1_1_oddball_a3556ea40330ca7f13d1546b9a5ab278c}{}\label{classv8_1_1internal_1_1_oddball_a3556ea40330ca7f13d1546b9a5ab278c}
+
+\item 
+static const byte {\bfseries k\+True} = 1\hypertarget{classv8_1_1internal_1_1_oddball_a7dd4be392c0689925b57abb5898c8b47}{}\label{classv8_1_1internal_1_1_oddball_a7dd4be392c0689925b57abb5898c8b47}
+
+\item 
+static const byte {\bfseries k\+Not\+Boolean\+Mask} = $\sim$1\hypertarget{classv8_1_1internal_1_1_oddball_a0286390eeab3d5ff7cd0e0dd09712c1b}{}\label{classv8_1_1internal_1_1_oddball_a0286390eeab3d5ff7cd0e0dd09712c1b}
+
+\item 
+static const byte {\bfseries k\+The\+Hole} = 2\hypertarget{classv8_1_1internal_1_1_oddball_a56d93ed85d040bf41eb738a1f0e0c2f2}{}\label{classv8_1_1internal_1_1_oddball_a56d93ed85d040bf41eb738a1f0e0c2f2}
+
+\item 
+static const byte {\bfseries k\+Null} = 3\hypertarget{classv8_1_1internal_1_1_oddball_a7e9e260f9a1ee980b4ac12e2d534ff27}{}\label{classv8_1_1internal_1_1_oddball_a7e9e260f9a1ee980b4ac12e2d534ff27}
+
+\item 
+static const byte {\bfseries k\+Arguments\+Marker} = 4\hypertarget{classv8_1_1internal_1_1_oddball_a033dce401ba10d3d68a4fc848464bd53}{}\label{classv8_1_1internal_1_1_oddball_a033dce401ba10d3d68a4fc848464bd53}
+
+\item 
+static const byte {\bfseries k\+Undefined} = 5\hypertarget{classv8_1_1internal_1_1_oddball_a38ddddfd10d8732bcef0714b3bd57008}{}\label{classv8_1_1internal_1_1_oddball_a38ddddfd10d8732bcef0714b3bd57008}
+
+\item 
+static const byte {\bfseries k\+Uninitialized} = 6\hypertarget{classv8_1_1internal_1_1_oddball_ab030131494be698f1e666ce7d50cc873}{}\label{classv8_1_1internal_1_1_oddball_ab030131494be698f1e666ce7d50cc873}
+
+\item 
+static const byte {\bfseries k\+Other} = 7\hypertarget{classv8_1_1internal_1_1_oddball_af181f2f5cc1b00216ed1a2ebacecc40e}{}\label{classv8_1_1internal_1_1_oddball_af181f2f5cc1b00216ed1a2ebacecc40e}
+
+\item 
+static const byte {\bfseries k\+Exception} = 8\hypertarget{classv8_1_1internal_1_1_oddball_a56b06e715a40821036ac6fec67b7ec60}{}\label{classv8_1_1internal_1_1_oddball_a56b06e715a40821036ac6fec67b7ec60}
+
+\item 
+static const byte {\bfseries k\+Optimized\+Out} = 9\hypertarget{classv8_1_1internal_1_1_oddball_a2fd3c39d2e5319a9e0adef6c8af29dde}{}\label{classv8_1_1internal_1_1_oddball_a2fd3c39d2e5319a9e0adef6c8af29dde}
+
+\item 
+static const byte {\bfseries k\+Stale\+Register} = 10\hypertarget{classv8_1_1internal_1_1_oddball_a23c51a879da822543f18a64b81367059}{}\label{classv8_1_1internal_1_1_oddball_a23c51a879da822543f18a64b81367059}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_oddball}{Oddball})\hypertarget{classv8_1_1internal_1_1_oddball_accd612bcde4de80c2037666e44419fa5}{}\label{classv8_1_1internal_1_1_oddball_accd612bcde4de80c2037666e44419fa5}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_histogram}{}\section{v8\+:\+:internal\+:\+:Histogram Class Reference}
+\label{classv8_1_1internal_1_1_histogram}\index{v8\+::internal\+::\+Histogram@{v8\+::internal\+::\+Histogram}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Histogram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_histogram}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Histogram} (const char $\ast$name, int min, int max, int num\+\_\+buckets, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_histogram_a0c78098797ab2745d447867241391696}{}\label{classv8_1_1internal_1_1_histogram_a0c78098797ab2745d447867241391696}
+
+\item 
+void {\bfseries Add\+Sample} (int sample)\hypertarget{classv8_1_1internal_1_1_histogram_a1fa018dc2756acdc3a1bb4fdbe97ae86}{}\label{classv8_1_1internal_1_1_histogram_a1fa018dc2756acdc3a1bb4fdbe97ae86}
+
+\item 
+bool {\bfseries Enabled} ()\hypertarget{classv8_1_1internal_1_1_histogram_a8c6f22e6b5446dfc455a8af4e97eb21b}{}\label{classv8_1_1internal_1_1_histogram_a8c6f22e6b5446dfc455a8af4e97eb21b}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classv8_1_1internal_1_1_histogram_a74a1b1e9c261914088b73e0b36bbb737}{}\label{classv8_1_1internal_1_1_histogram_a74a1b1e9c261914088b73e0b36bbb737}
+
+\item 
+const char $\ast$ {\bfseries name} ()\hypertarget{classv8_1_1internal_1_1_histogram_a22b3415f2c6489eb208ae2f742061e6c}{}\label{classv8_1_1internal_1_1_histogram_a22b3415f2c6489eb208ae2f742061e6c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries Get\+Histogram} ()\hypertarget{classv8_1_1internal_1_1_histogram_a64814df2fbed982aab10659a38645a4c}{}\label{classv8_1_1internal_1_1_histogram_a64814df2fbed982aab10659a38645a4c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_histogram_aa26e393fdf6c7d2016ab312727cd68b9}{}\label{classv8_1_1internal_1_1_histogram_aa26e393fdf6c7d2016ab312727cd68b9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries Create\+Histogram} () const \hypertarget{classv8_1_1internal_1_1_histogram_a52d086ad3f239655a4a80054949b4c28}{}\label{classv8_1_1internal_1_1_histogram_a52d086ad3f239655a4a80054949b4c28}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bfseries name\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_aa8b33b867f0246617e5eda39613014ee}{}\label{classv8_1_1internal_1_1_histogram_aa8b33b867f0246617e5eda39613014ee}
+
+\item 
+int {\bfseries min\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_aeeb51be0225edda30de750523fd84ccf}{}\label{classv8_1_1internal_1_1_histogram_aeeb51be0225edda30de750523fd84ccf}
+
+\item 
+int {\bfseries max\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_a1cd72939839eb345548cde7e78347962}{}\label{classv8_1_1internal_1_1_histogram_a1cd72939839eb345548cde7e78347962}
+
+\item 
+int {\bfseries num\+\_\+buckets\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_a61360e522801691fa6baff0d69321c16}{}\label{classv8_1_1internal_1_1_histogram_a61360e522801691fa6baff0d69321c16}
+
+\item 
+void $\ast$ {\bfseries histogram\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_ab667ad67b13ba911390863bc2e2a34ba}{}\label{classv8_1_1internal_1_1_histogram_ab667ad67b13ba911390863bc2e2a34ba}
+
+\item 
+bool {\bfseries lookup\+\_\+done\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_a40a08a8248d36611f00ecadd00ab5896}{}\label{classv8_1_1internal_1_1_histogram_a40a08a8248d36611f00ecadd00ab5896}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_ac3a29fe8bcc25f86dc432e0364138644}{}\label{classv8_1_1internal_1_1_histogram_ac3a29fe8bcc25f86dc432e0364138644}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/counters.\+h\item 
+/\+Users/joshgav/node/v8/src/counters.\+cc\end{DoxyCompactItemize}

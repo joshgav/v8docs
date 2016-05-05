@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1_locker}{}\section{v8\+:\+:Locker Class Reference}
+\label{classv8_1_1_locker}\index{v8\+::\+Locker@{v8\+::\+Locker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_locker_a9f41151c92493a27d6724676fc774b51}{Locker} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classv8_1_1_locker_ac6145adbb7acf7274458882a3de44169}{Is\+Locked} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)
+\item 
+static bool \hyperlink{classv8_1_1_locker_addf73a36477c3f8721fd230199e86476}{Is\+Active} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_locker_a0e07d8e2888b4489b73cfbf7e98e389c}{}\label{classv8_1_1_locker_a0e07d8e2888b4489b73cfbf7e98e389c}
+
+\item 
+{\bfseries Locker} (const \hyperlink{classv8_1_1_locker}{Locker} \&)\hypertarget{classv8_1_1_locker_a109234b888861166ab5fa97f68021deb}{}\label{classv8_1_1_locker_a109234b888861166ab5fa97f68021deb}
+
+\item 
+void {\bfseries operator=} (const \hyperlink{classv8_1_1_locker}{Locker} \&)\hypertarget{classv8_1_1_locker_ae06180c0ba39cdc842b0495a0a068f00}{}\label{classv8_1_1_locker_ae06180c0ba39cdc842b0495a0a068f00}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries has\+\_\+lock\+\_\+}\hypertarget{classv8_1_1_locker_a7825a82e9214102f59eb0d8d5c75981f}{}\label{classv8_1_1_locker_a7825a82e9214102f59eb0d8d5c75981f}
+
+\item 
+bool {\bfseries top\+\_\+level\+\_\+}\hypertarget{classv8_1_1_locker_a0eb64e2524976c530ba265e1eba4854a}{}\label{classv8_1_1_locker_a0eb64e2524976c530ba265e1eba4854a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{internal\+::\+Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1_locker_ab7dd4eb2a63dcfe6a67a5ec2512cf56d}{}\label{classv8_1_1_locker_ab7dd4eb2a63dcfe6a67a5ec2512cf56d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{v8\+::\+Locker@{v8\+::\+Locker}!Locker@{Locker}}
+\index{Locker@{Locker}!v8\+::\+Locker@{v8\+::\+Locker}}
+\subsubsection[{\texorpdfstring{Locker(\+Isolate $\ast$isolate)}{Locker(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+Locker\+::\+Locker (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classv8_1_1_locker_a9f41151c92493a27d6724676fc774b51}{}\label{classv8_1_1_locker_a9f41151c92493a27d6724676fc774b51}
+Initialize \hyperlink{classv8_1_1_locker}{Locker} for a given \hyperlink{classv8_1_1_isolate}{Isolate}. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Locker@{v8\+::\+Locker}!Is\+Active@{Is\+Active}}
+\index{Is\+Active@{Is\+Active}!v8\+::\+Locker@{v8\+::\+Locker}}
+\subsubsection[{\texorpdfstring{Is\+Active()}{IsActive()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Locker\+::\+Is\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1_locker_addf73a36477c3f8721fd230199e86476}{}\label{classv8_1_1_locker_addf73a36477c3f8721fd230199e86476}
+Returns whether \hyperlink{classv8_1_1_locker}{v8\+::\+Locker} is being used by this \hyperlink{classv8_1_1_v8}{V8} instance. \index{v8\+::\+Locker@{v8\+::\+Locker}!Is\+Locked@{Is\+Locked}}
+\index{Is\+Locked@{Is\+Locked}!v8\+::\+Locker@{v8\+::\+Locker}}
+\subsubsection[{\texorpdfstring{Is\+Locked(\+Isolate $\ast$isolate)}{IsLocked(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Locker\+::\+Is\+Locked (
+\begin{DoxyParamCaption}
+\item[{{\bf v8\+::\+Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1_locker_ac6145adbb7acf7274458882a3de44169}{}\label{classv8_1_1_locker_ac6145adbb7acf7274458882a3de44169}
+Returns whether or not the locker for a given isolate, is locked by the current thread. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\item 
+/\+Users/joshgav/node/v8/src/v8threads.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{classv8_1_1internal_1_1_translated_state}{}\section{v8\+:\+:internal\+:\+:Translated\+State Class Reference}
+\label{classv8_1_1internal_1_1_translated_state}\index{v8\+::internal\+::\+Translated\+State@{v8\+::internal\+::\+Translated\+State}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_translated_state_1_1_object_position}{Object\+Position}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} $>$\+::iterator {\bfseries iterator}\hypertarget{classv8_1_1internal_1_1_translated_state_a153eb09bc74719d6fb259982cf8fcdc2}{}\label{classv8_1_1internal_1_1_translated_state_a153eb09bc74719d6fb259982cf8fcdc2}
+
+\item 
+typedef std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} $>$\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}\hypertarget{classv8_1_1internal_1_1_translated_state_a26e186a96d8e29d5738e3a0b38fd3d37}{}\label{classv8_1_1internal_1_1_translated_state_a26e186a96d8e29d5738e3a0b38fd3d37}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Translated\+State} (\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$frame)\hypertarget{classv8_1_1internal_1_1_translated_state_ac913b72fcc5c226250fd6202713e2d13}{}\label{classv8_1_1internal_1_1_translated_state_ac913b72fcc5c226250fd6202713e2d13}
+
+\item 
+void {\bfseries Prepare} (bool has\+\_\+adapted\+\_\+arguments, Address stack\+\_\+frame\+\_\+pointer)\hypertarget{classv8_1_1internal_1_1_translated_state_a736913c863f957cae9227527c6a72d20}{}\label{classv8_1_1internal_1_1_translated_state_a736913c863f957cae9227527c6a72d20}
+
+\item 
+void {\bfseries Store\+Materialized\+Values\+And\+Deopt} ()\hypertarget{classv8_1_1internal_1_1_translated_state_a40462a969a13055032710c15374366b3}{}\label{classv8_1_1internal_1_1_translated_state_a40462a969a13055032710c15374366b3}
+
+\item 
+iterator {\bfseries begin} ()\hypertarget{classv8_1_1internal_1_1_translated_state_a0d7181aec0643e3c070248ee1429acf2}{}\label{classv8_1_1internal_1_1_translated_state_a0d7181aec0643e3c070248ee1429acf2}
+
+\item 
+iterator {\bfseries end} ()\hypertarget{classv8_1_1internal_1_1_translated_state_a3f7c5ec0be6c661c55a127993baf3e24}{}\label{classv8_1_1internal_1_1_translated_state_a3f7c5ec0be6c661c55a127993baf3e24}
+
+\item 
+const\+\_\+iterator {\bfseries begin} () const \hypertarget{classv8_1_1internal_1_1_translated_state_a6e4dbe28cc4c7d012c3124cc00ec06c7}{}\label{classv8_1_1internal_1_1_translated_state_a6e4dbe28cc4c7d012c3124cc00ec06c7}
+
+\item 
+const\+\_\+iterator {\bfseries end} () const \hypertarget{classv8_1_1internal_1_1_translated_state_a42c1fd6ead339be0318ebabcddbae3e5}{}\label{classv8_1_1internal_1_1_translated_state_a42c1fd6ead339be0318ebabcddbae3e5}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} $>$ \& {\bfseries frames} ()\hypertarget{classv8_1_1internal_1_1_translated_state_a0810bb0c912ff00d226d483cbad42a71}{}\label{classv8_1_1internal_1_1_translated_state_a0810bb0c912ff00d226d483cbad42a71}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} $\ast$ {\bfseries Get\+Arguments\+Info\+From\+J\+S\+Frame\+Index} (int jsframe\+\_\+index, int $\ast$arguments\+\_\+count)\hypertarget{classv8_1_1internal_1_1_translated_state_a38fa0d6f1798ae6ed395a398f263306e}{}\label{classv8_1_1internal_1_1_translated_state_a38fa0d6f1798ae6ed395a398f263306e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1internal_1_1_translated_state_a3f7e0c9a867318e6ca1277a882667027}{}\label{classv8_1_1internal_1_1_translated_state_a3f7e0c9a867318e6ca1277a882667027}
+
+\item 
+void {\bfseries Init} (Address input\+\_\+frame\+\_\+pointer, Translation\+Iterator $\ast$iterator, \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$literal\+\_\+array, \hyperlink{classv8_1_1internal_1_1_register_values}{Register\+Values} $\ast$registers, F\+I\+LE $\ast$trace\+\_\+file)\hypertarget{classv8_1_1internal_1_1_translated_state_a20961a7b0434c5eed1120bf9fbcc79d3}{}\label{classv8_1_1internal_1_1_translated_state_a20961a7b0434c5eed1120bf9fbcc79d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} {\bfseries Create\+Next\+Translated\+Frame} (Translation\+Iterator $\ast$iterator, \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$literal\+\_\+array, Address fp, F\+I\+LE $\ast$trace\+\_\+file)\hypertarget{classv8_1_1internal_1_1_translated_state_a5426a850016b40376c1bec403a80c003}{}\label{classv8_1_1internal_1_1_translated_state_a5426a850016b40376c1bec403a80c003}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_translated_value}{Translated\+Value} {\bfseries Create\+Next\+Translated\+Value} (int frame\+\_\+index, int value\+\_\+index, Translation\+Iterator $\ast$iterator, \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$literal\+\_\+array, Address fp, \hyperlink{classv8_1_1internal_1_1_register_values}{Register\+Values} $\ast$registers, F\+I\+LE $\ast$trace\+\_\+file)\hypertarget{classv8_1_1internal_1_1_translated_state_a5dc4be016b4b1e38de686ba6cd12c4fe}{}\label{classv8_1_1internal_1_1_translated_state_a5dc4be016b4b1e38de686ba6cd12c4fe}
+
+\item 
+void {\bfseries Update\+From\+Previously\+Materialized\+Objects} ()\hypertarget{classv8_1_1internal_1_1_translated_state_ae13d5635d69b456e74ae98754671e404}{}\label{classv8_1_1internal_1_1_translated_state_ae13d5635d69b456e74ae98754671e404}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Materialize\+At} (int frame\+\_\+index, int $\ast$value\+\_\+index)\hypertarget{classv8_1_1internal_1_1_translated_state_a5bbefd1740d05aef2422c5275bd65041}{}\label{classv8_1_1internal_1_1_translated_state_a5bbefd1740d05aef2422c5275bd65041}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Materialize\+Object\+At} (int object\+\_\+index)\hypertarget{classv8_1_1internal_1_1_translated_state_a48d2f37c98d5a407bcc29b3d6004dbf2}{}\label{classv8_1_1internal_1_1_translated_state_a48d2f37c98d5a407bcc29b3d6004dbf2}
+
+\item 
+bool {\bfseries Get\+Adapted\+Arguments} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ $\ast$result, int frame\+\_\+index)\hypertarget{classv8_1_1internal_1_1_translated_state_ad87be7e87acc4a7ac82c70acb5e991ee}{}\label{classv8_1_1internal_1_1_translated_state_ad87be7e87acc4a7ac82c70acb5e991ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t {\bfseries Get\+U\+Int32\+Slot} (Address fp, int slot\+\_\+index)\hypertarget{classv8_1_1internal_1_1_translated_state_afc3d5af27ac0df68a372578e0893c720}{}\label{classv8_1_1internal_1_1_translated_state_afc3d5af27ac0df68a372578e0893c720}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+friend {\bfseries Translated\+Value}\hypertarget{classv8_1_1internal_1_1_translated_state_a59c0b1c47a40379a0d4d601cad7988bb}{}\label{classv8_1_1internal_1_1_translated_state_a59c0b1c47a40379a0d4d601cad7988bb}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_translated_frame}{Translated\+Frame} $>$ {\bfseries frames\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_state_ac2def08acb3146d147e6a497ccc83ad6}{}\label{classv8_1_1internal_1_1_translated_state_ac2def08acb3146d147e6a497ccc83ad6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_state_a4444d2aefbbca9d54645cf1eb652346b}{}\label{classv8_1_1internal_1_1_translated_state_a4444d2aefbbca9d54645cf1eb652346b}
+
+\item 
+Address {\bfseries stack\+\_\+frame\+\_\+pointer\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_state_a0c371509599011773e34a598e2a6d904}{}\label{classv8_1_1internal_1_1_translated_state_a0c371509599011773e34a598e2a6d904}
+
+\item 
+bool {\bfseries has\+\_\+adapted\+\_\+arguments\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_state_abc1f5c693f5aca67bf1896190be868b6}{}\label{classv8_1_1internal_1_1_translated_state_abc1f5c693f5aca67bf1896190be868b6}
+
+\item 
+std\+::deque$<$ \hyperlink{structv8_1_1internal_1_1_translated_state_1_1_object_position}{Object\+Position} $>$ {\bfseries object\+\_\+positions\+\_\+}\hypertarget{classv8_1_1internal_1_1_translated_state_a843e4656c1cb19be990f5b574a232964}{}\label{classv8_1_1internal_1_1_translated_state_a843e4656c1cb19be990f5b574a232964}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+h\item 
+/\+Users/joshgav/node/v8/src/deoptimizer.\+cc\end{DoxyCompactItemize}

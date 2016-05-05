@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Inliner Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner}\index{v8\+::internal\+::compiler\+::\+J\+S\+Inliner@{v8\+::internal\+::compiler\+::\+J\+S\+Inliner}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Inliner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_j_s_inliner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries J\+S\+Inliner} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_advanced_reducer_1_1_editor}{Editor} $\ast$editor, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$local\+\_\+zone, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$jsgraph)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a903f843c1ba9b5c9e53da2ba0fefcd8c}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a903f843c1ba9b5c9e53da2ba0fefcd8c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a2107409713e64e84dc797fa5ca80f910}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a2107409713e64e84dc797fa5ca80f910}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a82ac079f73db801c17a49d405633b357}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a82ac079f73db801c17a49d405633b357}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Create\+Artificial\+Frame\+State} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$outer\+\_\+frame\+\_\+state, int parameter\+\_\+count, Frame\+State\+Type frame\+\_\+state\+\_\+type, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ shared)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_aa0206a6d02d79bf4a8749bd65d1e5b2c}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_aa0206a6d02d79bf4a8749bd65d1e5b2c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ {\bfseries Create\+Tail\+Caller\+Frame\+State} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$outer\+\_\+frame\+\_\+state)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a4494adc4286de2667c222a8b7afefa9f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a4494adc4286de2667c222a8b7afefa9f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Inline\+Call} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$call, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$new\+\_\+target, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$context, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$frame\+\_\+state, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_af5daeb87018863725f72450026a2cdf8}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_af5daeb87018863725f72450026a2cdf8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries local\+\_\+zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_afc7ecb45893b942cc33eb4de9da30902}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_afc7ecb45893b942cc33eb4de9da30902}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a370501c1d6bae52496e279d286c80e4b}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_a370501c1d6bae52496e279d286c80e4b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_aa3375c1d71f69e5e4a749fd1144a8719}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_inliner_aa3375c1d71f69e5e4a749fd1144a8719}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/inlining.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/inlining.\+cc\end{DoxyCompactItemize}

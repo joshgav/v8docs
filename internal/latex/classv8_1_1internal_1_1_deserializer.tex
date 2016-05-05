@@ -1,0 +1,141 @@
+\hypertarget{classv8_1_1internal_1_1_deserializer}{}\section{v8\+:\+:internal\+:\+:Deserializer Class Reference}
+\label{classv8_1_1internal_1_1_deserializer}\index{v8\+::internal\+::\+Deserializer@{v8\+::internal\+::\+Deserializer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Deserializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_deserializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Data $>$ }\\{\bfseries Deserializer} (\hyperlink{classv8_1_1_data}{Data} $\ast$data)\hypertarget{classv8_1_1internal_1_1_deserializer_a62e81a0dbaa0c6b1dceedae98f395de4}{}\label{classv8_1_1internal_1_1_deserializer_a62e81a0dbaa0c6b1dceedae98f395de4}
+
+\item 
+void {\bfseries Deserialize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_deserializer_a92f49a4e6c3ac1798069c2f3b1c49a1d}{}\label{classv8_1_1internal_1_1_deserializer_a92f49a4e6c3ac1798069c2f3b1c49a1d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Deserialize\+Partial} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_global_proxy}{J\+S\+Global\+Proxy} $>$ global\+\_\+proxy)\hypertarget{classv8_1_1internal_1_1_deserializer_a0465a8585cc172438efe833a84c6a224}{}\label{classv8_1_1internal_1_1_deserializer_a0465a8585cc172438efe833a84c6a224}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries Deserialize\+Code} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_deserializer_a56e2234ff58a8b4932575032b978f9d6}{}\label{classv8_1_1internal_1_1_deserializer_a56e2234ff58a8b4932575032b978f9d6}
+
+\item 
+void {\bfseries Set\+Attached\+Objects} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ attached\+\_\+objects)\hypertarget{classv8_1_1internal_1_1_deserializer_a43d1531a77b7456e390e15e898ae737b}{}\label{classv8_1_1internal_1_1_deserializer_a43d1531a77b7456e390e15e898ae737b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Visit\+Pointers} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end) override\hypertarget{classv8_1_1internal_1_1_deserializer_a0320157499370069258d39c0538bedc7}{}\label{classv8_1_1internal_1_1_deserializer_a0320157499370069258d39c0538bedc7}
+
+\item 
+void {\bfseries Synchronize} (Visitor\+Synchronization\+::\+Sync\+Tag tag) override\hypertarget{classv8_1_1internal_1_1_deserializer_a7236e2944e7df09be0c7c01f5655afdc}{}\label{classv8_1_1internal_1_1_deserializer_a7236e2944e7df09be0c7c01f5655afdc}
+
+\item 
+void {\bfseries Visit\+Runtime\+Entry} (\hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $\ast$rinfo) override\hypertarget{classv8_1_1internal_1_1_deserializer_ab78932f9040302fffaad64cead9a2798}{}\label{classv8_1_1internal_1_1_deserializer_ab78932f9040302fffaad64cead9a2798}
+
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_deserializer_a1466d0682628662163d3b9fbaab41a1e}{}\label{classv8_1_1internal_1_1_deserializer_a1466d0682628662163d3b9fbaab41a1e}
+
+\item 
+bool {\bfseries deserializing\+\_\+user\+\_\+code} ()\hypertarget{classv8_1_1internal_1_1_deserializer_aa457da1f0bedc45ec1d253aa5027f7a7}{}\label{classv8_1_1internal_1_1_deserializer_aa457da1f0bedc45ec1d253aa5027f7a7}
+
+\item 
+void {\bfseries Decode\+Reservation} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const \hyperlink{classv8_1_1internal_1_1_serialized_data_1_1_reservation}{Serialized\+Data\+::\+Reservation} $>$ res)\hypertarget{classv8_1_1internal_1_1_deserializer_a3e4ab7ca768425b3c3d8424c0cfdb638}{}\label{classv8_1_1internal_1_1_deserializer_a3e4ab7ca768425b3c3d8424c0cfdb638}
+
+\item 
+bool {\bfseries Reserve\+Space} ()\hypertarget{classv8_1_1internal_1_1_deserializer_a5cf9de6293b41ce7ab860e151c879b5d}{}\label{classv8_1_1internal_1_1_deserializer_a5cf9de6293b41ce7ab860e151c879b5d}
+
+\item 
+void {\bfseries Unaligned\+Copy} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$dest, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$src)\hypertarget{classv8_1_1internal_1_1_deserializer_a163861aed6fe819e61e6339a4f14d5a4}{}\label{classv8_1_1internal_1_1_deserializer_a163861aed6fe819e61e6339a4f14d5a4}
+
+\item 
+void {\bfseries Set\+Alignment} (byte data)\hypertarget{classv8_1_1internal_1_1_deserializer_ac91f9605481ac117e62236e30b45e653}{}\label{classv8_1_1internal_1_1_deserializer_ac91f9605481ac117e62236e30b45e653}
+
+\item 
+void {\bfseries Deserialize\+Deferred\+Objects} ()\hypertarget{classv8_1_1internal_1_1_deserializer_a89963f6dbee71f8241c29da5d8c9e4df}{}\label{classv8_1_1internal_1_1_deserializer_a89963f6dbee71f8241c29da5d8c9e4df}
+
+\item 
+void {\bfseries Flush\+I\+Cache\+For\+New\+Isolate} ()\hypertarget{classv8_1_1internal_1_1_deserializer_a6cbf1aca00ce953e28d4965f28f3f395}{}\label{classv8_1_1internal_1_1_deserializer_a6cbf1aca00ce953e28d4965f28f3f395}
+
+\item 
+void {\bfseries Flush\+I\+Cache\+For\+New\+Code\+Objects} ()\hypertarget{classv8_1_1internal_1_1_deserializer_afd13530e71f5186f86ec04cc367cece1}{}\label{classv8_1_1internal_1_1_deserializer_afd13530e71f5186f86ec04cc367cece1}
+
+\item 
+void {\bfseries Commit\+Post\+Processed\+Objects} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_deserializer_aff62e62f2d50e367fa2caef1626ddc76}{}\label{classv8_1_1internal_1_1_deserializer_aff62e62f2d50e367fa2caef1626ddc76}
+
+\item 
+bool {\bfseries Read\+Data} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$start, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$end, int space, Address object\+\_\+address)\hypertarget{classv8_1_1internal_1_1_deserializer_ae824a1f18d80a209ada189b8339504e6}{}\label{classv8_1_1internal_1_1_deserializer_ae824a1f18d80a209ada189b8339504e6}
+
+\item 
+void {\bfseries Read\+Object} (int space\+\_\+number, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$write\+\_\+back)\hypertarget{classv8_1_1internal_1_1_deserializer_aed8be927e99ccf0348ec2fddf4884d9d}{}\label{classv8_1_1internal_1_1_deserializer_aed8be927e99ccf0348ec2fddf4884d9d}
+
+\item 
+Address {\bfseries Allocate} (int space\+\_\+index, int size)\hypertarget{classv8_1_1internal_1_1_deserializer_a4968267f2d68e189b65e0a1dd0118058}{}\label{classv8_1_1internal_1_1_deserializer_a4968267f2d68e189b65e0a1dd0118058}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries Post\+Process\+New\+Object} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, int space)\hypertarget{classv8_1_1internal_1_1_deserializer_a89f82de2d9b9bc9ae3f734a02e453d64}{}\label{classv8_1_1internal_1_1_deserializer_a89f82de2d9b9bc9ae3f734a02e453d64}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries Get\+Back\+Referenced\+Object} (int space)\hypertarget{classv8_1_1internal_1_1_deserializer_a5d171b0586015f2e9988cac14149d41b}{}\label{classv8_1_1internal_1_1_deserializer_a5d171b0586015f2e9988cac14149d41b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries Copy\+In\+Natives\+Source} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const char $>$ source\+\_\+vector, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$current)\hypertarget{classv8_1_1internal_1_1_deserializer_afdab67ab0dbe07ba04e947dd1516b8f9}{}\label{classv8_1_1internal_1_1_deserializer_afdab67ab0dbe07ba04e947dd1516b8f9}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_deserializer}{Deserializer})\hypertarget{classv8_1_1internal_1_1_deserializer_a71816f5867e5ad03c871bcba40e1d7ea}{}\label{classv8_1_1internal_1_1_deserializer_a71816f5867e5ad03c871bcba40e1d7ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a1382ad0863b0ac0a93f8043c663cd9b9}{}\label{classv8_1_1internal_1_1_deserializer_a1382ad0863b0ac0a93f8043c663cd9b9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ $>$ {\bfseries attached\+\_\+objects\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_afd860d81245c79ae7b0a10d3b8741b85}{}\label{classv8_1_1internal_1_1_deserializer_afd860d81245c79ae7b0a10d3b8741b85}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_snapshot_byte_source}{Snapshot\+Byte\+Source} {\bfseries source\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a3d6b13b48bb12f13caedd1aa2cb8d6c1}{}\label{classv8_1_1internal_1_1_deserializer_a3d6b13b48bb12f13caedd1aa2cb8d6c1}
+
+\item 
+uint32\+\_\+t {\bfseries magic\+\_\+number\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a860aedb84d38841878d53f6b1d6a3515}{}\label{classv8_1_1internal_1_1_deserializer_a860aedb84d38841878d53f6b1d6a3515}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{Heap\+::\+Reservation} {\bfseries reservations\+\_\+} \mbox{[}k\+Number\+Of\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_deserializer_a06ce97d13da3c68805a2d15804c895d0}{}\label{classv8_1_1internal_1_1_deserializer_a06ce97d13da3c68805a2d15804c895d0}
+
+\item 
+uint32\+\_\+t {\bfseries current\+\_\+chunk\+\_\+} \mbox{[}k\+Number\+Of\+Preallocated\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_deserializer_ae86ac1d8c431a30a187eb9eada7f6d19}{}\label{classv8_1_1internal_1_1_deserializer_ae86ac1d8c431a30a187eb9eada7f6d19}
+
+\item 
+Address {\bfseries high\+\_\+water\+\_\+} \mbox{[}k\+Number\+Of\+Preallocated\+Spaces\mbox{]}\hypertarget{classv8_1_1internal_1_1_deserializer_ad69e03880f63a236802f51d570bb6295}{}\label{classv8_1_1internal_1_1_deserializer_ad69e03880f63a236802f51d570bb6295}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_external_reference_table}{External\+Reference\+Table} $\ast$ {\bfseries external\+\_\+reference\+\_\+table\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a7b0356ca139b5b26b0a436f4a0f12ed1}{}\label{classv8_1_1internal_1_1_deserializer_a7b0356ca139b5b26b0a436f4a0f12ed1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ $>$ {\bfseries deserialized\+\_\+large\+\_\+objects\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a69fb23dae191b385501079be0894873b}{}\label{classv8_1_1internal_1_1_deserializer_a69fb23dae191b385501079be0894873b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ $>$ {\bfseries new\+\_\+code\+\_\+objects\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_aa0937f305d15ba723ffaea14eff59b58}{}\label{classv8_1_1internal_1_1_deserializer_aa0937f305d15ba723ffaea14eff59b58}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ $>$ {\bfseries new\+\_\+internalized\+\_\+strings\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_aeae466d8a728bd3cbe40918decea1fec}{}\label{classv8_1_1internal_1_1_deserializer_aeae466d8a728bd3cbe40918decea1fec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ $>$ {\bfseries new\+\_\+scripts\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_ad0bfa52706625efed47add87332c672f}{}\label{classv8_1_1internal_1_1_deserializer_ad0bfa52706625efed47add87332c672f}
+
+\item 
+bool {\bfseries deserializing\+\_\+user\+\_\+code\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_ad76c855151aaa54b2d7b795386e8a63e}{}\label{classv8_1_1internal_1_1_deserializer_ad76c855151aaa54b2d7b795386e8a63e}
+
+\item 
+Allocation\+Alignment {\bfseries next\+\_\+alignment\+\_\+}\hypertarget{classv8_1_1internal_1_1_deserializer_a9dbd85144685566d2c1c1b555c75eb1d}{}\label{classv8_1_1internal_1_1_deserializer_a9dbd85144685566d2c1c1b555c75eb1d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/deserializer.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/deserializer.\+cc\end{DoxyCompactItemize}

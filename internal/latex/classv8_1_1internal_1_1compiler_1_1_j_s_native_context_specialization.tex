@@ -1,0 +1,138 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Native\+Context\+Specialization Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization}\index{v8\+::internal\+::compiler\+::\+J\+S\+Native\+Context\+Specialization@{v8\+::internal\+::compiler\+::\+J\+S\+Native\+Context\+Specialization}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:J\+S\+Native\+Context\+Specialization\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Flag} \{ \\*
+{\bfseries k\+No\+Flags} = 0u, 
+\\*
+{\bfseries k\+Bailout\+On\+Uninitialized} = 1u $<$$<$ 0, 
+\\*
+{\bfseries k\+Deoptimization\+Enabled} = 1u $<$$<$ 1
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ac5300a26368d26f68369e3cacc6d6cc8}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ac5300a26368d26f68369e3cacc6d6cc8}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Flag $>$ {\bfseries Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8bf4c1fac7e619700be7c15cfa75be9e}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8bf4c1fac7e619700be7c15cfa75be9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries J\+S\+Native\+Context\+Specialization} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_advanced_reducer_1_1_editor}{Editor} $\ast$editor, \hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$jsgraph, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags, \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context, \hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$dependencies, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8b207c52f18156b4faf1969798a62482}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8b207c52f18156b4faf1969798a62482}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae691af2aa397791c9bbb927e6fd705dd}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae691af2aa397791c9bbb927e6fd705dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Load\+Context} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8e85428c27aa67a4a4645dd76d759372}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8e85428c27aa67a4a4645dd76d759372}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Load\+Named} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a90e2b0043c056e6c16f2ef3869a8100c}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a90e2b0043c056e6c16f2ef3869a8100c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Store\+Named} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_acc31fa4fea10ddafb459e4a6722b162d}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_acc31fa4fea10ddafb459e4a6722b162d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Load\+Property} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a87de7d6b0637400b522ba5c50c581c84}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a87de7d6b0637400b522ba5c50c581c84}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+J\+S\+Store\+Property} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae81d7b587d8e88a783b485dc70993c22}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae81d7b587d8e88a783b485dc70993c22}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Element\+Access} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1_list}{Map\+Handle\+List} const \&receiver\+\_\+maps, Access\+Mode access\+\_\+mode, Language\+Mode language\+\_\+mode, Keyed\+Access\+Store\+Mode store\+\_\+mode)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a0a52f066b27dc2d5da0fc8041a3a9ea7}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a0a52f066b27dc2d5da0fc8041a3a9ea7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Keyed\+Access} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1_feedback_nexus}{Feedback\+Nexus} const \&nexus, Access\+Mode access\+\_\+mode, Language\+Mode language\+\_\+mode, Keyed\+Access\+Store\+Mode store\+\_\+mode)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ad439955a835a3e05f7fa40475c79979f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ad439955a835a3e05f7fa40475c79979f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Named\+Access} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1_feedback_nexus}{Feedback\+Nexus} const \&nexus, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Access\+Mode access\+\_\+mode, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a9c404a37cbf3ae550c34da7a9aee0db3}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a9c404a37cbf3ae550c34da7a9aee0db3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Named\+Access} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1_list}{Map\+Handle\+List} const \&receiver\+\_\+maps, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Access\+Mode access\+\_\+mode, Language\+Mode language\+\_\+mode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index=nullptr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a935150211b61f20a436b97973c9759bb}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a935150211b61f20a436b97973c9759bb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce\+Soft\+Deoptimize} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a84cc895938cc49224a159e748cab79c8}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a84cc895938cc49224a159e748cab79c8}
+
+\item 
+void {\bfseries Assume\+Prototypes\+Stable} (\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$receiver\+\_\+type, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ holder)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a069df89bdc4586e1e52ae5814219349f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a069df89bdc4586e1e52ae5814219349f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries Get\+Native\+Context} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_aee3e56770e799ae51983f9e021f4e539}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_aee3e56770e799ae51983f9e021f4e539}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ac91961771fdecd9df38c2164ba22d9bb}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ac91961771fdecd9df38c2164ba22d9bb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$ {\bfseries jsgraph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a119ce5b08f5b2566a1bb9f1432e74851}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a119ce5b08f5b2566a1bb9f1432e74851}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a1bb4bacc3a2da7f77be752f9b4d97802}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a1bb4bacc3a2da7f77be752f9b4d97802}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_factory}{Factory} $\ast$ {\bfseries factory} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae2d00acd9d3032592b3cf82aec444de1}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae2d00acd9d3032592b3cf82aec444de1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_common_operator_builder}{Common\+Operator\+Builder} $\ast$ {\bfseries common} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a3e71200ab938603206cf6b4c5af42fd4}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a3e71200ab938603206cf6b4c5af42fd4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_operator_builder}{J\+S\+Operator\+Builder} $\ast$ {\bfseries javascript} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ab31ef6a97a487889b0ba83f04d3aa39b}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ab31ef6a97a487889b0ba83f04d3aa39b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_simplified_operator_builder}{Simplified\+Operator\+Builder} $\ast$ {\bfseries simplified} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_adb34c896008788a82afff92402937a2a}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_adb34c896008788a82afff92402937a2a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_machine_operator_builder}{Machine\+Operator\+Builder} $\ast$ {\bfseries machine} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a7617c05b46f73cf02f521c5f1a421b56}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a7617c05b46f73cf02f521c5f1a421b56}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae36ae6915195cb94a1044b4cea3ae57f}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ae36ae6915195cb94a1044b4cea3ae57f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries native\+\_\+context} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a31bf4091aa907482caba68051306adae}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a31bf4091aa907482caba68051306adae}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$ {\bfseries dependencies} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ad5aa7a96fc4c9064b59008b33145019a}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_ad5aa7a96fc4c9064b59008b33145019a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a7405d0229e85154c0fe3c0440686fa25}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a7405d0229e85154c0fe3c0440686fa25}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization}{J\+S\+Native\+Context\+Specialization})\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a95a9d1bdad725fa403dfa045d98671a4}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a95a9d1bdad725fa403dfa045d98671a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_j_s_graph}{J\+S\+Graph} $\ast$const {\bfseries jsgraph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a4067eb9586bb5dce06ffeac57b0f5402}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a4067eb9586bb5dce06ffeac57b0f5402}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} const {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a4f643a9abfdf24315c1a91a028924cf2}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a4f643a9abfdf24315c1a91a028924cf2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries native\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a3577c193300b202c0d792a0d1aaa0a8e}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a3577c193300b202c0d792a0d1aaa0a8e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_dependencies}{Compilation\+Dependencies} $\ast$const {\bfseries dependencies\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_afdc306e1aeb1963ec23ea60ac53ea45e}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_afdc306e1aeb1963ec23ea60ac53ea45e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$const {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8c3f3b2062dfe26ed4e000f452679061}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8c3f3b2062dfe26ed4e000f452679061}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type_cache}{Type\+Cache} const \& {\bfseries type\+\_\+cache\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8f10c27f30b4a65386fe9922ed06e1c8}{}\label{classv8_1_1internal_1_1compiler_1_1_j_s_native_context_specialization_a8f10c27f30b4a65386fe9922ed06e1c8}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/native-\/context-\/specialization.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/js-\/native-\/context-\/specialization.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1_typed_frame_constants}{}\section{v8\+:\+:internal\+:\+:Typed\+Frame\+Constants Class Reference}
+\label{classv8_1_1internal_1_1_typed_frame_constants}\index{v8\+::internal\+::\+Typed\+Frame\+Constants@{v8\+::internal\+::\+Typed\+Frame\+Constants}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Typed\+Frame\+Constants\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classv8_1_1internal_1_1_typed_frame_constants}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Frame\+Type\+Size} = k\+Context\+Or\+Frame\+Type\+Size\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_a9f27a6c849e2c3314dbc319b3027d5d5}{}\label{classv8_1_1internal_1_1_typed_frame_constants_a9f27a6c849e2c3314dbc319b3027d5d5}
+
+\item 
+static const int {\bfseries k\+Frame\+Type\+Offset} = k\+Context\+Or\+Frame\+Type\+Offset\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_a2138876a293d0bc304765b34c2ebca43}{}\label{classv8_1_1internal_1_1_typed_frame_constants_a2138876a293d0bc304765b34c2ebca43}
+
+\item 
+static const int {\bfseries k\+Fixed\+Frame\+Size\+From\+Fp} = k\+C\+P\+Slot\+Size + k\+Frame\+Type\+Size\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_ab41b085b82a3b368e1e7e7cb628f13d3}{}\label{classv8_1_1internal_1_1_typed_frame_constants_ab41b085b82a3b368e1e7e7cb628f13d3}
+
+\item 
+static const int {\bfseries k\+Fixed\+Slot\+Count\+From\+Fp} = k\+Fixed\+Frame\+Size\+From\+Fp / k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_ad402324eef4b1d9574e944b82493d63d}{}\label{classv8_1_1internal_1_1_typed_frame_constants_ad402324eef4b1d9574e944b82493d63d}
+
+\item 
+static const int {\bfseries k\+Fixed\+Frame\+Size}
+\item 
+static const int {\bfseries k\+Fixed\+Slot\+Count} = k\+Fixed\+Frame\+Size / k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_aa1dcdbaffcbd606b54b92537b06237d2}{}\label{classv8_1_1internal_1_1_typed_frame_constants_aa1dcdbaffcbd606b54b92537b06237d2}
+
+\item 
+static const int {\bfseries k\+First\+Pushed\+Frame\+Value\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Typed\+Frame\+Constants@{v8\+::internal\+::\+Typed\+Frame\+Constants}!k\+First\+Pushed\+Frame\+Value\+Offset@{k\+First\+Pushed\+Frame\+Value\+Offset}}
+\index{k\+First\+Pushed\+Frame\+Value\+Offset@{k\+First\+Pushed\+Frame\+Value\+Offset}!v8\+::internal\+::\+Typed\+Frame\+Constants@{v8\+::internal\+::\+Typed\+Frame\+Constants}}
+\subsubsection[{\texorpdfstring{k\+First\+Pushed\+Frame\+Value\+Offset}{kFirstPushedFrameValueOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Typed\+Frame\+Constants\+::k\+First\+Pushed\+Frame\+Value\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_a7b2a60dee8b053a303828698443d07e3}{}\label{classv8_1_1internal_1_1_typed_frame_constants_a7b2a60dee8b053a303828698443d07e3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      -StandardFrameConstants::kCPSlotSize - kFrameTypeSize - kPointerSize
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Typed\+Frame\+Constants@{v8\+::internal\+::\+Typed\+Frame\+Constants}!k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}}
+\index{k\+Fixed\+Frame\+Size@{k\+Fixed\+Frame\+Size}!v8\+::internal\+::\+Typed\+Frame\+Constants@{v8\+::internal\+::\+Typed\+Frame\+Constants}}
+\subsubsection[{\texorpdfstring{k\+Fixed\+Frame\+Size}{kFixedFrameSize}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Typed\+Frame\+Constants\+::k\+Fixed\+Frame\+Size\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_typed_frame_constants_ac4aa1f33bbed1aac131c26f7579a45ac}{}\label{classv8_1_1internal_1_1_typed_frame_constants_ac4aa1f33bbed1aac131c26f7579a45ac}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      StandardFrameConstants::kFixedFrameSizeAboveFp + kFixedFrameSizeFromFp
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/frames.\+h\end{DoxyCompactItemize}

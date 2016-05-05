@@ -1,0 +1,94 @@
+\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator}{}\section{v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+:\+:Evacuator Class Reference}
+\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator}\index{v8\+::internal\+::\+Mark\+Compact\+Collector\+::\+Evacuator@{v8\+::internal\+::\+Mark\+Compact\+Collector\+::\+Evacuator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Mark\+Compact\+Collector\+:\+:Evacuator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Evacuator} (\hyperlink{classv8_1_1internal_1_1_mark_compact_collector}{Mark\+Compact\+Collector} $\ast$collector)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_aa10dd913c673cfb9dc81e7feee451b35}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_aa10dd913c673cfb9dc81e7feee451b35}
+
+\item 
+bool {\bfseries Evacuate\+Page} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_ad4230377f82124adf759e66c8faa88e7}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_ad4230377f82124adf759e66c8faa88e7}
+
+\item 
+void {\bfseries Finalize} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a00135e355a27a506f67b150f9da229c2}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a00135e355a27a506f67b150f9da229c2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compaction_space_collection}{Compaction\+Space\+Collection} $\ast$ {\bfseries compaction\+\_\+spaces} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_af33c4b5ccf30d1f455772b53eb0421fc}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_af33c4b5ccf30d1f455772b53eb0421fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Page\+Evacuation\+Threshold} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_ac4be21dbd79163503544f3b8706eca8e}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_ac4be21dbd79163503544f3b8706eca8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Evacuation\+Mode} \{ \\*
+{\bfseries k\+Objects\+New\+To\+Old}, 
+\\*
+{\bfseries k\+Page\+New\+To\+Old}, 
+\\*
+{\bfseries k\+Objects\+Old\+To\+Old}
+ \}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a018a67b272bb601ce1de85b4f7aa5ae8}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a018a67b272bb601ce1de85b4f7aa5ae8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} ()\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a4d6d1dcdb640395d8dab534408f7b386}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a4d6d1dcdb640395d8dab534408f7b386}
+
+\item 
+Evacuation\+Mode {\bfseries Compute\+Evacuation\+Mode} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a912c0c007b710bdb88b15a656bd43d13}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a912c0c007b710bdb88b15a656bd43d13}
+
+\item 
+void {\bfseries Report\+Compaction\+Progress} (double duration, intptr\+\_\+t bytes\+\_\+compacted)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a7350752b0dd08a2f84793d93a003cd02}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a7350752b0dd08a2f84793d93a003cd02}
+
+\item 
+{\footnotesize template$<$Iteration\+Mode mode, class Visitor $>$ }\\bool {\bfseries Evacuate\+Single\+Page} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$p, Visitor $\ast$visitor)\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a97139e191dfc5927a89a5caf73f412c5}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a97139e191dfc5927a89a5caf73f412c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_mark_compact_collector}{Mark\+Compact\+Collector} $\ast$ {\bfseries collector\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a4a44d7ff660063f502c9d5b9b26612ce}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a4a44d7ff660063f502c9d5b9b26612ce}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compaction_space_collection}{Compaction\+Space\+Collection} {\bfseries compaction\+\_\+spaces\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a17a182c01278cdd0acc9f87ccf046000}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a17a182c01278cdd0acc9f87ccf046000}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_template_hash_map_impl}{Hash\+Map} {\bfseries local\+\_\+pretenuring\+\_\+feedback\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_af833263be9639acb56bc7a457e6a458b}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_af833263be9639acb56bc7a457e6a458b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuate_new_space_visitor}{Evacuate\+New\+Space\+Visitor} {\bfseries new\+\_\+space\+\_\+visitor\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a5aefbef0cc4efdf42ec5dff5198c413f}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a5aefbef0cc4efdf42ec5dff5198c413f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuate_new_space_page_visitor}{Evacuate\+New\+Space\+Page\+Visitor} {\bfseries new\+\_\+space\+\_\+page\+\_\+visitor}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a1de8ea19c4b3402c341fbd34ae8e7721}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a1de8ea19c4b3402c341fbd34ae8e7721}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuate_old_space_visitor}{Evacuate\+Old\+Space\+Visitor} {\bfseries old\+\_\+space\+\_\+visitor\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a7ebc4c0f20c4323fc2fca4bf705c40ac}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a7ebc4c0f20c4323fc2fca4bf705c40ac}
+
+\item 
+double {\bfseries duration\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a823e2bdd8f0375a23ebd68281a1b3623}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a823e2bdd8f0375a23ebd68281a1b3623}
+
+\item 
+intptr\+\_\+t {\bfseries bytes\+\_\+compacted\+\_\+}\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a244610b0da2db44ba5889524ccc4042e}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a244610b0da2db44ba5889524ccc4042e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Initial\+Local\+Pretenuring\+Feedback\+Capacity} = 256\hypertarget{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a31f7a98cc8d3e4cec4e9ec783d6c0ac1}{}\label{classv8_1_1internal_1_1_mark_compact_collector_1_1_evacuator_a31f7a98cc8d3e4cec4e9ec783d6c0ac1}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/mark-\/compact.\+cc\end{DoxyCompactItemize}

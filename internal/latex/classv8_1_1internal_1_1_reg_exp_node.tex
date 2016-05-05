@@ -1,0 +1,141 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_node}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Node Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_node}\index{v8\+::internal\+::\+Reg\+Exp\+Node@{v8\+::internal\+::\+Reg\+Exp\+Node}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.163636cm]{classv8_1_1internal_1_1_reg_exp_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Node} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_add9600e01845a3ef14f42ab18177ca3c}{}\label{classv8_1_1internal_1_1_reg_exp_node_add9600e01845a3ef14f42ab18177ca3c}
+
+\item 
+virtual void {\bfseries Accept} (\hyperlink{classv8_1_1internal_1_1_node_visitor}{Node\+Visitor} $\ast$visitor)=0\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ac6b89282f32103ee66d71780f738350b}{}\label{classv8_1_1internal_1_1_reg_exp_node_ac6b89282f32103ee66d71780f738350b}
+
+\item 
+virtual void {\bfseries Emit} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_trace}{Trace} $\ast$trace)=0\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ab9cd401dec1ad113895eab29871317c6}{}\label{classv8_1_1internal_1_1_reg_exp_node_ab9cd401dec1ad113895eab29871317c6}
+
+\item 
+virtual int {\bfseries Eats\+At\+Least} (int still\+\_\+to\+\_\+find, int budget, bool not\+\_\+at\+\_\+start)=0\hypertarget{classv8_1_1internal_1_1_reg_exp_node_aea14efd681709d8fd872361f05c4abf8}{}\label{classv8_1_1internal_1_1_reg_exp_node_aea14efd681709d8fd872361f05c4abf8}
+
+\item 
+bool {\bfseries Emit\+Quick\+Check} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_trace}{Trace} $\ast$bounds\+\_\+check\+\_\+trace, \hyperlink{classv8_1_1internal_1_1_trace}{Trace} $\ast$trace, bool preload\+\_\+has\+\_\+checked\+\_\+bounds, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+possible\+\_\+success, \hyperlink{classv8_1_1internal_1_1_quick_check_details}{Quick\+Check\+Details} $\ast$details\+\_\+return, bool fall\+\_\+through\+\_\+on\+\_\+failure)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a9926645d60a5ce538c4c79f8e7151ca2}{}\label{classv8_1_1internal_1_1_reg_exp_node_a9926645d60a5ce538c4c79f8e7151ca2}
+
+\item 
+virtual void {\bfseries Get\+Quick\+Check\+Details} (\hyperlink{classv8_1_1internal_1_1_quick_check_details}{Quick\+Check\+Details} $\ast$details, \hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, int characters\+\_\+filled\+\_\+in, bool not\+\_\+at\+\_\+start)=0\hypertarget{classv8_1_1internal_1_1_reg_exp_node_add5e1fa780c60d5b3a910c00ed713ff6}{}\label{classv8_1_1internal_1_1_reg_exp_node_add5e1fa780c60d5b3a910c00ed713ff6}
+
+\item 
+virtual int {\bfseries Greedy\+Loop\+Text\+Length} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_node_aa7f55d54a0ffe45d303773b96ac5ef68}{}\label{classv8_1_1internal_1_1_reg_exp_node_aa7f55d54a0ffe45d303773b96ac5ef68}
+
+\item 
+virtual \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries Get\+Successor\+Of\+Omnivorous\+Text\+Node} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a3e648c04dbac6ee8045e8aeeafeb905e}{}\label{classv8_1_1internal_1_1_reg_exp_node_a3e648c04dbac6ee8045e8aeeafeb905e}
+
+\item 
+bool {\bfseries Keep\+Recursing} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a409f7d70b3e445a4ba65606759a3fa14}{}\label{classv8_1_1internal_1_1_reg_exp_node_a409f7d70b3e445a4ba65606759a3fa14}
+
+\item 
+virtual void {\bfseries Fill\+In\+B\+M\+Info} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int offset, int budget, \hyperlink{classv8_1_1internal_1_1_boyer_moore_lookahead}{Boyer\+Moore\+Lookahead} $\ast$bm, bool not\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a208754eba18d54c32d3d047c851d52f7}{}\label{classv8_1_1internal_1_1_reg_exp_node_a208754eba18d54c32d3d047c851d52f7}
+
+\item 
+virtual \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries Filter\+One\+Byte} (int depth, bool ignore\+\_\+case)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ad6a9cf0e0c459207ef4aa12e0fd3b6de}{}\label{classv8_1_1internal_1_1_reg_exp_node_ad6a9cf0e0c459207ef4aa12e0fd3b6de}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries replacement} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a5106a9e3526079e16cc999ba4bbadad1}{}\label{classv8_1_1internal_1_1_reg_exp_node_a5106a9e3526079e16cc999ba4bbadad1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries set\+\_\+replacement} (\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$replacement)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_abe1b803364b2e377ec428bc9920c94ca}{}\label{classv8_1_1internal_1_1_reg_exp_node_abe1b803364b2e377ec428bc9920c94ca}
+
+\item 
+void {\bfseries Save\+B\+M\+Info} (\hyperlink{classv8_1_1internal_1_1_boyer_moore_lookahead}{Boyer\+Moore\+Lookahead} $\ast$bm, bool not\+\_\+at\+\_\+start, int offset)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a6267579804303b6f30263d6470949ffe}{}\label{classv8_1_1internal_1_1_reg_exp_node_a6267579804303b6f30263d6470949ffe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries label} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a1a0b5a61d350613e23c5014f80e79d3e}{}\label{classv8_1_1internal_1_1_reg_exp_node_a1a0b5a61d350613e23c5014f80e79d3e}
+
+\item 
+bool {\bfseries on\+\_\+work\+\_\+list} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_node_aa140eaf712345d61115c6cfbc8042cc9}{}\label{classv8_1_1internal_1_1_reg_exp_node_aa140eaf712345d61115c6cfbc8042cc9}
+
+\item 
+void {\bfseries set\+\_\+on\+\_\+work\+\_\+list} (bool value)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_af06878e6453358c2cec014fd3e7e97bd}{}\label{classv8_1_1internal_1_1_reg_exp_node_af06878e6453358c2cec014fd3e7e97bd}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_node_info}{Node\+Info} $\ast$ {\bfseries info} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a9a3f9318b3322877937dbd62b479531d}{}\label{classv8_1_1internal_1_1_reg_exp_node_a9a3f9318b3322877937dbd62b479531d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_boyer_moore_lookahead}{Boyer\+Moore\+Lookahead} $\ast$ {\bfseries bm\+\_\+info} (bool not\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a11d15a06b5e058ace41d292bdb261c9a}{}\label{classv8_1_1internal_1_1_reg_exp_node_a11d15a06b5e058ace41d292bdb261c9a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_reg_exp_node_aa35e3ffbc83c944ea9bf6360ec8579ab}{}\label{classv8_1_1internal_1_1_reg_exp_node_aa35e3ffbc83c944ea9bf6360ec8579ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Node\+Is\+Too\+Complex\+For\+Greedy\+Loops} = k\+Min\+Int\hypertarget{classv8_1_1internal_1_1_reg_exp_node_acdf311f0dacb16f281babbdd2ed30a70}{}\label{classv8_1_1internal_1_1_reg_exp_node_acdf311f0dacb16f281babbdd2ed30a70}
+
+\item 
+static const int {\bfseries k\+Recursion\+Budget} = 200\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ac77fc160c5ff5db7808583c401c65ede}{}\label{classv8_1_1internal_1_1_reg_exp_node_ac77fc160c5ff5db7808583c401c65ede}
+
+\item 
+static const int {\bfseries k\+Max\+Copies\+Code\+Generated} = 10\hypertarget{classv8_1_1internal_1_1_reg_exp_node_aee16545e1cda3652a44891cefb9e60ad}{}\label{classv8_1_1internal_1_1_reg_exp_node_aee16545e1cda3652a44891cefb9e60ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Limit\+Result} \{ \\*
+{\bfseries D\+O\+NE}, 
+\\*
+{\bfseries C\+O\+N\+T\+I\+N\+UE}
+ \}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a500fa4ebb18d4f45d6ea99e6da33defc}{}\label{classv8_1_1internal_1_1_reg_exp_node_a500fa4ebb18d4f45d6ea99e6da33defc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Limit\+Result {\bfseries Limit\+Versions} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_trace}{Trace} $\ast$trace)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a5b390ba923933075f890a385a6b1b5ee}{}\label{classv8_1_1internal_1_1_reg_exp_node_a5b390ba923933075f890a385a6b1b5ee}
+
+\item 
+void {\bfseries set\+\_\+bm\+\_\+info} (bool not\+\_\+at\+\_\+start, \hyperlink{classv8_1_1internal_1_1_boyer_moore_lookahead}{Boyer\+Moore\+Lookahead} $\ast$bm)\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a1d97a915147648cff2a1792e2651547c}{}\label{classv8_1_1internal_1_1_reg_exp_node_a1d97a915147648cff2a1792e2651547c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries replacement\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_aac19aaa0fa38bce51ee5b9977c9cf2c5}{}\label{classv8_1_1internal_1_1_reg_exp_node_aac19aaa0fa38bce51ee5b9977c9cf2c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a4fbedfc648b29620ba0a7d87a6eeea39}{}\label{classv8_1_1internal_1_1_reg_exp_node_a4fbedfc648b29620ba0a7d87a6eeea39}
+
+\item 
+bool {\bfseries on\+\_\+work\+\_\+list\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a3a1502c180972f2191863d4c480ebdc9}{}\label{classv8_1_1internal_1_1_reg_exp_node_a3a1502c180972f2191863d4c480ebdc9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_node_info}{Node\+Info} {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ac4b8309aa1d12e6143cddb360e77f72b}{}\label{classv8_1_1internal_1_1_reg_exp_node_ac4b8309aa1d12e6143cddb360e77f72b}
+
+\item 
+int {\bfseries trace\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_ae7ee40d270dee0772674605d150ca812}{}\label{classv8_1_1internal_1_1_reg_exp_node_ae7ee40d270dee0772674605d150ca812}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_boyer_moore_lookahead}{Boyer\+Moore\+Lookahead} $\ast$ {\bfseries bm\+\_\+info\+\_\+} \mbox{[}2\mbox{]}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a32a3c84bd6ac61f8277ca16b902175fd}{}\label{classv8_1_1internal_1_1_reg_exp_node_a32a3c84bd6ac61f8277ca16b902175fd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_node_a0bb4f21f69f53894e766a74a9db5a908}{}\label{classv8_1_1internal_1_1_reg_exp_node_a0bb4f21f69f53894e766a74a9db5a908}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+First\+Char\+Budget} = 10\hypertarget{classv8_1_1internal_1_1_reg_exp_node_af28889602c9ab46365f8959ef1cc0b95}{}\label{classv8_1_1internal_1_1_reg_exp_node_af28889602c9ab46365f8959ef1cc0b95}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\end{DoxyCompactItemize}

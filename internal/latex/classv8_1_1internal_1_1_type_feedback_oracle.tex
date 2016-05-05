@@ -1,0 +1,155 @@
+\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle}{}\section{v8\+:\+:internal\+:\+:Type\+Feedback\+Oracle Class Reference}
+\label{classv8_1_1internal_1_1_type_feedback_oracle}\index{v8\+::internal\+::\+Type\+Feedback\+Oracle@{v8\+::internal\+::\+Type\+Feedback\+Oracle}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Type\+Feedback\+Oracle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_type_feedback_oracle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Type\+Feedback\+Oracle} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ feedback\+\_\+vector, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ native\+\_\+context)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ac2ac92140e09acee029f7d4ec85b1f8d}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ac2ac92140e09acee029f7d4ec85b1f8d}
+
+\item 
+Inline\+Cache\+State {\bfseries Load\+Inline\+Cache\+State} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ad1e22eac35370e99613d85ef2b936cf2}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ad1e22eac35370e99613d85ef2b936cf2}
+
+\item 
+bool {\bfseries Store\+Is\+Uninitialized} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a02cfd1321db22c4b051232489ffba297}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a02cfd1321db22c4b051232489ffba297}
+
+\item 
+bool {\bfseries Call\+Is\+Uninitialized} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_aceac321bb93600b620d9a5f63acd35b9}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_aceac321bb93600b620d9a5f63acd35b9}
+
+\item 
+bool {\bfseries Call\+Is\+Monomorphic} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_aa939fa3a189417177b0394eaebe364b4}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_aa939fa3a189417177b0394eaebe364b4}
+
+\item 
+bool {\bfseries Call\+New\+Is\+Monomorphic} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a4c0543c645240331236b90310925a201}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a4c0543c645240331236b90310925a201}
+
+\item 
+byte {\bfseries For\+In\+Type} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} feedback\+\_\+vector\+\_\+slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a21fb85b281c60fe0fb3aa2d3b7ce0f18}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a21fb85b281c60fe0fb3aa2d3b7ce0f18}
+
+\item 
+void {\bfseries Get\+Store\+Mode\+And\+Key\+Type} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, Keyed\+Access\+Store\+Mode $\ast$store\+\_\+mode, Ic\+Check\+Type $\ast$key\+\_\+type)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ac1255429986f0756d03bfce5e430305b}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ac1255429986f0756d03bfce5e430305b}
+
+\item 
+void {\bfseries Property\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a5678767c5e1f6383a428c785f6e8ce42}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a5678767c5e1f6383a428c785f6e8ce42}
+
+\item 
+void {\bfseries Keyed\+Property\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types, bool $\ast$is\+\_\+string, Ic\+Check\+Type $\ast$key\+\_\+type)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ae63227e43a40b956988b66f68e6936be}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ae63227e43a40b956988b66f68e6936be}
+
+\item 
+void {\bfseries Assignment\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a83a271e3ba2d242b907a968201baa7f1}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a83a271e3ba2d242b907a968201baa7f1}
+
+\item 
+void {\bfseries Keyed\+Assignment\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types, Keyed\+Access\+Store\+Mode $\ast$store\+\_\+mode, Ic\+Check\+Type $\ast$key\+\_\+type)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a009701e50fb50c0ea13ac2ce44970b08}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a009701e50fb50c0ea13ac2ce44970b08}
+
+\item 
+void {\bfseries Count\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a5cb018bf53f6e86a82edcad84ba6f56c}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a5cb018bf53f6e86a82edcad84ba6f56c}
+
+\item 
+void {\bfseries Collect\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a74f6df941eae84edec74c9c10ee5f3a9}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a74f6df941eae84edec74c9c10ee5f3a9}
+
+\item 
+void {\bfseries Collect\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_nexus}{Feedback\+Nexus} $\ast$nexus, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_afa15186311902fc249f3d4f7a75ed290}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_afa15186311902fc249f3d4f7a75ed290}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries Get\+Call\+Target} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ace773e0cd5251ea600c38ed059f9603c}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ace773e0cd5251ea600c38ed059f9603c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_allocation_site}{Allocation\+Site} $>$ {\bfseries Get\+Call\+Allocation\+Site} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a4b5f9db3cf95da0f2d435c5f0e55a0c8}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a4b5f9db3cf95da0f2d435c5f0e55a0c8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries Get\+Call\+New\+Target} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_af187abb6d889b46947dcb962c0ec3ff1}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_af187abb6d889b46947dcb962c0ec3ff1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_allocation_site}{Allocation\+Site} $>$ {\bfseries Get\+Call\+New\+Allocation\+Site} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_aefca489f1e1781cec6f47ab4a9af7980}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_aefca489f1e1781cec6f47ab4a9af7980}
+
+\item 
+uint16\+\_\+t {\bfseries To\+Boolean\+Types} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_aed6c2119c2d6fa4960d1df5ca33d58ed}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_aed6c2119c2d6fa4960d1df5ca33d58ed}
+
+\item 
+void {\bfseries Binary\+Type} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$left, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$right, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$result, \hyperlink{classv8_1_1_maybe}{Maybe}$<$ int $>$ $\ast$fixed\+\_\+right\+\_\+arg, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_allocation_site}{Allocation\+Site} $>$ $\ast$allocation\+\_\+site, Token\+::\+Value operation)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a35406384995a244132cd15e85c6d2200}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a35406384995a244132cd15e85c6d2200}
+
+\item 
+void {\bfseries Compare\+Type} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$left, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$right, \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$$\ast$combined)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a2240e0d4e848af6e34a89195be298dd4}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a2240e0d4e848af6e34a89195be298dd4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries Count\+Type} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ae2d2bada2c837f24efd9d10acfb61d68}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ae2d2bada2c837f24efd9d10acfb61d68}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a700251044fa557f3c4af2ee2fc415802}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a700251044fa557f3c4af2ee2fc415802}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_abc3aa56ede67a173d4e5e5f2ba4c5f12}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_abc3aa56ede67a173d4e5e5f2ba4c5f12}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Is\+Relevant\+Feedback} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_context}{Context} $\ast$native\+\_\+context)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a54f51df94ba7a5f9732eaa5da31360c9}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a54f51df94ba7a5f9732eaa5da31360c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Collect\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Code\+::\+Flags flags, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ada374e74591e90d36b5a9d49f50e73cb}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ada374e74591e90d36b5a9d49f50e73cb}
+
+\item 
+void {\bfseries Collect\+Receiver\+Types} (\hyperlink{classv8_1_1internal_1_1_feedback_nexus}{Feedback\+Nexus} $\ast$nexus, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Code\+::\+Flags flags, \hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a8a7d1822fe6dcc7ee35e8cc191215dfb}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a8a7d1822fe6dcc7ee35e8cc191215dfb}
+
+\item 
+bool {\bfseries Has\+Only\+String\+Maps} (\hyperlink{classv8_1_1internal_1_1_small_map_list}{Small\+Map\+List} $\ast$receiver\+\_\+types)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a5a339bdeb2b7ed97a18c0d0fb032578c}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a5a339bdeb2b7ed97a18c0d0fb032578c}
+
+\item 
+void {\bfseries Set\+Info} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$target)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a9d4347b54c3109f6daafff8a53db3263}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a9d4347b54c3109f6daafff8a53db3263}
+
+\item 
+void {\bfseries Build\+Dictionary} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a51291e5061252690866f3e067a0dc2db}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a51291e5061252690866f3e067a0dc2db}
+
+\item 
+void {\bfseries Get\+Reloc\+Infos} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $>$ $\ast$infos)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a8e548dee4a23bdfdddceec01c9686562}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a8e548dee4a23bdfdddceec01c9686562}
+
+\item 
+void {\bfseries Create\+Dictionary} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $>$ $\ast$infos)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a617872aa1dab70229e435f76318e9b26}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a617872aa1dab70229e435f76318e9b26}
+
+\item 
+void {\bfseries Relocate\+Reloc\+Infos} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $>$ $\ast$infos, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$old\+\_\+code, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$new\+\_\+code)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a7aae515407ce641835873d97ebd7408c}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a7aae515407ce641835873d97ebd7408c}
+
+\item 
+void {\bfseries Process\+Reloc\+Infos} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_reloc_info}{Reloc\+Info} $>$ $\ast$infos)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a275a4ab2d5aa7b149e69c72e1deba1d0}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a275a4ab2d5aa7b149e69c72e1deba1d0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Info} (\hyperlink{classv8_1_1internal_1_1_type_feedback_id}{Type\+Feedback\+Id} id)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a3653c7af23de0f30e8ec4fbd9a9ff4af}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a3653c7af23de0f30e8ec4fbd9a9ff4af}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Info} (\hyperlink{classv8_1_1internal_1_1_feedback_vector_slot}{Feedback\+Vector\+Slot} slot)\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a4c30d4b5f974e80bd8af7c8eccbdd969}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a4c30d4b5f974e80bd8af7c8eccbdd969}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_type_feedback_oracle}{Type\+Feedback\+Oracle})\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a8e885bb296bb4da312e35384d309c1af}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a8e885bb296bb4da312e35384d309c1af}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries native\+\_\+context\+\_\+}\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a26b8279872c7ea341d1eef90efb31459}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a26b8279872c7ea341d1eef90efb31459}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a8eee3ecfa416e59556cf08e4c6ced0e2}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a8eee3ecfa416e59556cf08e4c6ced0e2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_ab3af35974cda806106e9fecb7b78e04c}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_ab3af35974cda806106e9fecb7b78e04c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_unseeded_number_dictionary}{Unseeded\+Number\+Dictionary} $>$ {\bfseries dictionary\+\_\+}\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a90fd94e1fc310ca27878b74acee972de}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a90fd94e1fc310ca27878b74acee972de}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_type_feedback_vector}{Type\+Feedback\+Vector} $>$ {\bfseries feedback\+\_\+vector\+\_\+}\hypertarget{classv8_1_1internal_1_1_type_feedback_oracle_a294b866371c1c6071ffbe2e71763f598}{}\label{classv8_1_1internal_1_1_type_feedback_oracle_a294b866371c1c6071ffbe2e71763f598}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/type-\/info.\+h\item 
+/\+Users/joshgav/node/v8/src/type-\/info.\+cc\end{DoxyCompactItemize}

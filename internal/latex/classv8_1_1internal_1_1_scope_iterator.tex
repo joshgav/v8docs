@@ -1,0 +1,203 @@
+\hypertarget{classv8_1_1internal_1_1_scope_iterator}{}\section{v8\+:\+:internal\+:\+:Scope\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1_scope_iterator}\index{v8\+::internal\+::\+Scope\+Iterator@{v8\+::internal\+::\+Scope\+Iterator}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_scope_iterator_1_1_extended_scope_info}{Extended\+Scope\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Scope\+Type} \{ \\*
+{\bfseries Scope\+Type\+Global} = 0, 
+\\*
+{\bfseries Scope\+Type\+Local}, 
+\\*
+{\bfseries Scope\+Type\+With}, 
+\\*
+{\bfseries Scope\+Type\+Closure}, 
+\\*
+{\bfseries Scope\+Type\+Catch}, 
+\\*
+{\bfseries Scope\+Type\+Block}, 
+\\*
+{\bfseries Scope\+Type\+Script}, 
+\\*
+{\bfseries Scope\+Type\+Module}
+ \}\hypertarget{classv8_1_1internal_1_1_scope_iterator_aa4aa3e4d41cb6ce47ec9df9a056fc49b}{}\label{classv8_1_1internal_1_1_scope_iterator_aa4aa3e4d41cb6ce47ec9df9a056fc49b}
+
+\item 
+enum {\bfseries Option} \{ \\*
+{\bfseries D\+E\+F\+A\+U\+LT}, 
+\\*
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+N\+E\+S\+T\+E\+D\+\_\+\+S\+C\+O\+P\+ES}, 
+\\*
+{\bfseries C\+O\+L\+L\+E\+C\+T\+\_\+\+N\+O\+N\+\_\+\+L\+O\+C\+A\+LS}
+ \}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a9127368b90641c8dea51ce83b2edf38d}{}\label{classv8_1_1internal_1_1_scope_iterator_a9127368b90641c8dea51ce83b2edf38d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Scope\+Iterator} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_frame_inspector}{Frame\+Inspector} $\ast$frame\+\_\+inspector, Option options=D\+E\+F\+A\+U\+LT)\hypertarget{classv8_1_1internal_1_1_scope_iterator_aa5ceb578f6dda1f942249eba4365d0b7}{}\label{classv8_1_1internal_1_1_scope_iterator_aa5ceb578f6dda1f942249eba4365d0b7}
+
+\item 
+{\bfseries Scope\+Iterator} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1_scope_iterator_ad8c8fb113efb2ce5476078627fea56d3}{}\label{classv8_1_1internal_1_1_scope_iterator_ad8c8fb113efb2ce5476078627fea56d3}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Scope\+Details} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_aa74e9c0897ceb4c5fce55dc960d5ccb3}{}\label{classv8_1_1internal_1_1_scope_iterator_aa74e9c0897ceb4c5fce55dc960d5ccb3}
+
+\item 
+bool {\bfseries Done} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_ac44e67b01409ca5d3d12ea062f9772d1}{}\label{classv8_1_1internal_1_1_scope_iterator_ac44e67b01409ca5d3d12ea062f9772d1}
+
+\item 
+bool {\bfseries Failed} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_af35b8cb9f64079c2b0d86d07f2828825}{}\label{classv8_1_1internal_1_1_scope_iterator_af35b8cb9f64079c2b0d86d07f2828825}
+
+\item 
+void {\bfseries Next} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a6f0a4ba9b811b41b1ced4133686a89b5}{}\label{classv8_1_1internal_1_1_scope_iterator_a6f0a4ba9b811b41b1ced4133686a89b5}
+
+\item 
+Scope\+Type {\bfseries Type} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a9208c42e6a6da108342d6311dd399ce8}{}\label{classv8_1_1internal_1_1_scope_iterator_a9208c42e6a6da108342d6311dd399ce8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Scope\+Object} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a9d1d8d624ff19e8721ad009d365da8c6}{}\label{classv8_1_1internal_1_1_scope_iterator_a9d1d8d624ff19e8721ad009d365da8c6}
+
+\item 
+bool {\bfseries Has\+Context} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a407467acd91156f9972a89e17c190217}{}\label{classv8_1_1internal_1_1_scope_iterator_a407467acd91156f9972a89e17c190217}
+
+\item 
+bool {\bfseries Set\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a75b041ba4a4d017daea66327308f52fb}{}\label{classv8_1_1internal_1_1_scope_iterator_a75b041ba4a4d017daea66327308f52fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ {\bfseries Current\+Scope\+Info} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a8b739ad08303f77bf5971e5f13c280f8}{}\label{classv8_1_1internal_1_1_scope_iterator_a8b739ad08303f77bf5971e5f13c280f8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries Current\+Context} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a55775b3410cb21a455e1e2050e6ab799}{}\label{classv8_1_1internal_1_1_scope_iterator_a55775b3410cb21a455e1e2050e6ab799}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string_set}{String\+Set} $>$ {\bfseries Get\+Non\+Locals} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a21b06d8bae4b550e6ab8e40e8d4df03a}{}\label{classv8_1_1internal_1_1_scope_iterator_a21b06d8bae4b550e6ab8e40e8d4df03a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Scope\+Details\+Type\+Index} = 0\hypertarget{classv8_1_1internal_1_1_scope_iterator_a3e667203bbc187b52d0661caa6339e40}{}\label{classv8_1_1internal_1_1_scope_iterator_a3e667203bbc187b52d0661caa6339e40}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+Object\+Index} = 1\hypertarget{classv8_1_1internal_1_1_scope_iterator_ae6a44f9c5bccc8c3b7723aff91799be1}{}\label{classv8_1_1internal_1_1_scope_iterator_ae6a44f9c5bccc8c3b7723aff91799be1}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+Name\+Index} = 2\hypertarget{classv8_1_1internal_1_1_scope_iterator_a0fa8f4e43705cae688f30273ffed44a7}{}\label{classv8_1_1internal_1_1_scope_iterator_a0fa8f4e43705cae688f30273ffed44a7}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+Start\+Position\+Index} = 3\hypertarget{classv8_1_1internal_1_1_scope_iterator_a55df03c1c266defde7f6865e9e77a2c6}{}\label{classv8_1_1internal_1_1_scope_iterator_a55df03c1c266defde7f6865e9e77a2c6}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+End\+Position\+Index} = 4\hypertarget{classv8_1_1internal_1_1_scope_iterator_aeffdea2c156b25a4b9f6eccd04fa2317}{}\label{classv8_1_1internal_1_1_scope_iterator_aeffdea2c156b25a4b9f6eccd04fa2317}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+Function\+Index} = 5\hypertarget{classv8_1_1internal_1_1_scope_iterator_adc82682c88345e47935566837511d14d}{}\label{classv8_1_1internal_1_1_scope_iterator_adc82682c88345e47935566837511d14d}
+
+\item 
+static const int {\bfseries k\+Scope\+Details\+Size} = 6\hypertarget{classv8_1_1internal_1_1_scope_iterator_aaccef289782f1fd53edc2dd1d3989681}{}\label{classv8_1_1internal_1_1_scope_iterator_aaccef289782f1fd53edc2dd1d3989681}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$ {\bfseries Get\+Frame} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_ab73b61adf6a2c3b120b7841b5d4b1377}{}\label{classv8_1_1internal_1_1_scope_iterator_ab73b61adf6a2c3b120b7841b5d4b1377}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries Get\+Function} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a4f62f69e28727165a9246c28713b01e4}{}\label{classv8_1_1internal_1_1_scope_iterator_a4f62f69e28727165a9246c28713b01e4}
+
+\item 
+void {\bfseries Retrieve\+Scope\+Chain} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a0b25528a54b4c0da7f8fe3ece14f68fe}{}\label{classv8_1_1internal_1_1_scope_iterator_a0b25528a54b4c0da7f8fe3ece14f68fe}
+
+\item 
+void {\bfseries Collect\+Non\+Locals} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1_scope_iterator_aef9e6a5f444b70628a0cbff1252cee56}{}\label{classv8_1_1internal_1_1_scope_iterator_aef9e6a5f444b70628a0cbff1252cee56}
+
+\item 
+void {\bfseries Unwrap\+Evaluation\+Context} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a9febf51d8b4dd24877986789f7938098}{}\label{classv8_1_1internal_1_1_scope_iterator_a9febf51d8b4dd24877986789f7938098}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Script\+Scope} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a7764d38a04ee046ae62f696aab6eebab}{}\label{classv8_1_1internal_1_1_scope_iterator_a7764d38a04ee046ae62f696aab6eebab}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Local\+Scope} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a1b98ea949430406208f1f1a1a1581430}{}\label{classv8_1_1internal_1_1_scope_iterator_a1b98ea949430406208f1f1a1a1581430}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Module\+Scope} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_af958d26a7a38e3a361a5a956f21bd8fb}{}\label{classv8_1_1internal_1_1_scope_iterator_af958d26a7a38e3a361a5a956f21bd8fb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Closure} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_ac71351c457171e27b3703b2ba6ea7040}{}\label{classv8_1_1internal_1_1_scope_iterator_ac71351c457171e27b3703b2ba6ea7040}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Catch\+Scope} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a7eeef3f372f2ad2af04bb860e3d4fe60}{}\label{classv8_1_1internal_1_1_scope_iterator_a7eeef3f372f2ad2af04bb860e3d4fe60}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries Materialize\+Block\+Scope} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_afdd9d9b8976a1de2cd879c1c52eafff7}{}\label{classv8_1_1internal_1_1_scope_iterator_afdd9d9b8976a1de2cd879c1c52eafff7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ {\bfseries With\+Context\+Extension} ()\hypertarget{classv8_1_1internal_1_1_scope_iterator_a7c7362776e6f790195a82e4b8fe9846c}{}\label{classv8_1_1internal_1_1_scope_iterator_a7c7362776e6f790195a82e4b8fe9846c}
+
+\item 
+bool {\bfseries Set\+Local\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a2cd6e28d476c672dca87d9e4651a5578}{}\label{classv8_1_1internal_1_1_scope_iterator_a2cd6e28d476c672dca87d9e4651a5578}
+
+\item 
+bool {\bfseries Set\+Block\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a7bf477e10f882a902005d824b388c6c7}{}\label{classv8_1_1internal_1_1_scope_iterator_a7bf477e10f882a902005d824b388c6c7}
+
+\item 
+bool {\bfseries Set\+Closure\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a37a27a86f8493c85419b03bf22718109}{}\label{classv8_1_1internal_1_1_scope_iterator_a37a27a86f8493c85419b03bf22718109}
+
+\item 
+bool {\bfseries Set\+Script\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_aa39aea9a95ee51b53152eda1ea2d8df0}{}\label{classv8_1_1internal_1_1_scope_iterator_aa39aea9a95ee51b53152eda1ea2d8df0}
+
+\item 
+bool {\bfseries Set\+Catch\+Variable\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a58aa53d1c137db80c0b0caf19bc38dd2}{}\label{classv8_1_1internal_1_1_scope_iterator_a58aa53d1c137db80c0b0caf19bc38dd2}
+
+\item 
+bool {\bfseries Set\+Context\+Local\+Value} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ scope\+\_\+info, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ variable\+\_\+name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ new\+\_\+value)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a776656e9101858598d5b019cd8ded76d}{}\label{classv8_1_1internal_1_1_scope_iterator_a776656e9101858598d5b019cd8ded76d}
+
+\item 
+void {\bfseries Copy\+Context\+Locals\+To\+Scope\+Object} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_scope_info}{Scope\+Info} $>$ scope\+\_\+info, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ scope\+\_\+object)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a19346199e089395616231a53c291d228}{}\label{classv8_1_1internal_1_1_scope_iterator_a19346199e089395616231a53c291d228}
+
+\item 
+bool {\bfseries Copy\+Context\+Extension\+To\+Scope\+Object} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ extension, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $>$ scope\+\_\+object, Key\+Collection\+Type type)\hypertarget{classv8_1_1internal_1_1_scope_iterator_a255dd42e2a29864c0d0820fa037ed9d6}{}\label{classv8_1_1internal_1_1_scope_iterator_a255dd42e2a29864c0d0820fa037ed9d6}
+
+\item 
+void {\bfseries Get\+Nested\+Scope\+Chain} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, int statement\+\_\+position)\hypertarget{classv8_1_1internal_1_1_scope_iterator_ab4489696bc3a6b5959cfcb64b8bb202a}{}\label{classv8_1_1internal_1_1_scope_iterator_ab4489696bc3a6b5959cfcb64b8bb202a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_scope_iterator}{Scope\+Iterator})\hypertarget{classv8_1_1internal_1_1_scope_iterator_ae0a9f78da4ef12cfb704b4b303c055a1}{}\label{classv8_1_1internal_1_1_scope_iterator_ae0a9f78da4ef12cfb704b4b303c055a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a9606ebd0f68b8dccca5940d43482605a}{}\label{classv8_1_1internal_1_1_scope_iterator_a9606ebd0f68b8dccca5940d43482605a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_frame_inspector}{Frame\+Inspector} $\ast$const {\bfseries frame\+\_\+inspector\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a18225292ddebbac7617d9ee6ba4934c8}{}\label{classv8_1_1internal_1_1_scope_iterator_a18225292ddebbac7617d9ee6ba4934c8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ {\bfseries context\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a928c9338f065d8983093f9d7dcaf8392}{}\label{classv8_1_1internal_1_1_scope_iterator_a928c9338f065d8983093f9d7dcaf8392}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{structv8_1_1internal_1_1_scope_iterator_1_1_extended_scope_info}{Extended\+Scope\+Info} $>$ {\bfseries nested\+\_\+scope\+\_\+chain\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a1a960b13ae5cdca0f6f566102275ba61}{}\label{classv8_1_1internal_1_1_scope_iterator_a1a960b13ae5cdca0f6f566102275ba61}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string_set}{String\+Set} $>$ {\bfseries non\+\_\+locals\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a05ae85123b7d86d0d0329534955fff7c}{}\label{classv8_1_1internal_1_1_scope_iterator_a05ae85123b7d86d0d0329534955fff7c}
+
+\item 
+bool {\bfseries seen\+\_\+script\+\_\+scope\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a36db68b5d56bde364a7d6993f8cd408c}{}\label{classv8_1_1internal_1_1_scope_iterator_a36db68b5d56bde364a7d6993f8cd408c}
+
+\item 
+bool {\bfseries failed\+\_\+}\hypertarget{classv8_1_1internal_1_1_scope_iterator_a6007e95270008c35a23db100e60585e6}{}\label{classv8_1_1internal_1_1_scope_iterator_a6007e95270008c35a23db100e60585e6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/scopes.\+h\item 
+/\+Users/joshgav/node/v8/src/debug/debug-\/scopes.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator}{}\section{v8\+:\+:internal\+:\+:Fast\+Key\+Accumulator Class Reference}
+\label{classv8_1_1internal_1_1_fast_key_accumulator}\index{v8\+::internal\+::\+Fast\+Key\+Accumulator@{v8\+::internal\+::\+Fast\+Key\+Accumulator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Fast\+Key\+Accumulator} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_receiver}{J\+S\+Receiver} $>$ receiver, Key\+Collection\+Type type, \hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter} filter)\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a5728b76538dcde0e968c1ed143fdca84}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a5728b76538dcde0e968c1ed143fdca84}
+
+\item 
+bool {\bfseries is\+\_\+receiver\+\_\+simple\+\_\+enum} ()\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_ad3fa0ed0efd7162b94f434f78fbd0f53}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_ad3fa0ed0efd7162b94f434f78fbd0f53}
+
+\item 
+bool {\bfseries has\+\_\+empty\+\_\+prototype} ()\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a42ae93ef9c49f72046d4a82139f44ee5}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a42ae93ef9c49f72046d4a82139f44ee5}
+
+\item 
+void {\bfseries set\+\_\+filter\+\_\+proxy\+\_\+keys} (bool filter)\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a02635f4ffa327e3520927b4db1602e17}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a02635f4ffa327e3520927b4db1602e17}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Get\+Keys} (Get\+Keys\+Conversion convert=K\+E\+E\+P\+\_\+\+N\+U\+M\+B\+E\+RS)\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a51a58a1de23e902d0eafb27112dfe654}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a51a58a1de23e902d0eafb27112dfe654}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Prepare} ()\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_ab0c30a7f6645474a91d23b8d1fa37be2}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_ab0c30a7f6645474a91d23b8d1fa37be2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Get\+Keys\+Fast} (Get\+Keys\+Conversion convert)\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a6f52584d8f7dc7e3894c763884f303f7}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a6f52584d8f7dc7e3894c763884f303f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Get\+Keys\+Slow} (Get\+Keys\+Conversion convert)\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a7ff62ff9e0eacf4d49ade3adaf98e029}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a7ff62ff9e0eacf4d49ade3adaf98e029}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_fast_key_accumulator}{Fast\+Key\+Accumulator})\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_aee7b83d105db2969b19166a255dfa97b}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_aee7b83d105db2969b19166a255dfa97b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a9b1d4330f2a60da2969ef8f67db71f85}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a9b1d4330f2a60da2969ef8f67db71f85}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_receiver}{J\+S\+Receiver} $>$ {\bfseries receiver\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_adaa5f789664e32a0302c79688e46f14a}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_adaa5f789664e32a0302c79688e46f14a}
+
+\item 
+Key\+Collection\+Type {\bfseries type\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a41a089c606f5991ebd3940d7715eabf4}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a41a089c606f5991ebd3940d7715eabf4}
+
+\item 
+\hyperlink{namespacev8_afbf02b6b1152a3e25d7bde90798209ac}{Property\+Filter} {\bfseries filter\+\_\+}\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_a47d649d939c19e6adba8506487bd12fa}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_a47d649d939c19e6adba8506487bd12fa}
+
+\item 
+bool {\bfseries is\+\_\+receiver\+\_\+simple\+\_\+enum\+\_\+} = false\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_aca697685c9124c1ef6669f75b2e0aa09}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_aca697685c9124c1ef6669f75b2e0aa09}
+
+\item 
+bool {\bfseries has\+\_\+empty\+\_\+prototype\+\_\+} = false\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_ab39eb6bfaa5cae86f9e2e196a276fcd3}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_ab39eb6bfaa5cae86f9e2e196a276fcd3}
+
+\item 
+bool {\bfseries filter\+\_\+proxy\+\_\+keys\+\_\+} = true\hypertarget{classv8_1_1internal_1_1_fast_key_accumulator_ab455ae5e7c6b4380f4d54decb3026c39}{}\label{classv8_1_1internal_1_1_fast_key_accumulator_ab455ae5e7c6b4380f4d54decb3026c39}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/keys.\+h\item 
+/\+Users/joshgav/node/v8/src/keys.\+cc\end{DoxyCompactItemize}

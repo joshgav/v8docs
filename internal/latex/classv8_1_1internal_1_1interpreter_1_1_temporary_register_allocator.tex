@@ -1,0 +1,65 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Temporary\+Register\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}\index{v8\+::internal\+::interpreter\+::\+Temporary\+Register\+Allocator@{v8\+::internal\+::interpreter\+::\+Temporary\+Register\+Allocator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Temporary\+Register\+Allocator} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int start\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ad46b3668fe967b573b2c0db4433a7830}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ad46b3668fe967b573b2c0db4433a7830}
+
+\item 
+int {\bfseries Borrow\+Temporary\+Register} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a46caa936bb7b20cbd3df60534f93a5d5}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a46caa936bb7b20cbd3df60534f93a5d5}
+
+\item 
+int {\bfseries Borrow\+Temporary\+Register\+Not\+In\+Range} (int start\+\_\+index, int end\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a88b4a272cdc76f6ec5a70fcc987ad2a0}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a88b4a272cdc76f6ec5a70fcc987ad2a0}
+
+\item 
+void {\bfseries Return\+Temporary\+Register} (int reg\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a2b74328749d0e776fbf56255ecd9dff5}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a2b74328749d0e776fbf56255ecd9dff5}
+
+\item 
+int {\bfseries Prepare\+For\+Consecutive\+Temporary\+Registers} (size\+\_\+t count)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ab8a92973a1003ba6b66026dd6210ef51}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ab8a92973a1003ba6b66026dd6210ef51}
+
+\item 
+void {\bfseries Borrow\+Consecutive\+Temporary\+Register} (int reg\+\_\+index)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ac8a2f74ef978c1ca705c8089fa2e8229}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ac8a2f74ef978c1ca705c8089fa2e8229}
+
+\item 
+bool {\bfseries Register\+Is\+Live} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} reg) const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_aa4f4fffafc103ae8b544dc629758e18d}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_aa4f4fffafc103ae8b544dc629758e18d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries first\+\_\+temporary\+\_\+register} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a81ec34a67fa6f967c3ade998ada24dec}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a81ec34a67fa6f967c3ade998ada24dec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_register}{Register} {\bfseries last\+\_\+temporary\+\_\+register} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a0aa31c2593573e9261cab582a40fe6aa}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a0aa31c2593573e9261cab582a40fe6aa}
+
+\item 
+int {\bfseries allocation\+\_\+base} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a9091268af22b78ee5fba0c191954e145}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a9091268af22b78ee5fba0c191954e145}
+
+\item 
+int {\bfseries allocation\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ab9c504277b1f289f1f73fc992d26cefa}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_ab9c504277b1f289f1f73fc992d26cefa}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Allocate\+Temporary\+Register} ()\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a79296c6c17e4670af5e7a3f923aec05a}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a79296c6c17e4670af5e7a3f923aec05a}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator}{Temporary\+Register\+Allocator})\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a39c6dd3123eb4b48db035e57040d08b5}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a39c6dd3123eb4b48db035e57040d08b5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_set}{Zone\+Set}$<$ int $>$ {\bfseries free\+\_\+temporaries\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a149008d7151d176d8527c4a2c0fc99b9}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a149008d7151d176d8527c4a2c0fc99b9}
+
+\item 
+int {\bfseries allocation\+\_\+base\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a1ddde678bb2b9276971577278d3ff5ba}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a1ddde678bb2b9276971577278d3ff5ba}
+
+\item 
+int {\bfseries allocation\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a667d8d5d30945788faa1729474742330}{}\label{classv8_1_1internal_1_1interpreter_1_1_temporary_register_allocator_a667d8d5d30945788faa1729474742330}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/register-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/bytecode-\/register-\/allocator.\+cc\end{DoxyCompactItemize}

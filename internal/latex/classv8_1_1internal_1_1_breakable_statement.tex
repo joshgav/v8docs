@@ -1,0 +1,89 @@
+\hypertarget{classv8_1_1internal_1_1_breakable_statement}{}\section{v8\+:\+:internal\+:\+:Breakable\+Statement Class Reference}
+\label{classv8_1_1internal_1_1_breakable_statement}\index{v8\+::internal\+::\+Breakable\+Statement@{v8\+::internal\+::\+Breakable\+Statement}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Breakable\+Statement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.924623cm]{classv8_1_1internal_1_1_breakable_statement}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Breakable\+Type} \{ \\*
+{\bfseries T\+A\+R\+G\+E\+T\+\_\+\+F\+O\+R\+\_\+\+A\+N\+O\+N\+Y\+M\+O\+US}, 
+\\*
+{\bfseries T\+A\+R\+G\+E\+T\+\_\+\+F\+O\+R\+\_\+\+N\+A\+M\+E\+D\+\_\+\+O\+N\+LY}
+ \}\hypertarget{classv8_1_1internal_1_1_breakable_statement_a52c50b4c3f6fd7f2ee085a03d6ab0f5d}{}\label{classv8_1_1internal_1_1_breakable_statement_a52c50b4c3f6fd7f2ee085a03d6ab0f5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$ {\bfseries labels} () const \hypertarget{classv8_1_1internal_1_1_breakable_statement_a617d1f438ecd5e785ee73626504a8ace}{}\label{classv8_1_1internal_1_1_breakable_statement_a617d1f438ecd5e785ee73626504a8ace}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_breakable_statement}{Breakable\+Statement} $\ast$ {\bfseries As\+Breakable\+Statement} () final\hypertarget{classv8_1_1internal_1_1_breakable_statement_ad37680c6b1e7a4cec9421fd6f723ac3d}{}\label{classv8_1_1internal_1_1_breakable_statement_ad37680c6b1e7a4cec9421fd6f723ac3d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries break\+\_\+target} ()\hypertarget{classv8_1_1internal_1_1_breakable_statement_af68546685f7b853b37c7972f3f4553f5}{}\label{classv8_1_1internal_1_1_breakable_statement_af68546685f7b853b37c7972f3f4553f5}
+
+\item 
+bool {\bfseries is\+\_\+target\+\_\+for\+\_\+anonymous} () const \hypertarget{classv8_1_1internal_1_1_breakable_statement_a5a5968a2aab89f8490235ae8ce9fe412}{}\label{classv8_1_1internal_1_1_breakable_statement_a5a5968a2aab89f8490235ae8ce9fe412}
+
+\item 
+void {\bfseries set\+\_\+base\+\_\+id} (int id)\hypertarget{classv8_1_1internal_1_1_breakable_statement_a311f8fb4145ebce84410e8a34aec5e85}{}\label{classv8_1_1internal_1_1_breakable_statement_a311f8fb4145ebce84410e8a34aec5e85}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Entry\+Id} () const \hypertarget{classv8_1_1internal_1_1_breakable_statement_a27d7524229a6795fff6ea260768e36f4}{}\label{classv8_1_1internal_1_1_breakable_statement_a27d7524229a6795fff6ea260768e36f4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Exit\+Id} () const \hypertarget{classv8_1_1internal_1_1_breakable_statement_a1cc6c711474d567958b3dd994a2dc745}{}\label{classv8_1_1internal_1_1_breakable_statement_a1cc6c711474d567958b3dd994a2dc745}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_breakable_statement_a0e372bdf453d7e5f79cab50a99b71061}{}\label{classv8_1_1internal_1_1_breakable_statement_a0e372bdf453d7e5f79cab50a99b71061}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Breakable\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, Breakable\+Type breakable\+\_\+type, int position)\hypertarget{classv8_1_1internal_1_1_breakable_statement_a36d138d79514db4e82326cf7db7612b2}{}\label{classv8_1_1internal_1_1_breakable_statement_a36d138d79514db4e82326cf7db7612b2}
+
+\item 
+int {\bfseries base\+\_\+id} () const \hypertarget{classv8_1_1internal_1_1_breakable_statement_ac613d04c9fed8609ca001dfd0b0baff1}{}\label{classv8_1_1internal_1_1_breakable_statement_ac613d04c9fed8609ca001dfd0b0baff1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries parent\+\_\+num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_breakable_statement_a8d4576725d3be1e05678aadb522cc487}{}\label{classv8_1_1internal_1_1_breakable_statement_a8d4576725d3be1e05678aadb522cc487}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries local\+\_\+id} (int n) const \hypertarget{classv8_1_1internal_1_1_breakable_statement_ae514c171e08cb17bf4d9a45c136fa941}{}\label{classv8_1_1internal_1_1_breakable_statement_ae514c171e08cb17bf4d9a45c136fa941}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$ {\bfseries labels\+\_\+}\hypertarget{classv8_1_1internal_1_1_breakable_statement_a2e73a2bf55a002741ed0867a45e40917}{}\label{classv8_1_1internal_1_1_breakable_statement_a2e73a2bf55a002741ed0867a45e40917}
+
+\item 
+Breakable\+Type {\bfseries breakable\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1_breakable_statement_ac49034efda61a32ff4412e4c8b341bb8}{}\label{classv8_1_1internal_1_1_breakable_statement_ac49034efda61a32ff4412e4c8b341bb8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries break\+\_\+target\+\_\+}\hypertarget{classv8_1_1internal_1_1_breakable_statement_a428cbd9d02305da3ac889aae81acfed0}{}\label{classv8_1_1internal_1_1_breakable_statement_a428cbd9d02305da3ac889aae81acfed0}
+
+\item 
+int {\bfseries base\+\_\+id\+\_\+}\hypertarget{classv8_1_1internal_1_1_breakable_statement_a66db5125111a07ca54de0f482d8c9f55}{}\label{classv8_1_1internal_1_1_breakable_statement_a66db5125111a07ca54de0f482d8c9f55}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\end{DoxyCompactItemize}

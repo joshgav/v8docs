@@ -1,0 +1,41 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:I\+A32\+Operand\+Generator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator}\index{v8\+::internal\+::compiler\+::\+I\+A32\+Operand\+Generator@{v8\+::internal\+::compiler\+::\+I\+A32\+Operand\+Generator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:I\+A32\+Operand\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+A32\+Operand\+Generator} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_selector}{Instruction\+Selector} $\ast$selector)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a6fff7bcfa121c5543bf9b7604e252076}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a6fff7bcfa121c5543bf9b7604e252076}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} {\bfseries Use\+Byte\+Register} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a8ac51b97395c248148a7b4edbc904301}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a8ac51b97395c248148a7b4edbc904301}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} {\bfseries Define\+As\+Byte\+Register} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_aad6f1c6d7915b721399695edd9e84db1}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_aad6f1c6d7915b721399695edd9e84db1}
+
+\item 
+bool {\bfseries Can\+Be\+Memory\+Operand} (Instruction\+Code opcode, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$input)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a145d2adb961f78b9ca8e900e42243c93}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a145d2adb961f78b9ca8e900e42243c93}
+
+\item 
+bool {\bfseries Can\+Be\+Immediate} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a55efece469da2ec5e39f1ab2fb8aecf1}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a55efece469da2ec5e39f1ab2fb8aecf1}
+
+\item 
+Addressing\+Mode {\bfseries Generate\+Memory\+Operand\+Inputs} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$index, int scale, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$base, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$displacement\+\_\+node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} inputs\mbox{[}$\,$\mbox{]}, size\+\_\+t $\ast$input\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a09d67ff6f35c523810fef3761bcad80b}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a09d67ff6f35c523810fef3761bcad80b}
+
+\item 
+Addressing\+Mode {\bfseries Get\+Effective\+Address\+Memory\+Operand} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} inputs\mbox{[}$\,$\mbox{]}, size\+\_\+t $\ast$input\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_acb802f165f767140608caabf0f007576}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_acb802f165f767140608caabf0f007576}
+
+\item 
+bool {\bfseries Can\+Be\+Better\+Left\+Operand} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a407f8a45758bd36d3fca9178b881ab34}{}\label{classv8_1_1internal_1_1compiler_1_1_i_a32_operand_generator_a407f8a45758bd36d3fca9178b881ab34}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/ia32/instruction-\/selector-\/ia32.\+cc\end{DoxyCompactItemize}

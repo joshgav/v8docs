@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Live\+Range\+Bound\+Array Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array}\index{v8\+::internal\+::compiler\+::\+Live\+Range\+Bound\+Array@{v8\+::internal\+::compiler\+::\+Live\+Range\+Bound\+Array}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Should\+Initialize} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aae40f67a2814f6a3f64e2de17a7087c6}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aae40f67a2814f6a3f64e2de17a7087c6}
+
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aa4f5c3d190789573f46da09fb138ad4f}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aa4f5c3d190789573f46da09fb138ad4f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_bound}{Live\+Range\+Bound} $\ast$ {\bfseries Find} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} position) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aafe4846e1e3bff62c38316de5ba0ca3c}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_aafe4846e1e3bff62c38316de5ba0ca3c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_bound}{Live\+Range\+Bound} $\ast$ {\bfseries Find\+Pred} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_block}{Instruction\+Block} $\ast$pred)\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a2c68b628f69a622da3d334048fe6a1a2}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a2c68b628f69a622da3d334048fe6a1a2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_bound}{Live\+Range\+Bound} $\ast$ {\bfseries Find\+Succ} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_block}{Instruction\+Block} $\ast$succ)\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_adf118fd29ec8eb9dd45f474f3e9fa156}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_adf118fd29ec8eb9dd45f474f3e9fa156}
+
+\item 
+bool {\bfseries Find\+Connectable\+Subranges} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_block}{Instruction\+Block} $\ast$block, const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_block}{Instruction\+Block} $\ast$pred, \hyperlink{structv8_1_1internal_1_1compiler_1_1_find_result}{Find\+Result} $\ast$result) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_ae3fd31ee75de381a031ffd8a78f37d6a}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_ae3fd31ee75de381a031ffd8a78f37d6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array}{Live\+Range\+Bound\+Array})\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_af41a72d198caa1f6ff30cb2b218babf0}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_af41a72d198caa1f6ff30cb2b218babf0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a5a8099d1ebb58941dfe4d3e27e760258}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a5a8099d1ebb58941dfe4d3e27e760258}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range_bound}{Live\+Range\+Bound} $\ast$ {\bfseries start\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a59f2e676ffc06be79019a7e839016ba2}{}\label{classv8_1_1internal_1_1compiler_1_1_live_range_bound_array_a59f2e676ffc06be79019a7e839016ba2}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+cc\end{DoxyCompactItemize}

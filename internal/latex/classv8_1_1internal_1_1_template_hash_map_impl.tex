@@ -1,0 +1,96 @@
+\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl}{}\section{v8\+:\+:internal\+:\+:Template\+Hash\+Map\+Impl$<$ Allocation\+Policy $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_template_hash_map_impl}\index{v8\+::internal\+::\+Template\+Hash\+Map\+Impl$<$ Allocation\+Policy $>$@{v8\+::internal\+::\+Template\+Hash\+Map\+Impl$<$ Allocation\+Policy $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Template\+Hash\+Map\+Impl$<$ Allocation\+Policy $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_template_hash_map_impl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ {\bfseries Match\+Fun}) (void $\ast$key1, void $\ast$key2)\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a72f31025c87628f7236ecec4ff485062}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a72f31025c87628f7236ecec4ff485062}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Template\+Hash\+Map\+Impl} (Match\+Fun match, uint32\+\_\+t capacity=k\+Default\+Hash\+Map\+Capacity, Allocation\+Policy allocator=Allocation\+Policy())\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_af9ef8882294388c3de6c339f0d88ad45}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_af9ef8882294388c3de6c339f0d88ad45}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries Lookup} (void $\ast$key, uint32\+\_\+t hash) const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_ad880c910156e8f3d0f45e3344ef03510}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_ad880c910156e8f3d0f45e3344ef03510}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries Lookup\+Or\+Insert} (void $\ast$key, uint32\+\_\+t hash, Allocation\+Policy allocator=Allocation\+Policy())\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a07c33ad66e39e62d45579cdeddf8ceba}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a07c33ad66e39e62d45579cdeddf8ceba}
+
+\item 
+void $\ast$ {\bfseries Remove} (void $\ast$key, uint32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a4144fe2e3ff1c7496d12678e20148e0e}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a4144fe2e3ff1c7496d12678e20148e0e}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a3ee691337d597cfbb218c38332a6e3a7}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a3ee691337d597cfbb218c38332a6e3a7}
+
+\item 
+uint32\+\_\+t {\bfseries occupancy} () const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a1b12dfbef0f39e5fee47a75f52479924}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a1b12dfbef0f39e5fee47a75f52479924}
+
+\item 
+uint32\+\_\+t {\bfseries capacity} () const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a94411e49edab1950813f5e62c2fdf4a3}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a94411e49edab1950813f5e62c2fdf4a3}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries Start} () const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_aa2f53fa47db0ec8d3370496d2f63ace0}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_aa2f53fa47db0ec8d3370496d2f63ace0}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries Next} (\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$p) const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_aa2b27d2e082f0059860c347dc50bc1bf}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_aa2b27d2e082f0059860c347dc50bc1bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Pointers\+Match} (void $\ast$key1, void $\ast$key2)\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_acbf79c508addc62c4b0b0056bb440bd4}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_acbf79c508addc62c4b0b0056bb440bd4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t {\bfseries k\+Default\+Hash\+Map\+Capacity} = 8\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a528fed70c08ca09b3ff3177ae573a575}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a528fed70c08ca09b3ff3177ae573a575}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries map\+\_\+end} () const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_af45bcf1b80a2a0c715d40e1652a9ccf9}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_af45bcf1b80a2a0c715d40e1652a9ccf9}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries Probe} (void $\ast$key, uint32\+\_\+t hash) const \hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a7af103dd0e56891fd24cbbfff54f1023}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a7af103dd0e56891fd24cbbfff54f1023}
+
+\item 
+void {\bfseries Initialize} (uint32\+\_\+t capacity, Allocation\+Policy allocator)\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_af36bdeeb7fbb7ffdf618ff2ff588027c}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_af36bdeeb7fbb7ffdf618ff2ff588027c}
+
+\item 
+void {\bfseries Resize} (Allocation\+Policy allocator)\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a2038bdfbd8c55db1dc06f2d9070db19b}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a2038bdfbd8c55db1dc06f2d9070db19b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Match\+Fun {\bfseries match\+\_\+}\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_ae81093128a538a947844e3597114105e}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_ae81093128a538a947844e3597114105e}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_template_hash_map_impl_1_1_entry}{Entry} $\ast$ {\bfseries map\+\_\+}\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a831b5ac36d313ebdf17d24445697174c}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a831b5ac36d313ebdf17d24445697174c}
+
+\item 
+uint32\+\_\+t {\bfseries capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a50aaf126e4ff5ae92de73b4d3bd2c4ef}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a50aaf126e4ff5ae92de73b4d3bd2c4ef}
+
+\item 
+uint32\+\_\+t {\bfseries occupancy\+\_\+}\hypertarget{classv8_1_1internal_1_1_template_hash_map_impl_a6cd3f4e1bd6f634dcb8ba25ce606c763}{}\label{classv8_1_1internal_1_1_template_hash_map_impl_a6cd3f4e1bd6f634dcb8ba25ce606c763}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/hashmap.\+h\end{DoxyCompactItemize}

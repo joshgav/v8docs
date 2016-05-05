@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1internal_1_1_h_flow_engine}{}\section{v8\+:\+:internal\+:\+:H\+Flow\+Engine$<$ State, Effects $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_h_flow_engine}\index{v8\+::internal\+::\+H\+Flow\+Engine$<$ State, Effects $>$@{v8\+::internal\+::\+H\+Flow\+Engine$<$ State, Effects $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Flow\+Engine} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a6bc48f0a65c7b2bb720e2853ac0e88c0}{}\label{classv8_1_1internal_1_1_h_flow_engine_a6bc48f0a65c7b2bb720e2853ac0e88c0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries Analyze\+One\+Block} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$state)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a3118e6c3d5976252af3d83378ef2d6ef}{}\label{classv8_1_1internal_1_1_h_flow_engine_a3118e6c3d5976252af3d83378ef2d6ef}
+
+\item 
+void {\bfseries Analyze\+Dominated\+Blocks} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$root, \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$initial)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a7edf559db3455737a9dcfbe17a288706}{}\label{classv8_1_1internal_1_1_h_flow_engine_a7edf559db3455737a9dcfbe17a288706}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_effects}{Effects} $\ast$ {\bfseries Compute\+Loop\+Effects} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a823ec0aa26707864549dc03f87bda3cd}{}\label{classv8_1_1internal_1_1_h_flow_engine_a823ec0aa26707864549dc03f87bda3cd}
+
+\item 
+bool {\bfseries Skip\+Non\+Dominated\+Block} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$root, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a931fab42198e5224fbaad747662155e5}{}\label{classv8_1_1internal_1_1_h_flow_engine_a931fab42198e5224fbaad747662155e5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ {\bfseries State\+At} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a5f91b903178a8bd6086482a5b23d89bb}{}\label{classv8_1_1internal_1_1_h_flow_engine_a5f91b903178a8bd6086482a5b23d89bb}
+
+\item 
+void {\bfseries Set\+State\+At} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$state)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a6293a99ad056c59cc4aed57ef3157d49}{}\label{classv8_1_1internal_1_1_h_flow_engine_a6293a99ad056c59cc4aed57ef3157d49}
+
+\item 
+void {\bfseries Initialize\+States} ()\hypertarget{classv8_1_1internal_1_1_h_flow_engine_ab4cd4ef7c38baa39e50f6815ec938415}{}\label{classv8_1_1internal_1_1_h_flow_engine_ab4cd4ef7c38baa39e50f6815ec938415}
+
+\item 
+void {\bfseries Check\+Predecessor\+Count} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_aca6297d6b0bfa990f8422d9003fd0002}{}\label{classv8_1_1internal_1_1_h_flow_engine_aca6297d6b0bfa990f8422d9003fd0002}
+
+\item 
+void {\bfseries Increment\+Predecessor\+Count} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_flow_engine_af81e59b97e936464a13b64c1139f3f6e}{}\label{classv8_1_1internal_1_1_h_flow_engine_af81e59b97e936464a13b64c1139f3f6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$ {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a7231fbb7bf1ff3da8f0d5d40f9cc9db1}{}\label{classv8_1_1internal_1_1_h_flow_engine_a7231fbb7bf1ff3da8f0d5d40f9cc9db1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a54de5d811be765cbbf37018070538b7b}{}\label{classv8_1_1internal_1_1_h_flow_engine_a54de5d811be765cbbf37018070538b7b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_state}{State} $\ast$ $>$ {\bfseries block\+\_\+states\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a9c4e839abc2664cb131c66a3006e3827}{}\label{classv8_1_1internal_1_1_h_flow_engine_a9c4e839abc2664cb131c66a3006e3827}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_effects}{Effects} $\ast$ $>$ {\bfseries loop\+\_\+effects\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_flow_engine_a5be08f0906f0a23c488e533cae5e5ab3}{}\label{classv8_1_1internal_1_1_h_flow_engine_a5be08f0906f0a23c488e533cae5e5ab3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/flow-\/engine.\+h\end{DoxyCompactItemize}

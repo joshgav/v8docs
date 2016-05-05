@@ -1,0 +1,57 @@
+\hypertarget{classv8_1_1internal_1_1_compilation_cache_table}{}\section{v8\+:\+:internal\+:\+:Compilation\+Cache\+Table Class Reference}
+\label{classv8_1_1internal_1_1_compilation_cache_table}\index{v8\+::internal\+::\+Compilation\+Cache\+Table@{v8\+::internal\+::\+Compilation\+Cache\+Table}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compilation\+Cache\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classv8_1_1internal_1_1_compilation_cache_table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Lookup} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ src, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a2d9579da6f83c3678589f69c3e3646e3}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a2d9579da6f83c3678589f69c3e3646e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Lookup\+Eval} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ src, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ shared, Language\+Mode language\+\_\+mode, int scope\+\_\+position)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a67788559311a86762f8ac8a913883961}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a67788559311a86762f8ac8a913883961}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Lookup\+Reg\+Exp} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source, \hyperlink{classv8_1_1base_1_1_flags}{J\+S\+Reg\+Exp\+::\+Flags} flags)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a3cddd5ab9d8f79df18a17a244da11904}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a3cddd5ab9d8f79df18a17a244da11904}
+
+\item 
+void {\bfseries Remove} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_aaa1a061ec7d89c45fe7901eedb7d8e4c}{}\label{classv8_1_1internal_1_1_compilation_cache_table_aaa1a061ec7d89c45fe7901eedb7d8e4c}
+
+\item 
+void {\bfseries Age} ()\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_aa0b4746b24afe324bbe1450553a75506}{}\label{classv8_1_1internal_1_1_compilation_cache_table_aa0b4746b24afe324bbe1450553a75506}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ {\bfseries Put} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ cache, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ src, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, Language\+Mode language\+\_\+mode, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a5b64add8e11a4d166a83311ac474f0b5}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a5b64add8e11a4d166a83311ac474f0b5}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ {\bfseries Put\+Eval} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ cache, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ src, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ context, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ value, int scope\+\_\+position)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a31b05aecdf3b60535583dcb06c0dd267}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a31b05aecdf3b60535583dcb06c0dd267}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ {\bfseries Put\+Reg\+Exp} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table} $>$ cache, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ src, \hyperlink{classv8_1_1base_1_1_flags}{J\+S\+Reg\+Exp\+::\+Flags} flags, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ value)\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a0d5ff6bcfd3d4b9e5305b99fe8dfe33e}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a0d5ff6bcfd3d4b9e5305b99fe8dfe33e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Hash\+Generations} = 10\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_adb7672181225869e9b8ca7d196e9f574}{}\label{classv8_1_1internal_1_1_compilation_cache_table_adb7672181225869e9b8ca7d196e9f574}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_compilation_cache_table}{Compilation\+Cache\+Table})\hypertarget{classv8_1_1internal_1_1_compilation_cache_table_a3be00d9406b9e3c5ddb420620d6689da}{}\label{classv8_1_1internal_1_1_compilation_cache_table_a3be00d9406b9e3c5ddb420620d6689da}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

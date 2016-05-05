@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1_call_runtime}{}\section{v8\+:\+:internal\+:\+:Call\+Runtime Class Reference}
+\label{classv8_1_1internal_1_1_call_runtime}\index{v8\+::internal\+::\+Call\+Runtime@{v8\+::internal\+::\+Call\+Runtime}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Call\+Runtime\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1_call_runtime}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries arguments} () const \hypertarget{classv8_1_1internal_1_1_call_runtime_a4ec3bd8c0a586c9dc66ea60652ed28ca}{}\label{classv8_1_1internal_1_1_call_runtime_a4ec3bd8c0a586c9dc66ea60652ed28ca}
+
+\item 
+bool {\bfseries is\+\_\+jsruntime} () const \hypertarget{classv8_1_1internal_1_1_call_runtime_a7b8723453c5d36584baaaecdf5dcf677}{}\label{classv8_1_1internal_1_1_call_runtime_a7b8723453c5d36584baaaecdf5dcf677}
+
+\item 
+int {\bfseries context\+\_\+index} () const \hypertarget{classv8_1_1internal_1_1_call_runtime_aa4220af2be5ee653473667d1be1f17d0}{}\label{classv8_1_1internal_1_1_call_runtime_aa4220af2be5ee653473667d1be1f17d0}
+
+\item 
+const \hyperlink{structv8_1_1internal_1_1_runtime_1_1_function}{Runtime\+::\+Function} $\ast$ {\bfseries function} () const \hypertarget{classv8_1_1internal_1_1_call_runtime_a2e541d8f50db6eb56f0e686bff6dc70d}{}\label{classv8_1_1internal_1_1_call_runtime_a2e541d8f50db6eb56f0e686bff6dc70d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Call\+Id} ()\hypertarget{classv8_1_1internal_1_1_call_runtime_a6e388b652b3cc5316da11f53f3da78fd}{}\label{classv8_1_1internal_1_1_call_runtime_a6e388b652b3cc5316da11f53f3da78fd}
+
+\item 
+const char $\ast$ {\bfseries debug\+\_\+name} ()\hypertarget{classv8_1_1internal_1_1_call_runtime_a00159ea8b5532f8002e36e158c54bf31}{}\label{classv8_1_1internal_1_1_call_runtime_a00159ea8b5532f8002e36e158c54bf31}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_call_runtime_a207eec6cdd0ad1959415efe577739c82}{}\label{classv8_1_1internal_1_1_call_runtime_a207eec6cdd0ad1959415efe577739c82}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Call\+Runtime} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, const \hyperlink{structv8_1_1internal_1_1_runtime_1_1_function}{Runtime\+::\+Function} $\ast$function, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$arguments, int pos)\hypertarget{classv8_1_1internal_1_1_call_runtime_a93242140aa0126cf1ad0a0b39b2b9e95}{}\label{classv8_1_1internal_1_1_call_runtime_a93242140aa0126cf1ad0a0b39b2b9e95}
+
+\item 
+{\bfseries Call\+Runtime} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int context\+\_\+index, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$arguments, int pos)\hypertarget{classv8_1_1internal_1_1_call_runtime_a6423f527596dd51b8af36e762f536443}{}\label{classv8_1_1internal_1_1_call_runtime_a6423f527596dd51b8af36e762f536443}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries parent\+\_\+num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_call_runtime_a37c3f9725c4dadaecdd2fec6651d023e}{}\label{classv8_1_1internal_1_1_call_runtime_a37c3f9725c4dadaecdd2fec6651d023e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries local\+\_\+id} (int n) const \hypertarget{classv8_1_1internal_1_1_call_runtime_a899b0e71b05a4d2d7c5c7c43ff06dc21}{}\label{classv8_1_1internal_1_1_call_runtime_a899b0e71b05a4d2d7c5c7c43ff06dc21}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structv8_1_1internal_1_1_runtime_1_1_function}{Runtime\+::\+Function} $\ast$ {\bfseries function\+\_\+}\hypertarget{classv8_1_1internal_1_1_call_runtime_a76f8938038102811da75a99de9b1ab48}{}\label{classv8_1_1internal_1_1_call_runtime_a76f8938038102811da75a99de9b1ab48}
+
+\item 
+int {\bfseries context\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_call_runtime_a8efda92ce105c8eb4840bf46f1666a40}{}\label{classv8_1_1internal_1_1_call_runtime_a8efda92ce105c8eb4840bf46f1666a40}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ $>$ $\ast$ {\bfseries arguments\+\_\+}\hypertarget{classv8_1_1internal_1_1_call_runtime_a89bb3472f43835524f60c2459ce18b00}{}\label{classv8_1_1internal_1_1_call_runtime_a89bb3472f43835524f60c2459ce18b00}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\end{DoxyCompactItemize}

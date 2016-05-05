@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch}{}\section{v8\+:\+:internal\+:\+:H\+Compare\+Numeric\+And\+Branch Class Reference}
+\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch}\index{v8\+::internal\+::\+H\+Compare\+Numeric\+And\+Branch@{v8\+::internal\+::\+H\+Compare\+Numeric\+And\+Branch}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Compare\+Numeric\+And\+Branch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1_h_compare_numeric_and_branch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries left} () const \hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a4a31f85adb3fa865634e6694d31007ec}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a4a31f85adb3fa865634e6694d31007ec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries right} () const \hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a4a9d4baf1b241c1e109ea24203945111}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a4a9d4baf1b241c1e109ea24203945111}
+
+\item 
+Token\+::\+Value {\bfseries token} () const \hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a5035e9844eadd44ebbf630941b1049bc}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a5035e9844eadd44ebbf630941b1049bc}
+
+\item 
+void {\bfseries set\+\_\+observed\+\_\+input\+\_\+representation} (\hyperlink{classv8_1_1internal_1_1_representation}{Representation} left, \hyperlink{classv8_1_1internal_1_1_representation}{Representation} right)\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a249003723415949ca1bb4a110fec595e}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a249003723415949ca1bb4a110fec595e}
+
+\item 
+void {\bfseries Infer\+Representation} (\hyperlink{classv8_1_1internal_1_1_h_infer_representation_phase}{H\+Infer\+Representation\+Phase} $\ast$h\+\_\+infer) override\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a155a70f439bbb068acfb6e17b5d5d7d6}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a155a70f439bbb068acfb6e17b5d5d7d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Required\+Input\+Representation} (int index) override\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_af0b1dc2760a1360f845fdc7ea0b8b8af}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_af0b1dc2760a1360f845fdc7ea0b8b8af}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries observed\+\_\+input\+\_\+representation} (int index) override\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a8b893e5a1b233e9f026cb100224024e4}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a8b893e5a1b233e9f026cb100224024e4}
+
+\item 
+bool {\bfseries Known\+Successor\+Block} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$$\ast$block) override\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ab9db3e27127b397429d1ca6a176110ed}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ab9db3e27127b397429d1ca6a176110ed}
+
+\item 
+std\+::ostream \& {\bfseries Print\+Data\+To} (std\+::ostream \&os) const  override\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a68c059d7840c6149d7e1a0a085a3bfa6}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a68c059d7840c6149d7e1a0a085a3bfa6}
+
+\item 
+void {\bfseries Set\+Operand\+Positions} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} left\+\_\+pos, \hyperlink{classv8_1_1internal_1_1_source_position}{Source\+Position} right\+\_\+pos)\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a55fe883b91af5314cc1b4f90724c5fa6}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a55fe883b91af5314cc1b4f90724c5fa6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_h_compare_numeric_and_branch}{H\+Compare\+Numeric\+And\+Branch} $\ast$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right, Token\+::\+Value token, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$true\+\_\+target=N\+U\+LL, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$false\+\_\+target=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a74394ee81d1000f6729c7e804a2688fb}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a74394ee81d1000f6729c7e804a2688fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Compare\+Numeric\+And\+Branch} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right, Token\+::\+Value token, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$true\+\_\+target, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$false\+\_\+target)\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ac39646b586b733a0bbf8bbe331e2bd3f}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ac39646b586b733a0bbf8bbe331e2bd3f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries observed\+\_\+input\+\_\+representation\+\_\+} \mbox{[}2\mbox{]}\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a26ca02e7db8868ef922f0f3f80ab447c}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_a26ca02e7db8868ef922f0f3f80ab447c}
+
+\item 
+Token\+::\+Value {\bfseries token\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ae3f2f2d8f31f60ade2ad02fd1d7feacc}{}\label{classv8_1_1internal_1_1_h_compare_numeric_and_branch_ae3f2f2d8f31f60ade2ad02fd1d7feacc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\hypertarget{classv8_1_1internal_1_1_bit_field_base}{}\section{v8\+:\+:internal\+:\+:Bit\+Field\+Base$<$ T, shift, size, U $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_bit_field_base}\index{v8\+::internal\+::\+Bit\+Field\+Base$<$ T, shift, size, U $>$@{v8\+::internal\+::\+Bit\+Field\+Base$<$ T, shift, size, U $>$}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries is\+\_\+valid} (T value)\hypertarget{classv8_1_1internal_1_1_bit_field_base_a2bdc1abbe7bcef7acf38a7862eb1b591}{}\label{classv8_1_1internal_1_1_bit_field_base_a2bdc1abbe7bcef7acf38a7862eb1b591}
+
+\item 
+static U {\bfseries encode} (T value)\hypertarget{classv8_1_1internal_1_1_bit_field_base_aa162659173f7f724b50e31d89c0f3fa8}{}\label{classv8_1_1internal_1_1_bit_field_base_aa162659173f7f724b50e31d89c0f3fa8}
+
+\item 
+static U {\bfseries update} (U previous, T value)\hypertarget{classv8_1_1internal_1_1_bit_field_base_a0ce53f2db72ce51d96606fc0c9f353db}{}\label{classv8_1_1internal_1_1_bit_field_base_a0ce53f2db72ce51d96606fc0c9f353db}
+
+\item 
+static T {\bfseries decode} (U value)\hypertarget{classv8_1_1internal_1_1_bit_field_base_aa251f75c99718dea15a4f90ad42db161}{}\label{classv8_1_1internal_1_1_bit_field_base_aa251f75c99718dea15a4f90ad42db161}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const U {\bfseries k\+One} = static\+\_\+cast$<$U$>$(1\+U)\hypertarget{classv8_1_1internal_1_1_bit_field_base_af2b0229ffee57c76f39b6a3aad6d22bb}{}\label{classv8_1_1internal_1_1_bit_field_base_af2b0229ffee57c76f39b6a3aad6d22bb}
+
+\item 
+static const U {\bfseries k\+Mask} = ((k\+One $<$$<$ shift) $<$$<$ size) -\/ (k\+One $<$$<$ shift)\hypertarget{classv8_1_1internal_1_1_bit_field_base_a26880a1aa7d61fe08bcf77de9ca46b6f}{}\label{classv8_1_1internal_1_1_bit_field_base_a26880a1aa7d61fe08bcf77de9ca46b6f}
+
+\item 
+static const U {\bfseries k\+Shift} = shift\hypertarget{classv8_1_1internal_1_1_bit_field_base_a0b0c87744aa976ba62aadb4552e633ef}{}\label{classv8_1_1internal_1_1_bit_field_base_a0b0c87744aa976ba62aadb4552e633ef}
+
+\item 
+static const U {\bfseries k\+Size} = size\hypertarget{classv8_1_1internal_1_1_bit_field_base_a73ac861af5e2f043ea3ef16bc102571b}{}\label{classv8_1_1internal_1_1_bit_field_base_a73ac861af5e2f043ea3ef16bc102571b}
+
+\item 
+static const U {\bfseries k\+Next} = k\+Shift + k\+Size\hypertarget{classv8_1_1internal_1_1_bit_field_base_ac924450272ea6ed882a43eba783d3488}{}\label{classv8_1_1internal_1_1_bit_field_base_ac924450272ea6ed882a43eba783d3488}
+
+\item 
+static const T {\bfseries k\+Max} = static\+\_\+cast$<$T$>$((k\+One $<$$<$ size) -\/ 1)\hypertarget{classv8_1_1internal_1_1_bit_field_base_a82aada63ffb94bf07ba4702ec9fc1525}{}\label{classv8_1_1internal_1_1_bit_field_base_a82aada63ffb94bf07ba4702ec9fc1525}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/utils.\+h\end{DoxyCompactItemize}

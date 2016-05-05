@@ -1,0 +1,134 @@
+\hypertarget{classv8_1_1internal_1_1_assembler_base}{}\section{v8\+:\+:internal\+:\+:Assembler\+Base Class Reference}
+\label{classv8_1_1internal_1_1_assembler_base}\index{v8\+::internal\+::\+Assembler\+Base@{v8\+::internal\+::\+Assembler\+Base}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Assembler\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{classv8_1_1internal_1_1_assembler_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Assembler\+Base} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, void $\ast$buffer, int buffer\+\_\+size)\hypertarget{classv8_1_1internal_1_1_assembler_base_a7ffa22cc463c9ee16ed46bfa38a5cd5b}{}\label{classv8_1_1internal_1_1_assembler_base_a7ffa22cc463c9ee16ed46bfa38a5cd5b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a51294386a61dda31ed1488228c48211a}{}\label{classv8_1_1internal_1_1_assembler_base_a51294386a61dda31ed1488228c48211a}
+
+\item 
+int {\bfseries jit\+\_\+cookie} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a47d3778081925b5ecf685b1a475c8057}{}\label{classv8_1_1internal_1_1_assembler_base_a47d3778081925b5ecf685b1a475c8057}
+
+\item 
+bool {\bfseries emit\+\_\+debug\+\_\+code} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_afc598637650acda081c8ebedb21ae3fc}{}\label{classv8_1_1internal_1_1_assembler_base_afc598637650acda081c8ebedb21ae3fc}
+
+\item 
+void {\bfseries set\+\_\+emit\+\_\+debug\+\_\+code} (bool value)\hypertarget{classv8_1_1internal_1_1_assembler_base_a1bcbeda264b5026c463490820c91ffab}{}\label{classv8_1_1internal_1_1_assembler_base_a1bcbeda264b5026c463490820c91ffab}
+
+\item 
+bool {\bfseries serializer\+\_\+enabled} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a43270aa31fe8878c96b1cb2f07e11c17}{}\label{classv8_1_1internal_1_1_assembler_base_a43270aa31fe8878c96b1cb2f07e11c17}
+
+\item 
+void {\bfseries enable\+\_\+serializer} ()\hypertarget{classv8_1_1internal_1_1_assembler_base_a602b8f228f5491bdf8d02e7f3a55fdc9}{}\label{classv8_1_1internal_1_1_assembler_base_a602b8f228f5491bdf8d02e7f3a55fdc9}
+
+\item 
+bool {\bfseries predictable\+\_\+code\+\_\+size} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_afdc8e88acea34bc05e20f10a7e511264}{}\label{classv8_1_1internal_1_1_assembler_base_afdc8e88acea34bc05e20f10a7e511264}
+
+\item 
+void {\bfseries set\+\_\+predictable\+\_\+code\+\_\+size} (bool value)\hypertarget{classv8_1_1internal_1_1_assembler_base_a8fb65d4cafef633546c2143aac9d090d}{}\label{classv8_1_1internal_1_1_assembler_base_a8fb65d4cafef633546c2143aac9d090d}
+
+\item 
+uint64\+\_\+t {\bfseries enabled\+\_\+cpu\+\_\+features} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a4037253a85548558ccb31c87f27c8401}{}\label{classv8_1_1internal_1_1_assembler_base_a4037253a85548558ccb31c87f27c8401}
+
+\item 
+void {\bfseries set\+\_\+enabled\+\_\+cpu\+\_\+features} (uint64\+\_\+t features)\hypertarget{classv8_1_1internal_1_1_assembler_base_a042d7907d4097ff5f4bc4cb0685b47a7}{}\label{classv8_1_1internal_1_1_assembler_base_a042d7907d4097ff5f4bc4cb0685b47a7}
+
+\item 
+bool {\bfseries Is\+Enabled} (Cpu\+Feature f)\hypertarget{classv8_1_1internal_1_1_assembler_base_a1eaf5b9a9d0998b6bc3104cf32c08d7c}{}\label{classv8_1_1internal_1_1_assembler_base_a1eaf5b9a9d0998b6bc3104cf32c08d7c}
+
+\item 
+bool {\bfseries is\+\_\+constant\+\_\+pool\+\_\+available} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a6634b86a7e1b02404e5c53a8f540e822}{}\label{classv8_1_1internal_1_1_assembler_base_a6634b86a7e1b02404e5c53a8f540e822}
+
+\item 
+int {\bfseries pc\+\_\+offset} () const \hypertarget{classv8_1_1internal_1_1_assembler_base_a956cd6617b0ebddba1df67bfe6b138cd}{}\label{classv8_1_1internal_1_1_assembler_base_a956cd6617b0ebddba1df67bfe6b138cd}
+
+\item 
+virtual void {\bfseries Aborted\+Code\+Generation} ()\hypertarget{classv8_1_1internal_1_1_assembler_base_aa5bf23c158a9df7762e8529aeda8e25e}{}\label{classv8_1_1internal_1_1_assembler_base_aa5bf23c158a9df7762e8529aeda8e25e}
+
+\item 
+void {\bfseries Print} ()\hypertarget{classv8_1_1internal_1_1_assembler_base_a7cdac86bb62fa1d385a6c180146674e7}{}\label{classv8_1_1internal_1_1_assembler_base_a7cdac86bb62fa1d385a6c180146674e7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Quiet\+NaN} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$nan)\hypertarget{classv8_1_1internal_1_1_assembler_base_a11f5cc896549fe763ac528492f16111e}{}\label{classv8_1_1internal_1_1_assembler_base_a11f5cc896549fe763ac528492f16111e}
+
+\item 
+static void {\bfseries Flush\+I\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, void $\ast$start, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1_assembler_base_ac2c098aeb17d412bf319f2e086ac0785}{}\label{classv8_1_1internal_1_1_assembler_base_ac2c098aeb17d412bf319f2e086ac0785}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Minimal\+Buffer\+Size} = 4$\ast$KB\hypertarget{classv8_1_1internal_1_1_assembler_base_a58ac353bfad9e4a1206864e76baec7f8}{}\label{classv8_1_1internal_1_1_assembler_base_a58ac353bfad9e4a1206864e76baec7f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+\_\+constant\+\_\+pool\+\_\+available} (bool available)\hypertarget{classv8_1_1internal_1_1_assembler_base_af45536e3cf5df4078e5b8e2b5bb54dba}{}\label{classv8_1_1internal_1_1_assembler_base_af45536e3cf5df4078e5b8e2b5bb54dba}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte $\ast$ {\bfseries buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_ad344ab4ee5927986bb2c17e63aa5a976}{}\label{classv8_1_1internal_1_1_assembler_base_ad344ab4ee5927986bb2c17e63aa5a976}
+
+\item 
+int {\bfseries buffer\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a83cced380ff671163b1969b2ed2aa33c}{}\label{classv8_1_1internal_1_1_assembler_base_a83cced380ff671163b1969b2ed2aa33c}
+
+\item 
+bool {\bfseries own\+\_\+buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a9ec9983a6ada967f6b1d03551b2615d2}{}\label{classv8_1_1internal_1_1_assembler_base_a9ec9983a6ada967f6b1d03551b2615d2}
+
+\item 
+byte $\ast$ {\bfseries pc\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_ae4d9536957f5e1b5336125b9c5c4d2f8}{}\label{classv8_1_1internal_1_1_assembler_base_ae4d9536957f5e1b5336125b9c5c4d2f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a1ed1d91fbb9e512d21baef9666f89cc6}{}\label{classv8_1_1internal_1_1_assembler_base_a1ed1d91fbb9e512d21baef9666f89cc6}
+
+\item 
+int {\bfseries jit\+\_\+cookie\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a57e9d5973c0d4b5e76087285ecb74dbb}{}\label{classv8_1_1internal_1_1_assembler_base_a57e9d5973c0d4b5e76087285ecb74dbb}
+
+\item 
+uint64\+\_\+t {\bfseries enabled\+\_\+cpu\+\_\+features\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a69e00196deec7c3aacd61b36637d47ff}{}\label{classv8_1_1internal_1_1_assembler_base_a69e00196deec7c3aacd61b36637d47ff}
+
+\item 
+bool {\bfseries emit\+\_\+debug\+\_\+code\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a7b7caa91d9e973cb31d4416b04ba72e5}{}\label{classv8_1_1internal_1_1_assembler_base_a7b7caa91d9e973cb31d4416b04ba72e5}
+
+\item 
+bool {\bfseries predictable\+\_\+code\+\_\+size\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_acdc1a45ad7a632d51a71a95b5de4bd67}{}\label{classv8_1_1internal_1_1_assembler_base_acdc1a45ad7a632d51a71a95b5de4bd67}
+
+\item 
+bool {\bfseries serializer\+\_\+enabled\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_a4894493ec5a13dd12381231a70bce756}{}\label{classv8_1_1internal_1_1_assembler_base_a4894493ec5a13dd12381231a70bce756}
+
+\item 
+bool {\bfseries constant\+\_\+pool\+\_\+available\+\_\+}\hypertarget{classv8_1_1internal_1_1_assembler_base_afca4de097da4982d38cb65c8b65a79a1}{}\label{classv8_1_1internal_1_1_assembler_base_afca4de097da4982d38cb65c8b65a79a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Frame\+And\+Constant\+Pool\+Scope}\hypertarget{classv8_1_1internal_1_1_assembler_base_aa304fe9349eea268e71b1a8e1287d56e}{}\label{classv8_1_1internal_1_1_assembler_base_aa304fe9349eea268e71b1a8e1287d56e}
+
+\item 
+class {\bfseries Constant\+Pool\+Unavailable\+Scope}\hypertarget{classv8_1_1internal_1_1_assembler_base_a6eeae7aab06d03635ae81dd285ddd428}{}\label{classv8_1_1internal_1_1_assembler_base_a6eeae7aab06d03635ae81dd285ddd428}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/assembler.\+h\item 
+/\+Users/joshgav/node/v8/src/assembler.\+cc\end{DoxyCompactItemize}

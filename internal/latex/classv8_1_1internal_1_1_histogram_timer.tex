@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1_histogram_timer}{}\section{v8\+:\+:internal\+:\+:Histogram\+Timer Class Reference}
+\label{classv8_1_1internal_1_1_histogram_timer}\index{v8\+::internal\+::\+Histogram\+Timer@{v8\+::internal\+::\+Histogram\+Timer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Histogram\+Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_histogram_timer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Resolution} \{ \\*
+{\bfseries M\+I\+L\+L\+I\+S\+E\+C\+O\+ND}, 
+\\*
+{\bfseries M\+I\+C\+R\+O\+S\+E\+C\+O\+ND}
+ \}\hypertarget{classv8_1_1internal_1_1_histogram_timer_aaac1deda5d7cd6f2ee2d8f396193db9b}{}\label{classv8_1_1internal_1_1_histogram_timer_aaac1deda5d7cd6f2ee2d8f396193db9b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Histogram\+Timer} (const char $\ast$name, int min, int max, Resolution resolution, int num\+\_\+buckets, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_histogram_timer_a9f6a3ac0d8a199722038d1374e39456c}{}\label{classv8_1_1internal_1_1_histogram_timer_a9f6a3ac0d8a199722038d1374e39456c}
+
+\item 
+void {\bfseries Start} ()\hypertarget{classv8_1_1internal_1_1_histogram_timer_ac979127ffb542e53c66dc5d700f4bd9e}{}\label{classv8_1_1internal_1_1_histogram_timer_ac979127ffb542e53c66dc5d700f4bd9e}
+
+\item 
+void {\bfseries Stop} ()\hypertarget{classv8_1_1internal_1_1_histogram_timer_a890953c74235f44308230d445ebf9f1b}{}\label{classv8_1_1internal_1_1_histogram_timer_a890953c74235f44308230d445ebf9f1b}
+
+\item 
+bool {\bfseries Running} ()\hypertarget{classv8_1_1internal_1_1_histogram_timer_ae7e03caff0533d469e5abfcf4da70da2}{}\label{classv8_1_1internal_1_1_histogram_timer_ae7e03caff0533d469e5abfcf4da70da2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_elapsed_timer}{base\+::\+Elapsed\+Timer} {\bfseries timer\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_timer_a8beb0a75a3580295787cf6a08f9fb962}{}\label{classv8_1_1internal_1_1_histogram_timer_a8beb0a75a3580295787cf6a08f9fb962}
+
+\item 
+Resolution {\bfseries resolution\+\_\+}\hypertarget{classv8_1_1internal_1_1_histogram_timer_a64ebc565d7d3996b2fbc905d297239c0}{}\label{classv8_1_1internal_1_1_histogram_timer_a64ebc565d7d3996b2fbc905d297239c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/counters.\+h\item 
+/\+Users/joshgav/node/v8/src/counters.\+cc\end{DoxyCompactItemize}

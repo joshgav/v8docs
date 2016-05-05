@@ -1,0 +1,46 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Linker Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker}\index{v8\+::internal\+::wasm\+::\+Wasm\+Linker@{v8\+::internal\+::wasm\+::\+Wasm\+Linker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wasm\+Linker} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, size\+\_\+t size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aa1a4b41e69a90168043c63a36060ba8f}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aa1a4b41e69a90168043c63a36060ba8f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Get\+Function\+Code} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a9206c261937ea4248e10ddc91dd6071b}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a9206c261937ea4248e10ddc91dd6071b}
+
+\item 
+void {\bfseries Finish} (uint32\+\_\+t index, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a64ad01cf751a0ac13014d19a6682e022}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a64ad01cf751a0ac13014d19a6682e022}
+
+\item 
+void {\bfseries Link} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ function\+\_\+table, std\+::vector$<$ uint16\+\_\+t $>$ \&functions)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aae9542ff180053dc64d8d1eecb4eac00}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aae9542ff180053dc64d8d1eecb4eac00}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Link\+Function} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_adccd4d7402272c1ecc26aa3d766ea066}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_adccd4d7402272c1ecc26aa3d766ea066}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a9eb2ce1df5ebd1e2fc035539e09ec246}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a9eb2ce1df5ebd1e2fc035539e09ec246}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ $>$ {\bfseries placeholder\+\_\+code\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a36f668f69118e0e02aae4a75b665d64c}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a36f668f69118e0e02aae4a75b665d64c}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ $>$ {\bfseries function\+\_\+code\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a40065c2b4ed0634bbcc4683cee81b4c5}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_a40065c2b4ed0634bbcc4683cee81b4c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Placeholder\+Marker} = 1000000000\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aacccea746d163f414e1ed88c51d8d03b}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_linker_aacccea746d163f414e1ed88c51d8d03b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/wasm-\/module.\+cc\end{DoxyCompactItemize}

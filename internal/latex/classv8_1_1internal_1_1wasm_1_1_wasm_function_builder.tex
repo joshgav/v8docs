@@ -1,0 +1,121 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Function\+Builder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder}\index{v8\+::internal\+::wasm\+::\+Wasm\+Function\+Builder@{v8\+::internal\+::wasm\+::\+Wasm\+Function\+Builder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Function\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function_builder_1_1_type}{Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t {\bfseries Add\+Param} (Local\+Type type)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afd04319bd075c728774f9c3413fc928e}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afd04319bd075c728774f9c3413fc928e}
+
+\item 
+uint16\+\_\+t {\bfseries Add\+Local} (Local\+Type type)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abe5ced9b229bc8f47c81306f8fdf1839}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abe5ced9b229bc8f47c81306f8fdf1839}
+
+\item 
+void {\bfseries Return\+Type} (Local\+Type type)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a5236db09948cbcd68390637a058f6165}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a5236db09948cbcd68390637a058f6165}
+
+\item 
+void {\bfseries Emit\+Var\+Int} (uint32\+\_\+t val)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a2ddf7386f2c11a791ecd416d5e10c9f8}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a2ddf7386f2c11a791ecd416d5e10c9f8}
+
+\item 
+void {\bfseries Emit\+Code} (const byte $\ast$code, uint32\+\_\+t code\+\_\+size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a57f2b2c5fd928b697311b8f81ca2a044}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a57f2b2c5fd928b697311b8f81ca2a044}
+
+\item 
+void {\bfseries Emit\+Code} (const byte $\ast$code, uint32\+\_\+t code\+\_\+size, const uint32\+\_\+t $\ast$local\+\_\+indices, uint32\+\_\+t indices\+\_\+size)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_aebf8d6ac9c3b6e310093fd8ad1ed2ea4}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_aebf8d6ac9c3b6e310093fd8ad1ed2ea4}
+
+\item 
+void {\bfseries Emit} (Wasm\+Opcode opcode)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afcf948a734fad5c6b0d2891d5a0aa2fe}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afcf948a734fad5c6b0d2891d5a0aa2fe}
+
+\item 
+void {\bfseries Emit\+Get\+Local} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a2837891a191fa5640d4e7131a679fc17}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a2837891a191fa5640d4e7131a679fc17}
+
+\item 
+void {\bfseries Emit\+Set\+Local} (uint32\+\_\+t index)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a99c975f6dd584e2b09757f424dbf3785}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a99c975f6dd584e2b09757f424dbf3785}
+
+\item 
+void {\bfseries Emit\+I32\+Const} (int32\+\_\+t val)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_acf4a6a63c931c0a63921d7c8da1c8791}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_acf4a6a63c931c0a63921d7c8da1c8791}
+
+\item 
+void {\bfseries Emit\+With\+U8} (Wasm\+Opcode opcode, const byte immediate)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ab3a596820cd388c8ecc3a9ec9bfa4743}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ab3a596820cd388c8ecc3a9ec9bfa4743}
+
+\item 
+void {\bfseries Emit\+With\+U8\+U8} (Wasm\+Opcode opcode, const byte imm1, const byte imm2)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7a40a246b07ac2317a5d20d07c50c501}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7a40a246b07ac2317a5d20d07c50c501}
+
+\item 
+void {\bfseries Emit\+With\+Var\+Int} (Wasm\+Opcode opcode, uint32\+\_\+t immediate)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a85db7bdb69cc40009e1cf6b6e0980efa}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a85db7bdb69cc40009e1cf6b6e0980efa}
+
+\item 
+uint32\+\_\+t {\bfseries Emit\+Editable\+Var\+Int\+Immediate} ()\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a466663a8c0b4c53fa93c515da673c245}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a466663a8c0b4c53fa93c515da673c245}
+
+\item 
+void {\bfseries Edit\+Var\+Int\+Immediate} (uint32\+\_\+t offset, const uint32\+\_\+t immediate)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abfad5e0ad3c91ea7e6a418c8a89150ff}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abfad5e0ad3c91ea7e6a418c8a89150ff}
+
+\item 
+void {\bfseries Exported} (uint8\+\_\+t flag)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a08065b958ed6ed554ae5a2862885e880}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a08065b958ed6ed554ae5a2862885e880}
+
+\item 
+void {\bfseries External} (uint8\+\_\+t flag)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7f7145eca81885155ed970d3588734ad}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7f7145eca81885155ed970d3588734ad}
+
+\item 
+void {\bfseries Set\+Name} (const unsigned char $\ast$name, int name\+\_\+length)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abddc1f869cedd292d4f6b27559fe42c5}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_abddc1f869cedd292d4f6b27559fe42c5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1wasm_1_1_wasm_function_encoder}{Wasm\+Function\+Encoder} $\ast$ {\bfseries Build} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1wasm_1_1_wasm_module_builder}{Wasm\+Module\+Builder} $\ast$mb) const \hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ab02f57ef521f71f16df88d94f73d9383}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ab02f57ef521f71f16df88d94f73d9383}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wasm\+Function\+Builder} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a0786146d4dd0151b7cbe6d401398898d}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a0786146d4dd0151b7cbe6d401398898d}
+
+\item 
+uint16\+\_\+t {\bfseries Add\+Var} (Local\+Type type, bool param)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afa0685511c034d3a27850099b2913fde}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_afa0685511c034d3a27850099b2913fde}
+
+\item 
+void {\bfseries Index\+Vars} (\hyperlink{classv8_1_1internal_1_1wasm_1_1_wasm_function_encoder}{Wasm\+Function\+Encoder} $\ast$e, uint16\+\_\+t $\ast$var\+\_\+index) const \hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_aa40cdd5d72aedbdf370dfad283efdade}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_aa40cdd5d72aedbdf370dfad283efdade}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Local\+Type {\bfseries return\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a05189fddcf688ec136766338c3de7ed8}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a05189fddcf688ec136766338c3de7ed8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_wasm_function_builder_1_1_type}{Type} $>$ {\bfseries locals\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a4437770b283bddcb698580f9478b8e49}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a4437770b283bddcb698580f9478b8e49}
+
+\item 
+uint8\+\_\+t {\bfseries exported\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7a58b230188bf7d6a18de513ecde3a72}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a7a58b230188bf7d6a18de513ecde3a72}
+
+\item 
+uint8\+\_\+t {\bfseries external\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ad3ea1680b1fe0815abcd29d4a4be0559}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ad3ea1680b1fe0815abcd29d4a4be0559}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint8\+\_\+t $>$ {\bfseries body\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ae3c9a56ea25d59d450bb25038336bd51}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ae3c9a56ea25d59d450bb25038336bd51}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ uint32\+\_\+t $>$ {\bfseries local\+\_\+indices\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a422ef257625067cc55be23da257bd5bb}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_a422ef257625067cc55be23da257bd5bb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ char $>$ {\bfseries name\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_acdbec002274db2a40a3dfe671ed2577c}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_acdbec002274db2a40a3dfe671ed2577c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Wasm\+Module\+Builder}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ace63ff4bed9fda245c733e10c4a9714b}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_function_builder_ace63ff4bed9fda245c733e10c4a9714b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/encoder.\+h\item 
+/\+Users/joshgav/node/v8/src/wasm/encoder.\+cc\end{DoxyCompactItemize}

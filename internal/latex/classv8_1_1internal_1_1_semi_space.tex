@@ -1,0 +1,169 @@
+\hypertarget{classv8_1_1internal_1_1_semi_space}{}\section{v8\+:\+:internal\+:\+:Semi\+Space Class Reference}
+\label{classv8_1_1internal_1_1_semi_space}\index{v8\+::internal\+::\+Semi\+Space@{v8\+::internal\+::\+Semi\+Space}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Semi\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_semi_space}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Semi\+Space} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Semi\+Space\+Id semispace)\hypertarget{classv8_1_1internal_1_1_semi_space_a1958ffe221d002476c29da54612956f0}{}\label{classv8_1_1internal_1_1_semi_space_a1958ffe221d002476c29da54612956f0}
+
+\item 
+bool {\bfseries Contains} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$o)\hypertarget{classv8_1_1internal_1_1_semi_space_a7b8cab12d3c9941c5d09b181900dd61c}{}\label{classv8_1_1internal_1_1_semi_space_a7b8cab12d3c9941c5d09b181900dd61c}
+
+\item 
+bool {\bfseries Contains} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$o)\hypertarget{classv8_1_1internal_1_1_semi_space_a6dc2672844ad19e9ed67d92fd8fa7d52}{}\label{classv8_1_1internal_1_1_semi_space_a6dc2672844ad19e9ed67d92fd8fa7d52}
+
+\item 
+bool {\bfseries Contains\+Slow} (Address a)\hypertarget{classv8_1_1internal_1_1_semi_space_abbbef2d1954093488b830f774c5bfb76}{}\label{classv8_1_1internal_1_1_semi_space_abbbef2d1954093488b830f774c5bfb76}
+
+\item 
+void {\bfseries Set\+Up} (int initial\+\_\+capacity, int maximum\+\_\+capacity)\hypertarget{classv8_1_1internal_1_1_semi_space_aefc6e25c67c69b849e7771d55bd999c5}{}\label{classv8_1_1internal_1_1_semi_space_aefc6e25c67c69b849e7771d55bd999c5}
+
+\item 
+void {\bfseries Tear\+Down} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a2e5b66ad47c14767b0035ed5006c2152}{}\label{classv8_1_1internal_1_1_semi_space_a2e5b66ad47c14767b0035ed5006c2152}
+
+\item 
+bool {\bfseries Has\+Been\+Set\+Up} ()\hypertarget{classv8_1_1internal_1_1_semi_space_ae549c9fcda92bd48717df21eb7ffe024}{}\label{classv8_1_1internal_1_1_semi_space_ae549c9fcda92bd48717df21eb7ffe024}
+
+\item 
+bool {\bfseries Commit} ()\hypertarget{classv8_1_1internal_1_1_semi_space_abcde77679b352a13023036322527bdd8}{}\label{classv8_1_1internal_1_1_semi_space_abcde77679b352a13023036322527bdd8}
+
+\item 
+bool {\bfseries Uncommit} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a61e540c5fda1ce8ca1d3eba9ea7b79dc}{}\label{classv8_1_1internal_1_1_semi_space_a61e540c5fda1ce8ca1d3eba9ea7b79dc}
+
+\item 
+bool {\bfseries is\+\_\+committed} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a287a9650286c05244efe8a2464a0b584}{}\label{classv8_1_1internal_1_1_semi_space_a287a9650286c05244efe8a2464a0b584}
+
+\item 
+bool {\bfseries Grow\+To} (int new\+\_\+capacity)\hypertarget{classv8_1_1internal_1_1_semi_space_ac5923076cef0dd5a93f2d917ebc50544}{}\label{classv8_1_1internal_1_1_semi_space_ac5923076cef0dd5a93f2d917ebc50544}
+
+\item 
+bool {\bfseries Shrink\+To} (int new\+\_\+capacity)\hypertarget{classv8_1_1internal_1_1_semi_space_a71a5e8d620e9754758f3779b5c2806c1}{}\label{classv8_1_1internal_1_1_semi_space_a71a5e8d620e9754758f3779b5c2806c1}
+
+\item 
+Address {\bfseries space\+\_\+start} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a00a39687980da5652bb8b3c9d86b416b}{}\label{classv8_1_1internal_1_1_semi_space_a00a39687980da5652bb8b3c9d86b416b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries first\+\_\+page} ()\hypertarget{classv8_1_1internal_1_1_semi_space_affb8b730722b64f2d78bcce0bad0c955}{}\label{classv8_1_1internal_1_1_semi_space_affb8b730722b64f2d78bcce0bad0c955}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries current\+\_\+page} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a3959f291a89565277dd3cc05d8235d4e}{}\label{classv8_1_1internal_1_1_semi_space_a3959f291a89565277dd3cc05d8235d4e}
+
+\item 
+Address {\bfseries space\+\_\+end} ()\hypertarget{classv8_1_1internal_1_1_semi_space_afa779ea2c5d2ee9717ebd964016bf9b9}{}\label{classv8_1_1internal_1_1_semi_space_afa779ea2c5d2ee9717ebd964016bf9b9}
+
+\item 
+Address {\bfseries page\+\_\+low} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a99bc7823065a43ae2616a5add5576927}{}\label{classv8_1_1internal_1_1_semi_space_a99bc7823065a43ae2616a5add5576927}
+
+\item 
+Address {\bfseries page\+\_\+high} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a1215003e1c658acd5ecb782063880833}{}\label{classv8_1_1internal_1_1_semi_space_a1215003e1c658acd5ecb782063880833}
+
+\item 
+bool {\bfseries Advance\+Page} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a3a3a17fe0cd6b823613b324e1f352b46}{}\label{classv8_1_1internal_1_1_semi_space_a3a3a17fe0cd6b823613b324e1f352b46}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a14dc89b6ec2d58c43fe3799cd8e54c38}{}\label{classv8_1_1internal_1_1_semi_space_a14dc89b6ec2d58c43fe3799cd8e54c38}
+
+\item 
+bool {\bfseries Replace\+With\+Empty\+Page} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_semi_space_a3a570aaf97548e04777fb81839999aa2}{}\label{classv8_1_1internal_1_1_semi_space_a3a570aaf97548e04777fb81839999aa2}
+
+\item 
+Address {\bfseries age\+\_\+mark} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a96d84b4c29550486b8600a8601b269ce}{}\label{classv8_1_1internal_1_1_semi_space_a96d84b4c29550486b8600a8601b269ce}
+
+\item 
+void {\bfseries set\+\_\+age\+\_\+mark} (Address mark)\hypertarget{classv8_1_1internal_1_1_semi_space_aab39f62197f82066a5b293869ee2fc44}{}\label{classv8_1_1internal_1_1_semi_space_aab39f62197f82066a5b293869ee2fc44}
+
+\item 
+int {\bfseries current\+\_\+capacity} ()\hypertarget{classv8_1_1internal_1_1_semi_space_ae11d00166b737f61a2869ea1f6734a66}{}\label{classv8_1_1internal_1_1_semi_space_ae11d00166b737f61a2869ea1f6734a66}
+
+\item 
+int {\bfseries maximum\+\_\+capacity} ()\hypertarget{classv8_1_1internal_1_1_semi_space_ab0cebc7edf9dc164fe4bf7ce311acaad}{}\label{classv8_1_1internal_1_1_semi_space_ab0cebc7edf9dc164fe4bf7ce311acaad}
+
+\item 
+int {\bfseries minimum\+\_\+capacity} ()\hypertarget{classv8_1_1internal_1_1_semi_space_ae74eda2fb430ead1fb3d058aa246e6cc}{}\label{classv8_1_1internal_1_1_semi_space_ae74eda2fb430ead1fb3d058aa246e6cc}
+
+\item 
+Semi\+Space\+Id {\bfseries id} ()\hypertarget{classv8_1_1internal_1_1_semi_space_acdc44c71f23654cb7a127db798a1a52a}{}\label{classv8_1_1internal_1_1_semi_space_acdc44c71f23654cb7a127db798a1a52a}
+
+\item 
+size\+\_\+t {\bfseries Committed\+Physical\+Memory} () override\hypertarget{classv8_1_1internal_1_1_semi_space_a0f0477f262aa4c64a4f19bdd7d9807ca}{}\label{classv8_1_1internal_1_1_semi_space_a0f0477f262aa4c64a4f19bdd7d9807ca}
+
+\item 
+intptr\+\_\+t {\bfseries Size} () override\hypertarget{classv8_1_1internal_1_1_semi_space_a57ad5dfdcbadb76b4b356f3eef9160a5}{}\label{classv8_1_1internal_1_1_semi_space_a57ad5dfdcbadb76b4b356f3eef9160a5}
+
+\item 
+intptr\+\_\+t {\bfseries Size\+Of\+Objects} () override\hypertarget{classv8_1_1internal_1_1_semi_space_a8b0b2982a5dda0705c0f80104c686840}{}\label{classv8_1_1internal_1_1_semi_space_a8b0b2982a5dda0705c0f80104c686840}
+
+\item 
+intptr\+\_\+t {\bfseries Available} () override\hypertarget{classv8_1_1internal_1_1_semi_space_a09b86b020090c3eb7d8f81963f2c0645}{}\label{classv8_1_1internal_1_1_semi_space_a09b86b020090c3eb7d8f81963f2c0645}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Swap} (\hyperlink{classv8_1_1internal_1_1_semi_space}{Semi\+Space} $\ast$from, \hyperlink{classv8_1_1internal_1_1_semi_space}{Semi\+Space} $\ast$to)\hypertarget{classv8_1_1internal_1_1_semi_space_a12d9024e40c876221b1fc8da9ad55433}{}\label{classv8_1_1internal_1_1_semi_space_a12d9024e40c876221b1fc8da9ad55433}
+
+\item 
+static void {\bfseries Assert\+Valid\+Range} (Address from, Address to)\hypertarget{classv8_1_1internal_1_1_semi_space_ae78e80586c1013a2339790bd6f5938e2}{}\label{classv8_1_1internal_1_1_semi_space_ae78e80586c1013a2339790bd6f5938e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Rewind\+Pages} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$start, int num\+\_\+pages)\hypertarget{classv8_1_1internal_1_1_semi_space_aa634ed3952711290154755f307c9bb1c}{}\label{classv8_1_1internal_1_1_semi_space_aa634ed3952711290154755f307c9bb1c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries anchor} ()\hypertarget{classv8_1_1internal_1_1_semi_space_a880e5a3632bbf113d3c0361f8fab0ea8}{}\label{classv8_1_1internal_1_1_semi_space_a880e5a3632bbf113d3c0361f8fab0ea8}
+
+\item 
+void {\bfseries Fix\+Pages\+Flags} (intptr\+\_\+t flags, intptr\+\_\+t flag\+\_\+mask)\hypertarget{classv8_1_1internal_1_1_semi_space_a09ee6981891fe47e6deca61456d7283f}{}\label{classv8_1_1internal_1_1_semi_space_a09ee6981891fe47e6deca61456d7283f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries current\+\_\+capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a38f76a1eee982943d5c55d34c802d928}{}\label{classv8_1_1internal_1_1_semi_space_a38f76a1eee982943d5c55d34c802d928}
+
+\item 
+int {\bfseries maximum\+\_\+capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a84101934379f9235253e4f57f5a33735}{}\label{classv8_1_1internal_1_1_semi_space_a84101934379f9235253e4f57f5a33735}
+
+\item 
+int {\bfseries minimum\+\_\+capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_af50818ecc64d6abd1a8342db18731bae}{}\label{classv8_1_1internal_1_1_semi_space_af50818ecc64d6abd1a8342db18731bae}
+
+\item 
+Address {\bfseries age\+\_\+mark\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a7ad8bf2cfff647df5b7cadd1c5a4229a}{}\label{classv8_1_1internal_1_1_semi_space_a7ad8bf2cfff647df5b7cadd1c5a4229a}
+
+\item 
+bool {\bfseries committed\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a1f65987b4557c8e2c9eb7452cdda4b1b}{}\label{classv8_1_1internal_1_1_semi_space_a1f65987b4557c8e2c9eb7452cdda4b1b}
+
+\item 
+Semi\+Space\+Id {\bfseries id\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_ab8f3ba33ad05f7a6b8e0c1f12a43efeb}{}\label{classv8_1_1internal_1_1_semi_space_ab8f3ba33ad05f7a6b8e0c1f12a43efeb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} {\bfseries anchor\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a41348a57f29418da4b65f0b6b1f3b611}{}\label{classv8_1_1internal_1_1_semi_space_a41348a57f29418da4b65f0b6b1f3b611}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$ {\bfseries current\+\_\+page\+\_\+}\hypertarget{classv8_1_1internal_1_1_semi_space_a7e1e84d2da82a48ec468a4b9aaf88382}{}\label{classv8_1_1internal_1_1_semi_space_a7e1e84d2da82a48ec468a4b9aaf88382}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Semi\+Space\+Iterator}\hypertarget{classv8_1_1internal_1_1_semi_space_a8b928629934cd4bbb42b079d8d3faf28}{}\label{classv8_1_1internal_1_1_semi_space_a8b928629934cd4bbb42b079d8d3faf28}
+
+\item 
+class {\bfseries New\+Space\+Page\+Iterator}\hypertarget{classv8_1_1internal_1_1_semi_space_a02d17e1b42313e4399611c825807adc6}{}\label{classv8_1_1internal_1_1_semi_space_a02d17e1b42313e4399611c825807adc6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

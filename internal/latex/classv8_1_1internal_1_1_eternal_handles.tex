@@ -1,0 +1,91 @@
+\hypertarget{classv8_1_1internal_1_1_eternal_handles}{}\section{v8\+:\+:internal\+:\+:Eternal\+Handles Class Reference}
+\label{classv8_1_1internal_1_1_eternal_handles}\index{v8\+::internal\+::\+Eternal\+Handles@{v8\+::internal\+::\+Eternal\+Handles}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Singleton\+Handle} \{ \\*
+{\bfseries I18\+N\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+O\+NE}, 
+\\*
+{\bfseries I18\+N\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+T\+WO}, 
+\\*
+{\bfseries D\+A\+T\+E\+\_\+\+C\+A\+C\+H\+E\+\_\+\+V\+E\+R\+S\+I\+ON}, 
+\\*
+{\bfseries N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+H\+A\+N\+D\+L\+ES}
+ \}\hypertarget{classv8_1_1internal_1_1_eternal_handles_acbe0f0927e10f28f93e1eceeb84bc66d}{}\label{classv8_1_1internal_1_1_eternal_handles_acbe0f0927e10f28f93e1eceeb84bc66d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Number\+Of\+Handles} ()\hypertarget{classv8_1_1internal_1_1_eternal_handles_a2831b3a300390e2cb714f4dc1909d46b}{}\label{classv8_1_1internal_1_1_eternal_handles_a2831b3a300390e2cb714f4dc1909d46b}
+
+\item 
+void {\bfseries Create} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$object, int $\ast$index)\hypertarget{classv8_1_1internal_1_1_eternal_handles_acf384364f5e06b605be609f0323b6c9a}{}\label{classv8_1_1internal_1_1_eternal_handles_acf384364f5e06b605be609f0323b6c9a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get} (int index)\hypertarget{classv8_1_1internal_1_1_eternal_handles_a5ddad5d646481d8b7a3bd966ad44d2f7}{}\label{classv8_1_1internal_1_1_eternal_handles_a5ddad5d646481d8b7a3bd966ad44d2f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Get\+Singleton} (Singleton\+Handle singleton)\hypertarget{classv8_1_1internal_1_1_eternal_handles_af981c2866ed0a695436eea4c437d0fc4}{}\label{classv8_1_1internal_1_1_eternal_handles_af981c2866ed0a695436eea4c437d0fc4}
+
+\item 
+bool {\bfseries Exists} (Singleton\+Handle singleton)\hypertarget{classv8_1_1internal_1_1_eternal_handles_a00bf7bf1b63a9f22de5385e7c8bccf2a}{}\label{classv8_1_1internal_1_1_eternal_handles_a00bf7bf1b63a9f22de5385e7c8bccf2a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ {\bfseries Create\+Singleton} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$object, Singleton\+Handle singleton)\hypertarget{classv8_1_1internal_1_1_eternal_handles_a1e9372860584dde0598dc98500184d12}{}\label{classv8_1_1internal_1_1_eternal_handles_a1e9372860584dde0598dc98500184d12}
+
+\item 
+void {\bfseries Iterate\+All\+Roots} (Object\+Visitor $\ast$visitor)\hypertarget{classv8_1_1internal_1_1_eternal_handles_a9f411f6a9b612dacf6e40bba71a91796}{}\label{classv8_1_1internal_1_1_eternal_handles_a9f411f6a9b612dacf6e40bba71a91796}
+
+\item 
+void {\bfseries Iterate\+New\+Space\+Roots} (Object\+Visitor $\ast$visitor)\hypertarget{classv8_1_1internal_1_1_eternal_handles_aea775603d28824996a43ca0e2781f7aa}{}\label{classv8_1_1internal_1_1_eternal_handles_aea775603d28824996a43ca0e2781f7aa}
+
+\item 
+void {\bfseries Post\+Garbage\+Collection\+Processing} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_eternal_handles_a895a3eeda0f0942c67b78e3cf049010d}{}\label{classv8_1_1internal_1_1_eternal_handles_a895a3eeda0f0942c67b78e3cf049010d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries Get\+Location} (int index)\hypertarget{classv8_1_1internal_1_1_eternal_handles_aef9db615195217a8dd09d333653c62a0}{}\label{classv8_1_1internal_1_1_eternal_handles_aef9db615195217a8dd09d333653c62a0}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_eternal_handles}{Eternal\+Handles})\hypertarget{classv8_1_1internal_1_1_eternal_handles_a71eea997fe43b24d630d0d3bd429d441}{}\label{classv8_1_1internal_1_1_eternal_handles_a71eea997fe43b24d630d0d3bd429d441}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries size\+\_\+}\hypertarget{classv8_1_1internal_1_1_eternal_handles_a97d7d5e3978e7b4657dc403f474172aa}{}\label{classv8_1_1internal_1_1_eternal_handles_a97d7d5e3978e7b4657dc403f474172aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ $>$ {\bfseries blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1_eternal_handles_a35f9777e99738208d61df638aa1c18ad}{}\label{classv8_1_1internal_1_1_eternal_handles_a35f9777e99738208d61df638aa1c18ad}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ int $>$ {\bfseries new\+\_\+space\+\_\+indices\+\_\+}\hypertarget{classv8_1_1internal_1_1_eternal_handles_a3ec8fb6c6627e26dba03c5dbd058b978}{}\label{classv8_1_1internal_1_1_eternal_handles_a3ec8fb6c6627e26dba03c5dbd058b978}
+
+\item 
+int {\bfseries singleton\+\_\+handles\+\_\+} \mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+I\+N\+G\+L\+E\+T\+O\+N\+\_\+\+H\+A\+N\+D\+L\+ES\mbox{]}\hypertarget{classv8_1_1internal_1_1_eternal_handles_adabd605a850cd144e13cfe07d6d6dcd0}{}\label{classv8_1_1internal_1_1_eternal_handles_adabd605a850cd144e13cfe07d6d6dcd0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Invalid\+Index} = -\/1\hypertarget{classv8_1_1internal_1_1_eternal_handles_a7f8ce6e7e4490411e45674155d9103fb}{}\label{classv8_1_1internal_1_1_eternal_handles_a7f8ce6e7e4490411e45674155d9103fb}
+
+\item 
+static const int {\bfseries k\+Shift} = 8\hypertarget{classv8_1_1internal_1_1_eternal_handles_aae98f23bfb0e050d83ce27cf83aa95da}{}\label{classv8_1_1internal_1_1_eternal_handles_aae98f23bfb0e050d83ce27cf83aa95da}
+
+\item 
+static const int {\bfseries k\+Size} = 1 $<$$<$ k\+Shift\hypertarget{classv8_1_1internal_1_1_eternal_handles_a3dcfe83c35f6068570a72edca76056d6}{}\label{classv8_1_1internal_1_1_eternal_handles_a3dcfe83c35f6068570a72edca76056d6}
+
+\item 
+static const int {\bfseries k\+Mask} = 0xff\hypertarget{classv8_1_1internal_1_1_eternal_handles_a632548611350fa612097422be53e0d28}{}\label{classv8_1_1internal_1_1_eternal_handles_a632548611350fa612097422be53e0d28}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/global-\/handles.\+h\item 
+/\+Users/joshgav/node/v8/src/global-\/handles.\+cc\end{DoxyCompactItemize}

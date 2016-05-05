@@ -1,0 +1,157 @@
+\hypertarget{classv8_1_1base_1_1_time}{}\section{v8\+:\+:base\+:\+:Time Class Reference}
+\label{classv8_1_1base_1_1_time}\index{v8\+::base\+::\+Time@{v8\+::base\+::\+Time}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Is\+Null} () const \hypertarget{classv8_1_1base_1_1_time_a052ff12b5ec66a2cf8c8094239b243d9}{}\label{classv8_1_1base_1_1_time_a052ff12b5ec66a2cf8c8094239b243d9}
+
+\item 
+bool {\bfseries Is\+Max} () const \hypertarget{classv8_1_1base_1_1_time_ac6a3b1faa1b75f108d0215666d480893}{}\label{classv8_1_1base_1_1_time_ac6a3b1faa1b75f108d0215666d480893}
+
+\item 
+int64\+\_\+t {\bfseries To\+Internal\+Value} () const \hypertarget{classv8_1_1base_1_1_time_adde48782635cebe3e0c34ac274fb97c2}{}\label{classv8_1_1base_1_1_time_adde48782635cebe3e0c34ac274fb97c2}
+
+\item 
+struct timespec {\bfseries To\+Timespec} () const \hypertarget{classv8_1_1base_1_1_time_a993c9d3eef62f937b1cd59016a44748a}{}\label{classv8_1_1base_1_1_time_a993c9d3eef62f937b1cd59016a44748a}
+
+\item 
+struct timeval {\bfseries To\+Timeval} () const \hypertarget{classv8_1_1base_1_1_time_a0663f6b04c5b091d43603401a5936c13}{}\label{classv8_1_1base_1_1_time_a0663f6b04c5b091d43603401a5936c13}
+
+\item 
+struct \+\_\+\+F\+I\+L\+E\+T\+I\+ME {\bfseries To\+Filetime} () const \hypertarget{classv8_1_1base_1_1_time_a61c22b1b1ba016f87651951662dcd7b5}{}\label{classv8_1_1base_1_1_time_a61c22b1b1ba016f87651951662dcd7b5}
+
+\item 
+double {\bfseries To\+Js\+Time} () const \hypertarget{classv8_1_1base_1_1_time_abd32aab20115c733ad6ec975b2045b9f}{}\label{classv8_1_1base_1_1_time_abd32aab20115c733ad6ec975b2045b9f}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time}{Time} \& {\bfseries operator=} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other)\hypertarget{classv8_1_1base_1_1_time_aee7a523bff4aa3b32f565d0460e23622}{}\label{classv8_1_1base_1_1_time_aee7a523bff4aa3b32f565d0460e23622}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time_delta}{Time\+Delta} {\bfseries operator-\/} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a55c69aa4987e9d14c21a81a4e53216ca}{}\label{classv8_1_1base_1_1_time_a55c69aa4987e9d14c21a81a4e53216ca}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time}{Time} \& {\bfseries operator+=} (const \hyperlink{classv8_1_1base_1_1_time_delta}{Time\+Delta} \&delta)\hypertarget{classv8_1_1base_1_1_time_a35d0fe951abeb594055ff5f63b275a9c}{}\label{classv8_1_1base_1_1_time_a35d0fe951abeb594055ff5f63b275a9c}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time}{Time} \& {\bfseries operator-\/=} (const \hyperlink{classv8_1_1base_1_1_time_delta}{Time\+Delta} \&delta)\hypertarget{classv8_1_1base_1_1_time_a5ea0837f2c4fc845808080c1487df69d}{}\label{classv8_1_1base_1_1_time_a5ea0837f2c4fc845808080c1487df69d}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries operator+} (const \hyperlink{classv8_1_1base_1_1_time_delta}{Time\+Delta} \&delta) const \hypertarget{classv8_1_1base_1_1_time_a829feb7be4d8a785bc2e16ff231f5021}{}\label{classv8_1_1base_1_1_time_a829feb7be4d8a785bc2e16ff231f5021}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries operator-\/} (const \hyperlink{classv8_1_1base_1_1_time_delta}{Time\+Delta} \&delta) const \hypertarget{classv8_1_1base_1_1_time_ac2fd3d5e49ce9529462f68afab95b665}{}\label{classv8_1_1base_1_1_time_ac2fd3d5e49ce9529462f68afab95b665}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a362156a5fc273a8eca22d44619163022}{}\label{classv8_1_1base_1_1_time_a362156a5fc273a8eca22d44619163022}
+
+\item 
+bool {\bfseries operator!=} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a573508792030160612f517c3ad583938}{}\label{classv8_1_1base_1_1_time_a573508792030160612f517c3ad583938}
+
+\item 
+bool {\bfseries operator$<$} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_aa2767c3d4c32d3d7d83fc543a99e9707}{}\label{classv8_1_1base_1_1_time_aa2767c3d4c32d3d7d83fc543a99e9707}
+
+\item 
+bool {\bfseries operator$<$=} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a578e586e9ff1722cccd77b5a1d21ab95}{}\label{classv8_1_1base_1_1_time_a578e586e9ff1722cccd77b5a1d21ab95}
+
+\item 
+bool {\bfseries operator$>$} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a56dd964b5cc5f2cc7905bdab4fdca977}{}\label{classv8_1_1base_1_1_time_a56dd964b5cc5f2cc7905bdab4fdca977}
+
+\item 
+bool {\bfseries operator$>$=} (const \hyperlink{classv8_1_1base_1_1_time}{Time} \&other) const \hypertarget{classv8_1_1base_1_1_time_a4482c5ebb428a8f29ed7424aac7fd4fb}{}\label{classv8_1_1base_1_1_time_a4482c5ebb428a8f29ed7424aac7fd4fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries Now} ()\hypertarget{classv8_1_1base_1_1_time_a485c6079d0a94b6e93cc931b2857382d}{}\label{classv8_1_1base_1_1_time_a485c6079d0a94b6e93cc931b2857382d}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries Now\+From\+System\+Time} ()\hypertarget{classv8_1_1base_1_1_time_a5c4a31685f5096e8597736c68b0969a7}{}\label{classv8_1_1base_1_1_time_a5c4a31685f5096e8597736c68b0969a7}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries Unix\+Epoch} ()\hypertarget{classv8_1_1base_1_1_time_a44f04cdf4cf07b26ad5073825d82d8cc}{}\label{classv8_1_1base_1_1_time_a44f04cdf4cf07b26ad5073825d82d8cc}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries Max} ()\hypertarget{classv8_1_1base_1_1_time_a84ad862b925d42ab2d01ff734d0ab209}{}\label{classv8_1_1base_1_1_time_a84ad862b925d42ab2d01ff734d0ab209}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries From\+Internal\+Value} (int64\+\_\+t value)\hypertarget{classv8_1_1base_1_1_time_ad6526a598d90614a51852dc2591b0a5a}{}\label{classv8_1_1base_1_1_time_ad6526a598d90614a51852dc2591b0a5a}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries From\+Timespec} (struct timespec ts)\hypertarget{classv8_1_1base_1_1_time_a1f4311b50b1e6d80974dc3c1d485c6e7}{}\label{classv8_1_1base_1_1_time_a1f4311b50b1e6d80974dc3c1d485c6e7}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries From\+Timeval} (struct timeval tv)\hypertarget{classv8_1_1base_1_1_time_af4de5e39ec25ca6ba75561e9792be776}{}\label{classv8_1_1base_1_1_time_af4de5e39ec25ca6ba75561e9792be776}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries From\+Filetime} (struct \+\_\+\+F\+I\+L\+E\+T\+I\+ME ft)\hypertarget{classv8_1_1base_1_1_time_a78a0ea40386d260073005c1cb67bee8d}{}\label{classv8_1_1base_1_1_time_a78a0ea40386d260073005c1cb67bee8d}
+
+\item 
+static \hyperlink{classv8_1_1base_1_1_time}{Time} {\bfseries From\+Js\+Time} (double ms\+\_\+since\+\_\+epoch)\hypertarget{classv8_1_1base_1_1_time_a77f4ff7a1c48f5d1d591946118cdb8ca}{}\label{classv8_1_1base_1_1_time_a77f4ff7a1c48f5d1d591946118cdb8ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int64\+\_\+t {\bfseries k\+Milliseconds\+Per\+Second} = 1000\hypertarget{classv8_1_1base_1_1_time_a24c4fca12b40bf7eb8574be2aa23577c}{}\label{classv8_1_1base_1_1_time_a24c4fca12b40bf7eb8574be2aa23577c}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Millisecond} = 1000\hypertarget{classv8_1_1base_1_1_time_a809afbc82c5cba553c91000d180b3a4d}{}\label{classv8_1_1base_1_1_time_a809afbc82c5cba553c91000d180b3a4d}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Second}
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Minute} = k\+Microseconds\+Per\+Second $\ast$ 60\hypertarget{classv8_1_1base_1_1_time_ac8ce8691c22f58cb2b9257a37669581b}{}\label{classv8_1_1base_1_1_time_ac8ce8691c22f58cb2b9257a37669581b}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Hour} = k\+Microseconds\+Per\+Minute $\ast$ 60\hypertarget{classv8_1_1base_1_1_time_a80a69f5a8554f61b4fb02510d4416d78}{}\label{classv8_1_1base_1_1_time_a80a69f5a8554f61b4fb02510d4416d78}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Day} = k\+Microseconds\+Per\+Hour $\ast$ 24\hypertarget{classv8_1_1base_1_1_time_a59baf5c27fd84eb7fbaec1f375d0395b}{}\label{classv8_1_1base_1_1_time_a59baf5c27fd84eb7fbaec1f375d0395b}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Microseconds\+Per\+Week} = k\+Microseconds\+Per\+Day $\ast$ 7\hypertarget{classv8_1_1base_1_1_time_a7ea45ea855607e70d3b3bb6a7ace1318}{}\label{classv8_1_1base_1_1_time_a7ea45ea855607e70d3b3bb6a7ace1318}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Nanoseconds\+Per\+Microsecond} = 1000\hypertarget{classv8_1_1base_1_1_time_a57b131a947400e16b37064df531d318e}{}\label{classv8_1_1base_1_1_time_a57b131a947400e16b37064df531d318e}
+
+\item 
+static const int64\+\_\+t {\bfseries k\+Nanoseconds\+Per\+Second}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Time} (int64\+\_\+t us)\hypertarget{classv8_1_1base_1_1_time_ada2ee29e6e163a01dec98477f9de9d7e}{}\label{classv8_1_1base_1_1_time_ada2ee29e6e163a01dec98477f9de9d7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t {\bfseries us\+\_\+}\hypertarget{classv8_1_1base_1_1_time_a4ac8c365c91f0ec9cdf3e9f36d2cc1a5}{}\label{classv8_1_1base_1_1_time_a4ac8c365c91f0ec9cdf3e9f36d2cc1a5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::base\+::\+Time@{v8\+::base\+::\+Time}!k\+Microseconds\+Per\+Second@{k\+Microseconds\+Per\+Second}}
+\index{k\+Microseconds\+Per\+Second@{k\+Microseconds\+Per\+Second}!v8\+::base\+::\+Time@{v8\+::base\+::\+Time}}
+\subsubsection[{\texorpdfstring{k\+Microseconds\+Per\+Second}{kMicrosecondsPerSecond}}]{\setlength{\rightskip}{0pt plus 5cm}const int64\+\_\+t v8\+::base\+::\+Time\+::k\+Microseconds\+Per\+Second\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1base_1_1_time_a2edd6d47a6bc35479d0a8e908fe34e0d}{}\label{classv8_1_1base_1_1_time_a2edd6d47a6bc35479d0a8e908fe34e0d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= kMicrosecondsPerMillisecond *
+                                                kMillisecondsPerSecond
+\end{DoxyCode}
+\index{v8\+::base\+::\+Time@{v8\+::base\+::\+Time}!k\+Nanoseconds\+Per\+Second@{k\+Nanoseconds\+Per\+Second}}
+\index{k\+Nanoseconds\+Per\+Second@{k\+Nanoseconds\+Per\+Second}!v8\+::base\+::\+Time@{v8\+::base\+::\+Time}}
+\subsubsection[{\texorpdfstring{k\+Nanoseconds\+Per\+Second}{kNanosecondsPerSecond}}]{\setlength{\rightskip}{0pt plus 5cm}const int64\+\_\+t v8\+::base\+::\+Time\+::k\+Nanoseconds\+Per\+Second\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1base_1_1_time_ad4a411d002490bc0a3a068e72f9de13e}{}\label{classv8_1_1base_1_1_time_ad4a411d002490bc0a3a068e72f9de13e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= kNanosecondsPerMicrosecond *
+                                               kMicrosecondsPerSecond
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/base/platform/time.\+h\item 
+/\+Users/joshgav/node/v8/src/base/platform/time.\+cc\end{DoxyCompactItemize}

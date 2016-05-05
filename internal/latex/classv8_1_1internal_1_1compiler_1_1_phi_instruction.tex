@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Phi\+Instruction Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction}\index{v8\+::internal\+::compiler\+::\+Phi\+Instruction@{v8\+::internal\+::compiler\+::\+Phi\+Instruction}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Phi\+Instruction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_phi_instruction}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} $>$ {\bfseries Inputs}\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_ab3e2fb4170336928ff7ba714359e7856}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_ab3e2fb4170336928ff7ba714359e7856}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Phi\+Instruction} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, int virtual\+\_\+register, size\+\_\+t input\+\_\+count)\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a913a59d9a1a1a99aa901a6fb66afb66d}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a913a59d9a1a1a99aa901a6fb66afb66d}
+
+\item 
+void {\bfseries Set\+Input} (size\+\_\+t offset, int virtual\+\_\+register)\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_aa1c3ab51327ba7b508b7e9bd082cf633}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_aa1c3ab51327ba7b508b7e9bd082cf633}
+
+\item 
+int {\bfseries virtual\+\_\+register} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a6645803bef8c976647210b7426c6e2d1}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a6645803bef8c976647210b7426c6e2d1}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Int\+Vector} \& {\bfseries operands} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_abc3247273eb2257b641f920a37ba7bdd}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_abc3247273eb2257b641f920a37ba7bdd}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} \& {\bfseries output} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a39f5287d300c195a943348f6fd163f6e}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a39f5287d300c195a943348f6fd163f6e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} \& {\bfseries output} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a871b32649094231f1491d8a41da377c4}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a871b32649094231f1491d8a41da377c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries virtual\+\_\+register\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a73b57c1c3e19c43e5fe210faa02c3407}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a73b57c1c3e19c43e5fe210faa02c3407}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_operand}{Instruction\+Operand} {\bfseries output\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_aa657a45961a12867d0415f63e55bcb78}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_aa657a45961a12867d0415f63e55bcb78}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Int\+Vector} {\bfseries operands\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a97aeb3e588ae5e0b3e60667df12124ec}{}\label{classv8_1_1internal_1_1compiler_1_1_phi_instruction_a97aeb3e588ae5e0b3e60667df12124ec}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/instruction.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/instruction.\+cc\end{DoxyCompactItemize}

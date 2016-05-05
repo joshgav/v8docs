@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_block}{}\section{v8\+:\+:internal\+:\+:Block Class Reference}
+\label{classv8_1_1internal_1_1_block}\index{v8\+::internal\+::\+Block@{v8\+::internal\+::\+Block}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$ {\bfseries statements} ()\hypertarget{classv8_1_1internal_1_1_block_aa88d659bd6ab851e246456b818abe0da}{}\label{classv8_1_1internal_1_1_block_aa88d659bd6ab851e246456b818abe0da}
+
+\item 
+bool {\bfseries ignore\+\_\+completion\+\_\+value} () const \hypertarget{classv8_1_1internal_1_1_block_add2a87093c05a95295a08a9d219c9eea}{}\label{classv8_1_1internal_1_1_block_add2a87093c05a95295a08a9d219c9eea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Decls\+Id} () const \hypertarget{classv8_1_1internal_1_1_block_a046ae0353b396f962b9793075ab61584}{}\label{classv8_1_1internal_1_1_block_a046ae0353b396f962b9793075ab61584}
+
+\item 
+bool {\bfseries Is\+Jump} () const  override\hypertarget{classv8_1_1internal_1_1_block_a2fc1bf44e65241b6e20c3f367affd19e}{}\label{classv8_1_1internal_1_1_block_a2fc1bf44e65241b6e20c3f367affd19e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope} () const \hypertarget{classv8_1_1internal_1_1_block_a446a5e053facbae0e6120244c524b5b9}{}\label{classv8_1_1internal_1_1_block_a446a5e053facbae0e6120244c524b5b9}
+
+\item 
+void {\bfseries set\+\_\+scope} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1_block_a4a47d745c43ea05ebb7caeb1c69525b3}{}\label{classv8_1_1internal_1_1_block_a4a47d745c43ea05ebb7caeb1c69525b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_block_aece6f77d650f961b7be14c028b03c0a5}{}\label{classv8_1_1internal_1_1_block_aece6f77d650f961b7be14c028b03c0a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Block} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, int capacity, bool ignore\+\_\+completion\+\_\+value, int pos)\hypertarget{classv8_1_1internal_1_1_block_a2ef2ea89fb48a71195598011fc565d66}{}\label{classv8_1_1internal_1_1_block_a2ef2ea89fb48a71195598011fc565d66}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries parent\+\_\+num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_block_a7408d1394391e4ce9030bbc3e895761b}{}\label{classv8_1_1internal_1_1_block_a7408d1394391e4ce9030bbc3e895761b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries local\+\_\+id} (int n) const \hypertarget{classv8_1_1internal_1_1_block_ad6f2fa09a69a2f3fc1cac97f6c4950be}{}\label{classv8_1_1internal_1_1_block_ad6f2fa09a69a2f3fc1cac97f6c4950be}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ {\bfseries statements\+\_\+}\hypertarget{classv8_1_1internal_1_1_block_ada018ee068104cbe23676cda50f90985}{}\label{classv8_1_1internal_1_1_block_ada018ee068104cbe23676cda50f90985}
+
+\item 
+bool {\bfseries ignore\+\_\+completion\+\_\+value\+\_\+}\hypertarget{classv8_1_1internal_1_1_block_af5ba369b2ee3d800e028a2573ed7ae4b}{}\label{classv8_1_1internal_1_1_block_af5ba369b2ee3d800e028a2573ed7ae4b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries scope\+\_\+}\hypertarget{classv8_1_1internal_1_1_block_a6c48c51e99ccc05961e915ec5e83fe7c}{}\label{classv8_1_1internal_1_1_block_a6c48c51e99ccc05961e915ec5e83fe7c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\end{DoxyCompactItemize}

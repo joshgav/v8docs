@@ -1,0 +1,161 @@
+\hypertarget{classv8_1_1internal_1_1_l_chunk}{}\section{v8\+:\+:internal\+:\+:L\+Chunk Class Reference}
+\label{classv8_1_1internal_1_1_l_chunk}\index{v8\+::internal\+::\+L\+Chunk@{v8\+::internal\+::\+L\+Chunk}}
+Inheritance diagram for v8\+:\+:internal\+:\+:L\+Chunk\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{classv8_1_1internal_1_1_l_chunk}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Instruction} (\hyperlink{classv8_1_1internal_1_1_l_instruction}{L\+Instruction} $\ast$instruction, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_l_chunk_ad61fb173e7a2305e812dfde6c6fad28f}{}\label{classv8_1_1internal_1_1_l_chunk_ad61fb173e7a2305e812dfde6c6fad28f}
+
+\item 
+L\+Constant\+Operand $\ast$ {\bfseries Define\+Constant\+Operand} (\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$constant)\hypertarget{classv8_1_1internal_1_1_l_chunk_a17296845892624f9c6862be505f621bc}{}\label{classv8_1_1internal_1_1_l_chunk_a17296845892624f9c6862be505f621bc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_constant}{H\+Constant} $\ast$ {\bfseries Lookup\+Constant} (L\+Constant\+Operand $\ast$operand) const \hypertarget{classv8_1_1internal_1_1_l_chunk_aca6d850d204e58b41bb561995e15b58f}{}\label{classv8_1_1internal_1_1_l_chunk_aca6d850d204e58b41bb561995e15b58f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_representation}{Representation} {\bfseries Lookup\+Literal\+Representation} (L\+Constant\+Operand $\ast$operand) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a9fae3d4fe86ca091e3ae086827dee4ed}{}\label{classv8_1_1internal_1_1_l_chunk_a9fae3d4fe86ca091e3ae086827dee4ed}
+
+\item 
+int {\bfseries Parameter\+At} (int index)\hypertarget{classv8_1_1internal_1_1_l_chunk_a8086a0448009f33580ff1038d86eeb38}{}\label{classv8_1_1internal_1_1_l_chunk_a8086a0448009f33580ff1038d86eeb38}
+
+\item 
+int {\bfseries Get\+Parameter\+Stack\+Slot} (int index) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a162cec8165c964ff82c6b107cb898a1c}{}\label{classv8_1_1internal_1_1_l_chunk_a162cec8165c964ff82c6b107cb898a1c}
+
+\item 
+bool {\bfseries Has\+Allocated\+Stack\+Slots} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_ab5ab51887ef0a4d939993cfa1bdf4af9}{}\label{classv8_1_1internal_1_1_l_chunk_ab5ab51887ef0a4d939993cfa1bdf4af9}
+
+\item 
+int {\bfseries Get\+Spill\+Slot\+Count} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_a139f3636ea7ae9a4a306403b379e3386}{}\label{classv8_1_1internal_1_1_l_chunk_a139f3636ea7ae9a4a306403b379e3386}
+
+\item 
+int {\bfseries Get\+Total\+Frame\+Slot\+Count} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_a6cd7166ff9d6a6a869c4ec35322435af}{}\label{classv8_1_1internal_1_1_l_chunk_a6cd7166ff9d6a6a869c4ec35322435af}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_ad308e7305ebb06e07c7f2c87ad68e533}{}\label{classv8_1_1internal_1_1_l_chunk_ad308e7305ebb06e07c7f2c87ad68e533}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_ae8674654339884a937f946368fc8e857}{}\label{classv8_1_1internal_1_1_l_chunk_ae8674654339884a937f946368fc8e857}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_ab193d1964b055f425c9d8fe027cfa9c4}{}\label{classv8_1_1internal_1_1_l_chunk_ab193d1964b055f425c9d8fe027cfa9c4}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_l_instruction}{L\+Instruction} $\ast$ $>$ $\ast$ {\bfseries instructions} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_ac961c57b99959c05913e423b1981538b}{}\label{classv8_1_1internal_1_1_l_chunk_ac961c57b99959c05913e423b1981538b}
+
+\item 
+void {\bfseries Add\+Gap\+Move} (int index, \hyperlink{classv8_1_1internal_1_1_l_operand}{L\+Operand} $\ast$from, \hyperlink{classv8_1_1internal_1_1_l_operand}{L\+Operand} $\ast$to)\hypertarget{classv8_1_1internal_1_1_l_chunk_a72ba50bf248b10c56901b11f84b9aad4}{}\label{classv8_1_1internal_1_1_l_chunk_a72ba50bf248b10c56901b11f84b9aad4}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_l_gap}{L\+Gap} $\ast$ {\bfseries Get\+Gap\+At} (int index) const \hypertarget{classv8_1_1internal_1_1_l_chunk_ae9bc08f7558ac509895967f50c0697f3}{}\label{classv8_1_1internal_1_1_l_chunk_ae9bc08f7558ac509895967f50c0697f3}
+
+\item 
+bool {\bfseries Is\+Gap\+At} (int index) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a2ae7ddcd72ac3437877090e22c1c1091}{}\label{classv8_1_1internal_1_1_l_chunk_a2ae7ddcd72ac3437877090e22c1c1091}
+
+\item 
+int {\bfseries Nearest\+Gap\+Pos} (int index) const \hypertarget{classv8_1_1internal_1_1_l_chunk_ac5d9348d24f2b528a49ba23c05097b1d}{}\label{classv8_1_1internal_1_1_l_chunk_ac5d9348d24f2b528a49ba23c05097b1d}
+
+\item 
+void {\bfseries Mark\+Empty\+Blocks} ()\hypertarget{classv8_1_1internal_1_1_l_chunk_a2ac3d03a7d2a00d21641da256a94f4b3}{}\label{classv8_1_1internal_1_1_l_chunk_a2ac3d03a7d2a00d21641da256a94f4b3}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_l_pointer_map}{L\+Pointer\+Map} $\ast$ $>$ $\ast$ {\bfseries pointer\+\_\+maps} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_a0e2745acc31d2df4290fff8fa433920c}{}\label{classv8_1_1internal_1_1_l_chunk_a0e2745acc31d2df4290fff8fa433920c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_l_label}{L\+Label} $\ast$ {\bfseries Get\+Label} (int block\+\_\+id) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a791820389ac663c9b3d5768ab5ac7699}{}\label{classv8_1_1internal_1_1_l_chunk_a791820389ac663c9b3d5768ab5ac7699}
+
+\item 
+int {\bfseries Lookup\+Destination} (int block\+\_\+id) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a83f3293fd4a47051344878204c0a25dd}{}\label{classv8_1_1internal_1_1_l_chunk_a83f3293fd4a47051344878204c0a25dd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$ {\bfseries Get\+Assembly\+Label} (int block\+\_\+id) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a9c0e43f44b076f85e30f1c9af1953b2c}{}\label{classv8_1_1internal_1_1_l_chunk_a9c0e43f44b076f85e30f1c9af1953b2c}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ $>$ \& {\bfseries inlined\+\_\+functions} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_a0450e0ec1ac4268c31dba750c1a2e968}{}\label{classv8_1_1internal_1_1_l_chunk_a0450e0ec1ac4268c31dba750c1a2e968}
+
+\item 
+void {\bfseries Add\+Inlined\+Function} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ closure)\hypertarget{classv8_1_1internal_1_1_l_chunk_ab7db7b03e38df1cf47274ea5d4a1e161}{}\label{classv8_1_1internal_1_1_l_chunk_ab7db7b03e38df1cf47274ea5d4a1e161}
+
+\item 
+void {\bfseries Add\+Deprecation\+Dependency} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_l_chunk_a5fd4cf48b99c790a25bfd62087e2e9cc}{}\label{classv8_1_1internal_1_1_l_chunk_a5fd4cf48b99c790a25bfd62087e2e9cc}
+
+\item 
+void {\bfseries Add\+Stability\+Dependency} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_l_chunk_acdabbd4b6e6b4921ab3634fb2379523d}{}\label{classv8_1_1internal_1_1_l_chunk_acdabbd4b6e6b4921ab3634fb2379523d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} () const \hypertarget{classv8_1_1internal_1_1_l_chunk_a06b554199ad9b7d54036e5079fff6d94}{}\label{classv8_1_1internal_1_1_l_chunk_a06b554199ad9b7d54036e5079fff6d94}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Codegen} ()\hypertarget{classv8_1_1internal_1_1_l_chunk_a5f0cd642edcb086e6db8d4c84ded744a}{}\label{classv8_1_1internal_1_1_l_chunk_a5f0cd642edcb086e6db8d4c84ded744a}
+
+\item 
+void {\bfseries set\+\_\+allocated\+\_\+double\+\_\+registers} (\hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$allocated\+\_\+registers)\hypertarget{classv8_1_1internal_1_1_l_chunk_a2299aec2d106b0c882670f5191df4404}{}\label{classv8_1_1internal_1_1_l_chunk_a2299aec2d106b0c882670f5191df4404}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$ {\bfseries allocated\+\_\+double\+\_\+registers} ()\hypertarget{classv8_1_1internal_1_1_l_chunk_a31588083d702b377696de3ac69e92243}{}\label{classv8_1_1internal_1_1_l_chunk_a31588083d702b377696de3ac69e92243}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_l_chunk}{L\+Chunk} $\ast$ {\bfseries New\+Chunk} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_l_chunk_a9a16a3f430aa2fd25bb966e5160ba642}{}\label{classv8_1_1internal_1_1_l_chunk_a9a16a3f430aa2fd25bb966e5160ba642}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries L\+Chunk} (\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_l_chunk_a17a1b6d45a4c45eaa15a1e8f154690df}{}\label{classv8_1_1internal_1_1_l_chunk_a17a1b6d45a4c45eaa15a1e8f154690df}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries base\+\_\+frame\+\_\+slots\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a058983694d6ef3b319414e9bce43b9b0}{}\label{classv8_1_1internal_1_1_l_chunk_a058983694d6ef3b319414e9bce43b9b0}
+
+\item 
+int {\bfseries current\+\_\+frame\+\_\+slots\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_acd1e28ffbaa5de720dd9a500951933a2}{}\label{classv8_1_1internal_1_1_l_chunk_acd1e28ffbaa5de720dd9a500951933a2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Commit\+Dependencies} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ code) const \hypertarget{classv8_1_1internal_1_1_l_chunk_a9b1531a50d36f7a28b813c3381eea03f}{}\label{classv8_1_1internal_1_1_l_chunk_a9b1531a50d36f7a28b813c3381eea03f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$ {\bfseries info\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a64ce60b4c90290faa5f16204dcf3715c}{}\label{classv8_1_1internal_1_1_l_chunk_a64ce60b4c90290faa5f16204dcf3715c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$const {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a664910168b8cc616ed7cbd963bfacb51}{}\label{classv8_1_1internal_1_1_l_chunk_a664910168b8cc616ed7cbd963bfacb51}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bit_vector}{Bit\+Vector} $\ast$ {\bfseries allocated\+\_\+double\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_ac3ff7cb40fb31d1b4a2ce4fa5a5012f5}{}\label{classv8_1_1internal_1_1_l_chunk_ac3ff7cb40fb31d1b4a2ce4fa5a5012f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_l_instruction}{L\+Instruction} $\ast$ $>$ {\bfseries instructions\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a3bb471f84f0b0b132f4344fa554f128d}{}\label{classv8_1_1internal_1_1_l_chunk_a3bb471f84f0b0b132f4344fa554f128d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_l_pointer_map}{L\+Pointer\+Map} $\ast$ $>$ {\bfseries pointer\+\_\+maps\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a755936da96eb67861ae056b742e21851}{}\label{classv8_1_1internal_1_1_l_chunk_a755936da96eb67861ae056b742e21851}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ $>$ {\bfseries inlined\+\_\+functions\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_ae734319aa20cdbee8a4cc6dd706049bc}{}\label{classv8_1_1internal_1_1_l_chunk_ae734319aa20cdbee8a4cc6dd706049bc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ $>$ {\bfseries deprecation\+\_\+dependencies\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_af96860ccbb121ec1cdc5b8cf5c8762bc}{}\label{classv8_1_1internal_1_1_l_chunk_af96860ccbb121ec1cdc5b8cf5c8762bc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ $>$ {\bfseries stability\+\_\+dependencies\+\_\+}\hypertarget{classv8_1_1internal_1_1_l_chunk_a1f93a1cc3443d1da802331aae771ea09}{}\label{classv8_1_1internal_1_1_l_chunk_a1f93a1cc3443d1da802331aae771ea09}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/lithium.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/lithium.\+cc\end{DoxyCompactItemize}

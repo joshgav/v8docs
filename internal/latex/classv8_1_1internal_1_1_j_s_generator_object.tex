@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1_j_s_generator_object}{}\section{v8\+:\+:internal\+:\+:J\+S\+Generator\+Object Class Reference}
+\label{classv8_1_1internal_1_1_j_s_generator_object}\index{v8\+::internal\+::\+J\+S\+Generator\+Object@{v8\+::internal\+::\+J\+S\+Generator\+Object}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Generator\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_j_s_generator_object}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Resume\+Mode} \{ \\*
+{\bfseries k\+Next}, 
+\\*
+{\bfseries k\+Return}, 
+\\*
+{\bfseries k\+Throw}
+ \}\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a8a7b5950a31ccfb7e1919c4758863d75}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a8a7b5950a31ccfb7e1919c4758863d75}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries continuation} () const \hypertarget{classv8_1_1internal_1_1_j_s_generator_object_ada220111a8ff4ecf1edb0ae2bc50f042}{}\label{classv8_1_1internal_1_1_j_s_generator_object_ada220111a8ff4ecf1edb0ae2bc50f042}
+
+\item 
+void {\bfseries set\+\_\+continuation} (int continuation)\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a5bb469af27f4edd8cfce380ac9fc8546}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a5bb469af27f4edd8cfce380ac9fc8546}
+
+\item 
+bool {\bfseries is\+\_\+closed} ()\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_adad3cdf7dfb6cd10a851c7bf7c30bbf4}{}\label{classv8_1_1internal_1_1_j_s_generator_object_adad3cdf7dfb6cd10a851c7bf7c30bbf4}
+
+\item 
+bool {\bfseries is\+\_\+executing} ()\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a4b0519701a6f0e9d6b7b1eaf91e1e95f}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a4b0519701a6f0e9d6b7b1eaf91e1e95f}
+
+\item 
+bool {\bfseries is\+\_\+suspended} ()\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a2f4a7d1d80a77d2ab2f0f6b0203fdadc}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a2f4a7d1d80a77d2ab2f0f6b0203fdadc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Generator\+Executing} = -\/2\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a3b515123f771dc8d61065ded67f7f1f9}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a3b515123f771dc8d61065ded67f7f1f9}
+
+\item 
+static const int {\bfseries k\+Generator\+Closed} = -\/1\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a305bc269946a338f1232f4268392fa05}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a305bc269946a338f1232f4268392fa05}
+
+\item 
+static const int {\bfseries k\+Function\+Offset} = J\+S\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a2a98d0be0311407edc54535904231140}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a2a98d0be0311407edc54535904231140}
+
+\item 
+static const int {\bfseries k\+Context\+Offset} = k\+Function\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_ac019c55d4dbe5d8b914bb4d1741ca3a6}{}\label{classv8_1_1internal_1_1_j_s_generator_object_ac019c55d4dbe5d8b914bb4d1741ca3a6}
+
+\item 
+static const int {\bfseries k\+Receiver\+Offset} = k\+Context\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_abb28d5ab4f831bba6511c375521df70b}{}\label{classv8_1_1internal_1_1_j_s_generator_object_abb28d5ab4f831bba6511c375521df70b}
+
+\item 
+static const int {\bfseries k\+Input\+Offset} = k\+Receiver\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a79dcfa8cf2b7f55041bf3a174ad1f3fe}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a79dcfa8cf2b7f55041bf3a174ad1f3fe}
+
+\item 
+static const int {\bfseries k\+Resume\+Mode\+Offset} = k\+Input\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_abc8481eb89e769630567d6955f3cfe03}{}\label{classv8_1_1internal_1_1_j_s_generator_object_abc8481eb89e769630567d6955f3cfe03}
+
+\item 
+static const int {\bfseries k\+Continuation\+Offset} = k\+Resume\+Mode\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_afd60e4d60df80acbd854079dbbb862d2}{}\label{classv8_1_1internal_1_1_j_s_generator_object_afd60e4d60df80acbd854079dbbb862d2}
+
+\item 
+static const int {\bfseries k\+Operand\+Stack\+Offset} = k\+Continuation\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_a58f03f9140bfd0d328c8caa4f4e32ba5}{}\label{classv8_1_1internal_1_1_j_s_generator_object_a58f03f9140bfd0d328c8caa4f4e32ba5}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Operand\+Stack\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_afb29636ca53c2710518d76c1faefceef}{}\label{classv8_1_1internal_1_1_j_s_generator_object_afb29636ca53c2710518d76c1faefceef}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_j_s_generator_object}{J\+S\+Generator\+Object})\hypertarget{classv8_1_1internal_1_1_j_s_generator_object_af489d64342ea572590bcd97b78e48be1}{}\label{classv8_1_1internal_1_1_j_s_generator_object_af489d64342ea572590bcd97b78e48be1}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\end{DoxyCompactItemize}

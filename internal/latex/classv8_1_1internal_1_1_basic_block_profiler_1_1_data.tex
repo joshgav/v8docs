@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data}{}\section{v8\+:\+:internal\+:\+:Basic\+Block\+Profiler\+:\+:Data Class Reference}
+\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data}\index{v8\+::internal\+::\+Basic\+Block\+Profiler\+::\+Data@{v8\+::internal\+::\+Basic\+Block\+Profiler\+::\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries n\+\_\+blocks} () const \hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ae6a480b10dae1fbb14ef176312d04b4d}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ae6a480b10dae1fbb14ef176312d04b4d}
+
+\item 
+const uint32\+\_\+t $\ast$ {\bfseries counts} () const \hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_af3967d5bbff3d58c8a921d5943f6c2c2}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_af3967d5bbff3d58c8a921d5943f6c2c2}
+
+\item 
+void {\bfseries Set\+Code} (std\+::ostringstream $\ast$os)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a4eb5bc5ffe21e67d2ee24e6111ba0950}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a4eb5bc5ffe21e67d2ee24e6111ba0950}
+
+\item 
+void {\bfseries Set\+Function\+Name} (std\+::ostringstream $\ast$os)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ae867aa9aedc5e53622b2a0ab0f747a3f}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ae867aa9aedc5e53622b2a0ab0f747a3f}
+
+\item 
+void {\bfseries Set\+Schedule} (std\+::ostringstream $\ast$os)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a825e148b427e8231ddd9f995e371a73e}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a825e148b427e8231ddd9f995e371a73e}
+
+\item 
+void {\bfseries Set\+Block\+Id} (size\+\_\+t offset, size\+\_\+t block\+\_\+id)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_afc3b160cd6a0ebd96a7c745ac72ec9a3}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_afc3b160cd6a0ebd96a7c745ac72ec9a3}
+
+\item 
+uint32\+\_\+t $\ast$ {\bfseries Get\+Counter\+Address} (size\+\_\+t offset)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_aba31658c962e9e6ecf56e5961e4eff2d}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_aba31658c962e9e6ecf56e5961e4eff2d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Data} (size\+\_\+t n\+\_\+blocks)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a015829762d567df75e1b1ed7ed5cc386}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a015829762d567df75e1b1ed7ed5cc386}
+
+\item 
+void {\bfseries Reset\+Counts} ()\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a04703f8cac4ef003b96ed832a625cc7f}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a04703f8cac4ef003b96ed832a625cc7f}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_basic_block_profiler_1_1_data}{Data})\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a5ff2ea5c8b4e43f14e73a728ac9936fc}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a5ff2ea5c8b4e43f14e73a728ac9936fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t {\bfseries n\+\_\+blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ac86ac23701808da0c300a88bc116cd7e}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ac86ac23701808da0c300a88bc116cd7e}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries block\+\_\+ids\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_aa1eff709366afdff44a1b159c717448f}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_aa1eff709366afdff44a1b159c717448f}
+
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ {\bfseries counts\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ac46190332a215f12e6d5949354b3250c}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_ac46190332a215f12e6d5949354b3250c}
+
+\item 
+std\+::string {\bfseries function\+\_\+name\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a476dc1c1485c7158fe5ca394f573a638}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a476dc1c1485c7158fe5ca394f573a638}
+
+\item 
+std\+::string {\bfseries schedule\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_af277e62ef53a7967f90c4ae149c29521}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_af277e62ef53a7967f90c4ae149c29521}
+
+\item 
+std\+::string {\bfseries code\+\_\+}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a92cb659d499603323200edf7be12ca1f}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a92cb659d499603323200edf7be12ca1f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Basic\+Block\+Profiler}\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a05ed5b31a23bf57caa59bca8951c3ba9}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a05ed5b31a23bf57caa59bca8951c3ba9}
+
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classv8_1_1internal_1_1_basic_block_profiler_1_1_data}{Basic\+Block\+Profiler\+::\+Data} \&s)\hypertarget{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a94126580a7f5d55b9013bdd1a6c93016}{}\label{classv8_1_1internal_1_1_basic_block_profiler_1_1_data_a94126580a7f5d55b9013bdd1a6c93016}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/basic-\/block-\/profiler.\+h\item 
+/\+Users/joshgav/node/v8/src/basic-\/block-\/profiler.\+cc\end{DoxyCompactItemize}

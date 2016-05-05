@@ -1,0 +1,26 @@
+\hypertarget{structv8_1_1base_1_1internal_1_1_get_numeric_representation}{}\section{v8\+:\+:base\+:\+:internal\+:\+:Get\+Numeric\+Representation$<$ Numeric\+Type $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1internal_1_1_get_numeric_representation}\index{v8\+::base\+::internal\+::\+Get\+Numeric\+Representation$<$ Numeric\+Type $>$@{v8\+::base\+::internal\+::\+Get\+Numeric\+Representation$<$ Numeric\+Type $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Numeric\+Representation {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::base\+::internal\+::\+Get\+Numeric\+Representation@{v8\+::base\+::internal\+::\+Get\+Numeric\+Representation}!value@{value}}
+\index{value@{value}!v8\+::base\+::internal\+::\+Get\+Numeric\+Representation@{v8\+::base\+::internal\+::\+Get\+Numeric\+Representation}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Numeric\+Type $>$ const Numeric\+Representation {\bf v8\+::base\+::internal\+::\+Get\+Numeric\+Representation}$<$ Numeric\+Type $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structv8_1_1base_1_1internal_1_1_get_numeric_representation_a9c8a294e8231cc03cb6b3d7c6a93c9ba}{}\label{structv8_1_1base_1_1internal_1_1_get_numeric_representation_a9c8a294e8231cc03cb6b3d7c6a93c9ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      std::numeric\_limits<NumericType>::is\_integer
+          ? NUMERIC\_INTEGER
+          : (std::numeric\_limits<NumericType>::is\_iec559 ? NUMERIC\_FLOATING
+                                                         : NUMERIC\_UNKNOWN)
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/base/safe\+\_\+math\+\_\+impl.\+h\end{DoxyCompactItemize}

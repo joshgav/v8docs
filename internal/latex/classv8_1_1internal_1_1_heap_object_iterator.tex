@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1_heap_object_iterator}{}\section{v8\+:\+:internal\+:\+:Heap\+Object\+Iterator Class Reference}
+\label{classv8_1_1internal_1_1_heap_object_iterator}\index{v8\+::internal\+::\+Heap\+Object\+Iterator@{v8\+::internal\+::\+Heap\+Object\+Iterator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Object\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_heap_object_iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Heap\+Object\+Iterator} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$space)\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_acafe719dc17a39eeb032d27a928c81c1}{}\label{classv8_1_1internal_1_1_heap_object_iterator_acafe719dc17a39eeb032d27a928c81c1}
+
+\item 
+{\bfseries Heap\+Object\+Iterator} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a69c2d09f4c5b7a0fdccd4b99f4272d79}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a69c2d09f4c5b7a0fdccd4b99f4272d79}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries Next} ()\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a8178e60a9f014fd761b574f4ffa29e56}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a8178e60a9f014fd761b574f4ffa29e56}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries next\+\_\+object} () override\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a117c6442dd662e449280bee29ebee27d}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a117c6442dd662e449280bee29ebee27d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Page\+Mode} \{ \\*
+{\bfseries k\+One\+Page\+Only}, 
+\\*
+{\bfseries k\+All\+Pages\+In\+Space}
+ \}\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a4c6710a31770d1d3b01ef1faaac5e553}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a4c6710a31770d1d3b01ef1faaac5e553}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries From\+Current\+Page} ()\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a3327636c673b36f2c09bec975f61a9d4}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a3327636c673b36f2c09bec975f61a9d4}
+
+\item 
+bool {\bfseries Advance\+To\+Next\+Page} ()\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a0cb20d29988b5aa46d8641b2fbfa0d49}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a0cb20d29988b5aa46d8641b2fbfa0d49}
+
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$owner, Address start, Address end, Page\+Mode mode)\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a77e6b611382377ec18535dca909b4dc1}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a77e6b611382377ec18535dca909b4dc1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries cur\+\_\+addr\+\_\+}\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a3e323c7bdcfadd16b73f1e5f9bbefa38}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a3e323c7bdcfadd16b73f1e5f9bbefa38}
+
+\item 
+Address {\bfseries cur\+\_\+end\+\_\+}\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a560cf531babdf39618105631d9c6b980}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a560cf531babdf39618105631d9c6b980}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$ {\bfseries space\+\_\+}\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a1e6debb8083b9994fe47565fbfbd170e}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a1e6debb8083b9994fe47565fbfbd170e}
+
+\item 
+Page\+Mode {\bfseries page\+\_\+mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_heap_object_iterator_a85289e54ac16f39216287ab9cf06c65a}{}\label{classv8_1_1internal_1_1_heap_object_iterator_a85289e54ac16f39216287ab9cf06c65a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

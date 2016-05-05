@@ -1,0 +1,128 @@
+\hypertarget{classv8_1_1internal_1_1_token}{}\section{v8\+:\+:internal\+:\+:Token Class Reference}
+\label{classv8_1_1internal_1_1_token}\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Value} \{ {\bfseries N\+U\+M\+\_\+\+T\+O\+K\+E\+NS}
+ \}\hypertarget{classv8_1_1internal_1_1_token_aa1551a1c2dc217193f2f3cd063bc9555}{}\label{classv8_1_1internal_1_1_token_aa1551a1c2dc217193f2f3cd063bc9555}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ {\bfseries Name} (Value tok)\hypertarget{classv8_1_1internal_1_1_token_a5a0e5f489eb832d50cbe60e95b5bffbb}{}\label{classv8_1_1internal_1_1_token_a5a0e5f489eb832d50cbe60e95b5bffbb}
+
+\item 
+static bool {\bfseries Is\+Keyword} (Value tok)\hypertarget{classv8_1_1internal_1_1_token_a55915790c51b39e7d6363d85a09f2ce9}{}\label{classv8_1_1internal_1_1_token_a55915790c51b39e7d6363d85a09f2ce9}
+
+\item 
+static bool {\bfseries Is\+Identifier} (Value tok, Language\+Mode language\+\_\+mode, bool is\+\_\+generator, bool is\+\_\+module)\hypertarget{classv8_1_1internal_1_1_token_a580ddc028b0dfe349ac40df1c7292712}{}\label{classv8_1_1internal_1_1_token_a580ddc028b0dfe349ac40df1c7292712}
+
+\item 
+static bool {\bfseries Is\+Assignment\+Op} (Value tok)\hypertarget{classv8_1_1internal_1_1_token_adf85802a53291707404da2235b768962}{}\label{classv8_1_1internal_1_1_token_adf85802a53291707404da2235b768962}
+
+\item 
+static bool {\bfseries Is\+Binary\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a6c86b8c0b5c1a31d853a2edad571fb74}{}\label{classv8_1_1internal_1_1_token_a6c86b8c0b5c1a31d853a2edad571fb74}
+
+\item 
+static bool {\bfseries Is\+Truncating\+Binary\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_af78665f3ffed712b3047e0410db32e5a}{}\label{classv8_1_1internal_1_1_token_af78665f3ffed712b3047e0410db32e5a}
+
+\item 
+static bool {\bfseries Is\+Compare\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a62cc331f6e96e759020975c50a9aef72}{}\label{classv8_1_1internal_1_1_token_a62cc331f6e96e759020975c50a9aef72}
+
+\item 
+static bool {\bfseries Is\+Ordered\+Relational\+Compare\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a5374bee5a77c04a854e00e97bd205aa3}{}\label{classv8_1_1internal_1_1_token_a5374bee5a77c04a854e00e97bd205aa3}
+
+\item 
+static bool {\bfseries Is\+Equality\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_ad7ff5a7e1c7fcce3f0e0543699f4b516}{}\label{classv8_1_1internal_1_1_token_ad7ff5a7e1c7fcce3f0e0543699f4b516}
+
+\item 
+static bool {\bfseries Is\+Inequality\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a116d1bf935776539ad65bc7a8c6104e1}{}\label{classv8_1_1internal_1_1_token_a116d1bf935776539ad65bc7a8c6104e1}
+
+\item 
+static bool {\bfseries Is\+Arithmetic\+Compare\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_aed56f3d95c5f9029660176c492e25480}{}\label{classv8_1_1internal_1_1_token_aed56f3d95c5f9029660176c492e25480}
+
+\item 
+static Value {\bfseries Negate\+Compare\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_abc75b08db16d9fba30c6de0f0f376c7f}{}\label{classv8_1_1internal_1_1_token_abc75b08db16d9fba30c6de0f0f376c7f}
+
+\item 
+static Value {\bfseries Reverse\+Compare\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_aefbc3f71efb485c195118fdfea3e1684}{}\label{classv8_1_1internal_1_1_token_aefbc3f71efb485c195118fdfea3e1684}
+
+\item 
+static bool {\bfseries Eval\+Comparison} (Value op, double op1, double op2)\hypertarget{classv8_1_1internal_1_1_token_a9315bb6ad71b493ad6592621fb955104}{}\label{classv8_1_1internal_1_1_token_a9315bb6ad71b493ad6592621fb955104}
+
+\item 
+static bool {\bfseries Is\+Bit\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a95c7a019410d240107ca5d5dfecb696d}{}\label{classv8_1_1internal_1_1_token_a95c7a019410d240107ca5d5dfecb696d}
+
+\item 
+static bool {\bfseries Is\+Unary\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_a835fae2434bcf697c5100399ba6c662f}{}\label{classv8_1_1internal_1_1_token_a835fae2434bcf697c5100399ba6c662f}
+
+\item 
+static bool {\bfseries Is\+Count\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_ab9a0e734a80e1d0101a0954891af333d}{}\label{classv8_1_1internal_1_1_token_ab9a0e734a80e1d0101a0954891af333d}
+
+\item 
+static bool {\bfseries Is\+Shift\+Op} (Value op)\hypertarget{classv8_1_1internal_1_1_token_acecd1f2d38c6527d2a69cd000130c84c}{}\label{classv8_1_1internal_1_1_token_acecd1f2d38c6527d2a69cd000130c84c}
+
+\item 
+static const char $\ast$ {\bfseries String} (Value tok)\hypertarget{classv8_1_1internal_1_1_token_a717701258769abde5d426045e1522ed7}{}\label{classv8_1_1internal_1_1_token_a717701258769abde5d426045e1522ed7}
+
+\item 
+static int {\bfseries Precedence} (Value tok)\hypertarget{classv8_1_1internal_1_1_token_a751b0771006175b14e3cb4ae0e74e27e}{}\label{classv8_1_1internal_1_1_token_a751b0771006175b14e3cb4ae0e74e27e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$const {\bfseries name\+\_\+} \mbox{[}N\+U\+M\+\_\+\+T\+O\+K\+E\+NS\mbox{]}
+\item 
+static const char $\ast$const {\bfseries string\+\_\+} \mbox{[}N\+U\+M\+\_\+\+T\+O\+K\+E\+NS\mbox{]}
+\item 
+static const int8\+\_\+t {\bfseries precedence\+\_\+} \mbox{[}N\+U\+M\+\_\+\+T\+O\+K\+E\+NS\mbox{]}
+\item 
+static const char {\bfseries token\+\_\+type} \mbox{[}N\+U\+M\+\_\+\+T\+O\+K\+E\+NS\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsubsection[{\texorpdfstring{name\+\_\+}{name_}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$const v8\+::internal\+::\+Token\+::name\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_token_af3077dd5d8601888b3db77e342874b38}{}\label{classv8_1_1internal_1_1_token_af3077dd5d8601888b3db77e342874b38}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+
+\}
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}!precedence\+\_\+@{precedence\+\_\+}}
+\index{precedence\+\_\+@{precedence\+\_\+}!v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsubsection[{\texorpdfstring{precedence\+\_\+}{precedence_}}]{\setlength{\rightskip}{0pt plus 5cm}const int8\+\_\+t v8\+::internal\+::\+Token\+::precedence\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_token_a9673c50344137cd57117675ed77ec1c0}{}\label{classv8_1_1internal_1_1_token_a9673c50344137cd57117675ed77ec1c0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+
+\}
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}!string\+\_\+@{string\+\_\+}}
+\index{string\+\_\+@{string\+\_\+}!v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsubsection[{\texorpdfstring{string\+\_\+}{string_}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$const v8\+::internal\+::\+Token\+::string\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_token_ae732b7f502b3985b3a0299327e2549ee}{}\label{classv8_1_1internal_1_1_token_ae732b7f502b3985b3a0299327e2549ee}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+
+\}
+\end{DoxyCode}
+\index{v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}!token\+\_\+type@{token\+\_\+type}}
+\index{token\+\_\+type@{token\+\_\+type}!v8\+::internal\+::\+Token@{v8\+::internal\+::\+Token}}
+\subsubsection[{\texorpdfstring{token\+\_\+type}{token_type}}]{\setlength{\rightskip}{0pt plus 5cm}const char v8\+::internal\+::\+Token\+::token\+\_\+type\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_token_a805d54bffccf296770f0a364bffd60ad}{}\label{classv8_1_1internal_1_1_token_a805d54bffccf296770f0a364bffd60ad}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+
+\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/token.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/token.\+cc\end{DoxyCompactItemize}

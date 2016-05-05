@@ -1,0 +1,74 @@
+\hypertarget{classv8_1_1internal_1_1_remembered_set}{}\section{v8\+:\+:internal\+:\+:Remembered\+Set$<$ direction $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_remembered_set}\index{v8\+::internal\+::\+Remembered\+Set$<$ direction $>$@{v8\+::internal\+::\+Remembered\+Set$<$ direction $>$}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Insert} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, Address slot\+\_\+addr)\hypertarget{classv8_1_1internal_1_1_remembered_set_ae721fb19e9baf5bebd8b96e37ed2987d}{}\label{classv8_1_1internal_1_1_remembered_set_ae721fb19e9baf5bebd8b96e37ed2987d}
+
+\item 
+static void {\bfseries Remove} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, Address slot\+\_\+addr)\hypertarget{classv8_1_1internal_1_1_remembered_set_a2a347fba16c22a806e884eb44d170e9f}{}\label{classv8_1_1internal_1_1_remembered_set_a2a347fba16c22a806e884eb44d170e9f}
+
+\item 
+static void {\bfseries Remove\+Range} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, Address start, Address end)\hypertarget{classv8_1_1internal_1_1_remembered_set_aa4e6e912565dd2ded9fc15490bed58ce}{}\label{classv8_1_1internal_1_1_remembered_set_aa4e6e912565dd2ded9fc15490bed58ce}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_a56711887bc331612c1c5671775c77b39}{}\label{classv8_1_1internal_1_1_remembered_set_a56711887bc331612c1c5671775c77b39}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+Memory\+Chunks} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_aa4675527277857a141fe3b10e4f3d94e}{}\label{classv8_1_1internal_1_1_remembered_set_aa4675527277857a141fe3b10e4f3d94e}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_ad40eef241b347bb0c0d759cbd8d993e3}{}\label{classv8_1_1internal_1_1_remembered_set_ad40eef241b347bb0c0d759cbd8d993e3}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+With\+Wrapper} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_acc816dea332b6fb8be79d38d6d79f870}{}\label{classv8_1_1internal_1_1_remembered_set_acc816dea332b6fb8be79d38d6d79f870}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+With\+Wrapper} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_a0c0e3869270f0a766efc32e4157b83ef}{}\label{classv8_1_1internal_1_1_remembered_set_a0c0e3869270f0a766efc32e4157b83ef}
+
+\item 
+static void {\bfseries Insert\+Typed} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, Slot\+Type slot\+\_\+type, Address slot\+\_\+addr)\hypertarget{classv8_1_1internal_1_1_remembered_set_a7afde0884ff121543a57270c48d6923c}{}\label{classv8_1_1internal_1_1_remembered_set_a7afde0884ff121543a57270c48d6923c}
+
+\item 
+static void {\bfseries Remove\+Range\+Typed} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page, Address start, Address end)\hypertarget{classv8_1_1internal_1_1_remembered_set_ad25a0e4589161fc7f55e7088367258d0}{}\label{classv8_1_1internal_1_1_remembered_set_ad25a0e4589161fc7f55e7088367258d0}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static void {\bfseries Iterate\+Typed} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, Callback callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_a256db0ea2c35ebf5939c0c9e9c6e8bb3}{}\label{classv8_1_1internal_1_1_remembered_set_a256db0ea2c35ebf5939c0c9e9c6e8bb3}
+
+\item 
+static void {\bfseries Clear\+All} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_remembered_set_a68e61f8984f5051d23693f19f860fb25}{}\label{classv8_1_1internal_1_1_remembered_set_a68e61f8984f5051d23693f19f860fb25}
+
+\item 
+static void {\bfseries Clear\+Invalid\+Slots} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_remembered_set_ae67bf112590f279a1b4816764ada1f59}{}\label{classv8_1_1internal_1_1_remembered_set_ae67bf112590f279a1b4816764ada1f59}
+
+\item 
+static void {\bfseries Verify\+Valid\+Slots} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_remembered_set_a00d85a65c4892ed880e9605024660a99}{}\label{classv8_1_1internal_1_1_remembered_set_a00d85a65c4892ed880e9605024660a99}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries Get\+Slot\+Set} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_remembered_set_acc2d576ac8b71c5ced01bb0bae44afcb}{}\label{classv8_1_1internal_1_1_remembered_set_acc2d576ac8b71c5ced01bb0bae44afcb}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_typed_slot_set}{Typed\+Slot\+Set} $\ast$ {\bfseries Get\+Typed\+Slot\+Set} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_remembered_set_a2fda765b6d45d52e57465e7717720ca5}{}\label{classv8_1_1internal_1_1_remembered_set_a2fda765b6d45d52e57465e7717720ca5}
+
+\item 
+static void {\bfseries Release\+Slot\+Set} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_remembered_set_a1cff44589d0b4e1ebbe0ce5c0a297997}{}\label{classv8_1_1internal_1_1_remembered_set_a1cff44589d0b4e1ebbe0ce5c0a297997}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_slot_set}{Slot\+Set} $\ast$ {\bfseries Allocate\+Slot\+Set} (\hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk)\hypertarget{classv8_1_1internal_1_1_remembered_set_aac642eee61c574b0fad60ba64fda5b83}{}\label{classv8_1_1internal_1_1_remembered_set_aac642eee61c574b0fad60ba64fda5b83}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\static Slot\+Callback\+Result {\bfseries Wrapper} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, Address slot\+\_\+address, Callback slot\+\_\+callback)\hypertarget{classv8_1_1internal_1_1_remembered_set_accbc9b1839c079d7968d0f4c5c869c75}{}\label{classv8_1_1internal_1_1_remembered_set_accbc9b1839c079d7968d0f4c5c869c75}
+
+\item 
+static bool {\bfseries Is\+Valid\+Slot} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap, \hyperlink{classv8_1_1internal_1_1_memory_chunk}{Memory\+Chunk} $\ast$chunk, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$slot)\hypertarget{classv8_1_1internal_1_1_remembered_set_a5c42e2243365254ea89dd6c35008c384}{}\label{classv8_1_1internal_1_1_remembered_set_a5c42e2243365254ea89dd6c35008c384}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/remembered-\/set.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/remembered-\/set.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,271 @@
+\hypertarget{classv8_1_1internal_1_1_transition_array}{}\section{v8\+:\+:internal\+:\+:Transition\+Array Class Reference}
+\label{classv8_1_1internal_1_1_transition_array}\index{v8\+::internal\+::\+Transition\+Array@{v8\+::internal\+::\+Transition\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Transition\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classv8_1_1internal_1_1_transition_array}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ {\bfseries Traverse\+Callback}) (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, void $\ast$data)\hypertarget{classv8_1_1internal_1_1_transition_array_a09bd193fe748a3e5f80423428b4e22ef}{}\label{classv8_1_1internal_1_1_transition_array_a09bd193fe748a3e5f80423428b4e22ef}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$ {\bfseries Get\+Prototype\+Transitions} ()\hypertarget{classv8_1_1internal_1_1_transition_array_ae4c92847fe409691ab3d197fb7e52033}{}\label{classv8_1_1internal_1_1_transition_array_ae4c92847fe409691ab3d197fb7e52033}
+
+\item 
+void {\bfseries Set\+Prototype\+Transitions} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$prototype\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a234d1bda7b08e41eb0c5d1a28591c416}{}\label{classv8_1_1internal_1_1_transition_array_a234d1bda7b08e41eb0c5d1a28591c416}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries Get\+Prototype\+Transitions\+Slot} ()\hypertarget{classv8_1_1internal_1_1_transition_array_a882a82a8f4b83141745e017bf84e765d}{}\label{classv8_1_1internal_1_1_transition_array_a882a82a8f4b83141745e017bf84e765d}
+
+\item 
+bool {\bfseries Has\+Prototype\+Transitions} ()\hypertarget{classv8_1_1internal_1_1_transition_array_a60cda26d8a93728ff533ddd300ddc4d1}{}\label{classv8_1_1internal_1_1_transition_array_a60cda26d8a93728ff533ddd300ddc4d1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$ {\bfseries Get\+Key} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a7f84a7373bbad266c4bf3f7370d1b5aa}{}\label{classv8_1_1internal_1_1_transition_array_a7f84a7373bbad266c4bf3f7370d1b5aa}
+
+\item 
+void {\bfseries Set\+Key} (int transition\+\_\+number, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$value)\hypertarget{classv8_1_1internal_1_1_transition_array_a9e6ae976c5d75c1436c75b6e00248bf9}{}\label{classv8_1_1internal_1_1_transition_array_a9e6ae976c5d75c1436c75b6e00248bf9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$$\ast$ {\bfseries Get\+Key\+Slot} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a62fe2f9cdf6f2641b0acadeca96666d9}{}\label{classv8_1_1internal_1_1_transition_array_a62fe2f9cdf6f2641b0acadeca96666d9}
+
+\item 
+int {\bfseries Get\+Sorted\+Key\+Index} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a19f5f8e925dd62d56a4cb911ba71cdea}{}\label{classv8_1_1internal_1_1_transition_array_a19f5f8e925dd62d56a4cb911ba71cdea}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$ {\bfseries Get\+Sorted\+Key} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_ab5ea3acf4ba8a071671a69167d707419}{}\label{classv8_1_1internal_1_1_transition_array_ab5ea3acf4ba8a071671a69167d707419}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$ {\bfseries Get\+Target} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_aba6f96569a3ca36c73e1120b1b251745}{}\label{classv8_1_1internal_1_1_transition_array_aba6f96569a3ca36c73e1120b1b251745}
+
+\item 
+void {\bfseries Set\+Target} (int transition\+\_\+number, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$target)\hypertarget{classv8_1_1internal_1_1_transition_array_ad4d14391925809f8473baa4aee392c65}{}\label{classv8_1_1internal_1_1_transition_array_ad4d14391925809f8473baa4aee392c65}
+
+\item 
+int {\bfseries number\+\_\+of\+\_\+entries} ()\hypertarget{classv8_1_1internal_1_1_transition_array_a14afd3974aa93e0c774fc941315528f6}{}\label{classv8_1_1internal_1_1_transition_array_a14afd3974aa93e0c774fc941315528f6}
+
+\item 
+void {\bfseries Set\+Number\+Of\+Transitions} (int number\+\_\+of\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a95d2f9f7b57e2bd0955e6b041554f61c}{}\label{classv8_1_1internal_1_1_transition_array_a95d2f9f7b57e2bd0955e6b041554f61c}
+
+\item 
+void {\bfseries set\+\_\+next\+\_\+link} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$next, Write\+Barrier\+Mode mode)\hypertarget{classv8_1_1internal_1_1_transition_array_a365c3b7deffab9fc12b6ff029656faae}{}\label{classv8_1_1internal_1_1_transition_array_a365c3b7deffab9fc12b6ff029656faae}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$ {\bfseries next\+\_\+link} ()\hypertarget{classv8_1_1internal_1_1_transition_array_af3995c287bf4988dcbc3e114bd1170e9}{}\label{classv8_1_1internal_1_1_transition_array_af3995c287bf4988dcbc3e114bd1170e9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Insert} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ target, Simple\+Transition\+Flag flag)\hypertarget{classv8_1_1internal_1_1_transition_array_a77f009434ca36aaf2e120786923cce4b}{}\label{classv8_1_1internal_1_1_transition_array_a77f009434ca36aaf2e120786923cce4b}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$ {\bfseries Search\+Transition} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, Property\+Kind kind, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Property\+Attributes attributes)\hypertarget{classv8_1_1internal_1_1_transition_array_a96f0d7f94aea4b251a8c2600a6502339}{}\label{classv8_1_1internal_1_1_transition_array_a96f0d7f94aea4b251a8c2600a6502339}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ {\bfseries Search\+Transition} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, Property\+Kind kind, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name, Property\+Attributes attributes)\hypertarget{classv8_1_1internal_1_1_transition_array_a174ce7b3cf747f4fc37a425f9eadcdbc}{}\label{classv8_1_1internal_1_1_transition_array_a174ce7b3cf747f4fc37a425f9eadcdbc}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$ {\bfseries Search\+Special} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, \hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $\ast$name)\hypertarget{classv8_1_1internal_1_1_transition_array_a2f8fa05ad05f0437d95a2e4dcdb4f505}{}\label{classv8_1_1internal_1_1_transition_array_a2f8fa05ad05f0437d95a2e4dcdb4f505}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ {\bfseries Find\+Transition\+To\+Field} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_name}{Name} $>$ name)\hypertarget{classv8_1_1internal_1_1_transition_array_ac26e0901c14293f5564b0c614c174bb2}{}\label{classv8_1_1internal_1_1_transition_array_ac26e0901c14293f5564b0c614c174bb2}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries Expected\+Transition\+Key} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_transition_array_ac66a1a27c50f84469b14c0c7002ac231}{}\label{classv8_1_1internal_1_1_transition_array_ac66a1a27c50f84469b14c0c7002ac231}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ {\bfseries Expected\+Transition\+Target} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_transition_array_a41e6bcb4e4dda79c35f253ab2d9d166a}{}\label{classv8_1_1internal_1_1_transition_array_a41e6bcb4e4dda79c35f253ab2d9d166a}
+
+\item 
+static bool {\bfseries Can\+Store\+Simple\+Transition} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transition)\hypertarget{classv8_1_1internal_1_1_transition_array_af22c83d77488201524cbb60339eca4c1}{}\label{classv8_1_1internal_1_1_transition_array_af22c83d77488201524cbb60339eca4c1}
+
+\item 
+static bool {\bfseries Is\+Simple\+Transition} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transition)\hypertarget{classv8_1_1internal_1_1_transition_array_ab5a626034580087528e7abfd3a301fe5}{}\label{classv8_1_1internal_1_1_transition_array_ab5a626034580087528e7abfd3a301fe5}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$ {\bfseries Get\+Simple\+Transition} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transition)\hypertarget{classv8_1_1internal_1_1_transition_array_a3940d256fe4be5fced56c0a8a57900b4}{}\label{classv8_1_1internal_1_1_transition_array_a3940d256fe4be5fced56c0a8a57900b4}
+
+\item 
+static bool {\bfseries Is\+Full\+Transition\+Array} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a2985a9a6b4a1ad6495921b8ee1a6052b}{}\label{classv8_1_1internal_1_1_transition_array_a2985a9a6b4a1ad6495921b8ee1a6052b}
+
+\item 
+static bool {\bfseries Can\+Have\+More\+Transitions} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_transition_array_a11cf3c7f361fb46a92f7853667c06bf0}{}\label{classv8_1_1internal_1_1_transition_array_a11cf3c7f361fb46a92f7853667c06bf0}
+
+\item 
+static void {\bfseries Put\+Prototype\+Transition} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ prototype, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ target\+\_\+map)\hypertarget{classv8_1_1internal_1_1_transition_array_a30fd943b2ffb53464fe0e1da0e7623c0}{}\label{classv8_1_1internal_1_1_transition_array_a30fd943b2ffb53464fe0e1da0e7623c0}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ {\bfseries Get\+Prototype\+Transition} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ prototype)\hypertarget{classv8_1_1internal_1_1_transition_array_a5dbdfc31ddc127c63a691dc308876d11}{}\label{classv8_1_1internal_1_1_transition_array_a5dbdfc31ddc127c63a691dc308876d11}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$ {\bfseries Get\+Prototype\+Transitions} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map)\hypertarget{classv8_1_1internal_1_1_transition_array_a5dba0e7b61fd67421e3f5f3f5d2ffaee}{}\label{classv8_1_1internal_1_1_transition_array_a5dba0e7b61fd67421e3f5f3f5d2ffaee}
+
+\item 
+static int {\bfseries Number\+Of\+Prototype\+Transitions} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$proto\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a0f7fea3230f4a97c241a03da0cab1d9f}{}\label{classv8_1_1internal_1_1_transition_array_a0f7fea3230f4a97c241a03da0cab1d9f}
+
+\item 
+static int {\bfseries Number\+Of\+Prototype\+Transitions\+For\+Test} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map)\hypertarget{classv8_1_1internal_1_1_transition_array_a381a053abda5f8f7c09275e63b7a2a9a}{}\label{classv8_1_1internal_1_1_transition_array_a381a053abda5f8f7c09275e63b7a2a9a}
+
+\item 
+static void {\bfseries Set\+Number\+Of\+Prototype\+Transitions} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$proto\+\_\+transitions, int value)\hypertarget{classv8_1_1internal_1_1_transition_array_a8c2e74b7b2bc1facb107706210914654}{}\label{classv8_1_1internal_1_1_transition_array_a8c2e74b7b2bc1facb107706210914654}
+
+\item 
+static void {\bfseries Traverse\+Transition\+Tree} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, Traverse\+Callback callback, void $\ast$data)\hypertarget{classv8_1_1internal_1_1_transition_array_ab81a2e91619e1fa8ad0abba70a25fcfa}{}\label{classv8_1_1internal_1_1_transition_array_ab81a2e91619e1fa8ad0abba70a25fcfa}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$ {\bfseries Get\+Key} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transitions, int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a78bcd0af8ebe9902a2a54a32578e5ba6}{}\label{classv8_1_1internal_1_1_transition_array_a78bcd0af8ebe9902a2a54a32578e5ba6}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$ {\bfseries Get\+Target} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transitions, int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a154b555be9a60a1c977fb58bf046aca4}{}\label{classv8_1_1internal_1_1_transition_array_a154b555be9a60a1c977fb58bf046aca4}
+
+\item 
+static Property\+Details {\bfseries Get\+Target\+Details} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$target)\hypertarget{classv8_1_1internal_1_1_transition_array_a9ab7e05957847ab1fa4744632ff57cdc}{}\label{classv8_1_1internal_1_1_transition_array_a9ab7e05957847ab1fa4744632ff57cdc}
+
+\item 
+static int {\bfseries Number\+Of\+Transitions} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a9e266b2d8475f80c42a87765d0f8a13d}{}\label{classv8_1_1internal_1_1_transition_array_a9e266b2d8475f80c42a87765d0f8a13d}
+
+\item 
+static int {\bfseries Capacity} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$raw\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a65c544d9ec2507a985000182bd77125a}{}\label{classv8_1_1internal_1_1_transition_array_a65c544d9ec2507a985000182bd77125a}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_transition_array}{Transition\+Array} $\ast$ {\bfseries cast} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$object)\hypertarget{classv8_1_1internal_1_1_transition_array_ab88d7d66ebea6f7fde9c78b2d08d25e7}{}\label{classv8_1_1internal_1_1_transition_array_ab88d7d66ebea6f7fde9c78b2d08d25e7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Cached\+Prototype\+Transitions} = 256\hypertarget{classv8_1_1internal_1_1_transition_array_adbecf4f3a5f03b891c64f4e44397c7dc}{}\label{classv8_1_1internal_1_1_transition_array_adbecf4f3a5f03b891c64f4e44397c7dc}
+
+\item 
+static const int {\bfseries k\+Transition\+Size} = 2\hypertarget{classv8_1_1internal_1_1_transition_array_a70f4cab2687143d4e358a74001ce02ce}{}\label{classv8_1_1internal_1_1_transition_array_a70f4cab2687143d4e358a74001ce02ce}
+
+\item 
+static const int {\bfseries k\+Proto\+Transition\+Header\+Size} = 1\hypertarget{classv8_1_1internal_1_1_transition_array_acc80d2c6989d10b2c1af22450f28db13}{}\label{classv8_1_1internal_1_1_transition_array_acc80d2c6989d10b2c1af22450f28db13}
+
+\item 
+static const int {\bfseries k\+Not\+Found} = -\/1\hypertarget{classv8_1_1internal_1_1_transition_array_a7d68801878e5dc9587483ec914d7522b}{}\label{classv8_1_1internal_1_1_transition_array_a7d68801878e5dc9587483ec914d7522b}
+
+\item 
+static const int {\bfseries k\+Max\+Number\+Of\+Transitions} = 1024 + 512\hypertarget{classv8_1_1internal_1_1_transition_array_ae856479a42fb3a4de483e48a99c6cca1}{}\label{classv8_1_1internal_1_1_transition_array_ae856479a42fb3a4de483e48a99c6cca1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Transition\+Size==2)\hypertarget{classv8_1_1internal_1_1_transition_array_aec92346a8c670d35ce1cdeac9f1a5c95}{}\label{classv8_1_1internal_1_1_transition_array_aec92346a8c670d35ce1cdeac9f1a5c95}
+
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (k\+Proto\+Transition\+Header\+Size==1)\hypertarget{classv8_1_1internal_1_1_transition_array_a0f218ca6413b0330cd736dadee1496a3}{}\label{classv8_1_1internal_1_1_transition_array_a0f218ca6413b0330cd736dadee1496a3}
+
+\item 
+int {\bfseries Search} (Property\+Kind kind, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, Property\+Attributes attributes, int $\ast$out\+\_\+insertion\+\_\+index=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_transition_array_a6232aa44cfd94ae3e0e4dbc86a0ccd85}{}\label{classv8_1_1internal_1_1_transition_array_a6232aa44cfd94ae3e0e4dbc86a0ccd85}
+
+\item 
+int {\bfseries Search\+Special} (\hyperlink{classv8_1_1internal_1_1_symbol}{Symbol} $\ast$symbol, int $\ast$out\+\_\+insertion\+\_\+index=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_transition_array_a719276854ce2660de23ea1ff08f8c478}{}\label{classv8_1_1internal_1_1_transition_array_a719276854ce2660de23ea1ff08f8c478}
+
+\item 
+int {\bfseries Search\+Name} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$name, int $\ast$out\+\_\+insertion\+\_\+index=N\+U\+LL)\hypertarget{classv8_1_1internal_1_1_transition_array_a677d37b0f802cc7b63c951279aaae880}{}\label{classv8_1_1internal_1_1_transition_array_a677d37b0f802cc7b63c951279aaae880}
+
+\item 
+int {\bfseries Search\+Details} (int transition, Property\+Kind kind, Property\+Attributes attributes, int $\ast$out\+\_\+insertion\+\_\+index)\hypertarget{classv8_1_1internal_1_1_transition_array_a006130993f55c3cdd97a724a241fc992}{}\label{classv8_1_1internal_1_1_transition_array_a006130993f55c3cdd97a724a241fc992}
+
+\item 
+int {\bfseries number\+\_\+of\+\_\+transitions} ()\hypertarget{classv8_1_1internal_1_1_transition_array_a1c94a46302490f0b106bf8e955ddb7b4}{}\label{classv8_1_1internal_1_1_transition_array_a1c94a46302490f0b106bf8e955ddb7b4}
+
+\item 
+void {\bfseries Set} (int transition\+\_\+number, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$key, \hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$target)\hypertarget{classv8_1_1internal_1_1_transition_array_a7fc47ac6ddbab297eabc5bb91e5ff4e3}{}\label{classv8_1_1internal_1_1_transition_array_a7fc47ac6ddbab297eabc5bb91e5ff4e3}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_transition_array}{Transition\+Array})\hypertarget{classv8_1_1internal_1_1_transition_array_a63a05b36a74df71aa794defea590c288}{}\label{classv8_1_1internal_1_1_transition_array_a63a05b36a74df71aa794defea590c288}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries To\+Key\+Index} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_a1921e0066146c0dd4219d05e660e636b}{}\label{classv8_1_1internal_1_1_transition_array_a1921e0066146c0dd4219d05e660e636b}
+
+\item 
+static int {\bfseries To\+Target\+Index} (int transition\+\_\+number)\hypertarget{classv8_1_1internal_1_1_transition_array_aafbf4ba7c3804875dd67e1937dfc964e}{}\label{classv8_1_1internal_1_1_transition_array_aafbf4ba7c3804875dd67e1937dfc964e}
+
+\item 
+static int {\bfseries Length\+For} (int number\+\_\+of\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a32958075c11db90f1e789b070d898600}{}\label{classv8_1_1internal_1_1_transition_array_a32958075c11db90f1e789b070d898600}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_transition_array}{Transition\+Array} $>$ {\bfseries Allocate} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, int number\+\_\+of\+\_\+transitions, int slack=0)\hypertarget{classv8_1_1internal_1_1_transition_array_afae7cd0ef9dc897aa7f70356f0a97297}{}\label{classv8_1_1internal_1_1_transition_array_afae7cd0ef9dc897aa7f70356f0a97297}
+
+\item 
+static void {\bfseries Ensure\+Has\+Full\+Transition\+Array} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map)\hypertarget{classv8_1_1internal_1_1_transition_array_ac84005d6e34f3837926fe3a20f2b1d3f}{}\label{classv8_1_1internal_1_1_transition_array_ac84005d6e34f3837926fe3a20f2b1d3f}
+
+\item 
+static void {\bfseries Replace\+Transitions} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$new\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a1995faef4cd34e8a86ea7bf9bae66797}{}\label{classv8_1_1internal_1_1_transition_array_a1995faef4cd34e8a86ea7bf9bae66797}
+
+\item 
+static Property\+Details {\bfseries Get\+Simple\+Target\+Details} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$transition)\hypertarget{classv8_1_1internal_1_1_transition_array_af174b35d368b2dc9c45373022ffba854}{}\label{classv8_1_1internal_1_1_transition_array_af174b35d368b2dc9c45373022ffba854}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$ {\bfseries Get\+Simple\+Transition\+Key} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$transition)\hypertarget{classv8_1_1internal_1_1_transition_array_a8967b05837f42742c02ff51752ab51da}{}\label{classv8_1_1internal_1_1_transition_array_a8967b05837f42742c02ff51752ab51da}
+
+\item 
+static void {\bfseries Traverse\+Transition\+Tree\+Internal} (\hyperlink{classv8_1_1internal_1_1_map}{Map} $\ast$map, Traverse\+Callback callback, void $\ast$data)\hypertarget{classv8_1_1internal_1_1_transition_array_a1121b009ee6ab7c512b2fc5096fc1027}{}\label{classv8_1_1internal_1_1_transition_array_a1121b009ee6ab7c512b2fc5096fc1027}
+
+\item 
+static void {\bfseries Set\+Prototype\+Transitions} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_map}{Map} $>$ map, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ proto\+\_\+transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a3c90c40a08f294a55f7de1045abe6a29}{}\label{classv8_1_1internal_1_1_transition_array_a3c90c40a08f294a55f7de1045abe6a29}
+
+\item 
+static bool {\bfseries Compact\+Prototype\+Transition\+Array} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$array)\hypertarget{classv8_1_1internal_1_1_transition_array_ad815e4aedfacd8ac5550a8b05c164088}{}\label{classv8_1_1internal_1_1_transition_array_ad815e4aedfacd8ac5550a8b05c164088}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ {\bfseries Grow\+Prototype\+Transition\+Array} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $>$ array, int new\+\_\+capacity, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_transition_array_a6d66184d1806af321a80227a610a5653}{}\label{classv8_1_1internal_1_1_transition_array_a6d66184d1806af321a80227a610a5653}
+
+\item 
+static int {\bfseries Compare\+Keys} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$key1, uint32\+\_\+t hash1, Property\+Kind kind1, Property\+Attributes attributes1, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$key2, uint32\+\_\+t hash2, Property\+Kind kind2, Property\+Attributes attributes2)\hypertarget{classv8_1_1internal_1_1_transition_array_a2ca6d33f21d0621feb2f92ff2a9f2cfe}{}\label{classv8_1_1internal_1_1_transition_array_a2ca6d33f21d0621feb2f92ff2a9f2cfe}
+
+\item 
+static int {\bfseries Compare\+Names} (\hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$key1, uint32\+\_\+t hash1, \hyperlink{classv8_1_1internal_1_1_name}{Name} $\ast$key2, uint32\+\_\+t hash2)\hypertarget{classv8_1_1internal_1_1_transition_array_aa4b5d6af5f9763391b399cdcadc31694}{}\label{classv8_1_1internal_1_1_transition_array_aa4b5d6af5f9763391b399cdcadc31694}
+
+\item 
+static int {\bfseries Compare\+Details} (Property\+Kind kind1, Property\+Attributes attributes1, Property\+Kind kind2, Property\+Attributes attributes2)\hypertarget{classv8_1_1internal_1_1_transition_array_a3a1c57d2d50a62460a1003c38b7f081a}{}\label{classv8_1_1internal_1_1_transition_array_a3a1c57d2d50a62460a1003c38b7f081a}
+
+\item 
+static void {\bfseries Zap\+Transition\+Array} (\hyperlink{classv8_1_1internal_1_1_transition_array}{Transition\+Array} $\ast$transitions)\hypertarget{classv8_1_1internal_1_1_transition_array_a0bc7eeb3549484cbfb9304d35a8bb338}{}\label{classv8_1_1internal_1_1_transition_array_a0bc7eeb3549484cbfb9304d35a8bb338}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Next\+Link\+Index} = 0\hypertarget{classv8_1_1internal_1_1_transition_array_aec217c560f9c934a25f06aac965f37a6}{}\label{classv8_1_1internal_1_1_transition_array_aec217c560f9c934a25f06aac965f37a6}
+
+\item 
+static const int {\bfseries k\+Prototype\+Transitions\+Index} = 1\hypertarget{classv8_1_1internal_1_1_transition_array_af384db47b8e7c19b376a81f4e1361344}{}\label{classv8_1_1internal_1_1_transition_array_af384db47b8e7c19b376a81f4e1361344}
+
+\item 
+static const int {\bfseries k\+Transition\+Length\+Index} = 2\hypertarget{classv8_1_1internal_1_1_transition_array_ade632e34d0d93ba7b62f0cb4e7107290}{}\label{classv8_1_1internal_1_1_transition_array_ade632e34d0d93ba7b62f0cb4e7107290}
+
+\item 
+static const int {\bfseries k\+First\+Index} = 3\hypertarget{classv8_1_1internal_1_1_transition_array_a1c836938acaf06ce7778b30631cfaf86}{}\label{classv8_1_1internal_1_1_transition_array_a1c836938acaf06ce7778b30631cfaf86}
+
+\item 
+static const int {\bfseries k\+Transition\+Key} = 0\hypertarget{classv8_1_1internal_1_1_transition_array_aeb8fa0752595521dcc2e975f98b00180}{}\label{classv8_1_1internal_1_1_transition_array_aeb8fa0752595521dcc2e975f98b00180}
+
+\item 
+static const int {\bfseries k\+Transition\+Target} = 1\hypertarget{classv8_1_1internal_1_1_transition_array_a8643d91e4814b315e7d6c695f9a47142}{}\label{classv8_1_1internal_1_1_transition_array_a8643d91e4814b315e7d6c695f9a47142}
+
+\item 
+static const int {\bfseries k\+Proto\+Transition\+Number\+Of\+Entries\+Offset} = 0\hypertarget{classv8_1_1internal_1_1_transition_array_aadebf642725fa329082cd09337eacc6a}{}\label{classv8_1_1internal_1_1_transition_array_aadebf642725fa329082cd09337eacc6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/transitions.\+h\item 
+/\+Users/joshgav/node/v8/src/transitions-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/transitions.\+cc\end{DoxyCompactItemize}

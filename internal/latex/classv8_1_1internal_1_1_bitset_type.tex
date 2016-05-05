@@ -1,0 +1,132 @@
+\hypertarget{classv8_1_1internal_1_1_bitset_type}{}\section{v8\+:\+:internal\+:\+:Bitset\+Type Class Reference}
+\label{classv8_1_1internal_1_1_bitset_type}\index{v8\+::internal\+::\+Bitset\+Type@{v8\+::internal\+::\+Bitset\+Type}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_bitset_type_1_1_boundary}{Boundary}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \+: uint32\+\_\+t \{ {\bfseries k\+Unused\+E\+OL} = 0
+ \}\hypertarget{classv8_1_1internal_1_1_bitset_type_a33ba5ffa560b2a34027f0130b74a7a15}{}\label{classv8_1_1internal_1_1_bitset_type_a33ba5ffa560b2a34027f0130b74a7a15}
+
+\item 
+typedef uint32\+\_\+t {\bfseries bitset}\hypertarget{classv8_1_1internal_1_1_bitset_type_a7efc7aa457dc5f5de94d8d50b0e61f30}{}\label{classv8_1_1internal_1_1_bitset_type_a7efc7aa457dc5f5de94d8d50b0e61f30}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bitset {\bfseries Bitset} ()\hypertarget{classv8_1_1internal_1_1_bitset_type_a15b545e893493e75c325ee64f56bd19a}{}\label{classv8_1_1internal_1_1_bitset_type_a15b545e893493e75c325ee64f56bd19a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bitset {\bfseries Signed\+Small} ()\hypertarget{classv8_1_1internal_1_1_bitset_type_afe6bed368336a054573c77c61744d9ff}{}\label{classv8_1_1internal_1_1_bitset_type_afe6bed368336a054573c77c61744d9ff}
+
+\item 
+static bitset {\bfseries Unsigned\+Small} ()\hypertarget{classv8_1_1internal_1_1_bitset_type_a73e0a5b04a0218c3f30c16c9fa71b695}{}\label{classv8_1_1internal_1_1_bitset_type_a73e0a5b04a0218c3f30c16c9fa71b695}
+
+\item 
+static bool {\bfseries Is\+Inhabited} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_a5624fbf59a95893749997ad172c7c3a8}{}\label{classv8_1_1internal_1_1_bitset_type_a5624fbf59a95893749997ad172c7c3a8}
+
+\item 
+static bool {\bfseries Semantic\+Is\+Inhabited} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_a1292353535250078ea423de03fe54ba7}{}\label{classv8_1_1internal_1_1_bitset_type_a1292353535250078ea423de03fe54ba7}
+
+\item 
+static bool {\bfseries Is} (bitset bits1, bitset bits2)\hypertarget{classv8_1_1internal_1_1_bitset_type_a9cae44574beeb19c5a899411241bf0e4}{}\label{classv8_1_1internal_1_1_bitset_type_a9cae44574beeb19c5a899411241bf0e4}
+
+\item 
+static double {\bfseries Min} (bitset)\hypertarget{classv8_1_1internal_1_1_bitset_type_a678841cc6649b775b914a4bf50d18ef5}{}\label{classv8_1_1internal_1_1_bitset_type_a678841cc6649b775b914a4bf50d18ef5}
+
+\item 
+static double {\bfseries Max} (bitset)\hypertarget{classv8_1_1internal_1_1_bitset_type_a5260dffc92937d1c44948b7371d71f66}{}\label{classv8_1_1internal_1_1_bitset_type_a5260dffc92937d1c44948b7371d71f66}
+
+\item 
+static bitset {\bfseries Glb} (\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$type)\hypertarget{classv8_1_1internal_1_1_bitset_type_a279175e40fc9ea1778b44884ac4294e0}{}\label{classv8_1_1internal_1_1_bitset_type_a279175e40fc9ea1778b44884ac4294e0}
+
+\item 
+static bitset {\bfseries Glb} (double min, double max)\hypertarget{classv8_1_1internal_1_1_bitset_type_a4701f878eac4b69cc8c3758fdf0f32e5}{}\label{classv8_1_1internal_1_1_bitset_type_a4701f878eac4b69cc8c3758fdf0f32e5}
+
+\item 
+static bitset {\bfseries Lub} (\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$type)\hypertarget{classv8_1_1internal_1_1_bitset_type_adf17917ff6504e325a4307aca1206c76}{}\label{classv8_1_1internal_1_1_bitset_type_adf17917ff6504e325a4307aca1206c76}
+
+\item 
+static bitset {\bfseries Lub} (\hyperlink{classv8_1_1internal_1_1_map}{i\+::\+Map} $\ast$map)\hypertarget{classv8_1_1internal_1_1_bitset_type_a7a6899a40a0c0eac678fceac9d2a0b35}{}\label{classv8_1_1internal_1_1_bitset_type_a7a6899a40a0c0eac678fceac9d2a0b35}
+
+\item 
+static bitset {\bfseries Lub} (\hyperlink{classv8_1_1internal_1_1_object}{i\+::\+Object} $\ast$value)\hypertarget{classv8_1_1internal_1_1_bitset_type_ace41c2530f0a291f3baa919d7413c1d5}{}\label{classv8_1_1internal_1_1_bitset_type_ace41c2530f0a291f3baa919d7413c1d5}
+
+\item 
+static bitset {\bfseries Lub} (double value)\hypertarget{classv8_1_1internal_1_1_bitset_type_af990b748e3fe0631d8c3a56d5d44c2c2}{}\label{classv8_1_1internal_1_1_bitset_type_af990b748e3fe0631d8c3a56d5d44c2c2}
+
+\item 
+static bitset {\bfseries Lub} (double min, double max)\hypertarget{classv8_1_1internal_1_1_bitset_type_aa893d9c9353352b580b8f010e0226863}{}\label{classv8_1_1internal_1_1_bitset_type_aa893d9c9353352b580b8f010e0226863}
+
+\item 
+static bitset {\bfseries Expand\+Internals} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_a95885153edc400b3977b08a6e528bfde}{}\label{classv8_1_1internal_1_1_bitset_type_a95885153edc400b3977b08a6e528bfde}
+
+\item 
+static const char $\ast$ {\bfseries Name} (bitset)\hypertarget{classv8_1_1internal_1_1_bitset_type_ab0fa5cd2bb28167b4336c5b23818761e}{}\label{classv8_1_1internal_1_1_bitset_type_ab0fa5cd2bb28167b4336c5b23818761e}
+
+\item 
+static void {\bfseries Print} (std\+::ostream \&os, bitset)\hypertarget{classv8_1_1internal_1_1_bitset_type_ae4ee0bc54ec6524c7ee6983c32caef9c}{}\label{classv8_1_1internal_1_1_bitset_type_ae4ee0bc54ec6524c7ee6983c32caef9c}
+
+\item 
+static bitset {\bfseries Number\+Bits} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_a7ed256bdc5a2d58255cd9b6e41a43704}{}\label{classv8_1_1internal_1_1_bitset_type_a7ed256bdc5a2d58255cd9b6e41a43704}
+
+\item 
+static bool {\bfseries Is\+Bitset} (\hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$type)\hypertarget{classv8_1_1internal_1_1_bitset_type_aa42897f6ec8a66c7325fc43c1a8c5672}{}\label{classv8_1_1internal_1_1_bitset_type_aa42897f6ec8a66c7325fc43c1a8c5672}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries New\+For\+Testing} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_ac2b1b66d5537b55f8f782aa64986caee}{}\label{classv8_1_1internal_1_1_bitset_type_ac2b1b66d5537b55f8f782aa64986caee}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_type}{Type} $\ast$ {\bfseries New} (bitset bits)\hypertarget{classv8_1_1internal_1_1_bitset_type_ad77d9b59cd590937ed8a9e08873aaf9d}{}\label{classv8_1_1internal_1_1_bitset_type_ad77d9b59cd590937ed8a9e08873aaf9d}
+
+\item 
+static const \hyperlink{structv8_1_1internal_1_1_bitset_type_1_1_boundary}{Boundary} $\ast$ {\bfseries Boundaries} ()\hypertarget{classv8_1_1internal_1_1_bitset_type_a89947b5d15e52b20afbf2d094eb4ac7a}{}\label{classv8_1_1internal_1_1_bitset_type_a89947b5d15e52b20afbf2d094eb4ac7a}
+
+\item 
+static size\+\_\+t {\bfseries Boundaries\+Size} ()\hypertarget{classv8_1_1internal_1_1_bitset_type_affae47bc48970e4c396ff8c5559c3bd5}{}\label{classv8_1_1internal_1_1_bitset_type_affae47bc48970e4c396ff8c5559c3bd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{structv8_1_1internal_1_1_bitset_type_1_1_boundary}{Boundary} {\bfseries Boundaries\+Array} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Type}\hypertarget{classv8_1_1internal_1_1_bitset_type_a18dba29b4f3e91d6d2bc53472a6bb7cc}{}\label{classv8_1_1internal_1_1_bitset_type_a18dba29b4f3e91d6d2bc53472a6bb7cc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Bitset\+Type@{v8\+::internal\+::\+Bitset\+Type}!Boundaries\+Array@{Boundaries\+Array}}
+\index{Boundaries\+Array@{Boundaries\+Array}!v8\+::internal\+::\+Bitset\+Type@{v8\+::internal\+::\+Bitset\+Type}}
+\subsubsection[{\texorpdfstring{Boundaries\+Array}{BoundariesArray}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bitset\+Type\+::\+Boundary} v8\+::internal\+::\+Bitset\+Type\+::\+Boundaries\+Array\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classv8_1_1internal_1_1_bitset_type_a622ee08041bfbad955c8bbb59cabe0c6}{}\label{classv8_1_1internal_1_1_bitset_type_a622ee08041bfbad955c8bbb59cabe0c6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \{kOtherNumber, kPlainNumber, -V8\_INFINITY\},
+    \{kOtherSigned32, kNegative32, kMinInt\},
+    \{kNegative31, kNegative31, -0x40000000\},
+    \{kUnsigned30, kUnsigned30, 0\},
+    \{kOtherUnsigned31, kUnsigned31, 0x40000000\},
+    \{kOtherUnsigned32, kUnsigned32, 0x80000000\},
+    \{kOtherNumber, kPlainNumber, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(kMaxUInt32) + 1\}\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/types.\+h\item 
+/\+Users/joshgav/node/v8/src/types.\+cc\end{DoxyCompactItemize}

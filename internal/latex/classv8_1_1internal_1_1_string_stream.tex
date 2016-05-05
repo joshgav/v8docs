@@ -1,0 +1,147 @@
+\hypertarget{classv8_1_1internal_1_1_string_stream}{}\section{v8\+:\+:internal\+:\+:String\+Stream Class Reference}
+\label{classv8_1_1internal_1_1_string_stream}\index{v8\+::internal\+::\+String\+Stream@{v8\+::internal\+::\+String\+Stream}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Object\+Print\+Mode} \{ \\*
+{\bfseries k\+Print\+Object\+Concise}, 
+\\*
+{\bfseries k\+Print\+Object\+Verbose}
+ \}\hypertarget{classv8_1_1internal_1_1_string_stream_a361ab644103e5b93e61e9446d097195e}{}\label{classv8_1_1internal_1_1_string_stream_a361ab644103e5b93e61e9446d097195e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries String\+Stream} (\hyperlink{classv8_1_1internal_1_1_string_allocator}{String\+Allocator} $\ast$allocator, Object\+Print\+Mode object\+\_\+print\+\_\+mode=k\+Print\+Object\+Verbose)\hypertarget{classv8_1_1internal_1_1_string_stream_a8c233bfed7b292234ab22574b34014a3}{}\label{classv8_1_1internal_1_1_string_stream_a8c233bfed7b292234ab22574b34014a3}
+
+\item 
+bool {\bfseries Put} (char c)\hypertarget{classv8_1_1internal_1_1_string_stream_a24a1a07729bf42969140ba16f3351920}{}\label{classv8_1_1internal_1_1_string_stream_a24a1a07729bf42969140ba16f3351920}
+
+\item 
+bool {\bfseries Put} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$str)\hypertarget{classv8_1_1internal_1_1_string_stream_a990d2b8c620877c62ec1d7e476f795a6}{}\label{classv8_1_1internal_1_1_string_stream_a990d2b8c620877c62ec1d7e476f795a6}
+
+\item 
+bool {\bfseries Put} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$str, int start, int end)\hypertarget{classv8_1_1internal_1_1_string_stream_a316ea0aceadd5222f8a2d85864e42088}{}\label{classv8_1_1internal_1_1_string_stream_a316ea0aceadd5222f8a2d85864e42088}
+
+\item 
+void {\bfseries Add} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const char $>$ format, \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} $>$ elms)\hypertarget{classv8_1_1internal_1_1_string_stream_a87c05ac7fcb5660845656511cff6b099}{}\label{classv8_1_1internal_1_1_string_stream_a87c05ac7fcb5660845656511cff6b099}
+
+\item 
+void {\bfseries Add} (const char $\ast$format)\hypertarget{classv8_1_1internal_1_1_string_stream_aa3882575a01cba886e200b75ad4225ca}{}\label{classv8_1_1internal_1_1_string_stream_aa3882575a01cba886e200b75ad4225ca}
+
+\item 
+void {\bfseries Add} (\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ const char $>$ format)\hypertarget{classv8_1_1internal_1_1_string_stream_a1575cac89edd5f8f004d2da49b3fb76b}{}\label{classv8_1_1internal_1_1_string_stream_a1575cac89edd5f8f004d2da49b3fb76b}
+
+\item 
+void {\bfseries Add} (const char $\ast$format, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg0)\hypertarget{classv8_1_1internal_1_1_string_stream_a1d1b3fc5a877605c0779f53682724dd7}{}\label{classv8_1_1internal_1_1_string_stream_a1d1b3fc5a877605c0779f53682724dd7}
+
+\item 
+void {\bfseries Add} (const char $\ast$format, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg0, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg1)\hypertarget{classv8_1_1internal_1_1_string_stream_a05331177bf606d9c51f8327d0e558b48}{}\label{classv8_1_1internal_1_1_string_stream_a05331177bf606d9c51f8327d0e558b48}
+
+\item 
+void {\bfseries Add} (const char $\ast$format, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg0, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg1, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg2)\hypertarget{classv8_1_1internal_1_1_string_stream_ae03a245fc782be3f1905de1d6ffcb22d}{}\label{classv8_1_1internal_1_1_string_stream_ae03a245fc782be3f1905de1d6ffcb22d}
+
+\item 
+void {\bfseries Add} (const char $\ast$format, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg0, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg1, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg2, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg3)\hypertarget{classv8_1_1internal_1_1_string_stream_ad2f0b88b6ed4b27bf04a39653a99143a}{}\label{classv8_1_1internal_1_1_string_stream_ad2f0b88b6ed4b27bf04a39653a99143a}
+
+\item 
+void {\bfseries Add} (const char $\ast$format, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg0, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg1, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg2, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg3, \hyperlink{classv8_1_1internal_1_1_fmt_elm}{Fmt\+Elm} arg4)\hypertarget{classv8_1_1internal_1_1_string_stream_a4e06fea1da10f2bc53f7e5f94e7e156c}{}\label{classv8_1_1internal_1_1_string_stream_a4e06fea1da10f2bc53f7e5f94e7e156c}
+
+\item 
+void {\bfseries Output\+To\+File} (F\+I\+LE $\ast$out)\hypertarget{classv8_1_1internal_1_1_string_stream_a8b576f5204b520bb54eb6d52506c275d}{}\label{classv8_1_1internal_1_1_string_stream_a8b576f5204b520bb54eb6d52506c275d}
+
+\item 
+void {\bfseries Output\+To\+Std\+Out} ()\hypertarget{classv8_1_1internal_1_1_string_stream_adbf40215996d150c5d9d413b2e8149e7}{}\label{classv8_1_1internal_1_1_string_stream_adbf40215996d150c5d9d413b2e8149e7}
+
+\item 
+void {\bfseries Log} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_string_stream_adf1fc4320631c6dbc92e0daa9d0eddbd}{}\label{classv8_1_1internal_1_1_string_stream_adf1fc4320631c6dbc92e0daa9d0eddbd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ {\bfseries To\+String} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_string_stream_aee5de03855bbb3f1ee69de474fc7314f}{}\label{classv8_1_1internal_1_1_string_stream_aee5de03855bbb3f1ee69de474fc7314f}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_smart_array_pointer}{base\+::\+Smart\+Array\+Pointer}$<$ const char $>$ {\bfseries To\+C\+String} () const \hypertarget{classv8_1_1internal_1_1_string_stream_a7d3d42da4592c820bdee830fffe4dded}{}\label{classv8_1_1internal_1_1_string_stream_a7d3d42da4592c820bdee830fffe4dded}
+
+\item 
+int {\bfseries length} () const \hypertarget{classv8_1_1internal_1_1_string_stream_ae62f559aa28d48eb0b219996e3a6d7f7}{}\label{classv8_1_1internal_1_1_string_stream_ae62f559aa28d48eb0b219996e3a6d7f7}
+
+\item 
+void {\bfseries Print\+Name} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$o)\hypertarget{classv8_1_1internal_1_1_string_stream_afd1e2ee1f63ba6d4c8b7b2303add685c}{}\label{classv8_1_1internal_1_1_string_stream_afd1e2ee1f63ba6d4c8b7b2303add685c}
+
+\item 
+void {\bfseries Print\+Fixed\+Array} (\hyperlink{classv8_1_1internal_1_1_fixed_array}{Fixed\+Array} $\ast$array, unsigned int limit)\hypertarget{classv8_1_1internal_1_1_string_stream_a610095183e3886d651164b1414250ef9}{}\label{classv8_1_1internal_1_1_string_stream_a610095183e3886d651164b1414250ef9}
+
+\item 
+void {\bfseries Print\+Byte\+Array} (\hyperlink{classv8_1_1internal_1_1_byte_array}{Byte\+Array} $\ast$ba)\hypertarget{classv8_1_1internal_1_1_string_stream_aad676e6b01aedfbca9fe0798d02350c8}{}\label{classv8_1_1internal_1_1_string_stream_aad676e6b01aedfbca9fe0798d02350c8}
+
+\item 
+void {\bfseries Print\+Using\+Map} (\hyperlink{classv8_1_1internal_1_1_j_s_object}{J\+S\+Object} $\ast$js\+\_\+object)\hypertarget{classv8_1_1internal_1_1_string_stream_a18dafcb71cb03dfab099345894be47f4}{}\label{classv8_1_1internal_1_1_string_stream_a18dafcb71cb03dfab099345894be47f4}
+
+\item 
+void {\bfseries Print\+Prototype} (\hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $\ast$fun, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$receiver)\hypertarget{classv8_1_1internal_1_1_string_stream_afb484ceb6ccf40f9d9194bfdb68edd4e}{}\label{classv8_1_1internal_1_1_string_stream_afb484ceb6ccf40f9d9194bfdb68edd4e}
+
+\item 
+void {\bfseries Print\+Security\+Token\+If\+Changed} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$function)\hypertarget{classv8_1_1internal_1_1_string_stream_aa03d85843946a62a1c0b31a82e7d9a3f}{}\label{classv8_1_1internal_1_1_string_stream_aa03d85843946a62a1c0b31a82e7d9a3f}
+
+\item 
+void {\bfseries Print\+Function} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$function, \hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$receiver, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$$\ast$code)\hypertarget{classv8_1_1internal_1_1_string_stream_a1c4ec40d3c8ee4f55b0b6e3b8ce3521b}{}\label{classv8_1_1internal_1_1_string_stream_a1c4ec40d3c8ee4f55b0b6e3b8ce3521b}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classv8_1_1internal_1_1_string_stream_ac124b401d3e5678944c1377ee936f8d0}{}\label{classv8_1_1internal_1_1_string_stream_ac124b401d3e5678944c1377ee936f8d0}
+
+\item 
+void {\bfseries Print\+Mentioned\+Object\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_string_stream_a623085f254cf314be127bdd1e23641a7}{}\label{classv8_1_1internal_1_1_string_stream_a623085f254cf314be127bdd1e23641a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Clear\+Mentioned\+Object\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_string_stream_a51afd68ec786821ea978e5855e9afe62}{}\label{classv8_1_1internal_1_1_string_stream_a51afd68ec786821ea978e5855e9afe62}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Initial\+Capacity} = 16\hypertarget{classv8_1_1internal_1_1_string_stream_a5893ecef00152a5d11918d88d6d1ff02}{}\label{classv8_1_1internal_1_1_string_stream_a5893ecef00152a5d11918d88d6d1ff02}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Print\+Object} (\hyperlink{classv8_1_1internal_1_1_object}{Object} $\ast$obj)\hypertarget{classv8_1_1internal_1_1_string_stream_adddc8658990bdb4ac1b025b636e792df}{}\label{classv8_1_1internal_1_1_string_stream_adddc8658990bdb4ac1b025b636e792df}
+
+\item 
+bool {\bfseries full} () const \hypertarget{classv8_1_1internal_1_1_string_stream_aa1949268af3887b5970c7db294f5994c}{}\label{classv8_1_1internal_1_1_string_stream_aa1949268af3887b5970c7db294f5994c}
+
+\item 
+int {\bfseries space} () const \hypertarget{classv8_1_1internal_1_1_string_stream_a3ca02c7c3f9dd4449eb7cda7cfb60b82}{}\label{classv8_1_1internal_1_1_string_stream_a3ca02c7c3f9dd4449eb7cda7cfb60b82}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_string_stream}{String\+Stream})\hypertarget{classv8_1_1internal_1_1_string_stream_a6e3c1ec508c31a27d3e74d5921bd0d35}{}\label{classv8_1_1internal_1_1_string_stream_a6e3c1ec508c31a27d3e74d5921bd0d35}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_string_allocator}{String\+Allocator} $\ast$ {\bfseries allocator\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_stream_aeb7496d489c37d4b50c6eeb4c35669f4}{}\label{classv8_1_1internal_1_1_string_stream_aeb7496d489c37d4b50c6eeb4c35669f4}
+
+\item 
+Object\+Print\+Mode {\bfseries object\+\_\+print\+\_\+mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_stream_aece59d77d765be9e4a0605769b7003a6}{}\label{classv8_1_1internal_1_1_string_stream_aece59d77d765be9e4a0605769b7003a6}
+
+\item 
+unsigned {\bfseries capacity\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_stream_a46c2d11ab2febf7d2499e1c18aee3649}{}\label{classv8_1_1internal_1_1_string_stream_a46c2d11ab2febf7d2499e1c18aee3649}
+
+\item 
+unsigned {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_stream_aaf890bdbb57d76bc9a7b5417363ab053}{}\label{classv8_1_1internal_1_1_string_stream_aaf890bdbb57d76bc9a7b5417363ab053}
+
+\item 
+char $\ast$ {\bfseries buffer\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_stream_a2a22e1a637138d5d82e390e211539d7c}{}\label{classv8_1_1internal_1_1_string_stream_a2a22e1a637138d5d82e390e211539d7c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/string-\/stream.\+h\item 
+/\+Users/joshgav/node/v8/src/string-\/stream.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classv8_1_1internal_1_1_label}{}\section{v8\+:\+:internal\+:\+:Label Class Reference}
+\label{classv8_1_1internal_1_1_label}\index{v8\+::internal\+::\+Label@{v8\+::internal\+::\+Label}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Distance} \{ \\*
+{\bfseries k\+Near}, 
+\\*
+{\bfseries k\+Far}
+ \}\hypertarget{classv8_1_1internal_1_1_label_aaf4d372e0d5c91bed4a6cfa0dbb10a5e}{}\label{classv8_1_1internal_1_1_label_aaf4d372e0d5c91bed4a6cfa0dbb10a5e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+N\+L\+I\+NE} (\hyperlink{classv8_1_1internal_1_1_label}{Label}())\hypertarget{classv8_1_1internal_1_1_label_a33015de1d114ac99d19cbc5c2eda3313}{}\label{classv8_1_1internal_1_1_label_a33015de1d114ac99d19cbc5c2eda3313}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} ($\sim$\hyperlink{classv8_1_1internal_1_1_label}{Label}())\hypertarget{classv8_1_1internal_1_1_label_a214d226e22719ac6c5bd63a2bdc3c122}{}\label{classv8_1_1internal_1_1_label_a214d226e22719ac6c5bd63a2bdc3c122}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Unuse())\hypertarget{classv8_1_1internal_1_1_label_a1354994651e775080cb3825320e9b1bc}{}\label{classv8_1_1internal_1_1_label_a1354994651e775080cb3825320e9b1bc}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (void Unuse\+Near())\hypertarget{classv8_1_1internal_1_1_label_a9bd8522bc46d5f8a5fa19d0cd7b54246}{}\label{classv8_1_1internal_1_1_label_a9bd8522bc46d5f8a5fa19d0cd7b54246}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool is\+\_\+bound() const)\hypertarget{classv8_1_1internal_1_1_label_a234ba5405a62b005037f8afdefa1760a}{}\label{classv8_1_1internal_1_1_label_a234ba5405a62b005037f8afdefa1760a}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool is\+\_\+unused() const)\hypertarget{classv8_1_1internal_1_1_label_ae7728fc879ecdbe97fcc2626288e4535}{}\label{classv8_1_1internal_1_1_label_ae7728fc879ecdbe97fcc2626288e4535}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool is\+\_\+linked() const)\hypertarget{classv8_1_1internal_1_1_label_ad7a0fc8986fe6b69d9e733ee246f82a7}{}\label{classv8_1_1internal_1_1_label_ad7a0fc8986fe6b69d9e733ee246f82a7}
+
+\item 
+{\bfseries I\+N\+L\+I\+NE} (bool is\+\_\+near\+\_\+linked() const)\hypertarget{classv8_1_1internal_1_1_label_a199c45e7ece12879cf12a2a603ac58a9}{}\label{classv8_1_1internal_1_1_label_a199c45e7ece12879cf12a2a603ac58a9}
+
+\item 
+int {\bfseries pos} () const \hypertarget{classv8_1_1internal_1_1_label_a2d2007a8af2116fc17b8d89c8f8af434}{}\label{classv8_1_1internal_1_1_label_a2d2007a8af2116fc17b8d89c8f8af434}
+
+\item 
+int {\bfseries near\+\_\+link\+\_\+pos} () const \hypertarget{classv8_1_1internal_1_1_label_afb1ade6958a31a04e666124b7e2d4eb1}{}\label{classv8_1_1internal_1_1_label_afb1ade6958a31a04e666124b7e2d4eb1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries bind\+\_\+to} (int pos)\hypertarget{classv8_1_1internal_1_1_label_a86c383a31b669cd3773149d6fd4a2032}{}\label{classv8_1_1internal_1_1_label_a86c383a31b669cd3773149d6fd4a2032}
+
+\item 
+void {\bfseries link\+\_\+to} (int pos, Distance distance=k\+Far)\hypertarget{classv8_1_1internal_1_1_label_a3c5cddca62f146a48341dc7ac32c150f}{}\label{classv8_1_1internal_1_1_label_a3c5cddca62f146a48341dc7ac32c150f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries pos\+\_\+}\hypertarget{classv8_1_1internal_1_1_label_a4f597e255c0a513c5d1ec4906a072a9e}{}\label{classv8_1_1internal_1_1_label_a4f597e255c0a513c5d1ec4906a072a9e}
+
+\item 
+int {\bfseries near\+\_\+link\+\_\+pos\+\_\+}\hypertarget{classv8_1_1internal_1_1_label_a57981c9e5031f35cb32da49ef9f1e421}{}\label{classv8_1_1internal_1_1_label_a57981c9e5031f35cb32da49ef9f1e421}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Assembler}\hypertarget{classv8_1_1internal_1_1_label_a08829e094e460cdd0df495c883c39ce2}{}\label{classv8_1_1internal_1_1_label_a08829e094e460cdd0df495c883c39ce2}
+
+\item 
+class {\bfseries Displacement}\hypertarget{classv8_1_1internal_1_1_label_a14d5cd48e152856eb738eaee8144d357}{}\label{classv8_1_1internal_1_1_label_a14d5cd48e152856eb738eaee8144d357}
+
+\item 
+class {\bfseries Reg\+Exp\+Macro\+Assembler\+Irregexp}\hypertarget{classv8_1_1internal_1_1_label_a759a5177df4b99390b15abe3f6636449}{}\label{classv8_1_1internal_1_1_label_a759a5177df4b99390b15abe3f6636449}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/assembler.\+h\item 
+/\+Users/joshgav/node/v8/src/assembler.\+cc\end{DoxyCompactItemize}

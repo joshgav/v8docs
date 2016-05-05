@@ -1,0 +1,85 @@
+\hypertarget{classv8_1_1internal_1_1_compiler}{}\section{v8\+:\+:internal\+:\+:Compiler Class Reference}
+\label{classv8_1_1internal_1_1_compiler}\index{v8\+::internal\+::\+Compiler@{v8\+::internal\+::\+Compiler}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Compiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_compiler}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Clear\+Exception\+Flag} \{ \\*
+{\bfseries K\+E\+E\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}, 
+\\*
+{\bfseries C\+L\+E\+A\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}
+ \}\hypertarget{classv8_1_1internal_1_1_compiler_ab59ab49f4051abae5d94e22871913b96}{}\label{classv8_1_1internal_1_1_compiler_ab59ab49f4051abae5d94e22871913b96}
+
+\item 
+enum {\bfseries Concurrency\+Mode} \{ \\*
+{\bfseries N\+O\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+NT}, 
+\\*
+{\bfseries C\+O\+N\+C\+U\+R\+R\+E\+NT}
+ \}\hypertarget{classv8_1_1internal_1_1_compiler_a72baa3ba6b839cadb501c8bdf76ad7b8}{}\label{classv8_1_1internal_1_1_compiler_a72baa3ba6b839cadb501c8bdf76ad7b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Compile} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function, Clear\+Exception\+Flag flag)\hypertarget{classv8_1_1internal_1_1_compiler_afbc8e9fe9de9febf48d6c71c79978671}{}\label{classv8_1_1internal_1_1_compiler_afbc8e9fe9de9febf48d6c71c79978671}
+
+\item 
+static bool {\bfseries Compile\+Baseline} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1_compiler_a4d1fa633e8cdfb55a5ffab3439c8acd6}{}\label{classv8_1_1internal_1_1_compiler_a4d1fa633e8cdfb55a5ffab3439c8acd6}
+
+\item 
+static bool {\bfseries Compile\+Optimized} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function, Concurrency\+Mode)\hypertarget{classv8_1_1internal_1_1_compiler_ad629d712fc453a783d180175348eec1e}{}\label{classv8_1_1internal_1_1_compiler_ad629d712fc453a783d180175348eec1e}
+
+\item 
+static bool {\bfseries Compile\+Debug\+Code} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function)\hypertarget{classv8_1_1internal_1_1_compiler_aa49dfc9224726906f329c32274f46741}{}\label{classv8_1_1internal_1_1_compiler_aa49dfc9224726906f329c32274f46741}
+
+\item 
+static bool {\bfseries Compile\+Debug\+Code} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ shared)\hypertarget{classv8_1_1internal_1_1_compiler_a71799a2bafb98d21f59bf8a2119bcb99}{}\label{classv8_1_1internal_1_1_compiler_a71799a2bafb98d21f59bf8a2119bcb99}
+
+\item 
+static bool {\bfseries Compile\+For\+Live\+Edit} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script)\hypertarget{classv8_1_1internal_1_1_compiler_a3aa844a40bf148cf66f7a08159d62818}{}\label{classv8_1_1internal_1_1_compiler_a3aa844a40bf148cf66f7a08159d62818}
+
+\item 
+static void {\bfseries Finalize\+Compilation\+Job} (\hyperlink{classv8_1_1internal_1_1_compilation_job}{Compilation\+Job} $\ast$job)\hypertarget{classv8_1_1internal_1_1_compiler_a49bdcbc0d5dd48c9a727021d4f9c1e81}{}\label{classv8_1_1internal_1_1_compiler_a49bdcbc0d5dd48c9a727021d4f9c1e81}
+
+\item 
+static void {\bfseries Post\+Instantiation} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function, Pretenure\+Flag)\hypertarget{classv8_1_1internal_1_1_compiler_a53477c5a6b447bb8e3b937d948f6d57a}{}\label{classv8_1_1internal_1_1_compiler_a53477c5a6b447bb8e3b937d948f6d57a}
+
+\item 
+static bool {\bfseries Parse\+And\+Analyze} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_compiler_aad79d5633bde4e984dfcd1fe49be584a}{}\label{classv8_1_1internal_1_1_compiler_aad79d5633bde4e984dfcd1fe49be584a}
+
+\item 
+static bool {\bfseries Analyze} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_compiler_aa4d9673db23ade21db25dc512da9f244}{}\label{classv8_1_1internal_1_1_compiler_aa4d9673db23ade21db25dc512da9f244}
+
+\item 
+static bool {\bfseries Ensure\+Deoptimization\+Support} (\hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_compiler_a5e0fe838f0a3e12489d25d25a36ddeb4}{}\label{classv8_1_1internal_1_1_compiler_a5e0fe838f0a3e12489d25d25a36ddeb4}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ {\bfseries Get\+Function\+From\+Eval} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ outer\+\_\+info, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, Language\+Mode language\+\_\+mode, Parse\+Restriction restriction, int eval\+\_\+scope\+\_\+position, int eval\+\_\+position, int line\+\_\+offset=0, int column\+\_\+offset=0, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ script\+\_\+name=\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$(), \hyperlink{classv8_1_1_script_origin_options}{Script\+Origin\+Options} options=\hyperlink{classv8_1_1_script_origin_options}{Script\+Origin\+Options}())\hypertarget{classv8_1_1internal_1_1_compiler_ad1e63084a6e466473b2eb2fcc953aa40}{}\label{classv8_1_1internal_1_1_compiler_ad1e63084a6e466473b2eb2fcc953aa40}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries Get\+Shared\+Function\+Info\+For\+Script} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ script\+\_\+name, int line\+\_\+offset, int column\+\_\+offset, \hyperlink{classv8_1_1_script_origin_options}{Script\+Origin\+Options} resource\+\_\+options, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ source\+\_\+map\+\_\+url, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_context}{Context} $>$ context, \hyperlink{classv8_1_1_extension}{v8\+::\+Extension} $\ast$extension, \hyperlink{classv8_1_1internal_1_1_script_data}{Script\+Data} $\ast$$\ast$cached\+\_\+data, Script\+Compiler\+::\+Compile\+Options compile\+\_\+options, Natives\+Flag is\+\_\+natives\+\_\+code, bool is\+\_\+module)\hypertarget{classv8_1_1internal_1_1_compiler_a25e6b099527639ab8b35a85461e1343f}{}\label{classv8_1_1internal_1_1_compiler_a25e6b099527639ab8b35a85461e1343f}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries Get\+Shared\+Function\+Info\+For\+Streamed\+Script} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script, \hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info, int source\+\_\+length)\hypertarget{classv8_1_1internal_1_1_compiler_a033011b6f9ed6b83223990cc132ec5ba}{}\label{classv8_1_1internal_1_1_compiler_a033011b6f9ed6b83223990cc132ec5ba}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries Get\+Shared\+Function\+Info} (\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$node, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script, \hyperlink{classv8_1_1internal_1_1_compilation_info}{Compilation\+Info} $\ast$outer)\hypertarget{classv8_1_1internal_1_1_compiler_a3de24bea8aade6a4eb6a8b95f97541ca}{}\label{classv8_1_1internal_1_1_compiler_a3de24bea8aade6a4eb6a8b95f97541ca}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $>$ {\bfseries Get\+Shared\+Function\+Info\+For\+Native} (\hyperlink{classv8_1_1_extension}{v8\+::\+Extension} $\ast$extension, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ name)\hypertarget{classv8_1_1internal_1_1_compiler_abe64eb3fc58b3c48f6339d913f501cd0}{}\label{classv8_1_1internal_1_1_compiler_abe64eb3fc58b3c48f6339d913f501cd0}
+
+\item 
+static M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_maybe_handle}{Maybe\+Handle}$<$ \hyperlink{classv8_1_1internal_1_1_code}{Code} $>$ {\bfseries Get\+Optimized\+Code\+For\+O\+SR} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_function}{J\+S\+Function} $>$ function, \hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} osr\+\_\+ast\+\_\+id, \hyperlink{classv8_1_1internal_1_1_java_script_frame}{Java\+Script\+Frame} $\ast$osr\+\_\+frame)\hypertarget{classv8_1_1internal_1_1_compiler_a40cc9951c7ffabe5c5e2bfc740387345}{}\label{classv8_1_1internal_1_1_compiler_a40cc9951c7ffabe5c5e2bfc740387345}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler.\+cc\end{DoxyCompactItemize}

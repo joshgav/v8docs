@@ -1,0 +1,55 @@
+\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache}{}\section{v8\+:\+:internal\+:\+:Inner\+Pointer\+To\+Code\+Cache Class Reference}
+\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache}\index{v8\+::internal\+::\+Inner\+Pointer\+To\+Code\+Cache@{v8\+::internal\+::\+Inner\+Pointer\+To\+Code\+Cache}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_inner_pointer_to_code_cache_1_1_inner_pointer_to_code_cache_entry}{Inner\+Pointer\+To\+Code\+Cache\+Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Inner\+Pointer\+To\+Code\+Cache} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_aa5648205deaf18119d17308276caa507}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_aa5648205deaf18119d17308276caa507}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ {\bfseries Gc\+Safe\+Find\+Code\+For\+Inner\+Pointer} (Address inner\+\_\+pointer)\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a1df5ea3dd9db82fd4e5d59036f745f70}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a1df5ea3dd9db82fd4e5d59036f745f70}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$ {\bfseries Gc\+Safe\+Cast\+To\+Code} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$object, Address inner\+\_\+pointer)\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_ac65fa768c44e87a2ed6073f79903d2e6}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_ac65fa768c44e87a2ed6073f79903d2e6}
+
+\item 
+void {\bfseries Flush} ()\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a9a529de6174a47e94e76191e20e59830}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a9a529de6174a47e94e76191e20e59830}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_inner_pointer_to_code_cache_1_1_inner_pointer_to_code_cache_entry}{Inner\+Pointer\+To\+Code\+Cache\+Entry} $\ast$ {\bfseries Get\+Cache\+Entry} (Address inner\+\_\+pointer)\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a99ae60417d91f2a5504b40bfc55acc57}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a99ae60417d91f2a5504b40bfc55acc57}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1_inner_pointer_to_code_cache_1_1_inner_pointer_to_code_cache_entry}{Inner\+Pointer\+To\+Code\+Cache\+Entry} $\ast$ {\bfseries cache} (int index)\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_abf571a58ecd0f494fa251a2867143d1d}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_abf571a58ecd0f494fa251a2867143d1d}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_inner_pointer_to_code_cache}{Inner\+Pointer\+To\+Code\+Cache})\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_abdee7e5f334076e010ca7ada392e4fc0}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_abdee7e5f334076e010ca7ada392e4fc0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a3b49fbdfbc0937ec8888c9ab703ca70c}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_a3b49fbdfbc0937ec8888c9ab703ca70c}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_inner_pointer_to_code_cache_1_1_inner_pointer_to_code_cache_entry}{Inner\+Pointer\+To\+Code\+Cache\+Entry} {\bfseries cache\+\_\+} \mbox{[}k\+Inner\+Pointer\+To\+Code\+Cache\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_aad9bf910e5055fe770ddce1e6e415abb}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_aad9bf910e5055fe770ddce1e6e415abb}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Inner\+Pointer\+To\+Code\+Cache\+Size} = 1024\hypertarget{classv8_1_1internal_1_1_inner_pointer_to_code_cache_ae7e9b029a1b22b6ac115ce72b5c3afff}{}\label{classv8_1_1internal_1_1_inner_pointer_to_code_cache_ae7e9b029a1b22b6ac115ce72b5c3afff}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/frames.\+h\item 
+/\+Users/joshgav/node/v8/src/frames.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,384 @@
+\hypertarget{classv8_1_1internal_1_1_parser}{}\section{v8\+:\+:internal\+:\+:Parser Class Reference}
+\label{classv8_1_1internal_1_1_parser}\index{v8\+::internal\+::\+Parser@{v8\+::internal\+::\+Parser}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_parser}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_parser_1_1_declaration_descriptor}{Declaration\+Descriptor}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_parser_1_1_declaration_parsing_result}{Declaration\+Parsing\+Result}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_parser_1_1_pattern_rewriter}{Pattern\+Rewriter}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Parser} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a381ef18980cfd4edc5a94320f3ffdb56}{}\label{classv8_1_1internal_1_1_parser_a381ef18980cfd4edc5a94320f3ffdb56}
+
+\item 
+bool {\bfseries Parse} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a2dd2481b8a269cee072676c07940d98c}{}\label{classv8_1_1internal_1_1_parser_a2dd2481b8a269cee072676c07940d98c}
+
+\item 
+void {\bfseries Parse\+On\+Background} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a52beadf837b1240bdfd58b814082b96d}{}\label{classv8_1_1internal_1_1_parser_a52beadf837b1240bdfd58b814082b96d}
+
+\item 
+void {\bfseries Internalize} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script, bool error)\hypertarget{classv8_1_1internal_1_1_parser_a9ec9934e8b9b113c49b4fa00ef0654f6}{}\label{classv8_1_1internal_1_1_parser_a9ec9934e8b9b113c49b4fa00ef0654f6}
+
+\item 
+void {\bfseries Handle\+Source\+U\+R\+L\+Comments} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script)\hypertarget{classv8_1_1internal_1_1_parser_ae26011456d1b1a5cc4e2f70f1d5396b6}{}\label{classv8_1_1internal_1_1_parser_ae26011456d1b1a5cc4e2f70f1d5396b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Parse\+Static} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a63318823bbc13c29f621e3d1d9d6a416}{}\label{classv8_1_1internal_1_1_parser_a63318823bbc13c29f621e3d1d9d6a416}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Completion\+Kind} \{ \\*
+{\bfseries k\+Normal\+Completion}, 
+\\*
+{\bfseries k\+Throw\+Completion}, 
+\\*
+{\bfseries k\+Abrupt\+Completion}
+ \}\hypertarget{classv8_1_1internal_1_1_parser_a76ecb9426310961310524f13f00ebb84}{}\label{classv8_1_1internal_1_1_parser_a76ecb9426310961310524f13f00ebb84}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Parse\+Program} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a231600d542f2e2ef699f02c5dd57e71e}{}\label{classv8_1_1internal_1_1_parser_a231600d542f2e2ef699f02c5dd57e71e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Parse\+Lazy} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_ad982f2bb5b593772010e47abb1793b50}{}\label{classv8_1_1internal_1_1_parser_ad982f2bb5b593772010e47abb1793b50}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Parse\+Lazy} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info, \hyperlink{classv8_1_1internal_1_1_utf16_character_stream}{Utf16\+Character\+Stream} $\ast$source)\hypertarget{classv8_1_1internal_1_1_parser_a68771e263cdfc8ae9ab7ae9eabe56a80}{}\label{classv8_1_1internal_1_1_parser_a68771e263cdfc8ae9ab7ae9eabe56a80}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Do\+Parse\+Program} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_a7d601d7ed47716a9805bf7baa1db409c}{}\label{classv8_1_1internal_1_1_parser_a7d601d7ed47716a9805bf7baa1db409c}
+
+\item 
+void {\bfseries Set\+Cached\+Data} (\hyperlink{classv8_1_1internal_1_1_parse_info}{Parse\+Info} $\ast$info)\hypertarget{classv8_1_1internal_1_1_parser_ae3be9f2e88c42fbe31a1036592a4c5d8}{}\label{classv8_1_1internal_1_1_parser_ae3be9f2e88c42fbe31a1036592a4c5d8}
+
+\item 
+Script\+Compiler\+::\+Compile\+Options {\bfseries compile\+\_\+options} () const \hypertarget{classv8_1_1internal_1_1_parser_a6d4d9c82afd89ec7623aacb98f52f30e}{}\label{classv8_1_1internal_1_1_parser_a6d4d9c82afd89ec7623aacb98f52f30e}
+
+\item 
+bool {\bfseries consume\+\_\+cached\+\_\+parse\+\_\+data} () const \hypertarget{classv8_1_1internal_1_1_parser_ae4c82eaa4e19ffb0eb9757b6a0b83b5c}{}\label{classv8_1_1internal_1_1_parser_ae4c82eaa4e19ffb0eb9757b6a0b83b5c}
+
+\item 
+bool {\bfseries produce\+\_\+cached\+\_\+parse\+\_\+data} () const \hypertarget{classv8_1_1internal_1_1_parser_ab93140300206657b2b09549446fc0083}{}\label{classv8_1_1internal_1_1_parser_ab93140300206657b2b09549446fc0083}
+
+\item 
+void $\ast$ {\bfseries Parse\+Statement\+List} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$body, int end\+\_\+token, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a8fa3d6c86dfb636ecb4e5171b9b9d71d}{}\label{classv8_1_1internal_1_1_parser_a8fa3d6c86dfb636ecb4e5171b9b9d71d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Statement\+List\+Item} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ac09b0ed3c8eeb3d2faaa5cda3abca119}{}\label{classv8_1_1internal_1_1_parser_ac09b0ed3c8eeb3d2faaa5cda3abca119}
+
+\item 
+void $\ast$ {\bfseries Parse\+Module\+Item\+List} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$body, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_af09dbac230e94722bea2ce23b167ea2e}{}\label{classv8_1_1internal_1_1_parser_af09dbac230e94722bea2ce23b167ea2e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Module\+Item} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ae6767361c7f84c9c029f37594a21cc6d}{}\label{classv8_1_1internal_1_1_parser_ae6767361c7f84c9c029f37594a21cc6d}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ {\bfseries Parse\+Module\+Specifier} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a8400c1bc16f3940838d23d5fab2c4512}{}\label{classv8_1_1internal_1_1_parser_a8400c1bc16f3940838d23d5fab2c4512}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Import\+Declaration} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_aa4e69f3389129cdabec2a4e0ed0573c6}{}\label{classv8_1_1internal_1_1_parser_aa4e69f3389129cdabec2a4e0ed0573c6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Export\+Declaration} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a464f3351da588ae82b4ca9bca77062d6}{}\label{classv8_1_1internal_1_1_parser_a464f3351da588ae82b4ca9bca77062d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Export\+Default} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_adade831ea22121ddc80674fa8726e837}{}\label{classv8_1_1internal_1_1_parser_adade831ea22121ddc80674fa8726e837}
+
+\item 
+void $\ast$ {\bfseries Parse\+Export\+Clause} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$export\+\_\+names, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} $>$ $\ast$export\+\_\+locations, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$local\+\_\+names, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} $\ast$reserved\+\_\+loc, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a3cb8105fd10abc1f21f0a511c082acd6}{}\label{classv8_1_1internal_1_1_parser_a3cb8105fd10abc1f21f0a511c082acd6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_import_declaration}{Import\+Declaration} $\ast$ $>$ $\ast$ {\bfseries Parse\+Named\+Imports} (int pos, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a057b5b47ecfe47d70adca0f04b696d0e}{}\label{classv8_1_1internal_1_1_parser_a057b5b47ecfe47d70adca0f04b696d0e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, Allow\+Labelled\+Function\+Statement allow\+\_\+function, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a19c25c492842a4febd0769160a1caa3f}{}\label{classv8_1_1internal_1_1_parser_a19c25c492842a4febd0769160a1caa3f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Sub\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, Allow\+Labelled\+Function\+Statement allow\+\_\+function, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a36e2c94948e6941c34b80bb3ea7dd3d6}{}\label{classv8_1_1internal_1_1_parser_a36e2c94948e6941c34b80bb3ea7dd3d6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Statement\+As\+Unlabelled} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a289691217c90a99f35d4da9dfcacf346}{}\label{classv8_1_1internal_1_1_parser_a289691217c90a99f35d4da9dfcacf346}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Function\+Declaration} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_aac109898604cb6f1ed9a2ccb6fad38aa}{}\label{classv8_1_1internal_1_1_parser_aac109898604cb6f1ed9a2ccb6fad38aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Hoistable\+Declaration} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_adbb37a790c821610a876029422e92e80}{}\label{classv8_1_1internal_1_1_parser_adbb37a790c821610a876029422e92e80}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Hoistable\+Declaration} (int pos, bool is\+\_\+generator, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_af6cb8193be1b869f48e2389e5be74ca5}{}\label{classv8_1_1internal_1_1_parser_af6cb8193be1b869f48e2389e5be74ca5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Class\+Declaration} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a9feb2cbce1a8e74cda4f6b69728ce7df}{}\label{classv8_1_1internal_1_1_parser_a9feb2cbce1a8e74cda4f6b69728ce7df}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Native\+Declaration} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a3f27deb18e2f2de9e3cb81f94750d352}{}\label{classv8_1_1internal_1_1_parser_a3f27deb18e2f2de9e3cb81f94750d352}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$ {\bfseries Parse\+Block} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a09b173ca0edd1d116851c364d78efe53}{}\label{classv8_1_1internal_1_1_parser_a09b173ca0edd1d116851c364d78efe53}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$ {\bfseries Parse\+Block} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool finalize\+\_\+block\+\_\+scope, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a86a795bf5d36ece4d2ed001678b054f3}{}\label{classv8_1_1internal_1_1_parser_a86a795bf5d36ece4d2ed001678b054f3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$ {\bfseries Parse\+Variable\+Statement} (Variable\+Declaration\+Context var\+\_\+context, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a5bbc885d38f3d7ddc4788f2130ebf5bb}{}\label{classv8_1_1internal_1_1_parser_a5bbc885d38f3d7ddc4788f2130ebf5bb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_do_expression}{Do\+Expression} $\ast$ {\bfseries Parse\+Do\+Expression} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a7dfa65f4513249d707b61853d9ab62b1}{}\label{classv8_1_1internal_1_1_parser_a7dfa65f4513249d707b61853d9ab62b1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Parse\+Yield\+Star\+Expression} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ae13fb4f01a5fcc03e8a8d0e72500ed22}{}\label{classv8_1_1internal_1_1_parser_ae13fb4f01a5fcc03e8a8d0e72500ed22}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$ {\bfseries Parse\+Variable\+Declarations} (Variable\+Declaration\+Context var\+\_\+context, \hyperlink{structv8_1_1internal_1_1_parser_1_1_declaration_parsing_result}{Declaration\+Parsing\+Result} $\ast$parsing\+\_\+result, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a778325b8295b1e84a33687d838e5cced}{}\label{classv8_1_1internal_1_1_parser_a778325b8295b1e84a33687d838e5cced}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Expression\+Or\+Labelled\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, Allow\+Labelled\+Function\+Statement allow\+\_\+function, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_aab6f4621675a0fcb9accf415a59625b6}{}\label{classv8_1_1internal_1_1_parser_aab6f4621675a0fcb9accf415a59625b6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_if_statement}{If\+Statement} $\ast$ {\bfseries Parse\+If\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a1f704e693d6f0d790947ba86e45bed24}{}\label{classv8_1_1internal_1_1_parser_a1f704e693d6f0d790947ba86e45bed24}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Continue\+Statement} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a27f0ae1e70b83eaa9409654d9667e5c3}{}\label{classv8_1_1internal_1_1_parser_a27f0ae1e70b83eaa9409654d9667e5c3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Break\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_add0ab8300d8164db1dc875013e36cf21}{}\label{classv8_1_1internal_1_1_parser_add0ab8300d8164db1dc875013e36cf21}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Return\+Statement} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a0870941d68226703ab1a9576ba169781}{}\label{classv8_1_1internal_1_1_parser_a0870941d68226703ab1a9576ba169781}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+With\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_abbc54651c55e786bd63ff18cc39cb099}{}\label{classv8_1_1internal_1_1_parser_abbc54651c55e786bd63ff18cc39cb099}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_case_clause}{Case\+Clause} $\ast$ {\bfseries Parse\+Case\+Clause} (bool $\ast$default\+\_\+seen\+\_\+ptr, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a83bc0b81aa82d64e8c029b7d11576760}{}\label{classv8_1_1internal_1_1_parser_a83bc0b81aa82d64e8c029b7d11576760}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Switch\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_af4bc8a1e867db17fd719a70a68735ad0}{}\label{classv8_1_1internal_1_1_parser_af4bc8a1e867db17fd719a70a68735ad0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_do_while_statement}{Do\+While\+Statement} $\ast$ {\bfseries Parse\+Do\+While\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_adda752fb22fc60075ecad13df11ebe38}{}\label{classv8_1_1internal_1_1_parser_adda752fb22fc60075ecad13df11ebe38}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_while_statement}{While\+Statement} $\ast$ {\bfseries Parse\+While\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a4b28959c61cfa612d58322bc77cda1b0}{}\label{classv8_1_1internal_1_1_parser_a4b28959c61cfa612d58322bc77cda1b0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+For\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a984315c07481790a7187dc8eb215338a}{}\label{classv8_1_1internal_1_1_parser_a984315c07481790a7187dc8eb215338a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Throw\+Statement} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_af042949530acf4f0f1e271abb1c298c9}{}\label{classv8_1_1internal_1_1_parser_af042949530acf4f0f1e271abb1c298c9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Make\+Catch\+Context} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ id, \hyperlink{classv8_1_1internal_1_1_variable_proxy}{Variable\+Proxy} $\ast$value)\hypertarget{classv8_1_1internal_1_1_parser_abda7392f0678d1a67540da2f5b2a5913}{}\label{classv8_1_1internal_1_1_parser_abda7392f0678d1a67540da2f5b2a5913}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_try_statement}{Try\+Statement} $\ast$ {\bfseries Parse\+Try\+Statement} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_af61258ccfc1f0ebdc9baea3230cdc54f}{}\label{classv8_1_1internal_1_1_parser_af61258ccfc1f0ebdc9baea3230cdc54f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_debugger_statement}{Debugger\+Statement} $\ast$ {\bfseries Parse\+Debugger\+Statement} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ad9d8623ed77f9a8dceb0f0b2b85c231b}{}\label{classv8_1_1internal_1_1_parser_ad9d8623ed77f9a8dceb0f0b2b85c231b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Parse\+Scoped\+Statement} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$labels, bool legacy, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a53da28fcd75c97b2e8ef4c085af27d4e}{}\label{classv8_1_1internal_1_1_parser_a53da28fcd75c97b2e8ef4c085af27d4e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Build\+Iterator\+Next\+Result} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$iterator, \hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$result, int pos)\hypertarget{classv8_1_1internal_1_1_parser_acd439190ba967cc8ed5e0607d5936330}{}\label{classv8_1_1internal_1_1_parser_acd439190ba967cc8ed5e0607d5936330}
+
+\item 
+void {\bfseries Initialize\+For\+Each\+Statement} (\hyperlink{classv8_1_1internal_1_1_for_each_statement}{For\+Each\+Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$each, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$subject, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$body, int each\+\_\+keyword\+\_\+pos)\hypertarget{classv8_1_1internal_1_1_parser_a1c3b1e1fb11c8d10f283b19ca63bd2a7}{}\label{classv8_1_1internal_1_1_parser_a1c3b1e1fb11c8d10f283b19ca63bd2a7}
+
+\item 
+void {\bfseries Initialize\+For\+Of\+Statement} (\hyperlink{classv8_1_1internal_1_1_for_of_statement}{For\+Of\+Statement} $\ast$stmt, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$each, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$iterable, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$body, int next\+\_\+result\+\_\+pos=Reloc\+Info\+::k\+No\+Position)\hypertarget{classv8_1_1internal_1_1_parser_a2e4cd1491fda2f94be4a24ec0a1157a2}{}\label{classv8_1_1internal_1_1_parser_a2e4cd1491fda2f94be4a24ec0a1157a2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Desugar\+Lexical\+Bindings\+In\+For\+Statement} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$inner\+\_\+scope, Variable\+Mode mode, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$ $>$ $\ast$names, \hyperlink{classv8_1_1internal_1_1_for_statement}{For\+Statement} $\ast$loop, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$init, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$cond, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$next, \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$body, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a4984daef70cb3302fede4fa59c2114b8}{}\label{classv8_1_1internal_1_1_parser_a4984daef70cb3302fede4fa59c2114b8}
+
+\item 
+void {\bfseries Rewrite\+Do\+Expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ab077c165db05311290c254da1805d724}{}\label{classv8_1_1internal_1_1_parser_ab077c165db05311290c254da1805d724}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Parse\+Function\+Literal} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} function\+\_\+name\+\_\+location, Function\+Name\+Validity function\+\_\+name\+\_\+validity, Function\+Kind kind, int function\+\_\+token\+\_\+position, Function\+Literal\+::\+Function\+Type type, Language\+Mode language\+\_\+mode, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a4ffdf28d47aa0372be974f21f99afee7}{}\label{classv8_1_1internal_1_1_parser_a4ffdf28d47aa0372be974f21f99afee7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_class_literal}{Class\+Literal} $\ast$ {\bfseries Parse\+Class\+Literal} (\hyperlink{classv8_1_1internal_1_1_expression_classifier}{Expression\+Classifier} $\ast$classifier, const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, \hyperlink{structv8_1_1internal_1_1_scanner_1_1_location}{Scanner\+::\+Location} class\+\_\+name\+\_\+location, bool name\+\_\+is\+\_\+strict\+\_\+reserved, int pos, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a70d9f164641356db699b75ed360d12d8}{}\label{classv8_1_1internal_1_1_parser_a70d9f164641356db699b75ed360d12d8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Parse\+V8\+Intrinsic} (bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a38697354b586c935929bc4a6ddbe919e}{}\label{classv8_1_1internal_1_1_parser_a38697354b586c935929bc4a6ddbe919e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_literal}{Literal} $\ast$ {\bfseries Get\+Literal\+Undefined} (int position)\hypertarget{classv8_1_1internal_1_1_parser_a7cd94931127111c17fc2ead92804399d}{}\label{classv8_1_1internal_1_1_parser_a7cd94931127111c17fc2ead92804399d}
+
+\item 
+void {\bfseries Check\+Conflicting\+Var\+Declarations} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a2fe5981796aebb1eb2bba52188c5c06d}{}\label{classv8_1_1internal_1_1_parser_a2fe5981796aebb1eb2bba52188c5c06d}
+
+\item 
+void {\bfseries Insert\+Shadowing\+Var\+Binding\+Initializers} (\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_parser_a55aec54903a1d92ce2e578c21fb88fe6}{}\label{classv8_1_1internal_1_1_parser_a55aec54903a1d92ce2e578c21fb88fe6}
+
+\item 
+void {\bfseries Insert\+Sloppy\+Block\+Function\+Var\+Bindings} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a1e4d5e4b4f8c89f9ac03f0d60fc85b29}{}\label{classv8_1_1internal_1_1_parser_a1e4d5e4b4f8c89f9ac03f0d60fc85b29}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_variable_proxy}{Variable\+Proxy} $\ast$ {\bfseries New\+Unresolved} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, Variable\+Mode mode)\hypertarget{classv8_1_1internal_1_1_parser_a0eb9fec80739a999e0b0f6e60975c2a3}{}\label{classv8_1_1internal_1_1_parser_a0eb9fec80739a999e0b0f6e60975c2a3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$ {\bfseries Declare} (\hyperlink{classv8_1_1internal_1_1_declaration}{Declaration} $\ast$declaration, Declaration\+Descriptor\+::\+Kind declaration\+\_\+kind, bool resolve, bool $\ast$ok, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$declaration\+\_\+scope=nullptr)\hypertarget{classv8_1_1internal_1_1_parser_a766bcef294975a79177c2d49b7256a1b}{}\label{classv8_1_1internal_1_1_parser_a766bcef294975a79177c2d49b7256a1b}
+
+\item 
+bool {\bfseries Target\+Stack\+Contains\+Label} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$label)\hypertarget{classv8_1_1internal_1_1_parser_a1c6cc59aca8b9458772347ee83e924e3}{}\label{classv8_1_1internal_1_1_parser_a1c6cc59aca8b9458772347ee83e924e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_breakable_statement}{Breakable\+Statement} $\ast$ {\bfseries Lookup\+Break\+Target} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$label, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a5d8f68d8f8909a243b471924569cd96f}{}\label{classv8_1_1internal_1_1_parser_a5d8f68d8f8909a243b471924569cd96f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_iteration_statement}{Iteration\+Statement} $\ast$ {\bfseries Lookup\+Continue\+Target} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$label, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a04dd3052035b8dd53c75d5071a53b076}{}\label{classv8_1_1internal_1_1_parser_a04dd3052035b8dd53c75d5071a53b076}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ {\bfseries Build\+Assert\+Is\+Coercible} (\hyperlink{classv8_1_1internal_1_1_variable}{Variable} $\ast$var)\hypertarget{classv8_1_1internal_1_1_parser_a0069b9bbf152047ae57f6d2cfc33714a}{}\label{classv8_1_1internal_1_1_parser_a0069b9bbf152047ae57f6d2cfc33714a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_function_literal}{Function\+Literal} $\ast$ {\bfseries Default\+Constructor} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$name, bool call\+\_\+super, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, int pos, int end\+\_\+pos, Language\+Mode language\+\_\+mode)\hypertarget{classv8_1_1internal_1_1_parser_adf3f42e2aed70ac830eb5764be0be111}{}\label{classv8_1_1internal_1_1_parser_adf3f42e2aed70ac830eb5764be0be111}
+
+\item 
+void {\bfseries Skip\+Lazy\+Function\+Body} (int $\ast$materialized\+\_\+literal\+\_\+count, int $\ast$expected\+\_\+property\+\_\+count, bool $\ast$ok, \hyperlink{classv8_1_1internal_1_1_scanner_1_1_bookmark_scope}{Scanner\+::\+Bookmark\+Scope} $\ast$bookmark=nullptr)\hypertarget{classv8_1_1internal_1_1_parser_a10c218d0c27102b1930d667effcdca6a}{}\label{classv8_1_1internal_1_1_parser_a10c218d0c27102b1930d667effcdca6a}
+
+\item 
+Pre\+Parser\+::\+Pre\+Parse\+Result {\bfseries Parse\+Lazy\+Function\+Body\+With\+Pre\+Parser} (\hyperlink{classv8_1_1internal_1_1_singleton_logger}{Singleton\+Logger} $\ast$logger, \hyperlink{classv8_1_1internal_1_1_scanner_1_1_bookmark_scope}{Scanner\+::\+Bookmark\+Scope} $\ast$bookmark=nullptr)\hypertarget{classv8_1_1internal_1_1_parser_a4d0c03eb89e97731b59389a1b7aa3ef8}{}\label{classv8_1_1internal_1_1_parser_a4d0c03eb89e97731b59389a1b7aa3ef8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_block}{Block} $\ast$ {\bfseries Build\+Parameter\+Initialization\+Block} (const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} \&parameters, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_ab28543223006dc3c2ec209da571e78e7}{}\label{classv8_1_1internal_1_1_parser_ab28543223006dc3c2ec209da571e78e7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_statement}{Statement} $\ast$ $>$ $\ast$ {\bfseries Parse\+Eager\+Function\+Body} (const \hyperlink{classv8_1_1internal_1_1_ast_raw_string}{Ast\+Raw\+String} $\ast$function\+\_\+name, int pos, const \hyperlink{structv8_1_1internal_1_1_parser_formal_parameters}{Parser\+Formal\+Parameters} \&parameters, Function\+Kind kind, Function\+Literal\+::\+Function\+Type function\+\_\+type, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_a908d9a49be35d1d14a2022810aa46519}{}\label{classv8_1_1internal_1_1_parser_a908d9a49be35d1d14a2022810aa46519}
+
+\item 
+void {\bfseries Throw\+Pending\+Error} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_script}{Script} $>$ script)\hypertarget{classv8_1_1internal_1_1_parser_a8e95104399faf6e2cf520ae97743897c}{}\label{classv8_1_1internal_1_1_parser_a8e95104399faf6e2cf520ae97743897c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} {\bfseries Open\+Template\+Literal} (int pos)\hypertarget{classv8_1_1internal_1_1_parser_a041c84a4cb63262101b492fed4c76f9e}{}\label{classv8_1_1internal_1_1_parser_a041c84a4cb63262101b492fed4c76f9e}
+
+\item 
+void {\bfseries Add\+Template\+Span} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, bool tail)\hypertarget{classv8_1_1internal_1_1_parser_afe5304f7ed5ccf3721663abbc671f821}{}\label{classv8_1_1internal_1_1_parser_afe5304f7ed5ccf3721663abbc671f821}
+
+\item 
+void {\bfseries Add\+Template\+Expression} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression)\hypertarget{classv8_1_1internal_1_1_parser_adaca3a9c900f18e158a879df5149af5e}{}\label{classv8_1_1internal_1_1_parser_adaca3a9c900f18e158a879df5149af5e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Close\+Template\+Literal} (\hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal\+State} $\ast$state, int start, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$tag)\hypertarget{classv8_1_1internal_1_1_parser_a73a6c2915bff5f2a4b5c5d24ad83e2a6}{}\label{classv8_1_1internal_1_1_parser_a73a6c2915bff5f2a4b5c5d24ad83e2a6}
+
+\item 
+uint32\+\_\+t {\bfseries Compute\+Template\+Literal\+Hash} (const \hyperlink{classv8_1_1internal_1_1_parser_traits_1_1_template_literal}{Template\+Literal} $\ast$lit)\hypertarget{classv8_1_1internal_1_1_parser_aebf93b6817e1993b24be35c04a3313c3}{}\label{classv8_1_1internal_1_1_parser_aebf93b6817e1993b24be35c04a3313c3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$ {\bfseries Prepare\+Spread\+Arguments} (\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$list)\hypertarget{classv8_1_1internal_1_1_parser_a7f6e26f89e8d15c6fc8e87f91deb7936}{}\label{classv8_1_1internal_1_1_parser_a7f6e26f89e8d15c6fc8e87f91deb7936}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Spread\+Call} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$function, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$args, int pos)\hypertarget{classv8_1_1internal_1_1_parser_a0465b537546bce87db829b39a5fadadd}{}\label{classv8_1_1internal_1_1_parser_a0465b537546bce87db829b39a5fadadd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Spread\+Call\+New} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$function, \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_expression}{v8\+::internal\+::\+Expression} $\ast$ $>$ $\ast$args, int pos)\hypertarget{classv8_1_1internal_1_1_parser_acf92ee8032f5a18166beb1afc9d67d0f}{}\label{classv8_1_1internal_1_1_parser_acf92ee8032f5a18166beb1afc9d67d0f}
+
+\item 
+void {\bfseries Set\+Language\+Mode} (\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope, Language\+Mode mode)\hypertarget{classv8_1_1internal_1_1_parser_a010d6e546a1eb866a25ef48eaf59da0a}{}\label{classv8_1_1internal_1_1_parser_a010d6e546a1eb866a25ef48eaf59da0a}
+
+\item 
+void {\bfseries Raise\+Language\+Mode} (Language\+Mode mode)\hypertarget{classv8_1_1internal_1_1_parser_a345a177d015e420423df6c845032fb66}{}\label{classv8_1_1internal_1_1_parser_a345a177d015e420423df6c845032fb66}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Mark\+Collected\+Tail\+Call\+Expressions} ()\hypertarget{classv8_1_1internal_1_1_parser_a2e081fe80141edf3cf947f0b9a3173ff}{}\label{classv8_1_1internal_1_1_parser_a2e081fe80141edf3cf947f0b9a3173ff}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Rewrite\+Destructuring\+Assignments} ()\hypertarget{classv8_1_1internal_1_1_parser_a25f53e7d873a611ff526ed0c1f749a1c}{}\label{classv8_1_1internal_1_1_parser_a25f53e7d873a611ff526ed0c1f749a1c}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Exponentiation} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$left, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$right, int pos)\hypertarget{classv8_1_1internal_1_1_parser_abaf547f75d2e8a733524fc97b612c1b4}{}\label{classv8_1_1internal_1_1_parser_abaf547f75d2e8a733524fc97b612c1b4}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Assign\+Exponentiation} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$left, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$right, int pos)\hypertarget{classv8_1_1internal_1_1_parser_adf84be0d56a24b1e423634124e27950b}{}\label{classv8_1_1internal_1_1_parser_adf84be0d56a24b1e423634124e27950b}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries Rewrite\+Spreads} (\hyperlink{classv8_1_1internal_1_1_array_literal}{Array\+Literal} $\ast$lit)\hypertarget{classv8_1_1internal_1_1_parser_a0918a3f3bb1f224bc70c06878e88f7fe}{}\label{classv8_1_1internal_1_1_parser_a0918a3f3bb1f224bc70c06878e88f7fe}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Rewrite\+Non\+Pattern} (\hyperlink{classv8_1_1internal_1_1_expression_classifier}{Expression\+Classifier} $\ast$classifier, bool $\ast$ok)\hypertarget{classv8_1_1internal_1_1_parser_aa21fa81cea994bf1abeab42b98628a12}{}\label{classv8_1_1internal_1_1_parser_aa21fa81cea994bf1abeab42b98628a12}
+
+\item 
+void {\bfseries Rewrite\+Parameter\+Initializer} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expr, \hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$scope)\hypertarget{classv8_1_1internal_1_1_parser_a7e1cf1632d3b63d659cd9843a638dae9}{}\label{classv8_1_1internal_1_1_parser_a7e1cf1632d3b63d659cd9843a638dae9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_scanner}{Scanner} {\bfseries scanner\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_ad2927729ab00c8b294cba49319615ac8}{}\label{classv8_1_1internal_1_1_parser_ad2927729ab00c8b294cba49319615ac8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_pre_parser}{Pre\+Parser} $\ast$ {\bfseries reusable\+\_\+preparser\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_af9329ddefe7c1d3bc5e04f11b6f087d0}{}\label{classv8_1_1internal_1_1_parser_af9329ddefe7c1d3bc5e04f11b6f087d0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_scope}{Scope} $\ast$ {\bfseries original\+\_\+scope\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_ad2df855bfe5c091e657632843126b0e9}{}\label{classv8_1_1internal_1_1_parser_ad2df855bfe5c091e657632843126b0e9}
+
+\item 
+Target $\ast$ {\bfseries target\+\_\+stack\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_a65844500a32ca2fe17918747c80cd8dd}{}\label{classv8_1_1internal_1_1_parser_a65844500a32ca2fe17918747c80cd8dd}
+
+\item 
+Script\+Compiler\+::\+Compile\+Options {\bfseries compile\+\_\+options\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_a6b7dea6afee5825560ba0d528aa0c4ab}{}\label{classv8_1_1internal_1_1_parser_a6b7dea6afee5825560ba0d528aa0c4ab}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_parse_data}{Parse\+Data} $\ast$ {\bfseries cached\+\_\+parse\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_abe39e460f7d9b0cc88ac6ee054be50cc}{}\label{classv8_1_1internal_1_1_parser_abe39e460f7d9b0cc88ac6ee054be50cc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_pending_compilation_error_handler}{Pending\+Compilation\+Error\+Handler} {\bfseries pending\+\_\+error\+\_\+handler\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_a9e25b7f6067e8f131aa7f0b62d690957}{}\label{classv8_1_1internal_1_1_parser_a9e25b7f6067e8f131aa7f0b62d690957}
+
+\item 
+int {\bfseries use\+\_\+counts\+\_\+} \mbox{[}v8\+::\+Isolate\+::k\+Use\+Counter\+Feature\+Count\mbox{]}\hypertarget{classv8_1_1internal_1_1_parser_a1c96c5d51e8f5e5a68cff2711845174d}{}\label{classv8_1_1internal_1_1_parser_a1c96c5d51e8f5e5a68cff2711845174d}
+
+\item 
+int {\bfseries total\+\_\+preparse\+\_\+skipped\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_aef9572a33956fea2a83b5cd17e973a65}{}\label{classv8_1_1internal_1_1_parser_aef9572a33956fea2a83b5cd17e973a65}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_histogram_timer}{Histogram\+Timer} $\ast$ {\bfseries pre\+\_\+parse\+\_\+timer\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_ac5d0c46e3e25903f105fad1849c1340d}{}\label{classv8_1_1internal_1_1_parser_ac5d0c46e3e25903f105fad1849c1340d}
+
+\item 
+bool {\bfseries parsing\+\_\+on\+\_\+main\+\_\+thread\+\_\+}\hypertarget{classv8_1_1internal_1_1_parser_a241c0dcf4ef789e0e0f00a59e1565458}{}\label{classv8_1_1internal_1_1_parser_a241c0dcf4ef789e0e0f00a59e1565458}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Num\+Function\+Locals} = 4194303\hypertarget{classv8_1_1internal_1_1_parser_ae042607fd907096db6bb74ce0ec3302b}{}\label{classv8_1_1internal_1_1_parser_ae042607fd907096db6bb74ce0ec3302b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Parser\+Traits}\hypertarget{classv8_1_1internal_1_1_parser_a5f14c645eff20b2a5bad62347cde341c}{}\label{classv8_1_1internal_1_1_parser_a5f14c645eff20b2a5bad62347cde341c}
+
+\item 
+class {\bfseries Non\+Pattern\+Rewriter}\hypertarget{classv8_1_1internal_1_1_parser_af3cdac3b5f41bcb4f9987424fbb9aceb}{}\label{classv8_1_1internal_1_1_parser_af3cdac3b5f41bcb4f9987424fbb9aceb}
+
+\item 
+class {\bfseries Initializer\+Rewriter}\hypertarget{classv8_1_1internal_1_1_parser_aa0cd6e888d222bf4b9d65b67a8011e59}{}\label{classv8_1_1internal_1_1_parser_aa0cd6e888d222bf4b9d65b67a8011e59}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+h\item 
+/\+Users/joshgav/node/v8/src/parsing/parser.\+cc\end{DoxyCompactItemize}

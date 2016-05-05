@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Node\+Cache$<$ Key, Hash, Pred $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_node_cache}\index{v8\+::internal\+::compiler\+::\+Node\+Cache$<$ Key, Hash, Pred $>$@{v8\+::internal\+::compiler\+::\+Node\+Cache$<$ Key, Hash, Pred $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_node_cache_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Node\+Cache} (unsigned max=256)\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a54b9055ef8f7ab3557bc22bae6afca9e}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a54b9055ef8f7ab3557bc22bae6afca9e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$$\ast$ {\bfseries Find} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Key key)\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a216746465c6fb661212af18943e8c322}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a216746465c6fb661212af18943e8c322}
+
+\item 
+void {\bfseries Get\+Cached\+Nodes} (\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ $\ast$nodes)\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a88c0982654f7bfab0ac18ae287910dd5}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a88c0982654f7bfab0ac18ae287910dd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Resize} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_af6f3f885cee698eb905d23db7364a826}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_af6f3f885cee698eb905d23db7364a826}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node_cache}{Node\+Cache})\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a4e1ea47e4ce854b15d7eb2f29df019b9}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a4e1ea47e4ce854b15d7eb2f29df019b9}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_node_cache_1_1_entry}{Entry} $\ast$ {\bfseries entries\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_aa0e3d4579baac38cb24c19a8068b2f42}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_aa0e3d4579baac38cb24c19a8068b2f42}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a9b21f1690806574d4441f620dc18021c}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a9b21f1690806574d4441f620dc18021c}
+
+\item 
+size\+\_\+t {\bfseries max\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a59de074e07e4c28ce2f71f23747fcd1f}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a59de074e07e4c28ce2f71f23747fcd1f}
+
+\item 
+Hash {\bfseries hash\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a1d2688c43ddc404743e6f0104ff44206}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a1d2688c43ddc404743e6f0104ff44206}
+
+\item 
+Pred {\bfseries pred\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_node_cache_a86b5d881b6b6e270fa8abe4a38070d8d}{}\label{classv8_1_1internal_1_1compiler_1_1_node_cache_a86b5d881b6b6e270fa8abe4a38070d8d}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/node-\/cache.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/node-\/cache.\+cc\end{DoxyCompactItemize}

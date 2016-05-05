@@ -1,0 +1,37 @@
+\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Jump\+Threading\+State Struct Reference}
+\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state}\index{v8\+::internal\+::compiler\+::\+Jump\+Threading\+State@{v8\+::internal\+::compiler\+::\+Jump\+Threading\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Clear} (size\+\_\+t count)\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4b08f4f2e40dd532dd5cdfedcf1dad38}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4b08f4f2e40dd532dd5cdfedcf1dad38}
+
+\item 
+void {\bfseries Push\+If\+Unvisited} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} num)\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4dad8cc6070fcf9c8d1d8f613828ddde}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4dad8cc6070fcf9c8d1d8f613828ddde}
+
+\item 
+void {\bfseries Forward} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} to)\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a46c484de071bc8c3f7a2fa04d74aa306}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a46c484de071bc8c3f7a2fa04d74aa306}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} {\bfseries unvisited} ()\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_ad03caa50cb24e9cfca8ce585acf2d106}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_ad03caa50cb24e9cfca8ce585acf2d106}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} {\bfseries onstack} ()\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a19a1ce3f335e579b677d280be1626957}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a19a1ce3f335e579b677d280be1626957}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries forwarded}\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a108f201670fec902db12a7e8dbf239fe}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a108f201670fec902db12a7e8dbf239fe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} $>$ \& {\bfseries result}\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a3399bfd0509188b586bc6a57ec15d400}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a3399bfd0509188b586bc6a57ec15d400}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_stack}{Zone\+Stack}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_rpo_number}{Rpo\+Number} $>$ \& {\bfseries stack}\hypertarget{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4ff4e8d72a0fc8a0268ad1bf0b02c934}{}\label{structv8_1_1internal_1_1compiler_1_1_jump_threading_state_a4ff4e8d72a0fc8a0268ad1bf0b02c934}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/jump-\/threading.\+cc\end{DoxyCompactItemize}

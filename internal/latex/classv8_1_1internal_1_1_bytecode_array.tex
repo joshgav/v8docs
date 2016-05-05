@@ -1,0 +1,124 @@
+\hypertarget{classv8_1_1internal_1_1_bytecode_array}{}\section{v8\+:\+:internal\+:\+:Bytecode\+Array Class Reference}
+\label{classv8_1_1internal_1_1_bytecode_array}\index{v8\+::internal\+::\+Bytecode\+Array@{v8\+::internal\+::\+Bytecode\+Array}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Bytecode\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1_bytecode_array}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_bytecode_array_1_1_body_descriptor}{Body\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte {\bfseries get} (int index)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a87384adc223d364eb30b477bc6ffcad2}{}\label{classv8_1_1internal_1_1_bytecode_array_a87384adc223d364eb30b477bc6ffcad2}
+
+\item 
+void {\bfseries set} (int index, byte value)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a050bfac7ec5133ffc2648a16baf57207}{}\label{classv8_1_1internal_1_1_bytecode_array_a050bfac7ec5133ffc2648a16baf57207}
+
+\item 
+Address {\bfseries Get\+First\+Bytecode\+Address} ()\hypertarget{classv8_1_1internal_1_1_bytecode_array_a87e82c77346fa5b4697d440818e32257}{}\label{classv8_1_1internal_1_1_bytecode_array_a87e82c77346fa5b4697d440818e32257}
+
+\item 
+int {\bfseries frame\+\_\+size} () const \hypertarget{classv8_1_1internal_1_1_bytecode_array_ac658fa0ea9b69a1f9c17d3eafb8d8f6b}{}\label{classv8_1_1internal_1_1_bytecode_array_ac658fa0ea9b69a1f9c17d3eafb8d8f6b}
+
+\item 
+void {\bfseries set\+\_\+frame\+\_\+size} (int frame\+\_\+size)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a3e42fb5985e884a966420756db4bc961}{}\label{classv8_1_1internal_1_1_bytecode_array_a3e42fb5985e884a966420756db4bc961}
+
+\item 
+int {\bfseries register\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_bytecode_array_a38e917ba0ac9652c2b4d12bd91f5789f}{}\label{classv8_1_1internal_1_1_bytecode_array_a38e917ba0ac9652c2b4d12bd91f5789f}
+
+\item 
+int {\bfseries parameter\+\_\+count} () const \hypertarget{classv8_1_1internal_1_1_bytecode_array_aaa694b50d0f169f428ba8c4778ee7b58}{}\label{classv8_1_1internal_1_1_bytecode_array_aaa694b50d0f169f428ba8c4778ee7b58}
+
+\item 
+void {\bfseries set\+\_\+parameter\+\_\+count} (int number\+\_\+of\+\_\+parameters)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a5e642ff36f731ddbd7516d4761236d5d}{}\label{classv8_1_1internal_1_1_bytecode_array_a5e642ff36f731ddbd7516d4761236d5d}
+
+\item 
+int {\bfseries interrupt\+\_\+budget} () const \hypertarget{classv8_1_1internal_1_1_bytecode_array_af3a6cc5cdac6f963500caa21e76c94db}{}\label{classv8_1_1internal_1_1_bytecode_array_af3a6cc5cdac6f963500caa21e76c94db}
+
+\item 
+void {\bfseries set\+\_\+interrupt\+\_\+budget} (int interrupt\+\_\+budget)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a72a167803c49b95918248f228c95c56a}{}\label{classv8_1_1internal_1_1_bytecode_array_a72a167803c49b95918248f228c95c56a}
+
+\item 
+int {\bfseries Bytecode\+Array\+Size} ()\hypertarget{classv8_1_1internal_1_1_bytecode_array_a7cf600be981c1a210f7cf1985fb0d157}{}\label{classv8_1_1internal_1_1_bytecode_array_a7cf600be981c1a210f7cf1985fb0d157}
+
+\item 
+int {\bfseries instruction\+\_\+size} ()\hypertarget{classv8_1_1internal_1_1_bytecode_array_aaf32c9bd6613e7404c4175281805265c}{}\label{classv8_1_1internal_1_1_bytecode_array_aaf32c9bd6613e7404c4175281805265c}
+
+\item 
+int {\bfseries Source\+Position} (int offset)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a895c353eea90d34b339599271f7f58dc}{}\label{classv8_1_1internal_1_1_bytecode_array_a895c353eea90d34b339599271f7f58dc}
+
+\item 
+int {\bfseries Source\+Statement\+Position} (int offset)\hypertarget{classv8_1_1internal_1_1_bytecode_array_aa23e01cf402a27f6c64175e5e67ea6e7}{}\label{classv8_1_1internal_1_1_bytecode_array_aa23e01cf402a27f6c64175e5e67ea6e7}
+
+\item 
+void {\bfseries Disassemble} (std\+::ostream \&os)\hypertarget{classv8_1_1internal_1_1_bytecode_array_aa697b1df23298f823e8d7665d6e059ec}{}\label{classv8_1_1internal_1_1_bytecode_array_aa697b1df23298f823e8d7665d6e059ec}
+
+\item 
+void {\bfseries Copy\+Bytecodes\+To} (\hyperlink{classv8_1_1internal_1_1_bytecode_array}{Bytecode\+Array} $\ast$to)\hypertarget{classv8_1_1internal_1_1_bytecode_array_a299bb567020f5e2a9bf00f3ac3612aa0}{}\label{classv8_1_1internal_1_1_bytecode_array_a299bb567020f5e2a9bf00f3ac3612aa0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Size\+For} (int length)\hypertarget{classv8_1_1internal_1_1_bytecode_array_ac3a55b15152573add7b487ea3839b277}{}\label{classv8_1_1internal_1_1_bytecode_array_ac3a55b15152573add7b487ea3839b277}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Constant\+Pool\+Offset} = Fixed\+Array\+Base\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_a91781d119e10794cf5c2febf07dc0e32}{}\label{classv8_1_1internal_1_1_bytecode_array_a91781d119e10794cf5c2febf07dc0e32}
+
+\item 
+static const int {\bfseries k\+Handler\+Table\+Offset} = k\+Constant\+Pool\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_a65d78e205ec182b87d43f72f28932e93}{}\label{classv8_1_1internal_1_1_bytecode_array_a65d78e205ec182b87d43f72f28932e93}
+
+\item 
+static const int {\bfseries k\+Source\+Position\+Table\+Offset}
+\item 
+static const int {\bfseries k\+Frame\+Size\+Offset} = k\+Source\+Position\+Table\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_a651eab802bd9c7d10a413ab74ebe3443}{}\label{classv8_1_1internal_1_1_bytecode_array_a651eab802bd9c7d10a413ab74ebe3443}
+
+\item 
+static const int {\bfseries k\+Parameter\+Size\+Offset} = k\+Frame\+Size\+Offset + k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_a44777175c9a74a6c76e2bcbb092e2a64}{}\label{classv8_1_1internal_1_1_bytecode_array_a44777175c9a74a6c76e2bcbb092e2a64}
+
+\item 
+static const int {\bfseries k\+Interrupt\+Budget\+Offset} = k\+Parameter\+Size\+Offset + k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_ad126cb7c85bc3f16eb559576deea21d3}{}\label{classv8_1_1internal_1_1_bytecode_array_ad126cb7c85bc3f16eb559576deea21d3}
+
+\item 
+static const int {\bfseries k\+Header\+Size} = k\+Interrupt\+Budget\+Offset + k\+Int\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_aa3ba48a066f5d70f0bd35f961593eaec}{}\label{classv8_1_1internal_1_1_bytecode_array_aa3ba48a066f5d70f0bd35f961593eaec}
+
+\item 
+static const int {\bfseries k\+Max\+Size} = 512 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_bytecode_array_ad1cc19e0caa3dd920b2dd14468b60a71}{}\label{classv8_1_1internal_1_1_bytecode_array_ad1cc19e0caa3dd920b2dd14468b60a71}
+
+\item 
+static const int {\bfseries k\+Max\+Length} = k\+Max\+Size -\/ k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_bytecode_array_a9b306a4048c3a924e49ff1e4bb02bfe6}{}\label{classv8_1_1internal_1_1_bytecode_array_a9b306a4048c3a924e49ff1e4bb02bfe6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_bytecode_array}{Bytecode\+Array})\hypertarget{classv8_1_1internal_1_1_bytecode_array_a820c12f24e0352a1bb1017c7ae8a419a}{}\label{classv8_1_1internal_1_1_bytecode_array_a820c12f24e0352a1bb1017c7ae8a419a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Bytecode\+Array@{v8\+::internal\+::\+Bytecode\+Array}!k\+Source\+Position\+Table\+Offset@{k\+Source\+Position\+Table\+Offset}}
+\index{k\+Source\+Position\+Table\+Offset@{k\+Source\+Position\+Table\+Offset}!v8\+::internal\+::\+Bytecode\+Array@{v8\+::internal\+::\+Bytecode\+Array}}
+\subsubsection[{\texorpdfstring{k\+Source\+Position\+Table\+Offset}{kSourcePositionTableOffset}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Bytecode\+Array\+::k\+Source\+Position\+Table\+Offset\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_bytecode_array_a7c0c27ce7e062b82866a74e349af3d5e}{}\label{classv8_1_1internal_1_1_bytecode_array_a7c0c27ce7e062b82866a74e349af3d5e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      kHandlerTableOffset + kPointerSize
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

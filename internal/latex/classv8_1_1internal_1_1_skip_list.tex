@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1internal_1_1_skip_list}{}\section{v8\+:\+:internal\+:\+:Skip\+List Class Reference}
+\label{classv8_1_1internal_1_1_skip_list}\index{v8\+::internal\+::\+Skip\+List@{v8\+::internal\+::\+Skip\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Clear} ()\hypertarget{classv8_1_1internal_1_1_skip_list_aa7f250b2de572f5e46c9de704f0bf9e0}{}\label{classv8_1_1internal_1_1_skip_list_aa7f250b2de572f5e46c9de704f0bf9e0}
+
+\item 
+Address {\bfseries Start\+For} (Address addr)\hypertarget{classv8_1_1internal_1_1_skip_list_a0387ed9e1fea8f3c470fca611259dfe5}{}\label{classv8_1_1internal_1_1_skip_list_a0387ed9e1fea8f3c470fca611259dfe5}
+
+\item 
+void {\bfseries Add\+Object} (Address addr, int size)\hypertarget{classv8_1_1internal_1_1_skip_list_a297e1c51c3d473727ae5748cf4b5536a}{}\label{classv8_1_1internal_1_1_skip_list_a297e1c51c3d473727ae5748cf4b5536a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Region\+Number} (Address addr)\hypertarget{classv8_1_1internal_1_1_skip_list_aac6fce51cc7637ea622e4d47bff619fa}{}\label{classv8_1_1internal_1_1_skip_list_aac6fce51cc7637ea622e4d47bff619fa}
+
+\item 
+static void {\bfseries Update} (Address addr, int size)\hypertarget{classv8_1_1internal_1_1_skip_list_a3be6172846582899cd94eb989bbe0d06}{}\label{classv8_1_1internal_1_1_skip_list_a3be6172846582899cd94eb989bbe0d06}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (Page\+::k\+Page\+Size\%k\+Region\+Size==0)\hypertarget{classv8_1_1internal_1_1_skip_list_a2e7ea89f9c7d1644504dc63b9e67ca6a}{}\label{classv8_1_1internal_1_1_skip_list_a2e7ea89f9c7d1644504dc63b9e67ca6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Address {\bfseries starts\+\_\+} \mbox{[}k\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_skip_list_a64d2a59d3fda233e1949d82f522f982c}{}\label{classv8_1_1internal_1_1_skip_list_a64d2a59d3fda233e1949d82f522f982c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Region\+Size\+Log2} = 13\hypertarget{classv8_1_1internal_1_1_skip_list_a06eb4d02e5131b1f3529b63d83956adb}{}\label{classv8_1_1internal_1_1_skip_list_a06eb4d02e5131b1f3529b63d83956adb}
+
+\item 
+static const int {\bfseries k\+Region\+Size} = 1 $<$$<$ k\+Region\+Size\+Log2\hypertarget{classv8_1_1internal_1_1_skip_list_aefb0abfd3e43c941b1d81bb0884635e1}{}\label{classv8_1_1internal_1_1_skip_list_aefb0abfd3e43c941b1d81bb0884635e1}
+
+\item 
+static const int {\bfseries k\+Size} = Page\+::k\+Page\+Size / k\+Region\+Size\hypertarget{classv8_1_1internal_1_1_skip_list_a6ad60631025864cd4c92fcad6bd1a8d3}{}\label{classv8_1_1internal_1_1_skip_list_a6ad60631025864cd4c92fcad6bd1a8d3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\end{DoxyCompactItemize}

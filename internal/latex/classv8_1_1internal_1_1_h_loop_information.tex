@@ -1,0 +1,68 @@
+\hypertarget{classv8_1_1internal_1_1_h_loop_information}{}\section{v8\+:\+:internal\+:\+:H\+Loop\+Information Class Reference}
+\label{classv8_1_1internal_1_1_h_loop_information}\index{v8\+::internal\+::\+H\+Loop\+Information@{v8\+::internal\+::\+H\+Loop\+Information}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Loop\+Information\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_h_loop_information}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Loop\+Information} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$loop\+\_\+header, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_h_loop_information_a34750fb625e1dd41c80787eeccc5825d}{}\label{classv8_1_1internal_1_1_h_loop_information_a34750fb625e1dd41c80787eeccc5825d}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$ {\bfseries back\+\_\+edges} () const \hypertarget{classv8_1_1internal_1_1_h_loop_information_a276d550b19449e26da944164b149575a}{}\label{classv8_1_1internal_1_1_h_loop_information_a276d550b19449e26da944164b149575a}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ $\ast$ {\bfseries blocks} () const \hypertarget{classv8_1_1internal_1_1_h_loop_information_ac0c511f19130d37087bc89c923a65fb5}{}\label{classv8_1_1internal_1_1_h_loop_information_ac0c511f19130d37087bc89c923a65fb5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries loop\+\_\+header} () const \hypertarget{classv8_1_1internal_1_1_h_loop_information_a643b41969913ea8e3d7f5100dd023fb5}{}\label{classv8_1_1internal_1_1_h_loop_information_a643b41969913ea8e3d7f5100dd023fb5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries Get\+Last\+Back\+Edge} () const \hypertarget{classv8_1_1internal_1_1_h_loop_information_ad5cffc90a102cfed4fb67f1824377fd5}{}\label{classv8_1_1internal_1_1_h_loop_information_ad5cffc90a102cfed4fb67f1824377fd5}
+
+\item 
+void {\bfseries Register\+Back\+Edge} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_loop_information_ae108e299b1a4018fc30a695af63ec9f5}{}\label{classv8_1_1internal_1_1_h_loop_information_ae108e299b1a4018fc30a695af63ec9f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_stack_check}{H\+Stack\+Check} $\ast$ {\bfseries stack\+\_\+check} () const \hypertarget{classv8_1_1internal_1_1_h_loop_information_a172dd7808bb5da4f49badf8c978d09ac}{}\label{classv8_1_1internal_1_1_h_loop_information_a172dd7808bb5da4f49badf8c978d09ac}
+
+\item 
+void {\bfseries set\+\_\+stack\+\_\+check} (\hyperlink{classv8_1_1internal_1_1_h_stack_check}{H\+Stack\+Check} $\ast$stack\+\_\+check)\hypertarget{classv8_1_1internal_1_1_h_loop_information_a406485921caafe1cb4d27b4fd7b2bb05}{}\label{classv8_1_1internal_1_1_h_loop_information_a406485921caafe1cb4d27b4fd7b2bb05}
+
+\item 
+bool {\bfseries Is\+Nested\+In\+This\+Loop} (\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$other)\hypertarget{classv8_1_1internal_1_1_h_loop_information_aa8d8b9b7cf329d0e9da65d44dbb9bb3b}{}\label{classv8_1_1internal_1_1_h_loop_information_aa8d8b9b7cf329d0e9da65d44dbb9bb3b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_loop_information}{H\+Loop\+Information} $\ast$ {\bfseries parent\+\_\+loop} ()\hypertarget{classv8_1_1internal_1_1_h_loop_information_a187ceb259e86258277ddd909dab4d907}{}\label{classv8_1_1internal_1_1_h_loop_information_a187ceb259e86258277ddd909dab4d907}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Block} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_loop_information_a70ede660d41a073f50f9531cdd3beeda}{}\label{classv8_1_1internal_1_1_h_loop_information_a70ede660d41a073f50f9531cdd3beeda}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ {\bfseries back\+\_\+edges\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_loop_information_a47f2fd7cf620986b62f30d5a61c1b977}{}\label{classv8_1_1internal_1_1_h_loop_information_a47f2fd7cf620986b62f30d5a61c1b977}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries loop\+\_\+header\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_loop_information_a7123a800c2ecc91386dfe0da715f6c87}{}\label{classv8_1_1internal_1_1_h_loop_information_a7123a800c2ecc91386dfe0da715f6c87}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ $>$ {\bfseries blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_loop_information_a6cc1e92b4a42dca7449531a55e1b8703}{}\label{classv8_1_1internal_1_1_h_loop_information_a6cc1e92b4a42dca7449531a55e1b8703}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_stack_check}{H\+Stack\+Check} $\ast$ {\bfseries stack\+\_\+check\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_loop_information_a7c8c5869046053118a34246f3f6e1c70}{}\label{classv8_1_1internal_1_1_h_loop_information_a7c8c5869046053118a34246f3f6e1c70}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block}{}\section{v8\+:\+:internal\+:\+:Global\+Handles\+:\+:Node\+Block Class Reference}
+\label{classv8_1_1internal_1_1_global_handles_1_1_node_block}\index{v8\+::internal\+::\+Global\+Handles\+::\+Node\+Block@{v8\+::internal\+::\+Global\+Handles\+::\+Node\+Block}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Node\+Block} (\hyperlink{classv8_1_1internal_1_1_global_handles}{Global\+Handles} $\ast$global\+\_\+handles, \hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$next)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_a6f3f4ad3ad8fc3185ef080d710d900c0}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_a6f3f4ad3ad8fc3185ef080d710d900c0}
+
+\item 
+void {\bfseries Put\+Nodes\+On\+Free\+List} (\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$$\ast$first\+\_\+free)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_afa818cdc0b3346f12e42304c4f358ad3}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_afa818cdc0b3346f12e42304c4f358ad3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} $\ast$ {\bfseries node\+\_\+at} (int index)\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ac98e55ac69269c50d8ecc233e670081c}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ac98e55ac69269c50d8ecc233e670081c}
+
+\item 
+void {\bfseries Increase\+Uses} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_aaffc8a8a872d639fcdc3376f4cbaac3f}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_aaffc8a8a872d639fcdc3376f4cbaac3f}
+
+\item 
+void {\bfseries Decrease\+Uses} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab9a674fa6b8d63412c9933d2f7f81d80}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab9a674fa6b8d63412c9933d2f7f81d80}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles}{Global\+Handles} $\ast$ {\bfseries global\+\_\+handles} ()\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_a0e667a118ed6a7f2d62dbc23cbed58a1}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_a0e667a118ed6a7f2d62dbc23cbed58a1}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries next} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ac431f9e791c841f740b3d2841531648d}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ac431f9e791c841f740b3d2841531648d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries next\+\_\+used} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab59e6a8f3be8829108600a58e86e55f5}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab59e6a8f3be8829108600a58e86e55f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries prev\+\_\+used} () const \hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_af721dba7c1a51441d44257897972b996}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_af721dba7c1a51441d44257897972b996}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Size} = 256\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab72b30a48c1f494bf09e1cb707ffda6a}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab72b30a48c1f494bf09e1cb707ffda6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node}{Node} {\bfseries nodes\+\_\+} \mbox{[}k\+Size\mbox{]}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ad0fe2b0ea126c5d6dc7b7420c7be824b}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ad0fe2b0ea126c5d6dc7b7420c7be824b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$const {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_a4ff85c21ce2a2d2fb9a818e8aaf7ba45}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_a4ff85c21ce2a2d2fb9a818e8aaf7ba45}
+
+\item 
+int {\bfseries used\+\_\+nodes\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_a86f99a1acb554dc22412e9ca032bef3e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_a86f99a1acb554dc22412e9ca032bef3e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries next\+\_\+used\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_a89adb16ce85e2aaed30d754af4882c0e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_a89adb16ce85e2aaed30d754af4882c0e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles_1_1_node_block}{Node\+Block} $\ast$ {\bfseries prev\+\_\+used\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab8da7ecf514a59ded10c6a54dc772b4e}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_ab8da7ecf514a59ded10c6a54dc772b4e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_global_handles}{Global\+Handles} $\ast$ {\bfseries global\+\_\+handles\+\_\+}\hypertarget{classv8_1_1internal_1_1_global_handles_1_1_node_block_aec3c0a06de3ccb98b1b456632625fc47}{}\label{classv8_1_1internal_1_1_global_handles_1_1_node_block_aec3c0a06de3ccb98b1b456632625fc47}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/global-\/handles.\+cc\end{DoxyCompactItemize}

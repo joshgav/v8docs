@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Liveness\+Analyzer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer}\index{v8\+::internal\+::compiler\+::\+Liveness\+Analyzer@{v8\+::internal\+::compiler\+::\+Liveness\+Analyzer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Liveness\+Analyzer} (size\+\_\+t local\+\_\+count, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a7ac0ab951ca36055b4921df31563b62a}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a7ac0ab951ca36055b4921df31563b62a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$ {\bfseries New\+Block} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa8594810ca9eb00fdca5f2a399f821fc}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa8594810ca9eb00fdca5f2a399f821fc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$ {\bfseries New\+Block} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$predecessor)\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a385ca2a320ec6e6d14d2da9cfe7eef9f}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a385ca2a320ec6e6d14d2da9cfe7eef9f}
+
+\item 
+void {\bfseries Run} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_non_live_frame_state_slot_replacer}{Non\+Live\+Frame\+State\+Slot\+Replacer} $\ast$relaxer)\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a40b6a56e9d7b2340a03c6e5bb83c258d}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a40b6a56e9d7b2340a03c6e5bb83c258d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a4ec6359818a526ccb702ed4ca1a02f3a}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a4ec6359818a526ccb702ed4ca1a02f3a}
+
+\item 
+void {\bfseries Print} (std\+::ostream \&os)\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa71adfb999417513c29292d88401a1ce}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa71adfb999417513c29292d88401a1ce}
+
+\item 
+size\+\_\+t {\bfseries local\+\_\+count} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a5c5de7186cd908f552141aec69ce7c2d}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a5c5de7186cd908f552141aec69ce7c2d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Queue} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa2f433b337b22c7d264e8c430d91d876}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_aa2f433b337b22c7d264e8c430d91d876}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a3ffa6c48c0c1b6ca568d4dbcac53d362}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a3ffa6c48c0c1b6ca568d4dbcac53d362}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_deque}{Zone\+Deque}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$ $>$ {\bfseries blocks\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a5d218f4591079591e526f99f30d5ec8d}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a5d218f4591079591e526f99f30d5ec8d}
+
+\item 
+size\+\_\+t {\bfseries local\+\_\+count\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a8fbda582fce9fdbc6ec74067843668d2}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a8fbda582fce9fdbc6ec74067843668d2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_queue}{Zone\+Queue}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_block}{Liveness\+Analyzer\+Block} $\ast$ $>$ {\bfseries queue\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a3473e89f2dd19e2e1737d8062f613122}{}\label{classv8_1_1internal_1_1compiler_1_1_liveness_analyzer_a3473e89f2dd19e2e1737d8062f613122}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/liveness-\/analyzer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/liveness-\/analyzer.\+cc\end{DoxyCompactItemize}

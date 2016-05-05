@@ -1,0 +1,105 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+Reducer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer}\index{v8\+::internal\+::compiler\+::\+Graph\+Reducer@{v8\+::internal\+::compiler\+::\+Graph\+Reducer}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+Reducer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1compiler_1_1_graph_reducer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_graph_reducer_1_1_node_state}{Node\+State}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \+: uint8\+\_\+t \{ \\*
+{\bfseries k\+Unvisited}, 
+\\*
+{\bfseries k\+Revisit}, 
+\\*
+{\bfseries k\+On\+Stack}, 
+\\*
+{\bfseries k\+Visited}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a78f7183b04d38293dfde6d60ceaa3d3e}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a78f7183b04d38293dfde6d60ceaa3d3e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Graph\+Reducer} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$dead=nullptr)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a234dce17c72dd0eef3e84754e0c78fbd}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a234dce17c72dd0eef3e84754e0c78fbd}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a4dbbcfada79d1ea7ce08e052703ad024}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a4dbbcfada79d1ea7ce08e052703ad024}
+
+\item 
+void {\bfseries Add\+Reducer} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_reducer}{Reducer} $\ast$reducer)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a329d6fb23dd54f07625fce43008c2241}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a329d6fb23dd54f07625fce43008c2241}
+
+\item 
+void {\bfseries Reduce\+Node} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a29a312f60ff837b899dd53414bd69753}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a29a312f60ff837b899dd53414bd69753}
+
+\item 
+void {\bfseries Reduce\+Graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a5bbd1eaf3d27ed84b49d1b43e3e31958}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a5bbd1eaf3d27ed84b49d1b43e3e31958}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_reduction}{Reduction} {\bfseries Reduce} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a76479ad03d91e0c833344e897bb0ab2a}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a76479ad03d91e0c833344e897bb0ab2a}
+
+\item 
+void {\bfseries Reduce\+Top} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a4a0f9062fa936af64e1ccec21a9039c2}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a4a0f9062fa936af64e1ccec21a9039c2}
+
+\item 
+void {\bfseries Replace} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$replacement) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_aea0987915a8cd9261be11766cef32880}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_aea0987915a8cd9261be11766cef32880}
+
+\item 
+void {\bfseries Replace\+With\+Value} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$value, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$effect, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$control) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a8954ce4fc9f4ef7c3260ec54c71b943f}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a8954ce4fc9f4ef7c3260ec54c71b943f}
+
+\item 
+void {\bfseries Replace} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$replacement, Node\+Id max\+\_\+id)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a65c4f0e927451cd0b53c2285fd91b0c7}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a65c4f0e927451cd0b53c2285fd91b0c7}
+
+\item 
+void {\bfseries Pop} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_aa8486c879b181741e8a05787e6a47da0}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_aa8486c879b181741e8a05787e6a47da0}
+
+\item 
+void {\bfseries Push} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a25a8f2d0a6605a015093476ebce2b3f3}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a25a8f2d0a6605a015093476ebce2b3f3}
+
+\item 
+bool {\bfseries Recurse} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a13ab4e7cab3387f91b55815846e10dfc}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a13ab4e7cab3387f91b55815846e10dfc}
+
+\item 
+void {\bfseries Revisit} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node) final\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a07ed4870a3c19f9694400ae01b472dd7}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a07ed4870a3c19f9694400ae01b472dd7}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph_reducer}{Graph\+Reducer})\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a685b642f5e46ff964e339e371e4e079d}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a685b642f5e46ff964e339e371e4e079d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$const {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_ac9ecede3112133b13dd3836e921aeac7}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_ac9ecede3112133b13dd3836e921aeac7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const {\bfseries dead\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_adb5f30dc16f540d01186c7237545e3b9}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_adb5f30dc16f540d01186c7237545e3b9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node_marker}{Node\+Marker}$<$ State $>$ {\bfseries state\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a8a92d00b6c73dc841258d04214c852e3}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_a8a92d00b6c73dc841258d04214c852e3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_reducer}{Reducer} $\ast$ $>$ {\bfseries reducers\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_abbe8e5ae035cdc4b1be9d53b89bebe17}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_abbe8e5ae035cdc4b1be9d53b89bebe17}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_stack}{Zone\+Stack}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries revisit\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_ace0aa83c16614992cdaf59f4421352e5}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_ace0aa83c16614992cdaf59f4421352e5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_stack}{Zone\+Stack}$<$ \hyperlink{structv8_1_1internal_1_1compiler_1_1_graph_reducer_1_1_node_state}{Node\+State} $>$ {\bfseries stack\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_reducer_acf463c316efbde79030403c43d24a1f7}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_reducer_acf463c316efbde79030403c43d24a1f7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/graph-\/reducer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/graph-\/reducer.\+cc\end{DoxyCompactItemize}

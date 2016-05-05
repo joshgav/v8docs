@@ -1,0 +1,98 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_register_allocator}\index{v8\+::internal\+::compiler\+::\+Register\+Allocator@{v8\+::internal\+::compiler\+::\+Register\+Allocator}}
+Inheritance diagram for v8\+:\+:internal\+:\+:compiler\+:\+:Register\+Allocator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1compiler_1_1_register_allocator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Register\+Allocator} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocation_data}{Register\+Allocation\+Data} $\ast$data, Register\+Kind kind)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a541582eca277a75f71e1a1a83e54307a}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a541582eca277a75f71e1a1a83e54307a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocation_data}{Register\+Allocation\+Data} $\ast$ {\bfseries data} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a6fd3a5f68edd534cec205814b1586355}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a6fd3a5f68edd534cec205814b1586355}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_instruction_sequence}{Instruction\+Sequence} $\ast$ {\bfseries code} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_aa7dfec681835f6287e865acd6f5d0344}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_aa7dfec681835f6287e865acd6f5d0344}
+
+\item 
+Register\+Kind {\bfseries mode} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_ab967fc5720933a4637b33ceef8808f4d}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_ab967fc5720933a4637b33ceef8808f4d}
+
+\item 
+int {\bfseries num\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_abf5db7d1d2b10635133d9766e15c905d}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_abf5db7d1d2b10635133d9766e15c905d}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a1e89f744fb0ced8d26a8e01d781b8ab7}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a1e89f744fb0ced8d26a8e01d781b8ab7}
+
+\item 
+int {\bfseries allocatable\+\_\+register\+\_\+code} (int allocatable\+\_\+index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a71c45f6e138724db8f38db51713de2f5}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a71c45f6e138724db8f38db51713de2f5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries Get\+Split\+Position\+For\+Instruction} (const \hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, int instruction\+\_\+index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a63a56714278d376405b0c84c597df7f7}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a63a56714278d376405b0c84c597df7f7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries allocation\+\_\+zone} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_aef2757da02b6a307c5f17ba4aa3e8713}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_aef2757da02b6a307c5f17ba4aa3e8713}
+
+\item 
+void {\bfseries Split\+And\+Spill\+Ranges\+Defined\+By\+Memory\+Operand} (bool operands\+\_\+only)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a40e356e9ff41b2ec987a4a90f9981abe}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a40e356e9ff41b2ec987a4a90f9981abe}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ {\bfseries Split\+Range\+At} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} pos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_aeb162c1b8d19f9cd2b07d8d06e95451a}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_aeb162c1b8d19f9cd2b07d8d06e95451a}
+
+\item 
+bool {\bfseries Can\+Process\+Range} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_abf131beef5ec4f8ba7a3eecb35c09f2f}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_abf131beef5ec4f8ba7a3eecb35c09f2f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$ {\bfseries Split\+Between} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a17dafaa2ab828f17cdd4a075b6d3492b}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a17dafaa2ab828f17cdd4a075b6d3492b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries Find\+Optimal\+Split\+Pos} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} start, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a95714b88dadd2a8bafbaedc614eca6f6}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a95714b88dadd2a8bafbaedc614eca6f6}
+
+\item 
+void {\bfseries Spill} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a629789d8d5ce5de31c3a5c8011a592fc}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a629789d8d5ce5de31c3a5c8011a592fc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} {\bfseries Find\+Optimal\+Spilling\+Pos} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_live_range}{Live\+Range} $\ast$range, \hyperlink{classv8_1_1internal_1_1compiler_1_1_lifetime_position}{Lifetime\+Position} pos)\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_ad30a3b9ae9719de4e5bd9f1f6b2e3fbf}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_ad30a3b9ae9719de4e5bd9f1f6b2e3fbf}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_top_level_live_range}{Top\+Level\+Live\+Range} $\ast$ $>$ \& {\bfseries Get\+Fixed\+Registers} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a21c3780ae0c5c42842f8f2deea40965e}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a21c3780ae0c5c42842f8f2deea40965e}
+
+\item 
+const char $\ast$ {\bfseries Register\+Name} (int allocation\+\_\+index) const \hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a7015eedaf5fc0dc5fc74603356cbcaed}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a7015eedaf5fc0dc5fc74603356cbcaed}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocator}{Register\+Allocator})\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a143210eb178c57ef96d6ee88eeef7945}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a143210eb178c57ef96d6ee88eeef7945}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_register_allocation_data}{Register\+Allocation\+Data} $\ast$const {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_aec8e8681cdec0091de854665b612089f}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_aec8e8681cdec0091de854665b612089f}
+
+\item 
+const Register\+Kind {\bfseries mode\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_aa800dd1d57781cfd232e7307debe9c73}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_aa800dd1d57781cfd232e7307debe9c73}
+
+\item 
+const int {\bfseries num\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a8d658a3c3ba25f4ccb6d620045da63b5}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a8d658a3c3ba25f4ccb6d620045da63b5}
+
+\item 
+int {\bfseries num\+\_\+allocatable\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_ac23c6782ee34f9c67c12dbf0162ba275}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_ac23c6782ee34f9c67c12dbf0162ba275}
+
+\item 
+const int $\ast$ {\bfseries allocatable\+\_\+register\+\_\+codes\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_register_allocator_a1078ac92839ac1c0f8812531cb84101c}{}\label{classv8_1_1internal_1_1compiler_1_1_register_allocator_a1078ac92839ac1c0f8812531cb84101c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/register-\/allocator.\+cc\end{DoxyCompactItemize}

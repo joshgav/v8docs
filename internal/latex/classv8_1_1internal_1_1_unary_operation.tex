@@ -1,0 +1,69 @@
+\hypertarget{classv8_1_1internal_1_1_unary_operation}{}\section{v8\+:\+:internal\+:\+:Unary\+Operation Class Reference}
+\label{classv8_1_1internal_1_1_unary_operation}\index{v8\+::internal\+::\+Unary\+Operation@{v8\+::internal\+::\+Unary\+Operation}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Unary\+Operation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1internal_1_1_unary_operation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Token\+::\+Value {\bfseries op} () const \hypertarget{classv8_1_1internal_1_1_unary_operation_aa7ba61d263e7c3c37909031230894c5e}{}\label{classv8_1_1internal_1_1_unary_operation_aa7ba61d263e7c3c37909031230894c5e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries expression} () const \hypertarget{classv8_1_1internal_1_1_unary_operation_a1c4b19c5a33bddaaa5cdaef84b027350}{}\label{classv8_1_1internal_1_1_unary_operation_a1c4b19c5a33bddaaa5cdaef84b027350}
+
+\item 
+void {\bfseries set\+\_\+expression} (\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$e)\hypertarget{classv8_1_1internal_1_1_unary_operation_a7ce81074ce9790e356e4253abe3890af}{}\label{classv8_1_1internal_1_1_unary_operation_a7ce81074ce9790e356e4253abe3890af}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Materialize\+True\+Id} () const \hypertarget{classv8_1_1internal_1_1_unary_operation_a056b0bdffff27333b08d29351ed4cd54}{}\label{classv8_1_1internal_1_1_unary_operation_a056b0bdffff27333b08d29351ed4cd54}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_bailout_id}{Bailout\+Id} {\bfseries Materialize\+False\+Id} () const \hypertarget{classv8_1_1internal_1_1_unary_operation_ae557f28b5bf97b18ed73f92fe9343db1}{}\label{classv8_1_1internal_1_1_unary_operation_ae557f28b5bf97b18ed73f92fe9343db1}
+
+\item 
+void {\bfseries Record\+To\+Boolean\+Type\+Feedback} (\hyperlink{classv8_1_1internal_1_1_type_feedback_oracle}{Type\+Feedback\+Oracle} $\ast$oracle) override\hypertarget{classv8_1_1internal_1_1_unary_operation_aaef1f9493dc092edb7a18cf90c01de54}{}\label{classv8_1_1internal_1_1_unary_operation_aaef1f9493dc092edb7a18cf90c01de54}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_unary_operation_abbaf08e7c9ee0f748aa62218cdb2bdf7}{}\label{classv8_1_1internal_1_1_unary_operation_abbaf08e7c9ee0f748aa62218cdb2bdf7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unary\+Operation} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Token\+::\+Value op, \hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$expression, int pos)\hypertarget{classv8_1_1internal_1_1_unary_operation_acac1d1e5d00a3ea941c0646adafef5a8}{}\label{classv8_1_1internal_1_1_unary_operation_acac1d1e5d00a3ea941c0646adafef5a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries parent\+\_\+num\+\_\+ids} ()\hypertarget{classv8_1_1internal_1_1_unary_operation_a3321a2c40d5295d343ae50b67b96c9a5}{}\label{classv8_1_1internal_1_1_unary_operation_a3321a2c40d5295d343ae50b67b96c9a5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries local\+\_\+id} (int n) const \hypertarget{classv8_1_1internal_1_1_unary_operation_affdce3c1086023b0c857b84af34c2653}{}\label{classv8_1_1internal_1_1_unary_operation_affdce3c1086023b0c857b84af34c2653}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Token\+::\+Value {\bfseries op\+\_\+}\hypertarget{classv8_1_1internal_1_1_unary_operation_a7d498f812d2ce45782ed37b58fe2fe35}{}\label{classv8_1_1internal_1_1_unary_operation_a7d498f812d2ce45782ed37b58fe2fe35}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_expression}{Expression} $\ast$ {\bfseries expression\+\_\+}\hypertarget{classv8_1_1internal_1_1_unary_operation_a6b86b5410423ae0caebe246944b89b86}{}\label{classv8_1_1internal_1_1_unary_operation_a6b86b5410423ae0caebe246944b89b86}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/ast/ast.\+cc\end{DoxyCompactItemize}

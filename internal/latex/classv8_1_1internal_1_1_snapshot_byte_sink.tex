@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink}{}\section{v8\+:\+:internal\+:\+:Snapshot\+Byte\+Sink Class Reference}
+\label{classv8_1_1internal_1_1_snapshot_byte_sink}\index{v8\+::internal\+::\+Snapshot\+Byte\+Sink@{v8\+::internal\+::\+Snapshot\+Byte\+Sink}}
+
+
+{\ttfamily \#include $<$snapshot-\/source-\/sink.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Snapshot\+Byte\+Sink} (int initial\+\_\+size)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_a44df6d4e0e2bae9808e24e632d4a0c3e}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_a44df6d4e0e2bae9808e24e632d4a0c3e}
+
+\item 
+void {\bfseries Put} (byte b, const char $\ast$description)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_adb1c096459811acb6a84d9cacdcad885}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_adb1c096459811acb6a84d9cacdcad885}
+
+\item 
+void {\bfseries Put\+Section} (int b, const char $\ast$description)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_ad3461ff445a9e50130d967f57affc905}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_ad3461ff445a9e50130d967f57affc905}
+
+\item 
+void {\bfseries Put\+Int} (uintptr\+\_\+t integer, const char $\ast$description)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_a99f6f87ab81c173335c6525eeec718b8}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_a99f6f87ab81c173335c6525eeec718b8}
+
+\item 
+void {\bfseries Put\+Raw} (const byte $\ast$data, int number\+\_\+of\+\_\+bytes, const char $\ast$description)\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_ad24beddfd60dd9760ac8895cdb7f7904}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_ad24beddfd60dd9760ac8895cdb7f7904}
+
+\item 
+int {\bfseries Position} ()\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_a3f2395c11250e52fcb9d9fa837cad9ac}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_a3f2395c11250e52fcb9d9fa837cad9ac}
+
+\item 
+const \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ byte $>$ \& {\bfseries data} () const \hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_a35a103ffc832d988c468b74139c92ea8}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_a35a103ffc832d988c468b74139c92ea8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_list}{List}$<$ byte $>$ {\bfseries data\+\_\+}\hypertarget{classv8_1_1internal_1_1_snapshot_byte_sink_a50fe95d82caa3fe04369b76867856730}{}\label{classv8_1_1internal_1_1_snapshot_byte_sink_a50fe95d82caa3fe04369b76867856730}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sink to write snapshot files to.
+
+Subclasses must implement actual storage or i/o. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/source-\/sink.\+h\item 
+/\+Users/joshgav/node/v8/src/snapshot/snapshot-\/source-\/sink.\+cc\end{DoxyCompactItemize}

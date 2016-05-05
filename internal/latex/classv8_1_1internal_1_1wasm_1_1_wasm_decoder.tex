@@ -1,0 +1,70 @@
+\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder}{}\section{v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Decoder Class Reference}
+\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder}\index{v8\+::internal\+::wasm\+::\+Wasm\+Decoder@{v8\+::internal\+::wasm\+::\+Wasm\+Decoder}}
+Inheritance diagram for v8\+:\+:internal\+:\+:wasm\+:\+:Wasm\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1wasm_1_1_wasm_decoder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wasm\+Decoder} (\hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{Module\+Env} $\ast$module, \hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$sig, const byte $\ast$start, const byte $\ast$end)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab9b56aed36208b2d60f45d66836ca47c}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab9b56aed36208b2d60f45d66836ca47c}
+
+\item 
+byte {\bfseries Byte\+Operand} (const byte $\ast$pc, const char $\ast$msg=\char`\"{}missing 1-\/byte operand\char`\"{})\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab89b8e317351e56d23fcf58b0dda5117}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab89b8e317351e56d23fcf58b0dda5117}
+
+\item 
+uint32\+\_\+t {\bfseries Uint32\+Operand} (const byte $\ast$pc)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa6bee8a56fb9ca6f0c8d2dc5c9d7bd7d}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa6bee8a56fb9ca6f0c8d2dc5c9d7bd7d}
+
+\item 
+uint64\+\_\+t {\bfseries Uint64\+Operand} (const byte $\ast$pc)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a5ae643660687a46d350d1e91a0748268}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a5ae643660687a46d350d1e91a0748268}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_local_index_operand}{Local\+Index\+Operand} \&operand)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a4d52ecf0169fa84e5b320566bc3b9181}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a4d52ecf0169fa84e5b320566bc3b9181}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_global_index_operand}{Global\+Index\+Operand} \&operand)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a9471b24e7ecfd687cdb6901e8727ad17}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a9471b24e7ecfd687cdb6901e8727ad17}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_call_function_operand}{Call\+Function\+Operand} \&operand)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa9c457e41e71b6889fc9c0da5b4aaf1a}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa9c457e41e71b6889fc9c0da5b4aaf1a}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_call_indirect_operand}{Call\+Indirect\+Operand} \&operand)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab2d2534daa7fb9dd2cc1e9ae33d2fe46}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ab2d2534daa7fb9dd2cc1e9ae33d2fe46}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_call_import_operand}{Call\+Import\+Operand} \&operand)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a669d4411a9527760e880cecc6c89aa2e}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a669d4411a9527760e880cecc6c89aa2e}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_break_depth_operand}{Break\+Depth\+Operand} \&operand, \hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{structv8_1_1internal_1_1wasm_1_1_control}{Control} $>$ \&control)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a7fe4ae12ef8ea61cb832a020ea1814d6}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a7fe4ae12ef8ea61cb832a020ea1814d6}
+
+\item 
+bool {\bfseries Validate} (const byte $\ast$pc, \hyperlink{structv8_1_1internal_1_1wasm_1_1_branch_table_operand}{Branch\+Table\+Operand} \&operand, size\+\_\+t block\+\_\+depth)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa4c166210cb497267be21851344fa5ab}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_aa4c166210cb497267be21851344fa5ab}
+
+\item 
+int {\bfseries Opcode\+Arity} (const byte $\ast$pc)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a9c0918270ead8723e095f05f0b95485f}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a9c0918270ead8723e095f05f0b95485f}
+
+\item 
+int {\bfseries Opcode\+Length} (const byte $\ast$pc)\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a5216c3f10335278a51453558384c7793}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a5216c3f10335278a51453558384c7793}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structv8_1_1internal_1_1wasm_1_1_module_env}{Module\+Env} $\ast$ {\bfseries module\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a0fce7bb021d43a0669d9e4fc67094460}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a0fce7bb021d43a0669d9e4fc67094460}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_signature}{Function\+Sig} $\ast$ {\bfseries sig\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ac877468cbbd082abcd3188d4ff74d07f}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ac877468cbbd082abcd3188d4ff74d07f}
+
+\item 
+size\+\_\+t {\bfseries total\+\_\+locals\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ad1fe4be931e394cb3b3523989009e7aa}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_ad1fe4be931e394cb3b3523989009e7aa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ Local\+Type $>$ $\ast$ {\bfseries local\+\_\+types\+\_\+}\hypertarget{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a1255aa3faeb0a0d172d541c230471c60}{}\label{classv8_1_1internal_1_1wasm_1_1_wasm_decoder_a1255aa3faeb0a0d172d541c230471c60}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/wasm/ast-\/decoder.\+cc\end{DoxyCompactItemize}

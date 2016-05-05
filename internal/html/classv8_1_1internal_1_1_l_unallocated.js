@@ -1,0 +1,56 @@
+var classv8_1_1internal_1_1_l_unallocated =
+[
+    [ "BasicPolicyField", "classv8_1_1internal_1_1_l_unallocated_1_1_basic_policy_field.html", null ],
+    [ "ExtendedPolicyField", "classv8_1_1internal_1_1_l_unallocated_1_1_extended_policy_field.html", null ],
+    [ "FixedRegisterField", "classv8_1_1internal_1_1_l_unallocated_1_1_fixed_register_field.html", null ],
+    [ "FixedSlotIndexField", "classv8_1_1internal_1_1_l_unallocated_1_1_fixed_slot_index_field.html", null ],
+    [ "LifetimeField", "classv8_1_1internal_1_1_l_unallocated_1_1_lifetime_field.html", null ],
+    [ "VirtualRegisterField", "classv8_1_1internal_1_1_l_unallocated_1_1_virtual_register_field.html", null ],
+    [ "BasicPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a5c4527b1ada3e5fc5af7ae028910cf65", [
+      [ "FIXED_SLOT", "classv8_1_1internal_1_1_l_unallocated.html#a5c4527b1ada3e5fc5af7ae028910cf65a5fca2829e71beaa431da4618e703ae78", null ],
+      [ "EXTENDED_POLICY", "classv8_1_1internal_1_1_l_unallocated.html#a5c4527b1ada3e5fc5af7ae028910cf65a3c52780a4391563ca9536cd1a5ceeeb8", null ]
+    ] ],
+    [ "ExtendedPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9c", [
+      [ "NONE", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca5cfeff85065b7f706ef5ad1a1472edfd", null ],
+      [ "ANY", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca6262b61a0a236ef0f02bdbddccaeb945", null ],
+      [ "FIXED_REGISTER", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca7d845a9e6678f4f2c37decfb05706fd7", null ],
+      [ "FIXED_DOUBLE_REGISTER", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca5858dd8a8df3bf5aa2b5208c31882860", null ],
+      [ "MUST_HAVE_REGISTER", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9cadd1d71f0be4427ca2ac8d38ff4284fc6", null ],
+      [ "MUST_HAVE_DOUBLE_REGISTER", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca68f0aa977e689a1df9b0318d21c04bf8", null ],
+      [ "WRITABLE_REGISTER", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9cad8f04908bb88e42871168af326f8cbb0", null ],
+      [ "SAME_AS_FIRST_INPUT", "classv8_1_1internal_1_1_l_unallocated.html#a7f9fb8ddaf57075386c66517aea3fe9ca6ba0c464024f275f52a5377de8aa9661", null ]
+    ] ],
+    [ "Lifetime", "classv8_1_1internal_1_1_l_unallocated.html#aa0d9c1e73ec74836224460b8693072cd", [
+      [ "USED_AT_START", "classv8_1_1internal_1_1_l_unallocated.html#aa0d9c1e73ec74836224460b8693072cdae854debf760429214dfc0442dc9b7f09", null ],
+      [ "USED_AT_END", "classv8_1_1internal_1_1_l_unallocated.html#aa0d9c1e73ec74836224460b8693072cdacf261300c0476de7897193f2d513828e", null ]
+    ] ],
+    [ "LUnallocated", "classv8_1_1internal_1_1_l_unallocated.html#a24f0daf9f2809e84ac9fca0359be7d76", null ],
+    [ "LUnallocated", "classv8_1_1internal_1_1_l_unallocated.html#a410c7a1f66d1d62fbb531bde5b224421", null ],
+    [ "LUnallocated", "classv8_1_1internal_1_1_l_unallocated.html#a0903fb62f9817044371a139b0b4dd191", null ],
+    [ "LUnallocated", "classv8_1_1internal_1_1_l_unallocated.html#a866dd337593553a2f2377455c5d51ed2", null ],
+    [ "basic_policy", "classv8_1_1internal_1_1_l_unallocated.html#ad7e330dcaa7d7b8814bf5655f3ed6fa1", null ],
+    [ "cast", "classv8_1_1internal_1_1_l_unallocated.html#a1e14abbf5d697fe326914134e8eee8a8", null ],
+    [ "CopyUnconstrained", "classv8_1_1internal_1_1_l_unallocated.html#aee545f3bdf602936d36982ae7ad7a1ed", null ],
+    [ "extended_policy", "classv8_1_1internal_1_1_l_unallocated.html#a66f4005643c48d69e44bf92d022a4005", null ],
+    [ "fixed_register_index", "classv8_1_1internal_1_1_l_unallocated.html#acfb9b54832a88c3d8c00c74d16b5eb5f", null ],
+    [ "fixed_slot_index", "classv8_1_1internal_1_1_l_unallocated.html#a471c6223bc3c6acdb3946a4d0a4e60e9", null ],
+    [ "HasAnyPolicy", "classv8_1_1internal_1_1_l_unallocated.html#aafcd2f07f29f9e56166d63bc880499dc", null ],
+    [ "HasDoubleRegisterPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a140756c1b9cc3037379e68d5919af589", null ],
+    [ "HasFixedDoubleRegisterPolicy", "classv8_1_1internal_1_1_l_unallocated.html#af3a5f90678d746e7edf61af59ca23210", null ],
+    [ "HasFixedPolicy", "classv8_1_1internal_1_1_l_unallocated.html#ac73653e1b921ffa8333dd9299a981c58", null ],
+    [ "HasFixedRegisterPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a4373189508769f04f5e9ff21c49ee503", null ],
+    [ "HasFixedSlotPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a99cf67047affef3def19b4385b5d8cc5", null ],
+    [ "HasRegisterPolicy", "classv8_1_1internal_1_1_l_unallocated.html#a22e49d8d0882521e0af01df7630eb266", null ],
+    [ "HasSameAsInputPolicy", "classv8_1_1internal_1_1_l_unallocated.html#aeef6459e93170f0549f9c3c35303398f", null ],
+    [ "HasWritableRegisterPolicy", "classv8_1_1internal_1_1_l_unallocated.html#ae7389bab3b77421e2565923e02fe5311", null ],
+    [ "IsUsedAtStart", "classv8_1_1internal_1_1_l_unallocated.html#ae8f5b965f80d608b35b91df5412d775f", null ],
+    [ "set_virtual_register", "classv8_1_1internal_1_1_l_unallocated.html#a566b6b30c5379f4223e4d2bb3b78e5b3", null ],
+    [ "STATIC_ASSERT", "classv8_1_1internal_1_1_l_unallocated.html#aca594cf6e339fcc0e76f51b6b806454c", null ],
+    [ "TooManyParameters", "classv8_1_1internal_1_1_l_unallocated.html#a12e3ad4ed8973d59e3e73a4c0b35761c", null ],
+    [ "TooManyParametersOrStackSlots", "classv8_1_1internal_1_1_l_unallocated.html#a0d76d8762d87465679bbe8414da9e60c", null ],
+    [ "virtual_register", "classv8_1_1internal_1_1_l_unallocated.html#aed931ce6fac8adfed1f654b707481594", null ],
+    [ "kFixedSlotIndexWidth", "classv8_1_1internal_1_1_l_unallocated.html#aa4a4b055aaeec6f7a10122a6cddf53a9", null ],
+    [ "kMaxFixedSlotIndex", "classv8_1_1internal_1_1_l_unallocated.html#ad715869b332be98feff8e3a82ffa81bc", null ],
+    [ "kMaxVirtualRegisters", "classv8_1_1internal_1_1_l_unallocated.html#a74a05ec5d4c76ae15d49d160d4d4009b", null ],
+    [ "kMinFixedSlotIndex", "classv8_1_1internal_1_1_l_unallocated.html#a1b02a7bd7de114b94d3b59d331547645", null ]
+];

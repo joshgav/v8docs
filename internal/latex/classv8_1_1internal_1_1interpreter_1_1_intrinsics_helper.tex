@@ -1,0 +1,51 @@
+\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper}{}\section{v8\+:\+:internal\+:\+:interpreter\+:\+:Intrinsics\+Helper Class Reference}
+\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper}\index{v8\+::internal\+::interpreter\+::\+Intrinsics\+Helper@{v8\+::internal\+::interpreter\+::\+Intrinsics\+Helper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Intrinsics\+Helper} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_interpreter_assembler}{Interpreter\+Assembler} $\ast$assembler)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a32749baee2bd58198ff43adfdbb3084f}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a32749baee2bd58198ff43adfdbb3084f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$ {\bfseries Invoke\+Intrinsic} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$function\+\_\+id, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$context, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$first\+\_\+arg\+\_\+reg, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$arg\+\_\+count)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a45d565d2c6fc02993b7d7bc7b1945fc4}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a45d565d2c6fc02993b7d7bc7b1945fc4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Is\+Supported} (Runtime\+::\+Function\+Id function\+\_\+id)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a9d10da91c4a901f5184cee8b9896792a}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a9d10da91c4a901f5184cee8b9896792a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Instance\+Type\+Compare\+Mode} \{ \\*
+{\bfseries k\+Instance\+Type\+Equal}, 
+\\*
+{\bfseries k\+Instance\+Type\+Greater\+Than\+Or\+Equal}
+ \}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_af2deb7fc0d18cf21fb5797308b5afe84}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_af2deb7fc0d18cf21fb5797308b5afe84}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$ {\bfseries Compare\+Instance\+Type} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$map, int type, Instance\+Type\+Compare\+Mode mode)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a3e062b071838278b3668182d199c6118}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a3e062b071838278b3668182d199c6118}
+
+\item 
+void {\bfseries Abort\+If\+Arg\+Count\+Mismatch} (int expected, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{compiler\+::\+Node} $\ast$actual)\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_af94f9fee9cad4d11a4e80377eafa0f22}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_af94f9fee9cad4d11a4e80377eafa0f22}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper}{Intrinsics\+Helper})\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a3a75adf9677021424f2fe2983f767b48}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_a3a75adf9677021424f2fe2983f767b48}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1interpreter_1_1_interpreter_assembler}{Interpreter\+Assembler} $\ast$ {\bfseries assembler\+\_\+}\hypertarget{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_aacef127a3fda2b1b01ff418b02fd8717}{}\label{classv8_1_1internal_1_1interpreter_1_1_intrinsics_helper_aacef127a3fda2b1b01ff418b02fd8717}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/interpreter/interpreter-\/intrinsics.\+h\item 
+/\+Users/joshgav/node/v8/src/interpreter/interpreter-\/intrinsics.\+cc\end{DoxyCompactItemize}

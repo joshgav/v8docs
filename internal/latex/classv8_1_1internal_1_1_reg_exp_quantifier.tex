@@ -1,0 +1,100 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Quantifier Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_quantifier}\index{v8\+::internal\+::\+Reg\+Exp\+Quantifier@{v8\+::internal\+::\+Reg\+Exp\+Quantifier}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Quantifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_reg_exp_quantifier}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Quantifier\+Type} \{ \\*
+{\bfseries G\+R\+E\+E\+DY}, 
+\\*
+{\bfseries N\+O\+N\+\_\+\+G\+R\+E\+E\+DY}, 
+\\*
+{\bfseries P\+O\+S\+S\+E\+S\+S\+I\+VE}
+ \}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_aa9c83c35aa00f3975ba0c62f7877142e}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_aa9c83c35aa00f3975ba0c62f7877142e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Quantifier} (int min, int max, Quantifier\+Type type, \hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$body)\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_affd7c7fc8db27132916ef632a5434edb}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_affd7c7fc8db27132916ef632a5434edb}
+
+\item 
+void $\ast$ {\bfseries Accept} (Reg\+Exp\+Visitor $\ast$visitor, void $\ast$data) override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_adcadbe6e79cf873328c8af711790dcdb}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_adcadbe6e79cf873328c8af711790dcdb}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries To\+Node} (\hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$on\+\_\+success) override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_ae479289e3ca0572b349524c8d46737c7}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_ae479289e3ca0572b349524c8d46737c7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_quantifier}{Reg\+Exp\+Quantifier} $\ast$ {\bfseries As\+Quantifier} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a336b7463706ccaecfbe04a7e35d232c0}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a336b7463706ccaecfbe04a7e35d232c0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_interval}{Interval} {\bfseries Capture\+Registers} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a8574412e3ee34483fba8bdb5d5bd9a82}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a8574412e3ee34483fba8bdb5d5bd9a82}
+
+\item 
+bool {\bfseries Is\+Quantifier} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_aa146f28c345cf3b47ddc67bf5f6b86be}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_aa146f28c345cf3b47ddc67bf5f6b86be}
+
+\item 
+int {\bfseries min\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a74589c62f5e4b5d3050d5de67181f933}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a74589c62f5e4b5d3050d5de67181f933}
+
+\item 
+int {\bfseries max\+\_\+match} () override\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_ade99e5073f82e2d5007c7305b87a46b4}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_ade99e5073f82e2d5007c7305b87a46b4}
+
+\item 
+int {\bfseries min} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a00888c9446e2d85230f1b51e129e0137}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a00888c9446e2d85230f1b51e129e0137}
+
+\item 
+int {\bfseries max} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_ae763df22442151a15dc196209dfff4ec}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_ae763df22442151a15dc196209dfff4ec}
+
+\item 
+bool {\bfseries is\+\_\+possessive} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a862d283467426f4047000d1cece8aba4}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a862d283467426f4047000d1cece8aba4}
+
+\item 
+bool {\bfseries is\+\_\+non\+\_\+greedy} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_af63cffed6c12c19586c9f678c364cd8e}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_af63cffed6c12c19586c9f678c364cd8e}
+
+\item 
+bool {\bfseries is\+\_\+greedy} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_afc3ebb95b1601b412b95341e49319840}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_afc3ebb95b1601b412b95341e49319840}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$ {\bfseries body} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_af214292bca72c9090293f34d7340944a}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_af214292bca72c9090293f34d7340944a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$ {\bfseries To\+Node} (int min, int max, bool is\+\_\+greedy, \hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$body, \hyperlink{classv8_1_1internal_1_1_reg_exp_compiler}{Reg\+Exp\+Compiler} $\ast$compiler, \hyperlink{classv8_1_1internal_1_1_reg_exp_node}{Reg\+Exp\+Node} $\ast$on\+\_\+success, bool not\+\_\+at\+\_\+start=false)\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_af74888630424746f820660fbfc63e0fe}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_af74888630424746f820660fbfc63e0fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_reg_exp_tree}{Reg\+Exp\+Tree} $\ast$ {\bfseries body\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a4d7fb9f57da93e4accd74ccc7c467078}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a4d7fb9f57da93e4accd74ccc7c467078}
+
+\item 
+int {\bfseries min\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_aa692634882a0b3ecb1e153ab33a20d5a}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_aa692634882a0b3ecb1e153ab33a20d5a}
+
+\item 
+int {\bfseries max\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a8eef1355fa1fc40060339de49a51f27d}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a8eef1355fa1fc40060339de49a51f27d}
+
+\item 
+int {\bfseries min\+\_\+match\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a994f034771e46bdb069be97d3d61cb66}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a994f034771e46bdb069be97d3d61cb66}
+
+\item 
+int {\bfseries max\+\_\+match\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a1da485f37f92d0af2b9b5baa70d21098}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a1da485f37f92d0af2b9b5baa70d21098}
+
+\item 
+Quantifier\+Type {\bfseries quantifier\+\_\+type\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_quantifier_a214b23a6a67e6de249c39020277e5884}{}\label{classv8_1_1internal_1_1_reg_exp_quantifier_a214b23a6a67e6de249c39020277e5884}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/jsregexp.\+cc\item 
+/\+Users/joshgav/node/v8/src/regexp/regexp-\/ast.\+cc\end{DoxyCompactItemize}

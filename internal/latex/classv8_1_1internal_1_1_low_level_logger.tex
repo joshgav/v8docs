@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_low_level_logger}{}\section{v8\+:\+:internal\+:\+:Low\+Level\+Logger Class Reference}
+\label{classv8_1_1internal_1_1_low_level_logger}\index{v8\+::internal\+::\+Low\+Level\+Logger@{v8\+::internal\+::\+Low\+Level\+Logger}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Low\+Level\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_low_level_logger}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_low_level_logger_1_1_code_create_struct}{Code\+Create\+Struct}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1_low_level_logger_1_1_code_move_struct}{Code\+Move\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Low\+Level\+Logger} (const char $\ast$file\+\_\+name)\hypertarget{classv8_1_1internal_1_1_low_level_logger_aec5d6b4808216e7df1fac664b54ebf76}{}\label{classv8_1_1internal_1_1_low_level_logger_aec5d6b4808216e7df1fac664b54ebf76}
+
+\item 
+void {\bfseries Code\+Move\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$from, Address to) override\hypertarget{classv8_1_1internal_1_1_low_level_logger_a97d9621beb5732fd692b13e85e4946af}{}\label{classv8_1_1internal_1_1_low_level_logger_a97d9621beb5732fd692b13e85e4946af}
+
+\item 
+void {\bfseries Code\+Disable\+Opt\+Event} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared) override\hypertarget{classv8_1_1internal_1_1_low_level_logger_aa861c0ec6bc186eada4a9b6c4d13e935}{}\label{classv8_1_1internal_1_1_low_level_logger_aa861c0ec6bc186eada4a9b6c4d13e935}
+
+\item 
+void {\bfseries Snapshot\+Position\+Event} (\hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$obj, int pos)\hypertarget{classv8_1_1internal_1_1_low_level_logger_a006542f9b1b0d8c1e93635fc8d3da4e8}{}\label{classv8_1_1internal_1_1_low_level_logger_a006542f9b1b0d8c1e93635fc8d3da4e8}
+
+\item 
+void {\bfseries Code\+Moving\+G\+C\+Event} () override\hypertarget{classv8_1_1internal_1_1_low_level_logger_a202a99cfd523bc4d614322e538a92f89}{}\label{classv8_1_1internal_1_1_low_level_logger_a202a99cfd523bc4d614322e538a92f89}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Log\+Recorded\+Buffer} (\hyperlink{classv8_1_1internal_1_1_abstract_code}{Abstract\+Code} $\ast$code, \hyperlink{classv8_1_1internal_1_1_shared_function_info}{Shared\+Function\+Info} $\ast$shared, const char $\ast$name, int length) override\hypertarget{classv8_1_1internal_1_1_low_level_logger_a5c186b784475ff0654dbd18ff0919f48}{}\label{classv8_1_1internal_1_1_low_level_logger_a5c186b784475ff0654dbd18ff0919f48}
+
+\item 
+void {\bfseries Log\+Code\+Info} ()\hypertarget{classv8_1_1internal_1_1_low_level_logger_a41f344dd5216a19b69747ccc56eaf0be}{}\label{classv8_1_1internal_1_1_low_level_logger_a41f344dd5216a19b69747ccc56eaf0be}
+
+\item 
+void {\bfseries Log\+Write\+Bytes} (const char $\ast$bytes, int size)\hypertarget{classv8_1_1internal_1_1_low_level_logger_af55ef638dc4b6c862cf9d6741fc37706}{}\label{classv8_1_1internal_1_1_low_level_logger_af55ef638dc4b6c862cf9d6741fc37706}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries Log\+Write\+Struct} (const T \&s)\hypertarget{classv8_1_1internal_1_1_low_level_logger_ad00a7cadc95b56f339e765b418d242aa}{}\label{classv8_1_1internal_1_1_low_level_logger_ad00a7cadc95b56f339e765b418d242aa}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ {\bfseries ll\+\_\+output\+\_\+handle\+\_\+}\hypertarget{classv8_1_1internal_1_1_low_level_logger_af811e6ca5c37ced6e03439b5eb997e7e}{}\label{classv8_1_1internal_1_1_low_level_logger_af811e6ca5c37ced6e03439b5eb997e7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char {\bfseries k\+Code\+Moving\+G\+C\+Tag} = \textquotesingle{}G\textquotesingle{}\hypertarget{classv8_1_1internal_1_1_low_level_logger_a1f8a85fcef899a520e2c987c80475397}{}\label{classv8_1_1internal_1_1_low_level_logger_a1f8a85fcef899a520e2c987c80475397}
+
+\item 
+static const char {\bfseries k\+Log\+Ext} \mbox{[}$\,$\mbox{]} = \char`\"{}.ll\char`\"{}\hypertarget{classv8_1_1internal_1_1_low_level_logger_a08a07113678e794cb845fe3770081bb3}{}\label{classv8_1_1internal_1_1_low_level_logger_a08a07113678e794cb845fe3770081bb3}
+
+\item 
+static const int {\bfseries k\+Log\+Buffer\+Size} = 2 $\ast$ MB\hypertarget{classv8_1_1internal_1_1_low_level_logger_a2542e11e15c85b96bf1d90505169c6bd}{}\label{classv8_1_1internal_1_1_low_level_logger_a2542e11e15c85b96bf1d90505169c6bd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/log.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1internal_1_1_sampler_thread}{}\section{v8\+:\+:internal\+:\+:Sampler\+Thread Class Reference}
+\label{classv8_1_1internal_1_1_sampler_thread}\index{v8\+::internal\+::\+Sampler\+Thread@{v8\+::internal\+::\+Sampler\+Thread}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Sampler\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_sampler_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sampler\+Thread} (int interval)\hypertarget{classv8_1_1internal_1_1_sampler_thread_a3e212b66342406f674dd476df2155c50}{}\label{classv8_1_1internal_1_1_sampler_thread_a3e212b66342406f674dd476df2155c50}
+
+\item 
+virtual void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_sampler_thread_ac1d42ef1e1f8ed4be68b4ab08b8236e9}{}\label{classv8_1_1internal_1_1_sampler_thread_ac1d42ef1e1f8ed4be68b4ab08b8236e9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Set\+Up} ()\hypertarget{classv8_1_1internal_1_1_sampler_thread_a165be0ab4e47a58417fd0cd14a564cc9}{}\label{classv8_1_1internal_1_1_sampler_thread_a165be0ab4e47a58417fd0cd14a564cc9}
+
+\item 
+static void {\bfseries Tear\+Down} ()\hypertarget{classv8_1_1internal_1_1_sampler_thread_af5b3127fbcd9d62dc1050470cd62b8dc}{}\label{classv8_1_1internal_1_1_sampler_thread_af5b3127fbcd9d62dc1050470cd62b8dc}
+
+\item 
+static void {\bfseries Add\+Active\+Sampler} (\hyperlink{classv8_1_1internal_1_1_sampler}{Sampler} $\ast$sampler)\hypertarget{classv8_1_1internal_1_1_sampler_thread_a2940cf2fca12b63d25de4b4b815fa8cd}{}\label{classv8_1_1internal_1_1_sampler_thread_a2940cf2fca12b63d25de4b4b815fa8cd}
+
+\item 
+static void {\bfseries Remove\+Sampler} (\hyperlink{classv8_1_1internal_1_1_sampler}{Sampler} $\ast$sampler)\hypertarget{classv8_1_1internal_1_1_sampler_thread_afc9a170882989ff7b20de54971cbca04}{}\label{classv8_1_1internal_1_1_sampler_thread_afc9a170882989ff7b20de54971cbca04}
+
+\item 
+static void {\bfseries Register\+Sampler} (\hyperlink{classv8_1_1internal_1_1_sampler}{Sampler} $\ast$sampler)\hypertarget{classv8_1_1internal_1_1_sampler_thread_a555b90b01fbb1761cb1c1c59497a46e0}{}\label{classv8_1_1internal_1_1_sampler_thread_a555b90b01fbb1761cb1c1c59497a46e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Sampler\+Thread\+Stack\+Size} = 64 $\ast$ KB\hypertarget{classv8_1_1internal_1_1_sampler_thread_afd75dabf3f8f54bf2b9cf934a16b19b2}{}\label{classv8_1_1internal_1_1_sampler_thread_afd75dabf3f8f54bf2b9cf934a16b19b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_sampler_thread}{Sampler\+Thread})\hypertarget{classv8_1_1internal_1_1_sampler_thread_aa119e701f2636732f0a57a22cc23b65d}{}\label{classv8_1_1internal_1_1_sampler_thread_aa119e701f2636732f0a57a22cc23b65d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries interval\+\_\+}\hypertarget{classv8_1_1internal_1_1_sampler_thread_a306ab15b291bf30f6927b516b9e2552e}{}\label{classv8_1_1internal_1_1_sampler_thread_a306ab15b291bf30f6927b516b9e2552e}
+
+\item 
+Sampler\+List {\bfseries active\+\_\+samplers\+\_\+}\hypertarget{classv8_1_1internal_1_1_sampler_thread_aedcc93f9daf0e3b03ea7d1ba94f26762}{}\label{classv8_1_1internal_1_1_sampler_thread_aedcc93f9daf0e3b03ea7d1ba94f26762}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} $\ast$ {\bfseries mutex\+\_\+} = N\+U\+LL\hypertarget{classv8_1_1internal_1_1_sampler_thread_a042c88226d66073ad107a41c4e6e4545}{}\label{classv8_1_1internal_1_1_sampler_thread_a042c88226d66073ad107a41c4e6e4545}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_sampler_thread}{Sampler\+Thread} $\ast$ {\bfseries instance\+\_\+} = N\+U\+LL\hypertarget{classv8_1_1internal_1_1_sampler_thread_ab03e0098148073404ed0d9165158c53e}{}\label{classv8_1_1internal_1_1_sampler_thread_ab03e0098148073404ed0d9165158c53e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/profiler/sampler.\+cc\end{DoxyCompactItemize}

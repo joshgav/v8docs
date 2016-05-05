@@ -1,0 +1,47 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Graph\+Trimmer Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer}\index{v8\+::internal\+::compiler\+::\+Graph\+Trimmer@{v8\+::internal\+::compiler\+::\+Graph\+Trimmer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Graph\+Trimmer} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a4fc6717624c150af0b0977774c6e20a9}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a4fc6717624c150af0b0977774c6e20a9}
+
+\item 
+void {\bfseries Trim\+Graph} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_afdbaeba88b2dbf5a1dfdef3e70226a18}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_afdbaeba88b2dbf5a1dfdef3e70226a18}
+
+\item 
+{\footnotesize template$<$typename Forward\+Iterator $>$ }\\void {\bfseries Trim\+Graph} (Forward\+Iterator begin, Forward\+Iterator end)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_ab9e55dcb8d7e33ff7d9d5b3019165dc3}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_ab9e55dcb8d7e33ff7d9d5b3019165dc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE bool {\bfseries Is\+Live} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a32fcdb97d18aedce6ab9913d10e32336}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a32fcdb97d18aedce6ab9913d10e32336}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void {\bfseries Mark\+As\+Live} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$const node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_acdaf83c5a6d2f6bb6ed9c5f3ea14eee8}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_acdaf83c5a6d2f6bb6ed9c5f3ea14eee8}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph} () const \hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_adbc04bc5f31a8d8c61160437696aa1d2}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_adbc04bc5f31a8d8c61160437696aa1d2}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph_trimmer}{Graph\+Trimmer})\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a7bc5aa7f5e45c86867426494170b8b7f}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a7bc5aa7f5e45c86867426494170b8b7f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$const {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a782e5a5a4bb09e8a482cbafb19f58330}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a782e5a5a4bb09e8a482cbafb19f58330}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_node_marker}{Node\+Marker}$<$ bool $>$ {\bfseries is\+\_\+live\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a1144fb1c565cb72c08d967589e6675cc}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a1144fb1c565cb72c08d967589e6675cc}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector} {\bfseries live\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a0d3d55be700d8264a31cd02ba79f9ef3}{}\label{classv8_1_1internal_1_1compiler_1_1_graph_trimmer_a0d3d55be700d8264a31cd02ba79f9ef3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/graph-\/trimmer.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/graph-\/trimmer.\+cc\end{DoxyCompactItemize}

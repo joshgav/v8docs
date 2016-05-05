@@ -1,0 +1,154 @@
+\hypertarget{classv8_1_1internal_1_1_free_list}{}\section{v8\+:\+:internal\+:\+:Free\+List Class Reference}
+\label{classv8_1_1internal_1_1_free_list}\index{v8\+::internal\+::\+Free\+List@{v8\+::internal\+::\+Free\+List}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_free_list_1_1_free_list_category_iterator}{Free\+List\+Category\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Free\+List} (\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$owner)\hypertarget{classv8_1_1internal_1_1_free_list_a60ffede5ec2f86afe99b4b10ee04dc2f}{}\label{classv8_1_1internal_1_1_free_list_a60ffede5ec2f86afe99b4b10ee04dc2f}
+
+\item 
+int {\bfseries Free} (Address start, int size\+\_\+in\+\_\+bytes, Free\+Mode mode)\hypertarget{classv8_1_1internal_1_1_free_list_a73700f8a2f6a9e94da40fa5bc18ea7dd}{}\label{classv8_1_1internal_1_1_free_list_a73700f8a2f6a9e94da40fa5bc18ea7dd}
+
+\item 
+M\+U\+S\+T\+\_\+\+U\+S\+E\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $\ast$ {\bfseries Allocate} (int size\+\_\+in\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_free_list_a505524588fa29bd0b5f3a1b2b1ad1c40}{}\label{classv8_1_1internal_1_1_free_list_a505524588fa29bd0b5f3a1b2b1ad1c40}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classv8_1_1internal_1_1_free_list_ab4abea8fbd917cb43b9b440ef1010342}{}\label{classv8_1_1internal_1_1_free_list_ab4abea8fbd917cb43b9b440ef1010342}
+
+\item 
+void {\bfseries Reset\+Stats} ()\hypertarget{classv8_1_1internal_1_1_free_list_a83333dbec29d445106f9bcfbe4313816}{}\label{classv8_1_1internal_1_1_free_list_a83333dbec29d445106f9bcfbe4313816}
+
+\item 
+intptr\+\_\+t {\bfseries Available} ()\hypertarget{classv8_1_1internal_1_1_free_list_a526b3a4d01bfa8171b6a372594fce638}{}\label{classv8_1_1internal_1_1_free_list_a526b3a4d01bfa8171b6a372594fce638}
+
+\item 
+bool {\bfseries Is\+Empty} ()\hypertarget{classv8_1_1internal_1_1_free_list_a7c78f22b1971e2943be876918d163dd0}{}\label{classv8_1_1internal_1_1_free_list_a7c78f22b1971e2943be876918d163dd0}
+
+\item 
+void {\bfseries Repair\+Lists} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_free_list_aeeb8bd0cb83326e7985985b468597d14}{}\label{classv8_1_1internal_1_1_free_list_aeeb8bd0cb83326e7985985b468597d14}
+
+\item 
+intptr\+\_\+t {\bfseries Evict\+Free\+List\+Items} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_free_list_af4bc24f92064535386c65fac4ef7002a}{}\label{classv8_1_1internal_1_1_free_list_af4bc24f92064535386c65fac4ef7002a}
+
+\item 
+bool {\bfseries Contains\+Page\+Free\+List\+Items} (\hyperlink{classv8_1_1internal_1_1_page}{Page} $\ast$page)\hypertarget{classv8_1_1internal_1_1_free_list_a79583a8994240cfcbe9b62633fd974c6}{}\label{classv8_1_1internal_1_1_free_list_a79583a8994240cfcbe9b62633fd974c6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$ {\bfseries owner} ()\hypertarget{classv8_1_1internal_1_1_free_list_aba609378dacfc7db328fb7f59a5e0ac7}{}\label{classv8_1_1internal_1_1_free_list_aba609378dacfc7db328fb7f59a5e0ac7}
+
+\item 
+intptr\+\_\+t {\bfseries wasted\+\_\+bytes} ()\hypertarget{classv8_1_1internal_1_1_free_list_af51ea2dc94b388739976d6fd737fec9c}{}\label{classv8_1_1internal_1_1_free_list_af51ea2dc94b388739976d6fd737fec9c}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+All\+Free\+List\+Categories} (Free\+List\+Category\+Type type, Callback callback)\hypertarget{classv8_1_1internal_1_1_free_list_a874575254a8775cea516360ac77fa79f}{}\label{classv8_1_1internal_1_1_free_list_a874575254a8775cea516360ac77fa79f}
+
+\item 
+{\footnotesize template$<$typename Callback $>$ }\\void {\bfseries For\+All\+Free\+List\+Categories} (Callback callback)\hypertarget{classv8_1_1internal_1_1_free_list_a3f8c32e83ac1e62650e96615d3a85e49}{}\label{classv8_1_1internal_1_1_free_list_a3f8c32e83ac1e62650e96615d3a85e49}
+
+\item 
+bool {\bfseries Add\+Category} (\hyperlink{classv8_1_1internal_1_1_free_list_category}{Free\+List\+Category} $\ast$category)\hypertarget{classv8_1_1internal_1_1_free_list_a5e449f34c8035d4f353c10cb8bfc6272}{}\label{classv8_1_1internal_1_1_free_list_a5e449f34c8035d4f353c10cb8bfc6272}
+
+\item 
+void {\bfseries Remove\+Category} (\hyperlink{classv8_1_1internal_1_1_free_list_category}{Free\+List\+Category} $\ast$category)\hypertarget{classv8_1_1internal_1_1_free_list_ae9eb2b754f476bc5b138d7b5e9407550}{}\label{classv8_1_1internal_1_1_free_list_ae9eb2b754f476bc5b138d7b5e9407550}
+
+\item 
+void {\bfseries Print\+Categories} (Free\+List\+Category\+Type type)\hypertarget{classv8_1_1internal_1_1_free_list_af3cbe43b30d422110caba0e7f86bf673}{}\label{classv8_1_1internal_1_1_free_list_af3cbe43b30d422110caba0e7f86bf673}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Guaranteed\+Allocatable} (int maximum\+\_\+freed)\hypertarget{classv8_1_1internal_1_1_free_list_a07d00a5d5debb017bd0fcbdb905f49e4}{}\label{classv8_1_1internal_1_1_free_list_a07d00a5d5debb017bd0fcbdb905f49e4}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_space}{Free\+Space} $\ast$ {\bfseries Find\+Node\+For} (int size\+\_\+in\+\_\+bytes, int $\ast$node\+\_\+size)\hypertarget{classv8_1_1internal_1_1_free_list_a098331a33116801cc1483b999ac0baf3}{}\label{classv8_1_1internal_1_1_free_list_a098331a33116801cc1483b999ac0baf3}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_space}{Free\+Space} $\ast$ {\bfseries Find\+Node\+In} (Free\+List\+Category\+Type type, int $\ast$node\+\_\+size)\hypertarget{classv8_1_1internal_1_1_free_list_ada84f3304774b6c622055148888804c2}{}\label{classv8_1_1internal_1_1_free_list_ada84f3304774b6c622055148888804c2}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_space}{Free\+Space} $\ast$ {\bfseries Try\+Find\+Node\+In} (Free\+List\+Category\+Type type, int $\ast$node\+\_\+size, int minimum\+\_\+size)\hypertarget{classv8_1_1internal_1_1_free_list_a5dfed4fae86d7c08a9c3fef340c8fe85}{}\label{classv8_1_1internal_1_1_free_list_a5dfed4fae86d7c08a9c3fef340c8fe85}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_space}{Free\+Space} $\ast$ {\bfseries Search\+For\+Node\+In\+List} (Free\+List\+Category\+Type type, int $\ast$node\+\_\+size, int minimum\+\_\+size)\hypertarget{classv8_1_1internal_1_1_free_list_aa5bb3a0fa3d34b0b669adb5e34ad7ee1}{}\label{classv8_1_1internal_1_1_free_list_aa5bb3a0fa3d34b0b669adb5e34ad7ee1}
+
+\item 
+Free\+List\+Category\+Type {\bfseries Select\+Free\+List\+Category\+Type} (size\+\_\+t size\+\_\+in\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_free_list_ab700181c8e4335652ed6e9abf1fdd6a9}{}\label{classv8_1_1internal_1_1_free_list_ab700181c8e4335652ed6e9abf1fdd6a9}
+
+\item 
+Free\+List\+Category\+Type {\bfseries Select\+Fast\+Allocation\+Free\+List\+Category\+Type} (size\+\_\+t size\+\_\+in\+\_\+bytes)\hypertarget{classv8_1_1internal_1_1_free_list_a9c6430faabf557fb10fa199d9d03054e}{}\label{classv8_1_1internal_1_1_free_list_a9c6430faabf557fb10fa199d9d03054e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_list_category}{Free\+List\+Category} $\ast$ {\bfseries top} (Free\+List\+Category\+Type type)\hypertarget{classv8_1_1internal_1_1_free_list_a7a16be3eb48d8f799dc491a55620147d}{}\label{classv8_1_1internal_1_1_free_list_a7a16be3eb48d8f799dc491a55620147d}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_free_list}{Free\+List})\hypertarget{classv8_1_1internal_1_1_free_list_aa328258b31c54b3ced01d63237dfddbb}{}\label{classv8_1_1internal_1_1_free_list_aa328258b31c54b3ced01d63237dfddbb}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_paged_space}{Paged\+Space} $\ast$ {\bfseries owner\+\_\+}\hypertarget{classv8_1_1internal_1_1_free_list_aa3b59f3d0692294001155efb949dbb65}{}\label{classv8_1_1internal_1_1_free_list_aa3b59f3d0692294001155efb949dbb65}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_atomic_number}{Atomic\+Number}$<$ intptr\+\_\+t $>$ {\bfseries wasted\+\_\+bytes\+\_\+}\hypertarget{classv8_1_1internal_1_1_free_list_a6e661c56e5e5952b34742374fdd855fa}{}\label{classv8_1_1internal_1_1_free_list_a6e661c56e5e5952b34742374fdd855fa}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_free_list_category}{Free\+List\+Category} $\ast$ {\bfseries categories\+\_\+} \mbox{[}k\+Number\+Of\+Categories\mbox{]}\hypertarget{classv8_1_1internal_1_1_free_list_a6c12dc70f5ea7554e244bc27f0a6aab8}{}\label{classv8_1_1internal_1_1_free_list_a6c12dc70f5ea7554e244bc27f0a6aab8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Min\+Block\+Size} = 3 $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_aa58aafa661898388649bc3fcf6988ee3}{}\label{classv8_1_1internal_1_1_free_list_aa58aafa661898388649bc3fcf6988ee3}
+
+\item 
+static const int {\bfseries k\+Max\+Block\+Size} = Page\+::k\+Allocatable\+Memory\hypertarget{classv8_1_1internal_1_1_free_list_a7144b81ac8481ddcbee45ef835cb9514}{}\label{classv8_1_1internal_1_1_free_list_a7144b81ac8481ddcbee45ef835cb9514}
+
+\item 
+static const int {\bfseries k\+Tiniest\+List\+Max} = 0xa $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_afdb656af14984fd3587020a9f7801230}{}\label{classv8_1_1internal_1_1_free_list_afdb656af14984fd3587020a9f7801230}
+
+\item 
+static const int {\bfseries k\+Tiny\+List\+Max} = 0x1f $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_a81c5ccbc1daace65840f643105e7b7a5}{}\label{classv8_1_1internal_1_1_free_list_a81c5ccbc1daace65840f643105e7b7a5}
+
+\item 
+static const int {\bfseries k\+Small\+List\+Max} = 0xff $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_a830eb20c2feea2d9f1291e225f84aafc}{}\label{classv8_1_1internal_1_1_free_list_a830eb20c2feea2d9f1291e225f84aafc}
+
+\item 
+static const int {\bfseries k\+Medium\+List\+Max} = 0x7ff $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_ae41eca615f7670eeb3f52717eb846c14}{}\label{classv8_1_1internal_1_1_free_list_ae41eca615f7670eeb3f52717eb846c14}
+
+\item 
+static const int {\bfseries k\+Large\+List\+Max} = 0x3fff $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_free_list_aa45cd1010d785d2911a6b7a810675810}{}\label{classv8_1_1internal_1_1_free_list_aa45cd1010d785d2911a6b7a810675810}
+
+\item 
+static const int {\bfseries k\+Tiny\+Allocation\+Max} = k\+Tiniest\+List\+Max\hypertarget{classv8_1_1internal_1_1_free_list_a22fc014c9a33fa5d1fc4b799abeece21}{}\label{classv8_1_1internal_1_1_free_list_a22fc014c9a33fa5d1fc4b799abeece21}
+
+\item 
+static const int {\bfseries k\+Small\+Allocation\+Max} = k\+Tiny\+List\+Max\hypertarget{classv8_1_1internal_1_1_free_list_ab14ef9fa4c3c68ebf81d61b69086bcbe}{}\label{classv8_1_1internal_1_1_free_list_ab14ef9fa4c3c68ebf81d61b69086bcbe}
+
+\item 
+static const int {\bfseries k\+Medium\+Allocation\+Max} = k\+Small\+List\+Max\hypertarget{classv8_1_1internal_1_1_free_list_af43ecd4cd4d684a9ecaf0bacf65aaec0}{}\label{classv8_1_1internal_1_1_free_list_af43ecd4cd4d684a9ecaf0bacf65aaec0}
+
+\item 
+static const int {\bfseries k\+Large\+Allocation\+Max} = k\+Medium\+List\+Max\hypertarget{classv8_1_1internal_1_1_free_list_ab69535b4e335fb4123d9b3b013135a9f}{}\label{classv8_1_1internal_1_1_free_list_ab69535b4e335fb4123d9b3b013135a9f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Free\+List\+Category}\hypertarget{classv8_1_1internal_1_1_free_list_ac7b8d83f9833f7883a102608d8720210}{}\label{classv8_1_1internal_1_1_free_list_ac7b8d83f9833f7883a102608d8720210}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/spaces.\+cc\end{DoxyCompactItemize}

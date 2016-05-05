@@ -1,0 +1,53 @@
+\hypertarget{classv8_1_1internal_1_1_zone_list}{}\section{v8\+:\+:internal\+:\+:Zone\+List$<$ T $>$ Class Template Reference}
+\label{classv8_1_1internal_1_1_zone_list}\index{v8\+::internal\+::\+Zone\+List$<$ T $>$@{v8\+::internal\+::\+Zone\+List$<$ T $>$}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Zone\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_zone_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Zone\+List} (int capacity, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_af1f7621b6c2be40916af5fc5a46ce517}{}\label{classv8_1_1internal_1_1_zone_list_af1f7621b6c2be40916af5fc5a46ce517}
+
+\item 
+void $\ast$ {\bfseries operator new} (size\+\_\+t size, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a957293196cdba1ac253cf42a7075bb7e}{}\label{classv8_1_1internal_1_1_zone_list_a957293196cdba1ac253cf42a7075bb7e}
+
+\item 
+{\bfseries Zone\+List} (const \hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ T $>$ \&other, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_adebcf6abb4a1df45ad36a8dadc8be12b}{}\label{classv8_1_1internal_1_1_zone_list_adebcf6abb4a1df45ad36a8dadc8be12b}
+
+\item 
+void {\bfseries Add} (const T \&element, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_aeab81ed4336f7c008d0f7b4d1dbec9ab}{}\label{classv8_1_1internal_1_1_zone_list_aeab81ed4336f7c008d0f7b4d1dbec9ab}
+
+\item 
+void {\bfseries Add\+All} (const \hyperlink{classv8_1_1internal_1_1_list}{List}$<$ T, \hyperlink{classv8_1_1internal_1_1_zone_allocation_policy}{Zone\+Allocation\+Policy} $>$ \&other, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a610996fa227a08fc6ca9e9ec75d1a2c2}{}\label{classv8_1_1internal_1_1_zone_list_a610996fa227a08fc6ca9e9ec75d1a2c2}
+
+\item 
+void {\bfseries Add\+All} (const \hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ \&other, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a27b3ed6a0f59815446a11caccbb06f18}{}\label{classv8_1_1internal_1_1_zone_list_a27b3ed6a0f59815446a11caccbb06f18}
+
+\item 
+void {\bfseries Insert\+At} (int index, const T \&element, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a9b806a6d23f9dcdeee94eae91977414b}{}\label{classv8_1_1internal_1_1_zone_list_a9b806a6d23f9dcdeee94eae91977414b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_vector}{Vector}$<$ T $>$ {\bfseries Add\+Block} (T value, int count, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_ae912beeb5c111f281017bd8a1c6ce9d2}{}\label{classv8_1_1internal_1_1_zone_list_ae912beeb5c111f281017bd8a1c6ce9d2}
+
+\item 
+void {\bfseries Allocate} (int length, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a2b505dcaa9ff72b44f8196831a1e48ca}{}\label{classv8_1_1internal_1_1_zone_list_a2b505dcaa9ff72b44f8196831a1e48ca}
+
+\item 
+void {\bfseries Initialize} (int capacity, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_ad5217fae97e20593db48ea8ed7073fab}{}\label{classv8_1_1internal_1_1_zone_list_ad5217fae97e20593db48ea8ed7073fab}
+
+\item 
+void {\bfseries operator delete} (void $\ast$pointer)\hypertarget{classv8_1_1internal_1_1_zone_list_ad34e89232a7e498218bab40cb231798d}{}\label{classv8_1_1internal_1_1_zone_list_ad34e89232a7e498218bab40cb231798d}
+
+\item 
+void {\bfseries operator delete} (void $\ast$pointer, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_zone_list_a92bd2e802a848cf5986f45a740c740c3}{}\label{classv8_1_1internal_1_1_zone_list_a92bd2e802a848cf5986f45a740c740c3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/zone.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state}{}\section{v8\+:\+:internal\+:\+:Gvn\+Basic\+Block\+State Class Reference}
+\label{classv8_1_1internal_1_1_gvn_basic_block_state}\index{v8\+::internal\+::\+Gvn\+Basic\+Block\+State@{v8\+::internal\+::\+Gvn\+Basic\+Block\+State}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Gvn\+Basic\+Block\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1internal_1_1_gvn_basic_block_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries block} ()\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_af243d97cb1c2d7f39c0dcce5a404a101}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_af243d97cb1c2d7f39c0dcce5a404a101}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$ {\bfseries map} ()\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a6f5961f87371e7727d95e30b14fb338b}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a6f5961f87371e7727d95e30b14fb338b}
+
+\item 
+H\+Side\+Effect\+Map $\ast$ {\bfseries dominators} ()\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a28a43fe653ea405cc2493748b8db3b33}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a28a43fe653ea405cc2493748b8db3b33}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries next\+\_\+in\+\_\+dominator\+\_\+tree\+\_\+traversal} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$$\ast$dominator)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a4a094a126cafa4189acd01cdc3119fcb}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a4a094a126cafa4189acd01cdc3119fcb}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries Create\+Entry} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$entry\+\_\+block, \hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$entry\+\_\+map)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a1d9de2e87efd8ad965f528ee52d91af1}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a1d9de2e87efd8ad965f528ee52d91af1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$map, H\+Side\+Effect\+Map $\ast$dominators, bool copy\+\_\+map, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_ae5463e112b8d81ce383a5835380035be}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_ae5463e112b8d81ce383a5835380035be}
+
+\item 
+bool {\bfseries is\+\_\+done} ()\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_ac8820611886e4e9bfa41b25525c80591}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_ac8820611886e4e9bfa41b25525c80591}
+
+\item 
+{\bfseries Gvn\+Basic\+Block\+State} (\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$previous, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$map, H\+Side\+Effect\+Map $\ast$dominators, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_afee21a8ad9e4ffe8b3d060381407a53b}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_afee21a8ad9e4ffe8b3d060381407a53b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries next\+\_\+dominated} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a7948fe3ae70e2a3ecc8629164f9c61c0}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a7948fe3ae70e2a3ecc8629164f9c61c0}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries push} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a68540690ad23f87a0948a167feae2a48}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a68540690ad23f87a0948a167feae2a48}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries pop} ()\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_acd7b1becc1b71bedda48c61a63d5ca95}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_acd7b1becc1b71bedda48c61a63d5ca95}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries previous\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_ade20cd53537a36adbc9a692deccb22ad}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_ade20cd53537a36adbc9a692deccb22ad}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_gvn_basic_block_state}{Gvn\+Basic\+Block\+State} $\ast$ {\bfseries next\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a3c9f9928479fc1c8821ba27306e47710}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a3c9f9928479fc1c8821ba27306e47710}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$ {\bfseries block\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a4fb99e67e91e4b970e74edcb4c893723}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a4fb99e67e91e4b970e74edcb4c893723}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_instruction_map}{H\+Instruction\+Map} $\ast$ {\bfseries map\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a09dc0e8d0a7cf7116e8ab39bd24c39b6}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a09dc0e8d0a7cf7116e8ab39bd24c39b6}
+
+\item 
+H\+Side\+Effect\+Map {\bfseries dominators\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_ab06b0b554e7eb921a184e1ea3d1685b5}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_ab06b0b554e7eb921a184e1ea3d1685b5}
+
+\item 
+int {\bfseries dominated\+\_\+index\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a8968083b4f04887295315f977ccc082d}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a8968083b4f04887295315f977ccc082d}
+
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_gvn_basic_block_state_a02831ab6066a1ddb77a35c31c815f810}{}\label{classv8_1_1internal_1_1_gvn_basic_block_state_a02831ab6066a1ddb77a35c31c815f810}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/gvn.\+cc\end{DoxyCompactItemize}

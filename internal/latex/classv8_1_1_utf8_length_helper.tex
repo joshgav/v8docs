@@ -1,0 +1,72 @@
+\hypertarget{classv8_1_1_utf8_length_helper}{}\section{v8\+:\+:Utf8\+Length\+Helper Class Reference}
+\label{classv8_1_1_utf8_length_helper}\index{v8\+::\+Utf8\+Length\+Helper@{v8\+::\+Utf8\+Length\+Helper}}
+Inheritance diagram for v8\+:\+:Utf8\+Length\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_utf8_length_helper}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1_utf8_length_helper_1_1_visitor}{Visitor}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \{ \\*
+{\bfseries k\+Ends\+With\+Leading\+Surrogate} = 1 $<$$<$ 0, 
+\\*
+{\bfseries k\+Starts\+With\+Trailing\+Surrogate} = 1 $<$$<$ 1, 
+\\*
+{\bfseries k\+Leftmost\+Edge\+Is\+Calculated} = 1 $<$$<$ 2, 
+\\*
+{\bfseries k\+Rightmost\+Edge\+Is\+Calculated} = 1 $<$$<$ 3, 
+\\*
+{\bfseries k\+Leftmost\+Edge\+Is\+Surrogate} = 1 $<$$<$ 4, 
+\\*
+{\bfseries k\+Rightmost\+Edge\+Is\+Surrogate} = 1 $<$$<$ 5
+ \}\hypertarget{classv8_1_1_utf8_length_helper_a964fff2270978f2926b768f2aa5d0623}{}\label{classv8_1_1_utf8_length_helper_a964fff2270978f2926b768f2aa5d0623}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Ends\+With\+Surrogate} (uint8\+\_\+t state)\hypertarget{classv8_1_1_utf8_length_helper_ad8e5d910b375263f132db48aab6da786}{}\label{classv8_1_1_utf8_length_helper_ad8e5d910b375263f132db48aab6da786}
+
+\item 
+static bool {\bfseries Starts\+With\+Surrogate} (uint8\+\_\+t state)\hypertarget{classv8_1_1_utf8_length_helper_a02d1622afeec32cc7226521dea334dc4}{}\label{classv8_1_1_utf8_length_helper_a02d1622afeec32cc7226521dea334dc4}
+
+\item 
+static void {\bfseries Merge\+Leaf\+Left} (int $\ast$length, uint8\+\_\+t $\ast$state, uint8\+\_\+t leaf\+\_\+state)\hypertarget{classv8_1_1_utf8_length_helper_a9010472ac0eaf7be001f783d72800d1f}{}\label{classv8_1_1_utf8_length_helper_a9010472ac0eaf7be001f783d72800d1f}
+
+\item 
+static void {\bfseries Merge\+Leaf\+Right} (int $\ast$length, uint8\+\_\+t $\ast$state, uint8\+\_\+t leaf\+\_\+state)\hypertarget{classv8_1_1_utf8_length_helper_ad501b658a8c5dccb4f28c394d747d1a7}{}\label{classv8_1_1_utf8_length_helper_ad501b658a8c5dccb4f28c394d747d1a7}
+
+\item 
+static void {\bfseries Merge\+Terminal} (int $\ast$length, uint8\+\_\+t state, uint8\+\_\+t $\ast$state\+\_\+out)\hypertarget{classv8_1_1_utf8_length_helper_a866662cbccc1452c46c45bc185068235}{}\label{classv8_1_1_utf8_length_helper_a866662cbccc1452c46c45bc185068235}
+
+\item 
+static int {\bfseries Calculate} (\hyperlink{classv8_1_1internal_1_1_cons_string}{i\+::\+Cons\+String} $\ast$current, uint8\+\_\+t $\ast$state\+\_\+out)\hypertarget{classv8_1_1_utf8_length_helper_a08d4928ad93a207d1758d72a20a1c939}{}\label{classv8_1_1_utf8_length_helper_a08d4928ad93a207d1758d72a20a1c939}
+
+\item 
+static int {\bfseries Calculate} (\hyperlink{classv8_1_1internal_1_1_cons_string}{i\+::\+Cons\+String} $\ast$current)\hypertarget{classv8_1_1_utf8_length_helper_ac645ac9c82636113933d43c8d6ebde5a}{}\label{classv8_1_1_utf8_length_helper_ac645ac9c82636113933d43c8d6ebde5a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint8\+\_\+t {\bfseries k\+Initial\+State} = 0\hypertarget{classv8_1_1_utf8_length_helper_a20624c47006b9117c0c7079f8a7f6f85}{}\label{classv8_1_1_utf8_length_helper_a20624c47006b9117c0c7079f8a7f6f85}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1_utf8_length_helper}{Utf8\+Length\+Helper})\hypertarget{classv8_1_1_utf8_length_helper_abfcd11e5d66380d915786e89086f016b}{}\label{classv8_1_1_utf8_length_helper_abfcd11e5d66380d915786e89086f016b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/api.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classv8_1_1_handle_scope}{}\section{v8\+:\+:Handle\+Scope Class Reference}
+\label{classv8_1_1_handle_scope}\index{v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Handle\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1_handle_scope}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Handle\+Scope} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_handle_scope_afdb3053d852ea467f026b025ed431e79}{}\label{classv8_1_1_handle_scope_afdb3053d852ea467f026b025ed431e79}
+
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_isolate}{Isolate} $\ast$ {\bfseries Get\+Isolate} () const \hypertarget{classv8_1_1_handle_scope_a15d1a1e76d8cd8a10d3947c3ca2e8a8d}{}\label{classv8_1_1_handle_scope_a15d1a1e76d8cd8a10d3947c3ca2e8a8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classv8_1_1_handle_scope_aac722821557f314a9cbe6b8ed8fc9d01}{Number\+Of\+Handles} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialize} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1_handle_scope_a7bb8631c1c8756b05e9232b8414dd992}{}\label{classv8_1_1_handle_scope_a7bb8631c1c8756b05e9232b8414dd992}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries Create\+Handle} (\hyperlink{classv8_1_1internal_1_1_isolate}{internal\+::\+Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$value)\hypertarget{classv8_1_1_handle_scope_a8a75b255c8ea85af0741954eead40c68}{}\label{classv8_1_1_handle_scope_a8a75b255c8ea85af0741954eead40c68}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Handle\+Scope} (const \hyperlink{classv8_1_1_handle_scope}{Handle\+Scope} \&)\hypertarget{classv8_1_1_handle_scope_a7c62e10404e105ec74b86b5d7d5e04fe}{}\label{classv8_1_1_handle_scope_a7c62e10404e105ec74b86b5d7d5e04fe}
+
+\item 
+void {\bfseries operator=} (const \hyperlink{classv8_1_1_handle_scope}{Handle\+Scope} \&)\hypertarget{classv8_1_1_handle_scope_a1529e8892e4ec96a845f6dea18f2c2ec}{}\label{classv8_1_1_handle_scope_a1529e8892e4ec96a845f6dea18f2c2ec}
+
+\item 
+void $\ast$ {\bfseries operator new} (size\+\_\+t size)\hypertarget{classv8_1_1_handle_scope_a1dd92d6bbc0bf64a66f968e08dad00a2}{}\label{classv8_1_1_handle_scope_a1dd92d6bbc0bf64a66f968e08dad00a2}
+
+\item 
+void {\bfseries operator delete} (void $\ast$, size\+\_\+t)\hypertarget{classv8_1_1_handle_scope_ab8ba9daf1a4af951e258c1d4a0f7257c}{}\label{classv8_1_1_handle_scope_ab8ba9daf1a4af951e258c1d4a0f7257c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries Create\+Handle} (\hyperlink{classv8_1_1internal_1_1_heap_object}{internal\+::\+Heap\+Object} $\ast$heap\+\_\+object, \hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$value)\hypertarget{classv8_1_1_handle_scope_a6a13a0681b7370f5ac79c1371aff0ca3}{}\label{classv8_1_1_handle_scope_a6a13a0681b7370f5ac79c1371aff0ca3}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{internal\+::\+Isolate} $\ast$ {\bfseries isolate\+\_\+}\hypertarget{classv8_1_1_handle_scope_a57195a6d30243f34c50b4293003cd242}{}\label{classv8_1_1_handle_scope_a57195a6d30243f34c50b4293003cd242}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries prev\+\_\+next\+\_\+}\hypertarget{classv8_1_1_handle_scope_a739728a1286a7d92aaeb941db593fa1d}{}\label{classv8_1_1_handle_scope_a739728a1286a7d92aaeb941db593fa1d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_object}{internal\+::\+Object} $\ast$$\ast$ {\bfseries prev\+\_\+limit\+\_\+}\hypertarget{classv8_1_1_handle_scope_a8c56251528a986904e67f28b36900bd9}{}\label{classv8_1_1_handle_scope_a8c56251528a986904e67f28b36900bd9}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class F $>$ }\\class {\bfseries Local}\hypertarget{classv8_1_1_handle_scope_afb872edb4aac7ba55f0da004113aa2b0}{}\label{classv8_1_1_handle_scope_afb872edb4aac7ba55f0da004113aa2b0}
+
+\item 
+class {\bfseries Object}\hypertarget{classv8_1_1_handle_scope_a0720b5f434e636e22a3ed34f847eec57}{}\label{classv8_1_1_handle_scope_a0720b5f434e636e22a3ed34f847eec57}
+
+\item 
+class {\bfseries Context}\hypertarget{classv8_1_1_handle_scope_ac26c806e60ca4a0547680edb68f6e39b}{}\label{classv8_1_1_handle_scope_ac26c806e60ca4a0547680edb68f6e39b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A stack-\/allocated class that governs a number of local handles. After a handle scope has been created, all local handles will be allocated within that handle scope until either the handle scope is deleted or another handle scope is created. If there is already a handle scope and a new one is created, all allocations will take place in the new handle scope until it is deleted. After that, new handles will again be allocated in the original handle scope.
+
+After the handle scope of a local handle has been deleted the garbage collector will no longer track the object stored in the handle and may deallocate it. The behavior of accessing a handle for which the handle scope has been deleted is undefined. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}!Number\+Of\+Handles@{Number\+Of\+Handles}}
+\index{Number\+Of\+Handles@{Number\+Of\+Handles}!v8\+::\+Handle\+Scope@{v8\+::\+Handle\+Scope}}
+\subsubsection[{\texorpdfstring{Number\+Of\+Handles(\+Isolate $\ast$isolate)}{NumberOfHandles(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Handle\+Scope\+::\+Number\+Of\+Handles (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1_handle_scope_aac722821557f314a9cbe6b8ed8fc9d01}{}\label{classv8_1_1_handle_scope_aac722821557f314a9cbe6b8ed8fc9d01}
+Counts the number of allocated handles. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\item 
+/\+Users/joshgav/node/v8/src/api.\+cc\end{DoxyCompactItemize}

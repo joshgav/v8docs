@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection}{}\section{v8\+:\+:internal\+:\+:J\+S\+Weak\+Collection Class Reference}
+\label{classv8_1_1internal_1_1_j_s_weak_collection}\index{v8\+::internal\+::\+J\+S\+Weak\+Collection@{v8\+::internal\+::\+J\+S\+Weak\+Collection}}
+Inheritance diagram for v8\+:\+:internal\+:\+:J\+S\+Weak\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classv8_1_1internal_1_1_j_s_weak_collection}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection_1_1_body_descriptor_impl}{Body\+Descriptor\+Impl}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Body\+Visiting\+Policy} \{ \\*
+{\bfseries k\+Visit\+Strong}, 
+\\*
+{\bfseries k\+Visit\+Weak}
+ \}\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_aaf7f8405c5b468c72a8931e845fc37f3}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_aaf7f8405c5b468c72a8931e845fc37f3}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection_1_1_body_descriptor_impl}{Body\+Descriptor\+Impl}$<$ k\+Visit\+Strong $>$ {\bfseries Body\+Descriptor}\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a60f7d47c6208872ffdc93a384a975bfd}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a60f7d47c6208872ffdc93a384a975bfd}
+
+\item 
+typedef \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection_1_1_body_descriptor_impl}{Body\+Descriptor\+Impl}$<$ k\+Visit\+Weak $>$ {\bfseries Body\+Descriptor\+Weak}\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a1b9ad5e17fb8725f9fbf4a17a97fdb5b}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a1b9ad5e17fb8725f9fbf4a17a97fdb5b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Initialize} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection}{J\+S\+Weak\+Collection} $>$ collection, \hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a553122e983caa4cc1b6de16d4d455693}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a553122e983caa4cc1b6de16d4d455693}
+
+\item 
+static void {\bfseries Set} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection}{J\+S\+Weak\+Collection} $>$ collection, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ value, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a2286836f893092b790d809b462f50ef8}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a2286836f893092b790d809b462f50ef8}
+
+\item 
+static bool {\bfseries Delete} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_j_s_weak_collection}{J\+S\+Weak\+Collection} $>$ collection, \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_object}{Object} $>$ key, int32\+\_\+t hash)\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_aa429c39e297d4809322baf09d890098f}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_aa429c39e297d4809322baf09d890098f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Table\+Offset} = J\+S\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_aec7728f81b75ffdf112c4371af4e3e61}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_aec7728f81b75ffdf112c4371af4e3e61}
+
+\item 
+static const int {\bfseries k\+Next\+Offset} = k\+Table\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a733260c7b194b11f4ba80fe0ff3c835c}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a733260c7b194b11f4ba80fe0ff3c835c}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Next\+Offset + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a9589d84cb7af40ee80511bdd2788d955}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a9589d84cb7af40ee80511bdd2788d955}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_j_s_weak_collection}{J\+S\+Weak\+Collection})\hypertarget{classv8_1_1internal_1_1_j_s_weak_collection_a4efbb46e56cacd878d4bb270402cd96e}{}\label{classv8_1_1internal_1_1_j_s_weak_collection_a4efbb46e56cacd878d4bb270402cd96e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

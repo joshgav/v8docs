@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase}{}\section{v8\+:\+:internal\+:\+:H\+Escape\+Analysis\+Phase Class Reference}
+\label{classv8_1_1internal_1_1_h_escape_analysis_phase}\index{v8\+::internal\+::\+H\+Escape\+Analysis\+Phase@{v8\+::internal\+::\+H\+Escape\+Analysis\+Phase}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Escape\+Analysis\+Phase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_h_escape_analysis_phase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Escape\+Analysis\+Phase} (\hyperlink{classv8_1_1internal_1_1_h_graph}{H\+Graph} $\ast$graph)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_ac66c85fedf2119f66dc528b466435938}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_ac66c85fedf2119f66dc528b466435938}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a2f88b7156ec353b5590d1bc189f22061}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a2f88b7156ec353b5590d1bc189f22061}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Collect\+Captured\+Values} ()\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_aead71b755a4e2571726d9b532fa1fedf}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_aead71b755a4e2571726d9b532fa1fedf}
+
+\item 
+bool {\bfseries Has\+No\+Escaping\+Uses} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$value, int size)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a24adbaa27fd8b1740a30098949d820cd}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a24adbaa27fd8b1740a30098949d820cd}
+
+\item 
+void {\bfseries Perform\+Scalar\+Replacement} ()\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a4dfd734ada1cce33de03a831d4cd906d}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a4dfd734ada1cce33de03a831d4cd906d}
+
+\item 
+void {\bfseries Analyze\+Data\+Flow} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$instr)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a16b674fd0e1aed2155370be62819efec}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a16b674fd0e1aed2155370be62819efec}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ {\bfseries New\+State} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$prev)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a38056feecc89db2d3f531ca2098acf61}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a38056feecc89db2d3f531ca2098acf61}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ {\bfseries New\+State\+For\+Allocation} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$prev)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a06d654b218b17d39ea5c6bb7e1613426}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a06d654b218b17d39ea5c6bb7e1613426}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ {\bfseries New\+State\+For\+Loop\+Header} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$prev, \hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a6bc39e2c6556caa3b484d2041cc0844b}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a6bc39e2c6556caa3b484d2041cc0844b}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ {\bfseries New\+State\+Copy} (\hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$prev, \hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$state)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_ad3236dc975c91ac19a558af4cffae834}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_ad3236dc975c91ac19a558af4cffae834}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_phi}{H\+Phi} $\ast$ {\bfseries New\+Phi\+And\+Insert} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$incoming\+\_\+value, int index)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a19f9487ada862ec23e8e7f9a8272a65a}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a19f9487ada862ec23e8e7f9a8272a65a}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries New\+Map\+Check\+And\+Insert} (\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$state, \hyperlink{classv8_1_1internal_1_1_h_check_maps}{H\+Check\+Maps} $\ast$mapcheck)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a149ac52efade6e5d1dd65a915fe85e3f}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a149ac52efade6e5d1dd65a915fe85e3f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries New\+Load\+Replacement} (\hyperlink{classv8_1_1internal_1_1_h_load_named_field}{H\+Load\+Named\+Field} $\ast$load, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$load\+\_\+value)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a4283f8b5009f74443e11c24422601501}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a4283f8b5009f74443e11c24422601501}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ {\bfseries State\+At} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_abc56ece8953a0f701736263e73335ea5}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_abc56ece8953a0f701736263e73335ea5}
+
+\item 
+void {\bfseries Set\+State\+At} (\hyperlink{classv8_1_1internal_1_1_h_basic_block}{H\+Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$state)\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a7f571f99737d338e7e53af94a69041d6}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a7f571f99737d338e7e53af94a69041d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ $>$ {\bfseries captured\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_af3fc46ff1c4514aff2f127f8286473c3}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_af3fc46ff1c4514aff2f127f8286473c3}
+
+\item 
+int {\bfseries number\+\_\+of\+\_\+objects\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a8e7e2fc70148abed823c8cf723684687}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a8e7e2fc70148abed823c8cf723684687}
+
+\item 
+int {\bfseries number\+\_\+of\+\_\+values\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a60bf7a38f8f81c703b41fd7ff0e7e1a0}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a60bf7a38f8f81c703b41fd7ff0e7e1a0}
+
+\item 
+int {\bfseries cumulative\+\_\+values\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_ad29fe26d14b6248372df3e7efe5b712e}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_ad29fe26d14b6248372df3e7efe5b712e}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_list}{Zone\+List}$<$ \hyperlink{classv8_1_1internal_1_1_h_captured_object}{H\+Captured\+Object} $\ast$ $>$ {\bfseries block\+\_\+states\+\_\+}\hypertarget{classv8_1_1internal_1_1_h_escape_analysis_phase_a87a97b59536d404f4885703aa047d6e4}{}\label{classv8_1_1internal_1_1_h_escape_analysis_phase_a87a97b59536d404f4885703aa047d6e4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/escape-\/analysis.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/escape-\/analysis.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,238 @@
+\hypertarget{classv8_1_1platform_1_1_default_platform}{}\section{v8\+:\+:platform\+:\+:Default\+Platform Class Reference}
+\label{classv8_1_1platform_1_1_default_platform}\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+Inheritance diagram for v8\+:\+:platform\+:\+:Default\+Platform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1platform_1_1_default_platform}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Thread\+Pool\+Size} (int thread\+\_\+pool\+\_\+size)\hypertarget{classv8_1_1platform_1_1_default_platform_a7dcc9c2ff945dfa873df908419b52599}{}\label{classv8_1_1platform_1_1_default_platform_a7dcc9c2ff945dfa873df908419b52599}
+
+\item 
+void {\bfseries Ensure\+Initialized} ()\hypertarget{classv8_1_1platform_1_1_default_platform_a54d4db61eee06562636227cc5c697953}{}\label{classv8_1_1platform_1_1_default_platform_a54d4db61eee06562636227cc5c697953}
+
+\item 
+bool {\bfseries Pump\+Message\+Loop} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate)\hypertarget{classv8_1_1platform_1_1_default_platform_a8ef516da228f326547ae9539690c76e6}{}\label{classv8_1_1platform_1_1_default_platform_a8ef516da228f326547ae9539690c76e6}
+
+\item 
+size\+\_\+t \hyperlink{classv8_1_1platform_1_1_default_platform_a32174d8d26b090dde9b13179a3adafad}{Number\+Of\+Available\+Background\+Threads} () override
+\item 
+void \hyperlink{classv8_1_1platform_1_1_default_platform_afcb6a6fc13ffaf97689d44e8ced97017}{Call\+On\+Background\+Thread} (\hyperlink{classv8_1_1_task}{Task} $\ast$task, \hyperlink{classv8_1_1_platform_ace7f666b2b5995bb0e898e12fa660718}{Expected\+Runtime} expected\+\_\+runtime) override
+\item 
+void \hyperlink{classv8_1_1platform_1_1_default_platform_ac7d7fb6996ce70dced9b3ad0848c267f}{Call\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate, \hyperlink{classv8_1_1_task}{Task} $\ast$task) override
+\item 
+void \hyperlink{classv8_1_1platform_1_1_default_platform_a3dbdde1854d4b58c923359ca44de4ddc}{Call\+Delayed\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_task}{Task} $\ast$task, double delay\+\_\+in\+\_\+seconds) override
+\item 
+void \hyperlink{classv8_1_1platform_1_1_default_platform_a7863da2c41903c325e4f33fa832e76fd}{Call\+Idle\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1_idle_task}{Idle\+Task} $\ast$task) override
+\item 
+bool \hyperlink{classv8_1_1platform_1_1_default_platform_a002ce8f7666b3eece368b39c67d69f07}{Idle\+Tasks\+Enabled} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate) override
+\item 
+double \hyperlink{classv8_1_1platform_1_1_default_platform_a18e7c05daaf277740e84db0e6712fc46}{Monotonically\+Increasing\+Time} () override
+\item 
+const uint8\+\_\+t $\ast$ \hyperlink{classv8_1_1platform_1_1_default_platform_a5dedff00a5627004c6f139619597dc41}{Get\+Category\+Group\+Enabled} (const char $\ast$name) override
+\item 
+const char $\ast$ \hyperlink{classv8_1_1platform_1_1_default_platform_a306b79419ee468d9473fde2925170832}{Get\+Category\+Group\+Name} (const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag) override
+\item 
+uint64\+\_\+t \hyperlink{classv8_1_1platform_1_1_default_platform_a717f22333954b61ff3936fa8f1f69884}{Add\+Trace\+Event} (char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int32\+\_\+t num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, unsigned int flags) override
+\item 
+void \hyperlink{classv8_1_1platform_1_1_default_platform_acac9d2577a312234466c31379972a182}{Update\+Trace\+Event\+Duration} (const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, uint64\+\_\+t handle) override
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ double, \hyperlink{classv8_1_1_task}{Task} $\ast$ $>$ {\bfseries Delayed\+Entry}\hypertarget{classv8_1_1platform_1_1_default_platform_a2d1cf33102fb0e61b06e0053afc8415d}{}\label{classv8_1_1platform_1_1_default_platform_a2d1cf33102fb0e61b06e0053afc8415d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1_task}{Task} $\ast$ {\bfseries Pop\+Task\+In\+Main\+Thread\+Queue} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate)\hypertarget{classv8_1_1platform_1_1_default_platform_a24711955ff86eb1201f425862c846e1e}{}\label{classv8_1_1platform_1_1_default_platform_a24711955ff86eb1201f425862c846e1e}
+
+\item 
+\hyperlink{classv8_1_1_task}{Task} $\ast$ {\bfseries Pop\+Task\+In\+Main\+Thread\+Delayed\+Queue} (\hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$isolate)\hypertarget{classv8_1_1platform_1_1_default_platform_aa9c4fe029127a7dde02cb542bd2eafe2}{}\label{classv8_1_1platform_1_1_default_platform_aa9c4fe029127a7dde02cb542bd2eafe2}
+
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1platform_1_1_default_platform}{Default\+Platform})\hypertarget{classv8_1_1platform_1_1_default_platform_aa9007648de97708bf27a7ed873f54771}{}\label{classv8_1_1platform_1_1_default_platform_aa9007648de97708bf27a7ed873f54771}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries lock\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_a267a28a0503581072c2cf7495a95b03e}{}\label{classv8_1_1platform_1_1_default_platform_a267a28a0503581072c2cf7495a95b03e}
+
+\item 
+bool {\bfseries initialized\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_abaa58596f2fa8817bf40522292536db6}{}\label{classv8_1_1platform_1_1_default_platform_abaa58596f2fa8817bf40522292536db6}
+
+\item 
+int {\bfseries thread\+\_\+pool\+\_\+size\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_ae39c20e5c36721485f4f32a36f854040}{}\label{classv8_1_1platform_1_1_default_platform_ae39c20e5c36721485f4f32a36f854040}
+
+\item 
+std\+::vector$<$ \hyperlink{classv8_1_1platform_1_1_worker_thread}{Worker\+Thread} $\ast$ $>$ {\bfseries thread\+\_\+pool\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_a163a06e2dee0501bd614cb2ee1c1a0ce}{}\label{classv8_1_1platform_1_1_default_platform_a163a06e2dee0501bd614cb2ee1c1a0ce}
+
+\item 
+\hyperlink{classv8_1_1platform_1_1_task_queue}{Task\+Queue} {\bfseries queue\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_a28c0f4d23ece546343890bc9aeff8ca9}{}\label{classv8_1_1platform_1_1_default_platform_a28c0f4d23ece546343890bc9aeff8ca9}
+
+\item 
+std\+::map$<$ \hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$, std\+::queue$<$ \hyperlink{classv8_1_1_task}{Task} $\ast$ $>$ $>$ {\bfseries main\+\_\+thread\+\_\+queue\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_a2409cca7717da224205d44ebb6b6b699}{}\label{classv8_1_1platform_1_1_default_platform_a2409cca7717da224205d44ebb6b6b699}
+
+\item 
+std\+::map$<$ \hyperlink{classv8_1_1_isolate}{v8\+::\+Isolate} $\ast$, std\+::priority\+\_\+queue$<$ Delayed\+Entry, std\+::vector$<$ Delayed\+Entry $>$, std\+::greater$<$ Delayed\+Entry $>$ $>$ $>$ {\bfseries main\+\_\+thread\+\_\+delayed\+\_\+queue\+\_\+}\hypertarget{classv8_1_1platform_1_1_default_platform_aa62b1c0f029971174b3111a164e0b547}{}\label{classv8_1_1platform_1_1_default_platform_aa62b1c0f029971174b3111a164e0b547}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Max\+Thread\+Pool\+Size} = 8\hypertarget{classv8_1_1platform_1_1_default_platform_ac7fb485044209ec87f8d53d9be9b1a7e}{}\label{classv8_1_1platform_1_1_default_platform_ac7fb485044209ec87f8d53d9be9b1a7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Add\+Trace\+Event@{Add\+Trace\+Event}}
+\index{Add\+Trace\+Event@{Add\+Trace\+Event}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Add\+Trace\+Event(char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int32\+\_\+t num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, unsigned int flags) override}{AddTraceEvent(char phase, const uint8_t *category_enabled_flag, const char *name, const char *scope, uint64_t id, uint64_t bind_id, int32_t num_args, const char **arg_names, const uint8_t *arg_types, const uint64_t *arg_values, unsigned int flags) override}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t v8\+::platform\+::\+Default\+Platform\+::\+Add\+Trace\+Event (
+\begin{DoxyParamCaption}
+\item[{char}]{phase, }
+\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{scope, }
+\item[{uint64\+\_\+t}]{id, }
+\item[{uint64\+\_\+t}]{bind\+\_\+id, }
+\item[{int32\+\_\+t}]{num\+\_\+args, }
+\item[{const char $\ast$$\ast$}]{arg\+\_\+names, }
+\item[{const uint8\+\_\+t $\ast$}]{arg\+\_\+types, }
+\item[{const uint64\+\_\+t $\ast$}]{arg\+\_\+values, }
+\item[{unsigned int}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a717f22333954b61ff3936fa8f1f69884}{}\label{classv8_1_1platform_1_1_default_platform_a717f22333954b61ff3936fa8f1f69884}
+Adds a trace event to the platform tracing system. This function call is usually the result of a T\+R\+A\+C\+E\+\_\+$\ast$ macro from trace\+\_\+event\+\_\+common.\+h when tracing and the category of the particular trace are enabled. It is not advisable to call this function on its own; it is really only meant to be used by the trace macros. The returned handle can be used by Update\+Trace\+Event\+Duration to update the duration of C\+O\+M\+P\+L\+E\+TE events. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_ab4ef5713fb5bec0f2fe0981745342364}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}}
+\index{Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Call\+Delayed\+On\+Foreground\+Thread(\+Isolate $\ast$isolate, Task $\ast$task, double delay\+\_\+in\+\_\+seconds) override}{CallDelayedOnForegroundThread(Isolate *isolate, Task *task, double delay_in_seconds) override}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::platform\+::\+Default\+Platform\+::\+Call\+Delayed\+On\+Foreground\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Task} $\ast$}]{task, }
+\item[{double}]{delay\+\_\+in\+\_\+seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a3dbdde1854d4b58c923359ca44de4ddc}{}\label{classv8_1_1platform_1_1_default_platform_a3dbdde1854d4b58c923359ca44de4ddc}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ after the given number of seconds $\vert$delay\+\_\+in\+\_\+seconds$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1_v8}{V8}. 
+
+Implements \hyperlink{classv8_1_1_platform_a72bff12d95fbf2118279b0e8f53f8a4b}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}}
+\index{Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Call\+Idle\+On\+Foreground\+Thread(\+Isolate $\ast$isolate, Idle\+Task $\ast$task) override}{CallIdleOnForegroundThread(Isolate *isolate, IdleTask *task) override}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::platform\+::\+Default\+Platform\+::\+Call\+Idle\+On\+Foreground\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Idle\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a7863da2c41903c325e4f33fa832e76fd}{}\label{classv8_1_1platform_1_1_default_platform_a7863da2c41903c325e4f33fa832e76fd}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ when the embedder is idle. Requires that Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1_v8}{V8}. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_ae495999016432391f04d323452084b12}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}}
+\index{Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Call\+On\+Background\+Thread(\+Task $\ast$task, Expected\+Runtime expected\+\_\+runtime) override}{CallOnBackgroundThread(Task *task, ExpectedRuntime expected_runtime) override}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::platform\+::\+Default\+Platform\+::\+Call\+On\+Background\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{task, }
+\item[{{\bf Expected\+Runtime}}]{expected\+\_\+runtime}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_afcb6a6fc13ffaf97689d44e8ced97017}{}\label{classv8_1_1platform_1_1_default_platform_afcb6a6fc13ffaf97689d44e8ced97017}
+Schedules a task to be invoked on a background thread. $\vert$expected\+\_\+runtime$\vert$ indicates that the task will run a long time. The \hyperlink{classv8_1_1_platform}{Platform} implementation takes ownership of $\vert$task$\vert$. There is no guarantee about order of execution of tasks wrt order of scheduling, nor is there a guarantee about the thread the task will be run on. 
+
+Implements \hyperlink{classv8_1_1_platform_aa715e6839c1954b4e23b9d2df00bd3ea}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Call\+On\+Foreground\+Thread@{Call\+On\+Foreground\+Thread}}
+\index{Call\+On\+Foreground\+Thread@{Call\+On\+Foreground\+Thread}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Call\+On\+Foreground\+Thread(v8\+::\+Isolate $\ast$isolate, Task $\ast$task) override}{CallOnForegroundThread(v8::Isolate *isolate, Task *task) override}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::platform\+::\+Default\+Platform\+::\+Call\+On\+Foreground\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf v8\+::\+Isolate} $\ast$}]{isolate, }
+\item[{{\bf Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_ac7d7fb6996ce70dced9b3ad0848c267f}{}\label{classv8_1_1platform_1_1_default_platform_ac7d7fb6996ce70dced9b3ad0848c267f}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1_v8}{V8}. 
+
+Implements \hyperlink{classv8_1_1_platform_a8fa13959f919d1d3ff170bceea939915}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Get\+Category\+Group\+Enabled@{Get\+Category\+Group\+Enabled}}
+\index{Get\+Category\+Group\+Enabled@{Get\+Category\+Group\+Enabled}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Get\+Category\+Group\+Enabled(const char $\ast$name) override}{GetCategoryGroupEnabled(const char *name) override}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t $\ast$ v8\+::platform\+::\+Default\+Platform\+::\+Get\+Category\+Group\+Enabled (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a5dedff00a5627004c6f139619597dc41}{}\label{classv8_1_1platform_1_1_default_platform_a5dedff00a5627004c6f139619597dc41}
+Called by T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T$\ast$ macros, don\textquotesingle{}t call this directly. The name parameter is a category group for example\+: T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T0(\char`\"{}v8,parse\char`\"{}, \char`\"{}\+V8.\+Parse\char`\"{}) The pointer returned points to a value with zero or more of the bits defined in Category\+Group\+Enabled\+Flags. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_a5b81982481986c80d3f613dde54494da}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Get\+Category\+Group\+Name@{Get\+Category\+Group\+Name}}
+\index{Get\+Category\+Group\+Name@{Get\+Category\+Group\+Name}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Get\+Category\+Group\+Name(const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag) override}{GetCategoryGroupName(const uint8_t *category_enabled_flag) override}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ v8\+::platform\+::\+Default\+Platform\+::\+Get\+Category\+Group\+Name (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a306b79419ee468d9473fde2925170832}{}\label{classv8_1_1platform_1_1_default_platform_a306b79419ee468d9473fde2925170832}
+Gets the category group name of the given category\+\_\+enabled\+\_\+flag pointer. Usually used while serliazing T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+Ts. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_a02dde4138b387f1ae2b53190cdac2afc}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}}
+\index{Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Idle\+Tasks\+Enabled(\+Isolate $\ast$isolate) override}{IdleTasksEnabled(Isolate *isolate) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::platform\+::\+Default\+Platform\+::\+Idle\+Tasks\+Enabled (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a002ce8f7666b3eece368b39c67d69f07}{}\label{classv8_1_1platform_1_1_default_platform_a002ce8f7666b3eece368b39c67d69f07}
+Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_ad229642bf16a066d2e8d866dc128141e}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
+\index{Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Monotonically\+Increasing\+Time() override}{MonotonicallyIncreasingTime() override}}]{\setlength{\rightskip}{0pt plus 5cm}double v8\+::platform\+::\+Default\+Platform\+::\+Monotonically\+Increasing\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a18e7c05daaf277740e84db0e6712fc46}{}\label{classv8_1_1platform_1_1_default_platform_a18e7c05daaf277740e84db0e6712fc46}
+Monotonically increasing time in seconds from an arbitrary fixed point in the past. This function is expected to return at least millisecond-\/precision values. For this reason, it is recommended that the fixed point be no further in the past than the epoch. 
+
+Implements \hyperlink{classv8_1_1_platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Number\+Of\+Available\+Background\+Threads@{Number\+Of\+Available\+Background\+Threads}}
+\index{Number\+Of\+Available\+Background\+Threads@{Number\+Of\+Available\+Background\+Threads}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Number\+Of\+Available\+Background\+Threads() override}{NumberOfAvailableBackgroundThreads() override}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::platform\+::\+Default\+Platform\+::\+Number\+Of\+Available\+Background\+Threads (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_a32174d8d26b090dde9b13179a3adafad}{}\label{classv8_1_1platform_1_1_default_platform_a32174d8d26b090dde9b13179a3adafad}
+Gets the number of threads that are used to execute background tasks. Is used to estimate the number of tasks a work package should be split into. A return value of 0 means that there are no background threads available. Note that a value of 0 won\textquotesingle{}t prohibit \hyperlink{classv8_1_1_v8}{V8} from posting tasks using $\vert$\+Call\+On\+Background\+Thread$\vert$. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_a15886ccf5a6a085a2192b305709a527c}{v8\+::\+Platform}.
+
+\index{v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}!Update\+Trace\+Event\+Duration@{Update\+Trace\+Event\+Duration}}
+\index{Update\+Trace\+Event\+Duration@{Update\+Trace\+Event\+Duration}!v8\+::platform\+::\+Default\+Platform@{v8\+::platform\+::\+Default\+Platform}}
+\subsubsection[{\texorpdfstring{Update\+Trace\+Event\+Duration(const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, uint64\+\_\+t handle) override}{UpdateTraceEventDuration(const uint8_t *category_enabled_flag, const char *name, uint64_t handle) override}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::platform\+::\+Default\+Platform\+::\+Update\+Trace\+Event\+Duration (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag, }
+\item[{const char $\ast$}]{name, }
+\item[{uint64\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1platform_1_1_default_platform_acac9d2577a312234466c31379972a182}{}\label{classv8_1_1platform_1_1_default_platform_acac9d2577a312234466c31379972a182}
+Sets the duration field of a C\+O\+M\+P\+L\+E\+TE trace event. It must be called with the handle returned from \hyperlink{classv8_1_1platform_1_1_default_platform_a717f22333954b61ff3936fa8f1f69884}{Add\+Trace\+Event()}. 
+
+Reimplemented from \hyperlink{classv8_1_1_platform_aa7ead571c0b19687635a930d9c67b73b}{v8\+::\+Platform}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/libplatform/default-\/platform.\+h\item 
+/\+Users/joshgav/node/v8/src/libplatform/default-\/platform.\+cc\end{DoxyCompactItemize}

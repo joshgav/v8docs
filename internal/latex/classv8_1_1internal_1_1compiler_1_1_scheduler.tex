@@ -1,0 +1,162 @@
+\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler}{}\section{v8\+:\+:internal\+:\+:compiler\+:\+:Scheduler Class Reference}
+\label{classv8_1_1internal_1_1compiler_1_1_scheduler}\index{v8\+::internal\+::compiler\+::\+Scheduler@{v8\+::internal\+::compiler\+::\+Scheduler}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1internal_1_1compiler_1_1_scheduler_1_1_scheduler_data}{Scheduler\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Flag} \{ \\*
+{\bfseries k\+No\+Flags} = 0u, 
+\\*
+{\bfseries k\+Split\+Nodes} = 1u $<$$<$ 1
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a7b78d98e449aadb3548a311754b624d5}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a7b78d98e449aadb3548a311754b624d5}
+
+\item 
+typedef \hyperlink{classv8_1_1base_1_1_flags}{base\+::\+Flags}$<$ Flag $>$ {\bfseries Flags}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a11c3273ecfdea86e069c3de0021859b5}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a11c3273ecfdea86e069c3de0021859b5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$ {\bfseries Compute\+Schedule} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a582cbc9e53e1ece9da23e9c395c84e7a}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a582cbc9e53e1ece9da23e9c395c84e7a}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_zone_vector}{Basic\+Block\+Vector} $\ast$ {\bfseries Compute\+Special\+R\+PO} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$schedule)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ab81197c5c4cb6682f54f8b983af0a7df}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ab81197c5c4cb6682f54f8b983af0a7df}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Placement} \{ \\*
+{\bfseries k\+Unknown}, 
+\\*
+{\bfseries k\+Schedulable}, 
+\\*
+{\bfseries k\+Fixed}, 
+\\*
+{\bfseries k\+Coupled}, 
+\\*
+{\bfseries k\+Scheduled}
+ \}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ad74e5187da66584bb223b5e06f62d347}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ad74e5187da66584bb223b5e06f62d347}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Scheduler} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$graph, \hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$schedule, \hyperlink{classv8_1_1base_1_1_flags}{Flags} flags)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ae7150a93bd7d30083400ecfdfa2156b6}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ae7150a93bd7d30083400ecfdfa2156b6}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_scheduler_1_1_scheduler_data}{Scheduler\+Data} {\bfseries Default\+Scheduler\+Data} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ab785aaee578456308cd97c489ba4f74d}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ab785aaee578456308cd97c489ba4f74d}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1compiler_1_1_scheduler_1_1_scheduler_data}{Scheduler\+Data} $\ast$ {\bfseries Get\+Data} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a30c790168cd416d0eea46332db06d000}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a30c790168cd416d0eea46332db06d000}
+
+\item 
+Placement {\bfseries Get\+Placement} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ab5df635f6a7eb61f08aadaaeb57f3119}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ab5df635f6a7eb61f08aadaaeb57f3119}
+
+\item 
+void {\bfseries Update\+Placement} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, Placement placement)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a2c6b9f21d895554989320bae1e5e4cf8}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a2c6b9f21d895554989320bae1e5e4cf8}
+
+\item 
+bool {\bfseries Is\+Coupled\+Control\+Edge} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, int index)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a9819e1fdee70ec2833c66df9636d3d12}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a9819e1fdee70ec2833c66df9636d3d12}
+
+\item 
+void {\bfseries Increment\+Unscheduled\+Use\+Count} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, int index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$from)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a130d6450edb1f5790af1d86a395cc2a2}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a130d6450edb1f5790af1d86a395cc2a2}
+
+\item 
+void {\bfseries Decrement\+Unscheduled\+Use\+Count} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node, int index, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$from)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a07d0e3969d97fb571d4f89feee885c48}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a07d0e3969d97fb571d4f89feee885c48}
+
+\item 
+void {\bfseries Propagate\+Immediate\+Dominators} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$block)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a6726c9afa79bc98f1fcf830affcd0155}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a6726c9afa79bc98f1fcf830affcd0155}
+
+\item 
+void {\bfseries Build\+C\+FG} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ae0c0c9921a224e6db5638749e340ff02}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ae0c0c9921a224e6db5638749e340ff02}
+
+\item 
+void {\bfseries Compute\+Special\+R\+P\+O\+Numbering} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a2f140ed9f68b435d6006997d0e67c674}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a2f140ed9f68b435d6006997d0e67c674}
+
+\item 
+void {\bfseries Generate\+Immediate\+Dominator\+Tree} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a49e05f2f86f91fa0737564284f4825e9}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a49e05f2f86f91fa0737564284f4825e9}
+
+\item 
+void {\bfseries Prepare\+Uses} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a358ae5f1fe80555129fe0e02bdb7772b}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a358ae5f1fe80555129fe0e02bdb7772b}
+
+\item 
+void {\bfseries Schedule\+Early} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a07c746a3122b17e1d23e02cafe26edd7}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a07c746a3122b17e1d23e02cafe26edd7}
+
+\item 
+void {\bfseries Schedule\+Late} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ae5ef05d89bdfd868eb0d28d91d1f775e}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ae5ef05d89bdfd868eb0d28d91d1f775e}
+
+\item 
+void {\bfseries Seal\+Final\+Schedule} ()\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_afcfe8a68238b50746505ce5c1deac5d6}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_afcfe8a68238b50746505ce5c1deac5d6}
+
+\item 
+void {\bfseries Fuse\+Floating\+Control} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$block, \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$node)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_aa648fe6a7355eb1a0ac9be6bcd21642a}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_aa648fe6a7355eb1a0ac9be6bcd21642a}
+
+\item 
+void {\bfseries Move\+Planned\+Nodes} (\hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$from, \hyperlink{classv8_1_1internal_1_1compiler_1_1_basic_block}{Basic\+Block} $\ast$to)\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a5f380c89d9a80160576c64cc0d4cacc6}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a5f380c89d9a80160576c64cc0d4cacc6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$ {\bfseries zone\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a3ef65c44f3ee52eb0dd42b2f9c988f6d}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a3ef65c44f3ee52eb0dd42b2f9c988f6d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_graph}{Graph} $\ast$ {\bfseries graph\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a2dc0919c1e09b33254468425bfaf2471}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a2dc0919c1e09b33254468425bfaf2471}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_schedule}{Schedule} $\ast$ {\bfseries schedule\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ac4ea31a3743eac864d4361637cdcf4a8}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ac4ea31a3743eac864d4361637cdcf4a8}
+
+\item 
+\hyperlink{classv8_1_1base_1_1_flags}{Flags} {\bfseries flags\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a2bd4868a6daf3eef9ea192c5d1c11722}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a2bd4868a6daf3eef9ea192c5d1c11722}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector\+Vector} {\bfseries scheduled\+\_\+nodes\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a4879fe599730b3e9ed46ab9863c3b5e6}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a4879fe599730b3e9ed46ab9863c3b5e6}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Node\+Vector} {\bfseries schedule\+\_\+root\+\_\+nodes\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a5c04023b0f5ffa246b93888af50c5a3c}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a5c04023b0f5ffa246b93888af50c5a3c}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_queue}{Zone\+Queue}$<$ \hyperlink{classv8_1_1internal_1_1compiler_1_1_node}{Node} $\ast$ $>$ {\bfseries schedule\+\_\+queue\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a89b03176e7eaa7ef483df0aebb0ec726}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a89b03176e7eaa7ef483df0aebb0ec726}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_zone_vector}{Zone\+Vector}$<$ \hyperlink{structv8_1_1internal_1_1compiler_1_1_scheduler_1_1_scheduler_data}{Scheduler\+Data} $>$ {\bfseries node\+\_\+data\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_aca59fb54a6fff11d3b8c30200f2fa92f}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_aca59fb54a6fff11d3b8c30200f2fa92f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_c_f_g_builder}{C\+F\+G\+Builder} $\ast$ {\bfseries control\+\_\+flow\+\_\+builder\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a118843080ac513703c33cc5262a5cf70}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a118843080ac513703c33cc5262a5cf70}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_special_r_p_o_numberer}{Special\+R\+P\+O\+Numberer} $\ast$ {\bfseries special\+\_\+rpo\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a1d7dc86083a9233be9612d2db740d747}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a1d7dc86083a9233be9612d2db740d747}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1compiler_1_1_control_equivalence}{Control\+Equivalence} $\ast$ {\bfseries equivalence\+\_\+}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a54420e8a5fbd7470488098b8528d5bc3}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a54420e8a5fbd7470488098b8528d5bc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries C\+F\+G\+Builder}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a651ba68d55963fc2c72f63d3d9dc8d35}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a651ba68d55963fc2c72f63d3d9dc8d35}
+
+\item 
+class {\bfseries Special\+R\+P\+O\+Numberer}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a70b85df8387fa930fde2fb246ee98b9c}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a70b85df8387fa930fde2fb246ee98b9c}
+
+\item 
+class {\bfseries Prepare\+Uses\+Visitor}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_ac92a424aa5c252752d4dc917d9d2047b}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_ac92a424aa5c252752d4dc917d9d2047b}
+
+\item 
+class {\bfseries Schedule\+Early\+Node\+Visitor}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a95c07d0ec2448034d53b1b8746fd092c}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a95c07d0ec2448034d53b1b8746fd092c}
+
+\item 
+class {\bfseries Schedule\+Late\+Node\+Visitor}\hypertarget{classv8_1_1internal_1_1compiler_1_1_scheduler_a1323738e293e91819df22cb24f986016}{}\label{classv8_1_1internal_1_1compiler_1_1_scheduler_a1323738e293e91819df22cb24f986016}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/compiler/scheduler.\+h\item 
+/\+Users/joshgav/node/v8/src/compiler/scheduler.\+cc\end{DoxyCompactItemize}

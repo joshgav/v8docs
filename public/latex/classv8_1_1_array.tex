@@ -1,0 +1,64 @@
+\hypertarget{classv8_1_1_array}{}\section{v8\+:\+:Array Class Reference}
+\label{classv8_1_1_array}\index{v8\+::\+Array@{v8\+::\+Array}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries Length} () const \hypertarget{classv8_1_1_array_a3c47dfd8d26e60ed4fcdc683034d6d9c}{}\label{classv8_1_1_array_a3c47dfd8d26e60ed4fcdc683034d6d9c}
+
+\item 
+\hyperlink{classv8_1_1_array_ae4d15fb9781bcd653e5eecffd4d0ffac}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Cloning is not supported.\char`\"{}, Local$<$ \hyperlink{classv8_1_1_object}{Object} $>$ Clone\+Element\+At(uint32\+\_\+t index))
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Cloning is not supported.\char`\"{}, Maybe\+Local$<$ \hyperlink{classv8_1_1_object}{Object} $>$ Clone\+Element\+At(\hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_context}{Context} $>$ context,                                                                                                                                                                                               uint32\+\_\+t index))\hypertarget{classv8_1_1_array_ae30e4a34fc94cd4b52cd21d508b6e3b7}{}\label{classv8_1_1_array_ae30e4a34fc94cd4b52cd21d508b6e3b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1_local}{Local}$<$ \hyperlink{classv8_1_1_array}{Array} $>$ \hyperlink{classv8_1_1_array_a892f18fe6a25dfc0bc7b435759a30226}{New} (\hyperlink{classv8_1_1_isolate}{Isolate} $\ast$isolate, int length=0)
+\item 
+static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1_array}{Array} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\hypertarget{classv8_1_1_array_ae56792766f8513395c3ebe8c29afde4b}{}\label{classv8_1_1_array_ae56792766f8513395c3ebe8c29afde4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Check\+Cast} (\hyperlink{classv8_1_1_value}{Value} $\ast$obj)\hypertarget{classv8_1_1_array_af0b37e9453a594b16c7f6ad2c07b11ac}{}\label{classv8_1_1_array_af0b37e9453a594b16c7f6ad2c07b11ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of the built-\/in array constructor (E\+C\+M\+A-\/262, 15.\+4.\+2). 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
+\index{New@{New}!v8\+::\+Array@{v8\+::\+Array}}
+\subsubsection[{\texorpdfstring{New(\+Isolate $\ast$isolate, int length=0)}{New(Isolate *isolate, int length=0)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array}$>$ v8\+::\+Array\+::\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{int}]{length = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1_array_a892f18fe6a25dfc0bc7b435759a30226}{}\label{classv8_1_1_array_a892f18fe6a25dfc0bc7b435759a30226}
+Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. \index{v8\+::\+Array@{v8\+::\+Array}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Array@{v8\+::\+Array}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Cloning is not supported."", Local$<$ Object $>$ Clone\+Element\+At(uint32\+\_\+t index))}{V8_DEPRECATED("Cloning is not supported.", Local< Object > CloneElementAt(uint32_t index))}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Array\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Cloning is not supported.\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Object} $>$ }]{Clone\+Element\+Atuint32\+\_\+t index}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1_array_ae4d15fb9781bcd653e5eecffd4d0ffac}{}\label{classv8_1_1_array_ae4d15fb9781bcd653e5eecffd4d0ffac}
+Clones an element at index $\vert$index$\vert$. Returns an empty handle if cloning fails (for any reason). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/include/v8.\+h\end{DoxyCompactItemize}

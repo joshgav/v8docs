@@ -1,0 +1,92 @@
+\hypertarget{classv8_1_1internal_1_1_heap_number}{}\section{v8\+:\+:internal\+:\+:Heap\+Number Class Reference}
+\label{classv8_1_1internal_1_1_heap_number}\index{v8\+::internal\+::\+Heap\+Number@{v8\+::internal\+::\+Heap\+Number}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Heap\+Number\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_heap_number}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries value} () const \hypertarget{classv8_1_1internal_1_1_heap_number_a9d64b2e3b1c243fad7d9217ec63e4f6e}{}\label{classv8_1_1internal_1_1_heap_number_a9d64b2e3b1c243fad7d9217ec63e4f6e}
+
+\item 
+void {\bfseries set\+\_\+value} (double value)\hypertarget{classv8_1_1internal_1_1_heap_number_ac6726d8db750c4b11885a6b6e724f640}{}\label{classv8_1_1internal_1_1_heap_number_ac6726d8db750c4b11885a6b6e724f640}
+
+\item 
+bool {\bfseries Heap\+Number\+Boolean\+Value} ()\hypertarget{classv8_1_1internal_1_1_heap_number_a2d2c0f1c6b28629c46aea753d3bb0bb6}{}\label{classv8_1_1internal_1_1_heap_number_a2d2c0f1c6b28629c46aea753d3bb0bb6}
+
+\item 
+void {\bfseries Heap\+Number\+Print} (std\+::ostream \&os)\hypertarget{classv8_1_1internal_1_1_heap_number_a505e3c19a10517e2743a51f28be2bbfa}{}\label{classv8_1_1internal_1_1_heap_number_a505e3c19a10517e2743a51f28be2bbfa}
+
+\item 
+int {\bfseries get\+\_\+exponent} ()\hypertarget{classv8_1_1internal_1_1_heap_number_a90729bf6ec40a432cace27186f005584}{}\label{classv8_1_1internal_1_1_heap_number_a90729bf6ec40a432cace27186f005584}
+
+\item 
+int {\bfseries get\+\_\+sign} ()\hypertarget{classv8_1_1internal_1_1_heap_number_abef98f476e59d21c329250c98330d986}{}\label{classv8_1_1internal_1_1_heap_number_abef98f476e59d21c329250c98330d986}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Value\+Offset} = Heap\+Object\+::k\+Header\+Size\hypertarget{classv8_1_1internal_1_1_heap_number_a52b57ba48e6335c63496c78cd666c88b}{}\label{classv8_1_1internal_1_1_heap_number_a52b57ba48e6335c63496c78cd666c88b}
+
+\item 
+static const int {\bfseries k\+Size} = k\+Value\+Offset + k\+Double\+Size\hypertarget{classv8_1_1internal_1_1_heap_number_ab06326529091d16f4421faa17e04fb2a}{}\label{classv8_1_1internal_1_1_heap_number_ab06326529091d16f4421faa17e04fb2a}
+
+\item 
+static const uint32\+\_\+t {\bfseries k\+Sign\+Mask} = 0x80000000u\hypertarget{classv8_1_1internal_1_1_heap_number_a50eaa87f7bf62832731d20f644d4a33e}{}\label{classv8_1_1internal_1_1_heap_number_a50eaa87f7bf62832731d20f644d4a33e}
+
+\item 
+static const uint32\+\_\+t {\bfseries k\+Exponent\+Mask} = 0x7ff00000u\hypertarget{classv8_1_1internal_1_1_heap_number_a5fc3ecac0d194d03ccc4eabc9b3f5023}{}\label{classv8_1_1internal_1_1_heap_number_a5fc3ecac0d194d03ccc4eabc9b3f5023}
+
+\item 
+static const uint32\+\_\+t {\bfseries k\+Mantissa\+Mask} = 0xfffffu\hypertarget{classv8_1_1internal_1_1_heap_number_a53057546a7ea98c7bfab2a274f06079f}{}\label{classv8_1_1internal_1_1_heap_number_a53057546a7ea98c7bfab2a274f06079f}
+
+\item 
+static const int {\bfseries k\+Mantissa\+Bits} = 52\hypertarget{classv8_1_1internal_1_1_heap_number_a3a9f18d204db4321136c3263b54eadbd}{}\label{classv8_1_1internal_1_1_heap_number_a3a9f18d204db4321136c3263b54eadbd}
+
+\item 
+static const int {\bfseries k\+Exponent\+Bits} = 11\hypertarget{classv8_1_1internal_1_1_heap_number_a7badd159303921f42ed5c74ad7c9fa00}{}\label{classv8_1_1internal_1_1_heap_number_a7badd159303921f42ed5c74ad7c9fa00}
+
+\item 
+static const int {\bfseries k\+Exponent\+Bias} = 1023\hypertarget{classv8_1_1internal_1_1_heap_number_a87eae572809064057a6641c6b5805b42}{}\label{classv8_1_1internal_1_1_heap_number_a87eae572809064057a6641c6b5805b42}
+
+\item 
+static const int {\bfseries k\+Exponent\+Shift} = 20\hypertarget{classv8_1_1internal_1_1_heap_number_aa70a7fa7eb34d309e4cfac3c2954650b}{}\label{classv8_1_1internal_1_1_heap_number_aa70a7fa7eb34d309e4cfac3c2954650b}
+
+\item 
+static const int {\bfseries k\+Infinity\+Or\+Nan\+Exponent}
+\item 
+static const int {\bfseries k\+Mantissa\+Bits\+In\+Top\+Word} = 20\hypertarget{classv8_1_1internal_1_1_heap_number_a6198e16a781f4aa92fcc8babace8f5ea}{}\label{classv8_1_1internal_1_1_heap_number_a6198e16a781f4aa92fcc8babace8f5ea}
+
+\item 
+static const int {\bfseries k\+Non\+Mantissa\+Bits\+In\+Top\+Word} = 12\hypertarget{classv8_1_1internal_1_1_heap_number_af83833ed477b0b07a40419938d43e406}{}\label{classv8_1_1internal_1_1_heap_number_af83833ed477b0b07a40419938d43e406}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+I\+M\+P\+L\+I\+C\+I\+T\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} (\hyperlink{classv8_1_1internal_1_1_heap_number}{Heap\+Number})\hypertarget{classv8_1_1internal_1_1_heap_number_a70e02cebaf65f4e5043f59eaf47c57cc}{}\label{classv8_1_1internal_1_1_heap_number_a70e02cebaf65f4e5043f59eaf47c57cc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::internal\+::\+Heap\+Number@{v8\+::internal\+::\+Heap\+Number}!k\+Infinity\+Or\+Nan\+Exponent@{k\+Infinity\+Or\+Nan\+Exponent}}
+\index{k\+Infinity\+Or\+Nan\+Exponent@{k\+Infinity\+Or\+Nan\+Exponent}!v8\+::internal\+::\+Heap\+Number@{v8\+::internal\+::\+Heap\+Number}}
+\subsubsection[{\texorpdfstring{k\+Infinity\+Or\+Nan\+Exponent}{kInfinityOrNanExponent}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::internal\+::\+Heap\+Number\+::k\+Infinity\+Or\+Nan\+Exponent\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1internal_1_1_heap_number_a35bb7c72d798b1e4c47339a61dfa1f33}{}\label{classv8_1_1internal_1_1_heap_number_a35bb7c72d798b1e4c47339a61dfa1f33}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      (kExponentMask >> kExponentShift) - kExponentBias
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+h\item 
+/\+Users/joshgav/node/v8/src/objects-\/inl.\+h\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

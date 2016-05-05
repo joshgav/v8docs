@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state}{}\section{v8\+:\+:internal\+:\+:String\+Comparator\+:\+:State Class Reference}
+\label{classv8_1_1internal_1_1_string_comparator_1_1_state}\index{v8\+::internal\+::\+String\+Comparator\+::\+State@{v8\+::internal\+::\+String\+Comparator\+::\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init} (\hyperlink{classv8_1_1internal_1_1_string}{String} $\ast$string)\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_aff51925b2a70afb42ec6711e532b3dea}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_aff51925b2a70afb42ec6711e532b3dea}
+
+\item 
+void {\bfseries Visit\+One\+Byte\+String} (const uint8\+\_\+t $\ast$chars, int length)\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_a1df64ee023e0306e314942dee8ecb77d}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_a1df64ee023e0306e314942dee8ecb77d}
+
+\item 
+void {\bfseries Visit\+Two\+Byte\+String} (const uint16\+\_\+t $\ast$chars, int length)\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_aad91a7c9f04af53381cb2f7dbb65c47b}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_aad91a7c9f04af53381cb2f7dbb65c47b}
+
+\item 
+void {\bfseries Advance} (int consumed)\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_aa74232608ec07ffd539254c3e4ca666f}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_aa74232608ec07ffd539254c3e4ca666f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_cons_string_iterator}{Cons\+String\+Iterator} {\bfseries iter\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_a35f04c2dabfad6fc2ad5642ff750b6fe}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_a35f04c2dabfad6fc2ad5642ff750b6fe}
+
+\item 
+bool {\bfseries is\+\_\+one\+\_\+byte\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_a3ebc45d94abd2047971e6baa84f7d54e}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_a3ebc45d94abd2047971e6baa84f7d54e}
+
+\item 
+int {\bfseries length\+\_\+}\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_a123ebc5f513ca8e7ffb7052a323fb1d6}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_a123ebc5f513ca8e7ffb7052a323fb1d6}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const uint8\_t $\ast$ {\bfseries buffer8\_}\\
+\>const uint16\_t $\ast$ {\bfseries buffer16\_}\\
+\}; \hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_ac8bdd4dfd9ec48f41d95fa33481faac5}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_ac8bdd4dfd9ec48f41d95fa33481faac5}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+GN} (\hyperlink{classv8_1_1internal_1_1_string_comparator_1_1_state}{State})\hypertarget{classv8_1_1internal_1_1_string_comparator_1_1_state_a1a2413084d20f729e3fbde3616e4a2d6}{}\label{classv8_1_1internal_1_1_string_comparator_1_1_state_a1a2413084d20f729e3fbde3616e4a2d6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/objects.\+cc\end{DoxyCompactItemize}

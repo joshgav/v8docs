@@ -1,0 +1,54 @@
+\hypertarget{classv8_1_1internal_1_1_h_mul}{}\section{v8\+:\+:internal\+:\+:H\+Mul Class Reference}
+\label{classv8_1_1internal_1_1_h_mul}\index{v8\+::internal\+::\+H\+Mul@{v8\+::internal\+::\+H\+Mul}}
+Inheritance diagram for v8\+:\+:internal\+:\+:H\+Mul\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classv8_1_1internal_1_1_h_mul}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$ {\bfseries Canonicalize} () override\hypertarget{classv8_1_1internal_1_1_h_mul_a81a647492e6ed5b83adb171a1d7e6725}{}\label{classv8_1_1internal_1_1_h_mul_a81a647492e6ed5b83adb171a1d7e6725}
+
+\item 
+bool {\bfseries Is\+Commutative} () const  override\hypertarget{classv8_1_1internal_1_1_h_mul_a587af43ec7cf5ecd8bc9afd27c7d327e}{}\label{classv8_1_1internal_1_1_h_mul_a587af43ec7cf5ecd8bc9afd27c7d327e}
+
+\item 
+void {\bfseries Update\+Representation} (\hyperlink{classv8_1_1internal_1_1_representation}{Representation} new\+\_\+rep, \hyperlink{classv8_1_1internal_1_1_h_infer_representation_phase}{H\+Infer\+Representation\+Phase} $\ast$h\+\_\+infer, const char $\ast$reason) override\hypertarget{classv8_1_1internal_1_1_h_mul_a6d2ae208821a137440d272169ea60375}{}\label{classv8_1_1internal_1_1_h_mul_a6d2ae208821a137440d272169ea60375}
+
+\item 
+bool {\bfseries Mul\+Minus\+One} ()\hypertarget{classv8_1_1internal_1_1_h_mul_a11164e7693b7539f62588edf56048017}{}\label{classv8_1_1internal_1_1_h_mul_a11164e7693b7539f62588edf56048017}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries New} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right)\hypertarget{classv8_1_1internal_1_1_h_mul_ab5fb478b064072ac0356d71d6ba62a61}{}\label{classv8_1_1internal_1_1_h_mul_ab5fb478b064072ac0356d71d6ba62a61}
+
+\item 
+static \hyperlink{classv8_1_1internal_1_1_h_instruction}{H\+Instruction} $\ast$ {\bfseries New\+Imul} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right)\hypertarget{classv8_1_1internal_1_1_h_mul_a1a8d6212d04fc9291042037255af2c0a}{}\label{classv8_1_1internal_1_1_h_mul_a1a8d6212d04fc9291042037255af2c0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Data\+Equals} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$other) override\hypertarget{classv8_1_1internal_1_1_h_mul_a7bff016bdf3d74660a4120ee4a86264d}{}\label{classv8_1_1internal_1_1_h_mul_a7bff016bdf3d74660a4120ee4a86264d}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_range}{Range} $\ast$ {\bfseries Infer\+Range} (\hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone) override\hypertarget{classv8_1_1internal_1_1_h_mul_a6070b888444c8d29229701648d0efa66}{}\label{classv8_1_1internal_1_1_h_mul_a6070b888444c8d29229701648d0efa66}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries H\+Mul} (\hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$context, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$left, \hyperlink{classv8_1_1internal_1_1_h_value}{H\+Value} $\ast$right)\hypertarget{classv8_1_1internal_1_1_h_mul_a8c61babf6fbb622292c18eb9c069c819}{}\label{classv8_1_1internal_1_1_h_mul_a8c61babf6fbb622292c18eb9c069c819}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+h\item 
+/\+Users/joshgav/node/v8/src/crankshaft/hydrogen-\/instructions.\+cc\end{DoxyCompactItemize}

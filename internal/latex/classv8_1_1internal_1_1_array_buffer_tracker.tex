@@ -1,0 +1,56 @@
+\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker}{}\section{v8\+:\+:internal\+:\+:Array\+Buffer\+Tracker Class Reference}
+\label{classv8_1_1internal_1_1_array_buffer_tracker}\index{v8\+::internal\+::\+Array\+Buffer\+Tracker@{v8\+::internal\+::\+Array\+Buffer\+Tracker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Array\+Buffer\+Tracker} (\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$heap)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a6809e66763ac50ced74836a6983ef2be}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a6809e66763ac50ced74836a6983ef2be}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap} ()\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a692c236a3192997f0e0e19aeabccc36c}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a692c236a3192997f0e0e19aeabccc36c}
+
+\item 
+void {\bfseries Register\+New} (\hyperlink{classv8_1_1internal_1_1_j_s_array_buffer}{J\+S\+Array\+Buffer} $\ast$buffer)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_acc2e15caf873dfcfbe2b5c8671f2db92}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_acc2e15caf873dfcfbe2b5c8671f2db92}
+
+\item 
+void {\bfseries Unregister} (\hyperlink{classv8_1_1internal_1_1_j_s_array_buffer}{J\+S\+Array\+Buffer} $\ast$buffer)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a778fb04c482ab51395aaf9d08e74e156}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a778fb04c482ab51395aaf9d08e74e156}
+
+\item 
+void {\bfseries Mark\+Live} (\hyperlink{classv8_1_1internal_1_1_j_s_array_buffer}{J\+S\+Array\+Buffer} $\ast$buffer)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a2278d3154147a26ab90fed6e01241a89}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a2278d3154147a26ab90fed6e01241a89}
+
+\item 
+void {\bfseries Free\+Dead} (bool from\+\_\+scavenge)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_af2b171c002d0cfcad566921abebe1f40}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_af2b171c002d0cfcad566921abebe1f40}
+
+\item 
+void {\bfseries Prepare\+Discovery\+In\+New\+Space} ()\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a8498b5c0a908de9e03a3e48288857129}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a8498b5c0a908de9e03a3e48288857129}
+
+\item 
+void {\bfseries Promote} (\hyperlink{classv8_1_1internal_1_1_j_s_array_buffer}{J\+S\+Array\+Buffer} $\ast$buffer)\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a2192e34668b32c0138186f3ec5a1069e}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a2192e34668b32c0138186f3ec5a1069e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1base_1_1_mutex}{base\+::\+Mutex} {\bfseries mutex\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_af46b03f57cc3c41ec2804aaaca724941}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_af46b03f57cc3c41ec2804aaaca724941}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_heap}{Heap} $\ast$ {\bfseries heap\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_ade46351b214fce01c0d6274edae30b9b}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_ade46351b214fce01c0d6274edae30b9b}
+
+\item 
+std\+::map$<$ void $\ast$, size\+\_\+t $>$ {\bfseries live\+\_\+array\+\_\+buffers\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_ae4efd1407eb796a22ee9e1814ca894bd}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_ae4efd1407eb796a22ee9e1814ca894bd}
+
+\item 
+std\+::map$<$ void $\ast$, size\+\_\+t $>$ {\bfseries not\+\_\+yet\+\_\+discovered\+\_\+array\+\_\+buffers\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a74bed629bdb228be46d04c70c4584d19}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a74bed629bdb228be46d04c70c4584d19}
+
+\item 
+std\+::map$<$ void $\ast$, size\+\_\+t $>$ {\bfseries live\+\_\+array\+\_\+buffers\+\_\+for\+\_\+scavenge\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a4db5dc805b7fa92a3e27c7d50b1b54dc}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a4db5dc805b7fa92a3e27c7d50b1b54dc}
+
+\item 
+std\+::map$<$ void $\ast$, size\+\_\+t $>$ {\bfseries not\+\_\+yet\+\_\+discovered\+\_\+array\+\_\+buffers\+\_\+for\+\_\+scavenge\+\_\+}\hypertarget{classv8_1_1internal_1_1_array_buffer_tracker_a8d762f9133170f4c1adbc50e251ae4d0}{}\label{classv8_1_1internal_1_1_array_buffer_tracker_a8d762f9133170f4c1adbc50e251ae4d0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/heap/array-\/buffer-\/tracker.\+h\item 
+/\+Users/joshgav/node/v8/src/heap/array-\/buffer-\/tracker.\+cc\end{DoxyCompactItemize}

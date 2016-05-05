@@ -1,0 +1,25 @@
+\hypertarget{structv8_1_1base_1_1internal_1_1_max_exponent}{}\section{v8\+:\+:base\+:\+:internal\+:\+:Max\+Exponent$<$ Numeric\+Type $>$ Struct Template Reference}
+\label{structv8_1_1base_1_1internal_1_1_max_exponent}\index{v8\+::base\+::internal\+::\+Max\+Exponent$<$ Numeric\+Type $>$@{v8\+::base\+::internal\+::\+Max\+Exponent$<$ Numeric\+Type $>$}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{v8\+::base\+::internal\+::\+Max\+Exponent@{v8\+::base\+::internal\+::\+Max\+Exponent}!value@{value}}
+\index{value@{value}!v8\+::base\+::internal\+::\+Max\+Exponent@{v8\+::base\+::internal\+::\+Max\+Exponent}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Numeric\+Type$>$ const int {\bf v8\+::base\+::internal\+::\+Max\+Exponent}$<$ Numeric\+Type $>$\+::value\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structv8_1_1base_1_1internal_1_1_max_exponent_a22031aba42b35e71cb34d9e9272a7c98}{}\label{structv8_1_1base_1_1internal_1_1_max_exponent_a22031aba42b35e71cb34d9e9272a7c98}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= std::numeric\_limits<NumericType>::is\_iec559
+                               ? std::numeric\_limits<NumericType>::max\_exponent
+                               : (\textcolor{keyword}{sizeof}(NumericType) * 8 + 1 -
+                                  std::numeric\_limits<NumericType>::is\_signed)
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/base/safe\+\_\+conversions\+\_\+impl.\+h\end{DoxyCompactItemize}

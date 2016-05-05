@@ -1,0 +1,513 @@
+\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s}{}\section{v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+M\+I\+PS Class Reference}
+\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s}\index{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+M\+I\+PS@{v8\+::internal\+::\+Reg\+Exp\+Macro\+Assembler\+M\+I\+PS}}
+Inheritance diagram for v8\+:\+:internal\+:\+:Reg\+Exp\+Macro\+Assembler\+M\+I\+PS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reg\+Exp\+Macro\+Assembler\+M\+I\+PS} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Mode mode, int registers\+\_\+to\+\_\+save)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa6806a1e3af86ec20cc1077c01607b24}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa6806a1e3af86ec20cc1077c01607b24}
+
+\item 
+virtual int {\bfseries stack\+\_\+limit\+\_\+slack} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ade29d0ccd6722e1078ec888188917f9d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ade29d0ccd6722e1078ec888188917f9d}
+
+\item 
+virtual void {\bfseries Advance\+Current\+Position} (int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8b46dd14d6be7b20399d60416582b610}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8b46dd14d6be7b20399d60416582b610}
+
+\item 
+virtual void {\bfseries Advance\+Register} (int reg, int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9ab2276500b78ea3c12268dd9bb4ba7c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9ab2276500b78ea3c12268dd9bb4ba7c}
+
+\item 
+virtual void {\bfseries Backtrack} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adfe2e4c2ea84a1ab5ad151218f899ded}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adfe2e4c2ea84a1ab5ad151218f899ded}
+
+\item 
+virtual void {\bfseries Bind} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac4858be1e00e71c992e568de14abe61a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac4858be1e00e71c992e568de14abe61a}
+
+\item 
+virtual void {\bfseries Check\+At\+Start} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0f87ac84fa8e60eeafa27e85b258b6ab}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0f87ac84fa8e60eeafa27e85b258b6ab}
+
+\item 
+virtual void {\bfseries Check\+Character} (uint32\+\_\+t c, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0139c180148c5b5ba2ddbd15bbeaa7f9}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0139c180148c5b5ba2ddbd15bbeaa7f9}
+
+\item 
+virtual void {\bfseries Check\+Character\+After\+And} (uint32\+\_\+t c, uint32\+\_\+t mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a384cf9c589f2b7346e84a5d35b359b95}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a384cf9c589f2b7346e84a5d35b359b95}
+
+\item 
+virtual void {\bfseries Check\+Character\+GT} (uc16 limit, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+greater)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8125957e75e4d4149e916f9a2e1fb925}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8125957e75e4d4149e916f9a2e1fb925}
+
+\item 
+virtual void {\bfseries Check\+Character\+LT} (uc16 limit, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+less)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aeb4a8f3d2314494596589c9b1543faef}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aeb4a8f3d2314494596589c9b1543faef}
+
+\item 
+virtual void {\bfseries Check\+Greedy\+Loop} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+tos\+\_\+equals\+\_\+current\+\_\+position)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae3b5ebd2bfaefa19786e18e5103b2881}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae3b5ebd2bfaefa19786e18e5103b2881}
+
+\item 
+virtual void {\bfseries Check\+Not\+At\+Start} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aca545a4b5e0b1b8cf0cc2fd6778eb8f1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aca545a4b5e0b1b8cf0cc2fd6778eb8f1}
+
+\item 
+virtual void {\bfseries Check\+Not\+Back\+Reference} (int start\+\_\+reg, bool read\+\_\+backward, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af33344a5d113a2f1318f2549554fdaca}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af33344a5d113a2f1318f2549554fdaca}
+
+\item 
+virtual void {\bfseries Check\+Not\+Back\+Reference\+Ignore\+Case} (int start\+\_\+reg, bool read\+\_\+backward, bool unicode, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a797e74e54cda0b9368dbe36c8f9bb704}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a797e74e54cda0b9368dbe36c8f9bb704}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character} (uint32\+\_\+t c, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af2c6643d958982b07b49338a10e0f07c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af2c6643d958982b07b49338a10e0f07c}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character\+After\+And} (uint32\+\_\+t c, uint32\+\_\+t mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a672b956cbe01255fa2996705b9bedb53}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a672b956cbe01255fa2996705b9bedb53}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character\+After\+Minus\+And} (uc16 c, uc16 minus, uc16 mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a09f76a20823593559fb72f4ce3e556d9}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a09f76a20823593559fb72f4ce3e556d9}
+
+\item 
+virtual void {\bfseries Check\+Character\+In\+Range} (uc16 from, uc16 to, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+in\+\_\+range)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a233eb5196a3ef4cfc2c67770f5ebba4f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a233eb5196a3ef4cfc2c67770f5ebba4f}
+
+\item 
+virtual void {\bfseries Check\+Character\+Not\+In\+Range} (uc16 from, uc16 to, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+in\+\_\+range)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a520e3c053e1715797a8d4602b34b1d4d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a520e3c053e1715797a8d4602b34b1d4d}
+
+\item 
+virtual void {\bfseries Check\+Bit\+In\+Table} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_byte_array}{Byte\+Array} $>$ table, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+bit\+\_\+set)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429f096364b74b5f1c27576aa7fa4ae}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429f096364b74b5f1c27576aa7fa4ae}
+
+\item 
+virtual void {\bfseries Check\+Position} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+outside\+\_\+input)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaee2840750d16e80d7c2c254b107748f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaee2840750d16e80d7c2c254b107748f}
+
+\item 
+virtual bool {\bfseries Check\+Special\+Character\+Class} (uc16 type, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab455a5dc7bd22448fc80389f65da6ba4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab455a5dc7bd22448fc80389f65da6ba4}
+
+\item 
+virtual void {\bfseries Fail} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1f76644b73922fdb7c85d35a97619a27}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1f76644b73922fdb7c85d35a97619a27}
+
+\item 
+virtual \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $>$ {\bfseries Get\+Code} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aba2c29cf034a6057a363765aaf98575f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aba2c29cf034a6057a363765aaf98575f}
+
+\item 
+virtual void {\bfseries Go\+To} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9deb59afa79ec7813e0d374f31e040fe}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9deb59afa79ec7813e0d374f31e040fe}
+
+\item 
+virtual void {\bfseries If\+Register\+GE} (int reg, int comparand, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+ge)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a60ec4b978d9eeed5efc3c844e5c7e635}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a60ec4b978d9eeed5efc3c844e5c7e635}
+
+\item 
+virtual void {\bfseries If\+Register\+LT} (int reg, int comparand, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+lt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6950a9e308d016babca7b9cda491715a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6950a9e308d016babca7b9cda491715a}
+
+\item 
+virtual void {\bfseries If\+Register\+Eq\+Pos} (int reg, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+eq)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac49a601b2823be3b741ab6179abe937}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac49a601b2823be3b741ab6179abe937}
+
+\item 
+virtual Irregexp\+Implementation {\bfseries Implementation} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429da28dc2889958fcdbe7a16c6aad1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429da28dc2889958fcdbe7a16c6aad1}
+
+\item 
+virtual void {\bfseries Load\+Current\+Character} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+end\+\_\+of\+\_\+input, bool check\+\_\+bounds=true, int characters=1)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2d190fef5eed04167abaa06f39260b7b}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2d190fef5eed04167abaa06f39260b7b}
+
+\item 
+virtual void {\bfseries Pop\+Current\+Position} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af32978ed86c8ffcd05211361d28258cf}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af32978ed86c8ffcd05211361d28258cf}
+
+\item 
+virtual void {\bfseries Pop\+Register} (int register\+\_\+index)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa1f3f5de6dd96aae2d1005fca9536221}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa1f3f5de6dd96aae2d1005fca9536221}
+
+\item 
+virtual void {\bfseries Push\+Backtrack} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abe748d8834dd7a487ed3e84a30f97d7d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abe748d8834dd7a487ed3e84a30f97d7d}
+
+\item 
+virtual void {\bfseries Push\+Current\+Position} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1d439ae74fdb89088f9b96d2d88f1559}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1d439ae74fdb89088f9b96d2d88f1559}
+
+\item 
+virtual void {\bfseries Push\+Register} (int register\+\_\+index, Stack\+Check\+Flag check\+\_\+stack\+\_\+limit)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90366ef0b90e87e3abeadd215ac99101}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90366ef0b90e87e3abeadd215ac99101}
+
+\item 
+virtual void {\bfseries Read\+Current\+Position\+From\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3db856debb66a86b0b999760078fc9e2}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3db856debb66a86b0b999760078fc9e2}
+
+\item 
+virtual void {\bfseries Read\+Stack\+Pointer\+From\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a5f13f6d69555eafd3532f64d2ea443a0}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a5f13f6d69555eafd3532f64d2ea443a0}
+
+\item 
+virtual void {\bfseries Set\+Current\+Position\+From\+End} (int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a005d180b2c2a25be9adada6ceea905c7}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a005d180b2c2a25be9adada6ceea905c7}
+
+\item 
+virtual void {\bfseries Set\+Register} (int register\+\_\+index, int to)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ace49e35921054598366cc061597be4ff}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ace49e35921054598366cc061597be4ff}
+
+\item 
+virtual bool {\bfseries Succeed} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a46808edf5f7a5f7ba71b8caedb66aa0a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a46808edf5f7a5f7ba71b8caedb66aa0a}
+
+\item 
+virtual void {\bfseries Write\+Current\+Position\+To\+Register} (int reg, int cp\+\_\+offset)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af342e57819b985ea254b8bcd994505e0}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af342e57819b985ea254b8bcd994505e0}
+
+\item 
+virtual void {\bfseries Clear\+Registers} (int reg\+\_\+from, int reg\+\_\+to)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab12457b77455544117c217d04628a2d4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab12457b77455544117c217d04628a2d4}
+
+\item 
+virtual void {\bfseries Write\+Stack\+Pointer\+To\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a842cf0974df70e03bbfeef991faa5840}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a842cf0974df70e03bbfeef991faa5840}
+
+\item 
+virtual bool {\bfseries Can\+Read\+Unaligned} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc3f178837a4dedd136bb43cbdebc165}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc3f178837a4dedd136bb43cbdebc165}
+
+\item 
+{\bfseries Reg\+Exp\+Macro\+Assembler\+M\+I\+PS} (\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1internal_1_1_zone}{Zone} $\ast$zone, Mode mode, int registers\+\_\+to\+\_\+save)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa6806a1e3af86ec20cc1077c01607b24}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa6806a1e3af86ec20cc1077c01607b24}
+
+\item 
+virtual int {\bfseries stack\+\_\+limit\+\_\+slack} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ade29d0ccd6722e1078ec888188917f9d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ade29d0ccd6722e1078ec888188917f9d}
+
+\item 
+virtual void {\bfseries Advance\+Current\+Position} (int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8b46dd14d6be7b20399d60416582b610}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8b46dd14d6be7b20399d60416582b610}
+
+\item 
+virtual void {\bfseries Advance\+Register} (int reg, int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9ab2276500b78ea3c12268dd9bb4ba7c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9ab2276500b78ea3c12268dd9bb4ba7c}
+
+\item 
+virtual void {\bfseries Backtrack} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adfe2e4c2ea84a1ab5ad151218f899ded}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adfe2e4c2ea84a1ab5ad151218f899ded}
+
+\item 
+virtual void {\bfseries Bind} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac4858be1e00e71c992e568de14abe61a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac4858be1e00e71c992e568de14abe61a}
+
+\item 
+virtual void {\bfseries Check\+At\+Start} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0f87ac84fa8e60eeafa27e85b258b6ab}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0f87ac84fa8e60eeafa27e85b258b6ab}
+
+\item 
+virtual void {\bfseries Check\+Character} (uint32\+\_\+t c, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0139c180148c5b5ba2ddbd15bbeaa7f9}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0139c180148c5b5ba2ddbd15bbeaa7f9}
+
+\item 
+virtual void {\bfseries Check\+Character\+After\+And} (uint32\+\_\+t c, uint32\+\_\+t mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a384cf9c589f2b7346e84a5d35b359b95}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a384cf9c589f2b7346e84a5d35b359b95}
+
+\item 
+virtual void {\bfseries Check\+Character\+GT} (uc16 limit, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+greater)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8125957e75e4d4149e916f9a2e1fb925}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a8125957e75e4d4149e916f9a2e1fb925}
+
+\item 
+virtual void {\bfseries Check\+Character\+LT} (uc16 limit, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+less)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aeb4a8f3d2314494596589c9b1543faef}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aeb4a8f3d2314494596589c9b1543faef}
+
+\item 
+virtual void {\bfseries Check\+Greedy\+Loop} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+tos\+\_\+equals\+\_\+current\+\_\+position)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae3b5ebd2bfaefa19786e18e5103b2881}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae3b5ebd2bfaefa19786e18e5103b2881}
+
+\item 
+virtual void {\bfseries Check\+Not\+At\+Start} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+at\+\_\+start)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aca545a4b5e0b1b8cf0cc2fd6778eb8f1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aca545a4b5e0b1b8cf0cc2fd6778eb8f1}
+
+\item 
+virtual void {\bfseries Check\+Not\+Back\+Reference} (int start\+\_\+reg, bool read\+\_\+backward, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af33344a5d113a2f1318f2549554fdaca}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af33344a5d113a2f1318f2549554fdaca}
+
+\item 
+virtual void {\bfseries Check\+Not\+Back\+Reference\+Ignore\+Case} (int start\+\_\+reg, bool read\+\_\+backward, bool unicode, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a797e74e54cda0b9368dbe36c8f9bb704}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a797e74e54cda0b9368dbe36c8f9bb704}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character} (uint32\+\_\+t c, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af2c6643d958982b07b49338a10e0f07c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af2c6643d958982b07b49338a10e0f07c}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character\+After\+And} (uint32\+\_\+t c, uint32\+\_\+t mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a672b956cbe01255fa2996705b9bedb53}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a672b956cbe01255fa2996705b9bedb53}
+
+\item 
+virtual void {\bfseries Check\+Not\+Character\+After\+Minus\+And} (uc16 c, uc16 minus, uc16 mask, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+equal)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a09f76a20823593559fb72f4ce3e556d9}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a09f76a20823593559fb72f4ce3e556d9}
+
+\item 
+virtual void {\bfseries Check\+Character\+In\+Range} (uc16 from, uc16 to, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+in\+\_\+range)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a233eb5196a3ef4cfc2c67770f5ebba4f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a233eb5196a3ef4cfc2c67770f5ebba4f}
+
+\item 
+virtual void {\bfseries Check\+Character\+Not\+In\+Range} (uc16 from, uc16 to, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+not\+\_\+in\+\_\+range)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a520e3c053e1715797a8d4602b34b1d4d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a520e3c053e1715797a8d4602b34b1d4d}
+
+\item 
+virtual void {\bfseries Check\+Bit\+In\+Table} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_byte_array}{Byte\+Array} $>$ table, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+bit\+\_\+set)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429f096364b74b5f1c27576aa7fa4ae}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429f096364b74b5f1c27576aa7fa4ae}
+
+\item 
+virtual void {\bfseries Check\+Position} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+outside\+\_\+input)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaee2840750d16e80d7c2c254b107748f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaee2840750d16e80d7c2c254b107748f}
+
+\item 
+virtual bool {\bfseries Check\+Special\+Character\+Class} (uc16 type, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+no\+\_\+match)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab455a5dc7bd22448fc80389f65da6ba4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab455a5dc7bd22448fc80389f65da6ba4}
+
+\item 
+virtual void {\bfseries Fail} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1f76644b73922fdb7c85d35a97619a27}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1f76644b73922fdb7c85d35a97619a27}
+
+\item 
+virtual \hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_heap_object}{Heap\+Object} $>$ {\bfseries Get\+Code} (\hyperlink{classv8_1_1internal_1_1_handle}{Handle}$<$ \hyperlink{classv8_1_1internal_1_1_string}{String} $>$ source)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aba2c29cf034a6057a363765aaf98575f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aba2c29cf034a6057a363765aaf98575f}
+
+\item 
+virtual void {\bfseries Go\+To} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9deb59afa79ec7813e0d374f31e040fe}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a9deb59afa79ec7813e0d374f31e040fe}
+
+\item 
+virtual void {\bfseries If\+Register\+GE} (int reg, int comparand, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+ge)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a60ec4b978d9eeed5efc3c844e5c7e635}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a60ec4b978d9eeed5efc3c844e5c7e635}
+
+\item 
+virtual void {\bfseries If\+Register\+LT} (int reg, int comparand, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+lt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6950a9e308d016babca7b9cda491715a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6950a9e308d016babca7b9cda491715a}
+
+\item 
+virtual void {\bfseries If\+Register\+Eq\+Pos} (int reg, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$if\+\_\+eq)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac49a601b2823be3b741ab6179abe937}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac49a601b2823be3b741ab6179abe937}
+
+\item 
+virtual Irregexp\+Implementation {\bfseries Implementation} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429da28dc2889958fcdbe7a16c6aad1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4429da28dc2889958fcdbe7a16c6aad1}
+
+\item 
+virtual void {\bfseries Load\+Current\+Character} (int cp\+\_\+offset, \hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$on\+\_\+end\+\_\+of\+\_\+input, bool check\+\_\+bounds=true, int characters=1)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2d190fef5eed04167abaa06f39260b7b}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2d190fef5eed04167abaa06f39260b7b}
+
+\item 
+virtual void {\bfseries Pop\+Current\+Position} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af32978ed86c8ffcd05211361d28258cf}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af32978ed86c8ffcd05211361d28258cf}
+
+\item 
+virtual void {\bfseries Pop\+Register} (int register\+\_\+index)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa1f3f5de6dd96aae2d1005fca9536221}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aa1f3f5de6dd96aae2d1005fca9536221}
+
+\item 
+virtual void {\bfseries Push\+Backtrack} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$label)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abe748d8834dd7a487ed3e84a30f97d7d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abe748d8834dd7a487ed3e84a30f97d7d}
+
+\item 
+virtual void {\bfseries Push\+Current\+Position} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1d439ae74fdb89088f9b96d2d88f1559}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1d439ae74fdb89088f9b96d2d88f1559}
+
+\item 
+virtual void {\bfseries Push\+Register} (int register\+\_\+index, Stack\+Check\+Flag check\+\_\+stack\+\_\+limit)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90366ef0b90e87e3abeadd215ac99101}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90366ef0b90e87e3abeadd215ac99101}
+
+\item 
+virtual void {\bfseries Read\+Current\+Position\+From\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3db856debb66a86b0b999760078fc9e2}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3db856debb66a86b0b999760078fc9e2}
+
+\item 
+virtual void {\bfseries Read\+Stack\+Pointer\+From\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a5f13f6d69555eafd3532f64d2ea443a0}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a5f13f6d69555eafd3532f64d2ea443a0}
+
+\item 
+virtual void {\bfseries Set\+Current\+Position\+From\+End} (int by)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a005d180b2c2a25be9adada6ceea905c7}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a005d180b2c2a25be9adada6ceea905c7}
+
+\item 
+virtual void {\bfseries Set\+Register} (int register\+\_\+index, int to)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ace49e35921054598366cc061597be4ff}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ace49e35921054598366cc061597be4ff}
+
+\item 
+virtual bool {\bfseries Succeed} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a46808edf5f7a5f7ba71b8caedb66aa0a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a46808edf5f7a5f7ba71b8caedb66aa0a}
+
+\item 
+virtual void {\bfseries Write\+Current\+Position\+To\+Register} (int reg, int cp\+\_\+offset)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af342e57819b985ea254b8bcd994505e0}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af342e57819b985ea254b8bcd994505e0}
+
+\item 
+virtual void {\bfseries Clear\+Registers} (int reg\+\_\+from, int reg\+\_\+to)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab12457b77455544117c217d04628a2d4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab12457b77455544117c217d04628a2d4}
+
+\item 
+virtual void {\bfseries Write\+Stack\+Pointer\+To\+Register} (int reg)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a842cf0974df70e03bbfeef991faa5840}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a842cf0974df70e03bbfeef991faa5840}
+
+\item 
+virtual bool {\bfseries Can\+Read\+Unaligned} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc3f178837a4dedd136bb43cbdebc165}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc3f178837a4dedd136bb43cbdebc165}
+
+\item 
+void {\bfseries print\+\_\+regexp\+\_\+frame\+\_\+constants} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a21ca4a1bae5e0a36e398659f62673b02}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a21ca4a1bae5e0a36e398659f62673b02}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Check\+Stack\+Guard\+State} (Address $\ast$return\+\_\+address, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$re\+\_\+code, Address re\+\_\+frame)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab8aac27f8f15e668bddeca079c0219d8}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab8aac27f8f15e668bddeca079c0219d8}
+
+\item 
+static int64\+\_\+t {\bfseries Check\+Stack\+Guard\+State} (Address $\ast$return\+\_\+address, \hyperlink{classv8_1_1internal_1_1_code}{Code} $\ast$re\+\_\+code, Address re\+\_\+frame)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad68d171cbc95c86f278f8f1e5f7f2d9d}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad68d171cbc95c86f278f8f1e5f7f2d9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Load\+Current\+Character\+Unchecked} (int cp\+\_\+offset, int character\+\_\+count)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4ccb836e4dea25531f3980c89bee5339}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4ccb836e4dea25531f3980c89bee5339}
+
+\item 
+void {\bfseries Check\+Preemption} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4143bbca236efc9d173fbaaa80cb6319}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4143bbca236efc9d173fbaaa80cb6319}
+
+\item 
+void {\bfseries Check\+Stack\+Limit} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac43a8d386f07985cf14ff3ed8b8e03d1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac43a8d386f07985cf14ff3ed8b8e03d1}
+
+\item 
+void {\bfseries Call\+Check\+Stack\+Guard\+State} (\hyperlink{structv8_1_1internal_1_1_register}{Register} scratch)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7c3dc34c95c2ca99eb3398b05ddfc147}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7c3dc34c95c2ca99eb3398b05ddfc147}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_mem_operand}{Mem\+Operand} {\bfseries register\+\_\+location} (int register\+\_\+index)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0432d02d96ff0f73464a0f7d6d7dd653}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0432d02d96ff0f73464a0f7d6d7dd653}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries current\+\_\+input\+\_\+offset} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1a3d9cb8d0d6b25252df5e13cb008c55}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1a3d9cb8d0d6b25252df5e13cb008c55}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries current\+\_\+character} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2036f5141477893802d64fc6047c1fb4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2036f5141477893802d64fc6047c1fb4}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries end\+\_\+of\+\_\+input\+\_\+address} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0b9971305554ba14a17d1c721b7c3a7c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0b9971305554ba14a17d1c721b7c3a7c}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries frame\+\_\+pointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af6e1f89805a697bd0f97f494c421c864}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af6e1f89805a697bd0f97f494c421c864}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries backtrack\+\_\+stackpointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab141a2277a4984a51d709d65cdb9910a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab141a2277a4984a51d709d65cdb9910a}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries code\+\_\+pointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abc9969c6821755a52c50dad37f3ee5d2}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abc9969c6821755a52c50dad37f3ee5d2}
+
+\item 
+int {\bfseries char\+\_\+size} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90e3aab1b3877a8663409ebb253f1050}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90e3aab1b3877a8663409ebb253f1050}
+
+\item 
+void {\bfseries Branch\+Or\+Backtrack} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$to, Condition condition, \hyperlink{structv8_1_1internal_1_1_register}{Register} rs, const \hyperlink{classv8_1_1internal_1_1_operand}{Operand} \&rt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a61cccf21e0a2a6b52e418b27eb1153}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a61cccf21e0a2a6b52e418b27eb1153}
+
+\item 
+void {\bfseries Safe\+Call} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$to, Condition cond, \hyperlink{structv8_1_1internal_1_1_register}{Register} rs, const \hyperlink{classv8_1_1internal_1_1_operand}{Operand} \&rt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a33f184465610b071f3cb1169eab36ce6}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a33f184465610b071f3cb1169eab36ce6}
+
+\item 
+void {\bfseries Safe\+Return} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1e59cb61230601895d4465a0227168be}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1e59cb61230601895d4465a0227168be}
+
+\item 
+void {\bfseries Safe\+Call\+Target} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$name)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaa0695e965306ca0eec9aff29fbbac13}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaa0695e965306ca0eec9aff29fbbac13}
+
+\item 
+void {\bfseries Push} (\hyperlink{structv8_1_1internal_1_1_register}{Register} source)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae8b3687ba22d8555ac4c8650ba92490e}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae8b3687ba22d8555ac4c8650ba92490e}
+
+\item 
+void {\bfseries Pop} (\hyperlink{structv8_1_1internal_1_1_register}{Register} target)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0363fa6cd2398ef4546317d0c0b36d29}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0363fa6cd2398ef4546317d0c0b36d29}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc2e2b34efc0066fa49fcd035938460b}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc2e2b34efc0066fa49fcd035938460b}
+
+\item 
+void {\bfseries Load\+Current\+Character\+Unchecked} (int cp\+\_\+offset, int character\+\_\+count)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4ccb836e4dea25531f3980c89bee5339}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4ccb836e4dea25531f3980c89bee5339}
+
+\item 
+void {\bfseries Check\+Preemption} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4143bbca236efc9d173fbaaa80cb6319}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4143bbca236efc9d173fbaaa80cb6319}
+
+\item 
+void {\bfseries Check\+Stack\+Limit} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac43a8d386f07985cf14ff3ed8b8e03d1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac43a8d386f07985cf14ff3ed8b8e03d1}
+
+\item 
+void {\bfseries Call\+Check\+Stack\+Guard\+State} (\hyperlink{structv8_1_1internal_1_1_register}{Register} scratch)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7c3dc34c95c2ca99eb3398b05ddfc147}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7c3dc34c95c2ca99eb3398b05ddfc147}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_mem_operand}{Mem\+Operand} {\bfseries register\+\_\+location} (int register\+\_\+index)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0432d02d96ff0f73464a0f7d6d7dd653}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0432d02d96ff0f73464a0f7d6d7dd653}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries current\+\_\+input\+\_\+offset} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1a3d9cb8d0d6b25252df5e13cb008c55}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1a3d9cb8d0d6b25252df5e13cb008c55}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries current\+\_\+character} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2036f5141477893802d64fc6047c1fb4}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2036f5141477893802d64fc6047c1fb4}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries end\+\_\+of\+\_\+input\+\_\+address} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0b9971305554ba14a17d1c721b7c3a7c}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0b9971305554ba14a17d1c721b7c3a7c}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries frame\+\_\+pointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af6e1f89805a697bd0f97f494c421c864}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af6e1f89805a697bd0f97f494c421c864}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries backtrack\+\_\+stackpointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab141a2277a4984a51d709d65cdb9910a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab141a2277a4984a51d709d65cdb9910a}
+
+\item 
+\hyperlink{structv8_1_1internal_1_1_register}{Register} {\bfseries code\+\_\+pointer} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abc9969c6821755a52c50dad37f3ee5d2}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abc9969c6821755a52c50dad37f3ee5d2}
+
+\item 
+int {\bfseries char\+\_\+size} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90e3aab1b3877a8663409ebb253f1050}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a90e3aab1b3877a8663409ebb253f1050}
+
+\item 
+void {\bfseries Branch\+Or\+Backtrack} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$to, Condition condition, \hyperlink{structv8_1_1internal_1_1_register}{Register} rs, const \hyperlink{classv8_1_1internal_1_1_operand}{Operand} \&rt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a61cccf21e0a2a6b52e418b27eb1153}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a61cccf21e0a2a6b52e418b27eb1153}
+
+\item 
+void {\bfseries Safe\+Call} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$to, Condition cond, \hyperlink{structv8_1_1internal_1_1_register}{Register} rs, const \hyperlink{classv8_1_1internal_1_1_operand}{Operand} \&rt)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a33f184465610b071f3cb1169eab36ce6}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a33f184465610b071f3cb1169eab36ce6}
+
+\item 
+void {\bfseries Safe\+Return} ()\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1e59cb61230601895d4465a0227168be}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1e59cb61230601895d4465a0227168be}
+
+\item 
+void {\bfseries Safe\+Call\+Target} (\hyperlink{classv8_1_1internal_1_1_label}{Label} $\ast$name)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaa0695e965306ca0eec9aff29fbbac13}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aaa0695e965306ca0eec9aff29fbbac13}
+
+\item 
+void {\bfseries Push} (\hyperlink{structv8_1_1internal_1_1_register}{Register} source)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae8b3687ba22d8555ac4c8650ba92490e}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae8b3687ba22d8555ac4c8650ba92490e}
+
+\item 
+void {\bfseries Pop} (\hyperlink{structv8_1_1internal_1_1_register}{Register} target)\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0363fa6cd2398ef4546317d0c0b36d29}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0363fa6cd2398ef4546317d0c0b36d29}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_isolate}{Isolate} $\ast$ {\bfseries isolate} () const \hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc2e2b34efc0066fa49fcd035938460b}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adc2e2b34efc0066fa49fcd035938460b}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1internal_1_1_macro_assembler}{Macro\+Assembler} $\ast$ {\bfseries masm\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a176a867b9c3a1ff8146a1b4d804a4c74}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a176a867b9c3a1ff8146a1b4d804a4c74}
+
+\item 
+Mode {\bfseries mode\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a292478b4bcf4c1f7db4c60843318e7c7}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a292478b4bcf4c1f7db4c60843318e7c7}
+
+\item 
+int {\bfseries num\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a65324f78b3bcdf75272033e6692423f0}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a65324f78b3bcdf75272033e6692423f0}
+
+\item 
+int {\bfseries num\+\_\+saved\+\_\+registers\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6cc5e524e2cf9afde0d141282e4204a7}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a6cc5e524e2cf9afde0d141282e4204a7}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries entry\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a57aafc08a8580d9cba511f988e03b5}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a0a57aafc08a8580d9cba511f988e03b5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries start\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a01e8fca81c74da3a441504f367f50c29}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a01e8fca81c74da3a441504f367f50c29}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries success\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a69311b09703c455c9d0697d23931ffe5}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a69311b09703c455c9d0697d23931ffe5}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries backtrack\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad2a1a1d7333db67fa2f06c11a6f49af9}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad2a1a1d7333db67fa2f06c11a6f49af9}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries exit\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad1f2474e0ba789fca5da0e8d4b0fd888}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ad1f2474e0ba789fca5da0e8d4b0fd888}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries check\+\_\+preempt\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae2800ca424c13e50ce28990b821a5998}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae2800ca424c13e50ce28990b821a5998}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries stack\+\_\+overflow\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac27e561f7e541b93d8c089a5383b119f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac27e561f7e541b93d8c089a5383b119f}
+
+\item 
+\hyperlink{classv8_1_1internal_1_1_label}{Label} {\bfseries internal\+\_\+failure\+\_\+label\+\_\+}\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae9d87fd96a747ec0a1aa2bf3a61ff255}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ae9d87fd96a747ec0a1aa2bf3a61ff255}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+Frame\+Pointer} = 0\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4f040d490d7ea20b442e42dd11f0ad8f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4f040d490d7ea20b442e42dd11f0ad8f}
+
+\item 
+static const int {\bfseries k\+Stored\+Registers} = k\+Frame\+Pointer\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a788738b966c02794310e14656216771f}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a788738b966c02794310e14656216771f}
+
+\item 
+static const int {\bfseries k\+Return\+Address} = k\+Stored\+Registers + 9 $\ast$ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac3025c135af172430072e10d60bd5bd}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_aac3025c135af172430072e10d60bd5bd}
+
+\item 
+static const int {\bfseries k\+Secondary\+Return\+Address} = k\+Return\+Address + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af97d5616deec269b253d47e0f15d989e}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_af97d5616deec269b253d47e0f15d989e}
+
+\item 
+static const int {\bfseries k\+Stack\+Frame\+Header} = k\+Return\+Address + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3f2075c1d81bd338570eaac2a4991d30}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3f2075c1d81bd338570eaac2a4991d30}
+
+\item 
+static const int {\bfseries k\+Register\+Output} = k\+Stack\+Frame\+Header + 20\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4d6278c014c99a50078a46aae080e434}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4d6278c014c99a50078a46aae080e434}
+
+\item 
+static const int {\bfseries k\+Num\+Output\+Registers} = k\+Register\+Output + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab0011192fa6e465e6f7da61c4c39b069}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ab0011192fa6e465e6f7da61c4c39b069}
+
+\item 
+static const int {\bfseries k\+Stack\+High\+End} = k\+Num\+Output\+Registers + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a309a260ac67d2336eae81fe262bdeb29}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a309a260ac67d2336eae81fe262bdeb29}
+
+\item 
+static const int {\bfseries k\+Direct\+Call} = k\+Stack\+High\+End + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adb14b7ae991ce42a4a621557c1f85915}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_adb14b7ae991ce42a4a621557c1f85915}
+
+\item 
+static const int {\bfseries k\+Isolate} = k\+Direct\+Call + k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3fce4b25106052207d573bac840e0ad1}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a3fce4b25106052207d573bac840e0ad1}
+
+\item 
+static const int {\bfseries k\+Input\+End} = k\+Frame\+Pointer -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2b99f181078e743e375f5dfa2a3b4f10}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a2b99f181078e743e375f5dfa2a3b4f10}
+
+\item 
+static const int {\bfseries k\+Input\+Start} = k\+Input\+End -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4e2c27027c6ed25d8b0c82023bbd67f5}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4e2c27027c6ed25d8b0c82023bbd67f5}
+
+\item 
+static const int {\bfseries k\+Start\+Index} = k\+Input\+Start -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac16bf5421b2d0b8cbc232d9149f1173a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_ac16bf5421b2d0b8cbc232d9149f1173a}
+
+\item 
+static const int {\bfseries k\+Input\+String} = k\+Start\+Index -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7ab687f05e1f3adcd436067c53a75b2a}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a7ab687f05e1f3adcd436067c53a75b2a}
+
+\item 
+static const int {\bfseries k\+Successful\+Captures} = k\+Input\+String -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a856c46f8a9ea6aee2a39646a2b3fd039}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a856c46f8a9ea6aee2a39646a2b3fd039}
+
+\item 
+static const int {\bfseries k\+String\+Start\+Minus\+One} = k\+Successful\+Captures -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1118b67891ea94c8d097e2fc21fa775b}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a1118b67891ea94c8d097e2fc21fa775b}
+
+\item 
+static const int {\bfseries k\+Register\+Zero} = k\+String\+Start\+Minus\+One -\/ k\+Pointer\+Size\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4c5ae9d45a38a852c13a442a55eaa990}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_a4c5ae9d45a38a852c13a442a55eaa990}
+
+\item 
+static const size\+\_\+t {\bfseries k\+Reg\+Exp\+Code\+Size} = 1024\hypertarget{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abd9b292e8fc49719f9de846545b799a6}{}\label{classv8_1_1internal_1_1_reg_exp_macro_assembler_m_i_p_s_abd9b292e8fc49719f9de846545b799a6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joshgav/node/v8/src/regexp/mips/regexp-\/macro-\/assembler-\/mips.\+h\item 
+/\+Users/joshgav/node/v8/src/regexp/mips64/regexp-\/macro-\/assembler-\/mips64.\+h\end{DoxyCompactItemize}
