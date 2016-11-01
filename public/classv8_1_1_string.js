@@ -1,0 +1,56 @@
+var classv8_1_1_string =
+[
+    [ "ExternalOneByteStringResource", "classv8_1_1_string_1_1_external_one_byte_string_resource.html", "classv8_1_1_string_1_1_external_one_byte_string_resource" ],
+    [ "ExternalStringResource", "classv8_1_1_string_1_1_external_string_resource.html", "classv8_1_1_string_1_1_external_string_resource" ],
+    [ "ExternalStringResourceBase", "classv8_1_1_string_1_1_external_string_resource_base.html", "classv8_1_1_string_1_1_external_string_resource_base" ],
+    [ "Utf8Value", "classv8_1_1_string_1_1_utf8_value.html", "classv8_1_1_string_1_1_utf8_value" ],
+    [ "Value", "classv8_1_1_string_1_1_value.html", "classv8_1_1_string_1_1_value" ],
+    [ "Encoding", "classv8_1_1_string.html#a2f4a2e9516c246eef602b889ce049c49", [
+      [ "UNKNOWN_ENCODING", "classv8_1_1_string.html#a2f4a2e9516c246eef602b889ce049c49a5cc4066cb2ec9fafae76567d9b711a3e", null ],
+      [ "TWO_BYTE_ENCODING", "classv8_1_1_string.html#a2f4a2e9516c246eef602b889ce049c49ab9cf9b4e0dd1cbca89e751463f9b0a8f", null ],
+      [ "ONE_BYTE_ENCODING", "classv8_1_1_string.html#a2f4a2e9516c246eef602b889ce049c49a248590fcfeb2e449a7713872e3343b76", null ]
+    ] ],
+    [ "NewStringType", "classv8_1_1_string.html#a37620fb9fdc9b72ec9eea2a2aafaddee", [
+      [ "kNormalString", "classv8_1_1_string.html#a37620fb9fdc9b72ec9eea2a2aafaddeeabf51f7116e99979c98b269d4b8befc23", null ],
+      [ "kInternalizedString", "classv8_1_1_string.html#a37620fb9fdc9b72ec9eea2a2aafaddeea0945efb11f6d7463e248562d6f536381", null ]
+    ] ],
+    [ "WriteOptions", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616", [
+      [ "NO_OPTIONS", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616a570b5524bc67186a58874a535d13d150", null ],
+      [ "HINT_MANY_WRITES_EXPECTED", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616ab91582a6a603e5f2227f473b15a32072", null ],
+      [ "NO_NULL_TERMINATION", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616a8f51d65519ad56ab1bc6359036b58915", null ],
+      [ "PRESERVE_ONE_BYTE_NULL", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616acf3b6fcf7d4597ea0ed5a46b3411a466", null ],
+      [ "REPLACE_INVALID_UTF8", "classv8_1_1_string.html#a9ce7f1458ffd08f8eb2b9c8dc056e616adf1331b62b50446be3e6c299a9a36fec", null ]
+    ] ],
+    [ "CanMakeExternal", "classv8_1_1_string.html#a0fe076838af046506ffebbfadcde812a", null ],
+    [ "Cast", "classv8_1_1_string.html#a826d60798dc152cea64a7636737b03b9", null ],
+    [ "CheckCast", "classv8_1_1_string.html#aee1a2cddf49a77f23e8b1d9aeda11841", null ],
+    [ "Concat", "classv8_1_1_string.html#ae72b61a78cef5d2916a87d9032c7fd34", null ],
+    [ "ContainsOnlyOneByte", "classv8_1_1_string.html#a4ae1fe1175bd5b96bfa53f5f5ee835e9", null ],
+    [ "Empty", "classv8_1_1_string.html#aa393d47baa54467fe57001065e49194b", null ],
+    [ "GetExternalOneByteStringResource", "classv8_1_1_string.html#ac8497aa76a576f965042812d5efa95b2", null ],
+    [ "GetExternalStringResource", "classv8_1_1_string.html#a1a78c6fe39dbdd6322ca576e224f0cba", null ],
+    [ "GetExternalStringResourceBase", "classv8_1_1_string.html#a471cf0e3ca135d839e59d25da66894e0", null ],
+    [ "IsExternal", "classv8_1_1_string.html#abbf623aabba9446cd57af14018877398", null ],
+    [ "IsExternalOneByte", "classv8_1_1_string.html#a0911614baa308fc270126390e39e4dd1", null ],
+    [ "IsOneByte", "classv8_1_1_string.html#a2e6771bd8fbd0e2d1fa01811d3e8c7dc", null ],
+    [ "Length", "classv8_1_1_string.html#a94353cd764d2bf0cda141714c3c9eb6c", null ],
+    [ "MakeExternal", "classv8_1_1_string.html#a5efd1eba40c1fa8a6aae2c4a175a63be", null ],
+    [ "MakeExternal", "classv8_1_1_string.html#a607d632c720eec5133649f522aefa944", null ],
+    [ "NewExternalOneByte", "classv8_1_1_string.html#a43edc2bcb1bf2a06f306ea9554042f24", null ],
+    [ "NewExternalTwoByte", "classv8_1_1_string.html#ad0491e4a3506df9ef9bfc08fca0d7a34", null ],
+    [ "NewFromOneByte", "classv8_1_1_string.html#a2b8cf518523a62d97360c07ed33d8aa6", null ],
+    [ "NewFromTwoByte", "classv8_1_1_string.html#aaad4c7c856c29d79db85994c301fe601", null ],
+    [ "NewFromUtf8", "classv8_1_1_string.html#a851bcf20fecb01b97f14131ce609f701", null ],
+    [ "Utf8Length", "classv8_1_1_string.html#afb2bb302d3ffe807e66a0797d6ac4189", null ],
+    [ "V8_DEPRECATE_SOON", "classv8_1_1_string.html#aa9d64688e3535b3daabafcc46a59ce5a", null ],
+    [ "V8_DEPRECATE_SOON", "classv8_1_1_string.html#aeab948105979e2ffd61eb552b0da4e50", null ],
+    [ "V8_DEPRECATE_SOON", "classv8_1_1_string.html#ad7186b5cfdddffbee8235a7216f31a67", null ],
+    [ "V8_DEPRECATED", "classv8_1_1_string.html#a9f0065e8e9198954e79329e865fde6c4", null ],
+    [ "V8_DEPRECATED", "classv8_1_1_string.html#a6439465f8b5454a404f338fd8cde847c", null ],
+    [ "VerifyExternalStringResource", "classv8_1_1_string.html#a9322ad76d54c0f4f6d276a146535354a", null ],
+    [ "VerifyExternalStringResourceBase", "classv8_1_1_string.html#a71db8b67a4af9f37664171272644ccc1", null ],
+    [ "Write", "classv8_1_1_string.html#ab1ee96f8adf969958faeff9eced9a56f", null ],
+    [ "WriteOneByte", "classv8_1_1_string.html#a61114324ef659345f04b2730679eb456", null ],
+    [ "WriteUtf8", "classv8_1_1_string.html#ad62145c723fa0ce55095223223263f41", null ],
+    [ "kMaxLength", "classv8_1_1_string.html#a51272e8a71006385863586afb2bb4a62", null ]
+];

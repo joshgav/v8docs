@@ -1,0 +1,38 @@
+var classv8_1_1internal_1_1_h_allocate =
+[
+    [ "Flags", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533df", [
+      [ "ALLOCATE_IN_NEW_SPACE", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfad4851914d882a2965293633aa721b9fa", null ],
+      [ "ALLOCATE_IN_OLD_SPACE", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfabf1bffb99096a777d349209d65bf38b2", null ],
+      [ "ALLOCATE_DOUBLE_ALIGNED", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfac3944955f3b21e619bcd82c63917b63c", null ],
+      [ "PREFILL_WITH_FILLER", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfa0064370cddf80502aafa3b30336eb5a2", null ],
+      [ "ALLOCATION_FOLDING_DOMINATOR", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfa471126911afa27936b590572fe80aee8", null ],
+      [ "ALLOCATION_FOLDED", "classv8_1_1internal_1_1_h_allocate.html#a6a722aa2fc1215c043fc589a0ff533dfa2ff858c6445a92761656948969a25605", null ]
+    ] ],
+    [ "HAllocate", "classv8_1_1internal_1_1_h_allocate.html#a1d4b5e247071d301dd8292703aa050e9", null ],
+    [ "allocation_folding_dominator", "classv8_1_1internal_1_1_h_allocate.html#af2b0f52978ae76d19f00188700f64539", null ],
+    [ "CompatibleInstanceTypes", "classv8_1_1internal_1_1_h_allocate.html#a28a7f1924ca9e5db08ce62b6e158fe42", null ],
+    [ "ComputeFlags", "classv8_1_1internal_1_1_h_allocate.html#a7aa9746fc00a27dc800189eb7e0b1949", null ],
+    [ "context", "classv8_1_1internal_1_1_h_allocate.html#aaaea74bb5fd6456c874100fa2e51911b", null ],
+    [ "GetMonomorphicJSObjectMap", "classv8_1_1internal_1_1_h_allocate.html#a1a06faa472c2a594af36d37ee7deaee3", null ],
+    [ "HandleSideEffectDominator", "classv8_1_1internal_1_1_h_allocate.html#a42d136e4394e4281376666d5db5824ca", null ],
+    [ "IsAllocationFolded", "classv8_1_1internal_1_1_h_allocate.html#aed30d614160be25af1a4f1611aa25391", null ],
+    [ "IsAllocationFoldingDominator", "classv8_1_1internal_1_1_h_allocate.html#a9979d3c70e80d9214b4f69aa213d1dbd", null ],
+    [ "IsFoldable", "classv8_1_1internal_1_1_h_allocate.html#aa7af305fda109c9778abe2286f98fd95", null ],
+    [ "IsNewSpaceAllocation", "classv8_1_1internal_1_1_h_allocate.html#ab4534cf0542c5c0bc187416d10802e91", null ],
+    [ "IsOldSpaceAllocation", "classv8_1_1internal_1_1_h_allocate.html#a200f413ad90915f427be92337be06c46", null ],
+    [ "MakeAllocationFoldingDominator", "classv8_1_1internal_1_1_h_allocate.html#a33ca4faef587b65cb688cff4bdf7db9b", null ],
+    [ "MakeDoubleAligned", "classv8_1_1internal_1_1_h_allocate.html#a4118f2cbafd4e324ab7bbe1ec59dfb16", null ],
+    [ "MakeFoldedAllocation", "classv8_1_1internal_1_1_h_allocate.html#aa07a94b3d22194ae29c9157952e7384b", null ],
+    [ "MakePrefillWithFiller", "classv8_1_1internal_1_1_h_allocate.html#a0eb4a6a531782a6603293fe15f25807f", null ],
+    [ "MustAllocateDoubleAligned", "classv8_1_1internal_1_1_h_allocate.html#aea1e5682c4b81ccf6c8e84dc72882001", null ],
+    [ "MustPrefillWithFiller", "classv8_1_1internal_1_1_h_allocate.html#a8896e81f2ba7cc2c80dc0eb99be96df3", null ],
+    [ "New", "classv8_1_1internal_1_1_h_allocate.html#afaffdc74c7b1a88a19363d0ecf9784b5", null ],
+    [ "PrintDataTo", "classv8_1_1internal_1_1_h_allocate.html#a62f24ea7b3329e46b41e2e493263f13b", null ],
+    [ "RequiredInputRepresentation", "classv8_1_1internal_1_1_h_allocate.html#af6e408a139b87a2bde919842e8eb6f8d", null ],
+    [ "set_known_initial_map", "classv8_1_1internal_1_1_h_allocate.html#a47276171240023608e953f6278274e9f", null ],
+    [ "size", "classv8_1_1internal_1_1_h_allocate.html#a83b6fbda289186ccff9fdbf5c16f52de", null ],
+    [ "UpdateSize", "classv8_1_1internal_1_1_h_allocate.html#aad1695a378df7dd4995a7814260569aa", null ],
+    [ "flags_", "classv8_1_1internal_1_1_h_allocate.html#a38c796e879659e65ce9782c57d71e6f6", null ],
+    [ "kMaxInlineSize", "classv8_1_1internal_1_1_h_allocate.html#a5cef31c4358b20ae55ffd690b1c2a75b", null ],
+    [ "known_initial_map_", "classv8_1_1internal_1_1_h_allocate.html#aa723fca59acf547a7d3f2ffe1f299384", null ]
+];

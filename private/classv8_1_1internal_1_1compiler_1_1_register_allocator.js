@@ -1,0 +1,28 @@
+var classv8_1_1internal_1_1compiler_1_1_register_allocator =
+[
+    [ "RegisterAllocator", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a541582eca277a75f71e1a1a83e54307a", null ],
+    [ "allocatable_register_codes", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a71e069f7f935f975ca468b7a5e50ec00", null ],
+    [ "allocation_zone", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#aef2757da02b6a307c5f17ba4aa3e8713", null ],
+    [ "CanProcessRange", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#abf131beef5ec4f8ba7a3eecb35c09f2f", null ],
+    [ "code", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#aa7dfec681835f6287e865acd6f5d0344", null ],
+    [ "data", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a6fd3a5f68edd534cec205814b1586355", null ],
+    [ "DISALLOW_COPY_AND_ASSIGN", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a143210eb178c57ef96d6ee88eeef7945", null ],
+    [ "FindOptimalSpillingPos", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#ad30a3b9ae9719de4e5bd9f1f6b2e3fbf", null ],
+    [ "FindOptimalSplitPos", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a95714b88dadd2a8bafbaedc614eca6f6", null ],
+    [ "GetFixedRegisters", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a92ca42d164df5f4500cd93a4646c0c91", null ],
+    [ "GetSplitPositionForInstruction", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a63a56714278d376405b0c84c597df7f7", null ],
+    [ "mode", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#ab967fc5720933a4637b33ceef8808f4d", null ],
+    [ "num_allocatable_registers", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a1e89f744fb0ced8d26a8e01d781b8ab7", null ],
+    [ "num_registers", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#abf5db7d1d2b10635133d9766e15c905d", null ],
+    [ "RegisterName", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a7015eedaf5fc0dc5fc74603356cbcaed", null ],
+    [ "Spill", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a629789d8d5ce5de31c3a5c8011a592fc", null ],
+    [ "SplitAndSpillRangesDefinedByMemoryOperand", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a9c62285116fc84ee4068eac98ef4ca8a", null ],
+    [ "SplitBetween", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a17dafaa2ab828f17cdd4a075b6d3492b", null ],
+    [ "SplitRangeAt", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#aeb162c1b8d19f9cd2b07d8d06e95451a", null ],
+    [ "allocatable_register_codes_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a1078ac92839ac1c0f8812531cb84101c", null ],
+    [ "data_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#aec8e8681cdec0091de854665b612089f", null ],
+    [ "mode_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#aa800dd1d57781cfd232e7307debe9c73", null ],
+    [ "no_combining_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#afee5915acf394881b922c8a35f905683", null ],
+    [ "num_allocatable_registers_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#ac23c6782ee34f9c67c12dbf0162ba275", null ],
+    [ "num_registers_", "classv8_1_1internal_1_1compiler_1_1_register_allocator.html#a8d658a3c3ba25f4ccb6d620045da63b5", null ]
+];

@@ -1,0 +1,26 @@
+var classv8_1_1internal_1_1_if_statement =
+[
+    [ "IfStatement", "classv8_1_1internal_1_1_if_statement.html#ac7acf6b2959b5a3149f4b55aca3bca09", null ],
+    [ "base_id", "classv8_1_1internal_1_1_if_statement.html#a4e4e83646e91e173ef0ec18222765470", null ],
+    [ "condition", "classv8_1_1internal_1_1_if_statement.html#ad3642ec726caa3da728adaa9ffcba6e7", null ],
+    [ "else_statement", "classv8_1_1internal_1_1_if_statement.html#a19943ebfd25165b4b88472dc11ada3d9", null ],
+    [ "ElseId", "classv8_1_1internal_1_1_if_statement.html#ade875b08fd6a93e75958be1550cb8bf6", null ],
+    [ "HasElseStatement", "classv8_1_1internal_1_1_if_statement.html#a5573bb35e28e5e8f3be636991ba8256f", null ],
+    [ "HasThenStatement", "classv8_1_1internal_1_1_if_statement.html#abba9166315bd1b8b3ca5a69d8c854133", null ],
+    [ "IfId", "classv8_1_1internal_1_1_if_statement.html#ab375b37e64eb2101ab34bbd6edee7710", null ],
+    [ "IsJump", "classv8_1_1internal_1_1_if_statement.html#a131871319c5c0cabf2ba0c77f1feaaf5", null ],
+    [ "local_id", "classv8_1_1internal_1_1_if_statement.html#aa37ae622a9c648b90916ff4459d10a79", null ],
+    [ "num_ids", "classv8_1_1internal_1_1_if_statement.html#a109a2ddc05c989c2504eb3b5a5e247d3", null ],
+    [ "parent_num_ids", "classv8_1_1internal_1_1_if_statement.html#a5bd7e3fdebe696fb0f18ae874721c5ac", null ],
+    [ "set_base_id", "classv8_1_1internal_1_1_if_statement.html#ab696e21b7dbee4b129626289c77d2c39", null ],
+    [ "set_condition", "classv8_1_1internal_1_1_if_statement.html#a61b011e74284bcc5229775cbbedc74e3", null ],
+    [ "set_else_statement", "classv8_1_1internal_1_1_if_statement.html#a3f93dfe4c33cb60f5dc34d711f5a13a7", null ],
+    [ "set_then_statement", "classv8_1_1internal_1_1_if_statement.html#ad5772e2cf8d5cd097235298cfaccf599", null ],
+    [ "then_statement", "classv8_1_1internal_1_1_if_statement.html#a7274883c52c74220961f4465bf1e8da9", null ],
+    [ "ThenId", "classv8_1_1internal_1_1_if_statement.html#a70e7343f855332d5232394b9427a9cf3", null ],
+    [ "AstNodeFactory", "classv8_1_1internal_1_1_if_statement.html#a8d587c8ad3515ff6433eb83c578e795f", null ],
+    [ "base_id_", "classv8_1_1internal_1_1_if_statement.html#afb78131a558fba8da29a2fbb2aa0868c", null ],
+    [ "condition_", "classv8_1_1internal_1_1_if_statement.html#a482735baba9ac20072fb5903025856f6", null ],
+    [ "else_statement_", "classv8_1_1internal_1_1_if_statement.html#a209d0e02743b6722506ad1037cbcd525", null ],
+    [ "then_statement_", "classv8_1_1internal_1_1_if_statement.html#ac231db5e6359174058a12e8de36df56f", null ]
+];

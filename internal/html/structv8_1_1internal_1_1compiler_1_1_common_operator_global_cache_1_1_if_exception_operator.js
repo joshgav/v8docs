@@ -1,4 +1,0 @@
-var structv8_1_1internal_1_1compiler_1_1_common_operator_global_cache_1_1_if_exception_operator =
-[
-    [ "IfExceptionOperator", "structv8_1_1internal_1_1compiler_1_1_common_operator_global_cache_1_1_if_exception_operator.html#ab8bfd86cd57e4cc6849c65ee493a3774", null ]
-];
