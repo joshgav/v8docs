@@ -1,0 +1,4 @@
+var structv8_1_1internal_1_1compiler_1_1_simplified_operator_global_cache_1_1_allocate_operator =
+[
+    [ "AllocateOperator", "structv8_1_1internal_1_1compiler_1_1_simplified_operator_global_cache_1_1_allocate_operator.html#a4d5e49342b366dd07cea6b188c5f1e71", null ]
+];

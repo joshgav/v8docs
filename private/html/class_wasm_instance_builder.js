@@ -1,0 +1,28 @@
+var class_wasm_instance_builder =
+[
+    [ "TableInstance", "struct_wasm_instance_builder_1_1_table_instance.html", "struct_wasm_instance_builder_1_1_table_instance" ],
+    [ "WasmInstanceBuilder", "class_wasm_instance_builder.html#a07bf19c68d9b29ac87fbe9f3bfd7827c", null ],
+    [ "AllocateMemory", "class_wasm_instance_builder.html#ab1eb9f3cc349006b6c00d5f47d76cb49", null ],
+    [ "Build", "class_wasm_instance_builder.html#a9183df7b4f0a0b1e284ebbcba2ab2da0", null ],
+    [ "EvalUint32InitExpr", "class_wasm_instance_builder.html#a666ca23fcaef07b5b7fe85bc7f9f550a", null ],
+    [ "GetRawGlobalPtr", "class_wasm_instance_builder.html#a3cd571dd3c3561bef1fc1a604f4f27ad", null ],
+    [ "InitGlobals", "class_wasm_instance_builder.html#a05377fad42f26c20a95ae34dfb50f4b5", null ],
+    [ "InitializeTables", "class_wasm_instance_builder.html#ab01f530a26a10c9900eba968003b0109", null ],
+    [ "LoadDataSegments", "class_wasm_instance_builder.html#a9c38bf75cd5067837dba8e62f3430766", null ],
+    [ "LookupImport", "class_wasm_instance_builder.html#aaeccdcdae0dd542c66e81850e0755400", null ],
+    [ "ProcessExports", "class_wasm_instance_builder.html#a66a0c35d7a3e6af14837138b358876ba", null ],
+    [ "ProcessImports", "class_wasm_instance_builder.html#af4c8e0f7238601664416caed7251732f", null ],
+    [ "ReportLinkError", "class_wasm_instance_builder.html#afedb95b12c94ed6a31aebdcbeb7b6825", null ],
+    [ "ReportTypeError", "class_wasm_instance_builder.html#ae2295ba4c70f422e677196001725d353", null ],
+    [ "WriteGlobalValue", "class_wasm_instance_builder.html#a7c2e511267657a48598c30d43a64bdff", null ],
+    [ "compiled_module_", "class_wasm_instance_builder.html#a3c91c3bbccbb20065ca38107f5ca1fc8", null ],
+    [ "ffi_", "class_wasm_instance_builder.html#a3f27838a1a3b7f9e1d818ee1e041be30", null ],
+    [ "globals_", "class_wasm_instance_builder.html#adb30e7658bee3aae32d0124243405337", null ],
+    [ "isolate_", "class_wasm_instance_builder.html#a2a6817f237088db2938763a7ddd254e1", null ],
+    [ "js_wrappers_", "class_wasm_instance_builder.html#ab76eeffcea7315b5f51eb1c2aff4b511", null ],
+    [ "memory_", "class_wasm_instance_builder.html#ab25558e95e3bf5b307f05d8486c40fea", null ],
+    [ "module_", "class_wasm_instance_builder.html#a8064b62bc0d8b04cad441f61e3edcd2f", null ],
+    [ "module_object_", "class_wasm_instance_builder.html#a02577f61b42aac97ac91d28585857c39", null ],
+    [ "table_instances_", "class_wasm_instance_builder.html#a719d1bcf1ba563f4a8f1693173468336", null ],
+    [ "thrower_", "class_wasm_instance_builder.html#a783dd3ebb926f660566a43cc990df401", null ]
+];

@@ -1,0 +1,27 @@
+var unicode_8h =
+[
+    [ "Predicate", "classunibrow_1_1_predicate.html", "classunibrow_1_1_predicate" ],
+    [ "CacheEntry", "classunibrow_1_1_predicate_1_1_cache_entry.html", "classunibrow_1_1_predicate_1_1_cache_entry" ],
+    [ "CodePointField", "classunibrow_1_1_predicate_1_1_cache_entry_1_1_code_point_field.html", null ],
+    [ "ValueField", "classunibrow_1_1_predicate_1_1_cache_entry_1_1_value_field.html", null ],
+    [ "Mapping", "classunibrow_1_1_mapping.html", "classunibrow_1_1_mapping" ],
+    [ "CacheEntry", "structunibrow_1_1_mapping_1_1_cache_entry.html", "structunibrow_1_1_mapping_1_1_cache_entry" ],
+    [ "UnicodeData", "classunibrow_1_1_unicode_data.html", "classunibrow_1_1_unicode_data" ],
+    [ "Utf16", "classunibrow_1_1_utf16.html", "classunibrow_1_1_utf16" ],
+    [ "Utf8", "classunibrow_1_1_utf8.html", "classunibrow_1_1_utf8" ],
+    [ "Uppercase", "structunibrow_1_1_uppercase.html", "structunibrow_1_1_uppercase" ],
+    [ "Lowercase", "structunibrow_1_1_lowercase.html", "structunibrow_1_1_lowercase" ],
+    [ "Letter", "structunibrow_1_1_letter.html", "structunibrow_1_1_letter" ],
+    [ "ID_Start", "structunibrow_1_1_i_d___start.html", "structunibrow_1_1_i_d___start" ],
+    [ "ID_Continue", "structunibrow_1_1_i_d___continue.html", "structunibrow_1_1_i_d___continue" ],
+    [ "WhiteSpace", "structunibrow_1_1_white_space.html", "structunibrow_1_1_white_space" ],
+    [ "LineTerminator", "structunibrow_1_1_line_terminator.html", "structunibrow_1_1_line_terminator" ],
+    [ "ToLowercase", "structunibrow_1_1_to_lowercase.html", "structunibrow_1_1_to_lowercase" ],
+    [ "ToUppercase", "structunibrow_1_1_to_uppercase.html", "structunibrow_1_1_to_uppercase" ],
+    [ "Ecma262Canonicalize", "structunibrow_1_1_ecma262_canonicalize.html", "structunibrow_1_1_ecma262_canonicalize" ],
+    [ "Ecma262UnCanonicalize", "structunibrow_1_1_ecma262_un_canonicalize.html", "structunibrow_1_1_ecma262_un_canonicalize" ],
+    [ "CanonicalizationRange", "structunibrow_1_1_canonicalization_range.html", "structunibrow_1_1_canonicalization_range" ],
+    [ "byte", "unicode_8h.html#a81e169d976356d0979aaf9d5a1510650", null ],
+    [ "uchar", "unicode_8h.html#a26d471df427ae476bd9a47254334b7e1", null ],
+    [ "kMaxMappingSize", "unicode_8h.html#a2600c7e87038daf623754744942800a8", null ]
+];

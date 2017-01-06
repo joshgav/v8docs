@@ -1,0 +1,38 @@
+var classv8_1_1internal_1_1_module_descriptor =
+[
+    [ "Entry", "structv8_1_1internal_1_1_module_descriptor_1_1_entry.html", "structv8_1_1internal_1_1_module_descriptor_1_1_entry" ],
+    [ "CellIndexKind", "classv8_1_1internal_1_1_module_descriptor.html#a66cdeaa292a82e29de05c3673d7a7c20", [
+      [ "kInvalid", "classv8_1_1internal_1_1_module_descriptor.html#a66cdeaa292a82e29de05c3673d7a7c20a9ea8ee5c2c22070b53eed21f052921fd", null ],
+      [ "kExport", "classv8_1_1internal_1_1_module_descriptor.html#a66cdeaa292a82e29de05c3673d7a7c20a10aa55cd33a72775af81e2a5e42cd0a0", null ],
+      [ "kImport", "classv8_1_1internal_1_1_module_descriptor.html#a66cdeaa292a82e29de05c3673d7a7c20aa5d3273f5ba788e17201ff7eb979113d", null ]
+    ] ],
+    [ "ModuleDescriptor", "classv8_1_1internal_1_1_module_descriptor.html#aa9a5266f9aafaf52e3bf90d3ce3732cb", null ],
+    [ "AddEmptyImport", "classv8_1_1internal_1_1_module_descriptor.html#a019a5247258dddb3760eb3bae3b5583a", null ],
+    [ "AddExport", "classv8_1_1internal_1_1_module_descriptor.html#a6fc099174b3b5955150d560d53d095bc", null ],
+    [ "AddExport", "classv8_1_1internal_1_1_module_descriptor.html#ac169429d940c623ef74743966bd23d79", null ],
+    [ "AddImport", "classv8_1_1internal_1_1_module_descriptor.html#a97ffd8ad9e0c2fb09850bb51146a3cad", null ],
+    [ "AddModuleRequest", "classv8_1_1internal_1_1_module_descriptor.html#a2cf6cbb018bd5827342b2e43af5dfc53", null ],
+    [ "AddNamespaceImport", "classv8_1_1internal_1_1_module_descriptor.html#acd4e41dda9ae18bf25d3a3ba6f56dc3e", null ],
+    [ "AddRegularExport", "classv8_1_1internal_1_1_module_descriptor.html#a798f281003d2a30938e542341a751d36", null ],
+    [ "AddRegularImport", "classv8_1_1internal_1_1_module_descriptor.html#a57bacd16d5305ec95886125ee4ba2d1d", null ],
+    [ "AddSpecialExport", "classv8_1_1internal_1_1_module_descriptor.html#a8c5c60c7bdacafd09e5646ac4f258dbf", null ],
+    [ "AddStarExport", "classv8_1_1internal_1_1_module_descriptor.html#a2fb97ffebf42e067442e9aef64970231", null ],
+    [ "AddStarImport", "classv8_1_1internal_1_1_module_descriptor.html#a232cf2fb65b81eb9aa398190d4c98eb2", null ],
+    [ "AssignCellIndices", "classv8_1_1internal_1_1_module_descriptor.html#aad311d9d4235ad2c45e6ca668a3180dc", null ],
+    [ "DeserializeRegularExports", "classv8_1_1internal_1_1_module_descriptor.html#a955791762a312f33accbd5a4c7d2d105", null ],
+    [ "FindDuplicateExport", "classv8_1_1internal_1_1_module_descriptor.html#a20231f973f6141f91394fdbbce2acaa3", null ],
+    [ "GetCellIndexKind", "classv8_1_1internal_1_1_module_descriptor.html#a981243233715792c374cb1b3dcc8562e", null ],
+    [ "MakeIndirectExportsExplicit", "classv8_1_1internal_1_1_module_descriptor.html#ad26a70e6806330e006a8d17e39aa2253", null ],
+    [ "module_requests", "classv8_1_1internal_1_1_module_descriptor.html#afe6741b22de6f7ef9c3ef687172cd301", null ],
+    [ "namespace_imports", "classv8_1_1internal_1_1_module_descriptor.html#a168e6ba83b953d8a73851d8b63d309fd", null ],
+    [ "regular_exports", "classv8_1_1internal_1_1_module_descriptor.html#a649463eaa70009c2bb850a0229726825", null ],
+    [ "regular_imports", "classv8_1_1internal_1_1_module_descriptor.html#a253ef3e29dbc85abb48ffeb13ffeb4c8", null ],
+    [ "SerializeRegularExports", "classv8_1_1internal_1_1_module_descriptor.html#af7186722a7d8c4fcbb61df5b8868a284", null ],
+    [ "special_exports", "classv8_1_1internal_1_1_module_descriptor.html#a49b9dc9278686f7a36ef5680347593c7", null ],
+    [ "Validate", "classv8_1_1internal_1_1_module_descriptor.html#a3ad600d5bf6488282b1e5bfc4232c204", null ],
+    [ "module_requests_", "classv8_1_1internal_1_1_module_descriptor.html#abd71f1129fc52c26a3f6f18f44e423ff", null ],
+    [ "namespace_imports_", "classv8_1_1internal_1_1_module_descriptor.html#a890e7a172e8a580457f9cccdebc4f29c", null ],
+    [ "regular_exports_", "classv8_1_1internal_1_1_module_descriptor.html#a8bb692e7c80e3b54c69ffe041182dd1c", null ],
+    [ "regular_imports_", "classv8_1_1internal_1_1_module_descriptor.html#a324f2e2b1ea5c1096096e2e45ca8c5b2", null ],
+    [ "special_exports_", "classv8_1_1internal_1_1_module_descriptor.html#ae08bc1baf520b25ec3305d990e94da5b", null ]
+];

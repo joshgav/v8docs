@@ -1,0 +1,4 @@
+var structv8_1_1internal_1_1compiler_1_1_common_operator_global_cache_1_1_begin_region_operator =
+[
+    [ "BeginRegionOperator", "structv8_1_1internal_1_1compiler_1_1_common_operator_global_cache_1_1_begin_region_operator.html#a8904b2f175cbc3d4e309b25a29d7d302", null ]
+];

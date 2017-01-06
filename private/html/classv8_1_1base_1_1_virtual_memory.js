@@ -1,0 +1,27 @@
+var classv8_1_1base_1_1_virtual_memory =
+[
+    [ "VirtualMemory", "classv8_1_1base_1_1_virtual_memory.html#a5ce798ff195397a6f3b975868be1bfdc", null ],
+    [ "VirtualMemory", "classv8_1_1base_1_1_virtual_memory.html#ab3da8b6a97413baa2636b107a9de25a3", null ],
+    [ "VirtualMemory", "classv8_1_1base_1_1_virtual_memory.html#a3bd98533c11f0aae7bd35220b9156c03", null ],
+    [ "VirtualMemory", "classv8_1_1base_1_1_virtual_memory.html#a21c8bbb7d15aa6d16e957ba2cf28f2fb", null ],
+    [ "~VirtualMemory", "classv8_1_1base_1_1_virtual_memory.html#a54c786e292e309c43cf07cfbdfc71b59", null ],
+    [ "address", "classv8_1_1base_1_1_virtual_memory.html#a23ecde377f0a09536009b51034b321f3", null ],
+    [ "Commit", "classv8_1_1base_1_1_virtual_memory.html#a3117a993344ce2ab6e0b1a3f9a64e869", null ],
+    [ "CommitRegion", "classv8_1_1base_1_1_virtual_memory.html#ab9ce01ce175439bc0ca119f4670144e3", null ],
+    [ "Guard", "classv8_1_1base_1_1_virtual_memory.html#a8b1ab31dedd193da6be9108615e4f33a", null ],
+    [ "HasLazyCommits", "classv8_1_1base_1_1_virtual_memory.html#af38432168fc0a51690a4e1c4cf50e224", null ],
+    [ "InVM", "classv8_1_1base_1_1_virtual_memory.html#afc66d8a4d52b1dcb45423e333f8100e5", null ],
+    [ "IsReserved", "classv8_1_1base_1_1_virtual_memory.html#af3e0358153b9f4ddd219f1dc60b211bb", null ],
+    [ "Release", "classv8_1_1base_1_1_virtual_memory.html#a4c0a730fb2c4811af0f81ea5083196bc", null ],
+    [ "ReleasePartial", "classv8_1_1base_1_1_virtual_memory.html#a83a353be6f3c9fb71b74557b2dad2367", null ],
+    [ "ReleasePartialRegion", "classv8_1_1base_1_1_virtual_memory.html#aaa4efeaeceed3c6e420e28078163822b", null ],
+    [ "ReleaseRegion", "classv8_1_1base_1_1_virtual_memory.html#a619bbaaca7ee0949f095e2b6f62ffb07", null ],
+    [ "ReserveRegion", "classv8_1_1base_1_1_virtual_memory.html#af8552115d7a448d7b31be8500eb78a60", null ],
+    [ "Reset", "classv8_1_1base_1_1_virtual_memory.html#a2af8127a0aa0c8259bd3f09b39154435", null ],
+    [ "size", "classv8_1_1base_1_1_virtual_memory.html#a967175490dbb7d11c242b509f5731e4b", null ],
+    [ "TakeControl", "classv8_1_1base_1_1_virtual_memory.html#abd100ed8fc11612babfd30b7a539a696", null ],
+    [ "Uncommit", "classv8_1_1base_1_1_virtual_memory.html#a91c8d8e0bb16a648bc88617dd5188907", null ],
+    [ "UncommitRegion", "classv8_1_1base_1_1_virtual_memory.html#a47201a5b2ee61dea3407880669e04d2f", null ],
+    [ "address_", "classv8_1_1base_1_1_virtual_memory.html#a1750262ddf1917940b607fc490a0c9c6", null ],
+    [ "size_", "classv8_1_1base_1_1_virtual_memory.html#a9edb3312c5a8c38ed4f93938a8449f8a", null ]
+];

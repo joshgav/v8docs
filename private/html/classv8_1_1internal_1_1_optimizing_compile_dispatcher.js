@@ -1,0 +1,36 @@
+var classv8_1_1internal_1_1_optimizing_compile_dispatcher =
+[
+    [ "CompileTask", "classv8_1_1internal_1_1_optimizing_compile_dispatcher_1_1_compile_task.html", "classv8_1_1internal_1_1_optimizing_compile_dispatcher_1_1_compile_task" ],
+    [ "ModeFlag", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#abda1adc399a9d61f642cc1cd82242564", [
+      [ "COMPILE", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#abda1adc399a9d61f642cc1cd82242564a99af9ab876b8c224f75ed7b72220ed3c", null ],
+      [ "FLUSH", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#abda1adc399a9d61f642cc1cd82242564adfc4b2aa5dfab1c75484a947aa2d6078", null ]
+    ] ],
+    [ "OptimizingCompileDispatcher", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#ab800eba82ee31785da6ea1adddeec0be", null ],
+    [ "~OptimizingCompileDispatcher", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#ab71247caa09e63efbf21bfc83a5b6c37", null ],
+    [ "CompileNext", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a6b32a88602fa87d699cca4da7ce0e50a", null ],
+    [ "Enabled", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a5242d544a43212fa6496ef4e3441b050", null ],
+    [ "Flush", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#ab57b6159b73581a90e27d4125bc39760", null ],
+    [ "FlushOutputQueue", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a266121515cf300f5356894cfcf96bfcc", null ],
+    [ "InputQueueIndex", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a0cf47f110cf184b4dd981492ce3188a6", null ],
+    [ "InstallOptimizedFunctions", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a6a2f2d6c43028b6474396c576df12083", null ],
+    [ "IsQueueAvailable", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#aa067df152012a6dfb1a33ca7b0ce4e01", null ],
+    [ "NextInput", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a07234f50ffc8510e57af1c15c9ecfc7b", null ],
+    [ "QueueForOptimization", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a466169b3b77a01194ed427d4f3caadd8", null ],
+    [ "Run", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#aadfc22f15e613a34f928b60a56c84f43", null ],
+    [ "Stop", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a8b5292a016e4a78386d021b00a40204d", null ],
+    [ "Unblock", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a4921c7b2bc74aa8ed5fe59935bfe1295", null ],
+    [ "blocked_jobs_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#aed50486b1b18ed95b1c1c2edd932324c", null ],
+    [ "input_queue_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a829d08d41cf164cf96d17928cb6dcdf9", null ],
+    [ "input_queue_capacity_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a7a9d1fde226f5e47f9c321c8cd85a82a", null ],
+    [ "input_queue_length_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#aba941eca9cc8573fed70b70e77ba908d", null ],
+    [ "input_queue_mutex_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#afd2405bd11dc254a4715719e0f3fa511", null ],
+    [ "input_queue_shift_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a61b5acf163f008579d17af15150e24db", null ],
+    [ "isolate_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a4f878d577357a51ad07c7636b660e0f7", null ],
+    [ "mode_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a658875fb2d0155c00327cdb156435164", null ],
+    [ "output_queue_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#aee9798e2fad0030ea96b4321d012c270", null ],
+    [ "output_queue_mutex_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a512e756d42a262c9a18e9143815b6917", null ],
+    [ "recompilation_delay_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a3186513b543f53ca9d43490c669e6a09", null ],
+    [ "ref_count_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a5ce043500a4ea64e0472d06231401e0e", null ],
+    [ "ref_count_mutex_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a76e57976b8a74424e061699bc3d19f25", null ],
+    [ "ref_count_zero_", "classv8_1_1internal_1_1_optimizing_compile_dispatcher.html#a5cb4c5358c49fb18f9e4314406392067", null ]
+];

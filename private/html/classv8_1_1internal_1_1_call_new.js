@@ -1,0 +1,28 @@
+var classv8_1_1internal_1_1_call_new =
+[
+    [ "IsMonomorphicField", "classv8_1_1internal_1_1_call_new_1_1_is_monomorphic_field.html", null ],
+    [ "CallNew", "classv8_1_1internal_1_1_call_new.html#a581e062bf60b084d856f621b48c36cfa", null ],
+    [ "allocation_site", "classv8_1_1internal_1_1_call_new.html#a739d8d820cb4e4911d1734b0db0a7c6b", null ],
+    [ "arguments", "classv8_1_1internal_1_1_call_new.html#a280bce2aa081b1f336b4f2bf019e7cd8", null ],
+    [ "AssignFeedbackVectorSlots", "classv8_1_1internal_1_1_call_new.html#a91ab247ed9249d22bdac4bc1603dd817", null ],
+    [ "CallNewFeedbackSlot", "classv8_1_1internal_1_1_call_new.html#ad04bb263474a59ed401d202a544a48a6", null ],
+    [ "expression", "classv8_1_1internal_1_1_call_new.html#a77a73bfb9929339f91b13666f84b892b", null ],
+    [ "feedback_slots", "classv8_1_1internal_1_1_call_new.html#a5bf708e596ff9c3dedefcf333611ac5e", null ],
+    [ "IsMonomorphic", "classv8_1_1internal_1_1_call_new.html#a049f46983505cfe4bbff3137826b78c0", null ],
+    [ "local_id", "classv8_1_1internal_1_1_call_new.html#a512a6e4c44eece8be754ae9696df3be7", null ],
+    [ "num_ids", "classv8_1_1internal_1_1_call_new.html#adacb2568b151911e9c24f3604586e854", null ],
+    [ "parent_num_ids", "classv8_1_1internal_1_1_call_new.html#a09c6cfc73d9cfa16ddfcd7a1df0a617e", null ],
+    [ "ReturnId", "classv8_1_1internal_1_1_call_new.html#a0d3a680f6bc97cfd44c743a3c905af6f", null ],
+    [ "set_allocation_site", "classv8_1_1internal_1_1_call_new.html#a7ac1c717370129231c5c618a9e1ae455", null ],
+    [ "set_expression", "classv8_1_1internal_1_1_call_new.html#a1905ee0db4b6583bd610c744d78d49b1", null ],
+    [ "set_is_monomorphic", "classv8_1_1internal_1_1_call_new.html#aaaad1d83139a4a52220d4e4a9739ba7f", null ],
+    [ "set_target", "classv8_1_1internal_1_1_call_new.html#a9df093181f00a9efc785b233ced40082", null ],
+    [ "SetKnownGlobalTarget", "classv8_1_1internal_1_1_call_new.html#add4a3fe519bcf355781b489d52c8da66", null ],
+    [ "target", "classv8_1_1internal_1_1_call_new.html#a8521ebcb369d2b4f03b61f78e274d812", null ],
+    [ "AstNodeFactory", "classv8_1_1internal_1_1_call_new.html#a8d587c8ad3515ff6433eb83c578e795f", null ],
+    [ "allocation_site_", "classv8_1_1internal_1_1_call_new.html#a65721bf24ea0ffe73c16a733b052063f", null ],
+    [ "arguments_", "classv8_1_1internal_1_1_call_new.html#ab43de144e651bbd175a84ec23a181fec", null ],
+    [ "callnew_feedback_slot_", "classv8_1_1internal_1_1_call_new.html#abd92ed1c8a1bc315a570e2b2b15ec75a", null ],
+    [ "expression_", "classv8_1_1internal_1_1_call_new.html#af010e6e5af7d5c1b745795b5630c3ec0", null ],
+    [ "target_", "classv8_1_1internal_1_1_call_new.html#a95d7af4ccc5f48c1a28e9078d26826a6", null ]
+];
